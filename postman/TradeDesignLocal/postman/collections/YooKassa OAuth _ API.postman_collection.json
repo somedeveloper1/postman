@@ -428,6 +428,21 @@
           "name": "Создать платёж (redirect на страницу ЮKassa)",
           "id": "6d459b5f-115e-48b7-a8b8-551148d10acd",
           "request": {
+            "auth": {
+              "type": "basic",
+              "basic": [
+                {
+                  "key": "username",
+                  "value": "{{shop_id}}",
+                  "type": "string"
+                },
+                {
+                  "key": "password",
+                  "value": "{{secret_key}}",
+                  "type": "string"
+                }
+              ]
+            },
             "method": "POST",
             "header": [
               {
@@ -436,24 +451,28 @@
               },
               {
                 "key": "Idempotence-Key",
-                "value": "{{idempotence_key}}",
-                "description": "Обязательный заголовок для POST. Уникальный ключ идемпотентности (до 64 символов). Рекомендуется UUID v4."
+                "value": "{{idempotence_key}}"
               }
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"amount\": {\n    \"value\": \"2.00\",\n    \"currency\": \"RUB\"\n  },\n  \"confirmation\": {\n    \"type\": \"redirect\",\n    \"return_url\": \"https://example.com/order/success\"\n  },\n  \"description\": \"Order No. 1\",\n  \"capture\": true\n}"
+              "raw": "{\n  \"amount\": {\n    \"value\": \"{{payment_amount}}\",\n    \"currency\": \"{{currency}}\"\n  },\n  \"capture\": true,\n  \"confirmation\": {\n    \"type\": \"redirect\",\n    \"return_url\": \"{{return_url}}\"\n  },\n  \"description\": \"{{description}}\",\n  \"metadata\": {\n    \"order_id\": \"{{order_id}}\"\n  },\n  \"receipt\": {\n    \"customer\": {\n      \"email\": \"{{customer_email}}\"\n    },\n    \"items\": [\n      {\n        \"description\": \"{{item_1_description}}\",\n        \"quantity\": \"{{item_1_quantity}}\",\n        \"amount\": {\n          \"value\": \"{{item_1_amount}}\",\n          \"currency\": \"{{currency}}\"\n        },\n        \"vat_code\": {{vat_code}},\n        \"payment_subject\": \"commodity\",\n        \"payment_mode\": \"full_payment\"\n      },\n      {\n        \"description\": \"{{item_2_description}}\",\n        \"quantity\": \"{{item_2_quantity}}\",\n        \"amount\": {\n          \"value\": \"{{item_2_amount}}\",\n          \"currency\": \"{{currency}}\"\n        },\n        \"vat_code\": {{vat_code}},\n        \"payment_subject\": \"commodity\",\n        \"payment_mode\": \"full_payment\"\n      }\n    ]\n  }\n}\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
             },
             "url": {
-              "raw": "{{base_url}}/payments",
+              "raw": "{{base_url}}/v3/payments",
               "host": [
                 "{{base_url}}"
               ],
               "path": [
+                "v3",
                 "payments"
               ]
-            },
-            "description": "Создаёт платёж в тестовом режиме (демо-магазин). В ответе будет confirmation_url — ссылка для перехода пользователя на страницу оплаты ЮKassa.\n\nТестовые карты (из доков):\n- 4111111111111111 (Visa, без 3-D Secure)\n- 5555555555554444 (Mastercard, без 3-D Secure)\n- 2202474301322987 (Мир, без 3-D Secure)\nЛюбой срок действия в будущем, любые CVC и код 3-D Secure."
+            }
           },
           "response": []
         },
