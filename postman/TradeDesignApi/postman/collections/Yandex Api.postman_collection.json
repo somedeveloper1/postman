@@ -14,7 +14,7 @@
           "bearer": [
             {
               "key": "token",
-              "value": "y0_AgAAAABzjdKGAAsjUQAAAAD4VKb9DBMWWQgxSrWgLeluoSQOGEMxOgg",
+              "value": "",
               "type": "string"
             }
           ]
@@ -58,7 +58,7 @@
           "bearer": [
             {
               "key": "token",
-              "value": "y0_AgAAAABzjdKGAAsjUQAAAAD4VKb9DBMWWQgxSrWgLeluoSQOGEMxOgg",
+              "value": "",
               "type": "string"
             }
           ]
