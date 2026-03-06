@@ -1,0 +1,116 @@
+{
+  "info": {
+    "_postman_id": "ec6a15d6-b185-499e-a86c-3449cb0fb27f",
+    "name": "Documents Subscriptions",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Document Subscriptions",
+      "id": "30fb901f-f33c-4648-b5a3-4d2fc39dc6fa",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTY4NjkyMDExNywiZXhwIjoxNjg3NTI0OTE3LCJuYmYiOjE2ODY5MjAxMTcsImp0aSI6InBidW9seTdLV0t6WTlhdkEiLCJzdWIiOjEzNjksInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.keA9gzhrj2Gi2-rLvz2IYxNpjuiQjFjcB7slUNB6IYk",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/document-subscriptions/claims"
+      },
+      "response": []
+    },
+    {
+      "name": "Document Subscriptions Check Subscription",
+      "id": "da3ad642-e0bd-499e-9835-28f91066a53b",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTY4NjkyMDExNywiZXhwIjoxNjg3NTI0OTE3LCJuYmYiOjE2ODY5MjAxMTcsImp0aSI6InBidW9seTdLV0t6WTlhdkEiLCJzdWIiOjEzNjksInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.keA9gzhrj2Gi2-rLvz2IYxNpjuiQjFjcB7slUNB6IYk",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"type\": \"claims\",\r\n    \"document_identifier\": \"lk-1516c0eb03-001680765735\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/document-subscriptions/check-subscription"
+      },
+      "response": []
+    },
+    {
+      "name": "Document Subscriptions Subscribe",
+      "id": "07c9432c-73eb-4769-bdbb-4299b8d403cb",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTY4NjkyMDExNywiZXhwIjoxNjg3NTI0OTE3LCJuYmYiOjE2ODY5MjAxMTcsImp0aSI6InBidW9seTdLV0t6WTlhdkEiLCJzdWIiOjEzNjksInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.keA9gzhrj2Gi2-rLvz2IYxNpjuiQjFjcB7slUNB6IYk",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"type\": \"claims\",\r\n    \"document_identifier\": \"4deb2baa-1c79-11ec-a276-e61f13537e43\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/document-subscriptions/subscribe"
+      },
+      "response": []
+    },
+    {
+      "name": "Document Subscriptions Unsubscribe",
+      "id": "d63fd073-1cb6-4efe-9f18-7e33e2e14e5c",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTY4NjkyMDExNywiZXhwIjoxNjg3NTI0OTE3LCJuYmYiOjE2ODY5MjAxMTcsImp0aSI6InBidW9seTdLV0t6WTlhdkEiLCJzdWIiOjEzNjksInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.keA9gzhrj2Gi2-rLvz2IYxNpjuiQjFjcB7slUNB6IYk",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"type\": \"claims\",\r\n    \"document_identifier\": \"lk-1516c0eb03-001680765735\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/document-subscriptions/unsubscribe"
+      },
+      "response": []
+    }
+  ]
+}

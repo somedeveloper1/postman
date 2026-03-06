@@ -1,0 +1,118 @@
+{
+  "info": {
+    "_postman_id": "5d6bdd45-8c81-4805-bf8f-c85a604fed0a",
+    "name": "Matrix",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Price Groups",
+      "item": [
+        {
+          "name": "Price Group Update",
+          "id": "719ccc52-0ce5-4d47-80f5-6f92f8cd38d2",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"nomenclature_group_guid\": \"aee4b01f-11d0-11e2-aa5e-e61f13537e43\",\r\n    \"brand_guid\": \"386cce8d-7c10-11e3-9a75-e61f13537e43\",\r\n    \"is_expensive\": false,\r\n    \"is_middle\": false,\r\n    \"is_cheap\": false\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api/matrix/price-groups/update",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "matrix",
+                "price-groups",
+                "update"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "d1b9da46-e60b-4ec3-8924-ae799815be55"
+    },
+    {
+      "name": "Ka Nomenclature Groups",
+      "item": [
+        {
+          "name": "Ka Nomenclature Groups Matrix",
+          "id": "6af18406-891e-494e-842e-d55b6723bd64",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/matrix/ka-nomenclature-groups?search_by_brand=Камик",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "matrix",
+                "ka-nomenclature-groups"
+              ],
+              "query": [
+                {
+                  "key": "search_by_nomenclature_group",
+                  "value": "Аксессуары для витрин охлаждаемых",
+                  "disabled": true
+                },
+                {
+                  "key": "d1",
+                  "value": "12",
+                  "disabled": true
+                },
+                {
+                  "key": "search_by_brand",
+                  "value": "Камик"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Ka Nomenclature Groups Matrix With Price Groups",
+          "id": "b2fc532d-92bb-47c1-b391-4e3e3be1d152",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/matrix/ka-nomenclature-groups/with-price-groups",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "matrix",
+                "ka-nomenclature-groups",
+                "with-price-groups"
+              ],
+              "query": [
+                {
+                  "key": "d1",
+                  "value": "12",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "2994e175-de31-4eff-90e5-51305ba15782"
+    }
+  ]
+}

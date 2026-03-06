@@ -1,0 +1,50 @@
+{
+  "info": {
+    "_postman_id": "a623405f-cb92-4b5f-8811-356ae4dc2a3e",
+    "name": "Numbers",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Numbers",
+      "id": "e9516b92-cc46-443d-bddb-a907d316f499",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "X-MPBX-API-AUTH-TOKEN",
+            "value": "{{mpbx_auth_token}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"pattern\" : \"205\",\r\n    \"expires\" : 3600,\r\n    \"subscriptionType\" : \"BASIC_CALL\",\r\n    \"url\" : \"https://api.t-d.ru/api/beeline/save-xml\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://cloudpbx.beeline.ru/apis/portal/abonents",
+          "protocol": "https",
+          "host": [
+            "cloudpbx",
+            "beeline",
+            "ru"
+          ],
+          "path": [
+            "apis",
+            "portal",
+            "abonents"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

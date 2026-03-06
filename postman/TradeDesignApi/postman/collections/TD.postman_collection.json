@@ -1,0 +1,244 @@
+﻿{
+  "info": {
+    "_postman_id": "3bf8b1e0-f450-423d-9c49-c5c73c2ebf2d",
+    "name": "TD",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Products",
+      "item": [
+        {
+          "name": "TD Products Pim Fields",
+          "id": "627ff17d-33d7-4288-a882-d2c2af56543a",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTcxMzQyODgzNiwiZXhwIjoxNzE0MDMzNjM2LCJuYmYiOjE3MTM0Mjg4MzYsImp0aSI6IjRJWmpUTU1DZ0VXakRrTHYiLCJzdWIiOjI2NDYsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.0MFeVK5_d2USSHjqXQ552GyLqdXdXFsUJJA5NvC64CM",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/td/products/pim-fields?type=documents&codes[]=00000449437",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "td",
+                "products",
+                "pim-fields"
+              ],
+              "query": [
+                {
+                  "key": "type",
+                  "value": "documents"
+                },
+                {
+                  "key": "codes[]",
+                  "value": "00000449437"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "TD Products",
+          "id": "dba33a3a-6717-46dc-a6f9-b830dcc8f628",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/td/products?per_page=0",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "td",
+                "products"
+              ],
+              "query": [
+                {
+                  "key": "per_page",
+                  "value": "0"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "TD Products Prices",
+          "id": "45164e3f-6ea6-44db-a2be-5f4f730a4933",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTczNzExMDc1MywiZXhwIjoxNzM3NzE1NTUzLCJuYmYiOjE3MzcxMTA3NTMsImp0aSI6IndNZm9YN05hM1lod09jT2wiLCJzdWIiOjQxMTgsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.A8PBn8zQUFLPxJkD3-3rZknMpFaKoE9_IQn4qy9KNDw",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/td/products/prices?per_page=0&nomenclature[]=2fbad1e8-b0e3-11ed-98c9-e61f13537e43",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "td",
+                "products",
+                "prices"
+              ],
+              "query": [
+                {
+                  "key": "per_page",
+                  "value": "0"
+                },
+                {
+                  "key": "nomenclature[]",
+                  "value": "2fbad1e8-b0e3-11ed-98c9-e61f13537e43"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "TD Products Feeds Download",
+          "id": "b60074af-8310-42fb-90a4-894a9a040166",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTczNzExMDc1MywiZXhwIjoxNzM3NzE1NTUzLCJuYmYiOjE3MzcxMTA3NTMsImp0aSI6IndNZm9YN05hM1lod09jT2wiLCJzdWIiOjQxMTgsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.A8PBn8zQUFLPxJkD3-3rZknMpFaKoE9_IQn4qy9KNDw",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api-td/products/feeds/kursk",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-td",
+                "products",
+                "feeds",
+                "kursk"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "TD Products Balance",
+          "id": "863b646a-dfc8-4fac-bf6a-15b41688afa0",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/td/products/balance?per_page=0",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "td",
+                "products",
+                "balance"
+              ],
+              "query": [
+                {
+                  "key": "per_page",
+                  "value": "0"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "TD Products Delta",
+          "id": "b3326dc8-7d29-48c1-a6f8-817ebf853f8b",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/td/products/delta?per_page=100",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "td",
+                "products",
+                "delta"
+              ],
+              "query": [
+                {
+                  "key": "per_page",
+                  "value": "100"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "c1746360-d7d7-4ea6-b9c8-5fa423b37e67"
+    }
+  ]
+}

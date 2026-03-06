@@ -1,0 +1,41 @@
+{
+  "info": {
+    "_postman_id": "a64c775d-3dca-412c-a9c8-0a593d2a810b",
+    "name": "Test Queue Routes",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Test",
+      "id": "277621d3-3c76-4839-b747-7092c01746a6",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/test-queue"
+      },
+      "response": []
+    }
+  ]
+}

@@ -1,0 +1,1636 @@
+{
+  "info": {
+    "_postman_id": "a23aa171-ba70-4c06-9058-c2476d85519b",
+    "name": "Base Api",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Vendors",
+      "item": [
+        {
+          "name": "Vendors Get",
+          "id": "e3801d22-3f3d-430c-b1cd-47470e4baa11",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8086/api/vendors",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8086",
+              "path": [
+                "api",
+                "vendors"
+              ],
+              "query": [
+                {
+                  "key": "is_active",
+                  "value": "false",
+                  "disabled": true
+                },
+                {
+                  "key": "search",
+                  "value": "vendor_2",
+                  "disabled": true
+                },
+                {
+                  "key": "ids[0]",
+                  "value": "2",
+                  "disabled": true
+                },
+                {
+                  "key": "ids[1]",
+                  "value": "3",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Vendors Create",
+          "id": "be27a940-2ae1-4af7-9367-bcdca2199d7e",
+          "protocolProfileBehavior": {
+            "disabledSystemHeaders": {},
+            "protocolVersion": "auto"
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"test_vendor\",\r\n    \"is_active\": true,\r\n    \"logo_url\": \"test_logo\",\r\n    \"admin_comment\": \"admin_comment\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8086/api/vendors/create",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8086",
+              "path": [
+                "api",
+                "vendors",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Vendors Update",
+          "id": "465a9a9c-10ef-4007-8af6-a3c09999807d",
+          "protocolProfileBehavior": {
+            "disabledSystemHeaders": {},
+            "protocolVersion": "auto"
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"test_vendor_2\",\r\n    \"is_active\": false,\r\n    \"logo_url\": \"test_logo\",\r\n    \"admin_comment\": \"admin_comment\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8086/api/vendors/update/3",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8086",
+              "path": [
+                "api",
+                "vendors",
+                "update",
+                "3"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Vendors Delete",
+          "id": "18095182-9365-4f77-8b24-6b1dd2763711",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8086/api/vendors/delete/3",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8086",
+              "path": [
+                "api",
+                "vendors",
+                "delete",
+                "3"
+              ],
+              "query": [
+                {
+                  "key": "is_active",
+                  "value": "false",
+                  "disabled": true
+                },
+                {
+                  "key": "search",
+                  "value": "vendor_2",
+                  "disabled": true
+                },
+                {
+                  "key": "ids[0]",
+                  "value": "2",
+                  "disabled": true
+                },
+                {
+                  "key": "ids[1]",
+                  "value": "3",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "ee5a4f63-ea90-44c4-a602-e19b34e41b3a"
+    },
+    {
+      "name": "Brands",
+      "item": [
+        {
+          "name": "Brands Create",
+          "id": "533ecc1f-6629-4124-aae8-b3491c18d098",
+          "protocolProfileBehavior": {
+            "disabledSystemHeaders": {},
+            "protocolVersion": "auto"
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"test_brand_2\",\r\n    \"logo_url\": \"test_logo\",\r\n    \"description\": \"description\",\r\n    \"description_html\": \"description_html\",\r\n    \"created_by_vendor_id\": 1\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8086/api/brands/create",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8086",
+              "path": [
+                "api",
+                "brands",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Brands",
+          "id": "40433c49-d7a5-4f0f-8e59-2b09670f1d71",
+          "protocolProfileBehavior": {
+            "disabledSystemHeaders": {},
+            "protocolVersion": "auto"
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8086/api/brands",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8086",
+              "path": [
+                "api",
+                "brands"
+              ],
+              "query": [
+                {
+                  "key": "ids[]",
+                  "value": "2",
+                  "disabled": true
+                },
+                {
+                  "key": "vendor_ids[]",
+                  "value": "1",
+                  "disabled": true
+                },
+                {
+                  "key": "search",
+                  "value": "2",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Brands Update",
+          "id": "ca78ea3d-7cac-49a8-930c-215158b72537",
+          "protocolProfileBehavior": {
+            "disabledSystemHeaders": {},
+            "protocolVersion": "auto"
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"test_brand_2_check\",\r\n    \"logo_url\": \"test_logo\",\r\n    \"description\": \"description\",\r\n    \"description_html\": \"description_html\",\r\n    \"created_by_vendor_id\": 1\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8086/api/brands/update/2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8086",
+              "path": [
+                "api",
+                "brands",
+                "update",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Brands Delete",
+          "id": "9a93d737-260e-4fa5-9525-9ce17b3b405a",
+          "protocolProfileBehavior": {
+            "disabledSystemHeaders": {},
+            "protocolVersion": "auto"
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"test_brand_2_check\",\r\n    \"logo_url\": \"test_logo\",\r\n    \"description\": \"description\",\r\n    \"description_html\": \"description_html\",\r\n    \"created_by_vendor_id\": 1\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8086/api/brands/delete/3",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8086",
+              "path": [
+                "api",
+                "brands",
+                "delete",
+                "3"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "5f822e4b-f585-4db6-90d5-c056166bb9e0"
+    },
+    {
+      "name": "Brand Lines",
+      "item": [
+        {
+          "name": "Brand Lines Create",
+          "id": "ca06c310-5664-4a9f-b4ae-54a73ab716aa",
+          "protocolProfileBehavior": {
+            "disabledSystemHeaders": {},
+            "protocolVersion": "auto"
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"test_brand_line\",\r\n    \"image_url\": \"test_image\",\r\n    \"description\": \"description\",\r\n    \"description_html\": \"description_html\",\r\n    \"vendor_id\": 5,\r\n    \"brand_id\": 4,\r\n    \"user_comment\": \"check\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8086/api/brand-lines/create",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8086",
+              "path": [
+                "api",
+                "brand-lines",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Brand Lines Update",
+          "id": "6d893489-288b-4ead-a747-e7bc0b032583",
+          "protocolProfileBehavior": {
+            "disabledSystemHeaders": {},
+            "protocolVersion": "auto"
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"test_brand_line_2_check\",\r\n    \"image_url\": \"test_image\",\r\n    \"description\": \"description\",\r\n    \"description_html\": \"description_html\",\r\n    \"vendor_id\": 4,\r\n    \"brand_id\": 4,\r\n    \"user_comment\": \"check\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8086/api/brand-lines/update/2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8086",
+              "path": [
+                "api",
+                "brand-lines",
+                "update",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Brand Lines",
+          "id": "7d8480b8-7a07-4e4d-a44b-c8f5e4406e36",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true,
+            "disabledSystemHeaders": {},
+            "protocolVersion": "auto"
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"test_brand_line_2_check\",\r\n    \"image_url\": \"test_image\",\r\n    \"description\": \"description\",\r\n    \"description_html\": \"description_html\",\r\n    \"vendor_id\": 4,\r\n    \"brand_id\": 4,\r\n    \"user_comment\": \"check\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8086/api/brand-lines",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8086",
+              "path": [
+                "api",
+                "brand-lines"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Brand Lines Delete",
+          "id": "c3286f24-d285-45b6-84a9-7823b8c9df3a",
+          "protocolProfileBehavior": {
+            "disabledSystemHeaders": {},
+            "protocolVersion": "auto"
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"test_brand_line_2_check\",\r\n    \"image_url\": \"test_image\",\r\n    \"description\": \"description\",\r\n    \"description_html\": \"description_html\",\r\n    \"vendor_id\": 4,\r\n    \"brand_id\": 4,\r\n    \"user_comment\": \"check\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8086/api/brand-lines/delete/2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8086",
+              "path": [
+                "api",
+                "brand-lines",
+                "delete",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "b34b5095-8187-4d22-a14c-c744ffdd256b"
+    },
+    {
+      "name": "Categories",
+      "item": [
+        {
+          "name": "Categories",
+          "id": "a2448e56-d440-42b2-bc84-472b1b69aa60",
+          "protocolProfileBehavior": {
+            "disabledSystemHeaders": {},
+            "protocolVersion": "auto"
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8086/api/categories",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8086",
+              "path": [
+                "api",
+                "categories"
+              ],
+              "query": [
+                {
+                  "key": "ids[]",
+                  "value": "2",
+                  "disabled": true
+                },
+                {
+                  "key": "vendor_ids[]",
+                  "value": "1",
+                  "disabled": true
+                },
+                {
+                  "key": "search",
+                  "value": "2",
+                  "disabled": true
+                },
+                {
+                  "key": "is_parents_only",
+                  "value": "true",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Categories Create",
+          "id": "f1abeb3b-f281-4cf6-aeaa-a4463bdd4669",
+          "protocolProfileBehavior": {
+            "disabledSystemHeaders": {},
+            "protocolVersion": "auto"
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"test_category_5\",\r\n    \"parent_id\": 4,\r\n    \"vendor_id\": 2,\r\n    \"description\": \"test\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8086/api/categories/create",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8086",
+              "path": [
+                "api",
+                "categories",
+                "create"
+              ],
+              "query": [
+                {
+                  "key": "ids[]",
+                  "value": "2",
+                  "disabled": true
+                },
+                {
+                  "key": "vendor_ids[]",
+                  "value": "1",
+                  "disabled": true
+                },
+                {
+                  "key": "search",
+                  "value": "2",
+                  "disabled": true
+                },
+                {
+                  "key": "is_parents_only",
+                  "value": "true",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Categories Update",
+          "id": "55e4f802-2562-447b-a644-8c8eb6197711",
+          "protocolProfileBehavior": {
+            "disabledSystemHeaders": {},
+            "protocolVersion": "auto"
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"final_category\",\r\n    \"parent_id\": null,\r\n    \"vendor_id\": 2,\r\n    \"description\": \"test\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8086/api/categories/update/2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8086",
+              "path": [
+                "api",
+                "categories",
+                "update",
+                "2"
+              ],
+              "query": [
+                {
+                  "key": "ids[]",
+                  "value": "2",
+                  "disabled": true
+                },
+                {
+                  "key": "vendor_ids[]",
+                  "value": "1",
+                  "disabled": true
+                },
+                {
+                  "key": "search",
+                  "value": "2",
+                  "disabled": true
+                },
+                {
+                  "key": "is_parents_only",
+                  "value": "true",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Categories Delete",
+          "id": "d0393696-0f26-45ce-b401-45d18e3df2a7",
+          "protocolProfileBehavior": {
+            "disabledSystemHeaders": {},
+            "protocolVersion": "auto"
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"final_category\",\r\n    \"parent_id\": null,\r\n    \"vendor_id\": 2,\r\n    \"description\": \"test\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8086/api/categories/delete/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8086",
+              "path": [
+                "api",
+                "categories",
+                "delete",
+                "1"
+              ],
+              "query": [
+                {
+                  "key": "ids[]",
+                  "value": "2",
+                  "disabled": true
+                },
+                {
+                  "key": "vendor_ids[]",
+                  "value": "1",
+                  "disabled": true
+                },
+                {
+                  "key": "search",
+                  "value": "2",
+                  "disabled": true
+                },
+                {
+                  "key": "is_parents_only",
+                  "value": "true",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "1e43e103-08f3-4c61-8895-897de1613dc4"
+    },
+    {
+      "name": "Products",
+      "item": [
+        {
+          "name": "Products",
+          "id": "c58f9006-c7a2-4a60-96cf-7135b2097b13",
+          "protocolProfileBehavior": {
+            "disabledSystemHeaders": {},
+            "protocolVersion": "auto"
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8086/api/products",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8086",
+              "path": [
+                "api",
+                "products"
+              ],
+              "query": [
+                {
+                  "key": "ids[]",
+                  "value": "2",
+                  "disabled": true
+                },
+                {
+                  "key": "vendor_ids[]",
+                  "value": "1",
+                  "disabled": true
+                },
+                {
+                  "key": "search",
+                  "value": "2",
+                  "disabled": true
+                },
+                {
+                  "key": "is_parents_only",
+                  "value": "true",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Products Create",
+          "id": "fe20c1b5-9b08-4f3c-a460-80c0594bd86d",
+          "protocolProfileBehavior": {
+            "disabledSystemHeaders": {},
+            "protocolVersion": "auto"
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"test_product\",\r\n    \"vendor_id\": 2,\r\n    \"brand_id\": 4,\r\n    \"category_id\": 6,\r\n    \"vendor_product_id\": \"vendor_product_id\",\r\n    \"vendor_code\": \"vendor_code\",\r\n    \"vendor_article_number\": \"vendor_article_number\",\r\n    \"user_comment\": \"test\", \r\n    \"description\": \"test\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8086/api/products/create",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8086",
+              "path": [
+                "api",
+                "products",
+                "create"
+              ],
+              "query": [
+                {
+                  "key": "ids[]",
+                  "value": "2",
+                  "disabled": true
+                },
+                {
+                  "key": "vendor_ids[]",
+                  "value": "1",
+                  "disabled": true
+                },
+                {
+                  "key": "search",
+                  "value": "2",
+                  "disabled": true
+                },
+                {
+                  "key": "is_parents_only",
+                  "value": "true",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Products Update",
+          "id": "a549c3bb-d039-4e34-b188-543c608bc3ce",
+          "protocolProfileBehavior": {
+            "disabledSystemHeaders": {},
+            "protocolVersion": "auto"
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"test_product_2_new\",\r\n    \"vendor_id\": 2,\r\n    \"brand_id\": 4,\r\n    \"category_id\": 6,\r\n    \"vendor_product_id\": \"vendor_product_id\",\r\n    \"vendor_code\": \"vendor_code\",\r\n    \"vendor_article_number\": \"vendor_article_number\",\r\n    \"user_comment\": \"test\", \r\n    \"description\": \"test\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8086/api/products/update/2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8086",
+              "path": [
+                "api",
+                "products",
+                "update",
+                "2"
+              ],
+              "query": [
+                {
+                  "key": "ids[]",
+                  "value": "2",
+                  "disabled": true
+                },
+                {
+                  "key": "vendor_ids[]",
+                  "value": "1",
+                  "disabled": true
+                },
+                {
+                  "key": "search",
+                  "value": "2",
+                  "disabled": true
+                },
+                {
+                  "key": "is_parents_only",
+                  "value": "true",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Products Delete",
+          "id": "31417b7e-c589-4156-a516-02f175431494",
+          "protocolProfileBehavior": {
+            "disabledSystemHeaders": {},
+            "protocolVersion": "auto"
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"test_product_2_new\",\r\n    \"vendor_id\": 2,\r\n    \"brand_id\": 4,\r\n    \"category_id\": 6,\r\n    \"vendor_product_id\": \"vendor_product_id\",\r\n    \"vendor_code\": \"vendor_code\",\r\n    \"vendor_article_number\": \"vendor_article_number\",\r\n    \"user_comment\": \"test\", \r\n    \"description\": \"test\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8086/api/products/delete/2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8086",
+              "path": [
+                "api",
+                "products",
+                "delete",
+                "2"
+              ],
+              "query": [
+                {
+                  "key": "ids[]",
+                  "value": "2",
+                  "disabled": true
+                },
+                {
+                  "key": "vendor_ids[]",
+                  "value": "1",
+                  "disabled": true
+                },
+                {
+                  "key": "search",
+                  "value": "2",
+                  "disabled": true
+                },
+                {
+                  "key": "is_parents_only",
+                  "value": "true",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Products Add Children",
+          "id": "afb709b4-f32d-487f-885c-ec4ee448e357",
+          "protocolProfileBehavior": {
+            "disabledSystemHeaders": {},
+            "protocolVersion": "auto"
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n   \"products\": [\r\n        {\r\n          \"vendor_id\": 2,\r\n          \"product_id\": 2,\r\n          \"relation_type\": \"АксессуарыРасходныеМатериалы\"  \r\n        },\r\n        {\r\n          \"vendor_id\": 2,\r\n          \"product_id\": 2,\r\n          \"relation_type\": \"АксессуарыРасширениеФункционала\"  \r\n        },\r\n        {\r\n          \"vendor_id\": 2,\r\n          \"product_id\": 3,\r\n          \"relation_type\": \"АксессуарыРасширениеФункционала\"  \r\n        },\r\n        {\r\n          \"vendor_id\": 2,\r\n          \"product_id\": 3,\r\n          \"relation_type\": \"СопутствующиеТовары\"  \r\n        }\r\n   ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8086/api/products/add-linked/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8086",
+              "path": [
+                "api",
+                "products",
+                "add-linked",
+                "1"
+              ],
+              "query": [
+                {
+                  "key": "ids[]",
+                  "value": "2",
+                  "disabled": true
+                },
+                {
+                  "key": "vendor_ids[]",
+                  "value": "1",
+                  "disabled": true
+                },
+                {
+                  "key": "search",
+                  "value": "2",
+                  "disabled": true
+                },
+                {
+                  "key": "is_parents_only",
+                  "value": "true",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Product",
+          "id": "a367609a-7062-476a-b402-a940f68e623d",
+          "protocolProfileBehavior": {
+            "disabledSystemHeaders": {},
+            "protocolVersion": "auto"
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8086/api/products/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8086",
+              "path": [
+                "api",
+                "products",
+                "1"
+              ],
+              "query": [
+                {
+                  "key": "ids[]",
+                  "value": "2",
+                  "disabled": true
+                },
+                {
+                  "key": "vendor_ids[]",
+                  "value": "1",
+                  "disabled": true
+                },
+                {
+                  "key": "search",
+                  "value": "2",
+                  "disabled": true
+                },
+                {
+                  "key": "is_parents_only",
+                  "value": "true",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Product Linked",
+          "id": "99804ad1-ab52-4be0-97cc-e1130ebba265",
+          "protocolProfileBehavior": {
+            "disabledSystemHeaders": {},
+            "protocolVersion": "auto"
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8086/api/products/linked/1?types[0]=АксессуарыРасширениеФункционала&types[1]=СопутствующиеТовары",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8086",
+              "path": [
+                "api",
+                "products",
+                "linked",
+                "1"
+              ],
+              "query": [
+                {
+                  "key": "types[0]",
+                  "value": "АксессуарыРасширениеФункционала"
+                },
+                {
+                  "key": "types[1]",
+                  "value": "СопутствующиеТовары"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "c9969b99-e3e3-4af6-804a-a04b6fd28bbb"
+    },
+    {
+      "name": "Batch Numbers",
+      "item": [
+        {
+          "name": "Batch Numbers",
+          "id": "bc121e66-b5da-44f6-89f4-59b9d8a61c84",
+          "protocolProfileBehavior": {
+            "disabledSystemHeaders": {},
+            "protocolVersion": "auto"
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8086/api/batch-numbers",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8086",
+              "path": [
+                "api",
+                "batch-numbers"
+              ],
+              "query": [
+                {
+                  "key": "ids[]",
+                  "value": "2",
+                  "disabled": true
+                },
+                {
+                  "key": "vendor_ids[]",
+                  "value": "1",
+                  "disabled": true
+                },
+                {
+                  "key": "search",
+                  "value": "2",
+                  "disabled": true
+                },
+                {
+                  "key": "is_parents_only",
+                  "value": "true",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Batch Numbers Create",
+          "id": "8c70f09e-036b-46dd-b42c-56a0693599d3",
+          "protocolProfileBehavior": {
+            "disabledSystemHeaders": {},
+            "protocolVersion": "auto"
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"number\": \"test\",\r\n    \"vendor_id\": 2,\r\n    \"product_id\": 1,\r\n    \"date_start\": \"2024-10-01\",\r\n    \"date_end\": \"2025-10-01\",\r\n    \"user_comment\": \"test\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8086/api/batch-numbers/create",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8086",
+              "path": [
+                "api",
+                "batch-numbers",
+                "create"
+              ],
+              "query": [
+                {
+                  "key": "ids[]",
+                  "value": "2",
+                  "disabled": true
+                },
+                {
+                  "key": "vendor_ids[]",
+                  "value": "1",
+                  "disabled": true
+                },
+                {
+                  "key": "search",
+                  "value": "2",
+                  "disabled": true
+                },
+                {
+                  "key": "is_parents_only",
+                  "value": "true",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Batch Numbers Update",
+          "id": "02a8c943-a104-4553-a831-2f99de75f629",
+          "protocolProfileBehavior": {
+            "disabledSystemHeaders": {},
+            "protocolVersion": "auto"
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"number\": \"test_test\",\r\n    \"vendor_id\": 2,\r\n    \"product_id\": 1,\r\n    \"date_start\": \"2024-10-01\",\r\n    \"date_end\": \"2025-10-01\",\r\n    \"user_comment\": \"test\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8086/api/batch-numbers/update/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8086",
+              "path": [
+                "api",
+                "batch-numbers",
+                "update",
+                "1"
+              ],
+              "query": [
+                {
+                  "key": "ids[]",
+                  "value": "2",
+                  "disabled": true
+                },
+                {
+                  "key": "vendor_ids[]",
+                  "value": "1",
+                  "disabled": true
+                },
+                {
+                  "key": "search",
+                  "value": "2",
+                  "disabled": true
+                },
+                {
+                  "key": "is_parents_only",
+                  "value": "true",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Batch Numbers Delete",
+          "id": "b4d758bb-3af0-4fdc-a925-2f67598d59c8",
+          "protocolProfileBehavior": {
+            "disabledSystemHeaders": {},
+            "protocolVersion": "auto"
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"number\": \"test_test\",\r\n    \"vendor_id\": 2,\r\n    \"product_id\": 1,\r\n    \"date_start\": \"2024-10-01\",\r\n    \"date_end\": \"2025-10-01\",\r\n    \"user_comment\": \"test\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8086/api/batch-numbers/delete/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8086",
+              "path": [
+                "api",
+                "batch-numbers",
+                "delete",
+                "1"
+              ],
+              "query": [
+                {
+                  "key": "ids[]",
+                  "value": "2",
+                  "disabled": true
+                },
+                {
+                  "key": "vendor_ids[]",
+                  "value": "1",
+                  "disabled": true
+                },
+                {
+                  "key": "search",
+                  "value": "2",
+                  "disabled": true
+                },
+                {
+                  "key": "is_parents_only",
+                  "value": "true",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "3cf80b86-51df-44cb-ae28-329bbed930c7"
+    },
+    {
+      "name": "Auth",
+      "item": [
+        {
+          "name": "Register",
+          "id": "8c6ff096-f5d6-4410-9aec-a8f15c1aa186",
+          "protocolProfileBehavior": {
+            "disabledSystemHeaders": {},
+            "protocolVersion": "auto"
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"admin\",\r\n    \"email\": \"{{auth_email}}\",\r\n    \"password\": \"{{auth_password}}\",\r\n    \"phone\": \"89005550000\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8086/api/auth/register",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8086",
+              "path": [
+                "api",
+                "auth",
+                "register"
+              ],
+              "query": [
+                {
+                  "key": "ids[]",
+                  "value": "2",
+                  "disabled": true
+                },
+                {
+                  "key": "vendor_ids[]",
+                  "value": "1",
+                  "disabled": true
+                },
+                {
+                  "key": "search",
+                  "value": "2",
+                  "disabled": true
+                },
+                {
+                  "key": "is_parents_only",
+                  "value": "true",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Login",
+          "id": "550d1a4b-3985-4294-ac4e-5afcc41f6da6",
+          "protocolProfileBehavior": {
+            "disabledSystemHeaders": {},
+            "protocolVersion": "auto"
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\": \"{{auth_email}}\",\r\n    \"password\": \"{{auth_password}}\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8086/api/auth/login",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8086",
+              "path": [
+                "api",
+                "auth",
+                "login"
+              ],
+              "query": [
+                {
+                  "key": "ids[]",
+                  "value": "2",
+                  "disabled": true
+                },
+                {
+                  "key": "vendor_ids[]",
+                  "value": "1",
+                  "disabled": true
+                },
+                {
+                  "key": "search",
+                  "value": "2",
+                  "disabled": true
+                },
+                {
+                  "key": "is_parents_only",
+                  "value": "true",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Refresh",
+          "id": "88c08ade-fc17-4c03-b944-5652126f068e",
+          "protocolProfileBehavior": {
+            "disabledSystemHeaders": {},
+            "protocolVersion": "auto"
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{access_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\": \"{{auth_email}}\",\r\n    \"password\": \"{{auth_password}}\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8086/api/auth/refresh",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8086",
+              "path": [
+                "api",
+                "auth",
+                "refresh"
+              ],
+              "query": [
+                {
+                  "key": "ids[]",
+                  "value": "2",
+                  "disabled": true
+                },
+                {
+                  "key": "vendor_ids[]",
+                  "value": "1",
+                  "disabled": true
+                },
+                {
+                  "key": "search",
+                  "value": "2",
+                  "disabled": true
+                },
+                {
+                  "key": "is_parents_only",
+                  "value": "true",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Logout",
+          "id": "8f9ae194-601c-461b-871d-d146515e5ed3",
+          "protocolProfileBehavior": {
+            "disabledSystemHeaders": {},
+            "protocolVersion": "auto"
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{refresh_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\": \"{{auth_email}}\",\r\n    \"password\": \"{{auth_password}}\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8086/api/auth/logout",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8086",
+              "path": [
+                "api",
+                "auth",
+                "logout"
+              ],
+              "query": [
+                {
+                  "key": "ids[]",
+                  "value": "2",
+                  "disabled": true
+                },
+                {
+                  "key": "vendor_ids[]",
+                  "value": "1",
+                  "disabled": true
+                },
+                {
+                  "key": "search",
+                  "value": "2",
+                  "disabled": true
+                },
+                {
+                  "key": "is_parents_only",
+                  "value": "true",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "2398a159-236b-4d7f-a712-1f65756b3d94"
+    }
+  ]
+}

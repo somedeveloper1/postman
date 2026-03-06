@@ -1,0 +1,355 @@
+{
+  "info": {
+    "_postman_id": "acd8dc80-a949-4d76-af53-e89cd4aa67d7",
+    "name": "Products",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Products",
+      "id": "5c3aa772-1892-4ffe-aef0-9a068140827d",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/products",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "products"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Products Debug",
+      "id": "43a5e737-81ad-443f-8d27-00674c9e9b04",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/products/debug",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "products",
+            "debug"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Products Price List",
+      "id": "6b10a54e-4477-4fca-a149-e4d8ca36c2d5",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/products/price-list/omsk/addd0311-3015-11ec-a276-e61f13537e43",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "products",
+            "price-list",
+            "omsk",
+            "addd0311-3015-11ec-a276-e61f13537e43"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Products Price List Routes",
+      "id": "ae06b714-02fc-4d79-8d82-02e309aedc41",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/products/price-lists/routes",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "products",
+            "price-lists",
+            "routes"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Products Special",
+      "id": "2e9d8789-772e-41ee-8d2c-43af7325af60",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/products/markdown",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "products",
+            "markdown"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Products WRONG NOM GROUPS",
+      "id": "40190f22-f654-47ab-a677-7230419c5f3b",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/dealers/wrong-groups-products",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "dealers",
+            "wrong-groups-products"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Products PROD",
+      "id": "82aecdf5-3845-4def-8f07-6ab138814f8c",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_prod}}/api/products",
+          "protocol": "https",
+          "host": [
+            "api",
+            "t-d",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "products"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Products Create JSON List PROD",
+      "id": "163884ce-2c96-4ac4-b33c-9364d50b8802",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_prod}}/api/products/create-json",
+          "protocol": "https",
+          "host": [
+            "api",
+            "t-d",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "products",
+            "create-json"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Products Create JSON List",
+      "id": "b663ecf3-1853-496d-88a4-3e19005b3da7",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/products/create-json",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "products",
+            "create-json"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Products Deltas",
+      "id": "c11f12fb-ff8d-4faa-872b-5b5c6f0e259f",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/products/deltas",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "products",
+            "deltas"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Products Deltas New",
+      "id": "da179fdd-1c0c-43a0-a8c5-8dccea798df6",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/products/deltas-new",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "products",
+            "deltas-new"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

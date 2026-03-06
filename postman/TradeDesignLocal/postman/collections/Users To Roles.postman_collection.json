@@ -1,0 +1,81 @@
+{
+  "info": {
+    "_postman_id": "36f5db5a-150c-4bc5-9ff4-62f3e2ebf6e6",
+    "name": "Users To Roles",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Users To Roles Add",
+      "id": "a15f845f-aac5-4849-91c6-9b25c565defd",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTY3MTc4MjU5MSwiZXhwIjoxNjcyMzg3MzkxLCJuYmYiOjE2NzE3ODI1OTEsImp0aSI6Im4yeUpsNEhWNk1vYVgzYzEiLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.n7S2eysZME4891sm64I4YjQZPEfSOue3LIi1xTb_bIQ",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "_METHOD",
+            "value": "PATCH",
+            "type": "text",
+            "disabled": true
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"user_id\": 3,\r\n    \"role_id\": 2\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/users-to-roles/add"
+      },
+      "response": []
+    },
+    {
+      "name": "Users To Roles Delete",
+      "id": "a2c8ac58-52ff-4409-b3e2-2cd982402b49",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTY3MTc4MjU5MSwiZXhwIjoxNjcyMzg3MzkxLCJuYmYiOjE2NzE3ODI1OTEsImp0aSI6Im4yeUpsNEhWNk1vYVgzYzEiLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.n7S2eysZME4891sm64I4YjQZPEfSOue3LIi1xTb_bIQ",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "_METHOD",
+            "value": "PATCH",
+            "type": "text",
+            "disabled": true
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n        \"user_id\": 3,\r\n        \"role_id\": 2\r\n    }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/users-to-roles/delete"
+      },
+      "response": []
+    }
+  ]
+}

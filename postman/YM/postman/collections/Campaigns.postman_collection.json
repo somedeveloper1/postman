@@ -1,0 +1,41 @@
+{
+  "info": {
+    "_postman_id": "0a190edf-743a-4d13-8ac7-0af23d3f8338",
+    "name": "Campaigns",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Campaigns",
+      "id": "82caff98-d4fa-4c90-84eb-d12d16da6d42",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Api-Key",
+            "value": "{{ym_oauth_token}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://api.partner.market.yandex.ru/campaigns",
+          "protocol": "https",
+          "host": [
+            "api",
+            "partner",
+            "market",
+            "yandex",
+            "ru"
+          ],
+          "path": [
+            "campaigns"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

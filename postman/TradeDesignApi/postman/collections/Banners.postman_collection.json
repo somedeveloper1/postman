@@ -1,0 +1,39 @@
+﻿{
+  "info": {
+    "_postman_id": "3cc67228-9ef8-4a0f-927b-58f6e4dadc3c",
+    "name": "Banners",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Banners",
+      "id": "1298f35e-e801-45a9-bdff-6c4c819e0f7b",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2OTc0NDcyODAsImV4cCI6MTY5ODA1MjA4MCwibmJmIjoxNjk3NDQ3MjgwLCJqdGkiOiJVcXg2ZnNxaDhKeEltY1RZIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.cMAg0dhJ9jmbLTT8yGzSFhz4bl67Sct9OJNclapx50I",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/banners",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "banners"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "info": {
+    "_postman_id": "7554d592-97ea-495e-b953-4e068e3e518f",
+    "name": "Contact Info",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Contact Info",
+      "id": "ae092fbb-4fbb-4395-9793-d7bf6f105dd5",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzA0MDg2ODksImV4cCI6MTYzMDQxMjI4OSwibmJmIjoxNjMwNDA4Njg5LCJqdGkiOiJaeUtnTDdiUU1xM0lCYUplIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.MD0M8crdAx5k1vJwM8fquWGw58F-m3uKyxYtgbqdkU8",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/contact-info",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "contact-info"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Contact Info Create",
+      "id": "abfa0fe8-ae38-4c93-bc6f-f561b0678601",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzA0MDUwMjgsImV4cCI6MTYzMDQwODYyOCwibmJmIjoxNjMwNDA1MDI4LCJqdGkiOiIxRWtTOXlWWFZ6MGhWMjdFIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.q4QbtY9VdNHhHGRevH-_iUon_eOYp17mg_zKwWSzJzs",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"guid\": \"1\",\r\n    \"value_type\": \"1\",\r\n    \"value\": \"bla-bla-bla\",\r\n    \"type\": \"Адрес\",\r\n    \"kind_guid\": \"1\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/contact-info/submit",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "contact-info",
+            "submit"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Contact Info Import",
+      "id": "7afe4ed6-91ff-4213-a940-9194c8fdf70e",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"guid\": \"a43fcf49-ce6b-11e5-992b-e61f13537e43\",\r\n        \"type\": \"Адрес\",\r\n        \"value\": \"119361, г Москва, ул Озерная, дом № 14\",\r\n        \"kind\": \"e14aa6ff-f262-11e1-aa5e-e61f13537e43\",\r\n        \"additional_number\": \"111111\",\r\n        \"city\": \"Moscow\"\r\n    },\r\n    {\r\n        \"guid\": \"a43fcf49-ce6b-11e5-992b-e61f13537e43\",\r\n        \"type\": \"Адрес\",\r\n        \"value\": \"г Москва, ул Чертановская, дом № 32, стр.4\",\r\n        \"kind\": \"f7c4e2ba-f281-11e1-aa5e-e61f13537e43\",\r\n        \"additional_number\": \"111112\",\r\n        \"city\": \"Penza\"\r\n    },\r\n    {\r\n        \"guid\": \"a43fcf49-ce6b-11e5-992b-e61f13537e43\",\r\n        \"type\": \"Адрес\",\r\n        \"value\": \"109156, г Москва, ул Генерала Кузнецова, дом № 16, корпус 1\",\r\n        \"kind\": \"f7c4e2bd-f281-11e1-aa5e-e61f13537e43\",\r\n        \"additional_number\": \"111113\",\r\n        \"city\": \"Surgut\"\r\n    },\r\n    {\r\n        \"guid\": \"a43fcf49-ce6b-11e5-992b-e61f13537e43\",\r\n        \"type\": \"Адрес\",\r\n        \"value\": \"127427, г Москва, ул Академика Королева, дом № 18\",\r\n        \"kind\": \"c78243d6-977f-4667-ad1f-4347c747829a\",\r\n        \"additional_number\": \"111114\",\r\n        \"city\": \"Krasnodar\"\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/table/import/contact-info",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "table",
+            "import",
+            "contact-info"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Contact Info Import PROD",
+      "id": "3eec8946-4e92-4ddb-a73d-52d60352067f",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"guid\": \"a43fcf49-ce6b-11e5-992b-e61f13537e43\",\r\n        \"type\": \"Адрес\",\r\n        \"value\": \"119361, г Москва, ул Озерная, дом № 14\",\r\n        \"kind_guid\": \"e14aa6ff-f262-11e1-aa5e-e61f13537e43\"\r\n    },\r\n    {\r\n        \"guid\": \"a43fcf49-ce6b-11e5-992b-e61f13537e43\",\r\n        \"type\": \"Адрес\",\r\n        \"value\": \"г Москва, ул Чертановская, дом № 32, стр.4\",\r\n        \"kind_guid\": \"f7c4e2ba-f281-11e1-aa5e-e61f13537e43\"\r\n    },\r\n    {\r\n        \"guid\": \"a43fcf49-ce6b-11e5-992b-e61f13537e43\",\r\n        \"type\": \"Адрес\",\r\n        \"value\": \"109156, г Москва, ул Генерала Кузнецова, дом № 16, корпус 1\",\r\n        \"kind_guid\": \"f7c4e2bd-f281-11e1-aa5e-e61f13537e43\"\r\n    },\r\n    {\r\n        \"guid\": \"a43fcf49-ce6b-11e5-992b-e61f13537e43\",\r\n        \"type\": \"Адрес\",\r\n        \"value\": \"127427, г Москва, ул Академика Королева, дом № 18\",\r\n        \"kind_guid\": \"c78243d6-977f-4667-ad1f-4347c747829a\"\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_prod}}/api/table/import/contact-info",
+          "protocol": "https",
+          "host": [
+            "api",
+            "t-d",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "table",
+            "import",
+            "contact-info"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

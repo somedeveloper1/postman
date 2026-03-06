@@ -1,0 +1,52 @@
+{
+  "info": {
+    "_postman_id": "f3f8e6a8-f3a8-49fc-8809-c4d13c1d3887",
+    "name": "Warehouses",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Ozon Warehouses",
+      "id": "91843889-260c-4e2b-a650-86a53e1d4c59",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Client-Id",
+            "value": "{{ozon_client_id_header}}",
+            "type": "text"
+          },
+          {
+            "key": "Api-Key",
+            "value": "{{ozon_client_id}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api-seller.ozon.ru/v1/warehouse/list",
+          "protocol": "https",
+          "host": [
+            "api-seller",
+            "ozon",
+            "ru"
+          ],
+          "path": [
+            "v1",
+            "warehouse",
+            "list"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

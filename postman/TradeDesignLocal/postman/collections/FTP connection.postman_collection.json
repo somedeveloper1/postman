@@ -1,0 +1,59 @@
+{
+  "info": {
+    "_postman_id": "922c4b09-353c-4384-afd6-fc31093c1975",
+    "name": "FTP connection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "FTP Connection",
+      "id": "9bafb9c4-bb54-4f0e-bff3-1b58a5770cf0",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/ftp-connection"
+      },
+      "response": []
+    },
+    {
+      "name": "Update From FTP",
+      "id": "40c1ce14-bb4d-4204-a1a3-0514cada8dd1",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/update-photo-from-ftp"
+      },
+      "response": []
+    },
+    {
+      "name": "Get Image",
+      "id": "f765e41b-5c1a-4090-b6c7-9164b551d3fa",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/images/nomenclature/00000085451"
+      },
+      "response": []
+    }
+  ]
+}

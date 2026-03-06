@@ -1,0 +1,73 @@
+﻿{
+  "info": {
+    "_postman_id": "0d457a70-e699-4579-b622-4228f86518be",
+    "name": "For BITRIX",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "JSON create Data",
+      "id": "00a9b2c8-9c57-499b-a4fa-20f9bf751989",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/json-data/create",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "json-data",
+            "create"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "JSON get Data",
+      "id": "ceaaa9b9-0873-466f-ad1f-f40471ed2b0a",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/json-data/get/claims",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "json-data",
+            "get",
+            "claims"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Tables from DB",
+      "id": "d017d21f-f260-461f-9f08-309816abe980",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/json-data/tables",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "json-data",
+            "tables"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

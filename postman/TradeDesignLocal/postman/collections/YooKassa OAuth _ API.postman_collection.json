@@ -1,0 +1,522 @@
+{
+  "info": {
+    "_postman_id": "ab0702a5-2276-4789-9d4e-e3f75f6dba12",
+    "name": "YooKassa OAuth & API",
+    "description": "Коллекция для получения OAuth-токена ЮKassa (Партнёрское API) и примеры запросов к API.\n\nДокументация:\n- OAuth: https://yookassa.ru/developers/solutions-for-platforms/partners-api/oauth/basics\n- Получение токена: https://yookassa.ru/developers/solutions-for-platforms/partners-api/oauth/obtain-token\n- Отзыв токена: https://yookassa.ru/developers/solutions-for-platforms/partners-api/oauth/revoke-token\n\nПорядок действий:\n1. Зарегистрируйте приложение: https://yookassa.ru/oauth/v2/client\n2. Запустите запрос «1. OAuth — Открыть страницу авторизации» и откройте сгенерированный URL в браузере.\n3. После согласия пользователя скопируйте code из callback URL в переменную {{code}}.\n4. Выполните «2. OAuth — Обмен code на токен» — токен сохранится в {{oauth_token}}.\n5. Используйте запросы из папки «API с OAuth» с заголовком Authorization: Bearer {{oauth_token}}.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "OAuth",
+      "item": [
+        {
+          "name": "1. OAuth — Открыть страницу авторизации",
+          "id": "07299395-7c26-4de9-9a49-880d7b773764",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://yookassa.ru/oauth/v2/authorize?client_id={{client_id}}&response_type=code&state={{state}}",
+              "protocol": "https",
+              "host": [
+                "yookassa",
+                "ru"
+              ],
+              "path": [
+                "oauth",
+                "v2",
+                "authorize"
+              ],
+              "query": [
+                {
+                  "key": "client_id",
+                  "value": "{{client_id}}",
+                  "description": "ID приложения (Client ID)"
+                },
+                {
+                  "key": "response_type",
+                  "value": "code",
+                  "description": "Фиксированное значение: code"
+                },
+                {
+                  "key": "state",
+                  "value": "{{state}}",
+                  "description": "Строка состояния (опционально, до 1024 символов)"
+                }
+              ]
+            },
+            "description": "Шаг 1: Откройте этот URL в браузере (или скопируйте из вкладки Params). Пользователь выберет магазин и подтвердит доступ. После согласия произойдёт редирект на ваш Callback URL с параметром code (или код будет показан на странице — если выбран способ «Показать на странице»). Скопируйте значение code в переменную {{code}} и выполните запрос «2. OAuth — Обмен code на токен». Код действителен 5 минут."
+          },
+          "response": []
+        },
+        {
+          "name": "2. OAuth — Обмен code на токен",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var json = pm.response.json();",
+                  "if (json.access_token) {",
+                  "    pm.collectionVariables.set('oauth_token', json.access_token);",
+                  "    console.log('OAuth token saved to oauth_token');",
+                  "}"
+                ],
+                "type": "text/javascript",
+                "id": "77bd86ab-3006-447f-8079-57f4b1541502"
+              }
+            }
+          ],
+          "id": "3d907a44-df99-4abb-851f-33e7173a6749",
+          "request": {
+            "auth": {
+              "type": "basic",
+              "basic": [
+                {
+                  "key": "username",
+                  "value": "{{client_id}}",
+                  "type": "string"
+                },
+                {
+                  "key": "password",
+                  "value": "{{client_secret}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "grant_type",
+                  "value": "authorization_code",
+                  "description": "Фиксированное значение"
+                },
+                {
+                  "key": "code",
+                  "value": "{{code}}",
+                  "description": "Код авторизации из шага 1 (действителен 5 мин)"
+                }
+              ]
+            },
+            "url": {
+              "raw": "https://yookassa.ru/oauth/v2/token",
+              "protocol": "https",
+              "host": [
+                "yookassa",
+                "ru"
+              ],
+              "path": [
+                "oauth",
+                "v2",
+                "token"
+              ]
+            },
+            "description": "Шаг 2: Обмен кода авторизации на OAuth-токен. Укажите в переменной {{code}} код, полученный после редиректа или ввода пользователем. В ответе приходит access_token — он автоматически сохраняется в переменную oauth_token (см. скрипт Tests)."
+          },
+          "response": []
+        },
+        {
+          "name": "3. OAuth — Отозвать токен",
+          "id": "360b2466-81a5-4912-b07d-766b186d47f6",
+          "request": {
+            "auth": {
+              "type": "basic",
+              "basic": [
+                {
+                  "key": "username",
+                  "value": "{{client_id}}",
+                  "type": "string"
+                },
+                {
+                  "key": "password",
+                  "value": "{{client_secret}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "token",
+                  "value": "{{oauth_token}}",
+                  "description": "OAuth-токен для отзыва"
+                }
+              ]
+            },
+            "url": {
+              "raw": "https://yookassa.ru/oauth/v2/revoke_token",
+              "protocol": "https",
+              "host": [
+                "yookassa",
+                "ru"
+              ],
+              "path": [
+                "oauth",
+                "v2",
+                "revoke_token"
+              ]
+            },
+            "description": "Отзыв OAuth-токена. После успешного отзыва тело ответа пустое. Токен также может быть отозван владельцем магазина в личном кабинете."
+          },
+          "response": []
+        }
+      ],
+      "id": "52a7b10f-69f2-415d-8ec5-cd125a1d2bf4"
+    },
+    {
+      "name": "API с OAuth",
+      "item": [
+        {
+          "name": "Get me (информация о магазине)",
+          "id": "2f4212e7-9c4b-4a03-a7dd-54b5b938fd94",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{oauth_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://api.yookassa.ru/v3/me",
+              "protocol": "https",
+              "host": [
+                "api",
+                "yookassa",
+                "ru"
+              ],
+              "path": [
+                "v3",
+                "me"
+              ]
+            },
+            "description": "Получение информации о магазине текущего пользователя (для которого выдан OAuth-токен)."
+          },
+          "response": []
+        },
+        {
+          "name": "Создать платёж",
+          "id": "87637615-3636-4752-a321-458128d951da",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{oauth_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Idempotence-Key",
+                "value": "{{$guid}}",
+                "description": "Уникальный ключ идемпотентности (UUID)"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"amount\": {\n    \"value\": \"100.00\",\n    \"currency\": \"RUB\"\n  },\n  \"capture\": true,\n  \"confirmation\": {\n    \"type\": \"redirect\",\n    \"return_url\": \"https://www.example.com/return_url\"\n  },\n  \"description\": \"Order No. 1\"\n}"
+            },
+            "url": {
+              "raw": "https://api.yookassa.ru/v3/payments",
+              "protocol": "https",
+              "host": [
+                "api",
+                "yookassa",
+                "ru"
+              ],
+              "path": [
+                "v3",
+                "payments"
+              ]
+            },
+            "description": "Создание платежа. Обязателен заголовок Idempotence-Key (уникальный для каждой операции). Права на создание платежей должны быть запрошены при регистрации приложения."
+          },
+          "response": []
+        },
+        {
+          "name": "Получить платёж",
+          "id": "1f208d6c-70a8-468f-bb48-c7a2a7226aef",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{oauth_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://api.yookassa.ru/v3/payments/:payment_id",
+              "protocol": "https",
+              "host": [
+                "api",
+                "yookassa",
+                "ru"
+              ],
+              "path": [
+                "v3",
+                "payments",
+                ":payment_id"
+              ],
+              "variable": [
+                {
+                  "key": "payment_id",
+                  "value": "",
+                  "description": "ID платежа из ответа создания платежа"
+                }
+              ]
+            },
+            "description": "Получение информации о платеже по ID."
+          },
+          "response": []
+        },
+        {
+          "name": "Список платежей",
+          "id": "a4dccd5a-4e93-4873-94f1-2971e69229e0",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{oauth_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://api.yookassa.ru/v3/payments?limit=10",
+              "protocol": "https",
+              "host": [
+                "api",
+                "yookassa",
+                "ru"
+              ],
+              "path": [
+                "v3",
+                "payments"
+              ],
+              "query": [
+                {
+                  "key": "limit",
+                  "value": "10"
+                },
+                {
+                  "key": "created_at.gte",
+                  "value": "",
+                  "description": "Дата от (ISO 8601)",
+                  "disabled": true
+                },
+                {
+                  "key": "created_at.gt",
+                  "value": "",
+                  "description": "Дата строго после",
+                  "disabled": true
+                }
+              ]
+            },
+            "description": "Получение списка платежей магазина."
+          },
+          "response": []
+        }
+      ],
+      "id": "5338c619-0979-42c5-8540-e8aa1df43955"
+    },
+    {
+      "name": "HTTP Basic Auth (для сравнения)",
+      "item": [
+        {
+          "name": "Get me (Basic Auth)",
+          "id": "4413279b-875e-4e15-85ae-86163924093d",
+          "request": {
+            "auth": {
+              "type": "basic",
+              "basic": [
+                {
+                  "key": "username",
+                  "value": "{{shop_id}}",
+                  "type": "string"
+                },
+                {
+                  "key": "password",
+                  "value": "{{secret_key}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://api.yookassa.ru/v3/me",
+              "protocol": "https",
+              "host": [
+                "api",
+                "yookassa",
+                "ru"
+              ],
+              "path": [
+                "v3",
+                "me"
+              ]
+            },
+            "description": "Тот же запрос, но с Basic Auth (Shop ID + Secret Key). Используется для обычных магазинов без партнёрского API."
+          },
+          "response": []
+        }
+      ],
+      "id": "4f34f4d7-9506-4f01-80a7-db2942295082"
+    },
+    {
+      "name": "Payments",
+      "item": [
+        {
+          "name": "Создать платёж (redirect на страницу ЮKassa)",
+          "id": "6d459b5f-115e-48b7-a8b8-551148d10acd",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Idempotence-Key",
+                "value": "{{idempotence_key}}",
+                "description": "Обязательный заголовок для POST. Уникальный ключ идемпотентности (до 64 символов). Рекомендуется UUID v4."
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"amount\": {\n    \"value\": \"2.00\",\n    \"currency\": \"RUB\"\n  },\n  \"confirmation\": {\n    \"type\": \"redirect\",\n    \"return_url\": \"https://example.com/order/success\"\n  },\n  \"description\": \"Order No. 1\",\n  \"capture\": true\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/payments",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "payments"
+              ]
+            },
+            "description": "Создаёт платёж в тестовом режиме (демо-магазин). В ответе будет confirmation_url — ссылка для перехода пользователя на страницу оплаты ЮKassa.\n\nТестовые карты (из доков):\n- 4111111111111111 (Visa, без 3-D Secure)\n- 5555555555554444 (Mastercard, без 3-D Secure)\n- 2202474301322987 (Мир, без 3-D Secure)\nЛюбой срок действия в будущем, любые CVC и код 3-D Secure."
+          },
+          "response": []
+        },
+        {
+          "name": "Получить платёж по ID",
+          "id": "26923020-16b9-4b57-9a82-cf71ad497b9e",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/payments/:payment_id",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "payments",
+                ":payment_id"
+              ],
+              "variable": [
+                {
+                  "key": "payment_id",
+                  "value": ""
+                }
+              ]
+            },
+            "description": "Получить данные платежа по его id (из ответа создания платежа)."
+          },
+          "response": []
+        }
+      ],
+      "id": "bca90c49-0302-4e25-8adc-31cae76c263c"
+    }
+  ],
+  "variable": [
+    {
+      "id": "909aae8e-6d00-4ae4-8cc5-46bbc41f70d1",
+      "key": "client_id",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "id": "523b8a18-794c-4834-9159-1a997c491149",
+      "key": "client_secret",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "id": "ac3f4b68-c76b-404c-a4ce-b1237f9b908d",
+      "key": "code",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "id": "8c762778-6eb6-4650-89ac-0ece41d6d011",
+      "key": "oauth_token",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "id": "a4eaaab2-32d7-49b3-98e4-102f607e6eb9",
+      "key": "state",
+      "value": "postman_state_123",
+      "type": "string"
+    }
+  ]
+}

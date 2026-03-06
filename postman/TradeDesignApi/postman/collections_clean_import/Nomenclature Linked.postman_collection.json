@@ -1,0 +1,91 @@
+{
+  "info": {
+    "_postman_id": "1b36be33-3703-425d-8c01-b0362c60619c",
+    "name": "Nomenclature Linked",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Nomenclature Linked Import",
+      "id": "40f9dfc8-50de-46c4-a229-0a9b33447608",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Transfer-Id",
+            "value": "85236974123698745644",
+            "type": "text"
+          },
+          {
+            "key": "Package-Number",
+            "value": "      r6u6",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"nomenclature_guid\": \"076688a3-a685-11e6-826a-e61f13537e43\",\r\n        \"nomenclature_linked_guid\": \"b7e1ab7d-95a2-11df-bfea-e61f13537e43\",\r\n        \"link_type\": \"СопутствующийТовар\"\r\n    },\r\n    {\r\n        \"nomenclature_guid\": \"b7e1ab7d-95a2-11df-bfea-e61f13537e43\",\r\n        \"nomenclature_linked_guid\": \"076688a3-a685-11e6-826a-e61f13537e43\",\r\n        \"link_type\": \"Запчасть\"\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/table/import/nomenclature-linked",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "table",
+            "import",
+            "nomenclature-linked"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Notifications",
+      "id": "be56bcd4-b8d7-4e9f-a321-6ed477c12a7c",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaS1ob3JlY2FcL2xvZ2luIiwiaWF0IjoxNzY4Mjg2NzQxLCJleHAiOjE3Njg4OTE1NDEsIm5iZiI6MTc2ODI4Njc0MSwianRpIjoieVZlT0hZN1ZXdkVsb3JEViIsInN1YiI6NDgyNywicHJ2IjoiYjQwZmI0M2JmZDIzOTNhZjVmODNjNGVmNjc1ZjA1NmM0ZGI4ZTQ4MiJ9.QjVj9UBh8Y9rZV4lZiJ09nK8V24sNrqjjguS7AWigOc",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api-horeca/notifications",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api-horeca",
+            "notifications"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

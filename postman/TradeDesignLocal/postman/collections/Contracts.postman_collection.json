@@ -1,0 +1,122 @@
+{
+  "info": {
+    "_postman_id": "a5795246-1fab-4a64-903b-220e1b56adb8",
+    "name": "Contracts",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Contracts",
+      "id": "de6bb84e-6a88-47b8-9cbb-58a86ca3ff21",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzA0MTMwMDYsImV4cCI6MTYzMDQxNjYwNiwibmJmIjoxNjMwNDEzMDA2LCJqdGkiOiJLekdoNFg2QTd2c1g1SmIyIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.v2MTkhUh0AhQLqddhLUfhU7N_sVcZ4KIZmf33WWjO8I",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/contracts"
+      },
+      "response": []
+    },
+    {
+      "name": "Contract Create",
+      "id": "9a955b1a-d22e-4c9d-8244-94a4ccedef62",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzA1MDgzMTMsImV4cCI6MTYzMDUxMTkxMywibmJmIjoxNjMwNTA4MzEzLCJqdGkiOiJoQkpHRDFoN2xuTDlLdk9NIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.DC5Fr1_r7_8PpwFgzt1nfbdkIW45wP91BVT39JFury4",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"guid\": \"1\",\r\n    \"name\": \"contract 1\",\r\n    \"counterparty_guid\": \"1\",\r\n    \"organization_guid\": \"1\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/contract/submit"
+      },
+      "response": []
+    },
+    {
+      "name": "Contracts Import",
+      "id": "c6e61004-512c-409b-90a8-787665f72192",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Transfer-Id",
+            "value": "202208031248",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n\r\n{\r\n\r\n\"guid\": \"33a5942d-ade3-11e9-9b8b-e61f13537e43\",\r\n\r\n\"name\": \"К/В/64940\",\r\n\r\n\"counterparty_guid\": \"d0270903-f446-11dd-b60c-001a6498e70d\",\r\n\r\n\"organization_guid\": \"db95313f-dd79-11dd-b60c-001a6498e70d\",\r\n\r\n\"expiry_date\": \"2022-09-02\",\r\n\"currency_guid\": \"123456\",\r\n\"debt_allowance_total\": 10.12,\r\n\"status\": \"Действует\"\r\n\r\n}\r\n\r\n]\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/table/import/contracts"
+      },
+      "response": []
+    },
+    {
+      "name": "Contracts Import PROD",
+      "id": "09aaaaf7-b5eb-4b26-a977-115aa4fedb1d",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"guid\": \"51e86ef4-6256-11e3-9b80-e61f13537e43\",\r\n        \"name\": \"К/Э/57340\",\r\n        \"counterparty_guid\": \"7a884209-5192-11de-ac04-0019dbd95dce\",\r\n        \"organization_guid\": \"0b88e0d6-9004-11e0-9496-e61f13537e43\"\r\n    },\r\n    {\r\n        \"guid\": \"012c069d-6268-11e3-9b80-e61f13537e43\",\r\n        \"name\": \"К/Э/57525\",\r\n        \"counterparty_guid\": \"7a34e6dc-299b-11de-b60c-001a6498e70d\",\r\n        \"organization_guid\": \"0b88e0d6-9004-11e0-9496-e61f13537e43\"\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_prod}}/api/table/import/contracts"
+      },
+      "response": []
+    }
+  ]
+}

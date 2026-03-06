@@ -1,0 +1,120 @@
+﻿{
+  "info": {
+    "_postman_id": "2773306a-7c39-4568-9ff8-7bb859796961",
+    "name": "Orders Items",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Orders Items",
+      "id": "b5bbee83-6c80-4274-af4c-f186511eebc3",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzA1NjI1MDgsImV4cCI6MTYzMDU2NjEwOCwibmJmIjoxNjMwNTYyNTA4LCJqdGkiOiJURndqc3JTZ3hscWx3M0duIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-V9bnfQm2FbM43UVEF9FDNeQUlg8C5jk8BO5B1cQNww",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/orders-items",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "orders-items"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Orders Item Create",
+      "id": "9c638d47-64e7-4acb-bd17-74f19545f4a5",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzA1NjI1MDgsImV4cCI6MTYzMDU2NjEwOCwibmJmIjoxNjMwNTYyNTA4LCJqdGkiOiJURndqc3JTZ3hscWx3M0duIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-V9bnfQm2FbM43UVEF9FDNeQUlg8C5jk8BO5B1cQNww",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"order_guid\": \"1\",\r\n    \"line\": \"14565\",\r\n    \"residue_unit_guid\": \"2\",\r\n    \"amount\": \"200.000\",\r\n    \"nomenclature\": \"2\",\r\n    \"vat_rate\": \"НДС18_118\",\r\n    \"total\": \"20.00\",\r\n    \"vat_total\": \"25.00\",\r\n    \"price\": \"2000.00\",\r\n    \"guarantee\": \"my guarantee 2\",\r\n    \"coefficient\": \"2.000\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/order-item/submit",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "order-item",
+            "submit"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Orders Items Import",
+      "id": "ea0bb02b-e9bf-40fb-9961-54560520db3f",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzA1NjI1MDgsImV4cCI6MTYzMDU2NjEwOCwibmJmIjoxNjMwNTYyNTA4LCJqdGkiOiJURndqc3JTZ3hscWx3M0duIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-V9bnfQm2FbM43UVEF9FDNeQUlg8C5jk8BO5B1cQNww",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"order_guid\": \"1\",\r\n        \"line\": \"14565\",\r\n        \"residue_unit_guid\": \"1\",\r\n        \"amount\": \"200.000\",\r\n        \"nomenclature\": \"2\",\r\n        \"vat_rate\": \"НДС18_118\",\r\n        \"total\": \"20.00\",\r\n        \"vat_total\": \"25.00\",\r\n        \"price\": \"2000.00\",\r\n        \"guarantee\": \"my guarantee 2\",\r\n        \"coefficient\": \"2.000\"\r\n    },\r\n    {\r\n        \"order_guid\": \"2\",\r\n        \"line\": \"14565\",\r\n        \"residue_unit_guid\": \"1\",\r\n        \"amount\": \"200.000\",\r\n        \"nomenclature\": \"1\",\r\n        \"vat_rate\": \"НДС18_118\",\r\n        \"total\": \"20.00\",\r\n        \"vat_total\": \"25.00\",\r\n        \"price\": \"2000.00\",\r\n        \"guarantee\": \"my guarantee 2\",\r\n        \"coefficient\": \"2.000\"\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/table/import/orders-items",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "table",
+            "import",
+            "orders-items"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

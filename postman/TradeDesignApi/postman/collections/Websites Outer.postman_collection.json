@@ -1,0 +1,1271 @@
+﻿{
+  "info": {
+    "_postman_id": "0e42a752-f1c1-4247-99b7-71cb35d34934",
+    "name": "Websites Outer",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Wo Margin",
+      "item": [
+        {
+          "name": "Wo Margin Get",
+          "id": "7819072d-8cc6-401e-8cd6-147a4b02d46f",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTc1NDg5NjUxOCwiZXhwIjoxNzU1NTAxMzE4LCJuYmYiOjE3NTQ4OTY1MTgsImp0aSI6ImlTdW9jbnZVeEhBWHRTMGwiLCJzdWIiOjI2NDYsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.cjxLwZuHA40humsNmScM5zMTXBtX1xThbQuVPoD-Lvc",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/pim/wo-margins",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "pim",
+                "wo-margins"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Wo Margin Price Types Filter Get",
+          "id": "ebbb6db3-dd79-4fb9-aa57-f6b49f48b022",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/pim/wo-margins/filters/price-types",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "pim",
+                "wo-margins",
+                "filters",
+                "price-types"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Wo Margin Create",
+          "id": "e8b757e2-af66-4a33-b907-07c56f8693f8",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTc1NDg5NjUxOCwiZXhwIjoxNzU1NTAxMzE4LCJuYmYiOjE3NTQ4OTY1MTgsImp0aSI6ImlTdW9jbnZVeEhBWHRTMGwiLCJzdWIiOjI2NDYsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.cjxLwZuHA40humsNmScM5zMTXBtX1xThbQuVPoD-Lvc",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"someName\",\r\n    \"percentage\": 10.1,\r\n    \"base_price_type_id\": 1\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api/pim/wo-margins/create",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "pim",
+                "wo-margins",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Wo Margin Update",
+          "id": "d8dbc72f-2b24-44fb-a494-9016c25a1799",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTc1Mzk0MTcyNCwiZXhwIjoxNzU0NTQ2NTI0LCJuYmYiOjE3NTM5NDE3MjQsImp0aSI6IjloTWcwMEhvQWhPbkVQSG0iLCJzdWIiOjI2NDYsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.KfxOPvsJ2l3YAnxnXkFmZ0MTYoSF2KHr8a4sNLo9rCs",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"price_type_guid\": \"bad78525-adcb-11e4-9459-e61f13537e43\",\r\n    \"name\": \"someName\",\r\n    \"percentage\": 10,\r\n    \"base_price_type_id\": 2\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api/pim/wo-margins/update/2",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "pim",
+                "wo-margins",
+                "update",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Wo Margin Delete",
+          "id": "69ab8e32-1102-47ce-ad99-1760021b8fa4",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/pim/wo-margins/delete/1",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "pim",
+                "wo-margins",
+                "delete",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "43ac30c5-a8ed-41a3-bc35-7b68f22d7bc8"
+    },
+    {
+      "name": "Wo margin to object",
+      "item": [
+        {
+          "name": "Wo Margin To Object Get",
+          "id": "f4953117-a7e0-4a19-bd76-0189e032dca2",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTc1Mzk0MTcyNCwiZXhwIjoxNzU0NTQ2NTI0LCJuYmYiOjE3NTM5NDE3MjQsImp0aSI6IjloTWcwMEhvQWhPbkVQSG0iLCJzdWIiOjI2NDYsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.KfxOPvsJ2l3YAnxnXkFmZ0MTYoSF2KHr8a4sNLo9rCs",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/pim/wo-margin-to-objects",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "pim",
+                "wo-margin-to-objects"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Wo Margin To Object Get New",
+          "id": "f6091b5f-9cf5-4c71-b4ba-bb9ff953aeb0",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTc1Mzk0MTcyNCwiZXhwIjoxNzU0NTQ2NTI0LCJuYmYiOjE3NTM5NDE3MjQsImp0aSI6IjloTWcwMEhvQWhPbkVQSG0iLCJzdWIiOjI2NDYsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.KfxOPvsJ2l3YAnxnXkFmZ0MTYoSF2KHr8a4sNLo9rCs",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/pim/wo-margin-to-objects",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "pim",
+                "wo-margin-to-objects"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Wo Margin To Object New",
+          "id": "74ef31f4-3abc-448f-8e14-b59a2f6d78e8",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTc1NDk5OTAzNiwiZXhwIjoxNzU1NjAzODM2LCJuYmYiOjE3NTQ5OTkwMzYsImp0aSI6IjBuWGZhSXBITU5LSzNhWDAiLCJzdWIiOjI2NDYsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ._qETx68FZH0t4Xts4WEAqMiXRt4y3IkS44BCc22_mdo",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/pim/wo-margin-to-objects/margins-by-brands",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "pim",
+                "wo-margin-to-objects",
+                "margins-by-brands"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Wo Margin To Object By Brands Create",
+          "id": "d2b9bffd-6c15-4cdf-8da5-7b3c1c43578e",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTc1NDk5OTAzNiwiZXhwIjoxNzU1NjAzODM2LCJuYmYiOjE3NTQ5OTkwMzYsImp0aSI6IjBuWGZhSXBITU5LSzNhWDAiLCJzdWIiOjI2NDYsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ._qETx68FZH0t4Xts4WEAqMiXRt4y3IkS44BCc22_mdo",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"brand_guid\": \"9b3ec760-177f-11ef-86b5-000c297bb3bc\",\r\n    \"nomenclature_group_guid\": \"00000000-0000-0000-0000-000000000000\",\r\n    \"margins\": [\r\n        {\r\n            \"margin_id\": 10,\r\n            \"price_type_guid\": \"70451ed9-e3bf-11e6-a3ba-e61f13537e43\"\r\n        },\r\n        {\r\n            \"id\": 11,\r\n            \"price_type_guid\": \"0edc284d-51e6-11e8-a2a5-e61f13537e43\"\r\n        }\r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api/pim/wo-margin-to-objects/margins-by-brands/save",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "pim",
+                "wo-margin-to-objects",
+                "margins-by-brands",
+                "save"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Wo Margin To Object Create New",
+          "id": "c0298a4a-e314-455b-80f9-698f44ec9ab1",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTc1NDk5OTAzNiwiZXhwIjoxNzU1NjAzODM2LCJuYmYiOjE3NTQ5OTkwMzYsImp0aSI6IjBuWGZhSXBITU5LSzNhWDAiLCJzdWIiOjI2NDYsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ._qETx68FZH0t4Xts4WEAqMiXRt4y3IkS44BCc22_mdo",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"items\": [\r\n        {\r\n            \"id\": 13,\r\n            \"nomenclature_guid\": \"169889c0-be5d-11e0-9fd5-e61f13537e43\",\r\n            \"brand_guid\": \"00000000-0000-0000-0000-000000000000\",\r\n            \"nomenclature_group_guid\": \"00000000-0000-0000-0000-000000000000\",\r\n            \"margins\": [\r\n                {\r\n                    \"id\": 10,\r\n                    \"price_type_guid\": \"0edc284d-51e6-11e8-a2a5-e61f13537e43\",\r\n                    \"is_priority\": true\r\n                },\r\n                {\r\n                    \"id\": 11,\r\n                    \"price_type_guid\": \"70451ed9-e3bf-11e6-a3ba-e61f13537e43\",\r\n                    \"is_priority\": false\r\n                }\r\n            ]\r\n        }\r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api/pim/wo-margin-to-objects/save",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "pim",
+                "wo-margin-to-objects",
+                "save"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Wo Margin To Object Create",
+          "id": "6afd527c-0d3b-4a8b-bd0d-a0e756060d53",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTc1NDQ2MjYwNSwiZXhwIjoxNzU1MDY3NDA1LCJuYmYiOjE3NTQ0NjI2MDUsImp0aSI6IlBlY2ZaZDk2c0xSTFo1N3AiLCJzdWIiOjI2NDYsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.EIWFYt9fltEL83Nv9yvcTpOsqlviM1yRjxxa9uJb3iY",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"margin_id\": 11,\r\n    \"website_guid\": \"00000000-0000-0000-0000-000000000000\",\r\n    \"brand_guid\": \"9b3ec760-177f-11ef-86b5-000c297bb3bc\",\r\n    \"nomenclature_guid\": \"00000000-0000-0000-0000-000000000000\",\r\n    \"nomenclature_group_guid\": \"00000000-0000-0000-0000-000000000000\",\r\n    \"price_types\": [\"70451ed9-e3bf-11e6-a3ba-e61f13537e43\", \"0edc284d-51e6-11e8-a2a5-e61f13537e43\"]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api/pim/wo-margin-to-objects/create",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "pim",
+                "wo-margin-to-objects",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Wo Margin To Object Update",
+          "id": "2118fed2-ebad-4553-bbfc-b24e21fe974b",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTc1NDg5NjUxOCwiZXhwIjoxNzU1NTAxMzE4LCJuYmYiOjE3NTQ4OTY1MTgsImp0aSI6ImlTdW9jbnZVeEhBWHRTMGwiLCJzdWIiOjI2NDYsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.cjxLwZuHA40humsNmScM5zMTXBtX1xThbQuVPoD-Lvc",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"margin_id\": 11,\r\n    \"website_guid\": \"00000000-0000-0000-0000-000000000000\",\r\n    \"brand_guid\": \"0cadfe70-1fa7-11e0-8679-e61f13537e43\",\r\n    \"nomenclature_guid\": \"00000000-0000-0000-0000-000000000000\",\r\n    \"nomenclature_group_guid\": \"00000000-0000-0000-0000-000000000000\",\r\n    \"price_types\": [\"70451ed9-e3bf-11e6-a3ba-e61f13537e43\", \"0edc284d-51e6-11e8-a2a5-e61f13537e43\"]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api/pim/wo-margin-to-objects/update/3",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "pim",
+                "wo-margin-to-objects",
+                "update",
+                "3"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Wo Margin To Object Delete",
+          "id": "d18c8fc0-d35d-43fd-bfae-6090f1043cc6",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/pim/wo-margin-to-objects/delete/1",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "pim",
+                "wo-margin-to-objects",
+                "delete",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Wo Margin To Object Upload Excel",
+          "id": "17a659ae-df4b-48fa-950e-6274f05575ab",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "file",
+                  "type": "file",
+                  "src": "/C:/Users/Игорь/Downloads/Telegram Desktop/НАЦЕНКИ v6.xlsx"
+                },
+                {
+                  "key": "price_types[0]",
+                  "value": "0edc284d-51e6-11e8-a2a5-e61f13537e43",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api/pim/wo-margin-to-objects/upload-excel",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "pim",
+                "wo-margin-to-objects",
+                "upload-excel"
+              ],
+              "query": [
+                {
+                  "key": "price_types[]",
+                  "value": "0edc284d-51e6-11e8-a2a5-e61f13537e43",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "c9b6907d-4d51-449b-a0d3-6fdf1482c942"
+    },
+    {
+      "name": "Wo Products",
+      "item": [
+        {
+          "name": "Get Websites Products",
+          "id": "1b73cd67-37eb-4f12-a7af-378d983f878d",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/websites-outer/products/search?search=Фризер",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "websites-outer",
+                "products",
+                "search"
+              ],
+              "query": [
+                {
+                  "key": "search",
+                  "value": "Фризер"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Wo Products",
+          "id": "35d32b7d-ea89-4aa3-8128-9e59a2c5322c",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTc3MDAxOTY3MCwiZXhwIjoxNzcwNjI0NDcwLCJuYmYiOjE3NzAwMTk2NzAsImp0aSI6IlhqbXl0U1JsM1B6VGdRTDIiLCJzdWIiOjI2NDYsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.MkyldZ99gURtvsuTKHlY7AfnA4ZHbh8ETpLwMkCBqJA",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/pim/wo-products",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "pim",
+                "wo-products"
+              ],
+              "query": [
+                {
+                  "key": "websites[]",
+                  "value": "632b8de9-0cf9-11ea-8f96-e61f13537e43",
+                  "disabled": true
+                },
+                {
+                  "key": "search",
+                  "value": "S01_",
+                  "disabled": true
+                },
+                {
+                  "key": "brands[]",
+                  "value": "e2af41f4-b373-11e0-9fd5-e61f13537e43",
+                  "disabled": true
+                },
+                {
+                  "key": "brand_lines[]",
+                  "value": "eb1f7e61-f045-11ef-86e9-000c297bb3bc",
+                  "disabled": true
+                },
+                {
+                  "key": "has_balance",
+                  "value": "true",
+                  "disabled": true
+                },
+                {
+                  "key": "has_prices",
+                  "value": "false",
+                  "disabled": true
+                },
+                {
+                  "key": "is_price_lower_than_dealer",
+                  "value": "true",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Wo Products Update PriceVa",
+          "id": "3045d020-f114-444f-affb-8ada65ba7637",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTc1NDU3MzYwMiwiZXhwIjoxNzU1MTc4NDAyLCJuYmYiOjE3NTQ1NzM2MDIsImp0aSI6Im16dHdYODJ4dFFERjdnUUUiLCJzdWIiOjI2NDYsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.A8tTThCutjeG1498Pd03aluUFk1B5sNFnZJDWhqzWSA",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/pim/wo-products/commands/update-priceva",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "pim",
+                "wo-products",
+                "commands",
+                "update-priceva"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Wo Products Download",
+          "id": "22f39e48-ad12-4adf-9727-cf3a08953626",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTc1NDU3MzYwMiwiZXhwIjoxNzU1MTc4NDAyLCJuYmYiOjE3NTQ1NzM2MDIsImp0aSI6Im16dHdYODJ4dFFERjdnUUUiLCJzdWIiOjI2NDYsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.A8tTThCutjeG1498Pd03aluUFk1B5sNFnZJDWhqzWSA",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/pim/wo-products?has_prices=false",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "pim",
+                "wo-products"
+              ],
+              "query": [
+                {
+                  "key": "websites[]",
+                  "value": "632b8de9-0cf9-11ea-8f96-e61f13537e43",
+                  "disabled": true
+                },
+                {
+                  "key": "search",
+                  "value": "Посуда",
+                  "disabled": true
+                },
+                {
+                  "key": "brands[]",
+                  "value": "e2af41f4-b373-11e0-9fd5-e61f13537e43",
+                  "disabled": true
+                },
+                {
+                  "key": "brand_lines[]",
+                  "value": "eb1f7e61-f045-11ef-86e9-000c297bb3bc",
+                  "disabled": true
+                },
+                {
+                  "key": "has_balance",
+                  "value": "true",
+                  "disabled": true
+                },
+                {
+                  "key": "has_prices",
+                  "value": "false"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Wo Products By Brand",
+          "id": "5c558174-50d0-4235-ba61-47b9bfdfb304",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTc1NDU3MzYwMiwiZXhwIjoxNzU1MTc4NDAyLCJuYmYiOjE3NTQ1NzM2MDIsImp0aSI6Im16dHdYODJ4dFFERjdnUUUiLCJzdWIiOjI2NDYsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.A8tTThCutjeG1498Pd03aluUFk1B5sNFnZJDWhqzWSA",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/pim/wo-products-by-brand",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "pim",
+                "wo-products-by-brand"
+              ],
+              "query": [
+                {
+                  "key": "websites[]",
+                  "value": "632b8de9-0cf9-11ea-8f96-e61f13537e43",
+                  "disabled": true
+                },
+                {
+                  "key": "search",
+                  "value": "Посуда",
+                  "disabled": true
+                },
+                {
+                  "key": "brands[]",
+                  "value": "e2af41f4-b373-11e0-9fd5-e61f13537e43",
+                  "disabled": true
+                },
+                {
+                  "key": "brand_lines[]",
+                  "value": "eb1f7e61-f045-11ef-86e9-000c297bb3bc",
+                  "disabled": true
+                },
+                {
+                  "key": "has_balance",
+                  "value": "true",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Wo Product",
+          "id": "0c02a3b1-b676-4da0-9a3b-bc7383bd04d5",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTc1NDU3MzYwMiwiZXhwIjoxNzU1MTc4NDAyLCJuYmYiOjE3NTQ1NzM2MDIsImp0aSI6Im16dHdYODJ4dFFERjdnUUUiLCJzdWIiOjI2NDYsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.A8tTThCutjeG1498Pd03aluUFk1B5sNFnZJDWhqzWSA",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/pim/wo-products?has_prices=false",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "pim",
+                "wo-products"
+              ],
+              "query": [
+                {
+                  "key": "websites[]",
+                  "value": "632b8de9-0cf9-11ea-8f96-e61f13537e43",
+                  "disabled": true
+                },
+                {
+                  "key": "search",
+                  "value": "Посуда",
+                  "disabled": true
+                },
+                {
+                  "key": "brands[]",
+                  "value": "e2af41f4-b373-11e0-9fd5-e61f13537e43",
+                  "disabled": true
+                },
+                {
+                  "key": "brand_lines[]",
+                  "value": "eb1f7e61-f045-11ef-86e9-000c297bb3bc",
+                  "disabled": true
+                },
+                {
+                  "key": "has_balance",
+                  "value": "true",
+                  "disabled": true
+                },
+                {
+                  "key": "has_prices",
+                  "value": "false"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Wo Products Brands",
+          "id": "dcd187f4-468f-43a3-b70a-05a16157e761",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/pim/wo-products/filters/brands?search=ro",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "pim",
+                "wo-products",
+                "filters",
+                "brands"
+              ],
+              "query": [
+                {
+                  "key": "search",
+                  "value": "ro"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Wo Products Brands Lines",
+          "id": "1711676f-8a79-4902-9f77-78f630ee0d8c",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/pim/wo-products/filters/brand-lines?search=Венеция",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "pim",
+                "wo-products",
+                "filters",
+                "brand-lines"
+              ],
+              "query": [
+                {
+                  "key": "search",
+                  "value": "Венеция"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Wo Products Websites",
+          "id": "a8bd5306-eee3-4af1-8504-2a66364be280",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/pim/wo-products/filters/websites?search=rus",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "pim",
+                "wo-products",
+                "filters",
+                "websites"
+              ],
+              "query": [
+                {
+                  "key": "search",
+                  "value": "rus"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Wo Products Margins",
+          "id": "45b2bae4-822a-4d3b-bf7c-db82b0187560",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/pim/wo-products/filters/margins",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "pim",
+                "wo-products",
+                "filters",
+                "margins"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "d6d47831-1909-483b-90d4-9a488f15bda4"
+    },
+    {
+      "name": "Wo Orders",
+      "item": [
+        {
+          "name": "Wo Order Create",
+          "id": "56979aa3-1697-4f40-8582-bf4ef14d5ad7",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"counterparty_id\": \"11746\",\r\n    \"counterparty_guid\": \"\",\r\n    \"first_name\": \"\\u041f\\u0438\\u043a\\u0441\\u0435\\u043b\\u044c\",\r\n    \"last_name\": \"\\u0422\\u0435\\u0441\\u0442\",\r\n    \"patronymic\": \"\\u041f\\u043b\\u044e\\u0441\",\r\n    \"email\": \"sergey.dyakov.pixelplus@yandex.ru\",\r\n    \"legal_address\": \"\",\r\n    \"actual_address\": \"\",\r\n    \"order_guid\": \"\",\r\n    \"date\": \"2025-08-08 10:14:15\",\r\n    \"number\": \"7920\",\r\n    \"contact_phone\": \"79998887766\",\r\n    \"city\": \"\\u0421\\u0430\\u043d\\u043a\\u0442-\\u041f\\u0435\\u0442\\u0435\\u0440\\u0431\\u0443\\u0440\\u0433\",\r\n    \"delivery_address\": \"\\u0422\\u0435\\u0441\\u0442 \\u041f\\u0438\\u043a\\u0441\\u0435\\u043b\\u044c \\u041f\\u043b\\u044e\\u0441\\u0422\\u0435\\u0441\\u0442 \\u041f\\u0438\\u043a\\u0441\\u0435\\u043b\\u044c \\u041f\\u043b\\u044e\\u0441\",\r\n    \"website_comment\": null,\r\n    \"total\": 211527,\r\n    \"website_guid\": \"9b30e198-0fc6-11ec-a276-e61f13537e43\",\r\n    \"items\": [{\r\n            \"name\": \"\\u0420\\u0443\\u0447\\u043d\\u043e\\u0439 \\u043c\\u0438\\u043a\\u0441\\u0435\\u0440 Robot-Coupe MicroMix 34900\",\r\n            \"amount\": 1,\r\n            \"set_number\": \"Micromix (34950)\",\r\n            \"code\": \"00000303598\",\r\n            \"price\": 31279\r\n        }, {\r\n            \"name\": \"\\u041f\\u043b\\u0430\\u043d\\u0435\\u0442\\u0430\\u0440\\u043d\\u044b\\u0439 \\u043c\\u0438\\u043a\\u0441\\u0435\\u0440 Robot-Coupe RM 8 26230D\",\r\n            \"amount\": 1,\r\n            \"set_number\": \"RM8 (26230D)\",\r\n            \"code\": \"00000578739\",\r\n            \"price\": 180248\r\n        }\r\n    ],\r\n    \"legal_status\": \"\\u0424\\u0438\\u0437\\u041b\\u0438\\u0446\\u043e\",\r\n    \"INN\": \"\",\r\n    \"KPP\": \"\",\r\n    \"okopf_code\": \"\",\r\n    \"bank_code\": \"\",\r\n    \"bank_corr_account\": \"\",\r\n    \"bank_name\": \"\",\r\n    \"bank_account\": \"\",\r\n    \"delivery_method\": \"\\u0414\\u043e\\u041f\\u0435\\u0440\\u0435\\u0432\\u043e\\u0437\\u0447\\u0438\\u043a\\u0430\\u0414\\u043e\\u0441\\u0442\\u0430\\u0432\\u043a\\u0430\\u0414\\u043e\\u0422\\u0435\\u0440\\u043c\\u0438\\u043d\\u0430\\u043b\\u0430\",\r\n    \"application_type\": \"order_basket\",\r\n    \"payment_type\": \"\"\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api/websites-outer/9b30e198-0fc6-11ec-a276-e61f13537e43/order/create",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "websites-outer",
+                "9b30e198-0fc6-11ec-a276-e61f13537e43",
+                "order",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "bcc9a418-e88a-4564-ae4f-a2f7f1ce11f2"
+    },
+    {
+      "name": "Wo Base Price Types",
+      "item": [
+        {
+          "name": "Wo Base price Types",
+          "id": "85815cfe-f88a-4281-9af1-24314de92e1e",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTc1Mzk0MTcyNCwiZXhwIjoxNzU0NTQ2NTI0LCJuYmYiOjE3NTM5NDE3MjQsImp0aSI6IjloTWcwMEhvQWhPbkVQSG0iLCJzdWIiOjI2NDYsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.KfxOPvsJ2l3YAnxnXkFmZ0MTYoSF2KHr8a4sNLo9rCs",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"price_type_guid\": \"bad78525-adcb-11e4-9459-e61f13537e43\",\r\n    \"name\": \"someName\",\r\n    \"percentage\": 10\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api/pim/wo-base-price-types",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "pim",
+                "wo-base-price-types"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "243a4a77-a6df-48b3-b2c3-da930c34bd2b"
+    },
+    {
+      "name": "Wo Price Excluded Brands",
+      "item": [
+        {
+          "name": "Wo Price Excluded Brands",
+          "id": "d51da9cd-31a7-47a4-96ce-8f50b271472e",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/pim/wo-price-excluded-brands",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "pim",
+                "wo-price-excluded-brands"
+              ],
+              "query": [
+                {
+                  "key": "per_page",
+                  "value": "1",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create Wo Price Excluded Brands",
+          "id": "73c881f2-5dc7-4b3c-b81d-6d67a2b2c475",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/pim/wo-price-excluded-brands/create",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "pim",
+                "wo-price-excluded-brands",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Wo Price Excluded Brands",
+          "id": "12d6c08a-4699-4f19-8340-2b45d310a3ad",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/pim/wo-price-excluded-brands/delete/0f7f6bae-e460-11ef-86e3-000c297bb3bc",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "pim",
+                "wo-price-excluded-brands",
+                "delete",
+                "0f7f6bae-e460-11ef-86e3-000c297bb3bc"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "6fe00a7b-b4c0-4e31-86df-13ec90758568"
+    },
+    {
+      "name": "Ka Offers For Websites",
+      "id": "296d4d91-bcdf-4442-bb0c-f079a1cc2e67",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTc1MjU4MTYyMywibmJmIjoxNzUyNTgxNjIzLCJqdGkiOiJOV3pISnRoNU4wcnFza05zIiwic3ViIjo1MjM3LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.HnMx1Mf9oOMVZbM8i88BcjStgQ39SyLn89W4Cck3OiM",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/offers-for-websites/e4d2143a-de6f-11e7-a3f6-e61f13537e43",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "offers-for-websites",
+            "e4d2143a-de6f-11e7-a3f6-e61f13537e43"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Outer Websites",
+      "id": "a22f7ad4-9720-46dc-85df-efd5a056746c",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/websites-outer",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "websites-outer"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Wo Base Price Types",
+      "id": "104238ec-ba47-4e32-8240-091795915ac5",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Wo Price History",
+      "id": "8b9bdc4b-9d8a-4a2a-ade7-387b97679085",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/pim/wo-prices-history",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "pim",
+            "wo-prices-history"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Wo Brands",
+      "id": "114c5752-945a-4650-9d66-1816468201b5",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/pim/wo-products",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "pim",
+            "wo-products"
+          ],
+          "query": [
+            {
+              "key": "websites[]",
+              "value": "632b8de9-0cf9-11ea-8f96-e61f13537e43",
+              "disabled": true
+            },
+            {
+              "key": "search",
+              "value": "Посуда",
+              "disabled": true
+            },
+            {
+              "key": "brands[]",
+              "value": "e2af41f4-b373-11e0-9fd5-e61f13537e43",
+              "disabled": true
+            },
+            {
+              "key": "brand_lines[]",
+              "value": "eb1f7e61-f045-11ef-86e9-000c297bb3bc",
+              "disabled": true
+            },
+            {
+              "key": "has_balance",
+              "value": "true",
+              "disabled": true
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Yookassa",
+      "id": "b590981d-9b81-442b-8057-3e8621cf63df",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"data\": \"text\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/hooks/yookassa/webhook",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "hooks",
+            "yookassa",
+            "webhook"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

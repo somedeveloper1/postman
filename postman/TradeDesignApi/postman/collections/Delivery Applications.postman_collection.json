@@ -1,0 +1,50 @@
+﻿{
+  "info": {
+    "_postman_id": "9cca7365-c874-4ded-9106-704343ebd90d",
+    "name": "Delivery Applications",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Delivery Applications Import",
+      "id": "1a58f0bc-db9f-4817-957b-db3b4693d2e3",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"guid\": \"78683575-956c-11df-bfea-e61f13537e43\",\r\n        \"number\": \"00212\",\r\n        \"date\": \"2023-03-20\",\r\n        \"is_processed\": true,\r\n        \"status\": \"НаСогласование\",\r\n        \"delivery_date\": \"2023-04-05\",\r\n        \"organization_guid\": \"123456789\",\r\n        \"counterparty_guid\": \"123456798\",\r\n        \"planned_offload_date\": \"2023-06-05\",\r\n        \"warehouse_address\": \"warehouse_address\",\r\n        \"delivery_method\": \"Филиал\",\r\n        \"delivery_address\": \"delivery_address\",\r\n        \"delivery_company_address\": \"delivery_company_address\",\r\n        \"recipient\": \"recipient\",\r\n        \"counterparty_contact_guid\": \"123456789\",\r\n        \"counterparty_contact_phone\": \"+790630222222\",\r\n        \"delivery_company_guid\": \"123456789\",\r\n        \"delivery_company_contact_guid\": \"123456789\",\r\n        \"delivery_company_cargo_code\": \"123456789\",\r\n        \"delivery_company_contact_phone\": \"+790630222222\",\r\n        \"employee_td_guid\": \"123456789\",\r\n        \"manager_responsible_guid\": \"123456789\",\r\n        \"delivery_applications_documents\": [\r\n            {\r\n                \"type\": \"Заказ 1\",\r\n                \"delivery_application_guid\": \"78683575-956c-11df-bfea-e61f13537e43\",\r\n                \"line\": 2,\r\n                \"object_guid\": \"78683575-956c-11df-bfea-e61f13537e43\"\r\n            }\r\n        ]\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/table/import/delivery-applications",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "table",
+            "import",
+            "delivery-applications"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

@@ -1,0 +1,219 @@
+{
+  "info": {
+    "_postman_id": "b46cffe3-db72-4d88-bfbe-8c6ed8a345a3",
+    "name": "Priceva",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Priceva Source List",
+      "id": "8d751937-3a1c-441b-9e2e-e78474e10a8b",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Apikey",
+            "value": "nfhgH99pr7NZh7DTiW79FGCdKCgYwUba",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"params\": {\r\n        \"id\": [\"ez\"],\r\n        \"add_term\": true,\r\n        \"add_monitoring\": true\r\n    }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api.priceva.com/api/v1/source/list",
+          "protocol": "https",
+          "host": [
+            "api",
+            "priceva",
+            "com"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "source",
+            "list"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Priceva Report List",
+      "id": "767d6aba-fbf5-4643-9f9e-7b806cd4223a",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Apikey",
+            "value": "nfhgH99pr7NZh7DTiW79FGCdKCgYwUba",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"params\": {\r\n        \"id\": [\"ez\"],\r\n        \"add_term\": true,\r\n        \"add_monitoring\": true\r\n    }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api.priceva.com/api/v1/source/list",
+          "protocol": "https",
+          "host": [
+            "api",
+            "priceva",
+            "com"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "source",
+            "list"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Priceva Products",
+      "id": "46598799-e5c0-42cd-aea3-c4ee590d3299",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Apikey",
+            "value": "nfhgH99pr7NZh7DTiW79FGCdKCgYwUba",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"params\": {\r\n        \"sources\": {\r\n            \"add\": true,\r\n            \"add_term\": true\r\n        }\r\n    }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api.priceva.com/api/v1/product/list",
+          "protocol": "https",
+          "host": [
+            "api",
+            "priceva",
+            "com"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "product",
+            "list"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Priceva Competitors",
+      "id": "4dc3eabe-1e55-43cf-adde-92543bee7f4a",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Apikey",
+            "value": "nfhgH99pr7NZh7DTiW79FGCdKCgYwUba",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"params\": {\r\n        \"sources\": {\r\n            \"add\": true,\r\n            \"add_term\": true\r\n        }\r\n    }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api.priceva.com/api/v1/competitor/list",
+          "protocol": "https",
+          "host": [
+            "api",
+            "priceva",
+            "com"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "competitor",
+            "list"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Priceva Brands",
+      "id": "471af5f9-c922-4d32-a496-8ac6e421af29",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Apikey",
+            "value": "nfhgH99pr7NZh7DTiW79FGCdKCgYwUba",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"params\": {\r\n        \"id\": [\"ez\"],\r\n        \"add_term\": true,\r\n        \"add_monitoring\": true\r\n    }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api.priceva.com/api/v1/source/list",
+          "protocol": "https",
+          "host": [
+            "api",
+            "priceva",
+            "com"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "source",
+            "list"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

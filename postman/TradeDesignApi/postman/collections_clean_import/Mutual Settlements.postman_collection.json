@@ -1,0 +1,50 @@
+{
+  "info": {
+    "_postman_id": "df2f125a-5bfe-4daf-8635-8464f855476e",
+    "name": "Mutual Settlements",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Mutual Settlements Import",
+      "id": "614c30c7-80df-4da4-a306-21966914016f",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n  {\r\n    \"counterparty_guid\": \"1111cl93-oa83-11e6-826a-e61f13537e43\",\r\n    \"total\": 9157, \r\n    \"order_guid\": \"7ff8040f-5a7d-11e7-958c-e61f13537e43\",\r\n    \"contract_guid\": \"7ff8040f-5a7d-11e7-958c-e61f13537e55\"\r\n  },\r\n  {\r\n    \"counterparty_guid\": \"1111cl93-oa83-11e6-826a-e61f13537e11\",\r\n    \"total\": 9157.5,\r\n    \"order_guid\": \"59c35d25-70dc-11e0-9672-e61f13537e43\",\r\n    \"contract_guid\": \"7ff8040f-5a7d-11e7-958c-e61f13537e66\"\r\n  }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/table/import/mutual-settlements",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "table",
+            "import",
+            "mutual-settlements"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

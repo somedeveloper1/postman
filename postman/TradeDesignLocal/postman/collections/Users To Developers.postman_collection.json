@@ -1,0 +1,29 @@
+{
+  "info": {
+    "_postman_id": "1fc56d6d-7f1e-4a7d-b695-d54ccab6b324",
+    "name": "Users To Developers",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "User's Developers",
+      "id": "bfd78204-9199-4df6-af33-5344a57ee24e",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NDg3MTc5MTAsImV4cCI6MTY0OTMyMjcxMCwibmJmIjoxNjQ4NzE3OTEwLCJqdGkiOiJWcmxrWjFSMFpGM0pvUWd4Iiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.OpU9ml765BfHsH3k6WEUke6vZbW2A0uSHZ8zi5cA6uM",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/users-to-developers/developer"
+      },
+      "response": []
+    }
+  ]
+}

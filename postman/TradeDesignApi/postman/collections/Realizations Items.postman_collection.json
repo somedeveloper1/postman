@@ -1,0 +1,120 @@
+﻿{
+  "info": {
+    "_postman_id": "bcf07c6c-81d7-4758-b167-e56f2ae025f9",
+    "name": "Realizations Items",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Realizations Items",
+      "id": "41c6182f-bfe1-4d00-bb6d-0c489b265ec5",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzA1NzY3MjEsImV4cCI6MTYzMDU4MDMyMSwibmJmIjoxNjMwNTc2NzIxLCJqdGkiOiJOSDBEVlY3R3I2ejhuQkVQIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.gI-U5DNHLKYSLjeqK_Mm2YMmbj80YpbjiaPhNdM6C7c",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/realizations-items",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "realizations-items"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Realization Item Create",
+      "id": "05e2ddab-d489-4565-8bef-0fa4849156e9",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzA1NzY3MjEsImV4cCI6MTYzMDU4MDMyMSwibmJmIjoxNjMwNTc2NzIxLCJqdGkiOiJOSDBEVlY3R3I2ejhuQkVQIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.gI-U5DNHLKYSLjeqK_Mm2YMmbj80YpbjiaPhNdM6C7c",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"line\": \"12345\",\r\n    \"realization_guid\": \"1\",\r\n    \"amount\": \"100.000\",\r\n    \"units\": \"10\",\r\n    \"nomenclature\": \"2\",\r\n    \"vat_rate\": \"НДС18_118\",\r\n    \"total\": \"10.00\",\r\n    \"vat_total\": \"125.00\",\r\n    \"price\": \"1000.00\",\r\n    \"discount_auto\": \"5\",\r\n    \"discount\": \"5\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/realization-item/submit",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "realization-item",
+            "submit"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Realizations Items Import",
+      "id": "4f0f4921-aebf-45d9-9dce-0e55ae86e31d",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzA1NzY3MjEsImV4cCI6MTYzMDU4MDMyMSwibmJmIjoxNjMwNTc2NzIxLCJqdGkiOiJOSDBEVlY3R3I2ejhuQkVQIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.gI-U5DNHLKYSLjeqK_Mm2YMmbj80YpbjiaPhNdM6C7c",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"line\": \"12345\",\r\n        \"realization_guid\": \"3\",\r\n        \"amount\": \"100.000\",\r\n        \"units\": \"10\",\r\n        \"nomenclature\": \"3\",\r\n        \"vat_rate\": \"НДС18_118\",\r\n        \"total\": \"10.00\",\r\n        \"vat_total\": \"125.00\",\r\n        \"price\": \"1000.00\",\r\n        \"discount_auto\": \"5\",\r\n        \"discount\": \"5\"\r\n    },\r\n    {\r\n        \"line\": \"12345\",\r\n        \"realization_guid\": \"2\",\r\n        \"amount\": \"100.000\",\r\n        \"units\": \"10\",\r\n        \"nomenclature\": \"3\",\r\n        \"vat_rate\": \"НДС18_118\",\r\n        \"total\": \"10.00\",\r\n        \"vat_total\": \"125.00\",\r\n        \"price\": \"1000.00\",\r\n        \"discount_auto\": \"5\",\r\n        \"discount\": \"5\"\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/table/import/realizations-items",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "table",
+            "import",
+            "realizations-items"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

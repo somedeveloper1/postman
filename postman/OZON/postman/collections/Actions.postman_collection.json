@@ -1,0 +1,309 @@
+{
+  "info": {
+    "_postman_id": "e7e1e2bf-b430-4e88-a174-b2367ca94e53",
+    "name": "Actions",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Ozon Action List",
+      "id": "d6b8008a-66fd-4171-9cf0-c3d9be57f2fd",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Client-Id",
+            "value": "{{ozon_client_id_header}}",
+            "type": "text"
+          },
+          {
+            "key": "Api-Key",
+            "value": "{{ozon_client_id}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api-seller.ozon.ru/v1/actions",
+          "protocol": "https",
+          "host": [
+            "api-seller",
+            "ozon",
+            "ru"
+          ],
+          "path": [
+            "v1",
+            "actions"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Ozon Action Hot Sale List",
+      "id": "a189bcef-3a39-484b-9ac2-49734da26d7f",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Client-Id",
+            "value": "{{ozon_client_id_header}}",
+            "type": "text"
+          },
+          {
+            "key": "Api-Key",
+            "value": "{{ozon_client_id}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://api-seller.ozon.ru/v1/actions/hotsales/list",
+          "protocol": "https",
+          "host": [
+            "api-seller",
+            "ozon",
+            "ru"
+          ],
+          "path": [
+            "v1",
+            "actions",
+            "hotsales",
+            "list"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Ozon Action Products",
+      "id": "574299d8-1a2e-4c7d-8f01-6b028283615b",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Client-Id",
+            "value": "{{ozon_client_id_header}}",
+            "type": "text"
+          },
+          {
+            "key": "Api-Key",
+            "value": "{{ozon_client_id}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"action_id\": 1177179,\r\n    \"limit\": 100,\r\n    \"offset\": 0\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api-seller.ozon.ru/v1/actions/products",
+          "protocol": "https",
+          "host": [
+            "api-seller",
+            "ozon",
+            "ru"
+          ],
+          "path": [
+            "v1",
+            "actions",
+            "products"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Ozon Action Products Activate",
+      "id": "d3dea6e1-2949-4bc7-bf76-d51291a9e0f9",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Client-Id",
+            "value": "{{ozon_client_id_header}}",
+            "type": "text"
+          },
+          {
+            "key": "Api-Key",
+            "value": "{{ozon_client_id}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"action_id\": 1177179,\r\n    \"products\": [\r\n        {\r\n            \"action_price\": 6000,\r\n            \"product_id\": 1017927248,\r\n            \"stock\": 1\r\n        }\r\n    ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api-seller.ozon.ru/v1/actions/products/activate",
+          "protocol": "https",
+          "host": [
+            "api-seller",
+            "ozon",
+            "ru"
+          ],
+          "path": [
+            "v1",
+            "actions",
+            "products",
+            "activate"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Ozon Action Hot Sale Products",
+      "id": "bb0c7431-2d99-48e4-b8e7-3ddbf3a2ac3b",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Client-Id",
+            "value": "{{ozon_client_id_header}}",
+            "type": "text"
+          },
+          {
+            "key": "Api-Key",
+            "value": "{{ozon_client_id}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"hotsale_id\": 1177179,\r\n    \"limit\": 100,\r\n    \"offset\": 0\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api-seller.ozon.ru/v1/actions/hotsales/products",
+          "protocol": "https",
+          "host": [
+            "api-seller",
+            "ozon",
+            "ru"
+          ],
+          "path": [
+            "v1",
+            "actions",
+            "hotsales",
+            "products"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Ozon Action Products Deactivate",
+      "id": "71c6d389-9f02-44d8-8dbc-4e3d33e2c7fe",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Client-Id",
+            "value": "{{ozon_client_id_header}}",
+            "type": "text"
+          },
+          {
+            "key": "Api-Key",
+            "value": "{{ozon_client_id}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"action_id\": 1177179,\r\n    \"product_ids\": [\r\n        14975\r\n    ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api-seller.ozon.ru/v1/actions/products/deactivate",
+          "protocol": "https",
+          "host": [
+            "api-seller",
+            "ozon",
+            "ru"
+          ],
+          "path": [
+            "v1",
+            "actions",
+            "products",
+            "deactivate"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Ozon Action Hot Sale Products Deactivate",
+      "id": "2ea2af62-677a-4527-824c-dc001adaca70",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Client-Id",
+            "value": "{{ozon_client_id_header}}",
+            "type": "text"
+          },
+          {
+            "key": "Api-Key",
+            "value": "{{ozon_client_id}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"hotsale_id\": 0,\r\n    \"product_ids\": [\r\n        0\r\n    ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api-seller.ozon.ru/v1/actions/hotsales/products/deactivate",
+          "protocol": "https",
+          "host": [
+            "api-seller",
+            "ozon",
+            "ru"
+          ],
+          "path": [
+            "v1",
+            "actions",
+            "hotsales",
+            "products",
+            "deactivate"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

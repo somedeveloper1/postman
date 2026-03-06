@@ -1,0 +1,1396 @@
+{
+  "info": {
+    "_postman_id": "7262e9ab-c127-4907-9663-0de48e987a41",
+    "name": "Parser",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Products",
+      "item": [
+        {
+          "name": "Unmapped Products",
+          "id": "c57e88ce-f008-4365-bd13-5b5c408e0528",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTY4ODk3NDcxNywiZXhwIjoxNjg5NTc5NTE3LCJuYmYiOjE2ODg5NzQ3MTcsImp0aSI6IkhQaEZrVHZvcTh0ZVA5MjQiLCJzdWIiOjI2NDcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.FORMn1rMKDHxUlrdYCRBRpf8py4MbVrbhhAXLsqnU-M",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/parser/unmapped/products?page=1",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "parser",
+                "unmapped",
+                "products"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "1"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Unmapped Products Download",
+          "id": "fcde31e4-8f39-4dbd-b97d-f1907e0879f3",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTY4Nzk1Mzc2MywiZXhwIjoxNjg4NTU4NTYzLCJuYmYiOjE2ODc5NTM3NjMsImp0aSI6InkzZk5lY3BsSkkyUVVnTVciLCJzdWIiOjI2NDcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.oTYbsASIU0rbwwELV5RkLRjushN95zJu0obhy9MERWQ",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/parser/unmapped/products/download",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "parser",
+                "unmapped",
+                "products",
+                "download"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Mapped Products Download",
+          "id": "8129a669-6f27-496e-a04a-eac281382094",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTY4OTYwMTU0NiwiZXhwIjoxNjkwMjA2MzQ2LCJuYmYiOjE2ODk2MDE1NDYsImp0aSI6IjRvdERLcTZtanBKamV2d2YiLCJzdWIiOjI2NDYsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.YKJBWD5EZ8-hfc0Isj3j7CzqwUo_VfoEI0_LrdQrGm4",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/parser/mapped/products/download",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "parser",
+                "mapped",
+                "products",
+                "download"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Mapped Products Upload",
+          "id": "b5efc8ed-43d7-4423-a5f5-b6fed6d55d01",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTY4Nzk1Mzc2MywiZXhwIjoxNjg4NTU4NTYzLCJuYmYiOjE2ODc5NTM3NjMsImp0aSI6InkzZk5lY3BsSkkyUVVnTVciLCJzdWIiOjI2NDcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.oTYbsASIU0rbwwELV5RkLRjushN95zJu0obhy9MERWQ",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "file",
+                  "type": "file",
+                  "src": "/C:/Users/Юлия/Downloads/Mapped products sample.xlsx"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api/parser/mapped/products/upload",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "parser",
+                "mapped",
+                "products",
+                "upload"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Mapped Products From pro-biznes Upload",
+          "id": "70016be3-f305-41dd-8a82-f48486dea6b6",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTY4OTY2OTMyMywiZXhwIjoxNjkwMjc0MTIzLCJuYmYiOjE2ODk2NjkzMjMsImp0aSI6IjlPTnpSQnBjUzFRRzhSOXAiLCJzdWIiOjI2NDYsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.O-4iG7KIWVK7e0QzhtlRnq1hSbqx20FY0fiy6VPIFYE",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "file",
+                  "type": "file",
+                  "src": "/C:/Users/Юлия/Downloads/TaskId-4266505-CmpId-2761-#1-20230711_1149-summary_report.json"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api/parser/mapped/products/pro-biznes/upload",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "parser",
+                "mapped",
+                "products",
+                "pro-biznes",
+                "upload"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Mapped Products From Excels Upload",
+          "id": "50a75a74-ac05-40b7-b60d-763f77f002fd",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTY4OTY2OTMyMywiZXhwIjoxNjkwMjc0MTIzLCJuYmYiOjE2ODk2NjkzMjMsImp0aSI6IjlPTnpSQnBjUzFRRzhSOXAiLCJzdWIiOjI2NDYsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.O-4iG7KIWVK7e0QzhtlRnq1hSbqx20FY0fiy6VPIFYE",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "file",
+                  "type": "file",
+                  "src": "/C:/Users/Юлия/Downloads/TaskId-4266505-CmpId-2761-#1-20230711_1149-summary_report.json"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api/parser/mapped/products/excels/upload",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "parser",
+                "mapped",
+                "products",
+                "excels",
+                "upload"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Mapped Products",
+          "id": "499ceec2-ad12-4e96-ac71-b01fc8603c10",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTY4OTY2OTMyMywiZXhwIjoxNjkwMjc0MTIzLCJuYmYiOjE2ODk2NjkzMjMsImp0aSI6IjlPTnpSQnBjUzFRRzhSOXAiLCJzdWIiOjI2NDYsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.O-4iG7KIWVK7e0QzhtlRnq1hSbqx20FY0fiy6VPIFYE",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/parser/mapped/products",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "parser",
+                "mapped",
+                "products"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Products Inner Download",
+          "id": "5d2e14e2-72a0-4782-97f1-575940a4cf1f",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTY4OTYwMTU0NiwiZXhwIjoxNjkwMjA2MzQ2LCJuYmYiOjE2ODk2MDE1NDYsImp0aSI6IjRvdERLcTZtanBKamV2d2YiLCJzdWIiOjI2NDYsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.YKJBWD5EZ8-hfc0Isj3j7CzqwUo_VfoEI0_LrdQrGm4",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/parser/internal/products/download",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "parser",
+                "internal",
+                "products",
+                "download"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Map Products",
+          "id": "e2ba5d24-cc69-43ef-b492-86a30e19b630",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTY4ODk3NDcxNywiZXhwIjoxNjg5NTc5NTE3LCJuYmYiOjE2ODg5NzQ3MTcsImp0aSI6IkhQaEZrVHZvcTh0ZVA5MjQiLCJzdWIiOjI2NDcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.FORMn1rMKDHxUlrdYCRBRpf8py4MbVrbhhAXLsqnU-M",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"source_id\": 4,\r\n    \"product_id\": 6536,\r\n    \"our_product_guid\": null\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api/parser/map/products",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "parser",
+                "map",
+                "products"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Unmap Products",
+          "id": "ab298bd9-dc11-4ba9-beca-4475d7d28816",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTY4ODk3NDcxNywiZXhwIjoxNjg5NTc5NTE3LCJuYmYiOjE2ODg5NzQ3MTcsImp0aSI6IkhQaEZrVHZvcTh0ZVA5MjQiLCJzdWIiOjI2NDcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.FORMn1rMKDHxUlrdYCRBRpf8py4MbVrbhhAXLsqnU-M",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"ids\": [\r\n        7044,\r\n        7043\r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api/parser/unmap/products",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "parser",
+                "unmap",
+                "products"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "1a6f02e5-8f4c-46e6-b464-0db323a368cf"
+    },
+    {
+      "name": "Warehouses",
+      "item": [
+        {
+          "name": "Warehouses Map",
+          "id": "9b72d0be-5f66-4503-bbb7-267bf545b19d",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTY5NDQyMTQ1NCwiZXhwIjoxNjk1MDI2MjU0LCJuYmYiOjE2OTQ0MjE0NTQsImp0aSI6IkhPemFlRWY2Y2dxeHFwTDgiLCJzdWIiOjI2NDYsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.9sODcuXpsI_ZRaYA3J_2g2QMkVPC16gIyY78GTmMYt0",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"id\":6,\r\n    \"city_td\":\"Москва\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api/parser/map/warehouses",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "parser",
+                "map",
+                "warehouses"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "1abefaaa-bf03-451b-9edb-0ece9f06eef5"
+    },
+    {
+      "name": "Countries",
+      "item": [
+        {
+          "name": "Countries Map",
+          "id": "e1bf8adb-4280-4d73-87f7-90bcbca47a6e",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTY4NzMzMzI2MywiZXhwIjoxNjg3OTM4MDYzLCJuYmYiOjE2ODczMzMyNjMsImp0aSI6InZnTEJoZ0JZWHVoQ0dZTWgiLCJzdWIiOjI2NDcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.EXXANFEbf_TdYHekJGCRxny9ff5pyi2XXwwlnf7m2xc",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"source_id\":4,\r\n    \"country_id\":1,\r\n    \"our_country_guid\": \"fc628761-bce5-11e0-9fd5-e61f13537e43\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api/parser/map/countries",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "parser",
+                "map",
+                "countries"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Countries Mapped",
+          "id": "937949ab-6978-4c71-bf14-2360310ed1ff",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTY4ODk3NDcxNywiZXhwIjoxNjg5NTc5NTE3LCJuYmYiOjE2ODg5NzQ3MTcsImp0aSI6IkhQaEZrVHZvcTh0ZVA5MjQiLCJzdWIiOjI2NDcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.FORMn1rMKDHxUlrdYCRBRpf8py4MbVrbhhAXLsqnU-M",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/parser/mapped/countries?search=россия",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "parser",
+                "mapped",
+                "countries"
+              ],
+              "query": [
+                {
+                  "key": "search",
+                  "value": "россия"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Unmap Countries",
+          "id": "2da39e4f-15c7-454d-b4fe-ca78f5268f7d",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTY4ODk3NDcxNywiZXhwIjoxNjg5NTc5NTE3LCJuYmYiOjE2ODg5NzQ3MTcsImp0aSI6IkhQaEZrVHZvcTh0ZVA5MjQiLCJzdWIiOjI2NDcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.FORMn1rMKDHxUlrdYCRBRpf8py4MbVrbhhAXLsqnU-M",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"ids\": [\r\n        55,\r\n        56\r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api/parser/unmap/countries",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "parser",
+                "unmap",
+                "countries"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "3e493bdb-daf3-4837-a60f-f903d799c36a"
+    },
+    {
+      "name": "Load From Resources",
+      "item": [
+        {
+          "name": "Load From Resources",
+          "id": "3a50d5c7-2bc0-4583-b503-e0cee500f6e1",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTY4NzMzMzI2MywiZXhwIjoxNjg3OTM4MDYzLCJuYmYiOjE2ODczMzMyNjMsImp0aSI6InZnTEJoZ0JZWHVoQ0dZTWgiLCJzdWIiOjI2NDcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.EXXANFEbf_TdYHekJGCRxny9ff5pyi2XXwwlnf7m2xc",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/parser/start/3",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "parser",
+                "start",
+                "3"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "6b1a19a9-b4d0-4109-b458-79187148856f"
+    },
+    {
+      "name": "Sources",
+      "item": [
+        {
+          "name": "Sources Start Loading Copy",
+          "id": "f8d3e193-d08c-4add-b471-f6a2839254a3",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTY4Nzk1Mzc2MywiZXhwIjoxNjg4NTU4NTYzLCJuYmYiOjE2ODc5NTM3NjMsImp0aSI6InkzZk5lY3BsSkkyUVVnTVciLCJzdWIiOjI2NDcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.oTYbsASIU0rbwwELV5RkLRjushN95zJu0obhy9MERWQ",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/parser/start/3?is_full_loading=true",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "parser",
+                "start",
+                "3"
+              ],
+              "query": [
+                {
+                  "key": "is_full_loading",
+                  "value": "true"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Sources Create",
+          "id": "9ceff5ed-06b7-4980-9b76-b61f00fc4eca",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTY4Nzk1Mzc2MywiZXhwIjoxNjg4NTU4NTYzLCJuYmYiOjE2ODc5NTM3NjMsImp0aSI6InkzZk5lY3BsSkkyUVVnTVciLCJzdWIiOjI2NDcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.oTYbsASIU0rbwwELV5RkLRjushN95zJu0obhy9MERWQ",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"id\": 6,\r\n    \"name\": \"name\",\r\n    \"title\": \"title\",\r\n    \"source_type\": \"source\",\r\n    \"period\": 50,\r\n    \"full_loading_time\": \"20:23\",\r\n    \"login\": \"1111\",\r\n    \"password\": \"2222\",\r\n    \"login_page\": \"12345\",\r\n    \"price_page\": \"123456\",\r\n    \"api_token\": \"158963\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api/parser/source/update",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "parser",
+                "source",
+                "update"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "b49d1b90-85a9-45a9-ba6a-6f8f6c9b2aa9"
+    },
+    {
+      "name": "Brands",
+      "item": [
+        {
+          "name": "Brands Inner",
+          "id": "bc941286-0802-40a2-a6c8-47d49ad1d510",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTY4ODk3NDcxNywiZXhwIjoxNjg5NTc5NTE3LCJuYmYiOjE2ODg5NzQ3MTcsImp0aSI6IkhQaEZrVHZvcTh0ZVA5MjQiLCJzdWIiOjI2NDcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.FORMn1rMKDHxUlrdYCRBRpf8py4MbVrbhhAXLsqnU-M",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/parser/internal/brands",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "parser",
+                "internal",
+                "brands"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Brands Inner Download",
+          "id": "99032df4-fa07-43cf-af23-40715d7ea7dd",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTY4OTYwMTU0NiwiZXhwIjoxNjkwMjA2MzQ2LCJuYmYiOjE2ODk2MDE1NDYsImp0aSI6IjRvdERLcTZtanBKamV2d2YiLCJzdWIiOjI2NDYsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.YKJBWD5EZ8-hfc0Isj3j7CzqwUo_VfoEI0_LrdQrGm4",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/parser/internal/brands/download",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "parser",
+                "internal",
+                "brands",
+                "download"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Mapped Brands Upload",
+          "id": "3337e3bf-d6e4-4c16-9b11-d734ac366147",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTY4ODk3NDcxNywiZXhwIjoxNjg5NTc5NTE3LCJuYmYiOjE2ODg5NzQ3MTcsImp0aSI6IkhQaEZrVHZvcTh0ZVA5MjQiLCJzdWIiOjI2NDcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.FORMn1rMKDHxUlrdYCRBRpf8py4MbVrbhhAXLsqnU-M",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "file",
+                  "type": "file",
+                  "src": "/C:/Users/Юлия/Downloads/Mapped_brands_samples.xlsx"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api/parser/mapped/brands/upload",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "parser",
+                "mapped",
+                "brands",
+                "upload"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Unmap Brands",
+          "id": "1ba8c933-5b86-446e-9f59-ab500e4da1be",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTY4ODk3NDcxNywiZXhwIjoxNjg5NTc5NTE3LCJuYmYiOjE2ODg5NzQ3MTcsImp0aSI6IkhQaEZrVHZvcTh0ZVA5MjQiLCJzdWIiOjI2NDcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.FORMn1rMKDHxUlrdYCRBRpf8py4MbVrbhhAXLsqnU-M",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"ids\": [\r\n        330,\r\n        325,\r\n        324,\r\n        310,\r\n        307\r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api/parser/unmap/brands",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "parser",
+                "unmap",
+                "brands"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Map Brands",
+          "id": "cd711c81-2fa3-4371-8adb-a641e7f02bdd",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTY4ODk3NDcxNywiZXhwIjoxNjg5NTc5NTE3LCJuYmYiOjE2ODg5NzQ3MTcsImp0aSI6IkhQaEZrVHZvcTh0ZVA5MjQiLCJzdWIiOjI2NDcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.FORMn1rMKDHxUlrdYCRBRpf8py4MbVrbhhAXLsqnU-M",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"source_id\": 4,\r\n    \"brand_id\": 29,\r\n    \"our_brand_guid\": \"10f2fbbb-21e5-11e4-b05d-e61f13537e43\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api/parser/map/brands",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "parser",
+                "map",
+                "brands"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Brands Unmapped",
+          "id": "87efec1a-56fa-4bf4-851d-92f1b0eb16ec",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTY4ODk3NDcxNywiZXhwIjoxNjg5NTc5NTE3LCJuYmYiOjE2ODg5NzQ3MTcsImp0aSI6IkhQaEZrVHZvcTh0ZVA5MjQiLCJzdWIiOjI2NDcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.FORMn1rMKDHxUlrdYCRBRpf8py4MbVrbhhAXLsqnU-M",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/parser/unmapped/brands",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "parser",
+                "unmapped",
+                "brands"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Brands Mapped",
+          "id": "09d844dd-40f7-4b83-ae84-da984ec47eb6",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTY4ODk3NDcxNywiZXhwIjoxNjg5NTc5NTE3LCJuYmYiOjE2ODg5NzQ3MTcsImp0aSI6IkhQaEZrVHZvcTh0ZVA5MjQiLCJzdWIiOjI2NDcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.FORMn1rMKDHxUlrdYCRBRpf8py4MbVrbhhAXLsqnU-M",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/parser/mapped/brands",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "parser",
+                "mapped",
+                "brands"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Brands Download",
+          "id": "e803fdf5-f03c-4fbe-9e0c-65d40ad907bb",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTY4ODk3NDcxNywiZXhwIjoxNjg5NTc5NTE3LCJuYmYiOjE2ODg5NzQ3MTcsImp0aSI6IkhQaEZrVHZvcTh0ZVA5MjQiLCJzdWIiOjI2NDcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.FORMn1rMKDHxUlrdYCRBRpf8py4MbVrbhhAXLsqnU-M",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/parser/mapped/brands/download",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "parser",
+                "mapped",
+                "brands",
+                "download"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "6fe399f5-aa14-42cf-9989-85fc07a06a51"
+    },
+    {
+      "name": "Properties",
+      "item": [
+        {
+          "name": "Prperties Inner",
+          "id": "330fc0ec-a58e-472c-86d6-51f3cfc4d675",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTY4ODk3NDcxNywiZXhwIjoxNjg5NTc5NTE3LCJuYmYiOjE2ODg5NzQ3MTcsImp0aSI6IkhQaEZrVHZvcTh0ZVA5MjQiLCJzdWIiOjI2NDcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.FORMn1rMKDHxUlrdYCRBRpf8py4MbVrbhhAXLsqnU-M",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/parser/internal/properties",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "parser",
+                "internal",
+                "properties"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Properties Unmapped",
+          "id": "26f61eec-4039-4429-9756-508aaf4c89ea",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTY4ODk3NDcxNywiZXhwIjoxNjg5NTc5NTE3LCJuYmYiOjE2ODg5NzQ3MTcsImp0aSI6IkhQaEZrVHZvcTh0ZVA5MjQiLCJzdWIiOjI2NDcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.FORMn1rMKDHxUlrdYCRBRpf8py4MbVrbhhAXLsqnU-M",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/parser/unmapped/properties",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "parser",
+                "unmapped",
+                "properties"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Properties Mapped",
+          "id": "db7bd572-332b-46f8-b14d-e5a6c21329f4",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTY4ODk3NDcxNywiZXhwIjoxNjg5NTc5NTE3LCJuYmYiOjE2ODg5NzQ3MTcsImp0aSI6IkhQaEZrVHZvcTh0ZVA5MjQiLCJzdWIiOjI2NDcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.FORMn1rMKDHxUlrdYCRBRpf8py4MbVrbhhAXLsqnU-M",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/parser/mapped/properties?search=аксессуар",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "parser",
+                "mapped",
+                "properties"
+              ],
+              "query": [
+                {
+                  "key": "search",
+                  "value": "аксессуар"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Properties Download",
+          "id": "64b7b07f-f106-4320-8fda-f05de0c69027",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTY4ODk3NDcxNywiZXhwIjoxNjg5NTc5NTE3LCJuYmYiOjE2ODg5NzQ3MTcsImp0aSI6IkhQaEZrVHZvcTh0ZVA5MjQiLCJzdWIiOjI2NDcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.FORMn1rMKDHxUlrdYCRBRpf8py4MbVrbhhAXLsqnU-M",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/parser/mapped/properties/download",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "parser",
+                "mapped",
+                "properties",
+                "download"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Mapped Properties Upload",
+          "id": "2a1195be-dfc4-4813-856e-4bf34f41350b",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTY4ODk3NDcxNywiZXhwIjoxNjg5NTc5NTE3LCJuYmYiOjE2ODg5NzQ3MTcsImp0aSI6IkhQaEZrVHZvcTh0ZVA5MjQiLCJzdWIiOjI2NDcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.FORMn1rMKDHxUlrdYCRBRpf8py4MbVrbhhAXLsqnU-M",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "file",
+                  "type": "file",
+                  "src": "/C:/Users/Юлия/Downloads/Mappe_properties_sample.xlsx"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api/parser/mapped/properties/upload",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "parser",
+                "mapped",
+                "properties",
+                "upload"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Map Properties",
+          "id": "5a37aa17-aa29-4997-9175-3375fc9a3bf1",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTY4ODk3NDcxNywiZXhwIjoxNjg5NTc5NTE3LCJuYmYiOjE2ODg5NzQ3MTcsImp0aSI6IkhQaEZrVHZvcTh0ZVA5MjQiLCJzdWIiOjI2NDcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.FORMn1rMKDHxUlrdYCRBRpf8py4MbVrbhhAXLsqnU-M",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"source_id\": 4,\r\n    \"property_id\": 11,\r\n    \"our_property_guid\": \"a3131861-90cd-11e8-a2a5-e61f13537e43\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api/parser/map/properties",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "parser",
+                "map",
+                "properties"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Unmap Properties",
+          "id": "16f222ac-b1ae-4428-ad0b-5245fccc10db",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTY4ODk3NDcxNywiZXhwIjoxNjg5NTc5NTE3LCJuYmYiOjE2ODg5NzQ3MTcsImp0aSI6IkhQaEZrVHZvcTh0ZVA5MjQiLCJzdWIiOjI2NDcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.FORMn1rMKDHxUlrdYCRBRpf8py4MbVrbhhAXLsqnU-M",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"ids\": [\r\n        124,\r\n        123,\r\n        122,\r\n        121\r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api/parser/unmap/properties",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "parser",
+                "unmap",
+                "properties"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Properties Inner Download",
+          "id": "289db312-e3b4-49af-b666-c7e2881b43d2",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTY4OTYwMTU0NiwiZXhwIjoxNjkwMjA2MzQ2LCJuYmYiOjE2ODk2MDE1NDYsImp0aSI6IjRvdERLcTZtanBKamV2d2YiLCJzdWIiOjI2NDYsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.YKJBWD5EZ8-hfc0Isj3j7CzqwUo_VfoEI0_LrdQrGm4",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/parser/internal/properties/download",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "parser",
+                "internal",
+                "properties",
+                "download"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "5aed8827-9ba2-4f1c-8470-b1523236930f"
+    },
+    {
+      "name": "Countries",
+      "item": [
+        {
+          "name": "Countries Inner",
+          "id": "f0d43a47-41d6-4c26-82c0-4e9a2ffee46e",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTY4ODk3NDcxNywiZXhwIjoxNjg5NTc5NTE3LCJuYmYiOjE2ODg5NzQ3MTcsImp0aSI6IkhQaEZrVHZvcTh0ZVA5MjQiLCJzdWIiOjI2NDcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.FORMn1rMKDHxUlrdYCRBRpf8py4MbVrbhhAXLsqnU-M",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/parser/internal/countries",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "parser",
+                "internal",
+                "countries"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Map Countries",
+          "id": "f26d15ee-901b-4071-a1b1-f18ccdfee14f",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTY4ODk3NDcxNywiZXhwIjoxNjg5NTc5NTE3LCJuYmYiOjE2ODg5NzQ3MTcsImp0aSI6IkhQaEZrVHZvcTh0ZVA5MjQiLCJzdWIiOjI2NDcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.FORMn1rMKDHxUlrdYCRBRpf8py4MbVrbhhAXLsqnU-M",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"source_id\": 4,\r\n    \"country_id\": 25,\r\n    \"our_country_guid\": \"b9404558-956d-11df-b3e0-e61f135382c7\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api/parser/map/countries",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "parser",
+                "map",
+                "countries"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Countries Mapped",
+          "id": "32289c08-bd31-4410-86df-5065b78bac20",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTY4ODk3NDcxNywiZXhwIjoxNjg5NTc5NTE3LCJuYmYiOjE2ODg5NzQ3MTcsImp0aSI6IkhQaEZrVHZvcTh0ZVA5MjQiLCJzdWIiOjI2NDcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.FORMn1rMKDHxUlrdYCRBRpf8py4MbVrbhhAXLsqnU-M",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/parser/mapped/countries",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "parser",
+                "mapped",
+                "countries"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "6301e14e-3c3b-448f-8de0-a6662113333b"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "info": {
+    "_postman_id": "391ef332-16d9-4cab-95f6-360aa2c25b40",
+    "name": "Properties Values",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Properties Values",
+      "id": "e5939389-250d-4c75-9d99-ff44c1991a95",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzA0OTk4NTEsImV4cCI6MTYzMDUwMzQ1MSwibmJmIjoxNjMwNDk5ODUxLCJqdGkiOiIxRVM2b0k0eEdtMzJ0Q1UxIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.cehnxM6wk0eAIvyfxi84klYzMw3xXy6W1GkqnG1pmTs",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/properties-values"
+      },
+      "response": []
+    },
+    {
+      "name": "Property Value Create",
+      "id": "9414961e-72df-45d0-a8bc-d8a45b845605",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzA0OTk4NTEsImV4cCI6MTYzMDUwMzQ1MSwibmJmIjoxNjMwNDk5ODUxLCJqdGkiOiIxRVM2b0k0eEdtMzJ0Q1UxIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.cehnxM6wk0eAIvyfxi84klYzMw3xXy6W1GkqnG1pmTs",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"website_guid\": \"1\",\r\n    \"nomenclature_guid\": \"1\",\r\n    \"property_guid\": \"1\",\r\n    \"value\": \"value\",\r\n    \"value_type\": \"value_type\",\r\n    \"is_in_name\": false,\r\n    \"is_to_change_in_card\": false,\r\n    \"is_preview\": false,\r\n    \"is_filter\": false\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/property-value/submit"
+      },
+      "response": []
+    },
+    {
+      "name": "Properties Values Import",
+      "id": "8b6acf91-00ae-4b13-845d-42e0c1510c0d",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"website_guid\": \"e4d2143a-de6f-11e7-a3f6-e61f13537e43\",\r\n        \"nomenclature_guid\": \"1278bcb7-95cc-11df-bfea-e61f13537e43\",\r\n        \"property_guid\": \"0dca3333-92d0-11e2-9910-e61f13537e43\",\r\n        \"value\": 945,\r\n        \"value_type\": \"Число\",\r\n        \"is_in_name\": false,\r\n        \"is_to_change_in_card\": true,\r\n        \"is_preview\": false,\r\n        \"is_filter\": true,\r\n        \"is_analog\": false\r\n    },\r\n    {\r\n        \"website_guid\": \"e4d2143a-de6f-11e7-a3f6-e61f13537e43\",\r\n        \"nomenclature_guid\": \"1278bcb7-95cc-11df-bfea-e61f13537e43\",\r\n        \"property_guid\": \"0dca3334-92d0-11e2-9910-e61f13537e43\",\r\n        \"value\": 2028,\r\n        \"value_type\": \"Число\",\r\n        \"is_in_name\": false,\r\n        \"is_to_change_in_card\": true,\r\n        \"is_preview\": false,\r\n        \"is_filter\": true,\r\n        \"is_analog\": false\r\n    },\r\n    {\r\n        \"website_guid\": \"e4d2143a-de6f-11e7-a3f6-e61f13537e43\",\r\n        \"nomenclature_guid\": \"1278bcb7-95cc-11df-bfea-e61f13537e43\",\r\n        \"property_guid\": \"72c49fc8-977d-11e2-9910-e61f13537e43\",\r\n        \"value\": \"72c49fcd-977d-11e2-9910-e61f13537e43\",\r\n        \"value_type\": \"Значения свойств номенклатуры (ТД)\",\r\n        \"is_in_name\": false,\r\n        \"is_to_change_in_card\": true,\r\n        \"is_preview\": false,\r\n        \"is_filter\": true,\r\n        \"is_analog\": false\r\n    },\r\n    {\r\n        \"website_guid\": \"e4d2143a-de6f-11e7-a3f6-e61f13537e43\",\r\n        \"nomenclature_guid\": \"1278bcb7-95cc-11df-bfea-e61f13537e43\",\r\n        \"property_guid\": \"72c49fdc-977d-11e2-9910-e61f13537e43\",\r\n        \"value\": \"72c49fdd-977d-11e2-9910-e61f13537e43\",\r\n        \"value_type\": \"Значения свойств номенклатуры (ТД)\",\r\n        \"is_in_name\": false,\r\n        \"is_to_change_in_card\": true,\r\n        \"is_preview\": false,\r\n        \"is_filter\": true,\r\n        \"is_analog\": false\r\n    },\r\n    {\r\n        \"website_guid\": \"e4d2143a-de6f-11e7-a3f6-e61f13537e43\",\r\n        \"nomenclature_guid\": \"1278bcb7-95cc-11df-bfea-e61f13537e43\",\r\n        \"property_guid\": \"72c49fe6-977d-11e2-9910-e61f13537e43\",\r\n        \"value\": 10,\r\n        \"value_type\": \"Число\",\r\n        \"is_in_name\": false,\r\n        \"is_to_change_in_card\": true,\r\n        \"is_preview\": false,\r\n        \"is_filter\": true,\r\n        \"is_analog\": false\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/table/import/properties-values"
+      },
+      "response": []
+    }
+  ]
+}

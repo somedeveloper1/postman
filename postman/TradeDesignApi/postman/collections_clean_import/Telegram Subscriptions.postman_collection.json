@@ -1,0 +1,50 @@
+{
+  "info": {
+    "_postman_id": "43c4d587-ce3c-4812-b227-e757952ea550",
+    "name": "Telegram Subscriptions",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Telegram Subscriptions Subscribe",
+      "id": "bba04a5e-9946-40e6-acd4-0e2d6fae4e8a",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2NzkzODg5NjksImV4cCI6MTY3OTk5Mzc2OSwibmJmIjoxNjc5Mzg4OTY5LCJqdGkiOiJJWUZHQm5mdXVmVFBkcVhpIiwic3ViIjo0MiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.Nca-tSSbQfYuSBIaor-efK2AprFzpknf-EIREecSzTg",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"table\": \"balance\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/dealers/telegram-subscriptions/subscribe",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "dealers",
+            "telegram-subscriptions",
+            "subscribe"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

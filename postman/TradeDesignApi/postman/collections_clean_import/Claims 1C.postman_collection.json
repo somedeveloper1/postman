@@ -1,0 +1,161 @@
+{
+  "info": {
+    "_postman_id": "2892b8f0-0b86-40ce-af17-0b3f9199b9c6",
+    "name": "Claims 1C",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Claims 1C Import",
+      "id": "aadc9b96-dcea-49df-9dac-d61d5e94b446",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Transfer-Id",
+            "value": "202404101205",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n\t{\r\n\t\t\"guid\": \"3231a19a-d90c-11ed-9552-e61f13537e43\",\r\n\t\t\"is_processed\": true,\r\n\t\t\"number\": \"000000388\",\r\n\t\t\"date\": \"2023-04-12T14:01:56\",\r\n\t\t\"status\": \"ОтказМеханическоеПовреждение\",\r\n\t\t\"organization_guid\": \"db95313f-dd79-11dd-b60c-001a6498e70d\",\r\n\t\t\"realization_guid\": \"d2b04523-b280-11ed-98c9-e61f13537e43\",\r\n\t\t\"department_guid\": \"0dca3fc5-997a-11df-8da0-e61f13537e43\",\r\n\t\t\"comment\": null,\r\n\t\t\"start_date\": \"0001-01-01T00:00:00\",\r\n\t\t\"nomenclature_guid\": \"e87d5759-8a8e-11ec-a276-e61f13537e43\",\r\n\t\t\"realization_number\": \"К/В/230227/00027\",\r\n\t\t\"realization_date\": \"2023-02-27T00:00:00\",\r\n\t\t\"service_life\": null,\r\n\t\t\"description\": \"Не происходит запайка пакета\",\r\n\t\t\"zip_required\": null,\r\n\t\t\"decision\": \"необходимо приложить документы, фото, видео. список документов указан на портале\\n\\nданные не были предоставленны\",\r\n\t\t\"supplier_guid\": \"00000000-0000-0000-0000-000000000000\",\r\n\t\t\"purchase_document_number\": null,\r\n\t\t\"requirements\": null,\r\n\t\t\"client_claim_date\": \"2023-04-12T00:00:00\",\r\n\t\t\"service_comment\": null,\r\n\t\t\"responsible_guid\": \"525929d2-faed-11e9-9411-e61f13537e43\",\r\n\t\t\"initiator_guid\": \"6553dd64-326c-11ed-a2c8-e61f13537e43\",\r\n\t\t\"employee_guid\": \"525929d2-faed-11e9-9411-e61f13537e43\",\r\n\t\t\"contact_details\": \"Имя контакта: Вьюнник Сергей,\\nДолжность: Менеджер,\\nТелефон: +7 (985) 413-33-02,\\nemail: s.vyunnik@t-d.ru\",\r\n\t\t\"counterparty_guid\": \"d86f08ce-e024-11e0-a198-e61f13537e43\",\r\n\t\t\"number_lk\": \"lk-b21fa6fa54-001681286589\",\r\n\t\t\"claim_date\": \"2023-04-11T00:00:00\",\r\n\t\t\"launch_date\": \"2023-03-03T00:00:00\",\r\n\t\t\"branch_counterparty_guid\": \"00000000-0000-0000-0000-000000000000\",\r\n\t\t\"version_date\": \"2023-05-11T11:11:03\",\r\n\t\t\"version_number\": 7\r\n\t}\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/table/import/claims-1c",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "table",
+            "import",
+            "claims-1c"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Claims 1C Import PROD",
+      "id": "57893edd-b240-4ff8-8e7c-c000fa8dd9ff",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"counterparty_guid\": \"92da3c45-52fe-11ea-a53f-e61f13537e43\",\r\n        \"organization_guid\": \"db95313f-dd79-11dd-b60c-001a6498e70d\",\r\n        \"realization_number\": \"К/В/210906/00112\",\r\n        \"realization_guid\": \"bcaae2ab-0650-11ec-a276-e61f13537e43\",\r\n        \"nomenclature_guid\": \"dca56462-b582-11ea-9de4-e61f13537e43\",\r\n        \"description\": \"ЗИП поступил правильный, клиент ошибся с артикулом при заказе.\",\r\n        \"guid\": \"4deb2baa-1c79-11ec-a276-e61f13537e43\",\r\n        \"number\": \"К/В/21099\",\r\n        \"date\": \"2021-09-23 17:27:20\",\r\n        \"status\": \"ОтказНеГарантийныйСлучай\",\r\n        \"department_guid\": \"7a1d4859-63eb-11e3-9b80-e61f13537e43\",\r\n        \"comment\": \"24.09 запрос фото щильда, к которому приобретался ЗИП\",\r\n        \"start_date\": \"2021-09-23 00:00:00\",\r\n        \"realization_date\": \"2021-09-06 00:00:00\",\r\n        \"service_life\": null,\r\n        \"decision\": \"По накладной DL00001555 Вам продан распределитель – 0C8663 (старый код 0C6406).\\nНа Вашем фото изображён именно он. В рекламации отказано. Если нужен распределитель с двумя клапанами, то заказывается распределитель 0C6225 (старый код 0C6374).\",\r\n        \"supplier_guid\": \"892e2012-deda-11e9-9101-e61f13537e43\",\r\n        \"purchase_document_number\": null,\r\n        \"requirements\": null,\r\n        \"claim_date\": \"0001-01-01 00:00:00\",\r\n        \"service_comment\": null,\r\n        \"contact_details\": null,\r\n        \"responsible_guid\": \"525929d2-faed-11e9-9411-e61f13537e43\",\r\n        \"initiator_guid\": \"00000000-0000-0000-0000-000000000000\",\r\n        \"employee_guid\": \"00000000-0000-0000-0000-000000000000\"\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_prod}}/api/table/import/claims-1c",
+          "protocol": "https",
+          "host": [
+            "api",
+            "t-d",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "table",
+            "import",
+            "claims-1c"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Claims 1C",
+      "id": "152e7627-fbc3-49c1-bdb1-77b986ef354d",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/claims-1c",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "claims-1c"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Claim 1C",
+      "id": "2a9eed52-c57c-4689-af8c-01e0ddae5759",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NDE4ODY2MTQsImV4cCI6MTY0MTk3MzAxNCwibmJmIjoxNjQxODg2NjE0LCJqdGkiOiJvNzJVRFJPTHpHWTFhN0lqIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.AZPco7BBL7gk-IT_XKMBUk3bxyFgsoV_bsOHz8kKOzg",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/claims-1c/info/73",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "claims-1c",
+            "info",
+            "73"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

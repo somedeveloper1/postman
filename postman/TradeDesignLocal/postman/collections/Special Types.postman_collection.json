@@ -1,0 +1,132 @@
+{
+  "info": {
+    "_postman_id": "33eac36d-ceb1-48be-a886-af481ce01bd9",
+    "name": "Special Types",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Special Types",
+      "id": "de762a13-5ab5-4737-ae4b-30cc8930c7bc",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzAzMjE2MDcsImV4cCI6MTYzMDMyNTIwNywibmJmIjoxNjMwMzIxNjA3LCJqdGkiOiJTWUhmQUtiZVJSVGtxUHExIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Xbn17DzhE50iqC75vHaWbwpIlkf4JHPMVMfJpPQO_nI",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/special-types"
+      },
+      "response": []
+    },
+    {
+      "name": "Special Type Create",
+      "id": "c19671ae-44a9-48bc-bb36-ed70b6d656a6",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzAzMjE2MDcsImV4cCI6MTYzMDMyNTIwNywibmJmIjoxNjMwMzIxNjA3LCJqdGkiOiJTWUhmQUtiZVJSVGtxUHExIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Xbn17DzhE50iqC75vHaWbwpIlkf4JHPMVMfJpPQO_nI",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"guid\": \"1\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/special-type/submit"
+      },
+      "response": []
+    },
+    {
+      "name": "Special Types Import",
+      "id": "b35dffcc-b1a1-407a-8274-9225f295897f",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Transfer-ID",
+            "value": "1",
+            "type": "text"
+          },
+          {
+            "key": "Package-Number",
+            "value": "2",
+            "type": "text"
+          },
+          {
+            "key": "Full-Import",
+            "value": "false",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"guid\": \"bddb69bd-1f20-11e5-8e3a-e61f13537e43\",\r\n        \"name\": \"Акция 30\"\r\n    },\r\n    {\r\n        \"guid\": \"c6b72dc7-14b7-11e9-869d-e61f13537e43\",\r\n        \"name\": \"Оверсток\"\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/table/import/special-types"
+      },
+      "response": []
+    },
+    {
+      "name": "Special Types Import PROD",
+      "id": "95bc1edc-8942-4f0b-a9a1-7b6b9d0fb916",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"guid\": \"bddb69bd-1f20-11e5-8e3a-e61f13537e43\",\r\n        \"name\": \"Акция 30\"\r\n    },\r\n    {\r\n        \"guid\": \"c6b72dc7-14b7-11e9-869d-e61f13537e43\",\r\n        \"name\": \"Оверсток\"\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_prod}}/api/table/import/special-types"
+      },
+      "response": []
+    }
+  ]
+}

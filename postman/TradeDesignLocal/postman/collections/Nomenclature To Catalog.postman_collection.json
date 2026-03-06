@@ -1,0 +1,93 @@
+{
+  "info": {
+    "_postman_id": "232e8041-3931-4596-af62-c8d942c168b1",
+    "name": "Nomenclature To Catalog",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Nomenclature To Catalog",
+      "id": "04cc2856-41be-4e59-b8aa-c00dc8be515f",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzA0OTQwNjYsImV4cCI6MTYzMDQ5NzY2NiwibmJmIjoxNjMwNDk0MDY2LCJqdGkiOiJKMkc2QmxzNmdiMk02UnF1Iiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.7GkaBazjrjNxgrEK8cvUv1-S7OeX3aDF2B5z9ypgYmM",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/nomenclature-to-catalog"
+      },
+      "response": []
+    },
+    {
+      "name": "Nomenclature To Catalog Create",
+      "id": "b1e17543-fd91-4f15-8024-46ee6a3ad639",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzA0OTQwNjYsImV4cCI6MTYzMDQ5NzY2NiwibmJmIjoxNjMwNDk0MDY2LCJqdGkiOiJKMkc2QmxzNmdiMk02UnF1Iiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.7GkaBazjrjNxgrEK8cvUv1-S7OeX3aDF2B5z9ypgYmM",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \r\n    \"nomenclature_guid\": \"1\",\r\n    \"website_guid\": \"1\",\r\n    \"catalog_guid\": \"1\",\r\n    \"vendore_code\": \"123456\",  \r\n    \"name\": \"nomenclature to catalog 1\",\r\n    \"is_description_html\": false,\r\n    \"description\": \"my description 1\",\r\n    \"is_load_to_website\": false,\r\n    \"is_load_to_website_special\": false\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/nomenclature-to-catalog/submit"
+      },
+      "response": []
+    },
+    {
+      "name": "Nomenclature To Catalog Import",
+      "id": "716519bf-d4be-4bb2-a731-ab5a52fe1e12",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Transfer-Id",
+            "value": "202206291542",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"website_guid\": \"cbbafb01-2cee-11e7-a9eb-e61f13537e43\",\r\n        \"nomenclature_guid\": \"d84773d0-9582-11df-bfea-e61f13537e43\",\r\n        \"vendore_code\": \"\",\r\n        \"catalog_guid\": \"7c4a9005-ab14-11e6-826a-e61f13537e43\",\r\n        \"name\": \"\",\r\n        \"is_description_html\": false,\r\n        \"description\": \"<body>Тестирование2</body>\",\r\n        \"is_load_to_website\": true,\r\n        \"is_load_to_website_special\": false,\r\n        \"is_hit_of_sales\": true,\r\n        \"is_for_ads\": true,\r\n        \"priority_for_ad_guid\": \"123456789\",\r\n        \"is_carousel\": true\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/table/import/nomenclature-to-catalog"
+      },
+      "response": []
+    }
+  ]
+}

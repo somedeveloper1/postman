@@ -1,0 +1,337 @@
+﻿{
+  "info": {
+    "_postman_id": "f3d7f524-a95d-4130-b3d0-efeff4a4e325",
+    "name": "User PROD",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Update PROD",
+      "id": "061b2121-ade1-4936-a16d-215aca9c07d2",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "_METHOD",
+            "value": "PATCH",
+            "type": "text",
+            "disabled": true
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n        \"last_name\": \"1C-developers\",\r\n        \"second_name\": \"1C-developers\",\r\n        \"user_id\": 1\r\n    }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_prod}}/api/auth/update",
+          "protocol": "https",
+          "host": [
+            "api",
+            "t-d",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "auth",
+            "update"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete PROD",
+      "id": "8101b0ba-6066-4076-8857-0d24b9aa04a1",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"user_id\": 4\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_prod}}/api/auth/delete/4",
+          "protocol": "https",
+          "host": [
+            "api",
+            "t-d",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "auth",
+            "delete",
+            "4"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Login PROD",
+      "id": "b53ec845-6796-4078-8dc1-37042954006d",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "email",
+              "value": "admin@t-d.ru",
+              "type": "text"
+            },
+            {
+              "key": "password",
+              "value": "TD123456789",
+              "type": "text"
+            },
+            {
+              "key": "user_id",
+              "value": "3",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "{{base_url_prod}}/api/auth/login",
+          "protocol": "https",
+          "host": [
+            "api",
+            "t-d",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "auth",
+            "login"
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "149a905e-6f5c-4c6c-b3c5-e431f1f22129",
+          "name": "Default",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "email",
+                  "value": "lyuolka@mail.ru",
+                  "type": "text"
+                },
+                {
+                  "key": "password",
+                  "value": "{{auth_password}}",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password=123456789",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "auth-jwt",
+                "login"
+              ],
+              "query": [
+                {
+                  "key": "email",
+                  "value": "lyoulka@mail.ru"
+                },
+                {
+                  "key": "password",
+                  "value": "{{auth_password}}"
+                }
+              ]
+            }
+          },
+          "_postman_previewlanguage": null,
+          "header": null,
+          "cookie": [],
+          "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+        }
+      ]
+    },
+    {
+      "name": "Logout PROD",
+      "id": "ec0ac28c-0791-45c8-8ecc-15ba21160139",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2Mjk0NDM0NjgsImV4cCI6MTYyOTQ0NzA2OCwibmJmIjoxNjI5NDQzNDY4LCJqdGkiOiJ3NTkyVjRVSUduTUkyREMzIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.PPDNSrdBpn644pjuu74dEmwqQi5a_eRzWZUvXDlUlBk",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_prod}}/api/auth/logout",
+          "protocol": "https",
+          "host": [
+            "api",
+            "t-d",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "auth",
+            "logout"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Register PROD",
+      "id": "7465fc42-b4d0-42e9-96c9-3c295c9cbbb9",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n \"user_id\": 3,\r\n \"login\": \"td_admin\",\r\n \"password_original\": \"TD123456789\",\r\n \"name\": \"Admin\",\r\n \"email\": \"admin@t-d.ru\",\r\n \"role\": \"admin\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_prod}}/api/auth/register",
+          "protocol": "https",
+          "host": [
+            "api",
+            "t-d",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "auth",
+            "register"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update password PROD",
+      "id": "1379cb16-9c21-4757-91a7-b89242e20cb1",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTY0NzU4MzEwNCwiZXhwIjoxNjQ4MTg3OTA0LCJuYmYiOjE2NDc1ODMxMDQsImp0aSI6ImhUdE9xclY0WmtMcWxnbFoiLCJzdWIiOjYzOSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.JmrRucsRztDGZabfvUEMMWpQ9ANxrGTYd0K8TDh9utQ",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "_method",
+              "value": "PATCH",
+              "type": "text"
+            },
+            {
+              "key": "password",
+              "value": "Torgariada2",
+              "type": "text"
+            },
+            {
+              "key": "password_original",
+              "value": "987654321987654321",
+              "type": "text",
+              "disabled": true
+            },
+            {
+              "key": "STORED_HASH",
+              "value": "stored_hash",
+              "type": "text",
+              "disabled": true
+            },
+            {
+              "key": "user_id",
+              "value": "1515",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "{{base_url_prod}}/api/auth/password-update",
+          "protocol": "https",
+          "host": [
+            "api",
+            "t-d",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "auth",
+            "password-update"
+          ],
+          "query": [
+            {
+              "key": "password",
+              "value": "987654321",
+              "disabled": true
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

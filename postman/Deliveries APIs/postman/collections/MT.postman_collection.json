@@ -1,0 +1,322 @@
+{
+  "info": {
+    "_postman_id": "4afcdfb9-a8f0-43be-a710-696583cf3268",
+    "name": "MT",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Old Api",
+      "item": [
+        {
+          "name": "Cities List",
+          "id": "1ef20251-6df2-4577-8035-0a3718aae01b",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://magic-trans.ru/api/v1/dictionary/getCityList/",
+              "protocol": "https",
+              "host": [
+                "magic-trans",
+                "ru"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "dictionary",
+                "getCityList",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Cities Delivery",
+          "id": "1d3f6506-3cde-4f0c-8e1a-b07fedd52531",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://magic-trans.ru/api/v1/delivery/CityDelivery?from=121&to=185654",
+              "protocol": "http",
+              "host": [
+                "magic-trans",
+                "ru"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "delivery",
+                "CityDelivery"
+              ],
+              "query": [
+                {
+                  "key": "from",
+                  "value": "121"
+                },
+                {
+                  "key": "to",
+                  "value": "185654"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Packages List",
+          "id": "c14297c6-f8fd-46a8-987f-d2b0f7bf9395",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://magic-trans.ru/api/v1/dictionary/getPackageList",
+              "protocol": "http",
+              "host": [
+                "magic-trans",
+                "ru"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "dictionary",
+                "getPackageList"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delivery Calculate",
+          "id": "47924a44-ba8e-448b-afd5-0f8190882be9",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://magic-trans.ru/api/v1/delivery/calculate.json?from=121&to=3161&regime=N&price=10000&package=15909&items[0][volume]=10&items[0][weight]=100",
+              "protocol": "https",
+              "host": [
+                "magic-trans",
+                "ru"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "delivery",
+                "calculate.json"
+              ],
+              "query": [
+                {
+                  "key": "from",
+                  "value": "121"
+                },
+                {
+                  "key": "to",
+                  "value": "3161"
+                },
+                {
+                  "key": "regime",
+                  "value": "N"
+                },
+                {
+                  "key": "price",
+                  "value": "10000"
+                },
+                {
+                  "key": "package",
+                  "value": "15909"
+                },
+                {
+                  "key": "items[0][volume]",
+                  "value": "10"
+                },
+                {
+                  "key": "items[0][weight]",
+                  "value": "100"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "32780925-93f3-46bd-9a9a-b9dcd817336e"
+    },
+    {
+      "name": "Actual Api",
+      "item": [
+        {
+          "name": "Auth",
+          "item": [
+            {
+              "name": "Get Access Token",
+              "id": "72c4e050-7ca7-4664-851c-f360fbc89280",
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Token",
+                    "value": "{{mt_token}}",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "https://api.magic-trans.ru/prc/hs/SecurityAPI/access",
+                  "protocol": "https",
+                  "host": [
+                    "api",
+                    "magic-trans",
+                    "ru"
+                  ],
+                  "path": [
+                    "prc",
+                    "hs",
+                    "SecurityAPI",
+                    "access"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Get Refresh Token",
+              "id": "37cc96af-4e8d-4dd0-a918-8e30b4b17ae9",
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Token",
+                    "value": "{{mt_token}}",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "https://api.magic-trans.ru/prc/hs/SecurityAPI/refresh",
+                  "protocol": "https",
+                  "host": [
+                    "api",
+                    "magic-trans",
+                    "ru"
+                  ],
+                  "path": [
+                    "prc",
+                    "hs",
+                    "SecurityAPI",
+                    "refresh"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ],
+          "id": "2bead078-f254-4066-b635-ea83f5ffdf4a"
+        },
+        {
+          "name": "Get Territories",
+          "id": "f213ed1a-287b-41f3-bc30-d4bb11f7bf61",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Token",
+                "value": "{{mt_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://dev-api.magic-trans.ru/prc/hs/EcommAPI/v1/territory",
+              "protocol": "http",
+              "host": [
+                "dev-api",
+                "magic-trans",
+                "ru"
+              ],
+              "path": [
+                "prc",
+                "hs",
+                "EcommAPI",
+                "v1",
+                "territory"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Terminals",
+          "id": "f7d6fe77-8dc2-455c-abed-c5c7042c3838",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Token",
+                "value": "{{mt_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://api.magic-trans.ru/prc/hs/EcommAPI/v1/terminal",
+              "protocol": "https",
+              "host": [
+                "api",
+                "magic-trans",
+                "ru"
+              ],
+              "path": [
+                "prc",
+                "hs",
+                "EcommAPI",
+                "v1",
+                "terminal"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Calculator",
+          "id": "f0fde368-05dc-4cac-a01f-86a681cbe7ca",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Token",
+                "value": "{{mt_token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n\t\"from\": {\r\n\t\t\"city\": \"8a384412-a37e-11e3-8b98-0025906bd0d3\",\r\n\t\t\"address\": \"Белокаменное шоссе, 6Ю\",\r\n\t\t\"pickupDate\": \"2025-11-24\",\r\n        \"lat\": \"\",\r\n        \"lon\": \"\"\r\n\t},\r\n\t\"to\": {\r\n\t\t\"city\": \"d5dbe852-bf04-11e3-9e90-0025906bd0d3\",\r\n        \"terminal\": \"41ad5e61-183c-11eb-80d6-0050568bf1b4\",\r\n\t\t\"address\": \"Большая Казачья, 113/38\",\r\n        \"lat\": \"\",\r\n        \"lon\": \"\"\r\n\t},\r\n\t\"options\": {\r\n\t\t\"fromTerminal\": false,\r\n\t\t\"sensitiveCargo\": true,\r\n\t\t\"additionalPackage\": true,\r\n\t\t\"toTerminal\": false,\r\n\t\t\"toSupermarket\": false\r\n\t},\r\n\t\"cargo\": {\r\n\t\t\"quantity\": 1,\r\n\t\t\"weight\": 80,\r\n\t\t\"volume\": 0.000277,\r\n\t\t\"length\": 0.835,\r\n\t\t\"width\": 0.395,\r\n\t\t\"height\": 0.84,\r\n\t\t\"price\": 84890.02\r\n\t}\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://api.magic-trans.ru/prc/hs/EcommAPI/v1/calculator",
+              "protocol": "https",
+              "host": [
+                "api",
+                "magic-trans",
+                "ru"
+              ],
+              "path": [
+                "prc",
+                "hs",
+                "EcommAPI",
+                "v1",
+                "calculator"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "60a36669-3533-4d07-86c3-ce8003c37be0"
+    }
+  ]
+}

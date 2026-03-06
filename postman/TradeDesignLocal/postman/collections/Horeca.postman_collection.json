@@ -1,0 +1,2699 @@
+{
+  "info": {
+    "_postman_id": "c92b4b1d-16f8-4c83-a593-49e49e56d49a",
+    "name": "Horeca",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Products",
+      "item": [
+        {
+          "name": "Get Products",
+          "id": "9568bc1e-3072-4e89-a171-a3937fda0062",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-Branch-Id",
+                "value": "1",
+                "type": "text"
+              }
+            ],
+            "url": "{{base_url_prod}}/api-horeca/products?codes[]=00000416566&codes[]=00000348275"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Products Viewed",
+          "id": "e7f736d5-0a30-43b8-9980-ea38f335e0a1",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api-horeca/products/viewed"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Product Analogues",
+          "id": "c4fa6c49-9fc7-47ba-bd9b-c088c4db0e29",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api-horeca/products/85254b58-c8dc-49be-9c3f-673f4c1fe119/analogues"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Products Prices",
+          "id": "55bd3089-2919-44e8-8f6c-aed62b43fbab",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api-horeca/products/prices"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Products For Sitemap",
+          "id": "dc18f4ab-51a5-4436-a16a-df8c1ed52ad2",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api-horeca/products-for-sitemap"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Products Strapi",
+          "id": "5d7b4fe8-7030-4839-944c-d07fc7dd8714",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api-horeca/products/strapi"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Products Count",
+          "id": "00f4da27-2c49-45a6-b0ad-29f7ef0d595a",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api-horeca/products-count"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Product",
+          "id": "c9b4c840-00de-4063-b4af-0e12e3d9771c",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api-horeca/product/000a76af-89bd-11ec-a276-e61f13537e43"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Product Balance",
+          "id": "516a0095-f714-4b44-8430-92f803941077",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-Branch-Id",
+                "value": "1",
+                "type": "text"
+              }
+            ],
+            "url": "{{base_url_prod}}/api-horeca/product/c9a82ca8-3289-11ed-a2c8-e61f13537e43/balance"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Product Pim Fields",
+          "id": "397d9df8-c6cc-4f68-93cc-809abb10c12d",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api-horeca/product/000a76af-89bd-11ec-a276-e61f13537e43/pim-fields"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Product Reviews",
+          "id": "c4dabf71-c4c1-4b4c-b9c6-6a3a6717eca1",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api-horeca/product/000a76af-89bd-11ec-a276-e61f13537e43/reviews"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Product Linked",
+          "id": "3123e1bf-094a-40f7-9df4-dd763dbdbc62",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api-horeca/products/linked/00eac48e-9e7c-11ee-ac2a-0050568e3182?link_types[]=Запчасть&link_types[]=Аналог&link_types[]=СопутствующийТовар"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Product Accessories",
+          "id": "b49f1476-02d3-46dc-9578-e0f0f878a865",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api-horeca/products/linked/00eac48e-9e7c-11ee-ac2a-0050568e3182?link_types[]=Запчасть&link_types[]=Аналог&link_types[]=СопутствующийТовар"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Products Union",
+          "id": "0db97cb8-7377-4291-a96a-de08c4a169bc",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-Branch-Id",
+                "value": "1",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"parents_only\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api-horeca/products/7977c798-cc8f-11ed-a66b-e61f13537e43/union"
+          },
+          "response": [
+            {
+              "id": "ce23631c-3565-43d9-805a-925c78a28d59",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email={{auth_email}}&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "{{auth_email}}"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"{{access_token}}\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"{{auth_email}}\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Get Product Linked Ka And Wo",
+          "id": "2d48e7e4-2b49-48b1-9e05-0dd47b04a6f0",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api-horeca/linked/00eac48e-9e7c-11ee-ac2a-0050568e3182?link_types[]=Запчасть&link_types[]=Аналог&link_types[]=СопутствующийТовар"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Product Linked Accessories",
+          "id": "360b74c2-77cb-4e93-ba2a-56431f93159d",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api-horeca/linked/00eac48e-9e7c-11ee-ac2a-0050568e3182?link_types[]=Запчасть&link_types[]=Аналог&link_types[]=СопутствующийТовар"
+          },
+          "response": []
+        }
+      ],
+      "id": "209ef73b-326f-40c3-8781-b1463f1f5d3e"
+    },
+    {
+      "name": "Brands",
+      "item": [
+        {
+          "name": "Get Brands",
+          "id": "7144024a-32e9-46dd-bfdf-e2b6e6bddf5f",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api-horeca/brands"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Brands For Sitemap",
+          "id": "f9a6f8a3-c539-4e37-ad96-75b73ff7fa17",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api-horeca/brands-for-sitemap"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Brand By Title Translit",
+          "id": "9110d997-0760-4576-afd5-d26b078c5c39",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api-horeca/brand/apach"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Brand By Guid",
+          "id": "18e0750a-a3a2-456f-ad76-3e6841ba5067",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api-horeca/brand-by-guid/4fd4f60e-838f-11e5-9dd2-e61f13537e43"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Brands Popular For Websites",
+          "id": "65fcddae-ce69-4d96-852d-616fee82d4c7",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api-horeca/brands-popular-for-websites"
+          },
+          "response": []
+        }
+      ],
+      "id": "a25f3c65-1875-4c2f-98ae-224f5c7d197d"
+    },
+    {
+      "name": "Reviews",
+      "item": [
+        {
+          "name": "Create Review",
+          "id": "6d70dc3c-2bdb-48a4-a6b6-e2768750eded",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\": \"\",\r\n    \"nomenclature_guid\": \"\",\r\n    \"message\": \"\",\r\n    \"rate\": 0,\r\n    \"name\": \"test\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api-horeca/reviews/create"
+          },
+          "response": []
+        },
+        {
+          "name": "Update Review",
+          "id": "dbcd3be3-259f-4e5e-a35e-ec91662b5818",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"message\": \"\",\r\n    \"rate\": 0,\r\n    \"name\": \"test\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api-horeca/reviews/1/update"
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Review",
+          "id": "b74edc23-e441-476e-a33c-bddf5a4781e0",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": "{{base_url_local}}/api-horeca/reviews/1/delete"
+          },
+          "response": []
+        }
+      ],
+      "id": "0500e4a7-91f4-459b-b295-6475ad3a2f23"
+    },
+    {
+      "name": "Brand Lines",
+      "item": [
+        {
+          "name": "Get Brand Lines By Brand",
+          "id": "8360d0d5-efb3-4e21-8a57-2d0fb8f09876",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api-horeca/brand-lines/aedf37c3-9bcc-11e0-9496-e61f13537e43"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Brand Lines For Sitemap",
+          "id": "00db23ae-149a-44b0-8c3e-54ce97a7a7a1",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api-horeca/brand-lines-for-sitemap"
+          },
+          "response": []
+        }
+      ],
+      "id": "79fa03bb-64ff-42b9-bab3-e41dcb2434f4"
+    },
+    {
+      "name": "Categories",
+      "item": [
+        {
+          "name": "Get Categories",
+          "id": "b17fa133-c5fb-4b67-9b7d-5e4deda8b4f9",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api-horeca/categories"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Categories For Sitemap",
+          "id": "e1020eb4-e2f2-46b0-a552-7f754514e401",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api-horeca/categories-for-sitemap"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Category By Title",
+          "id": "d7d66595-446d-44ae-9409-82ccbb9b4fb0",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api-horeca/category/magaziny-i-kafe-na-azk"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Categories By Brand New",
+          "id": "80877834-d8e4-4be0-9d90-013863b2a448",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api-horeca/categories/by-brands-new/aedf37c3-9bcc-11e0-9496-e61f13537e43"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Categories By Brand",
+          "id": "bf2137a4-359f-487e-b5ea-b571b6f2435e",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api-horeca/categories/by-brands/aedf37c3-9bcc-11e0-9496-e61f13537e43"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Category By Id",
+          "id": "288ce9b0-7ff2-4adc-b616-42e48cdd3e6a",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api-horeca/category-by-id/3"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Categories New",
+          "id": "9103aa8c-9986-49b5-b56a-ea18f9be1e4d",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api-horeca/new-categories"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Categories First Level",
+          "id": "59e619f0-e2ef-44a1-bd7e-dc03f73b38c2",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api-horeca/first-level-categories"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Categories Short",
+          "id": "2a71ea95-86f0-46c6-95c5-5cdae3b8dcce",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api-horeca/categories-short"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Catalog Assignments",
+          "id": "bc51e8ad-6778-47d1-8bd4-60a98912b3a3",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api-horeca/catalog-assignments"
+          },
+          "response": []
+        }
+      ],
+      "id": "e6a79256-4c8f-4ca6-bf35-79247ebddf36"
+    },
+    {
+      "name": "Filters",
+      "item": [
+        {
+          "name": "Get Categories For FIlter",
+          "id": "1413c82b-a090-496f-aaa8-67227bff4dcc",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api-horeca/filters/categories"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Brand Lines For Filters",
+          "id": "b4a3a1c8-bef5-4c41-858d-999a5139b157",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api-horeca/filters/brand-lines"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Brands For Filters",
+          "id": "9f6e8bda-6f87-4b3e-abab-145d2679c677",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api-horeca/filters/brands"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Countries For Filters",
+          "id": "fb05e470-760c-413b-b75d-4e314b66e09c",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api-horeca/filters/countries"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Prices For Filters",
+          "id": "bd5a8790-0bad-4cc7-aafa-eb70678e3f3e",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api-horeca/filters/prices"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Properties For Filters",
+          "id": "b52a89e4-d4e8-4ad5-a81a-2e8bc1a47f3c",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api-horeca/filters/properties"
+          },
+          "response": []
+        }
+      ],
+      "id": "ea86773b-1a47-4b15-b522-7ab90d8f713b"
+    },
+    {
+      "name": "Branches For Websites",
+      "item": [
+        {
+          "name": "Get Branches For Websites",
+          "id": "d74bfd16-3846-4b57-92b5-f331ef83341a",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api-horeca/branches-for-websites"
+          },
+          "response": []
+        }
+      ],
+      "id": "5ec2bdc3-9980-4198-ba7d-23ee4efa5018"
+    },
+    {
+      "name": "Regions For Websites",
+      "item": [
+        {
+          "name": "Get Regions For Websites",
+          "id": "e8ff8160-7efd-4c9b-9096-f4002550eefa",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api-horeca/regions-for-websites"
+          },
+          "response": []
+        }
+      ],
+      "id": "af06c625-783d-4e89-8820-d0654e86c06b"
+    },
+    {
+      "name": "Consultation Request",
+      "item": [
+        {
+          "name": "Consultation Request Submit",
+          "id": "77d66a43-ec88-4699-8ce4-908e2db371ea",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "X-Branch-Id",
+                "value": "2",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"element_guid\": \"00e01220-9571-11df-b3e0-e61f135382c7\",\r\n    \"message\": \"check\",\r\n    \"discount\": 2,\r\n    \"amount\": 2,\r\n    \"name\": \"Юрий\",\r\n    \"phone\": \"89085444123\",\r\n    \"type\": \"discount\",\r\n    \"email\": \"{{auth_email}}\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api-horeca/consultation-request/submit"
+          },
+          "response": [
+            {
+              "id": "8d7afd6d-f544-4334-b5d8-5fd1600c7cf0",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email={{auth_email}}&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "{{auth_email}}"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"{{access_token}}\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"{{auth_email}}\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        }
+      ],
+      "id": "48b0cd65-b5a1-4014-a933-235923b1c91d"
+    },
+    {
+      "name": "Report Issue",
+      "item": [
+        {
+          "name": "Report Issue Create",
+          "id": "724e2ef3-ef00-492b-9436-576b414b3a23",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"url\": \"url_horeca\",\r\n    \"bug_login\": \"url_bug_login\",\r\n    \"bug_text\": \"url_bug_text\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api-horeca/report-issue"
+          },
+          "response": [
+            {
+              "id": "6645abe1-bacd-47ef-8f8e-f900e61b88a8",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email={{auth_email}}&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "{{auth_email}}"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"{{access_token}}\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"{{auth_email}}\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        }
+      ],
+      "id": "0624f0ad-85f1-473b-a4cf-4d586bbb5869"
+    },
+    {
+      "name": "Product Comparison",
+      "item": [
+        {
+          "name": "Product Comparison Add",
+          "id": "0a3320a0-5714-48a9-b9a7-e828eb797132",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{access_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"guids\": [\r\n        \"9ae2d3f3-95a1-11df-bfea-e61f13537e43\",\r\n        \"a37daabb-e11b-11e1-a9e8-e61f13537e43\"\r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api-horeca/product-comparison/add"
+          },
+          "response": [
+            {
+              "id": "021f8f9f-749a-4b7b-b316-96f6c3fd3026",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email={{auth_email}}&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "{{auth_email}}"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"{{access_token}}\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"{{auth_email}}\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Product Comparison",
+          "id": "58eec284-e757-4acd-9066-ce92447d68d7",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{access_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"guids\": [\r\n        \"9ae2d3f3-95a1-11df-bfea-e61f13537e43\",\r\n        \"a37daabb-e11b-11e1-a9e8-e61f13537e43\"\r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api-horeca/product-comparison"
+          },
+          "response": [
+            {
+              "id": "d38d5647-62ef-4b5f-89b6-e9d7c579fd20",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email={{auth_email}}&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "{{auth_email}}"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"{{access_token}}\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"{{auth_email}}\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Product Comparison Count",
+          "id": "3b5ab3e9-3e2f-45ba-8498-58e19297faa3",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{access_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"guids\": [\r\n        \"9ae2d3f3-95a1-11df-bfea-e61f13537e43\",\r\n        \"a37daabb-e11b-11e1-a9e8-e61f13537e43\"\r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api-horeca/product-comparison/count"
+          },
+          "response": [
+            {
+              "id": "03b64eb0-c563-4fb0-be3b-959b60bbd46f",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email={{auth_email}}&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "{{auth_email}}"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"{{access_token}}\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"{{auth_email}}\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Product Comparison Delete",
+          "id": "fe2822fe-a1e2-4284-a407-9299606488a6",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{access_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"guids\": [\r\n        \"9ae2d3f3-95a1-11df-bfea-e61f13537e43\"\r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api-horeca/product-comparison/delete"
+          },
+          "response": [
+            {
+              "id": "e5b55085-e17d-45ff-914e-c569928590cc",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email={{auth_email}}&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "{{auth_email}}"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"{{access_token}}\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"{{auth_email}}\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Product Comparison Clear",
+          "id": "458f1374-d538-40be-ac26-77718b443062",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{access_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"guids\": [\r\n        \"9ae2d3f3-95a1-11df-bfea-e61f13537e43\"\r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api-horeca/product-comparison/clear"
+          },
+          "response": [
+            {
+              "id": "e8fe3ddc-4328-4dc5-826d-71539ea4ca5f",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email={{auth_email}}&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "{{auth_email}}"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"{{access_token}}\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"{{auth_email}}\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        }
+      ],
+      "id": "1f44e630-67f3-4ebe-90d7-0d483f05431e"
+    },
+    {
+      "name": "Auth",
+      "item": [
+        {
+          "name": "Horeca Register",
+          "id": "0fc9f71f-e4e3-49bb-9cb8-dd451e6a47df",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"password\": \"{{auth_password}}\",\r\n    \"email\": \"{{auth_email}}\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api-horeca/register"
+          },
+          "response": [
+            {
+              "id": "1c989470-4174-48f2-a46f-49cf18897cc0",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email={{auth_email}}&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "{{auth_email}}"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"{{access_token}}\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"{{auth_email}}\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Horeca Login",
+          "id": "42c11fb1-2bc3-4a6c-9105-c73faba35307",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"password\": \"{{auth_password}}\",\r\n    \"email\": \"{{auth_email}}\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api-horeca/login"
+          },
+          "response": [
+            {
+              "id": "6b32d6e9-e4a2-4760-be71-20d6a191d363",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email={{auth_email}}&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "{{auth_email}}"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"{{access_token}}\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"{{auth_email}}\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Horeca Refresh",
+          "id": "5b8eab10-effc-487c-baeb-081da8e44655",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{access_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "url": "{{base_url_local}}/api-horeca/refresh"
+          },
+          "response": [
+            {
+              "id": "19ffddd4-8a52-472a-aa34-61bb8513b447",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email={{auth_email}}&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "{{auth_email}}"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"{{access_token}}\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"{{auth_email}}\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Horeca Logout",
+          "id": "97824bb1-1abd-4e20-8393-28b683d4031a",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{access_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "url": "{{base_url_local}}/api-horeca/logout"
+          },
+          "response": [
+            {
+              "id": "6d53e4bd-7caf-4618-a84d-953e1f7fa8f7",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email={{auth_email}}&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "{{auth_email}}"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"{{access_token}}\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"{{auth_email}}\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Horeca Check Email",
+          "id": "7615dc1a-3818-4be8-b1ef-cc3fe62620f1",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{access_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\": \"{{auth_email}}\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api-horeca/check-email"
+          },
+          "response": [
+            {
+              "id": "77e78304-5600-41f9-9555-c859cd730133",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email={{auth_email}}&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "{{auth_email}}"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"{{access_token}}\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"{{auth_email}}\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Horeca Forgot Password",
+          "id": "a076fd87-3597-48c6-aed1-b2ba3e5cf579",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{access_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\": \"igorlov2604@gmail.com\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api-horeca/forgot-password"
+          },
+          "response": [
+            {
+              "id": "1c15b7f2-57aa-4dde-8e97-1c1343df0d0c",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email={{auth_email}}&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "{{auth_email}}"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"{{access_token}}\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"{{auth_email}}\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Horeca Reset Password",
+          "id": "53be5637-a905-4d0b-b44c-b3095ac7979f",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\": \"\",\r\n    \"password\": \"\",\r\n    \"password_confirmation\": \"\",\r\n    \r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api-horeca/reset-password/{token}"
+          },
+          "response": []
+        },
+        {
+          "name": "Horeca Login By Phone Send Code",
+          "id": "5f1a8a69-7e51-421c-8bf4-e10800a87bb9",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n   \"user_id\": 5462,\r\n   \"personal_phone\": \"9271239874\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api-horeca/register-by-phone/send-code"
+          },
+          "response": [
+            {
+              "id": "42114b02-3afd-4d36-92af-1e8b7bc78775",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email={{auth_email}}&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "{{auth_email}}"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"{{access_token}}\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"{{auth_email}}\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Horeca Login By Phone Confirm",
+          "id": "f2d0242d-875a-41c8-b803-cf463ed970e7",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n   \"user_id\": 5462,\r\n   \"personal_phone\": \"9271239874\",\r\n   \"code\": \"000000\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api-horeca/register-by-phone/confirm"
+          },
+          "response": [
+            {
+              "id": "e284ed0e-b91c-405e-8b87-d29fedb99606",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email={{auth_email}}&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "{{auth_email}}"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"{{access_token}}\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"{{auth_email}}\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        }
+      ],
+      "id": "7f5c7a50-6e9a-4444-9096-a26c8d5448e9"
+    },
+    {
+      "name": "User",
+      "item": [
+        {
+          "name": "Horeca User Profile",
+          "id": "750facda-19d4-4f8c-b03c-ca6aa8774500",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{access_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"parents_only\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api-horeca/user/profile"
+          },
+          "response": []
+        },
+        {
+          "name": "Horeca User Update Password",
+          "id": "9f0395f6-91a9-43ce-9539-457d0263725f",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaS10ZFwvbG9naW4iLCJpYXQiOjE3MzQ1MDQ4MDUsImV4cCI6MTczNTEwOTYwNSwibmJmIjoxNzM0NTA0ODA1LCJqdGkiOiJTRFJCQkl2cUJJVjMxcDZTIiwic3ViIjozMjY3LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.G6KG77UxRsBOJNKBbPvXy1jLbTDYYjQsPlQsBgJJnCY",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"old_password\": \"{{auth_old_password}}\",\r\n    \"password\": \"{{auth_password}}\",\r\n    \"password_confirmation\": \"{{auth_password}}\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api-horeca/user/update-password"
+          },
+          "response": []
+        },
+        {
+          "name": "Horeca User Update",
+          "id": "3ab7f874-f82a-4240-b72a-94e6372c2eec",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaS10ZFwvbG9naW4iLCJpYXQiOjE3MzQ1MDQ4MDUsImV4cCI6MTczNTEwOTYwNSwibmJmIjoxNzM0NTA0ODA1LCJqdGkiOiJTRFJCQkl2cUJJVjMxcDZTIiwic3ViIjozMjY3LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.G6KG77UxRsBOJNKBbPvXy1jLbTDYYjQsPlQsBgJJnCY",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api-horeca/user/update"
+          },
+          "response": []
+        }
+      ],
+      "id": "d8445dfc-6e42-478f-9164-c1daa674b1f7"
+    },
+    {
+      "name": "Orders",
+      "item": [
+        {
+          "name": "Horeca Orders Min Total",
+          "id": "b8a63212-c040-4410-b22b-6977b703ee0f",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTc1NTg0OTc0MCwiZXhwIjoxNzU2NDU0NTQwLCJuYmYiOjE3NTU4NDk3NDAsImp0aSI6IldQeXVYbGdFWmozeFN2WWciLCJzdWIiOjQxMTgsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.IWTqnJKwzOKmX_PNgPCPGr9GN97sNouW8v7eCPW74fU",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api-horeca/orders/min-total"
+          },
+          "response": [
+            {
+              "id": "dc4dfc1c-bbd9-4894-ae76-f25eb3232afa",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email={{auth_email}}&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "{{auth_email}}"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"{{access_token}}\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"{{auth_email}}\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Horeca Orders",
+          "id": "f0df0855-07a1-4a02-b60e-e51add3af6ca",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTc1NTg0OTc0MCwiZXhwIjoxNzU2NDU0NTQwLCJuYmYiOjE3NTU4NDk3NDAsImp0aSI6IldQeXVYbGdFWmozeFN2WWciLCJzdWIiOjQxMTgsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.IWTqnJKwzOKmX_PNgPCPGr9GN97sNouW8v7eCPW74fU",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api-horeca/orders"
+          },
+          "response": [
+            {
+              "id": "8e901618-327d-47ea-abd1-2d90f11beec8",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email={{auth_email}}&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "{{auth_email}}"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"{{access_token}}\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"{{auth_email}}\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Horeca Order by identificator",
+          "id": "8877b51c-a597-4491-acc4-e8cb7eb80519",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTc1NTg0OTc0MCwiZXhwIjoxNzU2NDU0NTQwLCJuYmYiOjE3NTU4NDk3NDAsImp0aSI6IldQeXVYbGdFWmozeFN2WWciLCJzdWIiOjQxMTgsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.IWTqnJKwzOKmX_PNgPCPGr9GN97sNouW8v7eCPW74fU",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api-horeca/orders"
+          },
+          "response": [
+            {
+              "id": "88c49e6b-63bc-479c-be24-93c34b977a1e",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email={{auth_email}}&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "{{auth_email}}"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"{{access_token}}\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"{{auth_email}}\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Horeca Orders Create",
+          "id": "0cdca25b-e5a7-43c7-b89a-14287bac4ba4",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaS1ob3JlY2FcL2xvZ2luIiwiaWF0IjoxNzcwMzY1ODExLCJleHAiOjE3NzA5NzA2MTEsIm5iZiI6MTc3MDM2NTgxMSwianRpIjoiMmFnZHk4ODNOQVh0SXhqVSIsInN1YiI6NTQ0MSwicHJ2IjoiYjQwZmI0M2JmZDIzOTNhZjVmODNjNGVmNjc1ZjA1NmM0ZGI4ZTQ4MiJ9.T96rZQCDa179xW4BL3IKcvkxq4_lZNHdB9eWucnTUoo",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"first_name\": \"Костенко\",\r\n    \"last_name\": \"Юлия\",\r\n\t\"second_name\": \"Константиновна\",\r\n    \"fio\": \"Костенко Юлия Константиновна\",\r\n    // \"email\": \"email@email.com\",\r\n\t\"contact_phone\": \"+79063098083\",\r\n\t\"website_comment\": \"Тест создания заказа по АПИ\",\r\n\t\"website_comment_by_client\": \"Тест создания заказа по АПИ\",\r\n\t\"delivery_method\": \"Самовывоз\",\r\n\t\"delivery_address\": null,\r\n    \"delivery_company\": \"test\",\r\n    \"payment_type\": \"Наличная\",\r\n\t\"products\": [\r\n\t\t{\r\n\t\t\t\"nomenclature_guid\": \"00010f32-9897-11ed-9fcc-e61f13537e43\",\r\n            \"branch_id\": 1,\r\n\t\t\t\"amount\": 1\r\n\t\t}\r\n\t]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api-horeca/orders/create"
+          },
+          "response": [
+            {
+              "id": "8eb0d1a8-0313-48bf-8d0c-add1e2a7d8ed",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email={{auth_email}}&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "{{auth_email}}"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"{{access_token}}\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"{{auth_email}}\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            },
+            {
+              "id": "4acd6a29-a960-43f6-aab0-15f6fdb6d04e",
+              "name": "TD Orders Create",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"first_name\": \"first_name\",\r\n    \"last_name\": \"last_name\",\r\n\t\"second_name\": \"second_name\",\r\n    \"email\": \"emai23l@email.com\",\r\n\t\"contact_phone\": \"+79000000000\",\r\n\t\"website_comment\": \"Тест создания заказа по АПИ\",\r\n\t\"website_comment_by_client\": \"Тест создания заказа по АПИ\",\r\n\t\"delivery_method\": \"ДоКлиента\",\r\n\t\"delivery_address\": \"101000, г. Новосибирск, ул. Новосибирская, д. 1, кв. 1\",\r\n    \"delivery_company\": \"test\",\r\n    \"payment_type\": \"Наличная\",\r\n    \"roistat_visit\": \"ТЕСТ ОТПРАВКИ В Б24\",\r\n\t\"products\": [\r\n        {\r\n            \"nomenclature_guid\": \"9ae2d3f3-95a1-11df-bfea-e61f13537e43\",\r\n            \"branch_id\": 1,\r\n            \"amount\": 1\r\n        },\r\n        {\r\n            \"nomenclature_guid\": \"9ae2d3f3-95a1-11df-bfea-e61f13537e43\",\r\n            \"branch_id\": 2,\r\n            \"amount\": 2\r\n        },\r\n        {\r\n            \"nomenclature_guid\": \"9ae2d3f3-95a1-11df-bfea-e61f13537e43\",\r\n            \"branch_id\": 3,\r\n            \"amount\": 3\r\n        }\r\n\t]\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api-td/orders/create",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api-td",
+                    "orders",
+                    "create"
+                  ],
+                  "query": [
+                    {
+                      "key": "parents_only",
+                      "value": "false",
+                      "disabled": true
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Tue, 18 Mar 2025 08:07:43 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Authorization"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "X-RateLimit-Limit",
+                  "value": "10000"
+                },
+                {
+                  "key": "X-RateLimit-Remaining",
+                  "value": "9998"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=120, max=1000"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"FIELDS\": {\n        \"TITLE\": \"Заказ с t-d.ru #td-8098097d05-001742285264\",\n        \"ASSIGNED_BY_ID\": 10463,\n        \"NAME\": \"first_name\",\n        \"LAST_NAME\": \"last_name\",\n        \"SECOND_NAME\": \"second_name\",\n        \"ADDRESS_CITY\": \"101000, г. Новосибирск, ул. Новосибирская, д. 1, кв. 1\",\n        \"COMPANY_TITLE\": \"-\",\n        \"PHONE\": [\n            {\n                \"VALUE\": \"+79000000000\",\n                \"VALUE_TYPE\": \"WORK\"\n            }\n        ],\n        \"EMAIL\": [\n            {\n                \"VALUE\": \"emai23l@email.com\",\n                \"VALUE_TYPE\": \"WORK\"\n            }\n        ],\n        \"SOURCE_ID\": \"WEB\",\n        \"OPENED\": \"Y\",\n        \"UF_CRM_1674910480\": \"ТЕСТ ОТПРАВКИ В Б24\",\n        \"UF_CRM_1678016886444\": \"Москва\",\n        \"UF_CRM_1678540229437\": 556\n    },\n    \"PARAMS\": {\n        \"REGISTER_SONET_EVENT\": \"Y\"\n    },\n    \"debug\": {\n        \"database\": {\n            \"total\": 77,\n            \"items\": [\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select count(*) as aggregate from \\\"delivery_companies\\\" where \\\"name\\\" = 'test';\",\n                    \"time\": 35.58\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select count(*) as aggregate from \\\"view_td_ka_products\\\" where \\\"guid\\\" = '9ae2d3f3-95a1-11df-bfea-e61f13537e43';\",\n                    \"time\": 13.47\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select count(*) as aggregate from \\\"view_td_ka_products\\\" where \\\"guid\\\" = '9ae2d3f3-95a1-11df-bfea-e61f13537e43';\",\n                    \"time\": 0.5\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select count(*) as aggregate from \\\"view_td_ka_products\\\" where \\\"guid\\\" = '9ae2d3f3-95a1-11df-bfea-e61f13537e43';\",\n                    \"time\": 0.39\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select count(*) as aggregate from \\\"branches_for_websites\\\" where \\\"id\\\" = '1';\",\n                    \"time\": 2.4\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select count(*) as aggregate from \\\"branches_for_websites\\\" where \\\"id\\\" = '2';\",\n                    \"time\": 0.37\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select count(*) as aggregate from \\\"branches_for_websites\\\" where \\\"id\\\" = '3';\",\n                    \"time\": 0.32\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select * from \\\"users\\\" where \\\"email\\\" = 'emai23l@email.com' and \\\"users\\\".\\\"deleted_at\\\" is null limit 1;\",\n                    \"time\": 10.8\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select exists(select * from \\\"users\\\" where \\\"counterparty_guid\\\" is null and \\\"counterparty_guid\\\" is not null and \\\"users\\\".\\\"deleted_at\\\" is null) as \\\"exists\\\";\",\n                    \"time\": 1.65\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select exists(select * from \\\"users\\\" where \\\"partner_guid\\\" is null and \\\"partner_guid\\\" is not null and \\\"users\\\".\\\"deleted_at\\\" is null) as \\\"exists\\\";\",\n                    \"time\": 1.36\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"SELECT last_value FROM users_id_seq;\",\n                    \"time\": 1.91\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select \\\"id\\\" from \\\"users\\\" where \\\"users\\\".\\\"deleted_at\\\" is null order by \\\"id\\\" desc limit 1;\",\n                    \"time\": 0.82\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"insert into \\\"users\\\" (\\\"xml_id\\\", \\\"timestamp_x\\\", \\\"login\\\", \\\"active\\\", \\\"name\\\", \\\"last_name\\\", \\\"second_name\\\", \\\"email\\\", \\\"lid\\\", \\\"personal_profession\\\", \\\"personal_www\\\", \\\"personal_icq\\\", \\\"personal_gender\\\", \\\"personal_birthday\\\", \\\"personal_photo\\\", \\\"personal_phone\\\", \\\"personal_fax\\\", \\\"personal_mobile\\\", \\\"personal_pager\\\", \\\"personal_street\\\", \\\"personal_mailbox\\\", \\\"personal_city\\\", \\\"personal_state\\\", \\\"personal_zip\\\", \\\"personal_country\\\", \\\"personal_notes\\\", \\\"work_company\\\", \\\"work_department\\\", \\\"work_position\\\", \\\"work_www\\\", \\\"work_phone\\\", \\\"work_fax\\\", \\\"work_pager\\\", \\\"work_street\\\", \\\"work_mailbox\\\", \\\"work_city\\\", \\\"work_state\\\", \\\"work_zip\\\", \\\"work_country\\\", \\\"work_profile\\\", \\\"work_logo\\\", \\\"work_notes\\\", \\\"uf_dealer_legal_entity_type\\\", \\\"uf_dealer_inn\\\", \\\"uf_dealer_address_actual\\\", \\\"uf_dealer_address_legal\\\", \\\"role_front\\\", \\\"user_groups\\\", \\\"counterparty_guid\\\", \\\"partner_guid\\\", \\\"1c_utd_guid\\\", \\\"role\\\", \\\"password\\\", \\\"password_original\\\", \\\"password_bitrix\\\", \\\"stored_hash\\\", \\\"checkword\\\", \\\"user_id\\\", \\\"updated_at\\\", \\\"created_at\\\") values ('', '', 'emai23l@email.com', '', '', 'last_name', 'second_name', 'emai23l@email.com', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'manager', '', '', '', '', 'customer', '$2y$10$bXezeOiRHvDm9ZYQb8F4KuKi3n6rt.lGOM/LIDDoqPqFxC3VG.4BS', '$2y$10$3EkNRzdbb5GNJrom9cmKiOIeqMDyCI1Xm6jvwu0iBIeExuiIlku.u', '', '', '', '3377', '2025-03-18 08:07:44', '2025-03-18 08:07:44') returning \\\"id\\\";\",\n                    \"time\": 6.14\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"insert into \\\"users_to_roles\\\" (\\\"user_id\\\", \\\"role_id\\\", \\\"updated_at\\\", \\\"created_at\\\") values ('3377', '1', '2025-03-18 08:07:44', '2025-03-18 08:07:44') returning \\\"id\\\";\",\n                    \"time\": 2.96\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select * from \\\"notifications_templates\\\" where \\\"notifications_templates\\\".\\\"id\\\" = '39' limit 1;\",\n                    \"time\": 6.35\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"SELECT last_value FROM mail_queue_id_seq;\",\n                    \"time\": 1.79\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select \\\"id\\\" from \\\"mail_queue\\\" order by \\\"id\\\" desc limit 1;\",\n                    \"time\": 4.15\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"insert into \\\"mail_queue\\\" (\\\"is_sent\\\", \\\"bcc\\\", \\\"cc\\\", \\\"template_id\\\", \\\"user_id\\\", \\\"user_guid\\\", \\\"to\\\", \\\"subject\\\", \\\"text\\\", \\\"params\\\", \\\"created_at\\\", \\\"updated_at\\\") values ('', '[{\\\"email\\\":\\\"tochnoneyura@gmail.com\\\",\\\"name\\\":\\\"tochnoneyura@gmail.com\\\"}]', '', 'website-new-user', '', '', 'emai23l@email.com', 'Вы успешно зарегистрировались на сайте t-d', '', '{\\\"company\\\":\\\"Торговый Дизайн\\\",\\\"href\\\":\\\"td.ru\\\\/login\\\\/\\\",\\\"website\\\":\\\"t-d\\\",\\\"email\\\":\\\"emai23l@email.com\\\",\\\"password\\\":\\\"qwoSonhrWr\\\",\\\"introduction\\\":\\\"Добрый день, first_name!\\\",\\\"description\\\":\\\"Вы успешно зарегистрировались на сайте t-d\\\"}', '2025-03-18 08:07:44', '2025-03-18 08:07:44') returning \\\"id\\\";\",\n                    \"time\": 1.6\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select distinct on (\\\"view_td_ka_products\\\".\\\"guid\\\") view_td_ka_products.guid,\\r\\n                view_td_ka_products.brand_guid,\\r\\n                residue_units.guid as unit_guid,\\r\\n                view_td_ka_products.nomenclature_group_guid,\\r\\n                view_td_ka_products.price,\\r\\n                view_td_ka_products.price_final,\\r\\n                view_td_ka_products.discount_total,\\r\\n                view_td_ka_products.is_cb_price,\\r\\n                view_td_ka_products.tag\\r\\n             from \\\"view_td_ka_products\\\" left join \\\"ka_nomenclature\\\" on \\\"ka_nomenclature\\\".\\\"guid\\\" = \\\"view_td_ka_products\\\".\\\"guid\\\" left join \\\"residue_units\\\" on \\\"residue_units\\\".\\\"guid\\\" = \\\"ka_nomenclature\\\".\\\"residue_units_guid\\\" where \\\"view_td_ka_products\\\".\\\"guid\\\" in ('9ae2d3f3-95a1-11df-bfea-e61f13537e43');\",\n                    \"time\": 16.62\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select * from \\\"ka_partners_from_websites\\\" where (\\\"name\\\" = 'last_name first_name second_name' and \\\"website_guid\\\" = 'f0f05268-3014-11ec-a276-e61f13537e43' and \\\"email\\\" = 'emai23l@email.com' and \\\"legal_address\\\" is null and \\\"phone\\\" = '+79000000000') limit 1;\",\n                    \"time\": 5.95\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select * from \\\"ka_partners_from_websites\\\" where (\\\"name\\\" = 'last_name first_name second_name' and \\\"website_guid\\\" = 'f0f05268-3014-11ec-a276-e61f13537e43') limit 1;\",\n                    \"time\": 0.52\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select * from \\\"ka_counterparties_from_websites\\\" where (\\\"full_name\\\" = 'last_name first_name second_name' and \\\"website_guid\\\" = 'f0f05268-3014-11ec-a276-e61f13537e43') limit 1;\",\n                    \"time\": 6.13\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select count(*) as aggregate from \\\"ka_orders\\\" where \\\"number_lk\\\" = 'td-8098097d05-001742285264';\",\n                    \"time\": 14.04\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select * from \\\"branches_for_websites\\\" where \\\"branches_for_websites\\\".\\\"id\\\" = '1' limit 1;\",\n                    \"time\": 0.82\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select * from \\\"view_td_coefficients\\\" where \\\"nomenclature_group_guid\\\" = 'cce988dd-9caa-11ed-9248-e61f13537e43';\",\n                    \"time\": 6.46\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select ka_balance.guid, SUM(amount) as amount, \\r\\n                (\\r\\n                    CASE \\r\\n                        WHEN ka_warehouses.city IS NOT NULL THEN\\r\\n                            ka_warehouses.city\\r\\n                        WHEN ka_balance.branch_guid = 'c1c89a3b-0606-11ee-8654-000c297bb3bc' THEN\\r\\n                            'Курск'\\r\\n                        ELSE\\r\\n                            'Москва'\\r\\n                    END\\r\\n                ) as city from \\\"ka_balance\\\" inner join \\\"ka_warehouses\\\" on \\\"ka_warehouses\\\".\\\"guid\\\" = \\\"ka_balance\\\".\\\"warehouse_guid\\\" and (\\\"ka_warehouses\\\".\\\"assignment\\\" in ('Торговый') or \\\"ka_warehouses\\\".\\\"guid\\\" = 'a533291f-09db-11ee-8656-000c297bb3bc') and \\\"city\\\" = 'Москва' where \\\"ka_balance\\\".\\\"guid\\\" = '9ae2d3f3-95a1-11df-bfea-e61f13537e43' group by \\\"ka_balance\\\".\\\"guid\\\", \\\"ka_warehouses\\\".\\\"city\\\", \\\"amount\\\", \\\"ka_balance\\\".\\\"branch_guid\\\";\",\n                    \"time\": 17\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select \\\"id\\\", \\\"city\\\" as \\\"name\\\" from \\\"branches_for_websites\\\" where \\\"id\\\" = '1';\",\n                    \"time\": 0.54\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select \\\"id\\\", \\\"city\\\" as \\\"name\\\" from \\\"branches_for_websites\\\" where \\\"id\\\" = '1';\",\n                    \"time\": 0.6\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select * from \\\"branches_for_websites\\\" where \\\"branches_for_websites\\\".\\\"id\\\" = '1' limit 1;\",\n                    \"time\": 0.52\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select * from \\\"websites\\\" where \\\"guid\\\" = 'f0f05268-3014-11ec-a276-e61f13537e43' limit 1;\",\n                    \"time\": 4.83\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select count(*) as aggregate from \\\"ka_orders\\\" where \\\"number_lk\\\" = 'td-38637337e5-001742285265';\",\n                    \"time\": 0.46\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select * from \\\"branches_for_websites\\\" where \\\"branches_for_websites\\\".\\\"id\\\" = '2' limit 1;\",\n                    \"time\": 0.34\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select ka_balance.guid, SUM(amount) as amount, \\r\\n                (\\r\\n                    CASE \\r\\n                        WHEN ka_warehouses.city IS NOT NULL THEN\\r\\n                            ka_warehouses.city\\r\\n                        WHEN ka_balance.branch_guid = 'c1c89a3b-0606-11ee-8654-000c297bb3bc' THEN\\r\\n                            'Курск'\\r\\n                        ELSE\\r\\n                            'Москва'\\r\\n                    END\\r\\n                ) as city from \\\"ka_balance\\\" inner join \\\"ka_warehouses\\\" on \\\"ka_warehouses\\\".\\\"guid\\\" = \\\"ka_balance\\\".\\\"warehouse_guid\\\" and (\\\"ka_warehouses\\\".\\\"assignment\\\" in ('Торговый') or \\\"ka_warehouses\\\".\\\"guid\\\" = 'a533291f-09db-11ee-8656-000c297bb3bc') and \\\"city\\\" = 'Санкт-Петербург' where \\\"ka_balance\\\".\\\"guid\\\" = '9ae2d3f3-95a1-11df-bfea-e61f13537e43' group by \\\"ka_balance\\\".\\\"guid\\\", \\\"ka_warehouses\\\".\\\"city\\\", \\\"amount\\\", \\\"ka_balance\\\".\\\"branch_guid\\\";\",\n                    \"time\": 1.6\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select \\\"id\\\", \\\"city\\\" as \\\"name\\\" from \\\"branches_for_websites\\\" where \\\"id\\\" = '2';\",\n                    \"time\": 0.66\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select \\\"id\\\", \\\"city\\\" as \\\"name\\\" from \\\"branches_for_websites\\\" where \\\"id\\\" = '2';\",\n                    \"time\": 0.57\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select * from \\\"branches_for_websites\\\" where \\\"branches_for_websites\\\".\\\"id\\\" = '2' limit 1;\",\n                    \"time\": 0.74\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select * from \\\"websites\\\" where \\\"guid\\\" = 'f0f05268-3014-11ec-a276-e61f13537e43' limit 1;\",\n                    \"time\": 0.57\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select \\\"ka_warehouses_to_organizations_to_branches\\\".*, \\\"ka_users_1c\\\".\\\"guid\\\" as \\\"user_1c_guid\\\" from \\\"ka_warehouses_to_organizations_to_branches\\\" left join \\\"ka_warehouses\\\" on \\\"ka_warehouses\\\".\\\"guid\\\" = \\\"ka_warehouses_to_organizations_to_branches\\\".\\\"warehouse_guid\\\" left join \\\"ka_organizations\\\" on \\\"ka_organizations\\\".\\\"guid\\\" = \\\"ka_warehouses_to_organizations_to_branches\\\".\\\"organization_guid\\\" left join \\\"ka_users_1c\\\" on \\\"ka_users_1c\\\".\\\"branch_guid\\\" = \\\"ka_warehouses_to_organizations_to_branches\\\".\\\"branch_guid\\\" and \\\"ka_users_1c\\\".\\\"is_not_used\\\" = '' where (\\\"ka_warehouses\\\".\\\"city\\\" = 'Санкт-Петербург' and \\\"ka_warehouses\\\".\\\"name\\\"::text ILIKE '%Основной%') and \\\"ka_warehouses\\\".\\\"city\\\" is not null limit 1;\",\n                    \"time\": 16.28\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select count(*) as aggregate from \\\"ka_orders\\\" where \\\"number_lk\\\" = 'td-b4cc008730-001742285265';\",\n                    \"time\": 0.83\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select * from \\\"branches_for_websites\\\" where \\\"branches_for_websites\\\".\\\"id\\\" = '3' limit 1;\",\n                    \"time\": 0.63\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select ka_balance.guid, SUM(amount) as amount, \\r\\n                (\\r\\n                    CASE \\r\\n                        WHEN ka_warehouses.city IS NOT NULL THEN\\r\\n                            ka_warehouses.city\\r\\n                        WHEN ka_balance.branch_guid = 'c1c89a3b-0606-11ee-8654-000c297bb3bc' THEN\\r\\n                            'Курск'\\r\\n                        ELSE\\r\\n                            'Москва'\\r\\n                    END\\r\\n                ) as city from \\\"ka_balance\\\" inner join \\\"ka_warehouses\\\" on \\\"ka_warehouses\\\".\\\"guid\\\" = \\\"ka_balance\\\".\\\"warehouse_guid\\\" and (\\\"ka_warehouses\\\".\\\"assignment\\\" in ('Торговый') or \\\"ka_warehouses\\\".\\\"guid\\\" = 'a533291f-09db-11ee-8656-000c297bb3bc') and \\\"city\\\" = 'Воронеж' where \\\"ka_balance\\\".\\\"guid\\\" = '9ae2d3f3-95a1-11df-bfea-e61f13537e43' group by \\\"ka_balance\\\".\\\"guid\\\", \\\"ka_warehouses\\\".\\\"city\\\", \\\"amount\\\", \\\"ka_balance\\\".\\\"branch_guid\\\";\",\n                    \"time\": 1.27\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select \\\"id\\\", \\\"city\\\" as \\\"name\\\" from \\\"branches_for_websites\\\" where \\\"id\\\" = '3';\",\n                    \"time\": 0.36\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select \\\"id\\\", \\\"city\\\" as \\\"name\\\" from \\\"branches_for_websites\\\" where \\\"id\\\" = '3';\",\n                    \"time\": 0.3\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select * from \\\"branches_for_websites\\\" where \\\"branches_for_websites\\\".\\\"id\\\" = '3' limit 1;\",\n                    \"time\": 0.41\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select * from \\\"websites\\\" where \\\"guid\\\" = 'f0f05268-3014-11ec-a276-e61f13537e43' limit 1;\",\n                    \"time\": 0.37\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select \\\"ka_warehouses_to_organizations_to_branches\\\".*, \\\"ka_users_1c\\\".\\\"guid\\\" as \\\"user_1c_guid\\\" from \\\"ka_warehouses_to_organizations_to_branches\\\" left join \\\"ka_warehouses\\\" on \\\"ka_warehouses\\\".\\\"guid\\\" = \\\"ka_warehouses_to_organizations_to_branches\\\".\\\"warehouse_guid\\\" left join \\\"ka_organizations\\\" on \\\"ka_organizations\\\".\\\"guid\\\" = \\\"ka_warehouses_to_organizations_to_branches\\\".\\\"organization_guid\\\" left join \\\"ka_users_1c\\\" on \\\"ka_users_1c\\\".\\\"branch_guid\\\" = \\\"ka_warehouses_to_organizations_to_branches\\\".\\\"branch_guid\\\" and \\\"ka_users_1c\\\".\\\"is_not_used\\\" = '' where (\\\"ka_warehouses\\\".\\\"city\\\" = 'Воронеж' and \\\"ka_warehouses\\\".\\\"name\\\"::text ILIKE '%Основной%') and \\\"ka_warehouses\\\".\\\"city\\\" is not null limit 1;\",\n                    \"time\": 1.46\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"insert into \\\"ka_orders\\\" (\\\"city\\\", \\\"comment\\\", \\\"contact_phone\\\", \\\"contract_guid\\\", \\\"counterparty_guid\\\", \\\"created_at\\\", \\\"created_by\\\", \\\"currency_guid\\\", \\\"date\\\", \\\"delivery_address\\\", \\\"delivery_company\\\", \\\"delivery_method\\\", \\\"department_guid\\\", \\\"end_to_end_analytical_number\\\", \\\"is_processed\\\", \\\"is_total_with_vat\\\", \\\"manager_responsible_guid\\\", \\\"number_lk\\\", \\\"organization_guid\\\", \\\"partner_contact_guid\\\", \\\"payment_type\\\", \\\"status\\\", \\\"total\\\", \\\"updated_at\\\", \\\"website_comment\\\", \\\"website_comment_by_client\\\", \\\"website_guid\\\") values ('Москва', 'Сайт: t-d.ru_new; Номер на сайте: td-8098097d05-001742285264; \\n------------------------------\\n; Способ доставки: ДоКлиента; Пункт разгрузки: 101000, г. Новосибирск, ул. Новосибирская, д. 1, кв. 1; Дата доставки: -; Служба доставки: test; Контактный телефон: +79000000000; (Москва)', '+79000000000', '00000000-0000-0000-0000-000000000000', '00000000-0000-0000-0000-000000000000', '2025-03-18 08:07:44', '3377', 'fc3c6720-0472-11ee-8654-000c297bb3bc', '2025-03-18 11:07:44', '101000, г. Новосибирск, ул. Новосибирская, д. 1, кв. 1', 'test', 'ДоКлиента', 'a9df3c46-8216-11ee-869d-000c297bb3bc', 'ТЕСТ ОТПРАВКИ В Б24', '', '', '17d7eca6-2a0b-11ee-866f-000c297bb3bc', 'td-8098097d05-001742285264', '9d22e413-a70e-11ef-86cf-000c297bb3bc', '00000000-0000-0000-0000-000000000000', 'Наличная', 'НеСогласован', '844.9', '2025-03-18 08:07:44', 'Тест создания заказа по АПИ', 'Тест создания заказа по АПИ', 'f0f05268-3014-11ec-a276-e61f13537e43'), ('Санкт-Петербург', 'Сайт: t-d.ru_new; Номер на сайте: td-38637337e5-001742285265; \\n------------------------------\\n; Способ доставки: ДоКлиента; Пункт разгрузки: 101000, г. Новосибирск, ул. Новосибирская, д. 1, кв. 1; Дата доставки: -; Служба доставки: test; Контактный телефон: +79000000000; (Санкт-Петербург)', '+79000000000', '00000000-0000-0000-0000-000000000000', '00000000-0000-0000-0000-000000000000', '2025-03-18 08:07:44', '3377', 'fc3c6720-0472-11ee-8654-000c297bb3bc', '2025-03-18 11:07:44', '101000, г. Новосибирск, ул. Новосибирская, д. 1, кв. 1', 'test', 'ДоКлиента', 'abfa5b38-0606-11ee-8654-000c297bb3bc', 'ТЕСТ ОТПРАВКИ В Б24', '', '', '25cf31e8-29fc-11ee-866f-000c297bb3bc', 'td-38637337e5-001742285265', '7d12844b-09e1-11ee-8656-000c297bb3bc', '00000000-0000-0000-0000-000000000000', 'Наличная', 'НеСогласован', '1722.24', '2025-03-18 08:07:44', 'Тест создания заказа по АПИ', 'Тест создания заказа по АПИ', 'f0f05268-3014-11ec-a276-e61f13537e43'), ('Воронеж', 'Сайт: t-d.ru_new; Номер на сайте: td-b4cc008730-001742285265; \\n------------------------------\\n; Способ доставки: ДоКлиента; Пункт разгрузки: 101000, г. Новосибирск, ул. Новосибирская, д. 1, кв. 1; Дата доставки: -; Служба доставки: test; Контактный телефон: +79000000000; (Воронеж)', '+79000000000', '00000000-0000-0000-0000-000000000000', '00000000-0000-0000-0000-000000000000', '2025-03-18 08:07:44', '3377', 'fc3c6720-0472-11ee-8654-000c297bb3bc', '2025-03-18 11:07:44', '101000, г. Новосибирск, ул. Новосибирская, д. 1, кв. 1', 'test', 'ДоКлиента', '9f3ad6b9-0606-11ee-8654-000c297bb3bc', 'ТЕСТ ОТПРАВКИ В Б24', '', '', 'ffe5d43a-d36d-11ef-86da-000c297bb3bc', 'td-b4cc008730-001742285265', 'e8c6a44a-09dd-11ee-8656-000c297bb3bc', '00000000-0000-0000-0000-000000000000', 'Наличная', 'НеСогласован', '2560.05', '2025-03-18 08:07:44', 'Тест создания заказа по АПИ', 'Тест создания заказа по АПИ', 'f0f05268-3014-11ec-a276-e61f13537e43');\",\n                    \"time\": 3.14\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"insert into \\\"ka_orders_items\\\" (\\\"amount\\\", \\\"created_at\\\", \\\"discount\\\", \\\"is_promo_code\\\", \\\"nomenclature_guid\\\", \\\"order_number_lk\\\", \\\"price\\\", \\\"total\\\", \\\"updated_at\\\") values ('1', '2025-03-18 08:07:44', '0', '', '9ae2d3f3-95a1-11df-bfea-e61f13537e43', 'td-8098097d05-001742285264', '844.9', '844.9', '2025-03-18 08:07:44'), ('2', '2025-03-18 08:07:44', '0', '', '9ae2d3f3-95a1-11df-bfea-e61f13537e43', 'td-38637337e5-001742285265', '861.12', '1722.24', '2025-03-18 08:07:44'), ('3', '2025-03-18 08:07:44', '0', '', '9ae2d3f3-95a1-11df-bfea-e61f13537e43', 'td-b4cc008730-001742285265', '853.35', '2560.05', '2025-03-18 08:07:44');\",\n                    \"time\": 3.2\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"insert into \\\"ka_counterparties_from_websites\\\" (\\\"INN\\\", \\\"KPP\\\", \\\"bank_account\\\", \\\"bank_code\\\", \\\"bank_corr_account\\\", \\\"bank_name\\\", \\\"counterparty_number_lk\\\", \\\"created_at\\\", \\\"full_name\\\", \\\"legal_status\\\", \\\"name\\\", \\\"okopf_code\\\", \\\"order_number_lk\\\", \\\"organization_name\\\", \\\"partner_guid\\\", \\\"partner_number_lk\\\", \\\"updated_at\\\", \\\"website_guid\\\") values ('', '', '', '', '', '', 'lk-a504bcf1a6-001742278793', '2025-03-18 08:07:44', 'last_name first_name second_name', 'ФизЛицо', 'last_name first_name second_name', '', 'td-8098097d05-001742285264', '', '00000000-0000-0000-0000-000000000000', 'lk-ea6db5585f-001742278793', '2025-03-18 08:07:44', 'f0f05268-3014-11ec-a276-e61f13537e43'), ('', '', '', '', '', '', 'lk-a504bcf1a6-001742278793', '2025-03-18 08:07:44', 'last_name first_name second_name', 'ФизЛицо', 'last_name first_name second_name', '', 'td-38637337e5-001742285265', '', '00000000-0000-0000-0000-000000000000', 'lk-ea6db5585f-001742278793', '2025-03-18 08:07:44', 'f0f05268-3014-11ec-a276-e61f13537e43'), ('', '', '', '', '', '', 'lk-a504bcf1a6-001742278793', '2025-03-18 08:07:44', 'last_name first_name second_name', 'ФизЛицо', 'last_name first_name second_name', '', 'td-b4cc008730-001742285265', '', '00000000-0000-0000-0000-000000000000', 'lk-ea6db5585f-001742278793', '2025-03-18 08:07:44', 'f0f05268-3014-11ec-a276-e61f13537e43');\",\n                    \"time\": 1.87\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"insert into \\\"ka_partners_from_websites\\\" (\\\"name\\\", \\\"phone\\\", \\\"legal_address\\\", \\\"email\\\", \\\"website_guid\\\", \\\"number_lk\\\", \\\"created_at\\\", \\\"updated_at\\\") values ('last_name first_name second_name', '+79000000000', '', 'emai23l@email.com', 'f0f05268-3014-11ec-a276-e61f13537e43', 'lk-ea6db5585f-001742278793', '2025-03-18 08:07:44', '2025-03-18 08:07:44');\",\n                    \"time\": 1.57\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"delete from \\\"websites_basket\\\" where (\\\"user_id\\\" = '3377' and \\\"website_guid\\\" = 'f0f05268-3014-11ec-a276-e61f13537e43') and \\\"nomenclature_guid\\\" in ('9ae2d3f3-95a1-11df-bfea-e61f13537e43', '9ae2d3f3-95a1-11df-bfea-e61f13537e43', '9ae2d3f3-95a1-11df-bfea-e61f13537e43');\",\n                    \"time\": 8.38\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select \\\"manager\\\" from \\\"counterparties\\\" inner join \\\"users_1c\\\" on \\\"users_1c\\\".\\\"guid\\\" = \\\"counterparties\\\".\\\"manager\\\" where (\\\"counterparties\\\".\\\"guid\\\" is null and \\\"counterparties\\\".\\\"manager\\\" != '00000000-0000-0000-0000-000000000000') and \\\"manager\\\" is not null and \\\"users_1c\\\".\\\"email\\\" is not null limit 1;\",\n                    \"time\": 13.41\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select view_websites_orders_union.id, view_websites_orders_union.guid, view_websites_orders_union.number, view_websites_orders_union.counterparty_guid,\\r\\n                view_websites_orders_union.counterparty_guid, view_websites_orders_union.number_lk, view_websites_orders_union.total, view_websites_orders_union.is_from_utd,\\r\\n                view_websites_orders_union.departments,\\r\\n                (\\r\\n                    CASE \\r\\n                        WHEN (SELECT full_name FROM counterparties where counterparties.guid = view_websites_orders_union.counterparty_guid) IS NOT NULL THEN (\\r\\n                            (SELECT full_name FROM counterparties where counterparties.guid = view_websites_orders_union.counterparty_guid)\\r\\n                        ) \\r\\n                        WHEN (SELECT full_name FROM ka_counterparties where ka_counterparties.guid = view_websites_orders_union.counterparty_guid) IS NOT NULL THEN (\\r\\n                            (SELECT full_name FROM ka_counterparties where ka_counterparties.guid = view_websites_orders_union.counterparty_guid)\\r\\n                        ) \\r\\n                        ELSE \\r\\n                            '-'\\r\\n                    END\\r\\n                ) as counterparty_full_name, \\r\\n                (\\r\\n                    CASE \\r\\n                        WHEN (SELECT is_dealer FROM counterparties where counterparties.guid = view_websites_orders_union.counterparty_guid) IS NOT NULL THEN (\\r\\n                            (SELECT is_dealer FROM counterparties where counterparties.guid = view_websites_orders_union.counterparty_guid)\\r\\n                        ) \\r\\n                        ELSE \\r\\n                            true\\r\\n                    END\\r\\n                ) as is_dealer,\\r\\n                (\\r\\n                    CASE \\r\\n                        WHEN EXISTS(SELECT * FROM counterparties JOIN users_1c ON users_1c.guid = counterparties.manager AND users_1c.email IS NOT NULL\\r\\n                                WHERE counterparties.guid = view_websites_orders_union.counterparty_guid)\\r\\n                        THEN (\\r\\n                            (SELECT manager FROM counterparties where counterparties.guid = view_websites_orders_union.counterparty_guid)\\r\\n                        ) \\r\\n                        ELSE \\r\\n                            'cd15a194-052d-11e1-a2bc-e61f13537e43'\\r\\n                    END\\r\\n                ) as manager_guid,\\r\\n                (\\r\\n                    CASE \\r\\n                        WHEN EXISTS(SELECT * FROM counterparties JOIN users_1c ON users_1c.guid = counterparties.manager AND users_1c.email IS NOT NULL\\r\\n                            WHERE counterparties.guid = view_websites_orders_union.counterparty_guid)\\r\\n                        THEN (\\r\\n                            (SELECT users_1c.name FROM counterparties LEFT JOIN users_1c ON users_1c.guid = counterparties.manager\\r\\n                                WHERE counterparties.guid = view_websites_orders_union.counterparty_guid)\\r\\n                        ) \\r\\n                        ELSE \\r\\n                            (SELECT users_1c.name FROM users_1c where guid = 'cd15a194-052d-11e1-a2bc-e61f13537e43')\\r\\n                    END\\r\\n                ) as manager_name,\\r\\n                (\\r\\n                    CASE \\r\\n                        WHEN EXISTS(SELECT * FROM counterparties JOIN users_1c ON users_1c.guid = counterparties.manager AND users_1c.email IS NOT NULL\\r\\n                            WHERE counterparties.guid = view_websites_orders_union.counterparty_guid)\\r\\n                        THEN (\\r\\n                            (SELECT users_1c.email FROM counterparties LEFT JOIN users_1c ON users_1c.guid = counterparties.manager\\r\\n                                where counterparties.guid = view_websites_orders_union.counterparty_guid)\\r\\n                        ) \\r\\n                        ELSE \\r\\n                            (SELECT users_1c.email FROM users_1c where guid = 'cd15a194-052d-11e1-a2bc-e61f13537e43')\\r\\n                    END\\r\\n                ) as manager_email, comment, website_comment, delivery_method, delivery_date, delivery_company, contact_name, contact_phone, delivery_address from \\\"view_websites_orders_union\\\" where \\\"view_websites_orders_union\\\".\\\"date\\\" = '2025-03-18 11:07:44' and \\\"view_websites_orders_union\\\".\\\"number_lk\\\" in ('td-8098097d05-001742285264', 'td-38637337e5-001742285265', 'td-b4cc008730-001742285265');\",\n                    \"time\": 47.18\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select id, line, order_number_lk, residue_unit_guid, amount, nomenclature_guid, total, price from \\\"view_orders_items_union\\\" where \\\"view_orders_items_union\\\".\\\"order_number_lk\\\" in ('td-38637337e5-001742285265', 'td-8098097d05-001742285264', 'td-b4cc008730-001742285265') order by \\\"id\\\" asc;\",\n                    \"time\": 12.99\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select * from \\\"residue_units\\\" where 0 = 1;\",\n                    \"time\": 0.46\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select * from \\\"ka_nomenclature\\\" where \\\"ka_nomenclature\\\".\\\"guid\\\" in ('9ae2d3f3-95a1-11df-bfea-e61f13537e43');\",\n                    \"time\": 3.16\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select * from \\\"notifications_templates\\\" where \\\"notifications_templates\\\".\\\"id\\\" = '32' limit 1;\",\n                    \"time\": 0.41\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select * from \\\"branches_for_websites\\\" where \\\"branches_for_websites\\\".\\\"id\\\" = '1' limit 1;\",\n                    \"time\": 0.36\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select * from \\\"branches_for_websites\\\" where \\\"branches_for_websites\\\".\\\"id\\\" = '1' limit 1;\",\n                    \"time\": 0.33\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select * from \\\"branches_for_websites\\\" where \\\"branches_for_websites\\\".\\\"id\\\" = '2' limit 1;\",\n                    \"time\": 0.65\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select * from \\\"branches_for_websites\\\" where \\\"branches_for_websites\\\".\\\"id\\\" = '2' limit 1;\",\n                    \"time\": 0.62\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select * from \\\"branches_for_websites\\\" where \\\"branches_for_websites\\\".\\\"id\\\" = '3' limit 1;\",\n                    \"time\": 0.57\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select * from \\\"branches_for_websites\\\" where \\\"branches_for_websites\\\".\\\"id\\\" = '3' limit 1;\",\n                    \"time\": 0.34\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"SELECT last_value FROM mail_queue_id_seq;\",\n                    \"time\": 0.29\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select \\\"id\\\" from \\\"mail_queue\\\" order by \\\"id\\\" desc limit 1;\",\n                    \"time\": 0.5\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"insert into \\\"mail_queue\\\" (\\\"is_sent\\\", \\\"bcc\\\", \\\"cc\\\", \\\"template_id\\\", \\\"created_at\\\", \\\"updated_at\\\", \\\"user_id\\\", \\\"to\\\", \\\"subject\\\", \\\"text\\\", \\\"params\\\") values ('', '', '', 'website-order-new-for-filial', '2025-03-18 08:07:45', '2025-03-18 08:07:45', '', 'info-msk@t-d.ru', 'Новый заказ с сайта t-d.ru - td-8098097d05-001742285264', '', '{\\\"items\\\":[{\\\"nomenclature_guid\\\":\\\"9ae2d3f3-95a1-11df-bfea-e61f13537e43\\\",\\\"nomenclature_name\\\":\\\"M.Pujadas, S.A. Ложка 345.000 (сервировочная, L34)\\\",\\\"is_discounted\\\":false,\\\"price\\\":\\\"844,90\\\",\\\"amount\\\":\\\"1\\\",\\\"residue_unit\\\":\\\"шт\\\",\\\"price_final\\\":\\\"844.9\\\",\\\"total\\\":\\\"844,90\\\"}],\\\"total\\\":\\\"844,90\\\",\\\"identifier\\\":\\\"td-8098097d05-001742285264\\\",\\\"id\\\":\\\"td-8098097d05-001742285264\\\",\\\"company\\\":\\\"ТОРГОВЫЙ ДИЗАЙН\\\",\\\"href\\\":\\\"https:\\\\/\\\\/td.ru\\\\/cabinet\\\\/order\\\\/td-8098097d05-001742285264\\\",\\\"city\\\":\\\"Москва\\\",\\\"counterparty_full_name\\\":\\\"-\\\",\\\"is_filial\\\":true,\\\"bcc\\\":[{\\\"email\\\":\\\"tochnoneyura@gmail.com\\\",\\\"name\\\":\\\"tochnoneyura@gmail.com\\\"}],\\\"delivery_method\\\":\\\"ДоКлиента\\\",\\\"delivery_date\\\":\\\"-\\\",\\\"delivery_company\\\":\\\"test\\\",\\\"contact_name\\\":\\\"-\\\",\\\"contact_phone\\\":\\\"+79000000000\\\",\\\"delivery_address\\\":\\\"101000, г. Новосибирск, ул. Новосибирская, д. 1, кв. 1\\\",\\\"comment\\\":\\\"Тест создания заказа по АПИ\\\"}') returning \\\"id\\\";\",\n                    \"time\": 0.88\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"insert into \\\"mail_queue\\\" (\\\"is_sent\\\", \\\"bcc\\\", \\\"cc\\\", \\\"template_id\\\", \\\"created_at\\\", \\\"updated_at\\\", \\\"user_id\\\", \\\"to\\\", \\\"subject\\\", \\\"text\\\", \\\"params\\\") values ('', '', '', 'website-order-new-for-filial', '2025-03-18 08:07:45', '2025-03-18 08:07:45', '', 'tochnoneyura@gmail.com', 'Новый заказ с сайта t-d.ru - td-8098097d05-001742285264', '', '{\\\"items\\\":[{\\\"nomenclature_guid\\\":\\\"9ae2d3f3-95a1-11df-bfea-e61f13537e43\\\",\\\"nomenclature_name\\\":\\\"M.Pujadas, S.A. Ложка 345.000 (сервировочная, L34)\\\",\\\"is_discounted\\\":false,\\\"price\\\":\\\"844,90\\\",\\\"amount\\\":\\\"1\\\",\\\"residue_unit\\\":\\\"шт\\\",\\\"price_final\\\":\\\"844.9\\\",\\\"total\\\":\\\"844,90\\\"}],\\\"total\\\":\\\"844,90\\\",\\\"identifier\\\":\\\"td-8098097d05-001742285264\\\",\\\"id\\\":\\\"td-8098097d05-001742285264\\\",\\\"company\\\":\\\"ТОРГОВЫЙ ДИЗАЙН\\\",\\\"href\\\":\\\"https:\\\\/\\\\/td.ru\\\\/cabinet\\\\/order\\\\/td-8098097d05-001742285264\\\",\\\"city\\\":\\\"Москва\\\",\\\"counterparty_full_name\\\":\\\"-\\\",\\\"is_filial\\\":true,\\\"bcc\\\":[{\\\"email\\\":\\\"tochnoneyura@gmail.com\\\",\\\"name\\\":\\\"tochnoneyura@gmail.com\\\"}],\\\"delivery_method\\\":\\\"ДоКлиента\\\",\\\"delivery_date\\\":\\\"-\\\",\\\"delivery_company\\\":\\\"test\\\",\\\"contact_name\\\":\\\"-\\\",\\\"contact_phone\\\":\\\"+79000000000\\\",\\\"delivery_address\\\":\\\"101000, г. Новосибирск, ул. Новосибирская, д. 1, кв. 1\\\",\\\"comment\\\":\\\"Тест создания заказа по АПИ\\\"}') returning \\\"id\\\";\",\n                    \"time\": 0.94\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"insert into \\\"mail_queue\\\" (\\\"is_sent\\\", \\\"bcc\\\", \\\"cc\\\", \\\"template_id\\\", \\\"user_id\\\", \\\"user_guid\\\", \\\"to\\\", \\\"subject\\\", \\\"text\\\", \\\"params\\\", \\\"created_at\\\", \\\"updated_at\\\") values ('', '[{\\\"email\\\":\\\"tochnoneyura@gmail.com\\\",\\\"name\\\":\\\"tochnoneyura@gmail.com\\\"}]', '', 'website-order-new', '3377', '', 'emai23l@email.com', 'Заказ №td-8098097d05-001742285264 создан', '', '{\\\"items\\\":[{\\\"nomenclature_guid\\\":\\\"9ae2d3f3-95a1-11df-bfea-e61f13537e43\\\",\\\"nomenclature_name\\\":\\\"M.Pujadas, S.A. Ложка 345.000 (сервировочная, L34)\\\",\\\"is_discounted\\\":false,\\\"price\\\":\\\"844,90\\\",\\\"amount\\\":\\\"1\\\",\\\"residue_unit\\\":\\\"шт\\\",\\\"price_final\\\":\\\"844.9\\\",\\\"total\\\":\\\"844,90\\\"}],\\\"total\\\":\\\"844,90\\\",\\\"identifier\\\":\\\"td-8098097d05-001742285264\\\",\\\"id\\\":\\\"td-8098097d05-001742285264\\\",\\\"company\\\":\\\"ТОРГОВЫЙ ДИЗАЙН\\\",\\\"href\\\":\\\"https:\\\\/\\\\/td.ru\\\\/cabinet\\\\/order\\\\/td-8098097d05-001742285264\\\",\\\"city\\\":\\\"Москва\\\",\\\"counterparty_full_name\\\":\\\"-\\\",\\\"is_filial\\\":true,\\\"introduction\\\":\\\"Добрый день, !\\\",\\\"description\\\":\\\"Cоздан заказ №<a style=\\\\\\\"text-decoration: underline; color: #f18712;\\\\\\\" href=\\\\\\\"https:\\\\/\\\\/eksi.ru\\\\/profile\\\\/orders\\\\/\\\\\\\">td-8098097d05-001742285264<\\\\/a>\\\"}', '2025-03-18 08:07:45', '2025-03-18 08:07:45') returning \\\"id\\\";\",\n                    \"time\": 0.57\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"insert into \\\"mail_queue\\\" (\\\"is_sent\\\", \\\"bcc\\\", \\\"cc\\\", \\\"template_id\\\", \\\"created_at\\\", \\\"updated_at\\\", \\\"user_id\\\", \\\"to\\\", \\\"subject\\\", \\\"text\\\", \\\"params\\\") values ('', '', '', 'website-order-new-for-filial', '2025-03-18 08:07:45', '2025-03-18 08:07:45', '', 'info-spb@t-d.ru', 'Новый заказ с сайта t-d.ru - td-38637337e5-001742285265', '', '{\\\"items\\\":[{\\\"nomenclature_guid\\\":\\\"9ae2d3f3-95a1-11df-bfea-e61f13537e43\\\",\\\"nomenclature_name\\\":\\\"M.Pujadas, S.A. Ложка 345.000 (сервировочная, L34)\\\",\\\"is_discounted\\\":false,\\\"price\\\":\\\"861,12\\\",\\\"amount\\\":\\\"2\\\",\\\"residue_unit\\\":\\\"шт\\\",\\\"price_final\\\":\\\"861.12\\\",\\\"total\\\":\\\"1 722,24\\\"}],\\\"total\\\":\\\"1 722,24\\\",\\\"identifier\\\":\\\"td-38637337e5-001742285265\\\",\\\"id\\\":\\\"td-38637337e5-001742285265\\\",\\\"company\\\":\\\"ТОРГОВЫЙ ДИЗАЙН\\\",\\\"href\\\":\\\"https:\\\\/\\\\/td.ru\\\\/cabinet\\\\/order\\\\/td-38637337e5-001742285265\\\",\\\"city\\\":\\\"Санкт-Петербург\\\",\\\"counterparty_full_name\\\":\\\"-\\\",\\\"is_filial\\\":true,\\\"bcc\\\":[{\\\"email\\\":\\\"tochnoneyura@gmail.com\\\",\\\"name\\\":\\\"tochnoneyura@gmail.com\\\"}],\\\"delivery_method\\\":\\\"ДоКлиента\\\",\\\"delivery_date\\\":\\\"-\\\",\\\"delivery_company\\\":\\\"test\\\",\\\"contact_name\\\":\\\"-\\\",\\\"contact_phone\\\":\\\"+79000000000\\\",\\\"delivery_address\\\":\\\"101000, г. Новосибирск, ул. Новосибирская, д. 1, кв. 1\\\",\\\"comment\\\":\\\"Тест создания заказа по АПИ\\\"}') returning \\\"id\\\";\",\n                    \"time\": 0.53\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"insert into \\\"mail_queue\\\" (\\\"is_sent\\\", \\\"bcc\\\", \\\"cc\\\", \\\"template_id\\\", \\\"created_at\\\", \\\"updated_at\\\", \\\"user_id\\\", \\\"to\\\", \\\"subject\\\", \\\"text\\\", \\\"params\\\") values ('', '', '', 'website-order-new-for-filial', '2025-03-18 08:07:45', '2025-03-18 08:07:45', '', 'tochnoneyura@gmail.com', 'Новый заказ с сайта t-d.ru - td-38637337e5-001742285265', '', '{\\\"items\\\":[{\\\"nomenclature_guid\\\":\\\"9ae2d3f3-95a1-11df-bfea-e61f13537e43\\\",\\\"nomenclature_name\\\":\\\"M.Pujadas, S.A. Ложка 345.000 (сервировочная, L34)\\\",\\\"is_discounted\\\":false,\\\"price\\\":\\\"861,12\\\",\\\"amount\\\":\\\"2\\\",\\\"residue_unit\\\":\\\"шт\\\",\\\"price_final\\\":\\\"861.12\\\",\\\"total\\\":\\\"1 722,24\\\"}],\\\"total\\\":\\\"1 722,24\\\",\\\"identifier\\\":\\\"td-38637337e5-001742285265\\\",\\\"id\\\":\\\"td-38637337e5-001742285265\\\",\\\"company\\\":\\\"ТОРГОВЫЙ ДИЗАЙН\\\",\\\"href\\\":\\\"https:\\\\/\\\\/td.ru\\\\/cabinet\\\\/order\\\\/td-38637337e5-001742285265\\\",\\\"city\\\":\\\"Санкт-Петербург\\\",\\\"counterparty_full_name\\\":\\\"-\\\",\\\"is_filial\\\":true,\\\"bcc\\\":[{\\\"email\\\":\\\"tochnoneyura@gmail.com\\\",\\\"name\\\":\\\"tochnoneyura@gmail.com\\\"}],\\\"delivery_method\\\":\\\"ДоКлиента\\\",\\\"delivery_date\\\":\\\"-\\\",\\\"delivery_company\\\":\\\"test\\\",\\\"contact_name\\\":\\\"-\\\",\\\"contact_phone\\\":\\\"+79000000000\\\",\\\"delivery_address\\\":\\\"101000, г. Новосибирск, ул. Новосибирская, д. 1, кв. 1\\\",\\\"comment\\\":\\\"Тест создания заказа по АПИ\\\"}') returning \\\"id\\\";\",\n                    \"time\": 0.73\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"insert into \\\"mail_queue\\\" (\\\"is_sent\\\", \\\"bcc\\\", \\\"cc\\\", \\\"template_id\\\", \\\"user_id\\\", \\\"user_guid\\\", \\\"to\\\", \\\"subject\\\", \\\"text\\\", \\\"params\\\", \\\"created_at\\\", \\\"updated_at\\\") values ('', '[{\\\"email\\\":\\\"tochnoneyura@gmail.com\\\",\\\"name\\\":\\\"tochnoneyura@gmail.com\\\"}]', '', 'website-order-new', '3377', '', 'emai23l@email.com', 'Заказ №td-38637337e5-001742285265 создан', '', '{\\\"items\\\":[{\\\"nomenclature_guid\\\":\\\"9ae2d3f3-95a1-11df-bfea-e61f13537e43\\\",\\\"nomenclature_name\\\":\\\"M.Pujadas, S.A. Ложка 345.000 (сервировочная, L34)\\\",\\\"is_discounted\\\":false,\\\"price\\\":\\\"861,12\\\",\\\"amount\\\":\\\"2\\\",\\\"residue_unit\\\":\\\"шт\\\",\\\"price_final\\\":\\\"861.12\\\",\\\"total\\\":\\\"1 722,24\\\"}],\\\"total\\\":\\\"1 722,24\\\",\\\"identifier\\\":\\\"td-38637337e5-001742285265\\\",\\\"id\\\":\\\"td-38637337e5-001742285265\\\",\\\"company\\\":\\\"ТОРГОВЫЙ ДИЗАЙН\\\",\\\"href\\\":\\\"https:\\\\/\\\\/td.ru\\\\/cabinet\\\\/order\\\\/td-38637337e5-001742285265\\\",\\\"city\\\":\\\"Санкт-Петербург\\\",\\\"counterparty_full_name\\\":\\\"-\\\",\\\"is_filial\\\":true,\\\"introduction\\\":\\\"Добрый день, !\\\",\\\"description\\\":\\\"Cоздан заказ №<a style=\\\\\\\"text-decoration: underline; color: #f18712;\\\\\\\" href=\\\\\\\"https:\\\\/\\\\/eksi.ru\\\\/profile\\\\/orders\\\\/\\\\\\\">td-38637337e5-001742285265<\\\\/a>\\\"}', '2025-03-18 08:07:45', '2025-03-18 08:07:45') returning \\\"id\\\";\",\n                    \"time\": 0.76\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"insert into \\\"mail_queue\\\" (\\\"is_sent\\\", \\\"bcc\\\", \\\"cc\\\", \\\"template_id\\\", \\\"created_at\\\", \\\"updated_at\\\", \\\"user_id\\\", \\\"to\\\", \\\"subject\\\", \\\"text\\\", \\\"params\\\") values ('', '', '', 'website-order-new-for-filial', '2025-03-18 08:07:45', '2025-03-18 08:07:45', '', 'info-voronezh@t-d.ru', 'Новый заказ с сайта t-d.ru - td-b4cc008730-001742285265', '', '{\\\"items\\\":[{\\\"nomenclature_guid\\\":\\\"9ae2d3f3-95a1-11df-bfea-e61f13537e43\\\",\\\"nomenclature_name\\\":\\\"M.Pujadas, S.A. Ложка 345.000 (сервировочная, L34)\\\",\\\"is_discounted\\\":false,\\\"price\\\":\\\"853,35\\\",\\\"amount\\\":\\\"3\\\",\\\"residue_unit\\\":\\\"шт\\\",\\\"price_final\\\":\\\"853.35\\\",\\\"total\\\":\\\"2 560,05\\\"}],\\\"total\\\":\\\"2 560,05\\\",\\\"identifier\\\":\\\"td-b4cc008730-001742285265\\\",\\\"id\\\":\\\"td-b4cc008730-001742285265\\\",\\\"company\\\":\\\"ТОРГОВЫЙ ДИЗАЙН\\\",\\\"href\\\":\\\"https:\\\\/\\\\/td.ru\\\\/cabinet\\\\/order\\\\/td-b4cc008730-001742285265\\\",\\\"city\\\":\\\"Воронеж\\\",\\\"counterparty_full_name\\\":\\\"-\\\",\\\"is_filial\\\":true,\\\"bcc\\\":[{\\\"email\\\":\\\"tochnoneyura@gmail.com\\\",\\\"name\\\":\\\"tochnoneyura@gmail.com\\\"}],\\\"delivery_method\\\":\\\"ДоКлиента\\\",\\\"delivery_date\\\":\\\"-\\\",\\\"delivery_company\\\":\\\"test\\\",\\\"contact_name\\\":\\\"-\\\",\\\"contact_phone\\\":\\\"+79000000000\\\",\\\"delivery_address\\\":\\\"101000, г. Новосибирск, ул. Новосибирская, д. 1, кв. 1\\\",\\\"comment\\\":\\\"Тест создания заказа по АПИ\\\"}') returning \\\"id\\\";\",\n                    \"time\": 0.54\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"insert into \\\"mail_queue\\\" (\\\"is_sent\\\", \\\"bcc\\\", \\\"cc\\\", \\\"template_id\\\", \\\"created_at\\\", \\\"updated_at\\\", \\\"user_id\\\", \\\"to\\\", \\\"subject\\\", \\\"text\\\", \\\"params\\\") values ('', '', '', 'website-order-new-for-filial', '2025-03-18 08:07:45', '2025-03-18 08:07:45', '', 'tochnoneyura@gmail.com', 'Новый заказ с сайта t-d.ru - td-b4cc008730-001742285265', '', '{\\\"items\\\":[{\\\"nomenclature_guid\\\":\\\"9ae2d3f3-95a1-11df-bfea-e61f13537e43\\\",\\\"nomenclature_name\\\":\\\"M.Pujadas, S.A. Ложка 345.000 (сервировочная, L34)\\\",\\\"is_discounted\\\":false,\\\"price\\\":\\\"853,35\\\",\\\"amount\\\":\\\"3\\\",\\\"residue_unit\\\":\\\"шт\\\",\\\"price_final\\\":\\\"853.35\\\",\\\"total\\\":\\\"2 560,05\\\"}],\\\"total\\\":\\\"2 560,05\\\",\\\"identifier\\\":\\\"td-b4cc008730-001742285265\\\",\\\"id\\\":\\\"td-b4cc008730-001742285265\\\",\\\"company\\\":\\\"ТОРГОВЫЙ ДИЗАЙН\\\",\\\"href\\\":\\\"https:\\\\/\\\\/td.ru\\\\/cabinet\\\\/order\\\\/td-b4cc008730-001742285265\\\",\\\"city\\\":\\\"Воронеж\\\",\\\"counterparty_full_name\\\":\\\"-\\\",\\\"is_filial\\\":true,\\\"bcc\\\":[{\\\"email\\\":\\\"tochnoneyura@gmail.com\\\",\\\"name\\\":\\\"tochnoneyura@gmail.com\\\"}],\\\"delivery_method\\\":\\\"ДоКлиента\\\",\\\"delivery_date\\\":\\\"-\\\",\\\"delivery_company\\\":\\\"test\\\",\\\"contact_name\\\":\\\"-\\\",\\\"contact_phone\\\":\\\"+79000000000\\\",\\\"delivery_address\\\":\\\"101000, г. Новосибирск, ул. Новосибирская, д. 1, кв. 1\\\",\\\"comment\\\":\\\"Тест создания заказа по АПИ\\\"}') returning \\\"id\\\";\",\n                    \"time\": 0.52\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"insert into \\\"mail_queue\\\" (\\\"is_sent\\\", \\\"bcc\\\", \\\"cc\\\", \\\"template_id\\\", \\\"user_id\\\", \\\"user_guid\\\", \\\"to\\\", \\\"subject\\\", \\\"text\\\", \\\"params\\\", \\\"created_at\\\", \\\"updated_at\\\") values ('', '[{\\\"email\\\":\\\"tochnoneyura@gmail.com\\\",\\\"name\\\":\\\"tochnoneyura@gmail.com\\\"}]', '', 'website-order-new', '3377', '', 'emai23l@email.com', 'Заказ №td-b4cc008730-001742285265 создан', '', '{\\\"items\\\":[{\\\"nomenclature_guid\\\":\\\"9ae2d3f3-95a1-11df-bfea-e61f13537e43\\\",\\\"nomenclature_name\\\":\\\"M.Pujadas, S.A. Ложка 345.000 (сервировочная, L34)\\\",\\\"is_discounted\\\":false,\\\"price\\\":\\\"853,35\\\",\\\"amount\\\":\\\"3\\\",\\\"residue_unit\\\":\\\"шт\\\",\\\"price_final\\\":\\\"853.35\\\",\\\"total\\\":\\\"2 560,05\\\"}],\\\"total\\\":\\\"2 560,05\\\",\\\"identifier\\\":\\\"td-b4cc008730-001742285265\\\",\\\"id\\\":\\\"td-b4cc008730-001742285265\\\",\\\"company\\\":\\\"ТОРГОВЫЙ ДИЗАЙН\\\",\\\"href\\\":\\\"https:\\\\/\\\\/td.ru\\\\/cabinet\\\\/order\\\\/td-b4cc008730-001742285265\\\",\\\"city\\\":\\\"Воронеж\\\",\\\"counterparty_full_name\\\":\\\"-\\\",\\\"is_filial\\\":true,\\\"introduction\\\":\\\"Добрый день, !\\\",\\\"description\\\":\\\"Cоздан заказ №<a style=\\\\\\\"text-decoration: underline; color: #f18712;\\\\\\\" href=\\\\\\\"https:\\\\/\\\\/eksi.ru\\\\/profile\\\\/orders\\\\/\\\\\\\">td-b4cc008730-001742285265<\\\\/a>\\\"}', '2025-03-18 08:07:45', '2025-03-18 08:07:45') returning \\\"id\\\";\",\n                    \"time\": 0.56\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"insert into \\\"roistat_info_queue\\\" (\\\"name\\\", \\\"phone\\\", \\\"email\\\", \\\"visit_id\\\", \\\"lead_name\\\", \\\"note\\\", \\\"is_skip_sending\\\", \\\"updated_at\\\", \\\"created_at\\\") values ('last_name first_name second_name', '79000000000', 'emai23l@email.com', 'ТЕСТ ОТПРАВКИ В Б24', 'Заказ № td-8098097d05-001742285264', '', '1', '2025-03-18 08:07:45', '2025-03-18 08:07:45') returning \\\"id\\\";\",\n                    \"time\": 2.3\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select * from \\\"branches_for_websites\\\" where \\\"branches_for_websites\\\".\\\"id\\\" = '1' limit 1;\",\n                    \"time\": 0.67\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"insert into \\\"b24_info_queue\\\" (\\\"type\\\", \\\"identificator\\\", \\\"phone\\\", \\\"utm_campaign\\\", \\\"utm_source\\\", \\\"utm_medium\\\", \\\"utm_content\\\", \\\"utm_term\\\", \\\"visit_id\\\", \\\"title\\\", \\\"updated_at\\\", \\\"created_at\\\") values ('order', 'td-8098097d05-001742285264', '79000000000', '', '', '', '', '', 'ТЕСТ ОТПРАВКИ В Б24', 'Заказ с t-d.ru #td-8098097d05-001742285264', '2025-03-18 08:07:45', '2025-03-18 08:07:45') returning \\\"id\\\";\",\n                    \"time\": 3.02\n                }\n            ]\n        },\n        \"cache\": {\n            \"hit\": {\n                \"keys\": [\n                    \"48d42c9e7307ec3e9ca3585c1255fe04\",\n                    \"48d42c9e7307ec3e9ca3585c1255fe04\"\n                ],\n                \"total\": 2\n            },\n            \"miss\": {\n                \"keys\": [],\n                \"total\": 0\n            },\n            \"write\": {\n                \"keys\": [],\n                \"total\": 0\n            },\n            \"forget\": {\n                \"keys\": [],\n                \"total\": 0\n            }\n        },\n        \"profiling\": [\n            {\n                \"event\": \"request-time\",\n                \"time\": 1.2435529232025146\n            }\n        ],\n        \"memory\": {\n            \"usage\": 41389528,\n            \"peak\": 42808184\n        }\n    }\n}"
+            }
+          ]
+        }
+      ],
+      "id": "e3c993ce-9f43-4eac-92b6-4c2e1a0b738b"
+    },
+    {
+      "name": "Basket",
+      "item": [
+        {
+          "name": "Get Basket",
+          "id": "73fea482-cf7e-4300-86a8-c532267aa4cb",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api-horeca/basket"
+          },
+          "response": []
+        },
+        {
+          "name": "Add to Basket",
+          "id": "220dbb16-c2a2-42ba-aa42-b052a5ba4328",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaS1ob3JlY2FcL2xvZ2luIiwiaWF0IjoxNzcwMzY2MzE5LCJleHAiOjE3NzA5NzExMTksIm5iZiI6MTc3MDM2NjMxOSwianRpIjoiR0dhS2k4U1BMYXFadGtnWiIsInN1YiI6NTQ4MiwicHJ2IjoiYjQwZmI0M2JmZDIzOTNhZjVmODNjNGVmNjc1ZjA1NmM0ZGI4ZTQ4MiJ9.1msNqW6Iq89n15eyUcRJhGG_W-9KJM3BIrwIjfgTAtg",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"basket\": [\r\n        {\r\n            \"nomenclature_guid\": \"c9a82ca8-3289-11ed-a2c8-e61f13537e43\",\r\n            \"amount\": 1\r\n        }\r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api-horeca/basket/add"
+          },
+          "response": []
+        },
+        {
+          "name": "Delete From Basket",
+          "id": "45490c33-037f-45fd-b0e5-4d0f395986b3",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"guids\": []\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api-horeca/basket/delete"
+          },
+          "response": []
+        },
+        {
+          "name": "Clear Basket",
+          "id": "3221ec4e-cafb-47ec-84d3-5273c1cbee0a",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": "{{base_url_local}}/api-horeca/basket/clear"
+          },
+          "response": []
+        }
+      ],
+      "id": "22382d14-c1f4-40cb-85ad-6ebdde3f5cf7"
+    },
+    {
+      "name": "Favorites",
+      "item": [
+        {
+          "name": "Get Favorites",
+          "id": "2a945205-63e7-41ee-9949-53438d854cfa",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api-horeca/favorites/products"
+          },
+          "response": []
+        },
+        {
+          "name": "Add to Favorites",
+          "id": "38bfa9c3-8218-484d-925c-7b198b543cd0",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"guids\": []\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api-horeca/favorites/products/add"
+          },
+          "response": []
+        },
+        {
+          "name": "Delete from Favorites",
+          "id": "1ec41d8b-7a49-41fb-aa28-2576d5910953",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"guids\": []\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api-horeca/favorites/products/delete"
+          },
+          "response": []
+        },
+        {
+          "name": "Clear Favorites",
+          "id": "e464a582-63ab-4974-83ba-d38e0a7cc6fa",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"guids\": []\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api-horeca/favorites/products/clear"
+          },
+          "response": []
+        }
+      ],
+      "id": "b336ea18-2709-49b3-9ae0-ad84a47d55fc"
+    },
+    {
+      "name": "Logistic Companies",
+      "item": [
+        {
+          "name": "Logistic Companies Calculator",
+          "id": "bd59465b-293c-4b52-9ea1-9ccb29849b63",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"nomenclature\": [\r\n    {\r\n        \"nomenclature_guid\": \"0005566a-389b-11eb-97a0-e61f13537e43\",\r\n        \"amount\": 1\r\n    },\r\n    {\r\n        \"nomenclature_guid\": \"fc582f1b-2f68-11e4-9b10-e61f13537e43\",\r\n        \"amount\": 2\r\n    },\r\n    {\r\n        \"nomenclature_guid\": \"a743f181-caaf-11e3-8d43-e61f13537e43\",\r\n        \"amount\": 3\r\n    }\r\n  ],\r\n  \"legal_status\": \"LEGAL_ENTITY\",\r\n  \"arrival_city\": \"Саратов\",\r\n  \"arrival_index\": \"410012\",\r\n  \"arrival_address\": \"улица Большая Казачья, 113/38\",\r\n  \"delivery_type_id\": null,\r\n  \"services\": [\r\n        {\r\n            \"id\": 5,\r\n            \"code\": \"insurance\",\r\n            \"value\": true\r\n        },\r\n        {\r\n            \"id\": 20,\r\n            \"code\": \"load_the_operation_at_the_recipient\",\r\n            \"value\": true\r\n        },\r\n        {\r\n            \"id\": 19,\r\n            \"code\": \"get_up_floor_by_elevator\",\r\n            \"value\": 3\r\n        },\r\n        {\r\n            \"id\": 18,\r\n            \"code\": \"get_up_floor_by_hand\",\r\n            \"value\": 3\r\n        },\r\n        {\r\n            \"id\": 21,\r\n            \"code\": \"cargo_transfer\",\r\n            \"value\": 10\r\n        },\r\n        {\r\n            \"id\": 9,\r\n            \"code\": \"palletizing\",\r\n            \"value\": true\r\n        },\r\n        {\r\n            \"id\": 10,\r\n            \"code\": \"crate\",\r\n            \"value\": true\r\n        },\r\n        {\r\n            \"id\": 26,\r\n            \"code\": \"document_delivery\",\r\n            \"value\": false\r\n        },\r\n        {\r\n            \"id\": 27,\r\n            \"code\": \"document_return\",\r\n            \"value\": true\r\n        }\r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api-horeca/lc-delivery-request/calculator"
+          },
+          "response": []
+        },
+        {
+          "name": "Logistic Companies Calculator Copy",
+          "id": "5338eadb-c718-4c8b-8e6c-aa0cd1963d77",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"nomenclature\": [\r\n\t\t{\r\n\t\t\t\"nomenclature_guid\": \"089042aa-7d0b-11e3-9a75-e61f13537e43\",\r\n            \"branch_id\": 1,\r\n\t\t\t\"amount\": 1\r\n\t\t},\r\n        {\r\n\t\t\t\"nomenclature_guid\": \"24cc24f3-da1e-11e9-9101-e61f13537e43\",\r\n            \"branch_id\": 1,\r\n\t\t\t\"amount\": 2\r\n\t\t},\r\n        {\r\n\t\t\t\"nomenclature_guid\": \"0ac1504b-fdf0-11e4-8bc6-e61f13537e43\",\r\n            \"branch_id\": 1,\r\n\t\t\t\"amount\": 3\r\n\t\t}\r\n  ],\r\n  \"legal_status\": \"LEGAL_ENTITY\",\r\n  \"arrival_city\": \"Саратов\",\r\n  \"arrival_index\": \"410012\",\r\n  \"arrival_address\": \"улица Большая Казачья, 113/38\",\r\n  \"delivery_type_id\": null,\r\n  \"services\": [\r\n        {\r\n            \"id\": 5,\r\n            \"code\": \"insurance\",\r\n            \"value\": true\r\n        },\r\n        {\r\n            \"id\": 20,\r\n            \"code\": \"load_the_operation_at_the_recipient\",\r\n            \"value\": true\r\n        },\r\n        {\r\n            \"id\": 19,\r\n            \"code\": \"get_up_floor_by_elevator\",\r\n            \"value\": 3\r\n        },\r\n        {\r\n            \"id\": 18,\r\n            \"code\": \"get_up_floor_by_hand\",\r\n            \"value\": 3\r\n        },\r\n        {\r\n            \"id\": 21,\r\n            \"code\": \"cargo_transfer\",\r\n            \"value\": 10\r\n        },\r\n        {\r\n            \"id\": 9,\r\n            \"code\": \"palletizing\",\r\n            \"value\": true\r\n        },\r\n        {\r\n            \"id\": 10,\r\n            \"code\": \"crate\",\r\n            \"value\": true\r\n        },\r\n        {\r\n            \"id\": 26,\r\n            \"code\": \"document_delivery\",\r\n            \"value\": false\r\n        },\r\n        {\r\n            \"id\": 27,\r\n            \"code\": \"document_return\",\r\n            \"value\": true\r\n        }\r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api-horeca/lc-delivery-request/calculator"
+          },
+          "response": []
+        },
+        {
+          "name": "Logistic Companies Calculator Copy",
+          "id": "447093ad-f61b-4546-88f8-4fccc34593a6",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api-horeca/lc-delivery-request/calculator/9"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Delivery Types",
+          "id": "3cfcbac4-1050-4061-9a79-2df81905f52d",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": "{{base_url_local}}/api-horeca/lc-delivery-types",
+            "description": "Get list of delivery types with logistic companies"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Delivery Services",
+          "id": "5d1cb89d-8c03-4137-a0e0-84ca9b8c22d6",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": "{{base_url_local}}/api-horeca/lc-delivery-services",
+            "description": "Get list of delivery services with logistic companies"
+          },
+          "response": []
+        }
+      ],
+      "id": "0d581b41-7f2e-40c0-9fc8-c18d369d6f11"
+    },
+    {
+      "name": "Cities",
+      "item": [
+        {
+          "name": "Top 100",
+          "id": "b8ec5dc5-6d86-4a61-a0fb-a44bfc0d589e",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api-horeca/cities/top100"
+          },
+          "response": []
+        }
+      ],
+      "id": "7d6210a4-cbef-4edf-8d76-14994b8775ee"
+    },
+    {
+      "name": "Applications Token",
+      "item": [
+        {
+          "name": "Applications Token Create",
+          "id": "229f0935-551b-482f-9a2e-2e3b0f5d831f",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"token\": \"test\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api-horeca/applications-token/create"
+          },
+          "response": []
+        },
+        {
+          "name": "Applications Token Add User",
+          "id": "0d57e359-d4c1-4e75-a276-f7033f071e3d",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaS1ob3JlY2FcL3JlZ2lzdGVyLWJ5LXBob25lXC9jb25maXJtIiwiaWF0IjoxNzY2MTQ4MzM1LCJleHAiOjE3NjYxNDg0NTUsIm5iZiI6MTc2NjE0ODMzNSwianRpIjoiQ3JSUmZQdnY2emRnTmZQNyIsInN1YiI6NTQyNCwicHJ2IjoiYjQwZmI0M2JmZDIzOTNhZjVmODNjNGVmNjc1ZjA1NmM0ZGI4ZTQ4MiJ9.lleghd0hXsclo1j1Og4Pfk2dY_HtoTycOLnI6lG3pEA",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"token\": \"test\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api-horeca/applications-token/add-user"
+          },
+          "response": []
+        }
+      ],
+      "id": "56534c09-0444-401c-9c63-4e3bcfdff60f"
+    },
+    {
+      "name": "Wo Discounts Requests",
+      "item": [
+        {
+          "name": "Wo Discounts Requests Create",
+          "id": "c806ca69-6462-4ea4-a126-8243d21571f1",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaS1ob3JlY2FcL3JlZ2lzdGVyLWJ5LXBob25lXC9jb25maXJtIiwiaWF0IjoxNzY2MTQ4MzM1LCJleHAiOjE3NjYxNDg0NTUsIm5iZiI6MTc2NjE0ODMzNSwianRpIjoiQ3JSUmZQdnY2emRnTmZQNyIsInN1YiI6NTQyNCwicHJ2IjoiYjQwZmI0M2JmZDIzOTNhZjVmODNjNGVmNjc1ZjA1NmM0ZGI4ZTQ4MiJ9.lleghd0hXsclo1j1Og4Pfk2dY_HtoTycOLnI6lG3pEA",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"nomenclature_guid\": \"0d4c0fe8-9571-11df-b3e0-e61f135382c7\",\r\n    \"price\": 100,\r\n    \"amount\": 2\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api-horeca/wo-discounts-requests/create"
+          },
+          "response": []
+        },
+        {
+          "name": "Wo Discounts Requests Get For User",
+          "id": "2704671e-54e5-42be-ae03-bc1bdab96fd2",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaS1ob3JlY2FcL3JlZ2lzdGVyLWJ5LXBob25lXC9jb25maXJtIiwiaWF0IjoxNzY2MTUwODQzLCJleHAiOjE3NjYxNTA5NjMsIm5iZiI6MTc2NjE1MDg0MywianRpIjoiUHZUdThOQnJkb2s0NnBnciIsInN1YiI6NTQyNCwicHJ2IjoiYjQwZmI0M2JmZDIzOTNhZjVmODNjNGVmNjc1ZjA1NmM0ZGI4ZTQ4MiJ9.30KDLhlajSjUiqGohFkDJKPzEj9yE7hk9U4B5gM7Ycc",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"nomenclature_guid\": \"0d4c0fe8-9571-11df-b3e0-e61f135382c7\",\r\n    \"price\": 150,\r\n    \"amount\": 3\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api-horeca/wo-discounts-requests"
+          },
+          "response": []
+        },
+        {
+          "name": "Wo Discounts Requests Delete",
+          "id": "86c33573-6836-466e-ad9d-0854c75b1b0d",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaS1ob3JlY2FcL3JlZ2lzdGVyLWJ5LXBob25lXC9jb25maXJtIiwiaWF0IjoxNzY2MTUwODQzLCJleHAiOjE3NjYxNTA5NjMsIm5iZiI6MTc2NjE1MDg0MywianRpIjoiUHZUdThOQnJkb2s0NnBnciIsInN1YiI6NTQyNCwicHJ2IjoiYjQwZmI0M2JmZDIzOTNhZjVmODNjNGVmNjc1ZjA1NmM0ZGI4ZTQ4MiJ9.30KDLhlajSjUiqGohFkDJKPzEj9yE7hk9U4B5gM7Ycc",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"nomenclature_guid\": \"0d4c0fe8-9571-11df-b3e0-e61f135382c7\",\r\n    \"price\": 150,\r\n    \"amount\": 3\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api-horeca/wo-discounts-requests/delete/1"
+          },
+          "response": []
+        }
+      ],
+      "id": "057ffbf8-7aab-42f3-9aeb-d354f9a7b791"
+    },
+    {
+      "name": "LC Terminals",
+      "item": [
+        {
+          "name": "LC Terminals",
+          "id": "b9a36f63-403f-4c8d-af5b-6cea8872e708",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{bearer_token}}",
+                "type": "text"
+              }
+            ],
+            "url": "{{base_url_local}}/api-horeca/lc-terminals?per_page=0",
+            "description": "Список терминалов без фильтров. Пагинация по умолчанию (20 на страницу)."
+          },
+          "response": []
+        }
+      ],
+      "id": "0b3d6b4a-9c6f-41fa-8366-420ebdb368a9"
+    }
+  ]
+}

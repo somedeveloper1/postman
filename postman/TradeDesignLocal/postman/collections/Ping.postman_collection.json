@@ -1,0 +1,19 @@
+{
+  "info": {
+    "_postman_id": "1dc9679f-4698-4b70-9537-7dd996252ba2",
+    "name": "Ping",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Ping",
+      "id": "fa7e2828-c253-4034-a3a3-8c040a9acdc2",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/ping"
+      },
+      "response": []
+    }
+  ]
+}

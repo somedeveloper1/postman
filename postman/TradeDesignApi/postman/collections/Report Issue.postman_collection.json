@@ -1,0 +1,48 @@
+﻿{
+  "info": {
+    "_postman_id": "7ddfd35d-b33d-47f1-8644-4c1ff91a7f8a",
+    "name": "Report Issue",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Report Issue Create",
+      "id": "4439e6e2-fd66-48d8-8596-7f603bc57cf7",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NTc2MDc0NTIsImV4cCI6MTY1ODIxMjI1MiwibmJmIjoxNjU3NjA3NDUyLCJqdGkiOiJ0bEJ0ZEF0NktQU080NTl6Iiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.kQu57mY_c7GxBCgCv5nBJNp94E16YE8OEMTWYQ0xZ-0",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"url\": \"https://t-d.ru/dealers/profile/\",\r\n    \"bug_login\": \"Yulia\",\r\n    \"bug_text\": \"Test Prod 1. Quaerat inventore possimus nam veritatis dolorem.\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/report-issue",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "report-issue"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

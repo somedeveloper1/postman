@@ -1,0 +1,14 @@
+{
+  "id": "338ff992-aed8-432c-acb7-49c0358afc13",
+  "name": "Globals",
+  "values": [
+    {
+      "key": "wb_token",
+      "value": "",
+      "type": "default",
+      "enabled": true
+    }
+  ],
+  "_postman_variable_scope": "globals",
+  "_postman_exported_at": "2026-03-03T12:37:22.184Z"
+}

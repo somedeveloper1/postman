@@ -1,0 +1,51 @@
+{
+  "info": {
+    "_postman_id": "0a9777e3-1c02-4bdf-8a90-bd28347c5c87",
+    "name": "Returns",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Ozon Returns",
+      "id": "42d37201-876e-4d86-ab36-28f0abcf9053",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Client-Id",
+            "value": "{{ozon_client_id_header}}"
+          },
+          {
+            "key": "Api-Key",
+            "value": "{{ozon_client_id}}"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"limit\": 100,\r\n    \"last_id\": 90437295\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api-seller.ozon.ru/v3/returns/company/fbs",
+          "protocol": "https",
+          "host": [
+            "api-seller",
+            "ozon",
+            "ru"
+          ],
+          "path": [
+            "v3",
+            "returns",
+            "company",
+            "fbs"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

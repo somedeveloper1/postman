@@ -1,0 +1,120 @@
+﻿{
+  "info": {
+    "_postman_id": "5da7f040-3227-4a55-a72c-ed695345290f",
+    "name": "Offers Sets",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Offers Sets",
+      "id": "401ef59d-476a-4c8f-aa4c-1308b7ee82e8",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzA1ODQ2NjMsImV4cCI6MTYzMDU4ODI2MywibmJmIjoxNjMwNTg0NjYzLCJqdGkiOiJldUF0dno1TTZyNmVXWVJNIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.u6nqOogABEuGYpkvLkGONjAQLO1yIvGA7qpUVKOsEn8",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/offers-sets",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "offers-sets"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Offer Set Create",
+      "id": "790d5f07-cce0-4126-95de-d2c2374bddf6",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzA1ODQ2NjMsImV4cCI6MTYzMDU4ODI2MywibmJmIjoxNjMwNTg0NjYzLCJqdGkiOiJldUF0dno1TTZyNmVXWVJNIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.u6nqOogABEuGYpkvLkGONjAQLO1yIvGA7qpUVKOsEn8",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"nomenclature_guid\": \"2\",\r\n    \"discount\": \"3\",\r\n    \"is_no_price_change\": false,\r\n    \"offer_guid\": \"3\",\r\n    \"set\": \"4\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/offer-set/submit",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "offer-set",
+            "submit"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Offers Sets Import",
+      "id": "feda4396-5868-417f-9363-eef168993bf3",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzA1ODQ2NjMsImV4cCI6MTYzMDU4ODI2MywibmJmIjoxNjMwNTg0NjYzLCJqdGkiOiJldUF0dno1TTZyNmVXWVJNIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.u6nqOogABEuGYpkvLkGONjAQLO1yIvGA7qpUVKOsEn8",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"nomenclature_guid\": \"1\",\r\n        \"discount\": \"3\",\r\n        \"is_no_price_change\": false,\r\n        \"offer_guid\": \"1\",\r\n        \"set\": \"1\"\r\n    },\r\n    {\r\n        \"nomenclature_guid\": \"2\",\r\n        \"discount\": \"3\",\r\n        \"is_no_price_change\": false,\r\n        \"offer_guid\": \"1\",\r\n        \"set\": \"4\"\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/table/import/offers-sets",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "table",
+            "import",
+            "offers-sets"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

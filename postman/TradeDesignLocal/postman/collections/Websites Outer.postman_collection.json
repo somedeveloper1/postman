@@ -1,0 +1,676 @@
+{
+  "info": {
+    "_postman_id": "3ec94c7d-ff15-46f7-958a-e1313b64b17b",
+    "name": "Websites Outer",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Wo Margin",
+      "item": [
+        {
+          "name": "Wo Margin Get",
+          "id": "425bef17-3d5a-4450-b669-7b7ff4813e57",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTc1NDg5NjUxOCwiZXhwIjoxNzU1NTAxMzE4LCJuYmYiOjE3NTQ4OTY1MTgsImp0aSI6ImlTdW9jbnZVeEhBWHRTMGwiLCJzdWIiOjI2NDYsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.cjxLwZuHA40humsNmScM5zMTXBtX1xThbQuVPoD-Lvc",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/pim/wo-margins"
+          },
+          "response": []
+        },
+        {
+          "name": "Wo Margin Price Types Filter Get",
+          "id": "bd181c3d-ee76-468b-9147-97eb8b550e15",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/pim/wo-margins/filters/price-types"
+          },
+          "response": []
+        },
+        {
+          "name": "Wo Margin Create",
+          "id": "fa4399f9-60f3-4959-b442-10060e80db89",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTc1NDg5NjUxOCwiZXhwIjoxNzU1NTAxMzE4LCJuYmYiOjE3NTQ4OTY1MTgsImp0aSI6ImlTdW9jbnZVeEhBWHRTMGwiLCJzdWIiOjI2NDYsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.cjxLwZuHA40humsNmScM5zMTXBtX1xThbQuVPoD-Lvc",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"someName\",\r\n    \"percentage\": 10.1,\r\n    \"base_price_type_id\": 1\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/pim/wo-margins/create"
+          },
+          "response": []
+        },
+        {
+          "name": "Wo Margin Update",
+          "id": "147f4dde-ff57-491d-8588-2f15a424b8f9",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTc1Mzk0MTcyNCwiZXhwIjoxNzU0NTQ2NTI0LCJuYmYiOjE3NTM5NDE3MjQsImp0aSI6IjloTWcwMEhvQWhPbkVQSG0iLCJzdWIiOjI2NDYsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.KfxOPvsJ2l3YAnxnXkFmZ0MTYoSF2KHr8a4sNLo9rCs",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"price_type_guid\": \"bad78525-adcb-11e4-9459-e61f13537e43\",\r\n    \"name\": \"someName\",\r\n    \"percentage\": 10,\r\n    \"base_price_type_id\": 2\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/pim/wo-margins/update/2"
+          },
+          "response": []
+        },
+        {
+          "name": "Wo Margin Delete",
+          "id": "8c8b3226-2d16-4b22-babb-a8ec692b70e2",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": "{{base_url_local}}/api/pim/wo-margins/delete/1"
+          },
+          "response": []
+        }
+      ],
+      "id": "7e23427e-d6f6-416e-b187-f4ce2088b86a"
+    },
+    {
+      "name": "Wo margin to object",
+      "item": [
+        {
+          "name": "Wo Margin To Object Get",
+          "id": "8cfe5665-35f4-4db9-9a09-4ed808aa3166",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTc1Mzk0MTcyNCwiZXhwIjoxNzU0NTQ2NTI0LCJuYmYiOjE3NTM5NDE3MjQsImp0aSI6IjloTWcwMEhvQWhPbkVQSG0iLCJzdWIiOjI2NDYsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.KfxOPvsJ2l3YAnxnXkFmZ0MTYoSF2KHr8a4sNLo9rCs",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/pim/wo-margin-to-objects"
+          },
+          "response": []
+        },
+        {
+          "name": "Wo Margin To Object Get New",
+          "id": "7cba7533-90a8-4a97-af66-1e6e81a7db86",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTc1Mzk0MTcyNCwiZXhwIjoxNzU0NTQ2NTI0LCJuYmYiOjE3NTM5NDE3MjQsImp0aSI6IjloTWcwMEhvQWhPbkVQSG0iLCJzdWIiOjI2NDYsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.KfxOPvsJ2l3YAnxnXkFmZ0MTYoSF2KHr8a4sNLo9rCs",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/pim/wo-margin-to-objects"
+          },
+          "response": []
+        },
+        {
+          "name": "Wo Margin To Object New",
+          "id": "f49a71ee-c2c8-4435-b252-de0e49f557af",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTc1NDk5OTAzNiwiZXhwIjoxNzU1NjAzODM2LCJuYmYiOjE3NTQ5OTkwMzYsImp0aSI6IjBuWGZhSXBITU5LSzNhWDAiLCJzdWIiOjI2NDYsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ._qETx68FZH0t4Xts4WEAqMiXRt4y3IkS44BCc22_mdo",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/pim/wo-margin-to-objects/margins-by-brands"
+          },
+          "response": []
+        },
+        {
+          "name": "Wo Margin To Object By Brands Create",
+          "id": "ea9032a5-1c2a-4966-ae5f-0ea2a76e6a79",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTc1NDk5OTAzNiwiZXhwIjoxNzU1NjAzODM2LCJuYmYiOjE3NTQ5OTkwMzYsImp0aSI6IjBuWGZhSXBITU5LSzNhWDAiLCJzdWIiOjI2NDYsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ._qETx68FZH0t4Xts4WEAqMiXRt4y3IkS44BCc22_mdo",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"brand_guid\": \"9b3ec760-177f-11ef-86b5-000c297bb3bc\",\r\n    \"nomenclature_group_guid\": \"00000000-0000-0000-0000-000000000000\",\r\n    \"margins\": [\r\n        {\r\n            \"margin_id\": 10,\r\n            \"price_type_guid\": \"70451ed9-e3bf-11e6-a3ba-e61f13537e43\"\r\n        },\r\n        {\r\n            \"id\": 11,\r\n            \"price_type_guid\": \"0edc284d-51e6-11e8-a2a5-e61f13537e43\"\r\n        }\r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/pim/wo-margin-to-objects/margins-by-brands/save"
+          },
+          "response": []
+        },
+        {
+          "name": "Wo Margin To Object Create New",
+          "id": "375bd35e-30ef-4708-98f8-f01a8e426910",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTc1NDk5OTAzNiwiZXhwIjoxNzU1NjAzODM2LCJuYmYiOjE3NTQ5OTkwMzYsImp0aSI6IjBuWGZhSXBITU5LSzNhWDAiLCJzdWIiOjI2NDYsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ._qETx68FZH0t4Xts4WEAqMiXRt4y3IkS44BCc22_mdo",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"items\": [\r\n        {\r\n            \"id\": 13,\r\n            \"nomenclature_guid\": \"169889c0-be5d-11e0-9fd5-e61f13537e43\",\r\n            \"brand_guid\": \"00000000-0000-0000-0000-000000000000\",\r\n            \"nomenclature_group_guid\": \"00000000-0000-0000-0000-000000000000\",\r\n            \"margins\": [\r\n                {\r\n                    \"id\": 10,\r\n                    \"price_type_guid\": \"0edc284d-51e6-11e8-a2a5-e61f13537e43\",\r\n                    \"is_priority\": true\r\n                },\r\n                {\r\n                    \"id\": 11,\r\n                    \"price_type_guid\": \"70451ed9-e3bf-11e6-a3ba-e61f13537e43\",\r\n                    \"is_priority\": false\r\n                }\r\n            ]\r\n        }\r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/pim/wo-margin-to-objects/save"
+          },
+          "response": []
+        },
+        {
+          "name": "Wo Margin To Object Create",
+          "id": "c4487051-06a4-4750-9f8a-5cd5d06d53d6",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTc1NDQ2MjYwNSwiZXhwIjoxNzU1MDY3NDA1LCJuYmYiOjE3NTQ0NjI2MDUsImp0aSI6IlBlY2ZaZDk2c0xSTFo1N3AiLCJzdWIiOjI2NDYsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.EIWFYt9fltEL83Nv9yvcTpOsqlviM1yRjxxa9uJb3iY",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"margin_id\": 11,\r\n    \"website_guid\": \"00000000-0000-0000-0000-000000000000\",\r\n    \"brand_guid\": \"9b3ec760-177f-11ef-86b5-000c297bb3bc\",\r\n    \"nomenclature_guid\": \"00000000-0000-0000-0000-000000000000\",\r\n    \"nomenclature_group_guid\": \"00000000-0000-0000-0000-000000000000\",\r\n    \"price_types\": [\"70451ed9-e3bf-11e6-a3ba-e61f13537e43\", \"0edc284d-51e6-11e8-a2a5-e61f13537e43\"]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/pim/wo-margin-to-objects/create"
+          },
+          "response": []
+        },
+        {
+          "name": "Wo Margin To Object Update",
+          "id": "e175a05f-64cb-473b-80c8-bb2252295f8a",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTc1NDg5NjUxOCwiZXhwIjoxNzU1NTAxMzE4LCJuYmYiOjE3NTQ4OTY1MTgsImp0aSI6ImlTdW9jbnZVeEhBWHRTMGwiLCJzdWIiOjI2NDYsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.cjxLwZuHA40humsNmScM5zMTXBtX1xThbQuVPoD-Lvc",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"margin_id\": 11,\r\n    \"website_guid\": \"00000000-0000-0000-0000-000000000000\",\r\n    \"brand_guid\": \"0cadfe70-1fa7-11e0-8679-e61f13537e43\",\r\n    \"nomenclature_guid\": \"00000000-0000-0000-0000-000000000000\",\r\n    \"nomenclature_group_guid\": \"00000000-0000-0000-0000-000000000000\",\r\n    \"price_types\": [\"70451ed9-e3bf-11e6-a3ba-e61f13537e43\", \"0edc284d-51e6-11e8-a2a5-e61f13537e43\"]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/pim/wo-margin-to-objects/update/3"
+          },
+          "response": []
+        },
+        {
+          "name": "Wo Margin To Object Delete",
+          "id": "549e77b8-fe2e-4aa8-b750-f44d247803a2",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": "{{base_url_local}}/api/pim/wo-margin-to-objects/delete/1"
+          },
+          "response": []
+        },
+        {
+          "name": "Wo Margin To Object Upload Excel",
+          "id": "67a12026-763e-4a72-b842-b11d700718d9",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "file",
+                  "type": "file",
+                  "src": "/C:/Users/Игорь/Downloads/Telegram Desktop/НАЦЕНКИ v6.xlsx"
+                },
+                {
+                  "key": "price_types[0]",
+                  "value": "0edc284d-51e6-11e8-a2a5-e61f13537e43",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": "{{base_url_local}}/api/pim/wo-margin-to-objects/upload-excel"
+          },
+          "response": []
+        }
+      ],
+      "id": "33c43ff3-a21d-4213-99b9-40a4d1dbef90"
+    },
+    {
+      "name": "Wo Products",
+      "item": [
+        {
+          "name": "Get Websites Products",
+          "id": "879cf3e1-ceab-48fe-b31d-94aa24b62cbe",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/websites-outer/products/search?search=Фризер"
+          },
+          "response": []
+        },
+        {
+          "name": "Wo Products",
+          "id": "6ad2ae2e-7596-4f20-9e7a-92ee109aa81f",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTc3MDAxOTY3MCwiZXhwIjoxNzcwNjI0NDcwLCJuYmYiOjE3NzAwMTk2NzAsImp0aSI6IlhqbXl0U1JsM1B6VGdRTDIiLCJzdWIiOjI2NDYsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.MkyldZ99gURtvsuTKHlY7AfnA4ZHbh8ETpLwMkCBqJA",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/pim/wo-products"
+          },
+          "response": []
+        },
+        {
+          "name": "Wo Products Update PriceVa",
+          "id": "bd135017-3ac7-4cf3-ac1d-cda6271b3324",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTc1NDU3MzYwMiwiZXhwIjoxNzU1MTc4NDAyLCJuYmYiOjE3NTQ1NzM2MDIsImp0aSI6Im16dHdYODJ4dFFERjdnUUUiLCJzdWIiOjI2NDYsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.A8tTThCutjeG1498Pd03aluUFk1B5sNFnZJDWhqzWSA",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "url": "{{base_url_local}}/api/pim/wo-products/commands/update-priceva"
+          },
+          "response": []
+        },
+        {
+          "name": "Wo Products Download",
+          "id": "57b7ae64-773a-4900-b022-22c37ee67312",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTc1NDU3MzYwMiwiZXhwIjoxNzU1MTc4NDAyLCJuYmYiOjE3NTQ1NzM2MDIsImp0aSI6Im16dHdYODJ4dFFERjdnUUUiLCJzdWIiOjI2NDYsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.A8tTThCutjeG1498Pd03aluUFk1B5sNFnZJDWhqzWSA",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/pim/wo-products?has_prices=false"
+          },
+          "response": []
+        },
+        {
+          "name": "Wo Products By Brand",
+          "id": "3522160b-40da-42e5-a6f7-fa145a5ed397",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTc1NDU3MzYwMiwiZXhwIjoxNzU1MTc4NDAyLCJuYmYiOjE3NTQ1NzM2MDIsImp0aSI6Im16dHdYODJ4dFFERjdnUUUiLCJzdWIiOjI2NDYsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.A8tTThCutjeG1498Pd03aluUFk1B5sNFnZJDWhqzWSA",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/pim/wo-products-by-brand"
+          },
+          "response": []
+        },
+        {
+          "name": "Wo Product",
+          "id": "2d3f7524-9f58-4c16-b91b-85e9be9b14e4",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTc1NDU3MzYwMiwiZXhwIjoxNzU1MTc4NDAyLCJuYmYiOjE3NTQ1NzM2MDIsImp0aSI6Im16dHdYODJ4dFFERjdnUUUiLCJzdWIiOjI2NDYsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.A8tTThCutjeG1498Pd03aluUFk1B5sNFnZJDWhqzWSA",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/pim/wo-products?has_prices=false"
+          },
+          "response": []
+        },
+        {
+          "name": "Wo Products Brands",
+          "id": "9b39dd39-8aba-4542-9b5a-04680d2124b8",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/pim/wo-products/filters/brands?search=ro"
+          },
+          "response": []
+        },
+        {
+          "name": "Wo Products Brands Lines",
+          "id": "ffa54006-04de-48fd-9442-0fdbe0dae998",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/pim/wo-products/filters/brand-lines?search=Венеция"
+          },
+          "response": []
+        },
+        {
+          "name": "Wo Products Websites",
+          "id": "35904096-ce9a-4914-a3f8-fe236eefb915",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/pim/wo-products/filters/websites?search=rus"
+          },
+          "response": []
+        },
+        {
+          "name": "Wo Products Margins",
+          "id": "0fac635e-9b6e-480f-be34-dafab85ade9e",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/pim/wo-products/filters/margins"
+          },
+          "response": []
+        }
+      ],
+      "id": "ecc90876-af57-4f25-bb13-a578f69201a3"
+    },
+    {
+      "name": "Wo Orders",
+      "item": [
+        {
+          "name": "Wo Order Create",
+          "id": "bb7947b9-8f2c-4683-8038-01101da6b48b",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"counterparty_id\": \"11746\",\r\n    \"counterparty_guid\": \"\",\r\n    \"first_name\": \"\\u041f\\u0438\\u043a\\u0441\\u0435\\u043b\\u044c\",\r\n    \"last_name\": \"\\u0422\\u0435\\u0441\\u0442\",\r\n    \"patronymic\": \"\\u041f\\u043b\\u044e\\u0441\",\r\n    \"email\": \"sergey.dyakov.pixelplus@yandex.ru\",\r\n    \"legal_address\": \"\",\r\n    \"actual_address\": \"\",\r\n    \"order_guid\": \"\",\r\n    \"date\": \"2025-08-08 10:14:15\",\r\n    \"number\": \"7920\",\r\n    \"contact_phone\": \"79998887766\",\r\n    \"city\": \"\\u0421\\u0430\\u043d\\u043a\\u0442-\\u041f\\u0435\\u0442\\u0435\\u0440\\u0431\\u0443\\u0440\\u0433\",\r\n    \"delivery_address\": \"\\u0422\\u0435\\u0441\\u0442 \\u041f\\u0438\\u043a\\u0441\\u0435\\u043b\\u044c \\u041f\\u043b\\u044e\\u0441\\u0422\\u0435\\u0441\\u0442 \\u041f\\u0438\\u043a\\u0441\\u0435\\u043b\\u044c \\u041f\\u043b\\u044e\\u0441\",\r\n    \"website_comment\": null,\r\n    \"total\": 211527,\r\n    \"website_guid\": \"9b30e198-0fc6-11ec-a276-e61f13537e43\",\r\n    \"items\": [{\r\n            \"name\": \"\\u0420\\u0443\\u0447\\u043d\\u043e\\u0439 \\u043c\\u0438\\u043a\\u0441\\u0435\\u0440 Robot-Coupe MicroMix 34900\",\r\n            \"amount\": 1,\r\n            \"set_number\": \"Micromix (34950)\",\r\n            \"code\": \"00000303598\",\r\n            \"price\": 31279\r\n        }, {\r\n            \"name\": \"\\u041f\\u043b\\u0430\\u043d\\u0435\\u0442\\u0430\\u0440\\u043d\\u044b\\u0439 \\u043c\\u0438\\u043a\\u0441\\u0435\\u0440 Robot-Coupe RM 8 26230D\",\r\n            \"amount\": 1,\r\n            \"set_number\": \"RM8 (26230D)\",\r\n            \"code\": \"00000578739\",\r\n            \"price\": 180248\r\n        }\r\n    ],\r\n    \"legal_status\": \"\\u0424\\u0438\\u0437\\u041b\\u0438\\u0446\\u043e\",\r\n    \"INN\": \"\",\r\n    \"KPP\": \"\",\r\n    \"okopf_code\": \"\",\r\n    \"bank_code\": \"\",\r\n    \"bank_corr_account\": \"\",\r\n    \"bank_name\": \"\",\r\n    \"bank_account\": \"\",\r\n    \"delivery_method\": \"\\u0414\\u043e\\u041f\\u0435\\u0440\\u0435\\u0432\\u043e\\u0437\\u0447\\u0438\\u043a\\u0430\\u0414\\u043e\\u0441\\u0442\\u0430\\u0432\\u043a\\u0430\\u0414\\u043e\\u0422\\u0435\\u0440\\u043c\\u0438\\u043d\\u0430\\u043b\\u0430\",\r\n    \"application_type\": \"order_basket\",\r\n    \"payment_type\": \"\"\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/websites-outer/9b30e198-0fc6-11ec-a276-e61f13537e43/order/create"
+          },
+          "response": []
+        }
+      ],
+      "id": "a1e4be1e-7469-4acf-b5b7-0422554aa33e"
+    },
+    {
+      "name": "Wo Base Price Types",
+      "item": [
+        {
+          "name": "Wo Base price Types",
+          "id": "35f38a1a-de5c-4171-be23-63a220f1ff77",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTc1Mzk0MTcyNCwiZXhwIjoxNzU0NTQ2NTI0LCJuYmYiOjE3NTM5NDE3MjQsImp0aSI6IjloTWcwMEhvQWhPbkVQSG0iLCJzdWIiOjI2NDYsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.KfxOPvsJ2l3YAnxnXkFmZ0MTYoSF2KHr8a4sNLo9rCs",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"price_type_guid\": \"bad78525-adcb-11e4-9459-e61f13537e43\",\r\n    \"name\": \"someName\",\r\n    \"percentage\": 10\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/pim/wo-base-price-types"
+          },
+          "response": []
+        }
+      ],
+      "id": "0c3faf83-4ffa-4b28-85a2-05e0535bd4f3"
+    },
+    {
+      "name": "Wo Price Excluded Brands",
+      "item": [
+        {
+          "name": "Wo Price Excluded Brands",
+          "id": "b0a73a65-6ed4-49d3-b657-7c454d64d466",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/pim/wo-price-excluded-brands"
+          },
+          "response": []
+        },
+        {
+          "name": "Create Wo Price Excluded Brands",
+          "id": "3f50e4ee-f5d7-4345-b94d-20f286ffe3b4",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": "{{base_url_local}}/api/pim/wo-price-excluded-brands/create"
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Wo Price Excluded Brands",
+          "id": "2302f9a6-155c-462a-8a90-4093f2831cc9",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": "{{base_url_local}}/api/pim/wo-price-excluded-brands/delete/0f7f6bae-e460-11ef-86e3-000c297bb3bc"
+          },
+          "response": []
+        }
+      ],
+      "id": "d7e3057d-86fa-4b55-a222-f17a3b0ffd20"
+    },
+    {
+      "name": "Ka Offers For Websites",
+      "id": "67698429-cef2-4e03-a1d7-bd6870c4f966",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTc1MjU4MTYyMywibmJmIjoxNzUyNTgxNjIzLCJqdGkiOiJOV3pISnRoNU4wcnFza05zIiwic3ViIjo1MjM3LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.HnMx1Mf9oOMVZbM8i88BcjStgQ39SyLn89W4Cck3OiM",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/offers-for-websites/e4d2143a-de6f-11e7-a3f6-e61f13537e43"
+      },
+      "response": []
+    },
+    {
+      "name": "Get Outer Websites",
+      "id": "d4b3b0bd-8b46-459b-b623-da3303fd4d82",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/websites-outer"
+      },
+      "response": []
+    },
+    {
+      "name": "Wo Base Price Types",
+      "id": "189f17dd-f5de-41fe-bd90-5dbc88fd7228",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Wo Price History",
+      "id": "fc97b6a3-97ad-4d37-a9e1-5d370dd5de32",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/pim/wo-prices-history"
+      },
+      "response": []
+    },
+    {
+      "name": "Wo Brands",
+      "id": "4e1fde19-aefd-4873-8f74-ec5e80db9ee5",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/pim/wo-products"
+      },
+      "response": []
+    },
+    {
+      "name": "Yookassa",
+      "id": "a85079ff-cb8a-48a9-85e1-e7232d22d5f8",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"data\": \"text\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/hooks/yookassa/webhook"
+      },
+      "response": []
+    }
+  ]
+}

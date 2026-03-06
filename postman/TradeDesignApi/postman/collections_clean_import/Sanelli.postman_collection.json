@@ -1,0 +1,2494 @@
+{
+  "info": {
+    "_postman_id": "54701cf8-9716-4fd2-9b76-d6685d5acf7d",
+    "name": "Sanelli",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Products",
+      "item": [
+        {
+          "name": "Products",
+          "id": "afb52af0-5848-4ac1-90d1-8f7f8c467f50",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"parents_only\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-sanelli/products",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-sanelli",
+                "products"
+              ],
+              "query": [
+                {
+                  "key": "order_by[0][param]",
+                  "value": "price_final_rub",
+                  "disabled": true
+                },
+                {
+                  "key": " order_by[0][order]",
+                  "value": "asc",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "749936f4-0bda-40fd-b21f-17581719d3c1",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email={{auth_email}}&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "{{auth_email}}"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"{{access_token}}\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"{{auth_email}}\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Products For Basket",
+          "id": "4b308722-2ad0-4254-a996-bc54e4a4657d",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"parents_only\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-sanelli/products-for-basket",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-sanelli",
+                "products-for-basket"
+              ],
+              "query": [
+                {
+                  "key": "order_by[0][param]",
+                  "value": "price_final_rub",
+                  "disabled": true
+                },
+                {
+                  "key": " order_by[0][order]",
+                  "value": "asc",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "43e06946-63b1-48ae-a5cd-00ec4d94376f",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email={{auth_email}}&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "{{auth_email}}"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"{{access_token}}\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"{{auth_email}}\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Products For Sitemap",
+          "id": "0ce6fb88-3146-48ae-bddf-a479388e1feb",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"parents_only\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-sanelli/products-for-sitemap",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-sanelli",
+                "products-for-sitemap"
+              ],
+              "query": [
+                {
+                  "key": "order_by[0][param]",
+                  "value": "price_final_rub",
+                  "disabled": true
+                },
+                {
+                  "key": " order_by[0][order]",
+                  "value": "asc",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "19b0fdc3-f99a-4d67-8af5-554d393b5bca",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email={{auth_email}}&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "{{auth_email}}"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"{{access_token}}\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"{{auth_email}}\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Product",
+          "id": "54791232-e5a8-4c32-bc32-c63756e1e845",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"parents_only\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-sanelli/product/23db02b7-695a-11e8-a2a5-e61f13537e43",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-sanelli",
+                "product",
+                "23db02b7-695a-11e8-a2a5-e61f13537e43"
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "8b93281e-d1fd-4f23-af5e-4c5c6e7d121a",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email={{auth_email}}&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "{{auth_email}}"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"{{access_token}}\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"{{auth_email}}\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Product Pim FIelds",
+          "id": "2b24d93c-de1a-420c-a171-ac8fa48ea8cf",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"parents_only\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-sanelli/product/23db02b7-695a-11e8-a2a5-e61f13537e43/pim-fields",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-sanelli",
+                "product",
+                "23db02b7-695a-11e8-a2a5-e61f13537e43",
+                "pim-fields"
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "a4cd949d-a8ac-42da-be4b-780abcac7f52",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email={{auth_email}}&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "{{auth_email}}"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"{{access_token}}\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"{{auth_email}}\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Product Balance",
+          "id": "ea430ba1-199a-4379-a0ac-931a1bd48e25",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"parents_only\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-sanelli/product/23db02b7-695a-11e8-a2a5-e61f13537e43/balance",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-sanelli",
+                "product",
+                "23db02b7-695a-11e8-a2a5-e61f13537e43",
+                "balance"
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "c6263264-93a2-4bf7-8175-b8fa26d4ce11",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email={{auth_email}}&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "{{auth_email}}"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"{{access_token}}\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"{{auth_email}}\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Product Prices",
+          "id": "60a4bc73-7986-4980-b16f-16699151cd4c",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"parents_only\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-sanelli/product/23db02b7-695a-11e8-a2a5-e61f13537e43/prices",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-sanelli",
+                "product",
+                "23db02b7-695a-11e8-a2a5-e61f13537e43",
+                "prices"
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "bb74e192-0aab-46dc-b173-dce43b95f047",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email={{auth_email}}&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "{{auth_email}}"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"{{access_token}}\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"{{auth_email}}\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Product Analogues",
+          "id": "30e88f89-962b-4cc2-a86a-25c2c7109c7f",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"parents_only\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-sanelli/products/23db02b7-695a-11e8-a2a5-e61f13537e43/analogues",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-sanelli",
+                "products",
+                "23db02b7-695a-11e8-a2a5-e61f13537e43",
+                "analogues"
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "0c9f1d45-0244-43ae-84bb-ae83f72a3afa",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email={{auth_email}}&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "{{auth_email}}"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"{{access_token}}\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"{{auth_email}}\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        }
+      ],
+      "id": "55af7556-b4ed-4bbd-8071-ca2ada48411a"
+    },
+    {
+      "name": "Categories",
+      "item": [
+        {
+          "name": "Categories",
+          "id": "901d2fff-28ca-4476-84c0-3f87b0f40fb6",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"parents_only\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-sanelli/categories",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-sanelli",
+                "categories"
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "4408b569-659c-4a9f-a6f9-b7ef4fb02932",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email={{auth_email}}&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "{{auth_email}}"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"{{access_token}}\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"{{auth_email}}\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Category",
+          "id": "aaaaf361-548b-4a74-b530-a933612bcf06",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"parents_only\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-sanelli/category/avto-zapravochnaya-stanciya",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-sanelli",
+                "category",
+                "avto-zapravochnaya-stanciya"
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "fcd14653-276a-477a-bfec-3c34fc8bbf44",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email={{auth_email}}&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "{{auth_email}}"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"{{access_token}}\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"{{auth_email}}\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Category By GUID",
+          "id": "d4aa5827-b308-4598-81ec-efb236fb8099",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"parents_only\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-sanelli/category-by-guid/e74fdca4-5118-11ec-a276-e61f13537e43",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-sanelli",
+                "category-by-guid",
+                "e74fdca4-5118-11ec-a276-e61f13537e43"
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "a5919d0b-3312-403a-a00d-285638d04d27",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email={{auth_email}}&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "{{auth_email}}"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"{{access_token}}\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"{{auth_email}}\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Category By ID",
+          "id": "ae9d6a5a-cbaa-47d3-aa38-5be43c9bfbe6",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"parents_only\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-sanelli/category-by-id/14",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-sanelli",
+                "category-by-id",
+                "14"
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "b5d22df5-8d2d-4e58-a2bf-32cc6ea0f2af",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email={{auth_email}}&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "{{auth_email}}"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"{{access_token}}\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"{{auth_email}}\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Categories For Sitemap",
+          "id": "c34bb7bd-b263-48c5-8236-10a043aae7df",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"parents_only\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-sanelli/categories-for-sitemap",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-sanelli",
+                "categories-for-sitemap"
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "bf089ab1-922f-493b-b4e6-16e61da27af0",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email={{auth_email}}&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "{{auth_email}}"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"{{access_token}}\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"{{auth_email}}\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        }
+      ],
+      "id": "3b694bf0-10a7-4379-a1c2-d41e88d5b970"
+    },
+    {
+      "name": "Offers",
+      "item": [
+        {
+          "name": "Offers",
+          "id": "156bb7be-8310-4acd-95f8-3842fc5af78e",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"parents_only\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-sanelli/offers",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-sanelli",
+                "offers"
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "5a914d85-4da7-4175-b313-cf30cbcc6b99",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email={{auth_email}}&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "{{auth_email}}"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"{{access_token}}\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"{{auth_email}}\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Offer",
+          "id": "718e39ee-bf1c-4d7b-938b-444f2e536b67",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"parents_only\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-sanelli/offers/123132/2025",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-sanelli",
+                "offers",
+                "123132",
+                "2025"
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "6c8940ce-a8ef-48b9-81ab-5eb6aa11580c",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email={{auth_email}}&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "{{auth_email}}"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"{{access_token}}\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"{{auth_email}}\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        }
+      ],
+      "id": "a8c074dc-1be4-44f7-a91c-0e9007b2aba9"
+    },
+    {
+      "name": "Brand Lines",
+      "item": [
+        {
+          "name": "Brand Lines",
+          "id": "c5da26b2-6a30-4acb-a6c1-1f9ad271f89b",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"parents_only\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-sanelli/brand-lines",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-sanelli",
+                "brand-lines"
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "14454fc2-545d-4e12-a869-34f857ceb12b",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email={{auth_email}}&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "{{auth_email}}"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"{{access_token}}\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"{{auth_email}}\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Brand Line",
+          "id": "8fe15c3b-0cbb-4724-ae58-86919e4a81b4",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"parents_only\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-sanelli/brand-line/chef",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-sanelli",
+                "brand-line",
+                "chef"
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "7aa79a3e-86aa-4f77-b785-e484635e13c6",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email={{auth_email}}&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "{{auth_email}}"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"{{access_token}}\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"{{auth_email}}\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        }
+      ],
+      "id": "976d8671-e4ec-45d4-b1c7-4f2c7a1b61ed"
+    },
+    {
+      "name": "Filters",
+      "item": [
+        {
+          "name": "Properties TD",
+          "id": "aa940359-91a4-4f69-b411-3c937c629d26",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"parents_only\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-sanelli/filters/properties-td",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-sanelli",
+                "filters",
+                "properties-td"
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "a00d7640-6839-4e6e-9174-c26ecb6d505b",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email={{auth_email}}&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "{{auth_email}}"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"{{access_token}}\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"{{auth_email}}\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Brand Lines",
+          "id": "e326d95b-fa43-44e0-8eb6-43e09f506208",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"parents_only\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-sanelli/filters/brand-lines",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-sanelli",
+                "filters",
+                "brand-lines"
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "4ecd8564-cded-44a6-b4da-c881c379decc",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email={{auth_email}}&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "{{auth_email}}"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"{{access_token}}\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"{{auth_email}}\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Countries",
+          "id": "05631286-c617-491a-b768-d0f26e760ed2",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"parents_only\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-sanelli/filters/countries",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-sanelli",
+                "filters",
+                "countries"
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "77079897-5383-42da-a21e-a0f8b0e9e0b8",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email={{auth_email}}&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "{{auth_email}}"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"{{access_token}}\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"{{auth_email}}\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Prices",
+          "id": "397b97ef-ce90-4e12-bb84-1c8da8fc42fb",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"parents_only\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-sanelli/filters/prices",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-sanelli",
+                "filters",
+                "prices"
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "80185e33-e10e-4149-bc42-ae15e66bf89b",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email={{auth_email}}&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "{{auth_email}}"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"{{access_token}}\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"{{auth_email}}\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Nomenclature Groups",
+          "id": "320acf67-0cec-41d9-842d-96f84b35f4d7",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"parents_only\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-sanelli/filters/nomenclature-groups",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-sanelli",
+                "filters",
+                "nomenclature-groups"
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "5d16fbcb-5482-4573-8dde-2ffbd4fc4732",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email={{auth_email}}&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "{{auth_email}}"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"{{access_token}}\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"{{auth_email}}\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        }
+      ],
+      "id": "463bca12-1ec7-45e5-8b94-ce76a287b0fe"
+    },
+    {
+      "name": "Elastic",
+      "item": [
+        {
+          "name": "Search Bar",
+          "id": "1da4be49-8a43-47e1-83ce-dde04b4811fe",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-sanelli/elastic/search-bar/categories",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-sanelli",
+                "elastic",
+                "search-bar",
+                "categories"
+              ],
+              "query": [
+                {
+                  "key": "elastic_search",
+                  "value": "блендер",
+                  "disabled": true
+                },
+                {
+                  "key": "price_from",
+                  "value": "300",
+                  "disabled": true
+                },
+                {
+                  "key": "nomenclature[]",
+                  "value": "23db02b7-695a-11e8-a2a5-e61f13537e43",
+                  "disabled": true
+                },
+                {
+                  "key": "search",
+                  "value": "кипятильники",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "3ab7c1fa-4294-4065-8c7a-3a5ffbd68d2a"
+    },
+    {
+      "name": "Consultation Request",
+      "item": [
+        {
+          "name": "Consultation Request Submit",
+          "id": "3cbb0393-a570-4650-ad3d-d9f426fe6369",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Юрий\",\r\n    \"phone\": \"89085444123\",\r\n    \"email\": \"{{auth_email}}\",\r\n    \"element_guid\": \"23db02b7-695a-11e8-a2a5-e61f13537e43\",\r\n    \"type\": \"consultation\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-sanelli/consultation-request/submit",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-sanelli",
+                "consultation-request",
+                "submit"
+              ],
+              "query": [
+                {
+                  "key": "search_elastic",
+                  "value": "кипятильник",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "3e68946f-c316-487b-8672-5810fa4b05ff",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email={{auth_email}}&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "{{auth_email}}"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"{{access_token}}\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"{{auth_email}}\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        }
+      ],
+      "id": "de2100af-40cb-46e4-ad0f-7fd141921f3d"
+    },
+    {
+      "name": "Branches For Websites",
+      "item": [
+        {
+          "name": "Branches For Websites",
+          "id": "1c82e7f0-05d1-4fe7-8c89-b87d7347ac32",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-sanelli/branches-for-websites",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-sanelli",
+                "branches-for-websites"
+              ],
+              "query": [
+                {
+                  "key": "elastic_search",
+                  "value": "блендер",
+                  "disabled": true
+                },
+                {
+                  "key": "price_from",
+                  "value": "300",
+                  "disabled": true
+                },
+                {
+                  "key": "nomenclature[]",
+                  "value": "23db02b7-695a-11e8-a2a5-e61f13537e43",
+                  "disabled": true
+                },
+                {
+                  "key": "search",
+                  "value": "кипятильники",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "2bc26b2f-8694-40ea-a261-be92477dff3a"
+    },
+    {
+      "name": "Report Issue",
+      "item": [
+        {
+          "name": "Report Issue Create",
+          "id": "c59ef3de-01bc-423d-91b5-3b04d7c9a50e",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"url\": \"url_eksi\",\r\n    \"bug_login\": \"url_bug_login\",\r\n    \"bug_text\": \"url_bug_text\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-sanelli/report-issue",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-sanelli",
+                "report-issue"
+              ],
+              "query": [
+                {
+                  "key": "order_by[0][param]",
+                  "value": "price_final_rub",
+                  "disabled": true
+                },
+                {
+                  "key": " order_by[0][order]",
+                  "value": "asc",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "288b9cbb-ada5-4d7a-8bc8-46fc72b51bac",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email={{auth_email}}&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "{{auth_email}}"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"{{access_token}}\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"{{auth_email}}\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        }
+      ],
+      "id": "6f460b44-9109-4ba5-96b4-9f58a8bcf845"
+    },
+    {
+      "name": "Orders",
+      "item": [
+        {
+          "name": "Orders Create",
+          "id": "2876731c-144a-4a96-b0b4-0f05f0b22e11",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTc1NTg0OTc0MCwiZXhwIjoxNzU2NDU0NTQwLCJuYmYiOjE3NTU4NDk3NDAsImp0aSI6IldQeXVYbGdFWmozeFN2WWciLCJzdWIiOjQxMTgsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.IWTqnJKwzOKmX_PNgPCPGr9GN97sNouW8v7eCPW74fU",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"first_name\": \"first_name\",\r\n    \"last_name\": \"last_name\",\r\n\t\"second_name\": \"second_name\",\r\n    \"email\": \"email@email.com\",\r\n\t\"contact_phone\": \"+79000000000\",\r\n\t\"website_comment\": \"Тест создания заказа по АПИ\",\r\n\t\"website_comment_by_client\": \"Тест создания заказа по АПИ\",\r\n    \"payment_type\": \"Безналичная\",\r\n\t\"delivery_method\": \"ДоКлиента\",\r\n\t\"delivery_address\": \"101000, г. Новосибирск, ул. Новосибирская, д. 1, кв. 1\",\r\n\t\"products\": [\r\n        {\r\n            \"nomenclature_guid\": \"23db02b7-695a-11e8-a2a5-e61f13537e43\",\r\n            \"branch_id\": 1,\r\n            \"amount\": 1\r\n        }\r\n\t],\r\n    \"counterparty\": {\r\n        \"counterparty_guid\": null,\r\n        \"counterparty_name\": \"Мое ЮрЛицо\",\r\n        \"INN\": \"123456789012\",\r\n        \"KPP\": \"123456789\",\r\n        \"organization_name\": null,\r\n        \"legal_address\": \"ЮрЛицо\",\r\n        \"bank_code\": null,\r\n        \"bank_corr_account\": null,\r\n        \"bank_name\": null,\r\n        \"bank_account\": null\r\n    }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-sanelli/orders/create",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-sanelli",
+                "orders",
+                "create"
+              ],
+              "query": [
+                {
+                  "key": "parents_only",
+                  "value": "false",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "fbca13a6-a95b-4b21-b29d-5004bf6c9eae",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email={{auth_email}}&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "{{auth_email}}"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"{{access_token}}\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"{{auth_email}}\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Orders Min Total",
+          "id": "520030d6-d544-4d08-b7d7-87771a832743",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTc1NTg0OTc0MCwiZXhwIjoxNzU2NDU0NTQwLCJuYmYiOjE3NTU4NDk3NDAsImp0aSI6IldQeXVYbGdFWmozeFN2WWciLCJzdWIiOjQxMTgsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.IWTqnJKwzOKmX_PNgPCPGr9GN97sNouW8v7eCPW74fU",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api-sanelli/orders/min-total",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-sanelli",
+                "orders",
+                "min-total"
+              ],
+              "query": [
+                {
+                  "key": "parents_only",
+                  "value": "false",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "847e5bfc-ab41-40ab-965b-32ddea5cec9f",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email={{auth_email}}&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "{{auth_email}}"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"{{access_token}}\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"{{auth_email}}\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        }
+      ],
+      "id": "40e5d305-a562-4048-adb3-a2c60e11a91d"
+    }
+  ]
+}

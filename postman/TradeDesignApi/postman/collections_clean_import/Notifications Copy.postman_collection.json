@@ -1,0 +1,181 @@
+{
+  "info": {
+    "_postman_id": "dcea0db2-2504-43d5-9b23-9d3011a40cc7",
+    "name": "Notifications Copy",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Notifications",
+      "id": "0e2dd224-8458-4df0-ac36-6c0e0020624d",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaS1ob3JlY2FcL2xvZ2luIiwiaWF0IjoxNzY4Mjg2NzQxLCJleHAiOjE3Njg4OTE1NDEsIm5iZiI6MTc2ODI4Njc0MSwianRpIjoieVZlT0hZN1ZXdkVsb3JEViIsInN1YiI6NDgyNywicHJ2IjoiYjQwZmI0M2JmZDIzOTNhZjVmODNjNGVmNjc1ZjA1NmM0ZGI4ZTQ4MiJ9.QjVj9UBh8Y9rZV4lZiJ09nK8V24sNrqjjguS7AWigOc",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api-horeca/notifications",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api-horeca",
+            "notifications"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Notification",
+      "id": "797988d2-4045-4d02-8e24-5950e4210587",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaS1ob3JlY2FcL2xvZ2luIiwiaWF0IjoxNzY4Mjg2NzQxLCJleHAiOjE3Njg4OTE1NDEsIm5iZiI6MTc2ODI4Njc0MSwianRpIjoieVZlT0hZN1ZXdkVsb3JEViIsInN1YiI6NDgyNywicHJ2IjoiYjQwZmI0M2JmZDIzOTNhZjVmODNjNGVmNjc1ZjA1NmM0ZGI4ZTQ4MiJ9.QjVj9UBh8Y9rZV4lZiJ09nK8V24sNrqjjguS7AWigOc",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api-horeca/notification/8",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api-horeca",
+            "notification",
+            "8"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Notifications Read",
+      "id": "16af16c7-dec1-4de6-9034-fbdd56e2d84a",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaS1ob3JlY2FcL2xvZ2luIiwiaWF0IjoxNzY4Mjg2NzQxLCJleHAiOjE3Njg4OTE1NDEsIm5iZiI6MTc2ODI4Njc0MSwianRpIjoieVZlT0hZN1ZXdkVsb3JEViIsInN1YiI6NDgyNywicHJ2IjoiYjQwZmI0M2JmZDIzOTNhZjVmODNjNGVmNjc1ZjA1NmM0ZGI4ZTQ4MiJ9.QjVj9UBh8Y9rZV4lZiJ09nK8V24sNrqjjguS7AWigOc",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"ids\": [8, 9, 11]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api-horeca/notifications/read",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api-horeca",
+            "notifications",
+            "read"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Notifications Read All",
+      "id": "edc1d365-80d5-4463-83e5-aab6fb0d4835",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2Mzg4NjY2NzYsImV4cCI6MTYzODk1MzA3NiwibmJmIjoxNjM4ODY2Njc2LCJqdGkiOiI2NVlPWHBGbW1Nd0dIN1dPIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.vfOxpXrNfh1yAXZQd4V4o3ONnGs3RID51BwS2ZgHCbE",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api-horeca/notifications/read-all",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api-horeca",
+            "notifications",
+            "read-all"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Notifications Count",
+      "id": "3b2d7e10-0e40-445c-ad42-ef0439b74dae",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaS1ob3JlY2FcL2xvZ2luIiwiaWF0IjoxNzY4Mjg2NzQxLCJleHAiOjE3Njg4OTE1NDEsIm5iZiI6MTc2ODI4Njc0MSwianRpIjoieVZlT0hZN1ZXdkVsb3JEViIsInN1YiI6NDgyNywicHJ2IjoiYjQwZmI0M2JmZDIzOTNhZjVmODNjNGVmNjc1ZjA1NmM0ZGI4ZTQ4MiJ9.QjVj9UBh8Y9rZV4lZiJ09nK8V24sNrqjjguS7AWigOc",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api-horeca/notifications/count",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api-horeca",
+            "notifications",
+            "count"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

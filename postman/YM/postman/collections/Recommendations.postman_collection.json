@@ -1,0 +1,49 @@
+{
+  "info": {
+    "_postman_id": "0f7ea246-d1a6-4a4b-b08f-a2ec04bfbdb8",
+    "name": "Recommendations",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "offer-recommendations",
+      "id": "c527c243-cd16-4800-a73d-c10bfae90999",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Api-Key",
+            "value": "{{ym_oauth_token}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"offerIds\":  [\"A1010000\"]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api.partner.market.yandex.ru/businesses/208944563/offer-cards",
+          "protocol": "https",
+          "host": [
+            "api",
+            "partner",
+            "market",
+            "yandex",
+            "ru"
+          ],
+          "path": [
+            "businesses",
+            "208944563",
+            "offer-cards"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

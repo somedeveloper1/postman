@@ -1,0 +1,62 @@
+{
+  "info": {
+    "_postman_id": "9e8140f9-69cb-422c-a9c2-4027b8ec77ea",
+    "name": "Balance Reserve",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Balance Reserve Import",
+      "id": "75a6eaf1-5310-4e3a-ae77-be2e14c0b20b",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Parameters",
+            "value": "{\"order_guid\" : \"df569a36-eec7-4a66-a523-aca9e5091b03\"}",
+            "type": "text",
+            "disabled": true
+          },
+          {
+            "key": "Transfer-Id",
+            "value": "202211081156",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n  {\r\n    \"guid\": \"1111cl93-oa83-11e6-826a-e61f13537e43\",\r\n    \"amount\": 15,\r\n    \"warehouse_guid\": \"1111cl93-oa83-11e6-826a-e61f13537e42\",\r\n    \"order_guid\": \"1111cl93-oa83-11e6-826a-e61f13537e41\"\r\n  },\r\n{\r\n    \"guid\": \"1111cl93-oa83-11e6-826a-e61f13537e40\",\r\n    \"amount\": 20,\r\n    \"warehouse_guid\": \"1111cl93-oa83-11e6-826a-e61f13537e45\",\r\n    \"order_guid\": \"1111cl93-oa83-11e6-826a-e61f13537e46\"\r\n  }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/table/import/balance-reserve",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "table",
+            "import",
+            "balance-reserve"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

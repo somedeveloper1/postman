@@ -1,0 +1,105 @@
+{
+  "info": {
+    "_postman_id": "20cdaf65-fda5-4255-a8f7-4e95e452dcd9",
+    "name": "Tariffs",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Commissios",
+      "id": "34f5391b-3bb4-4817-b031-96f7d9b70034",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "{{wb_token}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://common-api.wildberries.ru/api/v1/tariffs/commission",
+          "protocol": "https",
+          "host": [
+            "common-api",
+            "wildberries",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "tariffs",
+            "commission"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Box",
+      "id": "d840985b-5b3f-43e0-9cc1-e7c49467c1b4",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "{{wb_token}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://common-api.wildberries.ru/api/v1/tariffs/box?date=2025-07-29",
+          "protocol": "https",
+          "host": [
+            "common-api",
+            "wildberries",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "tariffs",
+            "box"
+          ],
+          "query": [
+            {
+              "key": "date",
+              "value": "2025-07-29"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+﻿{
+  "info": {
+    "_postman_id": "9b29fc9a-4157-4acb-a38d-77fc7ae32fba",
+    "name": "Currencies",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Currencies",
+      "id": "c91648a0-b8fa-49b4-9f49-4918eadf676b",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/currencies",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "currencies"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Currency Create",
+      "id": "6e338f6d-91d2-4653-98ac-afe58961f914",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzAzMjU3MzAsImV4cCI6MTYzMDMyOTMzMCwibmJmIjoxNjMwMzI1NzMwLCJqdGkiOiJLd0s4Q2t4ZVhsck4xa3dQIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.ZM-jPn1olbziHwiWzf3zEzoD6F3yzOJ-4FhgyptmQGY",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"guid\": \"1\" ,\r\n    \"name\": \"My currenc\",\r\n    \"full_name\": \"My currency full name\",\r\n    \"percentage\": \"99.11\",\r\n    \"is_calculate_marketing_rate\": false,\r\n    \"decimal\": \"1\",\r\n    \"code\": \"1\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/currency/submit",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "currency",
+            "submit"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Currencies Import",
+      "id": "17b35b85-c3f2-4809-855f-d8773935c5dc",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"guid\": \"78683575-956c-11df-bfea-e61f13537e43\",\r\n        \"name\": \"руб.\",\r\n        \"code\": \"643\",\r\n        \"full_name\": \"Российский рубль\",\r\n        \"base_currency\": \"\",\r\n        \"percentage\": 0,\r\n        \"is_calculate_marketing_rate\": false,\r\n        \"decimal\": 0\r\n    },\r\n    {\r\n        \"guid\": \"78683575-956c-11df-bfea-e61f13537e43\",\r\n        \"name\": \"руб.\",\r\n        \"code\": \"643\",\r\n        \"full_name\": \"Российский рубль\",\r\n        \"base_currency\": \"\",\r\n        \"percentage\": 0,\r\n        \"is_calculate_marketing_rate\": false,\r\n        \"decimal\": 0\r\n    },\r\n    {\r\n        \"guid\": \"78683577-956c-11df-bfea-e61f13537e43\",\r\n        \"name\": \"EUR\",\r\n        \"code\": \"978\",\r\n        \"full_name\": \"Евро\",\r\n        \"base_currency\": \"78683575-956c-11df-bfea-e61f13537e43\",\r\n        \"percentage\": 0,\r\n        \"is_calculate_marketing_rate\": false,\r\n        \"decimal\": 0\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/table/import/currencies",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "table",
+            "import",
+            "currencies"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Currencies Import PROD",
+      "id": "0c9e3412-fc30-4470-a4de-3085d1c1261f",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"guid\": \"78683575-956c-11df-bfea-e61f13537e43\",\r\n        \"name\": \"руб.\",\r\n        \"code\": \"643\",\r\n        \"full_name\": \"Российский рубль\",\r\n        \"base_currency\": \"00000000-0000-0000-0000-000000000000\",\r\n        \"percentage\": 0,\r\n        \"is_calculate_marketing_rate\": false,\r\n        \"decimal\": 0\r\n    },\r\n    {\r\n        \"guid\": \"78683577-956c-11df-bfea-e61f13537e43\",\r\n        \"name\": \"EUR\",\r\n        \"code\": \"978\",\r\n        \"full_name\": \"Евро\",\r\n        \"base_currency\": \"00000000-0000-0000-0000-000000000000\",\r\n        \"percentage\": 0,\r\n        \"is_calculate_marketing_rate\": false,\r\n        \"decimal\": 0\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_prod}}/api/table/import/currencies",
+          "protocol": "https",
+          "host": [
+            "api",
+            "t-d",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "table",
+            "import",
+            "currencies"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

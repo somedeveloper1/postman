@@ -1,0 +1,447 @@
+{
+  "info": {
+    "_postman_id": "2a80360d-d4b6-410b-9166-b60c2167b940",
+    "name": "Counterparties",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Counterparties",
+      "id": "3b35fa07-7923-4af8-91c2-7e193b4ad07d",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/counterparties/list",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "counterparties",
+            "list"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Counterparty",
+      "id": "7145966d-08a5-4e7f-8ca2-313e37dd3715",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/counterparties/list",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "counterparties",
+            "list"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Counterparties Claims",
+      "id": "a5df49dc-5310-473a-8c32-bfdb4749731f",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/claims/counterparties",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "claims",
+            "counterparties"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Counterparties TOP 20",
+      "id": "230cee86-0080-47a8-a860-3380e7c3cb0f",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/counterparties/search?search_kpp=230701001&search_inn=2310031475",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "counterparties",
+            "search"
+          ],
+          "query": [
+            {
+              "key": "search_kpp",
+              "value": "230701001"
+            },
+            {
+              "key": "search_inn",
+              "value": "2310031475"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Counterparty Create",
+      "id": "4c49d70e-5e8c-4d99-a9bb-416cda8b7f1d",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzA1OTEzNDAsImV4cCI6MTYzMDU5NDk0MCwibmJmIjoxNjMwNTkxMzQwLCJqdGkiOiJqYWRiVnVpOXoyQ3BJRjNmIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.HaANsi7AEQTUKwzq0W7MWc1KBaS4Jis5WQEeULEUYGA",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"guid\": \"11\",\r\n    \"name\": \"counterparty 1\",\r\n    \"full_name\": \"counterparty full name\",\r\n    \"is_dealer\": false,\r\n    \"INN\": \"123456789123\",\r\n    \"KPP\": \"123456789\",\r\n    \"legal_status\": \"ЮрЛицо\",\r\n    \"country_guid\": \"1\",\r\n    \"shipment_prohibited\": false\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/counterparty/submit",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "counterparty",
+            "submit"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Counterparty Set Default Email",
+      "id": "170889c9-5ecb-475f-931e-83a739ab300a",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NTcwMDY2ODAsImV4cCI6MTY1NzYxMTQ4MCwibmJmIjoxNjU3MDA2NjgwLCJqdGkiOiJFcEdCTkFldnpXRlhEMlVDIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.xHCjlRnB5FpSAtfhaJe9KXEJSMMv470NoX09liJcETI",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"email\": null\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/counterparty/set-default-email",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "counterparty",
+            "set-default-email"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Counterparty Get Default Email",
+      "id": "f75ecd98-7334-432c-baa5-3e2d819f1468",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NTcwMDY2ODAsImV4cCI6MTY1NzYxMTQ4MCwibmJmIjoxNjU3MDA2NjgwLCJqdGkiOiJFcEdCTkFldnpXRlhEMlVDIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.xHCjlRnB5FpSAtfhaJe9KXEJSMMv470NoX09liJcETI",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/counterparty/default-email",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "counterparty",
+            "default-email"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Counterparties Import",
+      "id": "c868e952-aad0-49ba-95ef-9a47f6d87dcd",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Transfer-Id",
+            "value": "202301311623"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"guid\": \"46794e15-194b-11ed-a2c8-e61f13537111\",\r\n        \"name\": \"Акрамова Ольга Викторовна\",\r\n        \"full_name\": \"Акрамова Ольга Викторовна\",\r\n        \"manager\": \"2179c3fc-958f-11e8-a2a5-e61f13537e43\",\r\n        \"is_dealer\": false,\r\n        \"head_counterparty\": \"46794e15-194b-11ed-a2c8-e61f13537e43\",\r\n        \"INN\": null,\r\n        \"KPP\": null,\r\n        \"legal_status\": \"ФизЛицо\",\r\n        \"country_guid\": \"00000000-0000-0000-0000-000000000000\",\r\n        \"shipment_prohibited\": false,\r\n        \"okopf_code\": null,\r\n        \"okopf_guid\": \"bb910b6b-9c73-11df-8da0-e61f13537e43\",\r\n        \"region\": null,\r\n        \"tax_number\": null,\r\n        \"clients_type_guid\": \"041f5cde-52fc-11e1-afd9-e61f13537e43\",\r\n        \"number_lk\": \"lk-b89a193661-001660043602\",\r\n        \"main_contract_guid\": \"041f5cde-52fc-11e1-afd9-e61f13537e43\",\r\n        \"is_internal\": true,\r\n        \"is_our_supplier\": true,\r\n        \"matrix_client_type_guid\": \"matrix_client_type_guid\",\r\n        \"is_currency_accounts\": true,\r\n        \"currency_accounts_brands\": [\r\n            {\r\n                \"brand_guid\": \"ddc044cf-cb7f-11ee-8614-0050568e3182\",\r\n                \"line\": 1\r\n            }\r\n        ]\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/table/import/counterparties",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "table",
+            "import",
+            "counterparties"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Counterparties Import PROD",
+      "id": "1d28f0dc-ee02-480f-b215-00081d9e54ad",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"guid\": \"7a884209-5192-11de-ac04-0019dbd95dce\",\r\n        \"name\": \"Вилла ООО\",\r\n        \"full_name\": \"ООО \\\"Вилла\\\"\",\r\n        \"manager\": \"00000000-0000-0000-0000-000000000000\",\r\n        \"is_dealer\": false,\r\n        \"head_counterparty\": \"7a884209-5192-11de-ac04-0019dbd95dce\",\r\n        \"INN\": \"7705856026\",\r\n        \"KPP\": \"770501001\",\r\n        \"legal_status\": \"ЮрЛицо\",\r\n        \"country_guid\": \"00000000-0000-0000-0000-000000000000\",\r\n        \"shipment_prohibited\": false\r\n    },\r\n    {\r\n        \"guid\": \"7a34e6dc-299b-11de-b60c-001a6498e70d\",\r\n        \"name\": \"Алтер ООО\",\r\n        \"full_name\": \"ООО \\\"АЛТЕР\\\"\",\r\n        \"manager\": \"00000000-0000-0000-0000-000000000000\",\r\n        \"is_dealer\": false,\r\n        \"head_counterparty\": \"7a34e6dc-299b-11de-b60c-001a6498e70d\",\r\n        \"INN\": \"7718504952\",\r\n        \"KPP\": \"771301001\",\r\n        \"legal_status\": \"ЮрЛицо\",\r\n        \"country_guid\": \"00000000-0000-0000-0000-000000000000\",\r\n        \"shipment_prohibited\": false\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_prod}}/api/table/import/counterparties",
+          "protocol": "https",
+          "host": [
+            "api",
+            "t-d",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "table",
+            "import",
+            "counterparties"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Counterparties get JSON",
+      "id": "b307b282-58eb-46cd-8b67-faf9049fdb17",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzA1ODk0MzQsImV4cCI6MTYzMDU5MzAzNCwibmJmIjoxNjMwNTg5NDM0LCJqdGkiOiJSVFVvMmxtdWkzMHRKT0VDIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.yO6R72iQcqZh_oCwDBcDNSQYGiJ8IqzNL076CWBjpMA",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/counterparties/get-json",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "counterparties",
+            "get-json"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Counterparties create JSON",
+      "id": "511a3267-edfe-4490-9d6d-41b5a9d9f5c0",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/counterparties/create-json",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "counterparties",
+            "create-json"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Counterparties Deltas",
+      "id": "981c954a-389c-4742-a118-fd62e361780e",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/counterparty/delta",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "counterparty",
+            "delta"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Counterparties Delta Delete",
+      "id": "2dea4b40-8285-4a16-8bae-5ca7da239e54",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/counterparty/delete-deltas",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "counterparty",
+            "delete-deltas"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

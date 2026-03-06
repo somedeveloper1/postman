@@ -1,0 +1,60 @@
+{
+  "info": {
+    "_postman_id": "6c5817c2-3754-4c5e-93bc-a57fa4222ce5",
+    "name": "Matrix",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Price Groups",
+      "item": [
+        {
+          "name": "Price Group Update",
+          "id": "68ee3496-6b21-43cf-aa1b-1d4d0217a459",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"nomenclature_group_guid\": \"aee4b01f-11d0-11e2-aa5e-e61f13537e43\",\r\n    \"brand_guid\": \"386cce8d-7c10-11e3-9a75-e61f13537e43\",\r\n    \"is_expensive\": false,\r\n    \"is_middle\": false,\r\n    \"is_cheap\": false\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/matrix/price-groups/update"
+          },
+          "response": []
+        }
+      ],
+      "id": "d6f66b3b-4ae9-4291-a305-4474408b99b1"
+    },
+    {
+      "name": "Ka Nomenclature Groups",
+      "item": [
+        {
+          "name": "Ka Nomenclature Groups Matrix",
+          "id": "df4f7562-0138-4177-9a24-1f8a173446c0",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/matrix/ka-nomenclature-groups?search_by_brand=Камик"
+          },
+          "response": []
+        },
+        {
+          "name": "Ka Nomenclature Groups Matrix With Price Groups",
+          "id": "e6241f3b-b234-46f6-bf88-ae9e5811131d",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/matrix/ka-nomenclature-groups/with-price-groups"
+          },
+          "response": []
+        }
+      ],
+      "id": "ca3e656b-6f18-4c56-a625-e20671cb2425"
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "info": {
+    "_postman_id": "6633b662-d9b4-40b5-8d12-eb81e0b09d1b",
+    "name": "Yandex Api",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Yandex Offer-mappings",
+      "id": "513f2db2-f7fb-43cf-a68e-e4025f5c4ccc",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "y0_AgAAAABzjdKGAAsjUQAAAAD4VKb9DBMWWQgxSrWgLeluoSQOGEMxOgg",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api.partner.market.yandex.ru/businesses/105756949/offer-mappings",
+          "protocol": "https",
+          "host": [
+            "api",
+            "partner",
+            "market",
+            "yandex",
+            "ru"
+          ],
+          "path": [
+            "businesses",
+            "105756949",
+            "offer-mappings"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Yandex Offer-prices By Campaigns",
+      "id": "d8d68bd7-20dd-4e05-b46f-f30a83fe503c",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "y0_AgAAAABzjdKGAAsjUQAAAAD4VKb9DBMWWQgxSrWgLeluoSQOGEMxOgg",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"offerIds\": [\"51588\", \"HEC-16\"]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api.partner.market.yandex.ru/campaigns/83226553/offers",
+          "protocol": "https",
+          "host": [
+            "api",
+            "partner",
+            "market",
+            "yandex",
+            "ru"
+          ],
+          "path": [
+            "campaigns",
+            "83226553",
+            "offers"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

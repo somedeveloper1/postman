@@ -1,0 +1,67 @@
+{
+  "info": {
+    "_postman_id": "1f89f0d9-b398-4f63-b8b9-2221c7dd363e",
+    "name": "Problem Type For Claims",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Problem Type For Claims",
+      "id": "d3c0ee1b-6910-46f0-ae7b-8a41391cc06a",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/problem-types-for-claims"
+      },
+      "response": []
+    },
+    {
+      "name": "Problem Type For Claims Create",
+      "id": "e82c4f13-5143-4749-b7ea-4cc4d67e5efc",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"extra\",\r\n    \"title\": \"extra\",\r\n    \"nomenclature_groups\": [2, 3]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/problem-types-for-claims/create"
+      },
+      "response": []
+    },
+    {
+      "name": "Problem Type For Claims Update",
+      "id": "09dfebf0-5671-496c-86ae-7aa51c7669ac",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"extra2\",\r\n    \"title\": \"Недостача/излишек\",\r\n    \"nomenclature_groups\": [2]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/problem-types-for-claims/update/9"
+      },
+      "response": []
+    },
+    {
+      "name": "Problem Type For Claims Delete",
+      "id": "0a8aa682-8217-4f39-aed0-ef3349a714e8",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": "{{base_url_local}}/api/problem-types-for-claims/1/detele"
+      },
+      "response": []
+    }
+  ]
+}

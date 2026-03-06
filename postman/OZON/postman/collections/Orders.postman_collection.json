@@ -1,0 +1,179 @@
+{
+  "info": {
+    "_postman_id": "bbe6da32-784b-4890-b134-3d52a1751791",
+    "name": "Orders",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Ozon Carriage FBS",
+      "id": "ff203dc9-ae66-49cb-b497-128603b02f24",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Client-Id",
+            "value": "{{ozon_client_id_header}}",
+            "type": "text"
+          },
+          {
+            "key": "Api-Key",
+            "value": "{{ozon_client_id}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"carriage_id\": 44779336\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api-seller.ozon.ru/v1/carriage/get",
+          "protocol": "https",
+          "host": [
+            "api-seller",
+            "ozon",
+            "ru"
+          ],
+          "path": [
+            "v1",
+            "carriage",
+            "get"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Ozon Posting Orders List FBS",
+      "id": "e2d207a9-1044-4969-96d7-21480db7fba3",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Client-Id",
+            "value": "{{ozon_client_id_header}}"
+          },
+          {
+            "key": "Api-Key",
+            "value": "{{ozon_client_id}}"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"dir\": \"ASC\",\r\n    \"filter\": {\r\n        \"delivery_method_id\": [],\r\n        \"last_changed_status_date\": {\r\n            \"from\": null,\r\n            \"to\": null\r\n        },\r\n        \"order_id\": 0,\r\n        \"provider_id\": [],\r\n        \"since\": \"2024-02-01T00:00:00.000Z\",\r\n        \"status\": \"\",\r\n        \"to\": \"2024-05-21T00:00:00.000Z\",\r\n        \"warehouse_id\": []\r\n    },\r\n    \"limit\": 1000,\r\n    \"offset\": 0,\r\n    \"with\": {\r\n        \"analytics_data\": true,\r\n        \"barcodes\": false,\r\n        \"financial_data\": true,\r\n        \"translit\": false\r\n    }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api-seller.ozon.ru/v3/posting/fbs/list",
+          "protocol": "https",
+          "host": [
+            "api-seller",
+            "ozon",
+            "ru"
+          ],
+          "path": [
+            "v3",
+            "posting",
+            "fbs",
+            "list"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Ozon Posting Order FBS",
+      "id": "4546c24a-ad23-46f9-81bf-50b62edc88b2",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Client-Id",
+            "value": "{{ozon_client_id_header}}"
+          },
+          {
+            "key": "Api-Key",
+            "value": "{{ozon_client_id}}"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"posting_number\": \"32037926-0182-2\",\r\n    \"translit\": true,\r\n    \"with\": {\r\n        \"analytics_data\": true,\r\n        \"financial_data\": true\r\n    }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api-seller.ozon.ru/v3/posting/fbs/get",
+          "protocol": "https",
+          "host": [
+            "api-seller",
+            "ozon",
+            "ru"
+          ],
+          "path": [
+            "v3",
+            "posting",
+            "fbs",
+            "get"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Ozon Posting Cancellation Reasons",
+      "id": "23873252-4235-4089-ad73-c6206f6ebdee",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Client-Id",
+            "value": "{{ozon_client_id_header}}"
+          },
+          {
+            "key": "Api-Key",
+            "value": "{{ozon_client_id}}"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"posting_number\": \"32037926-0182-2\",\r\n    \"translit\": true,\r\n    \"with\": {\r\n        \"analytics_data\": true,\r\n        \"financial_data\": true\r\n    }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api-seller.ozon.ru/v1/posting/fbo/cancel-reason/list",
+          "protocol": "https",
+          "host": [
+            "api-seller",
+            "ozon",
+            "ru"
+          ],
+          "path": [
+            "v1",
+            "posting",
+            "fbo",
+            "cancel-reason",
+            "list"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

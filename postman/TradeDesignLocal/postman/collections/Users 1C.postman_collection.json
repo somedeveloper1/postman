@@ -1,0 +1,197 @@
+{
+  "info": {
+    "_postman_id": "22deaf93-3930-4640-8949-d9bd78e7df9f",
+    "name": "Users 1C",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Users",
+      "id": "e9371a64-5a05-429d-8520-7f5baa2ef58e",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTcxNjgxNTc3MywiZXhwIjoxNzE3NDIwNTczLCJuYmYiOjE3MTY4MTU3NzMsImp0aSI6IjR5cktWOGpoMFI0VE5WbTgiLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.7daLe0NNpBVfZ09mtjRyrkzlNk7E5Zj8ZArqlW3PugY",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/users-1c"
+      },
+      "response": []
+    },
+    {
+      "name": "Managers",
+      "id": "505fd391-33ba-45c7-bdc5-77efb961aba5",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/users-1c/managers"
+      },
+      "response": []
+    },
+    {
+      "name": "Employees to Claims",
+      "id": "402fa83c-6639-49e5-af70-1f444f012d36",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzAzMDk2MDQsImV4cCI6MTYzMDMxMzIwNCwibmJmIjoxNjMwMzA5NjA0LCJqdGkiOiIzSzdGSWpaeUxaTVowbkhGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.fxp0_27MALE-n5r4HQn0THcasoJgMBsevKB1kSWFL_s",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/users-1c"
+      },
+      "response": []
+    },
+    {
+      "name": "Responsible to Claims",
+      "id": "95300f19-b2f4-4b09-88ee-ca8de8f9c670",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NDc1ODU2NTQsImV4cCI6MTY0ODE5MDQ1NCwibmJmIjoxNjQ3NTg1NjU0LCJqdGkiOiJRSDdRN3FQYlFqVWt0R2czIiwic3ViIjo0MCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.oYz1PrYlnFFpwdIlc7yrszeyZzDRX9jzdNC3Y8bxIUY",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/claims/responsible"
+      },
+      "response": []
+    },
+    {
+      "name": "Initiators to Claims",
+      "id": "94340545-8f35-4903-8814-1bbc3a3967db",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTY0ODc5ODc0NCwiZXhwIjoxNjQ5NDAzNTQ0LCJuYmYiOjE2NDg3OTg3NDQsImp0aSI6InFCWm85WVFDVmNLcWd6RmEiLCJzdWIiOjEzNjksInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.uNDOzhIsM_Wg3HuG5mAcq3AKasUJVGot7gG_vpZnyVo",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/claims/initiators"
+      },
+      "response": []
+    },
+    {
+      "name": "User 1C Create",
+      "id": "7b0dde9f-d45f-4f0c-b9c9-a9ca342a5a0f",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzAzMDk2MDQsImV4cCI6MTYzMDMxMzIwNCwibmJmIjoxNjMwMzA5NjA0LCJqdGkiOiIzSzdGSWpaeUxaTVowbkhGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.fxp0_27MALE-n5r4HQn0THcasoJgMBsevKB1kSWFL_s",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "guid",
+              "value": "1",
+              "type": "text"
+            }
+          ]
+        },
+        "url": "{{base_url_local}}/api/user-1c/submit"
+      },
+      "response": []
+    },
+    {
+      "name": "Users 1C Import",
+      "id": "47d21b72-a36d-4581-bbad-d9ee5a6240a0",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"guid\": \"00000000-0000-0000-0000-000000000000\",\r\n        \"name\": \"My Name\", \r\n        \"role\": \"Developer\",\r\n        \"photo\": \"my photo\",\r\n        \"to_delete\": false,\r\n        \"department_guid\": \"7a1d4859-63eb-11e3-9b80-e61f13537e43\"\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/table/import/users-1c"
+      },
+      "response": []
+    },
+    {
+      "name": "Users 1C Import PROD",
+      "id": "1d1b4757-6412-48d8-843e-250ad5ed2eca",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"guid\": \"a4893e90-8123-11e8-a2a5-e61f13537e43\",\r\n        \"name\": \"Величко Дарья Сергеевна\"\r\n    },\r\n    {\r\n        \"guid\": \"fbd0fcd7-ecec-11e1-aa5e-e61f13537e43\",\r\n        \"name\": \"Гузанов Денис Николаевич\"\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_prod}}/api/table/import/users-1c"
+      },
+      "response": []
+    }
+  ]
+}

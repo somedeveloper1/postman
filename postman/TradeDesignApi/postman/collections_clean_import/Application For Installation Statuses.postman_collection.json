@@ -1,0 +1,50 @@
+{
+  "info": {
+    "_postman_id": "7a5723f1-3797-4c48-8c70-9c53cac16da4",
+    "name": "Application For Installation Statuses",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Application For Installation Statuses Import",
+      "id": "3ccf255b-2484-4367-9f8e-9345c52dc9e9",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"guid\": \"111111111111111111111111111111111111\",\r\n        \"number\": \"11111111111111111111\",\r\n        \"date\": \"2022-04-14\",\r\n        \"status_guid\": \"111111111111111111111111111111111111\",\r\n        \"is_processed\": true,\r\n        \"applications_for_installation_realizations\": [\r\n            {\r\n                \"line\": \"1\",\r\n                \"applications_for_installation_guid\": \"111111111111111111111111111111111111\",\r\n                \"realization_guid\": \"123\"\r\n            },\r\n            {\r\n                \"line\": \"2\",\r\n                \"applications_for_installation_guid\": \"111111111111111111111111111111111111\",\r\n                \"realization_guid\": \"12389\"\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"guid\": \"111111111111111111111111111111111112\",\r\n        \"number\": \"11111111111111111111\",\r\n        \"date\": \"2022-04-14\",\r\n        \"status_guid\": \"111111111111111111111111111111111112\",\r\n        \"is_processed\": false,\r\n        \"applications_for_installation_realizations\": [\r\n            {\r\n                \"line\": \"1\",\r\n                \"applications_for_installation_guid\": \"111111111111111111111111111111111112\",\r\n                \"realization_guid\": \"123\"\r\n            },\r\n            {\r\n                \"line\": \"2\",\r\n                \"applications_for_installation_guid\": \"111111111111111111111111111111111112\",\r\n                \"realization_guid\": \"12345\"\r\n            }\r\n        ]\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/table/import/applications-for-installation-statuses",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "table",
+            "import",
+            "applications-for-installation-statuses"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

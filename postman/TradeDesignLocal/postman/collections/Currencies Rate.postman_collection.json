@@ -1,0 +1,29 @@
+{
+  "info": {
+    "_postman_id": "02010aef-cad2-48ed-be79-7a35c943b0de",
+    "name": "Currencies Rate",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Currency Rate",
+      "id": "63e4cb2e-dda9-4c89-9aac-15659b438ce5",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/currency-rate/usd"
+      },
+      "response": []
+    },
+    {
+      "name": "Currency Rate Current",
+      "id": "5eae42d7-f762-4438-b67a-cdf92c149c96",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/currency-rates/current"
+      },
+      "response": []
+    }
+  ]
+}

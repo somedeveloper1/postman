@@ -1,0 +1,57 @@
+﻿{
+  "info": {
+    "_postman_id": "473243aa-de64-419e-9153-c86736457cd5",
+    "name": "DWH",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Counterparties Statistics",
+      "item": [
+        {
+          "name": "Counterparties Statistics Import",
+          "id": "772c01c1-ccc8-4c75-9137-b6acacdb6d67",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2ODQyMjAyNDksImV4cCI6MTY4NDgyNTA0OSwibmJmIjoxNjg0MjIwMjQ5LCJqdGkiOiI4eXRsWFFRY1YzNlRqZXcxIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.cqjRA1adEXlZwIie_lxVtAQi8kfdXyDL82WU2SVAm_k",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "file",
+                  "type": "file",
+                  "src": "/C:/Users/user/Desktop/База дилеров_v2.0.xlsx"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api/dwh/counterparties-statistics/import",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dwh",
+                "counterparties-statistics",
+                "import"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "e4428e42-a4b4-4c0a-9da9-3af2e40b6269"
+    }
+  ]
+}

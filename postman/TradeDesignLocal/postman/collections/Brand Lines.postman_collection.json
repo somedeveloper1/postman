@@ -1,0 +1,69 @@
+{
+  "info": {
+    "_postman_id": "eadf1ddc-679d-4418-a943-e6f55d1684c3",
+    "name": "Brand Lines",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Brand Lines Import",
+      "id": "73d39431-d8ab-494e-9ca2-72c1694b4b91",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Transfer-Id",
+            "value": "202211081327",
+            "type": "text"
+          },
+          {
+            "key": "Package-Number",
+            "value": "1",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"guid\": \"b124d732-946b-11e3-8906-e61f13537e43\",\r\n        \"name\": \"Braun\",\r\n        \"brand_guid\": \"TECT 1\",\r\n        \"code\": \"1233\",\r\n        \"description\": \"description 1\"\r\n    },\r\n    {\r\n        \"guid\": \"c057169c-5103-11e3-9e03-e61f13537e43\",\r\n        \"name\": \"Aqua\",\r\n        \"brand_guid\": \"TECT 1\",\r\n        \"code\": \"1233\",\r\n        \"description\": \"description 1\"\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/table/import/brand-lines"
+      },
+      "response": []
+    },
+    {
+      "name": "Brand Lines",
+      "id": "10490fb2-1365-45d6-987a-3b867370abff",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/brand-lines"
+      },
+      "response": []
+    }
+  ]
+}

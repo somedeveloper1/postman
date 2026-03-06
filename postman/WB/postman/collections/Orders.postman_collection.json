@@ -1,0 +1,111 @@
+{
+  "info": {
+    "_postman_id": "82a21f0b-627f-499a-98b7-f801e2bc46db",
+    "name": "Orders",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Orders",
+      "id": "8cad21fa-b08c-4d5b-8d5c-4eef6aba358e",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "{{wb_token}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://statistics-api.wildberries.ru/api/v1/supplier/orders?dateFrom=2025-11-01",
+          "protocol": "https",
+          "host": [
+            "statistics-api",
+            "wildberries",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "supplier",
+            "orders"
+          ],
+          "query": [
+            {
+              "key": "dateFrom",
+              "value": "2025-11-01"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Sales",
+      "id": "d5bd8150-37f9-4366-bb19-1121c8660504",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "{{wb_token}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://statistics-api.wildberries.ru/api/v1/supplier/sales?dateFrom=2025-11-01",
+          "protocol": "https",
+          "host": [
+            "statistics-api",
+            "wildberries",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "supplier",
+            "sales"
+          ],
+          "query": [
+            {
+              "key": "dateFrom",
+              "value": "2025-11-01"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

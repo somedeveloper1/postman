@@ -1,0 +1,57 @@
+﻿{
+  "info": {
+    "_postman_id": "7cfa53f8-a6fb-4694-86f0-49fe9753c6d3",
+    "name": "Matrix Client Types",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Matrix Client Types Import",
+      "id": "9646e034-9df6-43d2-a378-fb0c610f6e6e",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Transfer-Id",
+            "value": "20240523124"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n\t{\r\n\t\t\"guid\": \"a4d11acd-df9f-11ee-aea4-0050568e3182\",\r\n\t\t\"name\": \"Лизинговая компания\",\r\n\t\t\"code\": \"000000015\"\r\n\t},\r\n\t{\r\n\t\t\"guid\": \"4ca059e1-d496-11ee-be95-0050568e3182\",\r\n\t\t\"name\": \"Дилеры\",\r\n\t\t\"code\": \"000000001\"\r\n\t},\r\n\t{\r\n\t\t\"guid\": \"4ca059e2-d496-11ee-be95-0050568e3182\",\r\n\t\t\"name\": \"Интернет-магазин\",\r\n\t\t\"code\": \"000000002\"\r\n\t},\r\n\t{\r\n\t\t\"guid\": \"543b6a28-d496-11ee-be95-0050568e3182\",\r\n\t\t\"name\": \"ГосЗаказчик (РФ)\",\r\n\t\t\"code\": \"000000003\"\r\n\t},\r\n\t{\r\n\t\t\"guid\": \"543b6a29-d496-11ee-be95-0050568e3182\",\r\n\t\t\"name\": \"Предприятия быстрого питания\",\r\n\t\t\"code\": \"000000004\"\r\n\t},\r\n\t{\r\n\t\t\"guid\": \"5e9ab5a0-d496-11ee-be95-0050568e3182\",\r\n\t\t\"name\": \"Рестораны\",\r\n\t\t\"code\": \"000000005\"\r\n\t},\r\n\t{\r\n\t\t\"guid\": \"5e9ab60b-d496-11ee-be95-0050568e3182\",\r\n\t\t\"name\": \"Частные дома\",\r\n\t\t\"code\": \"000000006\"\r\n\t},\r\n\t{\r\n\t\t\"guid\": \"64b3fe19-d496-11ee-be95-0050568e3182\",\r\n\t\t\"name\": \"Отели\",\r\n\t\t\"code\": \"000000007\"\r\n\t},\r\n\t{\r\n\t\t\"guid\": \"64b3fe3f-d496-11ee-be95-0050568e3182\",\r\n\t\t\"name\": \"Столовые\",\r\n\t\t\"code\": \"000000008\"\r\n\t},\r\n\t{\r\n\t\t\"guid\": \"6c7004a6-d496-11ee-be95-0050568e3182\",\r\n\t\t\"name\": \"АЗС, АЗК\",\r\n\t\t\"code\": \"000000009\"\r\n\t},\r\n\t{\r\n\t\t\"guid\": \"6c7004ec-d496-11ee-be95-0050568e3182\",\r\n\t\t\"name\": \"FOOD (магазины)\",\r\n\t\t\"code\": \"000000010\"\r\n\t},\r\n\t{\r\n\t\t\"guid\": \"75181f13-d496-11ee-be95-0050568e3182\",\r\n\t\t\"name\": \"NON-FOOD (магазины)\",\r\n\t\t\"code\": \"000000011\"\r\n\t},\r\n\t{\r\n\t\t\"guid\": \"75181fde-d496-11ee-be95-0050568e3182\",\r\n\t\t\"name\": \"ППР (производства)\",\r\n\t\t\"code\": \"000000012\"\r\n\t},\r\n\t{\r\n\t\t\"guid\": \"7cd1670f-d496-11ee-be95-0050568e3182\",\r\n\t\t\"name\": \"Прачечные\",\r\n\t\t\"code\": \"000000013\"\r\n\t},\r\n\t{\r\n\t\t\"guid\": \"7cd16759-d496-11ee-be95-0050568e3182\",\r\n\t\t\"name\": \"Сотрудник (не Матрица)\",\r\n\t\t\"code\": \"000000014\"\r\n\t}\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_prod}}/api/table/import/matrix-client-types",
+          "protocol": "https",
+          "host": [
+            "api",
+            "t-d",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "table",
+            "import",
+            "matrix-client-types"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

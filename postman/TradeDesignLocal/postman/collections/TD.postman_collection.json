@@ -1,0 +1,135 @@
+{
+  "info": {
+    "_postman_id": "ab7f0ad8-55cd-4dca-90fb-009c4af7fcc8",
+    "name": "TD",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Products",
+      "item": [
+        {
+          "name": "TD Products Pim Fields",
+          "id": "2344dbf6-1e07-4c25-b488-ddbb219957c9",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTcxMzQyODgzNiwiZXhwIjoxNzE0MDMzNjM2LCJuYmYiOjE3MTM0Mjg4MzYsImp0aSI6IjRJWmpUTU1DZ0VXakRrTHYiLCJzdWIiOjI2NDYsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.0MFeVK5_d2USSHjqXQ552GyLqdXdXFsUJJA5NvC64CM",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/td/products/pim-fields?type=documents&codes[]=00000449437"
+          },
+          "response": []
+        },
+        {
+          "name": "TD Products",
+          "id": "4cc5bebd-6493-4ae4-bb10-c0eb4cf8538c",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/td/products?per_page=0"
+          },
+          "response": []
+        },
+        {
+          "name": "TD Products Prices",
+          "id": "ba8bc215-b74a-4abb-99d2-e4f67e5e5fbb",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTczNzExMDc1MywiZXhwIjoxNzM3NzE1NTUzLCJuYmYiOjE3MzcxMTA3NTMsImp0aSI6IndNZm9YN05hM1lod09jT2wiLCJzdWIiOjQxMTgsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.A8PBn8zQUFLPxJkD3-3rZknMpFaKoE9_IQn4qy9KNDw",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/td/products/prices?per_page=0&nomenclature[]=2fbad1e8-b0e3-11ed-98c9-e61f13537e43"
+          },
+          "response": []
+        },
+        {
+          "name": "TD Products Feeds Download",
+          "id": "1d2b68c7-3ae4-4b59-8de6-628540a549ca",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTczNzExMDc1MywiZXhwIjoxNzM3NzE1NTUzLCJuYmYiOjE3MzcxMTA3NTMsImp0aSI6IndNZm9YN05hM1lod09jT2wiLCJzdWIiOjQxMTgsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.A8PBn8zQUFLPxJkD3-3rZknMpFaKoE9_IQn4qy9KNDw",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api-td/products/feeds/kursk"
+          },
+          "response": []
+        },
+        {
+          "name": "TD Products Balance",
+          "id": "bd548b57-fea0-4b09-9000-ae7f7df4e5f6",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/td/products/balance?per_page=0"
+          },
+          "response": []
+        },
+        {
+          "name": "TD Products Delta",
+          "id": "c158a62f-201f-45fc-b95a-a1271cc88a56",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/td/products/delta?per_page=100"
+          },
+          "response": []
+        }
+      ],
+      "id": "84e70a8b-7786-484c-8ed7-4bc2c0bb0c42"
+    }
+  ]
+}

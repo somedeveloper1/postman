@@ -1,0 +1,817 @@
+{
+  "info": {
+    "_postman_id": "c229307a-e4ad-49fb-b9d2-1deeb2b2cb3a",
+    "name": "Auth Front",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Login",
+      "id": "66ca23cd-6a4d-424a-baf2-24e90056db22",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"password\": \"TD123456789\",\r\n    \"email\": \"lyoulka@mail.ru\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/auth-front/login",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "auth-front",
+            "login"
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "67562e57-4592-41e0-813b-4a00b4dbe80b",
+          "name": "Default",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "email",
+                  "value": "lyuolka@mail.ru",
+                  "type": "text"
+                },
+                {
+                  "key": "password",
+                  "value": "{{auth_password}}",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password=123456789",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "auth-jwt",
+                "login"
+              ],
+              "query": [
+                {
+                  "key": "email",
+                  "value": "lyoulka@mail.ru"
+                },
+                {
+                  "key": "password",
+                  "value": "{{auth_password}}"
+                }
+              ]
+            }
+          },
+          "_postman_previewlanguage": null,
+          "header": null,
+          "cookie": [],
+          "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+        }
+      ]
+    },
+    {
+      "name": "Login By Phone",
+      "id": "1debbdb1-b316-48be-9ba9-8d09dfebb054",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"personal_phone\": \"9063098083\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/auth-front/login-by-phone",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "auth-front",
+            "login-by-phone"
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "be81a309-c8fd-4f08-8725-2fe2d90b2170",
+          "name": "Default",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "email",
+                  "value": "lyuolka@mail.ru",
+                  "type": "text"
+                },
+                {
+                  "key": "password",
+                  "value": "{{auth_password}}",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password=123456789",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "auth-jwt",
+                "login"
+              ],
+              "query": [
+                {
+                  "key": "email",
+                  "value": "lyoulka@mail.ru"
+                },
+                {
+                  "key": "password",
+                  "value": "{{auth_password}}"
+                }
+              ]
+            }
+          },
+          "_postman_previewlanguage": null,
+          "header": null,
+          "cookie": [],
+          "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+        }
+      ]
+    },
+    {
+      "name": "Login as User",
+      "id": "9eb6681a-7faa-4807-901f-de7d5e47e199",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTcxNzc1MDY3NCwiZXhwIjoxNzE4MzU1NDc0LCJuYmYiOjE3MTc3NTA2NzQsImp0aSI6InRNOGMwdmVyMHQ1YzdlVzUiLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Rg9KhXPiS4KYmdDSnRNdN9z6-Yc1CDxhVJrFeC5ANzw",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/auth-front/login-as-dealer/2899",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "auth-front",
+            "login-as-dealer",
+            "2899"
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "cbcc968b-cd8e-4849-b146-53bf5a659388",
+          "name": "Default",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "email",
+                  "value": "lyuolka@mail.ru",
+                  "type": "text"
+                },
+                {
+                  "key": "password",
+                  "value": "{{auth_password}}",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password=123456789",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "auth-jwt",
+                "login"
+              ],
+              "query": [
+                {
+                  "key": "email",
+                  "value": "lyoulka@mail.ru"
+                },
+                {
+                  "key": "password",
+                  "value": "{{auth_password}}"
+                }
+              ]
+            }
+          },
+          "_postman_previewlanguage": null,
+          "header": null,
+          "cookie": [],
+          "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+        }
+      ]
+    },
+    {
+      "name": "Delete",
+      "id": "bd7ed52a-3574-4d4d-8cb3-d15a9d696b8c",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2Njk3MTA1NDcsImV4cCI6MTY3MDMxNTM0NywibmJmIjoxNjY5NzEwNTQ3LCJqdGkiOiIwbDJwN1FUazBQMVdSTEdhIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.fdBUJa8vsJA-xajBoeLVR6nbiD7-DZc01nduTBTiYss",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/auth-front/delete/1662",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "auth-front",
+            "delete",
+            "1662"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Register",
+      "id": "984b939b-dac2-4255-bb89-d9b9fd7aefe6",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n \"xml_id\": 1,\r\n \"timestamp_x\": \"2021-09-09 06:45:54\",\r\n \"login\": \"yuyuyu12\",\r\n \"password\": \"123456789\",\r\n \"password_bitrix\": \"11111\",\r\n \"stored_hash\": \"0000000\",\r\n \"checkword\": \"слово\",\r\n \"active\": \"Y\",\r\n \"name\": \"\",\r\n \"last_name\": \"YU\",\r\n \"second_name\": \"Иванович\",\r\n \"email\": \"lyoulka-new@test2.ru\",\r\n \"last_login\": \"2021-09-09 06:45:54\",\r\n \"last_activity_date\": \"2021-09-09 06:45:54\",\r\n \"date_register\": \"2021-09-08 11:55:00\",\r\n \"lid\": \"12\",\r\n \"admin_notes\": \"Заметки администратора\",\r\n \"external_auth_id\": \"3ea8c4cf-c62d-47fc-907d-5951d3d493f1\",\r\n \"personal_profession\": \"Бухгалтер\",\r\n \"personal_www\": \"http://ivanov-ivan.ru\",\r\n \"personal_icq\": \"111111111\",\r\n \"personal_gender\": \"М\",\r\n \"personal_birthday\": \"1986-01-01\",\r\n \"personal_photo\": 12,\r\n \"personal_phone\": \"+79000000000\",\r\n \"personal_fax\": \"11-12-13\",\r\n \"personal_mobile\": \"+79000000000\",\r\n \"personal_pager\": \"+79000000000\",\r\n \"personal_street\": \"ул. Московская, д. 11\",\r\n \"personal_mailbox\": \"ул. Московская, д. 11, кв. 10\",\r\n \"personal_city\": \"Москва\",\r\n \"personal_state\": \"Московская область\",\r\n \"personal_zip\": \"101000\",\r\n \"personal_country\": \"РФ\",\r\n \"personal_notes\": \"Заметки пользователя\",\r\n \"work_company\": \"ООО Компания\",\r\n \"work_department\": \"Бухгалтерия\",\r\n \"work_position\": \"Бухгалтер\",\r\n \"work_www\": \"http://company.ru\",\r\n \"work_phone\": \"+79000000001\",\r\n \"work_fax\": \"11-12-14\",\r\n \"work_pager\": \"+79000000001\",\r\n \"work_street\": \"ул. Московская, д. 12\",\r\n \"work_mailbox\": \"ул. Московская, д. 11, кв. 1\",\r\n \"work_city\": \"Москва\",\r\n \"work_state\": \"Московская область\",\r\n \"work_zip\": \"101000\",\r\n \"work_country\": \"РФ\",\r\n \"work_profile\": \"ИТ\",\r\n \"work_logo\": 13,\r\n \"work_notes\": \"Дополнительные заметки.\",\r\n \"uf_dealer_legal_entity_type\": \"Юр. лицо\",\r\n \"uf_dealer_inn\": \"123456789123\",\r\n \"uf_dealer_address_actual\": \"101000, г. Москва, ул. Московская, д. 12 кв. 3\",\r\n \"uf_dealer_address_legal\": \"101000, г. Москва, ул. Московская, д. 12 кв. 3\",\r\n \"uf_inn\": \"\",\r\n \"uf_kpp\": \"\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/auth-front/register",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "auth-front",
+            "register"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Password Forgot",
+      "id": "c934a96d-93ae-464c-a100-c51a905f241b",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n \"email\": \"lyoulka@mail.ru\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/auth-front/forgot-password",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "auth-front",
+            "forgot-password"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Password Reset",
+      "id": "4aa58f2d-4144-467f-860d-cfe1c83a8975",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n \"password\": \"TD123456789\",\r\n \"email\": \"lyoulka@mail.ru\",\r\n \"password_confirmation\": \"TD123456789\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/auth-front/reset-password/66047d4dcf2fdd9c2f1b208cfa645e1d7f3647d4fe1b0a23c2322826f1b548a",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "auth-front",
+            "reset-password",
+            "66047d4dcf2fdd9c2f1b208cfa645e1d7f3647d4fe1b0a23c2322826f1b548a"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update",
+      "id": "d51e0557-c01e-451e-b428-5a56255a65cc",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NzIyOTYwMTUsImV4cCI6MTY3MjkwMDgxNSwibmJmIjoxNjcyMjk2MDE1LCJqdGkiOiJDYkNVMkFZVUVZMVowZ3V5Iiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.lW3c-MICQ-g0IeDXys_h-etqSuV88DH2ZDwCXoSl9MA",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "_METHOD",
+            "value": "PATCH",
+            "type": "text",
+            "disabled": true
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n \"user_id\": 1662,\r\n \"xml_id\": 1,\r\n \"timestamp_x\": \"2021-09-09 06:45:54\",\r\n \"login\": \"yuyuyu12\",\r\n \"password\": \"123456789\",\r\n \"password_bitrix\": \"11111\",\r\n \"stored_hash\": \"0000000\",\r\n \"checkword\": \"слово\",\r\n \"active\": \"Y\",\r\n \"name\": \"\",\r\n \"last_name\": \"YU\",\r\n \"second_name\": \"Иванович\",\r\n \"email\": \"test2@test.com\",\r\n \"last_login\": \"2021-09-09 06:45:54\",\r\n \"last_activity_date\": \"2021-09-09 06:45:54\",\r\n \"date_register\": \"2021-09-08 11:55:00\",\r\n \"lid\": \"12\",\r\n \"admin_notes\": \"Заметки администратора\",\r\n \"external_auth_id\": \"3ea8c4cf-c62d-47fc-907d-5951d3d493f1\",\r\n \"personal_profession\": \"Бухгалтер\",\r\n \"personal_www\": \"http://ivanov-ivan.ru\",\r\n \"personal_icq\": \"111111111\",\r\n \"personal_gender\": \"М\",\r\n \"personal_birthday\": \"1986-01-01\",\r\n \"personal_photo\": 12,\r\n \"personal_phone\": \"+79000000000\",\r\n \"personal_fax\": \"11-12-13\",\r\n \"personal_mobile\": \"+79000000000\",\r\n \"personal_pager\": \"+79000000000\",\r\n \"personal_street\": \"ул. Московская, д. 11\",\r\n \"personal_mailbox\": \"ул. Московская, д. 11, кв. 10\",\r\n \"personal_city\": \"Москва\",\r\n \"personal_state\": \"Московская область\",\r\n \"personal_zip\": \"101000\",\r\n \"personal_country\": \"РФ\",\r\n \"personal_notes\": \"Заметки пользователя\",\r\n \"work_company\": \"ООО Компания\",\r\n \"work_department\": \"Бухгалтерия\",\r\n \"work_position\": \"Бухгалтер\",\r\n \"work_www\": \"http://company.ru\",\r\n \"work_phone\": \"+79000000001\",\r\n \"work_fax\": \"11-12-14\",\r\n \"work_pager\": \"+79000000001\",\r\n \"work_street\": \"ул. Московская, д. 12\",\r\n \"work_mailbox\": \"ул. Московская, д. 11, кв. 1\",\r\n \"work_city\": \"Москва\",\r\n \"work_state\": \"Московская область\",\r\n \"work_zip\": \"101000\",\r\n \"work_country\": \"РФ\",\r\n \"work_profile\": \"ИТ\",\r\n \"work_logo\": 13,\r\n \"work_notes\": \"Дополнительные заметки.\",\r\n \"uf_dealer_legal_entity_type\": \"Юр. лицо\",\r\n \"uf_dealer_inn\": \"123456789123\",\r\n \"uf_dealer_address_actual\": \"101000, г. Москва, ул. Московская, д. 12 кв. 3\",\r\n \"uf_dealer_address_legal\": \"101000, г. Москва, ул. Московская, д. 12 кв. 3\",\r\n \"uf_inn\": \"\",\r\n \"uf_kpp\": \"\",\r\n \"counterparty_guid\": \"123456789\",\r\n \"roles\": [1, 2]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/auth-front/update",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "auth-front",
+            "update"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update Password",
+      "id": "ef9dc3da-7541-4482-a850-58d1cfb501af",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2NzQ2MzAzNTIsImV4cCI6MTY3NTIzNTE1MiwibmJmIjoxNjc0NjMwMzUyLCJqdGkiOiIwdnQ3SmprMkNqMTFvZ3plIiwic3ViIjoxNjY2LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.tq78noQCz9YGisKMtdgqpIU1C0xnuB4Yq5BETocs5f4",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "_METHOD",
+            "value": "PATCH",
+            "type": "text",
+            "disabled": true
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n \"user_id\": 1683,\r\n \"password\": \"Kuhtorg\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/auth-front/update-password",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "auth-front",
+            "update-password"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update Is Zip",
+      "id": "abb59958-ede6-4f2d-936c-3e7474716403",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTc0OTQ2NzAxOSwiZXhwIjoxNzUwMDcxODE5LCJuYmYiOjE3NDk0NjcwMTksImp0aSI6InNEU2U4b040QWVzeTQySzMiLCJzdWIiOjQxMTgsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.C3eMHsFmAbxG_JgjlX1__qYHVQa2AosIRQxwveXE4Ic",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "_METHOD",
+            "value": "PATCH",
+            "type": "text",
+            "disabled": true
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"is_zip\": true\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/auth-front/is-zip/update",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "auth-front",
+            "is-zip",
+            "update"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update Personal Phone",
+      "id": "b5b8a45b-1808-4f87-b366-b10f96259072",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3NTc0OTM4MzUsImV4cCI6MTc1ODA5ODYzNSwibmJmIjoxNzU3NDkzODM1LCJqdGkiOiJ3Y3FIbjdDOFFVQ0JxZFNqIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.7uP32Sr0riGu6nurBNN_oFRf7uguQCxo0Nz386dzI6g",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "_METHOD",
+            "value": "PATCH",
+            "type": "text",
+            "disabled": true
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"personal_phone\": \"9063098083\",\r\n    \"user_id\": 2\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/auth-front/personal-phone/update",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "auth-front",
+            "personal-phone",
+            "update"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update Personal Phone Confirm",
+      "id": "8cecf455-829a-476e-b759-1f398fe4ca9c",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3NTc0OTM4MzUsImV4cCI6MTc1ODA5ODYzNSwibmJmIjoxNzU3NDkzODM1LCJqdGkiOiJ3Y3FIbjdDOFFVQ0JxZFNqIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.7uP32Sr0riGu6nurBNN_oFRf7uguQCxo0Nz386dzI6g",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "_METHOD",
+            "value": "PATCH",
+            "type": "text",
+            "disabled": true
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"personal_phone\": \"9063098083\",\r\n    \"user_id\": 2,\r\n    \"code\": \"477075\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/auth-front/personal-phone/confirm",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "auth-front",
+            "personal-phone",
+            "confirm"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update Personal Phone Is Code Requested",
+      "id": "d359cd9a-dc53-453e-9422-5f7c6d3756bc",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3NTc0OTM4MzUsImV4cCI6MTc1ODA5ODYzNSwibmJmIjoxNzU3NDkzODM1LCJqdGkiOiJ3Y3FIbjdDOFFVQ0JxZFNqIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.7uP32Sr0riGu6nurBNN_oFRf7uguQCxo0Nz386dzI6g",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "_METHOD",
+            "value": "PATCH",
+            "type": "text",
+            "disabled": true
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"user_id\": 2\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/auth-front/personal-phone/is-code-requested",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "auth-front",
+            "personal-phone",
+            "is-code-requested"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Add",
+      "id": "e70e766f-513b-40ff-97e5-34258206a638",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NzM5NDQ0MDUsImV4cCI6MTY3NDU0OTIwNSwibmJmIjoxNjczOTQ0NDA1LCJqdGkiOiJLTVpSckFIdlJ4ZGNqUGZ5Iiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.YT5mXJljxZcND9J_DVwqx8hXXDIrhvufcF5Km_QfKnE",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "_METHOD",
+            "value": "PATCH",
+            "type": "text",
+            "disabled": true
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": " {\r\n   \"xml_id\": null,\r\n   \"timestamp_x\": null,\r\n   \"login\": \"ad@barcraft.pro\",\r\n   \"password_original\": \"$2y$10$qY5BMAnGdhs7c3tBqJFoTuFcrnqMLeevi30Kr0eTqX3wzgJRS4P7G\",\r\n   \"password_bitrix\": null,\r\n   \"password\": \"$2y$10$PneeAd8GgHFMuTlKLVpuB.Z6K9ESH1mcCq2OCSlVuxkFEi9J.ssSW\",\r\n   \"stored_hash\": null,\r\n   \"checkword\": \"$2y$10$1XX/98t5kqkdZi67Z/U4LeGJInkplr.zoFZm.a72mIAoIH7pWq2AG\",\r\n   \"active\": \"Y\",\r\n   \"name\": \"Ольга\",\r\n   \"last_name\": \"Макаревич\",\r\n   \"second_name\": \"Александровна\",\r\n   \"email\": \"ad@barcraft.pro\",\r\n   \"last_login\": null,\r\n   \"last_activity_date\": null,\r\n   \"date_register\": null,\r\n   \"lid\": \"s1\",\r\n   \"admin_notes\": null,\r\n   \"external_auth_id\": null,\r\n   \"personal_profession\": null,\r\n   \"personal_www\": null,\r\n   \"personal_icq\": null,\r\n   \"personal_gender\": null,\r\n   \"personal_birthday\": null,\r\n   \"personal_photo\": null,\r\n   \"personal_phone\": null,\r\n   \"personal_fax\": null,\r\n   \"personal_mobile\": null,\r\n   \"personal_pager\": null,\r\n   \"personal_street\": null,\r\n   \"personal_mailbox\": null,\r\n   \"personal_city\": \"Московская область\",\r\n   \"personal_state\": null,\r\n   \"personal_zip\": null,\r\n   \"personal_country\": null,\r\n   \"personal_notes\": null,\r\n   \"work_company\": \"ТОП ЛОГИСТИКА ООО\",\r\n   \"work_department\": null,\r\n   \"work_position\": null,\r\n   \"work_www\": null,\r\n   \"work_phone\": 84959802916,\r\n   \"work_fax\": null,\r\n   \"work_pager\": null,\r\n   \"work_street\": null,\r\n   \"work_mailbox\": null,\r\n   \"work_city\": null,\r\n   \"work_state\": null,\r\n   \"work_zip\": null,\r\n   \"work_country\": null,\r\n   \"work_profile\": null,\r\n   \"work_logo\": null,\r\n   \"work_notes\": null,\r\n   \"uf_dealer_legal_entity_type\": null,\r\n   \"uf_dealer_inn\": null,\r\n   \"uf_dealer_address_actual\": null,\r\n   \"uf_dealer_address_legal\": null,\r\n   \"created_at\": \"2022-10-03 09:10:31\",\r\n   \"updated_at\": \"2022-11-29 13:37:52\",\r\n   \"deleted_at\": null,\r\n   \"role\": \"customer\",\r\n   \"user_id\": 2081,\r\n   \"push_token\": null,\r\n   \"user_groups\": \"7,2\",\r\n   \"counterparty_guid\": \"28732080-7aca-11e0-9672-e61f13537e43\",\r\n   \"last_authorization\": \"2022-10-05 08:45:55\",\r\n   \"role_front\": \"admin\",\r\n   \"ldap_guid\": null,\r\n   \"domain\": null,\r\n   \"samaccountname\": null,\r\n   \"1c_utd_guid\": null\r\n }\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/auth-front/add",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "auth-front",
+            "add"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Add Copy",
+      "id": "e353ec4a-d68a-4d5e-9a41-f38fd5c01e4a",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NzM5NDQ0MDUsImV4cCI6MTY3NDU0OTIwNSwibmJmIjoxNjczOTQ0NDA1LCJqdGkiOiJLTVpSckFIdlJ4ZGNqUGZ5Iiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.YT5mXJljxZcND9J_DVwqx8hXXDIrhvufcF5Km_QfKnE",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "_METHOD",
+            "value": "PATCH",
+            "type": "text",
+            "disabled": true
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": " {\r\n   \"xml_id\": null,\r\n   \"timestamp_x\": null,\r\n   \"login\": \"ad@barcraft.pro\",\r\n   \"password_original\": \"$2y$10$qY5BMAnGdhs7c3tBqJFoTuFcrnqMLeevi30Kr0eTqX3wzgJRS4P7G\",\r\n   \"password_bitrix\": null,\r\n   \"password\": \"$2y$10$PneeAd8GgHFMuTlKLVpuB.Z6K9ESH1mcCq2OCSlVuxkFEi9J.ssSW\",\r\n   \"stored_hash\": null,\r\n   \"checkword\": \"$2y$10$1XX/98t5kqkdZi67Z/U4LeGJInkplr.zoFZm.a72mIAoIH7pWq2AG\",\r\n   \"active\": \"Y\",\r\n   \"name\": \"Ольга\",\r\n   \"last_name\": \"Макаревич\",\r\n   \"second_name\": \"Александровна\",\r\n   \"email\": \"ad@barcraft.pro\",\r\n   \"last_login\": null,\r\n   \"last_activity_date\": null,\r\n   \"date_register\": null,\r\n   \"lid\": \"s1\",\r\n   \"admin_notes\": null,\r\n   \"external_auth_id\": null,\r\n   \"personal_profession\": null,\r\n   \"personal_www\": null,\r\n   \"personal_icq\": null,\r\n   \"personal_gender\": null,\r\n   \"personal_birthday\": null,\r\n   \"personal_photo\": null,\r\n   \"personal_phone\": null,\r\n   \"personal_fax\": null,\r\n   \"personal_mobile\": null,\r\n   \"personal_pager\": null,\r\n   \"personal_street\": null,\r\n   \"personal_mailbox\": null,\r\n   \"personal_city\": \"Московская область\",\r\n   \"personal_state\": null,\r\n   \"personal_zip\": null,\r\n   \"personal_country\": null,\r\n   \"personal_notes\": null,\r\n   \"work_company\": \"ТОП ЛОГИСТИКА ООО\",\r\n   \"work_department\": null,\r\n   \"work_position\": null,\r\n   \"work_www\": null,\r\n   \"work_phone\": 84959802916,\r\n   \"work_fax\": null,\r\n   \"work_pager\": null,\r\n   \"work_street\": null,\r\n   \"work_mailbox\": null,\r\n   \"work_city\": null,\r\n   \"work_state\": null,\r\n   \"work_zip\": null,\r\n   \"work_country\": null,\r\n   \"work_profile\": null,\r\n   \"work_logo\": null,\r\n   \"work_notes\": null,\r\n   \"uf_dealer_legal_entity_type\": null,\r\n   \"uf_dealer_inn\": null,\r\n   \"uf_dealer_address_actual\": null,\r\n   \"uf_dealer_address_legal\": null,\r\n   \"created_at\": \"2022-10-03 09:10:31\",\r\n   \"updated_at\": \"2022-11-29 13:37:52\",\r\n   \"deleted_at\": null,\r\n   \"role\": \"customer\",\r\n   \"user_id\": 2081,\r\n   \"push_token\": null,\r\n   \"user_groups\": \"7,2\",\r\n   \"counterparty_guid\": \"28732080-7aca-11e0-9672-e61f13537e43\",\r\n   \"last_authorization\": \"2022-10-05 08:45:55\",\r\n   \"role_front\": \"admin\",\r\n   \"ldap_guid\": null,\r\n   \"domain\": null,\r\n   \"samaccountname\": null,\r\n   \"1c_utd_guid\": null\r\n }\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/auth-front/add",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "auth-front",
+            "add"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Confirm Login By Phone",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "d3f60673-7dea-48f6-8b43-793302231053",
+            "exec": [
+              ""
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "id": "5d74b3d0-3346-4fb5-9c4e-5f4de8d1b68a",
+      "protocolProfileBehavior": {
+        "disabledSystemHeaders": {}
+      },
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"code\" :  \"759629\",\r\n    \"personal_phone\" :  \"9523096126\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/auth-front/login-by-phone/confirm",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "auth-front",
+            "login-by-phone",
+            "confirm"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

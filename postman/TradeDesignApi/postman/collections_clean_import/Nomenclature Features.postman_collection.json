@@ -1,0 +1,163 @@
+{
+  "info": {
+    "_postman_id": "d1b8d6b9-e82b-4eb4-8a75-4798667b3da4",
+    "name": "Nomenclature Features",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Nomenclature Features",
+      "id": "109a2898-1763-4455-9108-f0b365461a62",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzAzMjE2MDcsImV4cCI6MTYzMDMyNTIwNywibmJmIjoxNjMwMzIxNjA3LCJqdGkiOiJTWUhmQUtiZVJSVGtxUHExIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Xbn17DzhE50iqC75vHaWbwpIlkf4JHPMVMfJpPQO_nI",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/nomenclature-features",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "nomenclature-features"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Nomenclature Features Create",
+      "id": "5dfa3802-4722-4d0e-8d09-31d34b808289",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzE1MTQ0MTYsIm5iZiI6MTYzMTUxNDQxNiwianRpIjoibGNaeDdGbTVhOHJBZElqWiIsInN1YiI6NywicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.HrcA2o7nmZ1sfGuF5xfJdq02nm-7A32KiZnaJ9tn4GE",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"guid\": \"1\",\r\n    \"name\": \"feature 1\",\r\n    \"code\": \"001\",\r\n    \"to_delete\": true\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/nomenclature-feature/submit",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "nomenclature-feature",
+            "submit"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Nomenclature Features Import",
+      "id": "c3b49a9d-4f34-4799-ae96-1396da81ef12",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzE1MTQ0MTYsIm5iZiI6MTYzMTUxNDQxNiwianRpIjoibGNaeDdGbTVhOHJBZElqWiIsInN1YiI6NywicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.HrcA2o7nmZ1sfGuF5xfJdq02nm-7A32KiZnaJ9tn4GE",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"guid\": \"12fb92f6-3184-11e7-a9eb-e61f13537e43\",\r\n        \"name\": \"л\",\r\n        \"to_delete\": false,\r\n        \"code\": \"л\"\r\n    },\r\n    {\r\n        \"guid\": \"a9163c63-9570-11df-b3e0-e61f135382c7\",\r\n        \"name\": \"з\",\r\n        \"to_delete\": false,\r\n        \"code\": \"з\"\r\n    },\r\n    {\r\n        \"guid\": \"d2265bb8-9570-11df-b3e0-e61f135382c7\",\r\n        \"name\": \"п\",\r\n        \"to_delete\": false,\r\n        \"code\": \"п\"\r\n    },\r\n    {\r\n        \"guid\": \"d2265c06-9570-11df-b3e0-e61f135382c7\",\r\n        \"name\": \"н\",\r\n        \"to_delete\": false,\r\n        \"code\": \"н\"\r\n    },\r\n    {\r\n        \"guid\": \"dab92519-9570-11df-b3e0-e61f135382c7\",\r\n        \"name\": \"с\",\r\n        \"to_delete\": false,\r\n        \"code\": \"с\"\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/table/import/nomenclature-features",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "table",
+            "import",
+            "nomenclature-features"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Nomenclature Features Import PROD",
+      "id": "0343dbc3-ad7a-4b91-af4a-24a2684348c9",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"guid\": \"12fb92f6-3184-11e7-a9eb-e61f13537e43\",\r\n        \"name\": \"л\",\r\n        \"to_delete\": false,\r\n        \"code\": \"л\"\r\n    },\r\n    {\r\n        \"guid\": \"a9163c63-9570-11df-b3e0-e61f135382c7\",\r\n        \"name\": \"з\",\r\n        \"to_delete\": false,\r\n        \"code\": \"з\"\r\n    },\r\n    {\r\n        \"guid\": \"d2265bb8-9570-11df-b3e0-e61f135382c7\",\r\n        \"name\": \"п\",\r\n        \"to_delete\": false,\r\n        \"code\": \"п\"\r\n    },\r\n    {\r\n        \"guid\": \"d2265c06-9570-11df-b3e0-e61f135382c7\",\r\n        \"name\": \"н\",\r\n        \"to_delete\": false,\r\n        \"code\": \"н\"\r\n    },\r\n    {\r\n        \"guid\": \"dab92519-9570-11df-b3e0-e61f135382c7\",\r\n        \"name\": \"с\",\r\n        \"to_delete\": false,\r\n        \"code\": \"с\"\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_prod}}/api/table/import/nomenclature-features",
+          "protocol": "https",
+          "host": [
+            "api",
+            "t-d",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "table",
+            "import",
+            "nomenclature-features"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

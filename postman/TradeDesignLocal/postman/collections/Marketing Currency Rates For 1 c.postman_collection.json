@@ -1,0 +1,78 @@
+{
+  "info": {
+    "_postman_id": "876cf7d8-7f00-4dc9-8c9d-50011a8c02b7",
+    "name": "Marketing Currency Rates For 1 c",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Marketing Currency Rates List For 1c",
+      "id": "7956b5a9-297a-4260-bb3a-79c8ad264300",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3NTc2Njg5NDAsIm5iZiI6MTc1NzY2ODk0MCwianRpIjoidmZnaXBLN3dONnZ6WVk2WCIsInN1YiI6NTMyNywicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.sbSBZ27IRJlDt1PAOS6ZJoTJPSizYhwdSWYpDpMwaSA",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/for-1c/marketing-currency-rates"
+      },
+      "response": []
+    },
+    {
+      "name": "Ka Currencies For 1c",
+      "id": "e7118fc0-0571-4ae2-a27c-7eda5d353988",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3NTc2Njg5NDAsIm5iZiI6MTc1NzY2ODk0MCwianRpIjoidmZnaXBLN3dONnZ6WVk2WCIsInN1YiI6NTMyNywicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.sbSBZ27IRJlDt1PAOS6ZJoTJPSizYhwdSWYpDpMwaSA",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/for-1c/ka-currencies"
+      },
+      "response": []
+    },
+    {
+      "name": "Marketing Currency Rates List For 1c Copy",
+      "id": "c124fff9-a240-4926-a1bf-7ba98c5e94bf",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3NTc2Njg5NDAsIm5iZiI6MTc1NzY2ODk0MCwianRpIjoidmZnaXBLN3dONnZ6WVk2WCIsInN1YiI6NTMyNywicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.sbSBZ27IRJlDt1PAOS6ZJoTJPSizYhwdSWYpDpMwaSA",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"currency_rates\": [\r\n        {\r\n            \"currency_guid\": \"c0f629ac-29f7-11ed-a2c8-e61f13537e43\",\r\n            \"rate\": \"110\",\r\n            \"multiplicity\": 1,\r\n            \"period\": \"2025-09-10\"\r\n        },\r\n        {\r\n            \"currency_guid\": \"aca9b677-29f7-11ed-a2c8-e61f13537e43\",\r\n            \"rate\": \"94\",\r\n            \"multiplicity\": 1,\r\n            \"period\": \"2025-09-10\"\r\n        },\r\n        {\r\n            \"currency_guid\": \"82412fa2-cb35-11ef-86d9-000c297bb3bc\",\r\n            \"rate\": \"116.6848\",\r\n            \"multiplicity\": 1,\r\n            \"period\": \"2025-09-10\"\r\n        },\r\n        {\r\n            \"currency_guid\": \"8e78fc79-cb39-11ef-86d9-000c297bb3bc\",\r\n            \"rate\": \"13.0015\",\r\n            \"multiplicity\": 1,\r\n            \"period\": \"2025-09-10\"\r\n        }\r\n    ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/for-1c/marketing-currency-rates/create"
+      },
+      "response": []
+    }
+  ]
+}

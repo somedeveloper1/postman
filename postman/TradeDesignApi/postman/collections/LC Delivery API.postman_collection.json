@@ -1,0 +1,251 @@
+﻿{
+  "info": {
+    "_postman_id": "2ae907ab-c99c-49c6-ac7f-0579681c912e",
+    "name": "LC Delivery API",
+    "description": "Collection for Logistic Companies Delivery API endpoints (requires authentication)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Delivery Types & Services",
+      "item": [
+        {
+          "name": "Get Delivery Types",
+          "id": "596334f0-29b3-4a32-9d93-9b659fb8867e",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "description": "JWT access token",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url_local}}/api/lc-delivery-types",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "lc-delivery-types"
+              ]
+            },
+            "description": "Get list of delivery types with logistic companies (requires authentication)"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Delivery Services",
+          "id": "f24365a1-45f8-4ce4-aa25-c9a3a191553a",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "description": "JWT access token",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url_local}}/api/lc-delivery-services",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "lc-delivery-services"
+              ]
+            },
+            "description": "Get list of delivery services with logistic companies (requires authentication)"
+          },
+          "response": []
+        }
+      ],
+      "id": "325c0705-1a33-4c36-9917-74efc100134b"
+    },
+    {
+      "name": "Delivery Calculator",
+      "item": [
+        {
+          "name": "Calculate Delivery",
+          "id": "016331ea-7125-4395-af7c-ac10194d333e",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTc2NDMyNTgxNywiZXhwIjoxNzY0OTMwNjE3LCJuYmYiOjE3NjQzMjU4MTcsImp0aSI6IlV4ZzFLUWw2RTJBbFJZT24iLCJzdWIiOjQxMTgsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.FKW2z2hBRN6sB9-5D7x6Yuvt5SxSXb5Bk-RPfs7g25g",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "description": "JWT access token",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"nomenclature\": [\n\t\t{\n\t\t\t\"nomenclature_guid\": \"00685baf-9f6a-11f0-8713-000c29c73f6c\",\n\t\t\t\"amount\": 1\n\t\t},\n        {\n\t\t\t\"nomenclature_guid\": \"24cc24f3-da1e-11e9-9101-e61f13537e43\",\n\t\t\t\"amount\": 2\n\t\t},\n        {\n\t\t\t\"nomenclature_guid\": \"0ac1504b-fdf0-11e4-8bc6-e61f13537e43\",\n\t\t\t\"amount\": 3\n\t\t}\n\t],\n  \"legal_status\": \"LEGAL_ENTITY\",\n  \"arrival_city\": \"Саратов\",\n  \"arrival_index\": null,\n  \"arrival_address\": null,\n  \"delivery_type_id\": null,\n  \"services\": [\n        {\n            \"id\": 5,\n            \"code\": \"insurance\",\n            \"value\": true\n        },\n        {\n            \"id\": 20,\n            \"code\": \"load_the_operation_at_the_recipient\",\n            \"value\": true\n        },\n        {\n            \"id\": 19,\n            \"code\": \"get_up_floor_by_elevator\",\n            \"value\": 17\n        },\n        {\n            \"id\": 18,\n            \"code\": \"get_up_floor_by_hand\",\n            \"value\": 16\n        },\n        {\n            \"id\": 21,\n            \"code\": \"cargo_transfer\",\n            \"value\": 32\n        },\n        {\n            \"id\": 9,\n            \"code\": \"palletizing\",\n            \"value\": true\n        },\n        {\n            \"id\": 10,\n            \"code\": \"crate\",\n            \"value\": true\n        },\n        {\n            \"id\": 26,\n            \"code\": \"document_delivery\",\n            \"value\": false\n        },\n        {\n            \"id\": 27,\n            \"code\": \"document_return\",\n            \"value\": true\n        }\n    ]\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api/lc-delivery-request/calculator",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "lc-delivery-request",
+                "calculator"
+              ]
+            },
+            "description": "Calculate delivery costs for multiple items (requires authentication)"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Calculation Results",
+          "id": "90aec97e-e212-4271-baeb-266be28fc09b",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "description": "JWT access token",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url_local}}/api/lc-delivery-request/calculator/{{request_id}}",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "lc-delivery-request",
+                "calculator",
+                "{{request_id}}"
+              ],
+              "query": [
+                {
+                  "key": "delivery_type_id",
+                  "value": "",
+                  "description": "Optional delivery type ID filter",
+                  "disabled": true
+                }
+              ]
+            },
+            "description": "Get calculation results by request ID (requires authentication)"
+          },
+          "response": []
+        },
+        {
+          "name": "Calculate Single Service",
+          "id": "ec902881-ea47-497c-9422-c9514f266bc6",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{access_token}}",
+                "description": "JWT access token",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url_local}}/api/lc-delivery-request/calculate-service/{{resource_id}}/{{request_id}}",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "lc-delivery-request",
+                "calculate-service",
+                "{{resource_id}}",
+                "{{request_id}}"
+              ]
+            },
+            "description": "Calculate a single service for a delivery request (requires authentication)"
+          },
+          "response": []
+        }
+      ],
+      "id": "290c002e-3856-4e2f-a2f8-481f489daf1c"
+    }
+  ],
+  "variable": [
+    {
+      "id": "009c30eb-6fbb-460e-891b-692d15d6cdf9",
+      "key": "base_url",
+      "value": "http://localhost",
+      "type": "string"
+    },
+    {
+      "id": "9b38eb72-ff0a-4e27-b650-fa18feb1d35b",
+      "key": "access_token",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "id": "f124a013-2c5f-4882-961b-d8e1fa0b8437",
+      "key": "request_id",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "id": "3ed34f59-e31b-4aa6-aca7-4c0a8d1db867",
+      "key": "resource_id",
+      "value": "",
+      "type": "string"
+    }
+  ]
+}

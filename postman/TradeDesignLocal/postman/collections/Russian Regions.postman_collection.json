@@ -1,0 +1,19 @@
+{
+  "info": {
+    "_postman_id": "49a3098c-6e8d-437b-8ee4-6238b6975dfc",
+    "name": "Russian Regions",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get Russian Regions",
+      "id": "a381f0c7-6bb4-4674-9431-b9d7efe30db6",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/russian-regions"
+      },
+      "response": []
+    }
+  ]
+}

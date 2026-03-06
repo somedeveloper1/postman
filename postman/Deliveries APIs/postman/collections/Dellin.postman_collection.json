@@ -1,0 +1,381 @@
+{
+  "info": {
+    "_postman_id": "803328d6-d75c-40d6-bee5-0c605ee8a75b",
+    "name": "Dellin",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Auth",
+      "item": [
+        {
+          "name": "Auth",
+          "id": "a8a9d860-0652-4b66-a494-2a68dcb8bd40",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n   \"appkey\":\"190F49BE-65B6-4244-83EA-CCE670CF05CF\",\r\n   \"login\":\"+79251254877\",\r\n   \"password\":\"Kjubcn2019\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://api.dellin.ru/v3/auth/login.json",
+              "protocol": "https",
+              "host": [
+                "api",
+                "dellin",
+                "ru"
+              ],
+              "path": [
+                "v3",
+                "auth",
+                "login.json"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Auth Check",
+          "id": "87f60a6e-3082-4be1-a798-3c9f2df65894",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"appkey\":\"190F49BE-65B6-4244-83EA-CCE670CF05CF\",\r\n    \"sessionID\": \"C82F5A40-821E-4CA0-9FF8-41DE21AACE21\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://api.dellin.ru/v3/auth/session_info.json",
+              "protocol": "https",
+              "host": [
+                "api",
+                "dellin",
+                "ru"
+              ],
+              "path": [
+                "v3",
+                "auth",
+                "session_info.json"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "a9a8079e-2546-4de6-9019-5294cb772959"
+    },
+    {
+      "name": "Calculator",
+      "id": "2ad3287c-e98e-4e08-805c-a0a438194763",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n   \"appkey\":\"190F49BE-65B6-4244-83EA-CCE670CF05CF\",\r\n   \"sessionID\":\"FBE39E90-B000-4EA9-B40A-21A478FF7DAC\",\r\n   \"delivery\":{\r\n      \"deliveryType\":{\r\n         \"type\":\"express\"\r\n      },\r\n      \"arrival\":{\r\n        \"variant\":\"terminal\",\r\n        \"terminalID\":\"21\",\r\n         //\"addressID\":46980887,\r\n         //\"address\":{\r\n          //  \"search\":\"101000, Москва, ул. Тверская, д.1\"//,\r\n         //   \"street\":\"7800000000008850000000000\",\r\n         //   \"house\":\"5\",\r\n         //   \"building\":\"1\",\r\n          //  \"structure\":\"лит.А\",\r\n          //  \"flat\":\"214а\"\r\n         //},\r\n         //\"city\":\"7800000000000000000000000\",\r\n         \"time\":{\r\n            \"worktimeStart\":\"9:30\",\r\n            \"worktimeEnd\":\"19:00\",\r\n            \"breakStart\":\"12:00\",\r\n            \"breakEnd\":\"13:00\",\r\n            \"exactTime\":false\r\n         }//,//,\r\n         //\"handling\":{\r\n         //   \"freightLift\":true,\r\n         //   \"toFloor\": 3,\r\n        //    \"carry\": 50\r\n        //}\r\n        // \"requirements\":[\r\n        //   \"0x9951e0ff97188f6b4b1b153dfde3cfec\",\r\n        //    \"0x88f93a2c37f106d94ff9f7ada8efe886\"\r\n        // ]\r\n      },\r\n    \"derival\":{\r\n        \"produceDate\":\"2026-02-10\",\r\n        \"variant\":\"address\",\r\n        //\"terminalID\":\"289\",\r\n        \"address\":{\r\n            \"search\":\"Московская обл, Ленинский р-н, г Видное, ш Белокаменное, д 18\"//,\r\n            //\"street\":\"7700000000004650000000000\",\r\n            //\"house\":\"5\",\r\n            //\"building\":\"2\",\r\n            //\"structure\":\"лит.Б\",\r\n            //\"flat\":\"21\"\r\n         },\r\n         \"time\":{\r\n            \"worktimeEnd\":\"19:30\",\r\n            \"worktimeStart\":\"9:00\",\r\n            \"breakStart\":\"12:00\",\r\n            \"breakEnd\":\"13:00\",\r\n            \"exactTime\":false\r\n         }//,\r\n         //\"handling\":{\r\n         //   \"freightLift\":true,\r\n         //  \"toFloor\":40,\r\n         //   \"carry\":243\r\n         //},\r\n         //\"requirements\":[\r\n         //   \"0x9951e0ff97188f6b4b1b153dfde3cfec\",\r\n         //   \"0x88f93a2c37f106d94ff9f7ada8efe886\"\r\n         //]\r\n      },\r\n      \"packages\":[\r\n         {\r\n            \"uid\":\"0xa6a7bd2bf950e67f4b2cf7cc3a97c111\",\r\n            \"count\":1\r\n         }\r\n      ],\r\n      \"accompanyingDocuments\":[\r\n         {\r\n            \"action\":\"send\"\r\n         },\r\n         {\r\n            \"action\":\"return\"\r\n         }\r\n      ]\r\n   },\r\n   \"members\":{\r\n      \"requester\":{\r\n         \"role\":\"sender\",\r\n         \"uid\":\"ae62f076-d602-4341-b691-45bf8dfe4a10\"\r\n      }\r\n   },\r\n   \"cargo\":{\r\n      \"quantity\":1,\r\n        \"length\":1,\r\n      \"width\":1,\r\n      \"height\":1,\r\n      \"weight\":12,\r\n      \"totalVolume\":1,\r\n      \"totalWeight\":12,\r\n      \"oversizedWeight\":0,\r\n      \"oversizedVolume\":0,\r\n      \"freightUID\":\"0x98086eae8b603ea911e5e1f3db7669a2\",\r\n      \"hazardClass\":0,\r\n      \"insurance\":{\r\n         \"statedValue\":15477.34,\r\n         \"term\":false\r\n      }\r\n   },\r\n   \"payment\":{\r\n      \"type\":\"cash\",\r\n      \"promocode\":\"promo123\",\r\n     //\"paymentCity\":\"7700000000000000000000000\",\r\n      \"paymentCitySearch\":{\r\n         \"search\":\"Саратов\"\r\n      }\r\n   } \r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api.dellin.ru/v2/calculator.json",
+          "protocol": "https",
+          "host": [
+            "api",
+            "dellin",
+            "ru"
+          ],
+          "path": [
+            "v2",
+            "calculator.json"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Services",
+      "id": "45659b7b-8bbe-4636-b2d2-4e3e11334e3c",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n   \"appkey\":\"190F49BE-65B6-4244-83EA-CCE670CF05CF\",\r\n   \"sessionID\":\"E270CABA-4840-4360-8D2B-EACEBC065602\",\r\n   \"delivery\":{\r\n      \"deliveryType\":{\r\n         \"type\":\"auto\"\r\n      },\r\n      \"arrival\":{\r\n        \"variant\":\"address\",\r\n         //\"terminalID\":\"1\",\r\n         //\"addressID\":46980887,\r\n         \"address\":{\r\n            \"search\":\"Московская обл, Ленинский р-н, г Видное, ш Белокаменное, д 18\"//,\r\n         //   \"street\":\"7800000000008850000000000\",\r\n         //   \"house\":\"5\",\r\n         //   \"building\":\"1\",\r\n          //  \"structure\":\"лит.А\",\r\n          //  \"flat\":\"214а\"\r\n         },\r\n         //\"city\":\"7800000000000000000000000\",\r\n         \"time\":{\r\n            \"worktimeStart\":\"9:30\",\r\n            \"worktimeEnd\":\"19:00\",\r\n            \"breakStart\":\"12:00\",\r\n            \"breakEnd\":\"13:00\",\r\n            \"exactTime\":false\r\n         }//,\r\n         //\"handling\":{\r\n          //  \"freightLift\":true,\r\n          //  \"toFloor\":2,\r\n         //   \"carry\":50\r\n        // },\r\n        // \"requirements\":[\r\n        //   \"0x9951e0ff97188f6b4b1b153dfde3cfec\",\r\n        //    \"0x88f93a2c37f106d94ff9f7ada8efe886\"\r\n        // ]\r\n      },\r\n    \"derival\":{\r\n        \"produceDate\":\"2025-10-30\",\r\n        \"variant\":\"terminal\",\r\n        \"terminalID\":\"289\",\r\n        //\"address\":{\r\n            //\"search\":\"Московская обл, Ленинский р-н, г Видное, ш Белокаменное, д 18\"//,\r\n            //\"street\":\"7700000000004650000000000\",\r\n            //\"house\":\"5\",\r\n            //\"building\":\"2\",\r\n            //\"structure\":\"лит.Б\",\r\n            //\"flat\":\"21\"\r\n         //},\r\n         \"time\":{\r\n            \"worktimeEnd\":\"19:30\",\r\n            \"worktimeStart\":\"9:00\",\r\n            \"breakStart\":\"12:00\",\r\n            \"breakEnd\":\"13:00\",\r\n            \"exactTime\":false\r\n         }//,\r\n         //\"handling\":{\r\n         //   \"freightLift\":true,\r\n         //  \"toFloor\":40,\r\n         //   \"carry\":243\r\n         //},\r\n         //\"requirements\":[\r\n         //   \"0x9951e0ff97188f6b4b1b153dfde3cfec\",\r\n         //   \"0x88f93a2c37f106d94ff9f7ada8efe886\"\r\n         //]\r\n      },\r\n      \"packages\":[\r\n         {\r\n            \"uid\":\"0xa6a7bd2bf950e67f4b2cf7cc3a97c111\",\r\n            \"count\":1\r\n         }\r\n      ],\r\n      \"accompanyingDocuments\":[\r\n         {\r\n            \"action\":\"send\"\r\n         },\r\n         {\r\n            \"action\":\"return\"\r\n         }\r\n      ]\r\n   },\r\n   \"members\":{\r\n      \"requester\":{\r\n         \"role\":\"sender\",\r\n         \"uid\":\"ae62f076-d602-4341-b691-45bf8dfe4a10\"\r\n      }\r\n   },\r\n   \"cargo\":{\r\n      \"quantity\":1,\r\n      \"length\":0.04,\r\n      \"width\":0.04,\r\n      \"height\":0.04,\r\n      \"weight\":0.04,\r\n      \"totalVolume\":0.04,\r\n      \"totalWeight\":0.04,\r\n      \"oversizedWeight\":0,\r\n      \"oversizedVolume\":0,\r\n      \"freightUID\":\"0x98086eae8b603ea911e5e1f3db7669a2\",\r\n      \"hazardClass\":0,\r\n      \"insurance\":{\r\n         \"statedValue\":15477.34,\r\n         \"term\":false\r\n      }\r\n   },\r\n   \"payment\":{\r\n      \"type\":\"cash\",\r\n      \"promocode\":\"promo123\",\r\n     //\"paymentCity\":\"7700000000000000000000000\",\r\n      \"paymentCitySearch\":{\r\n         \"search\":\"Саратов\"\r\n      }\r\n   } \r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api.dellin.ru/v1/public/request_services.json",
+          "protocol": "https",
+          "host": [
+            "api",
+            "dellin",
+            "ru"
+          ],
+          "path": [
+            "v1",
+            "public",
+            "request_services.json"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Terminal",
+      "id": "49a14059-127f-46aa-b032-3b0b74c32e35",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n   \"appkey\":\"190F49BE-65B6-4244-83EA-CCE670CF05CF\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api.dellin.ru/v3/public/terminals.json",
+          "protocol": "https",
+          "host": [
+            "api",
+            "dellin",
+            "ru"
+          ],
+          "path": [
+            "v3",
+            "public",
+            "terminals.json"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Addresses",
+      "id": "016cf63d-ef84-4620-8233-9d4aa2ab3439",
+      "request": {
+        "auth": {
+          "type": "basic",
+          "basic": [
+            {
+              "key": "password",
+              "value": "{{dellin_api_key}}",
+              "type": "string"
+            },
+            {
+              "key": "username",
+              "value": "bestseller",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"appkey\":\"190F49BE-65B6-4244-83EA-CCE670CF05CF\",\r\n    \"sessionID\": \"E270CABA-4840-4360-8D2B-EACEBC065602\",\r\n    \"counteragentID\":13274291\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api.dellin.ru/v2/book/addresses.json",
+          "protocol": "https",
+          "host": [
+            "api",
+            "dellin",
+            "ru"
+          ],
+          "path": [
+            "v2",
+            "book",
+            "addresses.json"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Addresses Copy",
+      "id": "ac2614ed-123d-4a2b-9a8a-e8c863ec4306",
+      "request": {
+        "auth": {
+          "type": "basic",
+          "basic": [
+            {
+              "key": "password",
+              "value": "{{dellin_api_key}}",
+              "type": "string"
+            },
+            {
+              "key": "username",
+              "value": "bestseller",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"appkey\":\"190F49BE-65B6-4244-83EA-CCE670CF05CF\",\r\n    \"sessionID\": \"E270CABA-4840-4360-8D2B-EACEBC065602\",\r\n    \"counteragentID\":13274291\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api.dellin.ru/v2/book/addresses.json",
+          "protocol": "https",
+          "host": [
+            "api",
+            "dellin",
+            "ru"
+          ],
+          "path": [
+            "v2",
+            "book",
+            "addresses.json"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Counteragents",
+      "id": "c43c0e47-ab6f-4fc5-a18a-a3925e7c197a",
+      "request": {
+        "auth": {
+          "type": "basic",
+          "basic": [
+            {
+              "key": "password",
+              "value": "{{dellin_api_key}}",
+              "type": "string"
+            },
+            {
+              "key": "username",
+              "value": "bestseller",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"appkey\":\"190F49BE-65B6-4244-83EA-CCE670CF05CF\",\r\n    \"sessionID\": \"E270CABA-4840-4360-8D2B-EACEBC065602\",\r\n    \"withAnonym\":\"false\",\r\n    \"isAnonym\":\"false\",\r\n    \"counteragentIds\":[]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api.dellin.ru/v2/book/counteragents.json",
+          "protocol": "https",
+          "host": [
+            "api",
+            "dellin",
+            "ru"
+          ],
+          "path": [
+            "v2",
+            "book",
+            "counteragents.json"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Freight Type",
+      "id": "a3a6b66f-6f74-489d-b95d-aadd95d5621b",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"appkey\":\"190F49BE-65B6-4244-83EA-CCE670CF05CF\",\r\n    \"name\": \"а\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api.dellin.ru/v1/public/freight_types/search.json",
+          "protocol": "https",
+          "host": [
+            "api",
+            "dellin",
+            "ru"
+          ],
+          "path": [
+            "v1",
+            "public",
+            "freight_types",
+            "search.json"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Shipment Dates",
+      "id": "dac7866d-d5e5-48de-90c2-a5f955a567b0",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n   \"appkey\":\"190F49BE-65B6-4244-83EA-CCE670CF05CF\",\r\n   \"sessionID\":\"75624927-77B0-4F56-BE1F-7D8A5DE59A98\",\r\n   \"delivery\":{\r\n      \"deliveryType\":{\r\n         \"type\":\"express\"\r\n      },\r\n      \"derival\":{\r\n        \"variant\":\"address\",\r\n        //\"terminalID\":\"289\",\r\n        \"address\":{\r\n            \"search\":\"Московская обл, Ленинский р-н, г Видное, ш Белокаменное, д 18\"//,\r\n            //\"street\":\"7700000000004650000000000\",\r\n            //\"house\":\"5\",\r\n            //\"building\":\"2\",\r\n            //\"structure\":\"лит.Б\",\r\n            //\"flat\":\"21\"\r\n         },\r\n         \"time\":{\r\n            \"worktimeEnd\":\"19:30\",\r\n            \"worktimeStart\":\"9:00\",\r\n            \"breakStart\":\"12:00\",\r\n            \"breakEnd\":\"13:00\",\r\n            \"exactTime\":false\r\n         }//,\r\n         //\"handling\":{\r\n         //   \"freightLift\":true,\r\n         //  \"toFloor\":40,\r\n         //   \"carry\":243\r\n         //},\r\n         //\"requirements\":[\r\n         //   \"0x9951e0ff97188f6b4b1b153dfde3cfec\",\r\n         //   \"0x88f93a2c37f106d94ff9f7ada8efe886\"\r\n         //]\r\n      }\r\n    }, \r\n   \"cargo\":{\r\n      \"quantity\":4,\r\n      \"weight\":12,\r\n      \"height\":1,\r\n      \"width\":1,\r\n      \"length\":1,\r\n      \"totalVolume\":1,\r\n      \"totalWeight\":12\r\n   }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api.dellin.ru/v2/request/address/dates.json",
+          "protocol": "https",
+          "host": [
+            "api",
+            "dellin",
+            "ru"
+          ],
+          "path": [
+            "v2",
+            "request",
+            "address",
+            "dates.json"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

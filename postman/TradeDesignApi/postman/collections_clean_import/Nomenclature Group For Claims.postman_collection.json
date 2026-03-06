@@ -1,0 +1,138 @@
+{
+  "info": {
+    "_postman_id": "09ad356c-fbb0-4430-922c-7f990111f51f",
+    "name": "Nomenclature Group For Claims",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Nomenclature Group For Claims",
+      "id": "afddb6b6-4c80-49bd-9ca0-bcb672ea6f2d",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTczOTQ1MTM0OCwiZXhwIjoxNzQwMDU2MTQ4LCJuYmYiOjE3Mzk0NTEzNDgsImp0aSI6IndwVHhJNGJ0N0RtT29uc2oiLCJzdWIiOjQxMTgsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.jO2LLxfEA0xn2S8Mo1oF38KhuiJvCbm4D5PBUo6kQ_8",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/nomenclature-groups-for-claims",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "nomenclature-groups-for-claims"
+          ],
+          "query": [
+            {
+              "key": "search",
+              "value": "di",
+              "disabled": true
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Nomenclature Group For Claims Create",
+      "id": "203b9e95-6662-4284-ad33-c2671ef54974",
+      "request": {
+        "auth": {
+          "type": "bearer"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"extra\",\r\n    \"title\": \"extra\",\r\n    \"nomenclature_groups\": [\"d857ffcb-95af-11ed-9fcc-e61f13537e43\", \"59cd4736-95a3-11ed-9fcc-e61f13537e43\"]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/nomenclature-groups-for-claims/create",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "nomenclature-groups-for-claims",
+            "create"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Nomenclature Group For Claims Update",
+      "id": "0911f319-611d-4de4-9f0b-d11104229051",
+      "request": {
+        "auth": {
+          "type": "bearer"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"extranew\",\r\n    \"title\": \"extranew\",\r\n    \"nomenclature_groups\": [\"d857ffcb-95af-11ed-9fcc-e61f13537e43\"]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/nomenclature-groups-for-claims/update/7",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "nomenclature-groups-for-claims",
+            "update",
+            "7"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Nomenclature Group For Claims Delete",
+      "id": "fa8cae99-4367-4e73-9f71-351d6f0379a0",
+      "request": {
+        "auth": {
+          "type": "bearer"
+        },
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/nomenclature-groups-for-claims/delete/8",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "nomenclature-groups-for-claims",
+            "delete",
+            "8"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

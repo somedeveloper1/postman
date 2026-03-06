@@ -1,0 +1,93 @@
+{
+  "info": {
+    "_postman_id": "a5d524ef-bfa9-47a3-91c1-caa0d0688669",
+    "name": "Transactions",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Transactions",
+      "id": "8ab85a6d-2135-43f0-9c42-9daea1233b4b",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Client-Id",
+            "value": "{{ozon_client_id_header}}"
+          },
+          {
+            "key": "Api-Key",
+            "value": "{{ozon_client_id}}"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"filter\": {\r\n        \"date\": {\r\n            \"from\": \"2024-05-01T00:00:00.000Z\",\r\n            \"to\": \"2024-05-21T00:00:00.000Z\"\r\n        },\r\n        \"operation_type\": [],\r\n        \"posting_number\": \"\",\r\n        \"transaction_type\": \"\"\r\n    },\r\n    \"page\": 1,\r\n    \"page_size\": 1000\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api-seller.ozon.ru/v3/finance/transaction/list",
+          "protocol": "https",
+          "host": [
+            "api-seller",
+            "ozon",
+            "ru"
+          ],
+          "path": [
+            "v3",
+            "finance",
+            "transaction",
+            "list"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Transactions Total",
+      "id": "38b8b8f2-29cd-4cf2-a4c8-c650351e8846",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Client-Id",
+            "value": "{{ozon_client_id_header}}"
+          },
+          {
+            "key": "Api-Key",
+            "value": "{{ozon_client_id}}"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"filter\": {\r\n        \"date\": {\r\n            \"from\": \"2024-02-01T00:00:00.000Z\",\r\n            \"to\": \"2024-03-01T00:00:00.000Z\"\r\n        },\r\n        \"operation_type\": [],\r\n        \"posting_number\": \"\",\r\n        \"transaction_type\": \"all\"\r\n    },\r\n    \"page\": 1,\r\n    \"page_size\": 1000\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api-seller.ozon.ru/v3/finance/transaction/list",
+          "protocol": "https",
+          "host": [
+            "api-seller",
+            "ozon",
+            "ru"
+          ],
+          "path": [
+            "v3",
+            "finance",
+            "transaction",
+            "list"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

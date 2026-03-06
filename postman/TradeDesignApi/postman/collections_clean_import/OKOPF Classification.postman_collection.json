@@ -1,0 +1,50 @@
+{
+  "info": {
+    "_postman_id": "82a6cea8-487e-446d-b2e5-35c7c8b5d54c",
+    "name": "OKOPF Classification",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "OKOPF Classification Import Copy",
+      "id": "8b2b8f8c-ff46-400b-8e5b-f043599f31de",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"guid\": \"78683575-956c-11df-bfea-e61f13537e43\",\r\n        \"name\": \"class.\",\r\n        \"full_name\": \"classification\"\r\n    },\r\n    {\r\n        \"guid\": \"78683577-956c-11df-bfea-e61f13537e43\",\r\n        \"name\": \"okopf\",\r\n        \"full_name\": \"OKOPF classification\"\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/table/import/okopf-classification",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "table",
+            "import",
+            "okopf-classification"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

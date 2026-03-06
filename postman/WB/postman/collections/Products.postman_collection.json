@@ -1,0 +1,386 @@
+{
+  "info": {
+    "_postman_id": "43237905-444f-4c6f-b850-ee30a5d596fc",
+    "name": "Products",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Categories",
+      "id": "f0d59b4f-aec8-4f6a-ad49-249196bd0fbf",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "{{wb_token}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://content-api.wildberries.ru/content/v2/object/parent/all",
+          "protocol": "https",
+          "host": [
+            "content-api",
+            "wildberries",
+            "ru"
+          ],
+          "path": [
+            "content",
+            "v2",
+            "object",
+            "parent",
+            "all"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Prices",
+      "id": "a6e8aff5-f8ed-4724-b877-6c191113bebc",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "{{wb_token}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://discounts-prices-api.wildberries.ru/api/v2/list/goods/filter?limit=100&offset=200",
+          "protocol": "https",
+          "host": [
+            "discounts-prices-api",
+            "wildberries",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "v2",
+            "list",
+            "goods",
+            "filter"
+          ],
+          "query": [
+            {
+              "key": "limit",
+              "value": "100"
+            },
+            {
+              "key": "offset",
+              "value": "200"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Prices Update",
+      "id": "eed26737-e40e-4ac5-9b9a-5b097c5f928e",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "{{wb_token}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"data\": [\r\n        {\r\n            \"nmID\": 467125083,\r\n            \"price\": 1275,\r\n            \"discount\": 0\r\n        }\r\n    ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://discounts-prices-api.wildberries.ru/api/v2/upload/task",
+          "protocol": "https",
+          "host": [
+            "discounts-prices-api",
+            "wildberries",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "v2",
+            "upload",
+            "task"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Prices Sizes",
+      "id": "4ca1735f-eb98-44ad-ade8-49edb06c2260",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "{{wb_token}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://discounts-prices-api.wildberries.ru/api/v2/list/goods/size/nm?limit=100&offset=0&nmID=476430319",
+          "protocol": "https",
+          "host": [
+            "discounts-prices-api",
+            "wildberries",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "v2",
+            "list",
+            "goods",
+            "size",
+            "nm"
+          ],
+          "query": [
+            {
+              "key": "limit",
+              "value": "100"
+            },
+            {
+              "key": "offset",
+              "value": "0"
+            },
+            {
+              "key": "nmID",
+              "value": "476430319"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Cards",
+      "id": "6c664850-47e8-453a-a6e2-ab624b60fad1",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "{{wb_token}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"settings\": {\r\n        \"cursor\": {\r\n            \"limit\": 100,\r\n            \"updatedAt\": \"2025-07-17T06:47:33.660137Z\",\r\n        \"nmID\": 468121255\r\n        },\r\n        \"filter\": {\r\n            \"withPhoto\": -1\r\n        }\r\n    }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://content-api.wildberries.ru/content/v2/get/cards/list",
+          "protocol": "https",
+          "host": [
+            "content-api",
+            "wildberries",
+            "ru"
+          ],
+          "path": [
+            "content",
+            "v2",
+            "get",
+            "cards",
+            "list"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Cards Trashed",
+      "id": "3672fad2-644b-46f4-956c-dbf4b384a9ca",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "{{wb_token}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"settings\": {\r\n        \"cursor\": {\r\n            \"limit\": 100,\r\n      \"updatedAt\": \"2025-07-23T14:17:49.036971Z\",\r\n        \"nmID\": 475373127\r\n        },\r\n        \"filter\": {\r\n            \"withPhoto\": -1\r\n        }\r\n    }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://content-api.wildberries.ru/content/v2/get/cards/trash",
+          "protocol": "https",
+          "host": [
+            "content-api",
+            "wildberries",
+            "ru"
+          ],
+          "path": [
+            "content",
+            "v2",
+            "get",
+            "cards",
+            "trash"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Cards Trashed Recover",
+      "id": "2915b355-32a4-4a90-99b8-29683f3fd8e4",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "{{wb_token}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"nmIDs\": [\r\n    467125083\r\n  ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://content-api.wildberries.ru/content/v2/cards/recover",
+          "protocol": "https",
+          "host": [
+            "content-api",
+            "wildberries",
+            "ru"
+          ],
+          "path": [
+            "content",
+            "v2",
+            "cards",
+            "recover"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Prices POST",
+      "id": "329462c6-bae0-485e-b456-e1b35397fec4",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "{{wb_token}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://discounts-prices-api.wildberries.ru/api/v2/list/goods/filter?limit=100&offset=200",
+          "protocol": "https",
+          "host": [
+            "discounts-prices-api",
+            "wildberries",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "v2",
+            "list",
+            "goods",
+            "filter"
+          ],
+          "query": [
+            {
+              "key": "limit",
+              "value": "100"
+            },
+            {
+              "key": "offset",
+              "value": "200"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

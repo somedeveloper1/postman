@@ -1,0 +1,88 @@
+{
+  "info": {
+    "_postman_id": "02cc952c-c53e-4d38-a2ca-e221779f15e4",
+    "name": "Legal Entities",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Legal Entities",
+      "id": "553b93d6-49bc-476e-a2ba-be7515a22201",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2ODYwNTA3ODEsImV4cCI6MTY4NjY1NTU4MSwibmJmIjoxNjg2MDUwNzgxLCJqdGkiOiI3dThlc1A5MUFFYVFRQzh6Iiwic3ViIjoxMDIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.lJJg2hB9O6J7pcjNxyJa7RgPsE-I_cr-cmkF0Z8Q9FQ",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/legal-entities?type=ut",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "legal-entities"
+          ],
+          "query": [
+            {
+              "key": "type",
+              "value": "ut"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Legal Entities Hide | Show",
+      "id": "adaa7097-2810-4d54-ad8d-d3101ab82986",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbi1hcy1kZWFsZXJcLzcyNCIsImlhdCI6MTY5MjA5MTQ2NCwiZXhwIjoxNjkyMDk1MDY0LCJuYmYiOjE2OTIwOTE0NjQsImp0aSI6IjhQV3k5ZHFDNTBOSHBKMVQiLCJzdWIiOjE1MjcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.dQINv-wVS-KyKirUqZyeMJG_ctXHK40idzJUlnQVN38",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"guids\": [\"c01f12da-d993-11e7-9529-0050568e4379\"]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/legal-entities/hide",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "legal-entities",
+            "hide"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

@@ -1,0 +1,830 @@
+{
+  "info": {
+    "_postman_id": "29da9695-d8f0-4572-bfe3-47d81534c095",
+    "name": "Performance",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Statistics",
+      "item": [
+        {
+          "name": "Create Vendor Statistics",
+          "id": "43608401-64ea-492f-9db6-9db0c9665946",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJhZHZlcnRpc2luZy5wZXJmb3JtYW5jZS5vem9uLnJ1IiwiZXhwIjoxNzE1NTg1Njg0LCJpYXQiOjE3MTU1ODM4ODQsImlzcyI6InBlcmZvcm1hbmNlLWF1dGgub3pvbi5ydSIsInN1YiI6IjI4MzUzODgyLTE3MTU1ODA1MzY4MzlAYWR2ZXJ0aXNpbmcucGVyZm9ybWFuY2Uub3pvbi5ydSJ9.XyTefZyKLHRbXIx_8Z3oxRzPQ8IZZtr_2i4BAVhThck",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Client-Id",
+                "value": "{{ozon_client_id_header}}",
+                "disabled": true
+              },
+              {
+                "key": "Api-Key",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJhZHZlcnRpc2luZy5wZXJmb3JtYW5jZS5vem9uLnJ1IiwiZXhwIjoxNzE1NTgyNDM5LCJpYXQiOjE3MTU1ODA2MzksImlzcyI6InBlcmZvcm1hbmNlLWF1dGgub3pvbi5ydSIsInN1YiI6IjI4MzUzODgyLTE3MTU1ODA1MzY4MzlAYWR2ZXJ0aXNpbmcucGVyZm9ybWFuY2Uub3pvbi5ydSJ9.3aV4VIA8aWMq4vrVMKarBD3eJk7wQVWRNV1LbMJcszg",
+                "disabled": true
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"dateFrom\": \"2024-04-01\",\r\n    \"dateTo\": \"2024-05-13\",\r\n    \"type\": \"ORDERS\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://api-performance.ozon.ru/api/client/vendors/statistics",
+              "protocol": "https",
+              "host": [
+                "api-performance",
+                "ozon",
+                "ru"
+              ],
+              "path": [
+                "api",
+                "client",
+                "vendors",
+                "statistics"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create Client Statistics",
+          "id": "e0b3ecbf-d5d6-46cb-9d81-a9048c68cafd",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJhZHZlcnRpc2luZy5wZXJmb3JtYW5jZS5vem9uLnJ1IiwiZXhwIjoxNzMxNDk0MjQwLCJpYXQiOjE3MzE0OTI0NDAsImlzcyI6InBlcmZvcm1hbmNlLWF1dGgub3pvbi5ydSIsInN1YiI6IjI4NDQwNTg1LTE3MTU3NzA2ODU0MDVAYWR2ZXJ0aXNpbmcucGVyZm9ybWFuY2Uub3pvbi5ydSJ9.qhHqQ-SCYraV0wDawF6YqVKbOu12wGtoWiM6nxFqgkc",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Client-Id",
+                "value": "{{ozon_client_id_header}}",
+                "disabled": true
+              },
+              {
+                "key": "Api-Key",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJhZHZlcnRpc2luZy5wZXJmb3JtYW5jZS5vem9uLnJ1IiwiZXhwIjoxNzE1NTgyNDM5LCJpYXQiOjE3MTU1ODA2MzksImlzcyI6InBlcmZvcm1hbmNlLWF1dGgub3pvbi5ydSIsInN1YiI6IjI4MzUzODgyLTE3MTU1ODA1MzY4MzlAYWR2ZXJ0aXNpbmcucGVyZm9ybWFuY2Uub3pvbi5ydSJ9.3aV4VIA8aWMq4vrVMKarBD3eJk7wQVWRNV1LbMJcszg",
+                "disabled": true
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"from\":\"2024-11-01T00:00:00Z\",\r\n    \"to\":\"2024-11-14T00:00:00Z\",\r\n    \"campaigns\":[\"12384779\"],\r\n    \"groupBy\":\"DATE\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://api-performance.ozon.ru/api/client/statistics/json",
+              "protocol": "https",
+              "host": [
+                "api-performance",
+                "ozon",
+                "ru"
+              ],
+              "path": [
+                "api",
+                "client",
+                "statistics",
+                "json"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create Client Statistics Expenses",
+          "id": "479f8668-63c4-494c-a9eb-9432b3a03fa7",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJhZHZlcnRpc2luZy5wZXJmb3JtYW5jZS5vem9uLnJ1IiwiZXhwIjoxNzIzNDQ5ODk0LCJpYXQiOjE3MjM0NDgwOTQsImlzcyI6InBlcmZvcm1hbmNlLWF1dGgub3pvbi5ydSIsInN1YiI6IjI4NDQwNTg1LTE3MTU3NzA2ODU0MDVAYWR2ZXJ0aXNpbmcucGVyZm9ybWFuY2Uub3pvbi5ydSJ9.ejHLqEHz4Czc6KFES3dEoTT8CUpWsL6FP9gPvf6LYy8",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Client-Id",
+                "value": "{{ozon_client_id_header}}",
+                "disabled": true
+              },
+              {
+                "key": "Api-Key",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJhZHZlcnRpc2luZy5wZXJmb3JtYW5jZS5vem9uLnJ1IiwiZXhwIjoxNzE1NTgyNDM5LCJpYXQiOjE3MTU1ODA2MzksImlzcyI6InBlcmZvcm1hbmNlLWF1dGgub3pvbi5ydSIsInN1YiI6IjI4MzUzODgyLTE3MTU1ODA1MzY4MzlAYWR2ZXJ0aXNpbmcucGVyZm9ybWFuY2Uub3pvbi5ydSJ9.3aV4VIA8aWMq4vrVMKarBD3eJk7wQVWRNV1LbMJcszg",
+                "disabled": true
+              }
+            ],
+            "url": {
+              "raw": "https://api-performance.ozon.ru/api/client/statistics/expense/json?dateFrom=2024-02-01&dateTo=2024-05-13",
+              "protocol": "https",
+              "host": [
+                "api-performance",
+                "ozon",
+                "ru"
+              ],
+              "path": [
+                "api",
+                "client",
+                "statistics",
+                "expense",
+                "json"
+              ],
+              "query": [
+                {
+                  "key": "dateFrom",
+                  "value": "2024-02-01"
+                },
+                {
+                  "key": "dateTo",
+                  "value": "2024-05-13"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create Client Statistics Product",
+          "id": "ba0e54ce-e5f6-47de-8d31-d0989555d4ba",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJhZHZlcnRpc2luZy5wZXJmb3JtYW5jZS5vem9uLnJ1IiwiZXhwIjoxNzE1NzYyMjY4LCJpYXQiOjE3MTU3NjA0NjgsImlzcyI6InBlcmZvcm1hbmNlLWF1dGgub3pvbi5ydSIsInN1YiI6IjI4MzUzODgyLTE3MTU1ODA1MzY4MzlAYWR2ZXJ0aXNpbmcucGVyZm9ybWFuY2Uub3pvbi5ydSJ9.JrNJmjHcyuzhiUewkwbY_ahGZJWRz8GjzkTbAYefNlo",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Client-Id",
+                "value": "{{ozon_client_id_header}}",
+                "disabled": true
+              },
+              {
+                "key": "Api-Key",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJhZHZlcnRpc2luZy5wZXJmb3JtYW5jZS5vem9uLnJ1IiwiZXhwIjoxNzE1NTgyNDM5LCJpYXQiOjE3MTU1ODA2MzksImlzcyI6InBlcmZvcm1hbmNlLWF1dGgub3pvbi5ydSIsInN1YiI6IjI4MzUzODgyLTE3MTU1ODA1MzY4MzlAYWR2ZXJ0aXNpbmcucGVyZm9ybWFuY2Uub3pvbi5ydSJ9.3aV4VIA8aWMq4vrVMKarBD3eJk7wQVWRNV1LbMJcszg",
+                "disabled": true
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"from\": \"2024-04-01T00:00:00Z\",\r\n    \"to\": \"2024-05-13T00:00:00Z\"\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://api-performance.ozon.ru/api/client/statistics/campaign/product/json?dateFrom=2024-02-28&dateTo=2024-05-13",
+              "protocol": "https",
+              "host": [
+                "api-performance",
+                "ozon",
+                "ru"
+              ],
+              "path": [
+                "api",
+                "client",
+                "statistics",
+                "campaign",
+                "product",
+                "json"
+              ],
+              "query": [
+                {
+                  "key": "dateFrom",
+                  "value": "2024-02-28"
+                },
+                {
+                  "key": "dateTo",
+                  "value": "2024-05-13"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create Client Statistics Daily",
+          "id": "5f4acd54-a1d1-40cf-a6f1-c758ea1bfd47",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJhZHZlcnRpc2luZy5wZXJmb3JtYW5jZS5vem9uLnJ1IiwiZXhwIjoxNzE1NzU0NTUzLCJpYXQiOjE3MTU3NTI3NTMsImlzcyI6InBlcmZvcm1hbmNlLWF1dGgub3pvbi5ydSIsInN1YiI6IjI4MzUzODgyLTE3MTU1ODA1MzY4MzlAYWR2ZXJ0aXNpbmcucGVyZm9ybWFuY2Uub3pvbi5ydSJ9.LwIS4A_7eLL24PJVFfpddvndsTZFPLCrUP51TYzH-9A",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Client-Id",
+                "value": "{{ozon_client_id_header}}",
+                "disabled": true
+              },
+              {
+                "key": "Api-Key",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJhZHZlcnRpc2luZy5wZXJmb3JtYW5jZS5vem9uLnJ1IiwiZXhwIjoxNzE1NTgyNDM5LCJpYXQiOjE3MTU1ODA2MzksImlzcyI6InBlcmZvcm1hbmNlLWF1dGgub3pvbi5ydSIsInN1YiI6IjI4MzUzODgyLTE3MTU1ODA1MzY4MzlAYWR2ZXJ0aXNpbmcucGVyZm9ybWFuY2Uub3pvbi5ydSJ9.3aV4VIA8aWMq4vrVMKarBD3eJk7wQVWRNV1LbMJcszg",
+                "disabled": true
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://api-performance.ozon.ru/api/client/statistics/daily/json?dateFrom=2024-02-28&dateTo=2024-05-13",
+              "protocol": "https",
+              "host": [
+                "api-performance",
+                "ozon",
+                "ru"
+              ],
+              "path": [
+                "api",
+                "client",
+                "statistics",
+                "daily",
+                "json"
+              ],
+              "query": [
+                {
+                  "key": "dateFrom",
+                  "value": "2024-02-28"
+                },
+                {
+                  "key": "dateTo",
+                  "value": "2024-05-13"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create Orders Search Statistics",
+          "id": "9a90f7e0-39b3-48bf-84ee-0b32ecfd1b14",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJhZHZlcnRpc2luZy5wZXJmb3JtYW5jZS5vem9uLnJ1IiwiZXhwIjoxNzI0OTEzOTk4LCJpYXQiOjE3MjQ5MTIxOTgsImlzcyI6InBlcmZvcm1hbmNlLWF1dGgub3pvbi5ydSIsInN1YiI6IjI4NDQwNTg1LTE3MTU3NzA2ODU0MDVAYWR2ZXJ0aXNpbmcucGVyZm9ybWFuY2Uub3pvbi5ydSJ9.xKRYk2QB1lf11HrgbV6W3HHCUHilwBLVmyXK20m4X2c",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Client-Id",
+                "value": "{{ozon_client_id_header}}",
+                "disabled": true
+              },
+              {
+                "key": "Api-Key",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJhZHZlcnRpc2luZy5wZXJmb3JtYW5jZS5vem9uLnJ1IiwiZXhwIjoxNzE1NTgyNDM5LCJpYXQiOjE3MTU1ODA2MzksImlzcyI6InBlcmZvcm1hbmNlLWF1dGgub3pvbi5ydSIsInN1YiI6IjI4MzUzODgyLTE3MTU1ODA1MzY4MzlAYWR2ZXJ0aXNpbmcucGVyZm9ybWFuY2Uub3pvbi5ydSJ9.3aV4VIA8aWMq4vrVMKarBD3eJk7wQVWRNV1LbMJcszg",
+                "disabled": true
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"from\": \"2024-07-01T00:00:00Z\",\r\n    \"to\": \"2024-08-17T00:00:00Z\"\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://api-performance.ozon.ru/api/client/statistic/orders/generate/json",
+              "protocol": "https",
+              "host": [
+                "api-performance",
+                "ozon",
+                "ru"
+              ],
+              "path": [
+                "api",
+                "client",
+                "statistic",
+                "orders",
+                "generate",
+                "json"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create Products Search Statistics",
+          "id": "ce034a7b-c674-4403-a05b-79dd93dbc7fc",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJhZHZlcnRpc2luZy5wZXJmb3JtYW5jZS5vem9uLnJ1IiwiZXhwIjoxNzE1OTU0NjIzLCJpYXQiOjE3MTU5NTI4MjMsImlzcyI6InBlcmZvcm1hbmNlLWF1dGgub3pvbi5ydSIsInN1YiI6IjI4NDQwNTg1LTE3MTU3NzA2ODU0MDVAYWR2ZXJ0aXNpbmcucGVyZm9ybWFuY2Uub3pvbi5ydSJ9.UpHl2Nmt_FcUvpnwO8zyUxpKbqk_T4R7_EyBqqaVihs",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Client-Id",
+                "value": "{{ozon_client_id_header}}",
+                "disabled": true
+              },
+              {
+                "key": "Api-Key",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJhZHZlcnRpc2luZy5wZXJmb3JtYW5jZS5vem9uLnJ1IiwiZXhwIjoxNzE1NTgyNDM5LCJpYXQiOjE3MTU1ODA2MzksImlzcyI6InBlcmZvcm1hbmNlLWF1dGgub3pvbi5ydSIsInN1YiI6IjI4MzUzODgyLTE3MTU1ODA1MzY4MzlAYWR2ZXJ0aXNpbmcucGVyZm9ybWFuY2Uub3pvbi5ydSJ9.3aV4VIA8aWMq4vrVMKarBD3eJk7wQVWRNV1LbMJcszg",
+                "disabled": true
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"from\": \"2024-05-01T00:00:00Z\",\r\n    \"to\": \"2024-05-17T00:00:00Z\"\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://api-performance.ozon.ru/api/client/statistics/expense/json",
+              "protocol": "https",
+              "host": [
+                "api-performance",
+                "ozon",
+                "ru"
+              ],
+              "path": [
+                "api",
+                "client",
+                "statistics",
+                "expense",
+                "json"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Vendor Statistics",
+          "id": "f0e1fbd5-3467-4d5f-95b9-f4ccf19bb37a",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJhZHZlcnRpc2luZy5wZXJmb3JtYW5jZS5vem9uLnJ1IiwiZXhwIjoxNzE1NTg1Njg0LCJpYXQiOjE3MTU1ODM4ODQsImlzcyI6InBlcmZvcm1hbmNlLWF1dGgub3pvbi5ydSIsInN1YiI6IjI4MzUzODgyLTE3MTU1ODA1MzY4MzlAYWR2ZXJ0aXNpbmcucGVyZm9ybWFuY2Uub3pvbi5ydSJ9.XyTefZyKLHRbXIx_8Z3oxRzPQ8IZZtr_2i4BAVhThck",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Client-Id",
+                "value": "{{ozon_client_id_header}}",
+                "disabled": true
+              },
+              {
+                "key": "Api-Key",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJhZHZlcnRpc2luZy5wZXJmb3JtYW5jZS5vem9uLnJ1IiwiZXhwIjoxNzE1NTgyNDM5LCJpYXQiOjE3MTU1ODA2MzksImlzcyI6InBlcmZvcm1hbmNlLWF1dGgub3pvbi5ydSIsInN1YiI6IjI4MzUzODgyLTE3MTU1ODA1MzY4MzlAYWR2ZXJ0aXNpbmcucGVyZm9ybWFuY2Uub3pvbi5ydSJ9.3aV4VIA8aWMq4vrVMKarBD3eJk7wQVWRNV1LbMJcszg",
+                "disabled": true
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"dateFrom\": \"2024-04-01\",\r\n    \"dateTo\": \"2024-05-13\",\r\n    \"type\": \"TRAFFIC_SOURCES\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://api-performance.ozon.ru/api/client/vendors/statistics/3ed845ff-3ee9-4ebc-9edc-f3a71187c238",
+              "protocol": "https",
+              "host": [
+                "api-performance",
+                "ozon",
+                "ru"
+              ],
+              "path": [
+                "api",
+                "client",
+                "vendors",
+                "statistics",
+                "3ed845ff-3ee9-4ebc-9edc-f3a71187c238"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Clients Statistics",
+          "id": "2df50222-cfb0-46e2-add4-b3c0187d523c",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJhZHZlcnRpc2luZy5wZXJmb3JtYW5jZS5vem9uLnJ1IiwiZXhwIjoxNzE1OTU0NjIzLCJpYXQiOjE3MTU5NTI4MjMsImlzcyI6InBlcmZvcm1hbmNlLWF1dGgub3pvbi5ydSIsInN1YiI6IjI4NDQwNTg1LTE3MTU3NzA2ODU0MDVAYWR2ZXJ0aXNpbmcucGVyZm9ybWFuY2Uub3pvbi5ydSJ9.UpHl2Nmt_FcUvpnwO8zyUxpKbqk_T4R7_EyBqqaVihs",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Client-Id",
+                "value": "{{ozon_client_id_header}}",
+                "disabled": true
+              },
+              {
+                "key": "Api-Key",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJhZHZlcnRpc2luZy5wZXJmb3JtYW5jZS5vem9uLnJ1IiwiZXhwIjoxNzE1NTgyNDM5LCJpYXQiOjE3MTU1ODA2MzksImlzcyI6InBlcmZvcm1hbmNlLWF1dGgub3pvbi5ydSIsInN1YiI6IjI4MzUzODgyLTE3MTU1ODA1MzY4MzlAYWR2ZXJ0aXNpbmcucGVyZm9ybWFuY2Uub3pvbi5ydSJ9.3aV4VIA8aWMq4vrVMKarBD3eJk7wQVWRNV1LbMJcszg",
+                "disabled": true
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://api-performance.ozon.ru/api/client/statistics/b1433165-8d79-460b-92f8-b4907cd1d569",
+              "protocol": "https",
+              "host": [
+                "api-performance",
+                "ozon",
+                "ru"
+              ],
+              "path": [
+                "api",
+                "client",
+                "statistics",
+                "b1433165-8d79-460b-92f8-b4907cd1d569"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Campaign list",
+          "id": "1d2f7ddb-52bb-4db1-8983-bac4aa8e07ec",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJhZHZlcnRpc2luZy5wZXJmb3JtYW5jZS5vem9uLnJ1IiwiZXhwIjoxNzE1NTg1Njg0LCJpYXQiOjE3MTU1ODM4ODQsImlzcyI6InBlcmZvcm1hbmNlLWF1dGgub3pvbi5ydSIsInN1YiI6IjI4MzUzODgyLTE3MTU1ODA1MzY4MzlAYWR2ZXJ0aXNpbmcucGVyZm9ybWFuY2Uub3pvbi5ydSJ9.XyTefZyKLHRbXIx_8Z3oxRzPQ8IZZtr_2i4BAVhThck",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Client-Id",
+                "value": "{{ozon_client_id_header}}",
+                "disabled": true
+              },
+              {
+                "key": "Api-Key",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJhZHZlcnRpc2luZy5wZXJmb3JtYW5jZS5vem9uLnJ1IiwiZXhwIjoxNzE1NTgyNDM5LCJpYXQiOjE3MTU1ODA2MzksImlzcyI6InBlcmZvcm1hbmNlLWF1dGgub3pvbi5ydSIsInN1YiI6IjI4MzUzODgyLTE3MTU1ODA1MzY4MzlAYWR2ZXJ0aXNpbmcucGVyZm9ybWFuY2Uub3pvbi5ydSJ9.3aV4VIA8aWMq4vrVMKarBD3eJk7wQVWRNV1LbMJcszg",
+                "disabled": true
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"dateFrom\": \"2024-04-01\",\r\n    \"dateTo\": \"2024-05-13\",\r\n    \"type\": \"TRAFFIC_SOURCES\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://api-performance.ozon.ru/api/client/campaign",
+              "protocol": "https",
+              "host": [
+                "api-performance",
+                "ozon",
+                "ru"
+              ],
+              "path": [
+                "api",
+                "client",
+                "campaign"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "a9c30aa0-93bb-475b-8412-b9fb2b3b25da"
+    },
+    {
+      "name": "Token",
+      "item": [
+        {
+          "name": "Get Token",
+          "id": "1566f719-8c36-4ab3-b84a-596127bf8f41",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Client-Id",
+                "value": "{{ozon_client_id_header}}",
+                "disabled": true
+              },
+              {
+                "key": "Api-Key",
+                "value": "{{ozon_client_id}}",
+                "disabled": true
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"client_id\":\"28440585-1715770685405@advertising.performance.ozon.ru\", \r\n    \"client_secret\":\"xbJIE4GvK9YbeIHew21B8B32XmE9pFUR0slHVMjxk20jAHuMGSsQx0kOPg4KJrXI5UFL2uvyZgKs15y3pw\", \r\n    \"grant_type\":\"client_credentials\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://api-performance.ozon.ru/api/client/token",
+              "protocol": "https",
+              "host": [
+                "api-performance",
+                "ozon",
+                "ru"
+              ],
+              "path": [
+                "api",
+                "client",
+                "token"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "b942fe3d-1279-4af3-b97d-99cbdb14ec3f"
+    },
+    {
+      "name": "Search Promo",
+      "item": [
+        {
+          "name": "Search Promo",
+          "id": "943a34ee-864a-434e-8b54-39a22d604793",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJhZHZlcnRpc2luZy5wZXJmb3JtYW5jZS5vem9uLnJ1IiwiZXhwIjoxNzMyNjk2MjA0LCJpYXQiOjE3MzI2OTQ0MDQsImlzcyI6InBlcmZvcm1hbmNlLWF1dGgub3pvbi5ydSIsInN1YiI6IjI4NDQwNTg1LTE3MTU3NzA2ODU0MDVAYWR2ZXJ0aXNpbmcucGVyZm9ybWFuY2Uub3pvbi5ydSJ9.QHePl6t0wQmeY48RhgUTZTvUq0LcquFsVv1HoJ_9UAI",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Client-Id",
+                "value": "{{ozon_client_id_header}}",
+                "disabled": true
+              },
+              {
+                "key": "Api-Key",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJhZHZlcnRpc2luZy5wZXJmb3JtYW5jZS5vem9uLnJ1IiwiZXhwIjoxNzE1NTgyNDM5LCJpYXQiOjE3MTU1ODA2MzksImlzcyI6InBlcmZvcm1hbmNlLWF1dGgub3pvbi5ydSIsInN1YiI6IjI4MzUzODgyLTE3MTU1ODA1MzY4MzlAYWR2ZXJ0aXNpbmcucGVyZm9ybWFuY2Uub3pvbi5ydSJ9.3aV4VIA8aWMq4vrVMKarBD3eJk7wQVWRNV1LbMJcszg",
+                "disabled": true
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"page\": 0,\r\n    \"pageSize\": 0\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://api-performance.ozon.ru/api/client/campaign/search_promo/v2/products",
+              "protocol": "https",
+              "host": [
+                "api-performance",
+                "ozon",
+                "ru"
+              ],
+              "path": [
+                "api",
+                "client",
+                "campaign",
+                "search_promo",
+                "v2",
+                "products"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Search Promo Get Recommended Bids",
+          "id": "092f1d5b-9397-4f94-948b-c8ed55c2e8ea",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJhZHZlcnRpc2luZy5wZXJmb3JtYW5jZS5vem9uLnJ1IiwiZXhwIjoxNzMyNjk2MjA0LCJpYXQiOjE3MzI2OTQ0MDQsImlzcyI6InBlcmZvcm1hbmNlLWF1dGgub3pvbi5ydSIsInN1YiI6IjI4NDQwNTg1LTE3MTU3NzA2ODU0MDVAYWR2ZXJ0aXNpbmcucGVyZm9ybWFuY2Uub3pvbi5ydSJ9.QHePl6t0wQmeY48RhgUTZTvUq0LcquFsVv1HoJ_9UAI",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Client-Id",
+                "value": "{{ozon_client_id_header}}",
+                "disabled": true
+              },
+              {
+                "key": "Api-Key",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJhZHZlcnRpc2luZy5wZXJmb3JtYW5jZS5vem9uLnJ1IiwiZXhwIjoxNzE1NTgyNDM5LCJpYXQiOjE3MTU1ODA2MzksImlzcyI6InBlcmZvcm1hbmNlLWF1dGgub3pvbi5ydSIsInN1YiI6IjI4MzUzODgyLTE3MTU1ODA1MzY4MzlAYWR2ZXJ0aXNpbmcucGVyZm9ybWFuY2Uub3pvbi5ydSJ9.3aV4VIA8aWMq4vrVMKarBD3eJk7wQVWRNV1LbMJcszg",
+                "disabled": true
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"sku\": [\r\n        \"1561546075\",\r\n        \"1575432293\",\r\n        \"1514894509\",\r\n        \"1516954068\",\r\n        \"1403492627\",\r\n        \"1403422275\",\r\n        \"1438614208\"\r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://api-performance.ozon.ru/api/client/search_promo/bids/recommendation",
+              "protocol": "https",
+              "host": [
+                "api-performance",
+                "ozon",
+                "ru"
+              ],
+              "path": [
+                "api",
+                "client",
+                "search_promo",
+                "bids",
+                "recommendation"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "f201abe1-4687-4069-b834-db96ec96bf42"
+    },
+    {
+      "name": "Limits List",
+      "item": [
+        {
+          "name": "Limits list",
+          "id": "bae6136c-7274-4851-a8ca-f382251c258c",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJhZHZlcnRpc2luZy5wZXJmb3JtYW5jZS5vem9uLnJ1IiwiZXhwIjoxNzM3NTQwMjA5LCJpYXQiOjE3Mzc1Mzg0MDksImlzcyI6InBlcmZvcm1hbmNlLWF1dGgub3pvbi5ydSIsInN1YiI6IjI4NDQwNTg1LTE3MTU3NzA2ODU0MDVAYWR2ZXJ0aXNpbmcucGVyZm9ybWFuY2Uub3pvbi5ydSJ9.5DNrXge0_FmvEeSH7Itmf1h6MPLTF8c4HX-GJBrl__Y",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Client-Id",
+                "value": "{{ozon_client_id_header}}",
+                "disabled": true
+              },
+              {
+                "key": "Api-Key",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJhZHZlcnRpc2luZy5wZXJmb3JtYW5jZS5vem9uLnJ1IiwiZXhwIjoxNzE1NTgyNDM5LCJpYXQiOjE3MTU1ODA2MzksImlzcyI6InBlcmZvcm1hbmNlLWF1dGgub3pvbi5ydSIsInN1YiI6IjI4MzUzODgyLTE3MTU1ODA1MzY4MzlAYWR2ZXJ0aXNpbmcucGVyZm9ybWFuY2Uub3pvbi5ydSJ9.3aV4VIA8aWMq4vrVMKarBD3eJk7wQVWRNV1LbMJcszg",
+                "disabled": true
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://api-performance.ozon.ru/api/client/limits/list",
+              "protocol": "https",
+              "host": [
+                "api-performance",
+                "ozon",
+                "ru"
+              ],
+              "path": [
+                "api",
+                "client",
+                "limits",
+                "list"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "d8161813-19cf-4c30-89d8-1ceb3423c9f5"
+    }
+  ]
+}

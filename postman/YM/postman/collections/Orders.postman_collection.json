@@ -1,0 +1,102 @@
+{
+  "info": {
+    "_postman_id": "311e3cb5-5a92-42df-8b88-244a80a676a7",
+    "name": "Orders",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get Orders By Campaign Id",
+      "id": "237a9c39-83cd-4292-873e-5e70f423b4e0",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Api-Key",
+            "value": "{{ym_oauth_token}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://api.partner.market.yandex.ru/v2/campaigns/148611643/orders",
+          "protocol": "https",
+          "host": [
+            "api",
+            "partner",
+            "market",
+            "yandex",
+            "ru"
+          ],
+          "path": [
+            "v2",
+            "campaigns",
+            "148611643",
+            "orders"
+          ],
+          "query": [
+            {
+              "key": "page_token",
+              "value": "eyJsYXN0T3JkZXJJZCI6NDgzOTM1NzY1NzgsImxhc3RTb3J0aW5nRmllbGRWYWx1ZSI6MH0",
+              "disabled": true
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Orders By Business Id",
+      "id": "f917768e-3b64-4092-b237-094782df98e6",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Api-Key",
+            "value": "{{ym_oauth_token}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"limit\": 100\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api.partner.market.yandex.ru/v1/businesses/208976822/orders",
+          "protocol": "https",
+          "host": [
+            "api",
+            "partner",
+            "market",
+            "yandex",
+            "ru"
+          ],
+          "path": [
+            "v1",
+            "businesses",
+            "208976822",
+            "orders"
+          ],
+          "query": [
+            {
+              "key": "page_token",
+              "value": "eyJsYXN0T3JkZXJJZCI6NDgzOTM1NzY1NzgsImxhc3RTb3J0aW5nRmllbGRWYWx1ZSI6MH0",
+              "disabled": true
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

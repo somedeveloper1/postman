@@ -1,0 +1,29 @@
+{
+  "info": {
+    "_postman_id": "27547ed9-f683-465a-b593-f636e074a5c7",
+    "name": "Ping",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Ping",
+      "id": "dcf09737-6fbc-4503-b3cf-7c39d3669716",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/ping",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "ping"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

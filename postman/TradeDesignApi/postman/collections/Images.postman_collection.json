@@ -1,0 +1,74 @@
+﻿{
+  "info": {
+    "_postman_id": "12da9fc7-a79b-4573-aed6-7b2a54c26f4f",
+    "name": "Images",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get Image by Nomenclature code",
+      "id": "983f28a4-7b2b-4e3a-ae5b-80b4cfb59031",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/images/00000000441",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "images",
+            "00000000441"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Images by Nomenclature code",
+      "id": "8bc55b01-e012-43cd-8d80-66ce0b3fc8f8",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/images/nomenclature/00000231711",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "images",
+            "nomenclature",
+            "00000231711"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Image by Nomenclature from 1c_images",
+      "id": "cb0d9f2d-595c-40f5-a0ea-085e2c1580db",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/images/1c-images/00000000441",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "images",
+            "1c-images",
+            "00000000441"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

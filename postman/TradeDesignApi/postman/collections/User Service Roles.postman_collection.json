@@ -1,0 +1,39 @@
+﻿{
+  "info": {
+    "_postman_id": "00574970-5679-4526-8b38-c4d36a9c6052",
+    "name": "User Service Roles",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "User Service Roles",
+      "id": "6b7c2e49-05c3-4fe0-9163-249d9a2da1db",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTY3MTc4MjU5MSwiZXhwIjoxNjcyMzg3MzkxLCJuYmYiOjE2NzE3ODI1OTEsImp0aSI6Im4yeUpsNEhWNk1vYVgzYzEiLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.n7S2eysZME4891sm64I4YjQZPEfSOue3LIi1xTb_bIQ",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/user-service-roles",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "user-service-roles"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

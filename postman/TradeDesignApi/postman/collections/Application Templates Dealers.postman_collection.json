@@ -1,0 +1,406 @@
+﻿{
+  "info": {
+    "_postman_id": "432e5a46-6ce0-4771-b67c-df7721b5c15a",
+    "name": "Application Templates Dealers",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Applications Template Create",
+      "id": "a3f29fd1-1e95-4781-bd71-eb6c55d39957",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NDkyMzU3ODcsImV4cCI6MTY0OTg0MDU4NywibmJmIjoxNjQ5MjM1Nzg3LCJqdGkiOiJ3a0dnSEE3TmtSUHRqbzRpIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.6aZ_7re8Z4y78C_UcrPriyqgH3CSDesmVakNpHerRnc",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Закупка Печей Зима\",\r\n  \"comment\": \"Quaerat inventore possimus nam veritatis dolorem. Reiciendis corporis aliquid ad aut non consequatur alias. Eos explicabo reiciendis alias beatae tempore officiis incidunt.\",\r\n  \"order_counterparty_guid\": \"1111bbbb-oa83-11e6-826a-e61f13537e11\",\r\n  \"website_comment_by_client\": \"My Website Comment By Client\",\r\n  \"items\": [\r\n    {\r\n      \"nomenclature_guid\": \"f8e34fac-0b04-11ec-a276-e61f13537e43\",\r\n      \"amount\": 28\r\n    }\r\n  ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/dealers/applications-template/create",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "dealers",
+            "applications-template",
+            "create"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Applications Template Create From Application",
+      "id": "1b7dcc38-20f8-4ff6-b037-6a89816642bc",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2Mzg0MjMzNTcsImV4cCI6MTYzODUwOTc1NywibmJmIjoxNjM4NDIzMzU3LCJqdGkiOiIyVXlKZG5PekxXQk9RZVNlIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.xKdQnouemelQ9PUk1DU0aCGhUO4DkoU0-NAbXZvrV30",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"application_id\": 12,\r\n    \"name\": \"My Template\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/dealers/applications-template/create-from-application",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "dealers",
+            "applications-template",
+            "create-from-application"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Applications Templates",
+      "id": "96cac1fb-6cd9-4c5b-aa46-01c647beac9a",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2Mzc4Mzk5NjcsImV4cCI6MTYzNzkyNjM2NywibmJmIjoxNjM3ODM5OTY3LCJqdGkiOiJKbWZWdVloSHBmSFRYQmRMIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.09VH1mLfW3xWkekkV1yDLlCAZvS2pgiAGwEvsop1aNQ",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/dealers/applications-templates",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "dealers",
+            "applications-templates"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Applications Templates With Nomenclature",
+      "id": "d6905b1e-9bcb-4d65-9bc3-73cfc06017f5",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NDIzOTcwNjEsImV4cCI6MTY0MjQ4MzQ2MSwibmJmIjoxNjQyMzk3MDYxLCJqdGkiOiI2RllDWllVeXJOalAzYnJmIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.o5K6Hgvk-emZc8FdFhfDsyeFomx-_oyZd_9iqFb-wDk",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/dealers/templates-with-nomenclature?guid=f2641398-9c04-11df-8da0-e61f13537e43",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "dealers",
+            "templates-with-nomenclature"
+          ],
+          "query": [
+            {
+              "key": "guid",
+              "value": "f2641398-9c04-11df-8da0-e61f13537e43"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Application Template",
+      "id": "9aa7eeb6-dfc2-4cc6-beb5-c644b4d8b789",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NDM4MDcxNjEsImV4cCI6MTY0NDQxMTk2MSwibmJmIjoxNjQzODA3MTYxLCJqdGkiOiJPVVl4eUhUTFBXczVNamltIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.BzBOZd5NRBOkLhV_E_EyVZ_icOpFyQ3HUTfVysK5MJk",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/dealers/applications-template/16",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "dealers",
+            "applications-template",
+            "16"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Application Template Update",
+      "id": "0f757809-50ed-4229-9c5c-9018e9a075ad",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NDgxMjg2MzEsImV4cCI6MTY0ODczMzQzMSwibmJmIjoxNjQ4MTI4NjMxLCJqdGkiOiJSZmVyVUlWUDFTM1I4OXZoIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.X-vx5f8K7nI0X7eLxRczax_YEd5LoWpN0UbBCcoBqyQ",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"0\",\r\n  \"website_comment\": \"ok\",\r\n  \"items\": [\r\n    {\r\n            \"nomenclature_guid\": \"11111\",\r\n            \"amount\": \"10\"\r\n    },\r\n    {\r\n      \"nomenclature_guid\": \"223\",\r\n      \"amount\": 223\r\n    },\r\n    {\r\n      \"nomenclature_guid\": \"555555\",\r\n      \"amount\": 564\r\n    }\r\n  ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/dealers/applications-template/update/17",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "dealers",
+            "applications-template",
+            "update",
+            "17"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Application Template Delete",
+      "id": "5bc04ee0-52ec-4301-bd84-3b7bf6235a43",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NDgxMjg2MzEsImV4cCI6MTY0ODczMzQzMSwibmJmIjoxNjQ4MTI4NjMxLCJqdGkiOiJSZmVyVUlWUDFTM1I4OXZoIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.X-vx5f8K7nI0X7eLxRczax_YEd5LoWpN0UbBCcoBqyQ",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/dealers/applications-template/delete/17",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "dealers",
+            "applications-template",
+            "delete",
+            "17"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Application Template Restore",
+      "id": "41468d97-6ad8-4b08-96f9-eed61c3479ea",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NDgxMjg2MzEsImV4cCI6MTY0ODczMzQzMSwibmJmIjoxNjQ4MTI4NjMxLCJqdGkiOiJSZmVyVUlWUDFTM1I4OXZoIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.X-vx5f8K7nI0X7eLxRczax_YEd5LoWpN0UbBCcoBqyQ",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/dealers/applications-template/restore/17",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "dealers",
+            "applications-template",
+            "restore",
+            "17"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Application Template Add Nomenclature",
+      "id": "94e0f6d6-9fbd-4d83-a50c-3bc268e51c85",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NDIzOTcwNjEsImV4cCI6MTY0MjQ4MzQ2MSwibmJmIjoxNjQyMzk3MDYxLCJqdGkiOiI2RllDWllVeXJOalAzYnJmIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.o5K6Hgvk-emZc8FdFhfDsyeFomx-_oyZd_9iqFb-wDk",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"guid\": \"06c0ad18-85ee-4f18-a64b-74a7c84c578a\",\r\n  \"amount\": 3,\r\n  \"id\": 17\r\n   \r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/dealers/template/add-nomenclature",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "dealers",
+            "template",
+            "add-nomenclature"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Application Template Duplicate",
+      "id": "dcb7f039-a1ee-4f19-b3e6-3c1ce98732e0",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzgyNDk4MzcsImV4cCI6MTYzODMzNjIzNywibmJmIjoxNjM4MjQ5ODM3LCJqdGkiOiJzUFRldTU4VnVoUU1aaDVUIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.qhxRF0_UETPCbWvf-GAVJOPGVdBQCRO0TU7-derwZVI",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/dealers/application/duplicate/18",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "dealers",
+            "application",
+            "duplicate",
+            "18"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Application Template From Order",
+      "id": "a704f85d-1c4a-4804-8e0b-e2d3e7f1e4b2",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2Mzg1MTA2MDQsImV4cCI6MTYzODU5NzAwNCwibmJmIjoxNjM4NTEwNjA0LCJqdGkiOiJwUDdaM0lKM0hzemp4ZklrIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.axistyQOJoHBnpibHt-3nD8vVbbgUutz0MslX6fgfyI",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/dealers/application-template/from-order/908ab84d-6d70-492d-806f-f48c1ae627cb",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "dealers",
+            "application-template",
+            "from-order",
+            "908ab84d-6d70-492d-806f-f48c1ae627cb"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

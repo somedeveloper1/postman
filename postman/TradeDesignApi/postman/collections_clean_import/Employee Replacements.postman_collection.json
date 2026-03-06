@@ -1,0 +1,117 @@
+{
+  "info": {
+    "_postman_id": "d3f9c9b5-6d00-4dec-a410-871eed487b90",
+    "name": "Employee Replacements",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Employee Replacements List",
+      "id": "30c2c700-f63f-4d8b-9803-e4cdb7bdd08b",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2Nzg3NzY2MzEsImV4cCI6MTY3OTM4MTQzMSwibmJmIjoxNjc4Nzc2NjMxLCJqdGkiOiJlRDJ3ZXp6dnJrZ2FYTHhjIiwic3ViIjoxMzY5LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Of7uU2oVx2mFf5IXwHG3cOg-tbgoFe9V5EJgvjiP-_g",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/employee-replacements?search=Гроссман",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "employee-replacements"
+          ],
+          "query": [
+            {
+              "key": "search",
+              "value": "Гроссман"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Employee Replacements Delete",
+      "id": "c46d5069-4e2a-4786-acfc-586f5bc848e6",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2Nzg3NzY2MzEsImV4cCI6MTY3OTM4MTQzMSwibmJmIjoxNjc4Nzc2NjMxLCJqdGkiOiJlRDJ3ZXp6dnJrZ2FYTHhjIiwic3ViIjoxMzY5LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Of7uU2oVx2mFf5IXwHG3cOg-tbgoFe9V5EJgvjiP-_g",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/employee-replacements/delete/12",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "employee-replacements",
+            "delete",
+            "12"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Employee Replacements Create",
+      "id": "83e920f7-d908-446d-bb8d-21bca3c1df6e",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2Nzg3NzY2MzEsImV4cCI6MTY3OTM4MTQzMSwibmJmIjoxNjc4Nzc2NjMxLCJqdGkiOiJlRDJ3ZXp6dnJrZ2FYTHhjIiwic3ViIjoxMzY5LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Of7uU2oVx2mFf5IXwHG3cOg-tbgoFe9V5EJgvjiP-_g",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"user_1c_to_replace_guid\": \"24576c57-5213-11e5-9dd2-e61f13537e43\",\r\n    \"user_1c_replacement_guid\": \"a093e012-be27-11eb-a276-e61f13537e43\",\r\n    \"start_at\": null,\r\n    \"end_at\": null\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/employee-replacements/create",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "employee-replacements",
+            "create"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

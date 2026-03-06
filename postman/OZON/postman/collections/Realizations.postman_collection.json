@@ -1,0 +1,50 @@
+{
+  "info": {
+    "_postman_id": "09a41b06-b460-4823-9027-11a38468aff0",
+    "name": "Realizations",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Ozon Realizations",
+      "id": "7adf8708-179c-4bdb-95ce-929d6c3598e4",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Client-Id",
+            "value": "{{ozon_client_id_header}}"
+          },
+          {
+            "key": "Api-Key",
+            "value": "{{ozon_client_id}}"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"month\": 4,\r\n    \"year\": 2024\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api-seller.ozon.ru/v2/finance/realization",
+          "protocol": "https",
+          "host": [
+            "api-seller",
+            "ozon",
+            "ru"
+          ],
+          "path": [
+            "v2",
+            "finance",
+            "realization"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

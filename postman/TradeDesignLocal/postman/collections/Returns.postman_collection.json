@@ -1,0 +1,38 @@
+{
+  "info": {
+    "_postman_id": "591e6889-6e86-4be1-8d62-a2f97b0f51ad",
+    "name": "Returns",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Returns Import",
+      "id": "b76e9fd4-308a-47e6-88ec-8f5a7ff71b22",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"guid\": \"6f40aa86-093e-435d-99bc-7cb698b6b9d1\",\r\n        \"number\": \"КР/В/00001\",\r\n        \"date\": \"2020-10-26T15:42:52\",\r\n        \"is_processed\": true,\r\n        \"counterparty_guid\": \"ea8dda58-703d-11e7-991f-e61f13537e43\",\r\n        \"mutual_settlements_multiplicity\": 1,\r\n        \"mutual_settlements_currency\": 1,\r\n        \"organization_guid\": \"017d74ce-7a08-11e8-a2a5-e61f13537e43\",\r\n        \"manager_responsible_guid\": \"7bd24c82-a706-11e9-b100-0050568e03f9\",\r\n        \"departments\": \"6350b2d6-2308-11e0-8679-e61f13537e43\",\r\n        \"comment\": \"my comment\",\r\n        \"total\": 1456,\r\n        \"returns_items\": [\r\n            {\r\n                \"line\": 1,\r\n                \"residue_unit_guid\": \"db953149-dd79-11dd-b60c-001a6498e70d\",\r\n                \"amount\": 1,\r\n                \"coefficient\": 1,\r\n                \"nomenclature_guid\": \"8792d225-d6ae-11e3-96bf-e61f13537e43\",\r\n                \"vat_rate\": \"БезНДС\",\r\n                \"total\": 9890,\r\n                \"vat_total\": 0,\r\n                \"price\": 9890,\r\n                \"order_guid\": \"123456789\",\r\n                \"document_guid\": \"987654321\"\r\n            }\r\n        ]\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/table/import/returns"
+      },
+      "response": []
+    }
+  ]
+}

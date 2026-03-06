@@ -1,0 +1,116 @@
+{
+  "info": {
+    "_postman_id": "b3d2f128-8a97-4457-a0cb-314727209855",
+    "name": "Document Statuses",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Document Statuses",
+      "id": "d3812639-8dfe-4552-b48a-4c40950e5c62",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/document-statuses?per_page=100"
+      },
+      "response": []
+    },
+    {
+      "name": "Document Status Create",
+      "id": "bc02e727-51f0-422a-8a75-6d1542250524",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzA0MDg2ODksImV4cCI6MTYzMDQxMjI4OSwibmJmIjoxNjMwNDA4Njg5LCJqdGkiOiJaeUtnTDdiUU1xM0lCYUplIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.MD0M8crdAx5k1vJwM8fquWGw58F-m3uKyxYtgbqdkU8",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"guid\": \"1\",\r\n    \"name\": \"in progress\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/document-status/submit"
+      },
+      "response": []
+    },
+    {
+      "name": "Document Statuses Import",
+      "id": "f59561f3-8d02-4d6d-8f2a-fdadda74a827",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzE1MTQ0MTYsIm5iZiI6MTYzMTUxNDQxNiwianRpIjoibGNaeDdGbTVhOHJBZElqWiIsInN1YiI6NywicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.HrcA2o7nmZ1sfGuF5xfJdq02nm-7A32KiZnaJ9tn4GE",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n    \"guid\": \"b1fe9287-f9c8-11eb-b2a8-0050568e03f9\",\r\n    \"name\": \"\"\r\n    },\r\n    {\r\n    \"guid\": \"b1fe9288-f9c8-11eb-b2a8-0050568e03f9\",\r\n    \"name\": \"\"\r\n    },\r\n    {\r\n    \"guid\": \"4bbd0a61-f9ca-11eb-b2a8-0050568e03f9\",\r\n    \"name\": \"\"\r\n    },\r\n    {\r\n    \"guid\": \"4bbd0a62-f9ca-11eb-b2a8-0050568e03f9\",\r\n    \"name\": \"\"\r\n    },\r\n    {\r\n    \"guid\": \"c8dae741-f9ca-11eb-b2a8-0050568e03f9\",\r\n    \"name\": \"\"\r\n    },\r\n    {\r\n    \"guid\": \"c8dae742-f9ca-11eb-b2a8-0050568e03f9\",\r\n    \"name\": \"\"\r\n    },\r\n    {\r\n    \"guid\": \"a27e9bd3-f9cd-11eb-b2a8-0050568e03f9\",\r\n    \"name\": \"\"\r\n    },\r\n    {\r\n    \"guid\": \"a27e9bd4-f9cd-11eb-b2a8-0050568e03f9\",\r\n    \"name\": \"\"\r\n    },\r\n    {\r\n    \"guid\": \"caef5d83-f9db-11eb-b2a8-0050568e03f9\",\r\n    \"name\": \"\"\r\n    },\r\n    {\r\n    \"guid\": \"caef5d84-f9db-11eb-b2a8-0050568e03f9\",\r\n    \"name\": \"\"\r\n    },\r\n    {\r\n    \"guid\": \"04121849-f9dd-11eb-b2a8-0050568e03f9\",\r\n    \"name\": \"\"\r\n    },\r\n    {\r\n    \"guid\": \"0412184a-f9dd-11eb-b2a8-0050568e03f9\",\r\n    \"name\": \"\"\r\n    },\r\n    {\r\n    \"guid\": \"0c37d621-c0f4-4f0d-aa27-0415a73cdf58\",\r\n    \"name\": \"Аннулирован\"\r\n    },\r\n    {\r\n    \"guid\": \"4454a860-1b1e-4020-83c4-beaede97e3ec\",\r\n    \"name\": \"Вводится (новый)\"\r\n    },\r\n    {\r\n    \"guid\": \"45ba53cd-5a6c-4919-9081-20dcdc355efa\",\r\n    \"name\": \"Выполнен\"\r\n    },\r\n    {\r\n    \"guid\": \"3f1e2b44-d43f-4ffa-9461-6c250bef64c1\",\r\n    \"name\": \"Завершен\"\r\n    },\r\n    {\r\n    \"guid\": \"783d2614-2e13-11e6-8dcf-e61f13537e43\",\r\n    \"name\": \"Количество согласовано\"\r\n    },\r\n    {\r\n    \"guid\": \"b4390617-996e-4ad1-b5e9-b6f20e9145d8\",\r\n    \"name\": \"Не оплачен\"\r\n    },\r\n    {\r\n    \"guid\": \"db064d72-27a6-4e09-b0ec-49a3fd1fc924\",\r\n    \"name\": \"Ожидание консолидации\"\r\n    },\r\n    {\r\n    \"guid\": \"de4a5a6d-69d6-416b-9367-17ebb457ac17\",\r\n    \"name\": \"Ожидание отгрузки\"\r\n    },\r\n    {\r\n    \"guid\": \"1a6eec3e-9521-4f98-8740-8fc74e34c953\",\r\n    \"name\": \"Оплачен\"\r\n    },\r\n    {\r\n    \"guid\": \"2e65c2c2-12e5-4efd-a1db-e63bd4d41efd\",\r\n    \"name\": \"Отгружен\"\r\n    },\r\n    {\r\n    \"guid\": \"18238d5c-7917-4bca-8028-8d2c582caa08\",\r\n    \"name\": \"Отгружен на транзитный склад\"\r\n    },\r\n    {\r\n    \"guid\": \"f10e94fd-2677-4ef8-b681-a821308088a7\",\r\n    \"name\": \"Оформляется на сайте\"\r\n    },\r\n    {\r\n    \"guid\": \"34abb599-6c8f-4476-9fc0-8f4a7d7d72f8\",\r\n    \"name\": \"Планирование\"\r\n    },\r\n    {\r\n    \"guid\": \"14bf0c1b-08a0-4752-90ae-8f26b5bbd6ae\",\r\n    \"name\": \"Погрузка/Разгрузка\"\r\n    },\r\n    {\r\n    \"guid\": \"6b4af16c-77b5-4831-af1f-efc6c6099f94\",\r\n    \"name\": \"Согласован в ДЗ\"\r\n    },\r\n    {\r\n    \"guid\": \"f17b456a-020e-439a-91e4-7bad96a96cab\",\r\n    \"name\": \"Согласован с клиентом\"\r\n    },\r\n    {\r\n    \"guid\": \"24cc92d4-ac69-4797-b589-a2ae0b7210f8\",\r\n    \"name\": \"Согласован с поставщиком\"\r\n    },\r\n    {\r\n    \"guid\": \"a351ab3b-b4bc-4450-8cee-4e68078cfbac\",\r\n    \"name\": \"Согласован с фин. департаментом\"\r\n    },\r\n    {\r\n    \"guid\": \"70478664-2e13-11e6-8dcf-e61f13537e43\",\r\n    \"name\": \"Согласование количества\"\r\n    },\r\n    {\r\n    \"guid\": \"c85aaba0-6415-482e-b2be-c60cb2812bfc\",\r\n    \"name\": \"у_Завершен\"\r\n    },\r\n    {\r\n    \"guid\": \"d799c9d5-8691-4b18-86fe-950c6b477ffe\",\r\n    \"name\": \"у_Планирование\"\r\n    },\r\n    {\r\n    \"guid\": \"e24ea067-1931-4c98-b640-d33faeb74699\",\r\n    \"name\": \"у_Погрузка/Разгрузка\"\r\n    },\r\n    {\r\n    \"guid\": \"87a1e04c-9096-4ffd-ac6c-dd55e1f869ad\",\r\n    \"name\": \"у_Формирование\"\r\n    },\r\n    {\r\n    \"guid\": \"107a1361-6642-4851-a836-4406c9c18538\",\r\n    \"name\": \"Формирование\"\r\n    },\r\n    {\r\n    \"guid\": \"4d087e72-5704-40c8-8405-5b1726aed7a9\",\r\n    \"name\": \"Частично оплачен\"\r\n    },\r\n    {\r\n    \"guid\": \"485bc531-7161-410e-8180-963c8bd1f1a1\",\r\n    \"name\": \"Частично отгружен\"\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/table/import/document-statuses"
+      },
+      "response": []
+    },
+    {
+      "name": "Document Statuses Import PROD",
+      "id": "2be93349-e132-4ee1-98c1-f0206725d0fd",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n    \"guid\": \"b1fe9287-f9c8-11eb-b2a8-0050568e03f9\",\r\n    \"name\": \"\"\r\n    },\r\n    {\r\n    \"guid\": \"b1fe9288-f9c8-11eb-b2a8-0050568e03f9\",\r\n    \"name\": \"\"\r\n    },\r\n    {\r\n    \"guid\": \"4bbd0a61-f9ca-11eb-b2a8-0050568e03f9\",\r\n    \"name\": \"\"\r\n    },\r\n    {\r\n    \"guid\": \"4bbd0a62-f9ca-11eb-b2a8-0050568e03f9\",\r\n    \"name\": \"\"\r\n    },\r\n    {\r\n    \"guid\": \"c8dae741-f9ca-11eb-b2a8-0050568e03f9\",\r\n    \"name\": \"\"\r\n    },\r\n    {\r\n    \"guid\": \"c8dae742-f9ca-11eb-b2a8-0050568e03f9\",\r\n    \"name\": \"\"\r\n    },\r\n    {\r\n    \"guid\": \"a27e9bd3-f9cd-11eb-b2a8-0050568e03f9\",\r\n    \"name\": \"\"\r\n    },\r\n    {\r\n    \"guid\": \"a27e9bd4-f9cd-11eb-b2a8-0050568e03f9\",\r\n    \"name\": \"\"\r\n    },\r\n    {\r\n    \"guid\": \"caef5d83-f9db-11eb-b2a8-0050568e03f9\",\r\n    \"name\": \"\"\r\n    },\r\n    {\r\n    \"guid\": \"caef5d84-f9db-11eb-b2a8-0050568e03f9\",\r\n    \"name\": \"\"\r\n    },\r\n    {\r\n    \"guid\": \"04121849-f9dd-11eb-b2a8-0050568e03f9\",\r\n    \"name\": \"\"\r\n    },\r\n    {\r\n    \"guid\": \"0412184a-f9dd-11eb-b2a8-0050568e03f9\",\r\n    \"name\": \"\"\r\n    },\r\n    {\r\n    \"guid\": \"0c37d621-c0f4-4f0d-aa27-0415a73cdf58\",\r\n    \"name\": \"Аннулирован\"\r\n    },\r\n    {\r\n    \"guid\": \"4454a860-1b1e-4020-83c4-beaede97e3ec\",\r\n    \"name\": \"Вводится (новый)\"\r\n    },\r\n    {\r\n    \"guid\": \"45ba53cd-5a6c-4919-9081-20dcdc355efa\",\r\n    \"name\": \"Выполнен\"\r\n    },\r\n    {\r\n    \"guid\": \"3f1e2b44-d43f-4ffa-9461-6c250bef64c1\",\r\n    \"name\": \"Завершен\"\r\n    },\r\n    {\r\n    \"guid\": \"783d2614-2e13-11e6-8dcf-e61f13537e43\",\r\n    \"name\": \"Количество согласовано\"\r\n    },\r\n    {\r\n    \"guid\": \"b4390617-996e-4ad1-b5e9-b6f20e9145d8\",\r\n    \"name\": \"Не оплачен\"\r\n    },\r\n    {\r\n    \"guid\": \"db064d72-27a6-4e09-b0ec-49a3fd1fc924\",\r\n    \"name\": \"Ожидание консолидации\"\r\n    },\r\n    {\r\n    \"guid\": \"de4a5a6d-69d6-416b-9367-17ebb457ac17\",\r\n    \"name\": \"Ожидание отгрузки\"\r\n    },\r\n    {\r\n    \"guid\": \"1a6eec3e-9521-4f98-8740-8fc74e34c953\",\r\n    \"name\": \"Оплачен\"\r\n    },\r\n    {\r\n    \"guid\": \"2e65c2c2-12e5-4efd-a1db-e63bd4d41efd\",\r\n    \"name\": \"Отгружен\"\r\n    },\r\n    {\r\n    \"guid\": \"18238d5c-7917-4bca-8028-8d2c582caa08\",\r\n    \"name\": \"Отгружен на транзитный склад\"\r\n    },\r\n    {\r\n    \"guid\": \"f10e94fd-2677-4ef8-b681-a821308088a7\",\r\n    \"name\": \"Оформляется на сайте\"\r\n    },\r\n    {\r\n    \"guid\": \"34abb599-6c8f-4476-9fc0-8f4a7d7d72f8\",\r\n    \"name\": \"Планирование\"\r\n    },\r\n    {\r\n    \"guid\": \"14bf0c1b-08a0-4752-90ae-8f26b5bbd6ae\",\r\n    \"name\": \"Погрузка/Разгрузка\"\r\n    },\r\n    {\r\n    \"guid\": \"6b4af16c-77b5-4831-af1f-efc6c6099f94\",\r\n    \"name\": \"Согласован в ДЗ\"\r\n    },\r\n    {\r\n    \"guid\": \"f17b456a-020e-439a-91e4-7bad96a96cab\",\r\n    \"name\": \"Согласован с клиентом\"\r\n    },\r\n    {\r\n    \"guid\": \"24cc92d4-ac69-4797-b589-a2ae0b7210f8\",\r\n    \"name\": \"Согласован с поставщиком\"\r\n    },\r\n    {\r\n    \"guid\": \"a351ab3b-b4bc-4450-8cee-4e68078cfbac\",\r\n    \"name\": \"Согласован с фин. департаментом\"\r\n    },\r\n    {\r\n    \"guid\": \"70478664-2e13-11e6-8dcf-e61f13537e43\",\r\n    \"name\": \"Согласование количества\"\r\n    },\r\n    {\r\n    \"guid\": \"c85aaba0-6415-482e-b2be-c60cb2812bfc\",\r\n    \"name\": \"у_Завершен\"\r\n    },\r\n    {\r\n    \"guid\": \"d799c9d5-8691-4b18-86fe-950c6b477ffe\",\r\n    \"name\": \"у_Планирование\"\r\n    },\r\n    {\r\n    \"guid\": \"e24ea067-1931-4c98-b640-d33faeb74699\",\r\n    \"name\": \"у_Погрузка/Разгрузка\"\r\n    },\r\n    {\r\n    \"guid\": \"87a1e04c-9096-4ffd-ac6c-dd55e1f869ad\",\r\n    \"name\": \"у_Формирование\"\r\n    },\r\n    {\r\n    \"guid\": \"107a1361-6642-4851-a836-4406c9c18538\",\r\n    \"name\": \"Формирование\"\r\n    },\r\n    {\r\n    \"guid\": \"4d087e72-5704-40c8-8405-5b1726aed7a9\",\r\n    \"name\": \"Частично оплачен\"\r\n    },\r\n    {\r\n    \"guid\": \"485bc531-7161-410e-8180-963c8bd1f1a1\",\r\n    \"name\": \"Частично отгружен\"\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_prod}}/api/table/import/document-statuses"
+      },
+      "response": []
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "info": {
+    "_postman_id": "f8d77e49-e311-47d5-8cda-20af61dc9830",
+    "name": "Properties Values TD",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Properties Values TD Import",
+      "id": "1ccb28d3-cf5a-4c9e-85c1-010e4f7892fa",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"nomenclature_guid\": \"1278bcb7-95cc-11df-bfea-e61f13537e43\",\r\n        \"property_guid\": \"0dca3333-92d0-11e2-9910-e61f13537e43\",\r\n        \"value\": 945,\r\n        \"value_type\": \"Число\",\r\n        \"is_in_name\": false,\r\n        \"is_to_change_in_card\": true,\r\n        \"is_preview\": false,\r\n        \"is_filter\": true,\r\n        \"is_analog\": true\r\n    },\r\n    {\r\n        \"nomenclature_guid\": \"1278bcb7-95cc-11df-bfea-e61f13537e43\",\r\n        \"property_guid\": \"0dca3334-92d0-11e2-9910-e61f13537e43\",\r\n        \"value\": 2028,\r\n        \"value_type\": \"Число\",\r\n        \"is_in_name\": false,\r\n        \"is_to_change_in_card\": true,\r\n        \"is_preview\": false,\r\n        \"is_filter\": true,\r\n        \"is_analog\": true\r\n    },\r\n    {\r\n        \"nomenclature_guid\": \"1278bcb7-95cc-11df-bfea-e61f13537e43\",\r\n        \"property_guid\": \"72c49fc8-977d-11e2-9910-e61f13537e43\",\r\n        \"value\": \"72c49fcd-977d-11e2-9910-e61f13537e43\",\r\n        \"value_type\": \"Значения свойств номенклатуры (ТД)\",\r\n        \"is_in_name\": false,\r\n        \"is_to_change_in_card\": true,\r\n        \"is_preview\": false,\r\n        \"is_filter\": true,\r\n        \"is_analog\": true\r\n    },\r\n    {\r\n        \"nomenclature_guid\": \"1278bcb7-95cc-11df-bfea-e61f13537e43\",\r\n        \"property_guid\": \"72c49fdc-977d-11e2-9910-e61f13537e43\",\r\n        \"value\": \"72c49fdd-977d-11e2-9910-e61f13537e43\",\r\n        \"value_type\": \"Значения свойств номенклатуры (ТД)\",\r\n        \"is_in_name\": false,\r\n        \"is_to_change_in_card\": true,\r\n        \"is_preview\": false,\r\n        \"is_filter\": true,\r\n        \"is_analog\": true\r\n    },\r\n    {\r\n        \"nomenclature_guid\": \"1278bcb7-95cc-11df-bfea-e61f13537e43\",\r\n        \"property_guid\": \"72c49fe6-977d-11e2-9910-e61f13537e43\",\r\n        \"value\": 10,\r\n        \"value_type\": \"Число\",\r\n        \"is_in_name\": false,\r\n        \"is_to_change_in_card\": true,\r\n        \"is_preview\": false,\r\n        \"is_filter\": true,\r\n        \"is_analog\": false\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/table/import/properties-values-td",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "table",
+            "import",
+            "properties-values-td"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

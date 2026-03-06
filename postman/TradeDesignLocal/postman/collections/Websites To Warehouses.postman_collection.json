@@ -1,0 +1,87 @@
+{
+  "info": {
+    "_postman_id": "f550538a-f41f-49ed-aed3-0c82b93bb441",
+    "name": "Websites To Warehouses",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Websites To Warehouses",
+      "id": "d7edb488-6949-47b4-a9a4-34370859c582",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzA0ODg2NzAsImV4cCI6MTYzMDQ5MjI3MCwibmJmIjoxNjMwNDg4NjcwLCJqdGkiOiJVMTlHaHFhU2RYS044R1BwIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.i0ns775Hk0Nc3XvcsccVHfn0zllOOsNb9R2qPzPN8xc",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/websites-to-warehouses"
+      },
+      "response": []
+    },
+    {
+      "name": "Website To Warehouse Create",
+      "id": "39fc6298-2712-4267-a7bb-a38cdacb72ea",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzA0ODg2NzAsImV4cCI6MTYzMDQ5MjI3MCwibmJmIjoxNjMwNDg4NjcwLCJqdGkiOiJVMTlHaHFhU2RYS044R1BwIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.i0ns775Hk0Nc3XvcsccVHfn0zllOOsNb9R2qPzPN8xc",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"website_guid\": \"2\",\r\n    \"warehouse_guid\": \"2\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/website-to-warehouse/submit"
+      },
+      "response": []
+    },
+    {
+      "name": "Websites To Warehouses Import",
+      "id": "da4f2127-35ba-4432-99d2-a9e5d399484f",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzA0ODg2NzAsImV4cCI6MTYzMDQ5MjI3MCwibmJmIjoxNjMwNDg4NjcwLCJqdGkiOiJVMTlHaHFhU2RYS044R1BwIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.i0ns775Hk0Nc3XvcsccVHfn0zllOOsNb9R2qPzPN8xc",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"website_guid\": \"3\",\r\n        \"warehouse_guid\": \"1\"\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/table/import/websites-to-warehouses"
+      },
+      "response": []
+    }
+  ]
+}

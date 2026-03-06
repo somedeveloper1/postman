@@ -1,0 +1,20 @@
+{
+  "id": "2b8fd52d-d501-4aaf-bb6b-55225fc229d9",
+  "name": "Globals",
+  "values": [
+    {
+      "key": "ozon_client_id",
+      "value": "",
+      "type": "default",
+      "enabled": true
+    },
+    {
+      "key": "ozon_client_id_header",
+      "value": "",
+      "type": "default",
+      "enabled": true
+    }
+  ],
+  "_postman_variable_scope": "globals",
+  "_postman_exported_at": "2026-03-03T12:38:08.754Z"
+}

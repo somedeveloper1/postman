@@ -1,0 +1,136 @@
+{
+  "info": {
+    "_postman_id": "c00a4b09-207e-4b17-884d-e474f7201a23",
+    "name": "Organizations",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Organizations",
+      "id": "99563caa-e53f-4df8-8fc2-0a4857dc1bbf",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NDMxNzg5OTgsImV4cCI6MTY0Mzc4Mzc5OCwibmJmIjoxNjQzMTc4OTk4LCJqdGkiOiJIWEl3WGJoYWRMZWpveEg0Iiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.6hQxyVe-wFPo5x4H7APBZfVOTyG_0XPdZKqjVNBDBcI",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/organizations"
+      },
+      "response": []
+    },
+    {
+      "name": "Organizations Claims",
+      "id": "30b25d0a-f9be-40ff-935e-78bfb51b9713",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NTY1ODg4MjUsImV4cCI6MTY1NzE5MzYyNSwibmJmIjoxNjU2NTg4ODI1LCJqdGkiOiJhOFMySGZDd1FrbVYwTExwIiwic3ViIjo0MCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.WStWWE5ooUmW_XfFNGEEj3Oc0uCHUI2hglLPI4gztY0",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/claims/organizations"
+      },
+      "response": []
+    },
+    {
+      "name": "Organization Create",
+      "id": "e719e458-cc44-46b3-9ff7-301a4065dc20",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzA0MDg2ODksImV4cCI6MTYzMDQxMjI4OSwibmJmIjoxNjMwNDA4Njg5LCJqdGkiOiJaeUtnTDdiUU1xM0lCYUplIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.MD0M8crdAx5k1vJwM8fquWGw58F-m3uKyxYtgbqdkU8",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"guid\": \"1\",\r\n    \"name\": \"Organization\",\r\n    \"INN\": \"111\",\r\n    \"KPP\": \"123\",\r\n    \"bank_account_guid\": \"1\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/organization/submit"
+      },
+      "response": []
+    },
+    {
+      "name": "Organizations Import",
+      "id": "2c68b6de-3b74-43f1-97b7-7461db155b07",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzE1MTQ0MTYsIm5iZiI6MTYzMTUxNDQxNiwianRpIjoibGNaeDdGbTVhOHJBZElqWiIsInN1YiI6NywicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.HrcA2o7nmZ1sfGuF5xfJdq02nm-7A32KiZnaJ9tn4GE",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"guid\": \"0b88e0d6-9004-11e0-9496-e61f13537e43\",\r\n        \"name\": \"ООО \\\"Компания Торговый Дизайн\\\"\",\r\n        \"INN\": \"7801129464\",\r\n        \"KPP\": \"780101001\",\r\n        \"bank_account_guid\": \"0ce29a18-e65e-11e8-869d-e61f13537e43\"\r\n    },\r\n    {\r\n        \"guid\": \"97cb5b1e-9d53-11df-bf43-e61f13537e43\",\r\n        \"name\": \"ООО \\\"Верона\\\"\",\r\n        \"INN\": \"5003070750\",\r\n        \"KPP\": \"500301001\",\r\n        \"bank_account_guid\": \"eefc1692-e88b-11de-b60d-001a6479fa3e\"\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/table/import/organizations"
+      },
+      "response": []
+    },
+    {
+      "name": "Organizations Import PROD",
+      "id": "54f6a0b7-217b-4ac1-b17c-7c07c54da89c",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"guid\": \"0b88e0d6-9004-11e0-9496-e61f13537e43\",\r\n        \"name\": \"ООО \\\"Компания Торговый Дизайн\\\"\",\r\n        \"INN\": \"7801129464\",\r\n        \"KPP\": \"780101001\",\r\n        \"bank_account_guid\": \"0ce29a18-e65e-11e8-869d-e61f13537e43\"\r\n    },\r\n    {\r\n        \"guid\": \"97cb5b1e-9d53-11df-bf43-e61f13537e43\",\r\n        \"name\": \"ООО \\\"Верона\\\"\",\r\n        \"INN\": \"5003070750\",\r\n        \"KPP\": \"500301001\",\r\n        \"bank_account_guid\": \"eefc1692-e88b-11de-b60d-001a6479fa3e\"\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_prod}}/api/table/import/organizations"
+      },
+      "response": []
+    }
+  ]
+}

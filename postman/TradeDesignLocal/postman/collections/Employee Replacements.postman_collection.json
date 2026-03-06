@@ -1,0 +1,78 @@
+{
+  "info": {
+    "_postman_id": "2d52130f-fc25-400b-a422-d1821d4205b5",
+    "name": "Employee Replacements",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Employee Replacements List",
+      "id": "dc04d49f-445a-41b9-8939-44df2fdf5fe3",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2Nzg3NzY2MzEsImV4cCI6MTY3OTM4MTQzMSwibmJmIjoxNjc4Nzc2NjMxLCJqdGkiOiJlRDJ3ZXp6dnJrZ2FYTHhjIiwic3ViIjoxMzY5LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Of7uU2oVx2mFf5IXwHG3cOg-tbgoFe9V5EJgvjiP-_g",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/employee-replacements?search=Гроссман"
+      },
+      "response": []
+    },
+    {
+      "name": "Employee Replacements Delete",
+      "id": "d5354472-7121-419e-b47c-47361dbeee33",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2Nzg3NzY2MzEsImV4cCI6MTY3OTM4MTQzMSwibmJmIjoxNjc4Nzc2NjMxLCJqdGkiOiJlRDJ3ZXp6dnJrZ2FYTHhjIiwic3ViIjoxMzY5LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Of7uU2oVx2mFf5IXwHG3cOg-tbgoFe9V5EJgvjiP-_g",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "url": "{{base_url_local}}/api/employee-replacements/delete/12"
+      },
+      "response": []
+    },
+    {
+      "name": "Employee Replacements Create",
+      "id": "9c8f453f-e05f-414f-b58b-25b8cb52f850",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2Nzg3NzY2MzEsImV4cCI6MTY3OTM4MTQzMSwibmJmIjoxNjc4Nzc2NjMxLCJqdGkiOiJlRDJ3ZXp6dnJrZ2FYTHhjIiwic3ViIjoxMzY5LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Of7uU2oVx2mFf5IXwHG3cOg-tbgoFe9V5EJgvjiP-_g",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"user_1c_to_replace_guid\": \"24576c57-5213-11e5-9dd2-e61f13537e43\",\r\n    \"user_1c_replacement_guid\": \"a093e012-be27-11eb-a276-e61f13537e43\",\r\n    \"start_at\": null,\r\n    \"end_at\": null\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/employee-replacements/create"
+      },
+      "response": []
+    }
+  ]
+}

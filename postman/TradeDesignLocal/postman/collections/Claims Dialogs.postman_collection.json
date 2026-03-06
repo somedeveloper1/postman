@@ -1,0 +1,105 @@
+{
+  "info": {
+    "_postman_id": "571b07b9-db2a-4542-8be8-96fc0fa04a1f",
+    "name": "Claims Dialogs",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Claims Dialogs",
+      "id": "7500e4a8-f793-406a-8637-664457dc4eb6",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTcxNDIwNzg0NSwiZXhwIjoxNzE0ODEyNjQ1LCJuYmYiOjE3MTQyMDc4NDUsImp0aSI6IjEwVGNieWtVTDdFWlYzWlkiLCJzdWIiOjEzNjksInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.i40RQ5RhtzXXkwSc60t122nl1CN0pZc6tBOymFHdNck",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/claim-dialog/lk-7b9a6b8fb5-001712732605"
+      },
+      "response": [
+        {
+          "id": "4e03d162-6782-42d6-a246-5aee82c4fb97",
+          "name": "Default",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url}}/api/claims",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "api",
+                "claims"
+              ]
+            }
+          },
+          "_postman_previewlanguage": "Text",
+          "header": [],
+          "cookie": [],
+          "body": ""
+        }
+      ]
+    },
+    {
+      "name": "Claims Dialog Create",
+      "id": "cb169306-1c85-40c3-a288-4603377fb4ed",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTcxODk2MzI4NCwiZXhwIjoxNzE5NTY4MDg0LCJuYmYiOjE3MTg5NjMyODQsImp0aSI6Ik1HcURZcGhMNkNwSTNaZkYiLCJzdWIiOjEzNjksInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.8IXBGL6ODbiYcKPzIcZz9ybfxAnsrEMqfqdqzmjF32U",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"claim_guid\": null,\r\n    \"claim_number_lk\": \"lk-f7b517e8a5-001718784416\",\r\n    \"message\": \"test tagged users 1\",\r\n    \"users_1c_tagged\": []\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/claim-dialog/create-message"
+      },
+      "response": [
+        {
+          "id": "203ee7ad-ec23-46df-a38a-aa0e5fdcc2c7",
+          "name": "Default",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{url}}/api/claim/submit",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "api",
+                "claim",
+                "submit"
+              ]
+            }
+          },
+          "_postman_previewlanguage": "Text",
+          "header": [],
+          "cookie": [],
+          "body": "{\r\n    \"user_id\": \"1233\",\r\n    \"buyer\": \"\",\r\n    \"buyer_id\": \"\",\r\n    \"seller\": \"\",\r\n    \"seller_id\": \"\",\r\n    \"deal\": \"\",\r\n    \"deal_id\": \"\",\r\n    \"item\": \"\",\r\n    \"item_id\": \"\",\r\n    \"launch_date\": \"\",\r\n    \"issue_date\": \"\",\r\n    \"zip_required\": \"\",\r\n    \"claim_description\": \"\",\r\n    \"full_name\": \"\",\r\n    \"role\": \"\",\r\n    \"phone\": \"\",\r\n    \"document_launch\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }],\r\n    \"document_diagnostics\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }],\r\n    \"document_claim\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }],\r\n    \"photo_label\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }],\r\n    \"photo_zip\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }],\r\n    \"photo_item\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }],\r\n    \"photo_failures\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }]\r\n}"
+        }
+      ]
+    }
+  ]
+}

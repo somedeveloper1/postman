@@ -1,0 +1,231 @@
+﻿{
+  "info": {
+    "_postman_id": "2d6d44b8-8cd2-4318-9fd8-4c058d4d65d3",
+    "name": "Nomenclature Groups",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Nomenclature Groups",
+      "id": "67b9e156-66bf-452f-95d1-715577f55667",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzAzMDk2MDQsImV4cCI6MTYzMDMxMzIwNCwibmJmIjoxNjMwMzA5NjA0LCJqdGkiOiIzSzdGSWpaeUxaTVowbkhGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.fxp0_27MALE-n5r4HQn0THcasoJgMBsevKB1kSWFL_s",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/nomenclature-groups",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "nomenclature-groups"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Nomenclature Groups List",
+      "id": "1178f9d3-a138-4455-93e8-50c04ea98bd4",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3Mjg5ODc1MDcsImV4cCI6MTcyOTU5MjMwNywibmJmIjoxNzI4OTg3NTA3LCJqdGkiOiJWeFVvYlBxQk8yZVNwRkZRIiwic3ViIjoxNDg0LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.lI-R_VNdkwvgPbeHmXxCAA26o5Iz7krxktbxCcxd25Q",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/nomenclature-groups/list",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "nomenclature-groups",
+            "list"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Nomenclature Groups Head",
+      "id": "329e10c6-e87d-4a3e-82e2-b6fcb432efac",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE3MjgzOTQ0NTgsImV4cCI6MTcyODk5OTI1OCwibmJmIjoxNzI4Mzk0NDU4LCJqdGkiOiJSWENselBqbGZyQTl2VFRMIiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.oozYGAPXBznn21DvJBn0DQ1msBN-K6RzTBc9tIDHJf8",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/nomenclature-groups/head",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "nomenclature-groups",
+            "head"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Nomenclature Group Create",
+      "id": "f160b164-1016-4964-9b21-92897481e9d8",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzAzMDk2MDQsImV4cCI6MTYzMDMxMzIwNCwibmJmIjoxNjMwMzA5NjA0LCJqdGkiOiIzSzdGSWpaeUxaTVowbkhGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.fxp0_27MALE-n5r4HQn0THcasoJgMBsevKB1kSWFL_s",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": " {\r\n        \"guid\": \"6\",\r\n        \"name\": \"group 66\",\r\n        \"is_mounting_required\": \"0\",\r\n        \"is_group\": false\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/nomenclature-group/submit",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "nomenclature-group",
+            "submit"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Nomenclature Groups Import",
+      "id": "9b86718d-a101-40a0-9ac4-827674d02a2b",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Transfer-Id",
+            "value": "202210261523",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"guid\": \"97d2dfb3-11d0-11e2-aa5e-e61f13537e43\",\r\n        \"parent_guid\": \"\",\r\n        \"is_group\": true,\r\n        \"name\": \"Стеллажи сетчатые\",\r\n        \"is_mounting_required\": 0\r\n    },\r\n    {\r\n        \"guid\": \"97d2dffa-11d0-11e2-aa5e-e61f13537e43\",\r\n        \"parent_guid\": \"00000000-0000-0000-0000-000000000000\",\r\n        \"is_group\": true,\r\n        \"name\": \"Инвентарь поварской\",\r\n        \"is_mounting_required\": 0\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/table/import/nomenclature-groups",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "table",
+            "import",
+            "nomenclature-groups"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Nomenclature Groups Import PROD",
+      "id": "6125f03d-0f05-4679-a349-231624583682",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"guid\": \"97d2dfb3-11d0-11e2-aa5e-e61f13537e43\",\r\n        \"parent_guid\": \"\",\r\n        \"is_group\": true,\r\n        \"name\": \"Стеллажи сетчатые\",\r\n        \"is_mounting_required\": 0\r\n    },\r\n    {\r\n        \"guid\": \"97d2dffa-11d0-11e2-aa5e-e61f13537e43\",\r\n        \"parent_guid\": \"00000000-0000-0000-0000-000000000000\",\r\n        \"is_group\": true,\r\n        \"name\": \"Инвентарь поварской\",\r\n        \"is_mounting_required\": 0\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_prod}}/api/table/import/nomenclature-groups",
+          "protocol": "https",
+          "host": [
+            "api",
+            "t-d",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "table",
+            "import",
+            "nomenclature-groups"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

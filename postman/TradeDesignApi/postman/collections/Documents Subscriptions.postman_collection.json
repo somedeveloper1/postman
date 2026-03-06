@@ -1,0 +1,160 @@
+﻿{
+  "info": {
+    "_postman_id": "babb1563-539a-41d3-a953-f41b45365b15",
+    "name": "Documents Subscriptions",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Document Subscriptions",
+      "id": "9850dea8-63c3-44b5-b6da-b88cd414ab99",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTY4NjkyMDExNywiZXhwIjoxNjg3NTI0OTE3LCJuYmYiOjE2ODY5MjAxMTcsImp0aSI6InBidW9seTdLV0t6WTlhdkEiLCJzdWIiOjEzNjksInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.keA9gzhrj2Gi2-rLvz2IYxNpjuiQjFjcB7slUNB6IYk",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/document-subscriptions/claims",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "document-subscriptions",
+            "claims"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Document Subscriptions Check Subscription",
+      "id": "1d3b5d0f-5f8c-420a-94df-dafabc5108ff",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTY4NjkyMDExNywiZXhwIjoxNjg3NTI0OTE3LCJuYmYiOjE2ODY5MjAxMTcsImp0aSI6InBidW9seTdLV0t6WTlhdkEiLCJzdWIiOjEzNjksInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.keA9gzhrj2Gi2-rLvz2IYxNpjuiQjFjcB7slUNB6IYk",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"type\": \"claims\",\r\n    \"document_identifier\": \"lk-1516c0eb03-001680765735\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/document-subscriptions/check-subscription",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "document-subscriptions",
+            "check-subscription"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Document Subscriptions Subscribe",
+      "id": "b57c362f-4753-4ce4-acb1-4cd083a20beb",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTY4NjkyMDExNywiZXhwIjoxNjg3NTI0OTE3LCJuYmYiOjE2ODY5MjAxMTcsImp0aSI6InBidW9seTdLV0t6WTlhdkEiLCJzdWIiOjEzNjksInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.keA9gzhrj2Gi2-rLvz2IYxNpjuiQjFjcB7slUNB6IYk",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"type\": \"claims\",\r\n    \"document_identifier\": \"4deb2baa-1c79-11ec-a276-e61f13537e43\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/document-subscriptions/subscribe",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "document-subscriptions",
+            "subscribe"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Document Subscriptions Unsubscribe",
+      "id": "aca12efc-3a0f-4022-984e-d931f793ab45",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTY4NjkyMDExNywiZXhwIjoxNjg3NTI0OTE3LCJuYmYiOjE2ODY5MjAxMTcsImp0aSI6InBidW9seTdLV0t6WTlhdkEiLCJzdWIiOjEzNjksInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.keA9gzhrj2Gi2-rLvz2IYxNpjuiQjFjcB7slUNB6IYk",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"type\": \"claims\",\r\n    \"document_identifier\": \"lk-1516c0eb03-001680765735\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/document-subscriptions/unsubscribe",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "document-subscriptions",
+            "unsubscribe"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

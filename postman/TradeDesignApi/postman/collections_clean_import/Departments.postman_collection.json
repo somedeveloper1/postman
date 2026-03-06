@@ -1,0 +1,194 @@
+{
+  "info": {
+    "_postman_id": "1c5da232-2ecb-4329-ae2a-c724afc6bc6d",
+    "name": "Departments",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Departments",
+      "id": "65c39bc5-3fcc-47b7-8ae9-6f1f77980209",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/departments",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "departments"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Departments Claims",
+      "id": "05180a6a-93f1-42d5-8e5d-71365e3cc3b2",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/claims/departments",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "claims",
+            "departments"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Department Create",
+      "id": "c3aca54c-3e33-42f6-91ad-896689452646",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzA0MDg2ODksImV4cCI6MTYzMDQxMjI4OSwibmJmIjoxNjMwNDA4Njg5LCJqdGkiOiJaeUtnTDdiUU1xM0lCYUplIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.MD0M8crdAx5k1vJwM8fquWGw58F-m3uKyxYtgbqdkU8",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"guid\": \"1\",\r\n    \"name\": \"Main Department\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/department/submit",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "department",
+            "submit"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Departments Import",
+      "id": "1e18ba03-c485-4564-873c-38bad9662893",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzE1MTQ0MTYsIm5iZiI6MTYzMTUxNDQxNiwianRpIjoibGNaeDdGbTVhOHJBZElqWiIsInN1YiI6NywicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.HrcA2o7nmZ1sfGuF5xfJdq02nm-7A32KiZnaJ9tn4GE",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n     {\r\n        \"guid\": \"00000000-0000-0000-0000-000000000000\",\r\n        \"name\": \"\",\r\n        \"parent_guid\": \"\"\r\n    },\r\n    {\r\n        \"guid\": \"0dca3fc6-997a-11df-8da0-e61f13537e43\",\r\n        \"name\": \"Департамент московских продаж\",\r\n        \"parent_guid\": \"00000000-0000-0000-0000-000000000000\"\r\n    },\r\n    {\r\n        \"guid\": \"7a1d4859-63eb-11e3-9b80-e61f13537e43\",\r\n        \"name\": \"Департамент дилерских продаж\",\r\n        \"parent_guid\": \"00000000-0000-0000-0000-000000000000\"\r\n    },\r\n    {\r\n        \"guid\": \"810df31b-ed86-11e0-9f14-e61f13537e43\",\r\n        \"name\": \"Отдел продаж оборудования предприятий торговли\",\r\n        \"parent_guid\": \"0dca3fc6-997a-11df-8da0-e61f13537e43\"\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/table/import/departments",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "table",
+            "import",
+            "departments"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Departments Import PROD",
+      "id": "57eaac22-224f-419b-8be4-3562b36d56af",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"guid\": \"0dca3fc6-997a-11df-8da0-e61f13537e43\",\r\n        \"name\": \"Департамент московских продаж\",\r\n        \"parent_guid\": \"00000000-0000-0000-0000-000000000000\"\r\n    },\r\n    {\r\n        \"guid\": \"7a1d4859-63eb-11e3-9b80-e61f13537e43\",\r\n        \"name\": \"Департамент дилерских продаж\",\r\n        \"parent_guid\": \"00000000-0000-0000-0000-000000000000\"\r\n    },\r\n    {\r\n        \"guid\": \"810df31b-ed86-11e0-9f14-e61f13537e43\",\r\n        \"name\": \"Отдел продаж оборудования предприятий торговли\",\r\n        \"parent_guid\": \"0dca3fc6-997a-11df-8da0-e61f13537e43\"\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_prod}}/api/table/import/departments",
+          "protocol": "https",
+          "host": [
+            "api",
+            "t-d",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "table",
+            "import",
+            "departments"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

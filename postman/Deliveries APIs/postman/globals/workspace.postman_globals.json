@@ -1,0 +1,44 @@
+{
+  "id": "038eb4c1-c38f-4240-ad57-278a7ec28e1b",
+  "name": "Globals",
+  "values": [
+    {
+      "key": "cdek_token",
+      "value": "",
+      "type": "default",
+      "enabled": true
+    },
+    {
+      "key": "cdek_client_id",
+      "value": "",
+      "type": "default",
+      "enabled": true
+    },
+    {
+      "key": "cdek_client_secret",
+      "value": "",
+      "type": "default",
+      "enabled": true
+    },
+    {
+      "key": "dellin_api_key",
+      "value": "",
+      "type": "default",
+      "enabled": true
+    },
+    {
+      "key": "pec_api_key",
+      "value": "",
+      "type": "default",
+      "enabled": true
+    },
+    {
+      "key": "mt_token",
+      "value": "",
+      "type": "default",
+      "enabled": true
+    }
+  ],
+  "_postman_variable_scope": "globals",
+  "_postman_exported_at": "2026-03-03T12:39:46.443Z"
+}

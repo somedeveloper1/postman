@@ -1,0 +1,54 @@
+{
+  "info": {
+    "_postman_id": "92278b23-aa17-44cb-be29-26d4c5a171eb",
+    "name": "Storage Places",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Storage Places",
+      "id": "58682947-5359-47de-8919-3c8ed09a8d5e",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Transfer-ID",
+            "value": "1",
+            "type": "text"
+          },
+          {
+            "key": "Package-Number",
+            "value": "2",
+            "type": "text"
+          },
+          {
+            "key": "Full-Import",
+            "value": "false",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"guid\": \"bddb69bd-1f20-11e5-8e3a-e61f13537e43\",\r\n        \"name\": \"Акция 3\",\r\n        \"code\": \"123456789\"\r\n    },\r\n    {\r\n        \"guid\": \"c6b72dc7-14b7-11e9-869d-e61f13537e43\",\r\n        \"name\": \"Оверсток\",\r\n        \"code\": \"123456788\"\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/table/import/storage-places"
+      },
+      "response": []
+    }
+  ]
+}

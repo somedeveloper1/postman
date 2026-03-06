@@ -1,0 +1,44 @@
+{
+  "info": {
+    "_postman_id": "dad07d1e-4984-4a43-9dcc-3734d27cde3c",
+    "name": "Nomenclature Expected",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Nomenclature Expected Import",
+      "id": "3f067e9b-df02-430d-988b-7534396f972d",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Transfer-Id",
+            "value": "202210201258",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n  {\r\n    \"nomenclature_guid\": \"1111cl93-oa83-11e6-826a-e61f13537e42\",\r\n    \"amount\": 9157,\r\n    \"delivery_date\": \"2022-01-01\"\r\n  },\r\n  {\r\n    \"nomenclature_guid\": \"1111cl93-oa83-11e6-826a-e61f13537e13\",\r\n    \"amount\": 9157.5,\r\n    \"delivery_date\": \"2022-01-02\"\r\n  },\r\n  {\r\n    \"nomenclature_guid\": \"1111cl93-oa83-11e6-826a-e61f13537e48\",\r\n    \"amount\": 9157,\r\n    \"delivery_date\": \"2022-01-03\"\r\n  },\r\n  {\r\n    \"nomenclature_guid\": \"1111cl93-oa83-11e6-826a-e61f13537e19\",\r\n    \"amount\": 9157.5,\r\n    \"delivery_date\": \"2022-01-04\"\r\n  },\r\n  {\r\n    \"nomenclature_guid\": \"1111c293-oa83-11e6-826a-e61f13537e19\",\r\n    \"amount\": 9157.5,\r\n    \"delivery_date\": \"2022-01-05\"\r\n  },\r\n  {\r\n    \"nomenclature_guid\": \"1111c693-oa83-11e6-826a-e61f13537e19\",\r\n    \"amount\": 9157.5,\r\n    \"delivery_date\": \"2022-01-07\"\r\n  }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/table/import/nomenclature-expected"
+      },
+      "response": []
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "info": {
+    "_postman_id": "7ef93141-4e53-4a57-94a4-cec13ce48322",
+    "name": "Nomenclature Sizes",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Nomenclature Sizes Create",
+      "id": "2f6fba10-ccd7-4430-9956-c896d3dba458",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MzEwNjE1NzAsImV4cCI6MTczMTY2NjM3MCwibmJmIjoxNzMxMDYxNTcwLCJqdGkiOiJ2YTZzM0pEZ1JqZUJoMDJzIiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.TrgQdjq-t6MyVI8PaPbaFB3sXbQgVo-tuPTSOxZz35o",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"nomenclature_guid\": \"38063822-85d0-11e9-9b8b-e61f13537e43\",\r\n    \"weight_gross\": \"11\",\r\n    \"weight_net\": \"10.1\",\r\n    \"height_net\": \"395\",\r\n    \"height_gross\": \"560\",\r\n    \"length_net\": \"225\",\r\n    \"length_gross\": \"390\",\r\n    \"width_net\": \"280\",\r\n    \"width_gross\": \"290\",\r\n    \"package_quantity\": 300,\r\n    \"failure_reason\": null\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/nomenclature-sizes/save",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "nomenclature-sizes",
+            "save"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

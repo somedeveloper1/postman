@@ -1,0 +1,526 @@
+{
+  "info": {
+    "_postman_id": "4f4b631b-f166-4afc-945d-af007966cc2a",
+    "name": "Applications Dealers",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Application Delete",
+      "id": "4425bda6-129d-4cda-9a04-708e69cf12ec",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NDc4NDA5ODgsImV4cCI6MTY0ODQ0NTc4OCwibmJmIjoxNjQ3ODQwOTg4LCJqdGkiOiJ5aUVoaWlVV0ZHa0JOTG05Iiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.twLF9o1zk0-hosNf5gVToFhbTRMx9CDoNzhvhskCXsc",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/dealers/application/delete/37",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "dealers",
+            "application",
+            "delete",
+            "37"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Application Create",
+      "id": "133ce79e-6981-4210-a354-1d5cc81e522d",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NTk0MjA0MzksImV4cCI6MTY2MDAyNTIzOSwibmJmIjoxNjU5NDIwNDM5LCJqdGkiOiJza3lFemtVUWYxZEl4bTZRIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.xEBYwG1pCS7n9hKAYoEc-cmiwFQ4zxeym7fvnggf_c8",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"My Application\",\r\n  \"comment\": \"6 Декабря 2021. Тесе\",\r\n  \"delivery_method\": \"ДоКлиента\",\r\n  \"delivery_date\": null,\r\n  \"delivery_company\": \"СДЭК\",\r\n  \"order_counterparty_guid\": \"814f816c-cc70-11e3-8d43-e61f13537e43\",\r\n  \"delivery_address\": \"101000, г. Москва, ул. Московская, д. 12 кв. 3\",\r\n  \"contact_name\": \"Иванов Иван ИВанович\",\r\n  \"contact_phone\": \"+79000000000\",\r\n  \"counterparty_contact_guid\": \"814f816c-cc70-11e3-8d43-e61f13537e43\",\r\n  \"website_comment_by_client\": \"My Website Comment\",\r\n  \"items\": [\r\n    {\r\n      \"nomenclature_guid\": \"fa0785d4-2b37-11eb-a661-e61f13537e43\",\r\n      \"amount\": 1\r\n    },\r\n    {\r\n      \"nomenclature_guid\": \"0364b8ed-8f7f-4bfb-86bd-bf3f68a7b1da\",\r\n      \"amount\": 2\r\n    },\r\n    {\r\n      \"nomenclature_guid\": \"0176297e-40ee-11e1-afd9-e61f13537e43\",\r\n      \"amount\": 3\r\n    }\r\n  ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/dealers/application/create",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "dealers",
+            "application",
+            "create"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Applications Add Nomenclature",
+      "id": "435c598c-2118-4236-b3f8-6c37112315ab",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzgzNDAzOTIsImV4cCI6MTYzODQyNjc5MiwibmJmIjoxNjM4MzQwMzkyLCJqdGkiOiI2cGs4TjZqaEtFcjdLRWFGIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.eWl8J6iefo2QcvfhV12Bxq3ShpqxlLc2Q8__xwOxT2o",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"nomenclature_guids\": [\r\n    \"4297509d-65e2-11e6-8dcf-e61f13537e48\",\r\n    \"4297509d-65e2-11e6-8dcf-e61f13537e43\"\r\n  ],\r\n  \"applications_ids\": [\r\n    5,\r\n    6\r\n  ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/dealers/applications/add-nomenclature",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "dealers",
+            "applications",
+            "add-nomenclature"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Application Add Nomenclature",
+      "id": "2ce47d30-5e19-4614-baa8-792016d6150c",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NDIzOTcwNjEsImV4cCI6MTY0MjQ4MzQ2MSwibmJmIjoxNjQyMzk3MDYxLCJqdGkiOiI2RllDWllVeXJOalAzYnJmIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.o5K6Hgvk-emZc8FdFhfDsyeFomx-_oyZd_9iqFb-wDk",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"guid\": \"06c0ad18-85ee-4f18-a64b-74a7c84c578a\",\r\n  \"amount\": 3,\r\n  \"id\": 17\r\n   \r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/dealers/application/add-nomenclature",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "dealers",
+            "application",
+            "add-nomenclature"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Application Update",
+      "id": "51ae4675-5f74-442a-88a4-6ac29532f7e1",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NDI1NzEzMjAsImV4cCI6MTY0MjY1NzcyMCwibmJmIjoxNjQyNTcxMzIwLCJqdGkiOiJkaldiMmtvclhwYVhUOXIyIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.RD3_yEIqfzBFjvJ70EJLRb3Qxk8itYOMXvuSBQi0KWI",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"website_comment\": \"Quaerat\",\r\n  \"delivery_method\": \"ДоКлиента\",\r\n  \"delivery_date\": \"29.11.2021\",\r\n  \"order_counterparty_guid\": \"11111\",\r\n  \"delivery_company\": \"СДЭК 1\",\r\n  \"counterparty_contact_guid\": \"814f816c-cc70-11e3-8d43-e61f13537e43\",\r\n  \"items\": [\r\n    {\r\n      \"nomenclature_guid\": \"27c7b8d2-95b9-11df-bfea-e61f13537e43\",\r\n      \"amount\": 12\r\n    },\r\n    {\r\n      \"nomenclature_guid\": \"0f1bb6df-24f8-11eb-a661-e61f13537e43\",\r\n      \"amount\": 13\r\n    },\r\n    {\r\n      \"nomenclature_guid\": \"8a7f8a96-a1a8-11eb-a276-e61f13537e43\",\r\n      \"amount\": 3\r\n    },\r\n     {\r\n      \"nomenclature_guid\": \"8a7f8a96-a1a8-11eb-a276-00000000003\",\r\n      \"amount\": 3\r\n    }\r\n  ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/dealers/application/update/34",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "dealers",
+            "application",
+            "update",
+            "34"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Applications",
+      "id": "e633d3f5-7e6e-447c-84ff-d875c5a55b75",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NTcxMTM0NTIsImV4cCI6MTY1NzcxODI1MiwibmJmIjoxNjU3MTEzNDUyLCJqdGkiOiJVUmFjck5qcUZOblVVNzVtIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.yV8H87DCUnxdjCFKVWRjV-24SaEthaU1FGXzNLU4_hk",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/dealers/applications",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "dealers",
+            "applications"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Applications With Nomenclature",
+      "id": "b9042e09-130b-4960-ac0f-7a7cb41e3268",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NDg0NzU1MjQsImV4cCI6MTY0OTA4MDMyNCwibmJmIjoxNjQ4NDc1NTI0LCJqdGkiOiJ0RE5YU2xRR3JTUGFlYUFtIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.6xBI_M6cdJ3mLvvIconj1cZ5quxmv465kACYibtrf2w",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/dealers/applications-with-nomenclature?guid=06c0ad18-85ee-4f18-a64b-74a7c84c578a",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "dealers",
+            "applications-with-nomenclature"
+          ],
+          "query": [
+            {
+              "key": "guid",
+              "value": "06c0ad18-85ee-4f18-a64b-74a7c84c578a"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Application",
+      "id": "384c348a-d468-4b89-8660-6f354e3f3ed8",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NTc1Mjk2MzQsImV4cCI6MTY1ODEzNDQzNCwibmJmIjoxNjU3NTI5NjM0LCJqdGkiOiJXeXZ2bURrZVpob2J6ZmhQIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.SEdwqCOyH9GF_9qaDoOVZk0TNtYdpJu_UTV4XP_d2M0",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/dealers/application/604",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "dealers",
+            "application",
+            "604"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Application Commercial Proposal",
+      "id": "7f9498bf-18b5-41ae-a487-65073dfe7a5f",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NTY5MTgwMjEsImV4cCI6MTY1NzUyMjgyMSwibmJmIjoxNjU2OTE4MDIxLCJqdGkiOiI0VG5ZYlo3UlZqbW5CZnh3Iiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.12Elbg5bM_QKnL8RT42xk_WPGriwI7RLc35eOfG2vd0",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/dealers/application/commercial-proposal/37?currency=rub&format=pdf",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "dealers",
+            "application",
+            "commercial-proposal",
+            "37"
+          ],
+          "query": [
+            {
+              "key": "currency",
+              "value": "rub"
+            },
+            {
+              "key": "format",
+              "value": "pdf"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Application Restore",
+      "id": "19470686-96b5-46af-ba22-8d22f0665ca0",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzcyMzkxMzYsImV4cCI6MTYzNzMyNTUzNiwibmJmIjoxNjM3MjM5MTM2LCJqdGkiOiIybWdOdUt5QWxscHdqZDY5Iiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.glNNjYUC3N3TajYCwW8566dm6VqqFYN2wuxvFSXfY2c",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/application/restore/13",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "application",
+            "restore",
+            "13"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Application Submit",
+      "id": "21af3941-766b-43ef-912f-02acbe3d9fd1",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NTc4NjkyMTksImV4cCI6MTY1ODQ3NDAxOSwibmJmIjoxNjU3ODY5MjE5LCJqdGkiOiJxVVZTMWpXWDlmQTM5WGNLIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.u7DNcdIQxLX3AC5hTvW1IEWb6wg98xxkp9qtlPAA0t8",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/dealers/application/submit/680",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "dealers",
+            "application",
+            "submit",
+            "680"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Application From Template",
+      "id": "e199177f-30ab-403d-b05a-53c14104e36a",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2Mzc4Mzk5NjcsImV4cCI6MTYzNzkyNjM2NywibmJmIjoxNjM3ODM5OTY3LCJqdGkiOiJKbWZWdVloSHBmSFRYQmRMIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.09VH1mLfW3xWkekkV1yDLlCAZvS2pgiAGwEvsop1aNQ",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/dealers/application/from-template/11",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "dealers",
+            "application",
+            "from-template",
+            "11"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Application From Order",
+      "id": "3027f049-4313-438a-a9df-445da1896f64",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NDMwOTgxNjEsImV4cCI6MTY0MzcwMjk2MSwibmJmIjoxNjQzMDk4MTYxLCJqdGkiOiJpY01HZ0RjcmNjSkNTWjFXIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.l-xtBhTpHkEkqYN33KZqZZRHeVVmoraEi3xdlfJK3M4",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/dealers/application/from-order/908ab84d-6d70-492d-806f-f48c1ae627cb",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "dealers",
+            "application",
+            "from-order",
+            "908ab84d-6d70-492d-806f-f48c1ae627cb"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Application Duplicate",
+      "id": "e3bfc7c7-eb7d-4ad2-a94b-467aed4bb62a",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzgyNDk4MzcsImV4cCI6MTYzODMzNjIzNywibmJmIjoxNjM4MjQ5ODM3LCJqdGkiOiJzUFRldTU4VnVoUU1aaDVUIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.qhxRF0_UETPCbWvf-GAVJOPGVdBQCRO0TU7-derwZVI",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/dealers/application/duplicate/18",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "dealers",
+            "application",
+            "duplicate",
+            "18"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

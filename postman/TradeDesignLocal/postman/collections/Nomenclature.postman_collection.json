@@ -1,0 +1,236 @@
+{
+  "info": {
+    "_postman_id": "edc85f75-8bf4-48f4-ad78-20509a760dae",
+    "name": "Nomenclature",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Nomenclature",
+      "id": "d6e15133-da44-413f-9db2-037b8e7a6a75",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzAzMjU3MzAsImV4cCI6MTYzMDMyOTMzMCwibmJmIjoxNjMwMzI1NzMwLCJqdGkiOiJLd0s4Q2t4ZVhsck4xa3dQIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.ZM-jPn1olbziHwiWzf3zEzoD6F3yzOJ-4FhgyptmQGY",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/nomenclature"
+      },
+      "response": []
+    },
+    {
+      "name": "Nomenclature Without Pictures",
+      "id": "715c3e50-19c0-40e0-8f8d-12beae7cdb7b",
+      "protocolProfileBehavior": {
+        "disabledSystemHeaders": {
+          "user-agent": true
+        }
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTcwODUxOTIyMCwiZXhwIjoxNzA5MTI0MDIwLCJuYmYiOjE3MDg1MTkyMjAsImp0aSI6IkhnMWU0Q2t2SEtMVFl4alIiLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.HcBBQ_v_zJLIj75pvwqvKxTaCku9gduB7Uk4DzCStAA",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "User-Agent",
+            "value": "Uptime-Kuma/1.23.8",
+            "type": "text"
+          }
+        ],
+        "url": "{{base_url_prod}}/api/nomenclature/without-pictures?is_pim=true"
+      },
+      "response": []
+    },
+    {
+      "name": "Nomenclature Create",
+      "id": "796d94d6-b15f-46ce-b746-3cb41a5a305a",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzAzMjU3MzAsImV4cCI6MTYzMDMyOTMzMCwibmJmIjoxNjMwMzI1NzMwLCJqdGkiOiJLd0s4Q2t4ZVhsck4xa3dQIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.ZM-jPn1olbziHwiWzf3zEzoD6F3yzOJ-4FhgyptmQGY",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"guid\": \"11\",\r\n    \"code\": \"55555\",\r\n    \"name\": \"Yu\",\r\n    \"full_name\": \"Yu Ko\",\r\n    \"set_number\": \"4\",\r\n    \"brand_guid\": \"1\",\r\n    \"weight_gross\": \"55.112\",\r\n    \"weight_net\": \"66.000\",\r\n    \"nomenclature_type_guid\": \"123\",\r\n    \"size\": \"20\",\r\n    \"guarantee\": 1000,\r\n    \"residue_units_guid\": \"1\",\r\n    \"residue_units\": \"bla-bla\",\r\n    \"capacity\": \"1000000000\",\r\n    \"voltage\": \"1000000055\",\r\n    \"nomenclature_group_guid\": \"1\",\r\n    \"supplier_counterparty_guid\": \"1\",\r\n    \"responsible_department_manager_guid\": \"1\",\r\n    \"responsible_sales_manager_guid\": \"1\",\r\n    \"nomenclature_feature_guid\": \"1\",\r\n    \"country_guid\": \"1\",\r\n    \"is_service\": true,\r\n    \"nomenclature_guid\": \"1\",\r\n    \"special_type_guid\": \"1\",\r\n    \"is_traceable\": false\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/nomenclature/submit"
+      },
+      "response": []
+    },
+    {
+      "name": "Nomenclature Is Imposible Unpack Update",
+      "id": "c391deef-1408-4a0b-bd17-2f9bf46ffea0",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MzA4MDQyMzAsImV4cCI6MTczMTQwOTAzMCwibmJmIjoxNzMwODA0MjMwLCJqdGkiOiJMZkdtdHRkc1UyMjVOYlV3Iiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.9A3qqgSM8Rnd_ON30DBav4eU6hAx6ammcWOkdZoa8rE",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"is_impossible_unpack\": true\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/nomenclature/is-impossible-unpack/3c284b34-e67d-11e8-869d-e61f13537e43"
+      },
+      "response": []
+    },
+    {
+      "name": "Nomenclature Import",
+      "id": "4060977d-deca-4b7b-940d-dda0a99e7850",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[{\r\n        \"guid\": \"4b76ef4c-a4b7-11e6-826a-e61f13537e43\",\r\n        \"code\": \"00000282026\",\r\n        \"name\": \"Насос-измельчитель электр. т.м. Санинасос SFA, мод. SANIDOUCHE\",\r\n        \"full_name\": \"Насос-измельчитель электр. т.м. Санинасос SFA, мод. SANIDOUCHE\",\r\n        \"set_number\": \"SANIDOUCHE\",\r\n        \"set_number_by_supplier\": \"SANIDOUCHE by supplier\",\r\n        \"brand_guid\": \"72711029-92b2-11e2-9910-e61f13537e43\",\r\n        \"weight_gross\": 0,\r\n        \"weight_net\": 0,\r\n        \"nomenclature_type_guid\": \"7868357b-956c-11df-bfea-e61f13537e43\",\r\n        \"size\": null,\r\n        \"guarantee\": 0,\r\n        \"residue_units_guid\": \"db953149-dd79-11dd-b60c-001a6498e70d\",\r\n        \"residue_units\": \"z\",\r\n        \"capacity\": 0,\r\n        \"voltage\": 0,\r\n        \"nomenclature_group_guid\": \"425aeca5-23ef-11e2-aa5e-e61f13537e43\",\r\n        \"supplier_counterparty_guid\": \"7745408e-b10d-11df-949f-e61f13537e43\",\r\n        \"responsible_department_manager_guid\": \"00000000-0000-0000-0000-000000000000\",\r\n        \"responsible_sales_manager_guid\": \"2783190e-955e-11df-bfea-e61f13537e43\",\r\n        \"nomenclature_feature_guid\": \"d2265c06-9570-11df-b3e0-e61f135382c7\",\r\n        \"country_guid\": \"b9404536-956d-11df-b3e0-e61f135382c7\",\r\n        \"is_service\": false,\r\n        \"nomenclature_guid\": \"00000000-0000-0000-0000-000000000000\",\r\n        \"special_type_guid\": \"00000000-0000-0000-0000-000000000000\",\r\n        \"is_traceable\": false,\r\n        \"to_delete\": false,\r\n        \"is_excluded\": false,\r\n        \"vat_rate\": \"НДС20\",\r\n        \"is_group\": false,\r\n        \"is_repurchase\": false,\r\n        \"is_price_actual_on_balance\": false,\r\n        \"description_additional\": \"Насос-измельчитель электр. т.м. Санинасос SFA, мод. SANIDOUCHE\",\r\n        \"description_for_website\": null,\r\n        \"set_number_for_website\": null,\r\n        \"name_for_website\": null,\r\n        \"brand_line_guid\": \"00000000-0000-0000-0000-000000000000\",\r\n        \"length_by_warehouse\": 0,\r\n        \"width_by_warehouse\": 0,\r\n        \"height_by_warehouse\": 0,\r\n        \"length_gross\": 0,\r\n        \"width_gross\": 0,\r\n        \"height_gross\": 0,\r\n        \"length_net\": null,\r\n        \"width_net\": null,\r\n        \"height_net\": null,\r\n        \"code_by_catalog\": \"code_by_catalog\",\r\n        \"certificate_number\": \"123456789\",\r\n        \"is_mgh\": true,\r\n        \"reserve_percentage\": \"50%\"\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/table/import/nomenclature"
+      },
+      "response": []
+    },
+    {
+      "name": "Nomenclature Import PROD",
+      "id": "525ebf51-d4fb-4c56-a545-9a5815f686e8",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n        {\r\n        \"guid\": \"b7e1ab7d-95a2-11df-bfea-e61f13537e43\",\r\n        \"code\": \"00000039171\",\r\n        \"name\": \"AL 12/23 вставка алюминиевая\",\r\n        \"full_name\": \"AL 12/23 вставка алюминиевая\",\r\n        \"set_number\": \"AL 12/23\",\r\n        \"brand_guid\": \"c057169c-5103-11e3-9e03-e61f13537e43\",\r\n        \"weight_gross\": 0,\r\n        \"weight_net\": 0.2,\r\n        \"nomenclature_type_guid\": \"7868357b-956c-11df-bfea-e61f13537e43\",\r\n        \"size\": \"\",\r\n        \"guarantee\": 0,\r\n        \"residue_units_guid\": \"db953149-dd79-11dd-b60c-001a6498e70d\",\r\n        \"residue_units\": \"в\",\r\n        \"capacity\": 0,\r\n        \"voltage\": 0,\r\n        \"nomenclature_group_guid\": \"97d2dffa-11d0-11e2-aa5e-e61f13537e43\",\r\n        \"supplier_counterparty_guid\": \"7a34e6dc-299b-11de-b60c-001a6498e70d\",\r\n        \"responsible_department_manager_guid\": \"fbd0fcd7-ecec-11e1-aa5e-e61f13537e43\",\r\n        \"responsible_sales_manager_guid\": \"fbd0fcd7-ecec-11e1-aa5e-e61f13537e43\",\r\n        \"nomenclature_feature_guid\": \"d2265bb8-9570-11df-b3e0-e61f135382c7\",\r\n        \"country_guid\": \"b9404540-956d-11df-b3e0-e61f135382c7\",\r\n        \"is_service\": false,\r\n        \"nomenclature_guid\": \"00000000-0000-0000-0000-000000000000\",\r\n        \"special_type_guid\": \"00000000-0000-0000-0000-000000000000\",\r\n        \"is_traceable\": false\r\n    },\r\n    {\r\n        \"guid\": \"076688a3-a685-11e6-826a-e61f13537e43\",\r\n        \"code\": \"00000282162\",\r\n        \"name\": \"N_UNOX S.p.A. Печь конвекционная электр. серии XEBC, модель XEBC-10EU-E1R\",\r\n        \"full_name\": \"N_UNOX S.p.A. Печь конвекционная электр. серии XEBC, модель XEBC-10EU-E1R\",\r\n        \"set_number\": \"N_XEBC-10EU-E1R\",\r\n        \"brand_guid\": \"b124d732-946b-11e3-8906-e61f13537e43\",\r\n        \"weight_gross\": 152.9,\r\n        \"weight_net\": 137.9,\r\n        \"nomenclature_type_guid\": \"7868357b-956c-11df-bfea-e61f13537e43\",\r\n        \"size\": \"863х961х1095\",\r\n        \"guarantee\": 0,\r\n        \"residue_units_guid\": \"db953149-dd79-11dd-b60c-001a6498e70d\",\r\n        \"residue_units\": \"ПП\",\r\n        \"capacity\": 14900,\r\n        \"voltage\": 380,\r\n        \"nomenclature_group_guid\": \"97d2dfb3-11d0-11e2-aa5e-e61f13537e43\",\r\n        \"supplier_counterparty_guid\": \"7a884209-5192-11de-ac04-0019dbd95dce\",\r\n        \"responsible_department_manager_guid\": \"a4893e90-8123-11e8-a2a5-e61f13537e43\",\r\n        \"responsible_sales_manager_guid\": \"a4893e90-8123-11e8-a2a5-e61f13537e43\",\r\n        \"nomenclature_feature_guid\": \"12fb92f6-3184-11e7-a9eb-e61f13537e43\",\r\n        \"country_guid\": \"982d33e2-bee6-453a-992e-11d13fa66fa7\",\r\n        \"is_service\": false,\r\n        \"nomenclature_guid\": \"b7e1ab7d-95a2-11df-bfea-e61f13537e43\",\r\n        \"special_type_guid\": \"00000000-0000-0000-0000-000000000000\",\r\n        \"is_traceable\": false\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_prod}}/api/table/import/nomenclature"
+      },
+      "response": []
+    },
+    {
+      "name": "Nomenclature Export Exel",
+      "id": "268f7222-0ad2-4dfe-a7d8-d93b6b1d3074",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzU4MzE1MzcsImV4cCI6MTYzNTkxNzkzNywibmJmIjoxNjM1ODMxNTM3LCJqdGkiOiJXUDZHaU42UkY1N1Q5MVNKIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.z7xzY1-b4nkdiV3aHxDwvTjTooXp8rvqAXxwCAUjCcc",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/nomenclature/store-excel"
+      },
+      "response": []
+    },
+    {
+      "name": "Nomenclature Export Exel Download",
+      "id": "ccf21417-4de1-4894-9ae8-59ee9f7956f2",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2ODg1NDUwMDksImV4cCI6MTY4OTE0OTgwOSwibmJmIjoxNjg4NTQ1MDA5LCJqdGkiOiJHNzZlY25PNkVtbzlWSFlNIiwic3ViIjo0MiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.NuoLoPncUKpAKyCB02I69vgqunCTU6lvoq9Nqii89A4",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/nomenclature/download-excel/nomenclature_td.xlsx"
+      },
+      "response": []
+    },
+    {
+      "name": "Nomenclature Export Exel With Filters  Download Copy",
+      "id": "9467fe0e-bc67-4bb2-a058-cde5a0a34649",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MDgwNjM5OTAsImV4cCI6MTcwODY2ODc5MCwibmJmIjoxNzA4MDYzOTkwLCJqdGkiOiIwMWU0bm93UkJRWUNSOUtHIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pdMuDHnj9cThhxz4h_p40o35jVMgX3SSaviifgEkE5c",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/nomenclature/download-excel/with-filters/nomenclature_td?extention=xlsx&country_guid=b9404535-956d-11df-b3e0-e61f135382c7"
+      },
+      "response": []
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "info": {
+    "_postman_id": "6f0744b2-6f16-45a4-84d2-9a07526fbc09",
+    "name": "Categories",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Ozon Description-category Attribute  Values",
+      "id": "71dd04fe-6444-4f03-b263-42aa71ddcedf",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Client-Id",
+            "value": "{{ozon_client_id_header}}",
+            "type": "text"
+          },
+          {
+            "key": "Api-Key",
+            "value": "{{ozon_client_id}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"description_category_id\": 17039630,\r\n    \"language\": \"DEFAULT\",\r\n    \"type_id\": 95604,\r\n    \"attribute_id\": 85,\r\n    \"last_value_id\": 970619347,\r\n    \"limit\": 5000\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api-seller.ozon.ru/v1/description-category/attribute/values",
+          "protocol": "https",
+          "host": [
+            "api-seller",
+            "ozon",
+            "ru"
+          ],
+          "path": [
+            "v1",
+            "description-category",
+            "attribute",
+            "values"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Ozon Description-category Tree",
+      "id": "be0ca778-ac5b-4707-88be-b70ae682f083",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Client-Id",
+            "value": "{{ozon_client_id_header}}",
+            "type": "text"
+          },
+          {
+            "key": "Api-Key",
+            "value": "{{ozon_client_id}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"description_category_id\": 95604,\r\n    \"language\": \"DEFAULT\",\r\n    \"type_id\": 0\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api-seller.ozon.ru/v1/description-category/tree",
+          "protocol": "https",
+          "host": [
+            "api-seller",
+            "ozon",
+            "ru"
+          ],
+          "path": [
+            "v1",
+            "description-category",
+            "tree"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

@@ -1,0 +1,2755 @@
+{
+  "info": {
+    "_postman_id": "a5ff4c05-748f-4851-8194-3e4ec8228680",
+    "name": "Dealers",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Discounts",
+      "item": [
+        {
+          "name": "Dealers Discounts",
+          "id": "3b0f5d13-676b-44cb-ba42-677739e352e4",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NTc1Mjk2MzQsImV4cCI6MTY1ODEzNDQzNCwibmJmIjoxNjU3NTI5NjM0LCJqdGkiOiJXeXZ2bURrZVpob2J6ZmhQIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.SEdwqCOyH9GF_9qaDoOVZk0TNtYdpJu_UTV4XP_d2M0",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers/discounts?per_page=0",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers",
+                "discounts"
+              ],
+              "query": [
+                {
+                  "key": "per_page",
+                  "value": "0"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Dealers Discounts All",
+          "id": "f1c916df-94c0-41b8-8948-9db4c83918f1",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NTc1Mjk2MzQsImV4cCI6MTY1ODEzNDQzNCwibmJmIjoxNjU3NTI5NjM0LCJqdGkiOiJXeXZ2bURrZVpob2J6ZmhQIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.SEdwqCOyH9GF_9qaDoOVZk0TNtYdpJu_UTV4XP_d2M0",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers/discounts/all",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers",
+                "discounts",
+                "all"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Dealers Discounts By Nomenclature",
+          "id": "d3c66a70-c59c-484f-9a2c-02a49b0b35dd",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NTc1Mjk2MzQsImV4cCI6MTY1ODEzNDQzNCwibmJmIjoxNjU3NTI5NjM0LCJqdGkiOiJXeXZ2bURrZVpob2J6ZmhQIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.SEdwqCOyH9GF_9qaDoOVZk0TNtYdpJu_UTV4XP_d2M0",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers/discounts-by-nomenclature",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers",
+                "discounts-by-nomenclature"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Dealers Discounts By Nomenclature All",
+          "id": "6ab2df85-e843-4581-87be-e0156f521aa0",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NTc1Mjk2MzQsImV4cCI6MTY1ODEzNDQzNCwibmJmIjoxNjU3NTI5NjM0LCJqdGkiOiJXeXZ2bURrZVpob2J6ZmhQIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.SEdwqCOyH9GF_9qaDoOVZk0TNtYdpJu_UTV4XP_d2M0",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers/discounts-by-nomenclature/all",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers",
+                "discounts-by-nomenclature",
+                "all"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Dealers Discounts Average",
+          "id": "fd2d792e-697e-498e-910c-308f04f32f42",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2Mzk3NjQ1ODMsImV4cCI6MTYzOTg1MDk4MywibmJmIjoxNjM5NzY0NTgzLCJqdGkiOiIxSjN2bUU3cGJWUk9VSlJUIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.3MLr_YwRPSaeStqQ6Gta--mlbYZjdb8zwtvLcIegGlQ",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers/discounts/average",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers",
+                "discounts",
+                "average"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "86f21fb1-634c-43ab-bc13-4d32b7bae57f"
+    },
+    {
+      "name": "Claims 1C",
+      "item": [
+        {
+          "name": "Dealers Claims",
+          "id": "5b2b5bbf-638c-4865-a722-87ebeeb3834f",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MTMyNDU5MzYsImV4cCI6MTcxMzg1MDczNiwibmJmIjoxNzEzMjQ1OTM2LCJqdGkiOiJZb1V2UTFpcG5IRFdXV2MyIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.ko112BpectUuRxwlQ9eXY9aJBOc-fwzvceluXS6JRDo",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers/claims",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers",
+                "claims"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Dealers Claims Pending Filling",
+          "id": "68889aab-8dba-44d5-a88a-1013f59db791",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MzUxMDI4NjgsImV4cCI6MTczNTcwNzY2OSwibmJmIjoxNzM1MTAyODY5LCJqdGkiOiJkY1lEV09xRDdPN2VXUEJpIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.qpGcFPZG29bRxtoJT0yESFixiIg44HH1eI2QJ-ha0oQ",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers/claims/pending-filling",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers",
+                "claims",
+                "pending-filling"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Dealers Lk Claims Pending Filling",
+          "id": "8babbe39-a0a9-4d05-b0b6-44e0d7aba414",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "/nomenclature-to-catalogs-for-websites",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers-lk/claims/pending-filling",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers-lk",
+                "claims",
+                "pending-filling"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Dealers Claim Update website_comment_by_client",
+          "id": "af13b730-da1b-4743-b333-a766c508f9c4",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NzE2OTA0NjEsImV4cCI6MTY3MjI5NTI2MSwibmJmIjoxNjcxNjkwNDYxLCJqdGkiOiJkZGViVVFBcW84MmpjY29rIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.dYwkoSuEdesFLL-kR9MYMLiO-ZJgG_xn0txxxfA5lrg",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"website_comment\": \"Hellow, World! NEW VERSION\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers/claim/website-comment-by-client/update/lk-2a88b9feb6-001671690472",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers",
+                "claim",
+                "website-comment-by-client",
+                "update",
+                "lk-2a88b9feb6-001671690472"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Dealers Lk Claim Update website_comment_by_client",
+          "id": "aab14a79-8fba-478d-ab48-62209253adef",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MzUxMDI4NjgsImV4cCI6MTczNTcwNzY2OSwibmJmIjoxNzM1MTAyODY5LCJqdGkiOiJkY1lEV09xRDdPN2VXUEJpIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.qpGcFPZG29bRxtoJT0yESFixiIg44HH1eI2QJ-ha0oQ",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"website_comment\": \"Hellow, World! NEW VERSION\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers-lk/claim/website-comment-by-client/update/lk-6ab866d888-001735113520",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers-lk",
+                "claim",
+                "website-comment-by-client",
+                "update",
+                "lk-6ab866d888-001735113520"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Dealers Claim",
+          "id": "119a5257-68e2-4fb0-8fdb-06de95580c88",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTcxMDE1MDM4MywiZXhwIjoxNzEwNzU1MTgzLCJuYmYiOjE3MTAxNTAzODMsImp0aSI6IldOZ1VKTEd6MEg0M0hMbFUiLCJzdWIiOjE0ODQsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.Qknp4ergzUSjDQrrwcHZdMXiJyEG64Edf3d406YK7TU",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers/claims/claim-info/lk-25715526c1-001709013919",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers",
+                "claims",
+                "claim-info",
+                "lk-25715526c1-001709013919"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Dealers Claim By Signature",
+          "id": "27d93867-d141-48b3-8417-bbebf99b9f9a",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTY4OTU3ODk1MSwiZXhwIjoxNjkwMTgzNzUxLCJuYmYiOjE2ODk1Nzg5NTEsImp0aSI6IjJPS2NCVDlnU3RiZ0tTUFAiLCJzdWIiOjEzNjksInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.1vJMkgf5-ZAiyNhT0C1KrzCaGnixpxNiF1TfL4HV11U",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers/claim/signed?counterparty_guid=814f816c-cc70-11e3-8d43-e61f13537e43&identifier=00587640-cc99-11ee-8614-0050568e3182&signature=0bcb694b284d073728cf63eea6948e30a4f36769494c58e12de2e454ff0daeb3",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers",
+                "claim",
+                "signed"
+              ],
+              "query": [
+                {
+                  "key": "counterparty_guid",
+                  "value": "814f816c-cc70-11e3-8d43-e61f13537e43"
+                },
+                {
+                  "key": "identifier",
+                  "value": "00587640-cc99-11ee-8614-0050568e3182"
+                },
+                {
+                  "key": "signature",
+                  "value": "0bcb694b284d073728cf63eea6948e30a4f36769494c58e12de2e454ff0daeb3"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Dealers Claim Print",
+          "id": "2248de1c-154d-4ba0-b807-06646e472e6f",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvcmVmcmVzaCIsImlhdCI6MTcwMDEzMDQ3NywiZXhwIjoxNzAxNjY4NDI0LCJuYmYiOjE3MDEwNjM2MjQsImp0aSI6ImZVbE1EMngwUVJJRGRWYVciLCJzdWIiOjE0ODQsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.VidNnN6bZh19RwDtKBcc5gdGBb7YpeFGV3LgUP_ZIQQ",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"realization_guid\": \"75880101-adc9-11ed-975b-e61f13537e43\",\r\n    \"realization_number\": \"realization_number\",\r\n    \"realization_date\": \"realization_date\",\r\n    \"nomenclature_guid\": \"2bdc358a-ec3a-4a9c-a75f-b2be1de45b42\",\r\n    \"nomenclature_name\": \"nomenclature_name\",\r\n    \"counterparty_guid\": \"814f816c-cc70-11e3-8d43-e61f13537e43\",\r\n    \"launch_date\": \"2022-12-20\",\r\n    \"claim_date\": \"2023-06-13\",\r\n    \"zip_required\": \"Компрессор EMY2130U\",\r\n    \"description\": \"выход из строя компрессора EMY2130U\",\r\n    \"email\": \"lyoulka@mail.ru\",\r\n    \"phone\": \"83466670605\",\r\n    \"serial_number\": \"123456789\",\r\n    \"release_date\": \"2023-05-06\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers/ka-claim/print-form",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers",
+                "ka-claim",
+                "print-form"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Claim Add Documents By Signature",
+          "id": "e2045e24-4814-4a96-b626-fe3cb890506a",
+          "protocolProfileBehavior": {
+            "disabledSystemHeaders": {}
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text",
+                "disabled": true
+              },
+              {
+                "key": "X-Requested-With",
+                "value": "XMLHttpRequest",
+                "type": "text",
+                "disabled": true
+              },
+              {
+                "key": "Content-Type",
+                "value": "multipart/form-data",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"counterparty_guid\": \"814f816c-cc70-11e3-8d43-e61f13537e43\",\r\n    \"photo_label\": [\r\n        {\r\n            \"name\": \"00000085453.jpg\",\r\n            \"url\": \"{{base_url_prod}}/images/upload1C/000000854123.jpg\"\r\n        },\r\n        {\r\n            \"name\": \"00000085458.jpg\",\r\n            \"url\": \"{{base_url_prod}}/images/upload1C/0000008549.jpg\"\r\n        }\r\n    ],\r\n    \"document_claim\": [\r\n        {\r\n            \"name\": \"00000085451.jpg\",\r\n            \"url\": \"{{base_url_prod}}/images/upload1C/0000008548.jpg\"\r\n        }\r\n    ],\r\n    \"photo_zip\": [\r\n        {\r\n            \"name\": \"00000255797.jpg\",\r\n            \"url\": \"{{base_url_prod}}/images/upload1C/00000255757.jpg\"\r\n        }\r\n    ],\r\n    \"photo_item\": [\r\n        {\r\n            \"name\": \"00000255799.jpg\",\r\n            \"url\": \"{{base_url_prod}}/images/upload1C/00000255798.jpg\"\r\n        }\r\n    ],\r\n    \"document_diagnostics\": [\r\n        {\r\n            \"name\": \"pr_gcloud_up.docx\",\r\n            \"url\": \"{{base_url_prod}}/storage/documents/l7lMnZWitPwRDZ34V8Jwu507sgrowA15Y8c94rO6.docx\"\r\n        }\r\n    ],\r\n    \"document_launch\": [\r\n        {\r\n            \"name\": \"pr_gcloud_up.docx\",\r\n            \"url\": \"{{base_url_prod}}/storage/documents/l7lMnZWitPwRDZ34V8Jwu507sgrowA15Y8c94rO5.docx\"\r\n        }\r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers/claim/signed/add-documents?counterparty_guid=814f816c-cc70-11e3-8d43-e61f13537e43&identifier=00587640-cc99-11ee-8614-0050568e3182&signature=b0da4c49a131bbe9120581a0351407dc6eefa713147bd2ea69fdc165f9ee0fc8",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers",
+                "claim",
+                "signed",
+                "add-documents"
+              ],
+              "query": [
+                {
+                  "key": "user_id",
+                  "value": "1",
+                  "disabled": true
+                },
+                {
+                  "key": "buyer",
+                  "value": "Yulia",
+                  "disabled": true
+                },
+                {
+                  "key": "buyer_id",
+                  "value": "2",
+                  "disabled": true
+                },
+                {
+                  "key": "seller",
+                  "value": "Vlad",
+                  "disabled": true
+                },
+                {
+                  "key": "seller_id",
+                  "value": "3",
+                  "disabled": true
+                },
+                {
+                  "key": "deal",
+                  "value": "our deal",
+                  "disabled": true
+                },
+                {
+                  "key": "deal_id",
+                  "value": "4",
+                  "disabled": true
+                },
+                {
+                  "key": "item",
+                  "value": "mixer",
+                  "disabled": true
+                },
+                {
+                  "key": "item_id",
+                  "value": "5",
+                  "disabled": true
+                },
+                {
+                  "key": "launch_date",
+                  "value": "16.08.2021",
+                  "disabled": true
+                },
+                {
+                  "key": "claim_description",
+                  "value": "my claim description",
+                  "disabled": true
+                },
+                {
+                  "key": "full_name",
+                  "value": "Yulia Kostenko",
+                  "disabled": true
+                },
+                {
+                  "key": "role",
+                  "value": "developer",
+                  "disabled": true
+                },
+                {
+                  "key": "phone",
+                  "value": "{{auth_password}}",
+                  "disabled": true
+                },
+                {
+                  "key": "zip_required",
+                  "value": "zip required",
+                  "disabled": true
+                },
+                {
+                  "key": "counterparty_guid",
+                  "value": "814f816c-cc70-11e3-8d43-e61f13537e43"
+                },
+                {
+                  "key": "identifier",
+                  "value": "00587640-cc99-11ee-8614-0050568e3182"
+                },
+                {
+                  "key": "signature",
+                  "value": "b0da4c49a131bbe9120581a0351407dc6eefa713147bd2ea69fdc165f9ee0fc8"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "ffbaee0b-a208-43fb-8c32-c1ebb60f2498",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                  "raw": "{{url}}/api/claim/submit",
+                  "host": [
+                    "{{url}}"
+                  ],
+                  "path": [
+                    "api",
+                    "claim",
+                    "submit"
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n    \"user_id\": \"1233\",\r\n    \"buyer\": \"\",\r\n    \"buyer_id\": \"\",\r\n    \"seller\": \"\",\r\n    \"seller_id\": \"\",\r\n    \"deal\": \"\",\r\n    \"deal_id\": \"\",\r\n    \"item\": \"\",\r\n    \"item_id\": \"\",\r\n    \"launch_date\": \"\",\r\n    \"issue_date\": \"\",\r\n    \"zip_required\": \"\",\r\n    \"claim_description\": \"\",\r\n    \"full_name\": \"\",\r\n    \"role\": \"\",\r\n    \"phone\": \"\",\r\n    \"document_launch\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }],\r\n    \"document_diagnostics\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }],\r\n    \"document_claim\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }],\r\n    \"photo_label\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }],\r\n    \"photo_zip\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }],\r\n    \"photo_item\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }],\r\n    \"photo_failures\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }]\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Dealers KA Claim Print",
+          "id": "8468fbfc-5224-4a4e-be67-0f3a862d89f6",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvcmVmcmVzaCIsImlhdCI6MTcwMDEzMDQ3NywiZXhwIjoxNzAxNjY4NDI0LCJuYmYiOjE3MDEwNjM2MjQsImp0aSI6ImZVbE1EMngwUVJJRGRWYVciLCJzdWIiOjE0ODQsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.VidNnN6bZh19RwDtKBcc5gdGBb7YpeFGV3LgUP_ZIQQ",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"realization_guid\": \"75880101-adc9-11ed-975b-e61f13537e43\",\r\n    \"realization_number\": \"realization_number\",\r\n    \"realization_date\": \"realization_date\",\r\n    \"nomenclature_guid\": \"2bdc358a-ec3a-4a9c-a75f-b2be1de45b42\",\r\n    \"nomenclature_name\": \"nomenclature_name\",\r\n    \"counterparty_guid\": \"814f816c-cc70-11e3-8d43-e61f13537e43\",\r\n    \"launch_date\": \"2022-12-20\",\r\n    \"claim_date\": \"2023-06-13\",\r\n    \"zip_required\": \"Компрессор EMY2130U\",\r\n    \"description\": \"выход из строя компрессора EMY2130U\",\r\n    \"email\": \"lyoulka@mail.ru\",\r\n    \"phone\": \"83466670605\",\r\n    \"serial_number\": \"123456789\",\r\n    \"release_date\": \"2023-05-06\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers/ka-claim/print-form",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers",
+                "ka-claim",
+                "print-form"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "fe994977-6a6d-4991-abb5-06ac8ddab7c9"
+    },
+    {
+      "name": "Offers",
+      "item": [
+        {
+          "name": "Dealers Offers",
+          "id": "d418d6e4-e2db-408e-80c2-3d64edea49ce",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers/offers",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers",
+                "offers"
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "c5c3e0d6-fda0-49fe-9b67-19a9bc98938f",
+              "name": "Default",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{base_url_local}}/api/offers",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "offers"
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": null,
+              "cookie": [],
+              "body": "[\n    {\n        \"number\": \"00000000088\",\n        \"name_of_the_promotion\": \"Super РасPROдажа!\",\n        \"description_of_promotion\": \"Скидки на ограниченный ассортимент.\\nДействуют только на товары в наличии на складе. Спешите, количество ограниченно!\",\n        \"start_data\": \"05.07.2020\",\n        \"end_data\": \"31.07.2021\",\n        \"product_of_the_day\": \"false\",\n        \"black_friday\": \"false\",\n        \"basket_discount\": \"false\",\n        \"set_1\": [\n            {\n                \"product\": \"07504f75-3c1c-11e5-8e3a-e61f13537e43\",\n                \"discount\": 10\n            },\n            {\n                \"product\": \"322cb7f3-3d02-11ea-8f96-e61f13537e43\",\n                \"discount\": 15\n            },\n            {\n                \"product\": \"5e049830-3ca2-11e4-9590-e61f13537e43\",\n                \"discount\": 10\n            }\n        ]\n    },\n    {\n        \"number\": \"00000000034\",\n        \"name_of_the_promotion\": \"Скидка на оборудование Robot Coupe при заказе через корзину сайта.\",\n        \"description_of_promotion\": [],\n        \"start_data\": \"02.03.2020\",\n        \"end_data\": \"31.07.2021\",\n        \"product_of_the_day\": \"false\",\n        \"black_friday\": \"false\",\n        \"basket_discount\": \"true\",\n        \"set_1\": [\n            {\n                \"product\": \"5dc9a9fb-f52a-11e3-a6e9-e61f13537e43\",\n                \"discount\": 10\n            },\n            {\n                \"product\": \"f1df57c9-95a1-11df-bfea-e61f13537e43\",\n                \"discount\": 10\n            },\n            {\n                \"product\": \"9c47bf26-d55b-11e1-a782-e61f13537e43\",\n                \"discount\": 10\n            }\n        ]\n    }\n]"
+            }
+          ]
+        },
+        {
+          "name": "Dealers Offers Deltas",
+          "id": "4e3e7995-cc38-45d8-ba5e-eb133c84a82d",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NDA3NjgxNjksImV4cCI6MTY0MDg1NDU2OSwibmJmIjoxNjQwNzY4MTY5LCJqdGkiOiJzaVFuWWlCOUpHS255VU9YIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.gQ_3t1_-iPgOgfWzfp5ws7vH5an7DE9qSOst8QDwoEM",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers/offers/deltas",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers",
+                "offers",
+                "deltas"
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "9046ed5a-721a-4fce-92ae-61f4f9911aa1",
+              "name": "Default",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{base_url_local}}/api/offers",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "offers"
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": null,
+              "cookie": [],
+              "body": "[\n    {\n        \"number\": \"00000000088\",\n        \"name_of_the_promotion\": \"Super РасPROдажа!\",\n        \"description_of_promotion\": \"Скидки на ограниченный ассортимент.\\nДействуют только на товары в наличии на складе. Спешите, количество ограниченно!\",\n        \"start_data\": \"05.07.2020\",\n        \"end_data\": \"31.07.2021\",\n        \"product_of_the_day\": \"false\",\n        \"black_friday\": \"false\",\n        \"basket_discount\": \"false\",\n        \"set_1\": [\n            {\n                \"product\": \"07504f75-3c1c-11e5-8e3a-e61f13537e43\",\n                \"discount\": 10\n            },\n            {\n                \"product\": \"322cb7f3-3d02-11ea-8f96-e61f13537e43\",\n                \"discount\": 15\n            },\n            {\n                \"product\": \"5e049830-3ca2-11e4-9590-e61f13537e43\",\n                \"discount\": 10\n            }\n        ]\n    },\n    {\n        \"number\": \"00000000034\",\n        \"name_of_the_promotion\": \"Скидка на оборудование Robot Coupe при заказе через корзину сайта.\",\n        \"description_of_promotion\": [],\n        \"start_data\": \"02.03.2020\",\n        \"end_data\": \"31.07.2021\",\n        \"product_of_the_day\": \"false\",\n        \"black_friday\": \"false\",\n        \"basket_discount\": \"true\",\n        \"set_1\": [\n            {\n                \"product\": \"5dc9a9fb-f52a-11e3-a6e9-e61f13537e43\",\n                \"discount\": 10\n            },\n            {\n                \"product\": \"f1df57c9-95a1-11df-bfea-e61f13537e43\",\n                \"discount\": 10\n            },\n            {\n                \"product\": \"9c47bf26-d55b-11e1-a782-e61f13537e43\",\n                \"discount\": 10\n            }\n        ]\n    }\n]"
+            }
+          ]
+        },
+        {
+          "name": "Dealers LK Offers",
+          "id": "9374998e-208e-4e53-b018-c4748731d0e9",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTc1MDMzMTk2MiwiZXhwIjoxNzUwOTM2NzYyLCJuYmYiOjE3NTAzMzE5NjIsImp0aSI6Ik5PSjh1WWJHVm1Sc2hoVDAiLCJzdWIiOjI2NDYsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.urbwi_vr22RFJwKRzo5Vfw2mk2LraNqAjKYJBzQE_Zs",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers-lk/offers",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers-lk",
+                "offers"
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "268ed881-947b-4251-bd82-e2f87c59d1ae",
+              "name": "Default",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{base_url_local}}/api/offers",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "offers"
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": null,
+              "cookie": [],
+              "body": "[\n    {\n        \"number\": \"00000000088\",\n        \"name_of_the_promotion\": \"Super РасPROдажа!\",\n        \"description_of_promotion\": \"Скидки на ограниченный ассортимент.\\nДействуют только на товары в наличии на складе. Спешите, количество ограниченно!\",\n        \"start_data\": \"05.07.2020\",\n        \"end_data\": \"31.07.2021\",\n        \"product_of_the_day\": \"false\",\n        \"black_friday\": \"false\",\n        \"basket_discount\": \"false\",\n        \"set_1\": [\n            {\n                \"product\": \"07504f75-3c1c-11e5-8e3a-e61f13537e43\",\n                \"discount\": 10\n            },\n            {\n                \"product\": \"322cb7f3-3d02-11ea-8f96-e61f13537e43\",\n                \"discount\": 15\n            },\n            {\n                \"product\": \"5e049830-3ca2-11e4-9590-e61f13537e43\",\n                \"discount\": 10\n            }\n        ]\n    },\n    {\n        \"number\": \"00000000034\",\n        \"name_of_the_promotion\": \"Скидка на оборудование Robot Coupe при заказе через корзину сайта.\",\n        \"description_of_promotion\": [],\n        \"start_data\": \"02.03.2020\",\n        \"end_data\": \"31.07.2021\",\n        \"product_of_the_day\": \"false\",\n        \"black_friday\": \"false\",\n        \"basket_discount\": \"true\",\n        \"set_1\": [\n            {\n                \"product\": \"5dc9a9fb-f52a-11e3-a6e9-e61f13537e43\",\n                \"discount\": 10\n            },\n            {\n                \"product\": \"f1df57c9-95a1-11df-bfea-e61f13537e43\",\n                \"discount\": 10\n            },\n            {\n                \"product\": \"9c47bf26-d55b-11e1-a782-e61f13537e43\",\n                \"discount\": 10\n            }\n        ]\n    }\n]"
+            }
+          ]
+        }
+      ],
+      "id": "26505a8e-a326-449f-89e9-32f9c3e1d43f"
+    },
+    {
+      "name": "Products",
+      "item": [
+        {
+          "name": "Products Dealers",
+          "id": "435d1385-dd5a-4684-9831-10bfbdd226a3",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers/products",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers",
+                "products"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Products Dealers Delta",
+          "id": "cff9856b-d74e-4779-a5ec-e3f6ae200948",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers/products/deltas",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers",
+                "products",
+                "deltas"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Products Dealers PROD",
+          "id": "8543ee40-8939-4150-b091-39ea641ac782",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_prod}}/api/dealers/products",
+              "protocol": "https",
+              "host": [
+                "api",
+                "t-d",
+                "ru"
+              ],
+              "path": [
+                "api",
+                "dealers",
+                "products"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "429daa41-8e21-4257-9bf3-9c23393bc379"
+    },
+    {
+      "name": "Contracts",
+      "item": [
+        {
+          "name": "Dealers Contracts",
+          "id": "e25c385f-0bc8-48ca-8a61-c6f3274cb974",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NTcyNTc4MTAsImV4cCI6MTY1Nzg2MjYxMCwibmJmIjoxNjU3MjU3ODEwLCJqdGkiOiJzWkRHMkwyY1RpUXY0dklhIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.R7USt9SegyBhreJjBh5EVnoykeJSNE5drvldJBgjlug",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers/contracts?is_all=true",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers",
+                "contracts"
+              ],
+              "query": [
+                {
+                  "key": "is_all",
+                  "value": "true"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Dealers Contracts Download excel",
+          "id": "9cad61b3-66f0-4af6-a851-902535fa5f2b",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbi1hcy1kZWFsZXJcLzEwIiwiaWF0IjoxNzA4MzI0NjkwLCJleHAiOjE3MDgzMjgyOTAsIm5iZiI6MTcwODMyNDY5MCwianRpIjoiY3g2UUZrc0VzejhJajNQOCIsInN1YiI6NDYsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.zClWBjsSCgmVRSfSDb3KsGEVlw8wsY-peJ-m9up90zQ",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers/contracts/download?extension=xlsx",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers",
+                "contracts",
+                "download"
+              ],
+              "query": [
+                {
+                  "key": "extension",
+                  "value": "xlsx"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Dealers Contracts Download Document",
+          "id": "1f37c31b-c921-4d51-9f35-f5934f690090",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NTcyNTc4MTAsImV4cCI6MTY1Nzg2MjYxMCwibmJmIjoxNjU3MjU3ODEwLCJqdGkiOiJzWkRHMkwyY1RpUXY0dklhIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.R7USt9SegyBhreJjBh5EVnoykeJSNE5drvldJBgjlug",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers/contracts/download/8a91b57c-989b-11ec-a276-e61f13537e43_0.docx",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers",
+                "contracts",
+                "download",
+                "8a91b57c-989b-11ec-a276-e61f13537e43_0.docx"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Dealers Contracts Download Document Copy",
+          "id": "e3ec2e70-90e9-4873-a0c3-7d98388c0c50",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NTc1Mjk2MzQsImV4cCI6MTY1ODEzNDQzNCwibmJmIjoxNjU3NTI5NjM0LCJqdGkiOiJXeXZ2bURrZVpob2J6ZmhQIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.SEdwqCOyH9GF_9qaDoOVZk0TNtYdpJu_UTV4XP_d2M0",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers/contracts/download/zip/8a91b57c-989b-11ec-a276-e61f13537e43",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers",
+                "contracts",
+                "download",
+                "zip",
+                "8a91b57c-989b-11ec-a276-e61f13537e43"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Dealers Contracts Overdue",
+          "id": "2fe4999f-c6cc-4762-8953-ea5553fd46e8",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NDc5NDY5NjgsImV4cCI6MTY0ODU1MTc2OCwibmJmIjoxNjQ3OTQ2OTY4LCJqdGkiOiJYSGFZdnF1REJDVEhPTEFzIiwic3ViIjo0MiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.jSuHCo18hzqKvV77YlqCMQyBBTS5ACPr1H9E3gwgcaA",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers/contracts/overdue",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers",
+                "contracts",
+                "overdue"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Dealers Contracts Prepaid",
+          "id": "fb011d65-b426-4edd-bcf3-606b1a583b03",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2Nzc4MjkxMTgsImV4cCI6MTY3ODQzMzkxOCwibmJmIjoxNjc3ODI5MTE4LCJqdGkiOiJHTGVITGpVZDg1djZrT0hiIiwic3ViIjo0MiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.cjKmlbO4wmpT2i8C1RMPPpIlFD8f_4qh0ffhZOZS5-Y",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers/contracts/prepaid",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers",
+                "contracts",
+                "prepaid"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "6d57a21d-715d-4df0-8c8c-bef268b66b0a"
+    },
+    {
+      "name": "Contacts",
+      "item": [
+        {
+          "name": "Dealers Contacts",
+          "id": "b354b090-e6dd-4ae7-8e18-6a332a11d27a",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": " eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTY0MjU3NDM4MCwiZXhwIjoxNjQyNjYwNzgwLCJuYmYiOjE2NDI1NzQzODAsImp0aSI6IlI5Vk1WM3ZVRFBQM29jaFUiLCJzdWIiOjQwLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.WUqhxQBFIOKfbN0GF06biJ2sMDZ7bIjhGPwaZA-5cjs ",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers/counterparties/contacts",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers",
+                "counterparties",
+                "contacts"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Dealers UT Contacts",
+          "id": "60ba3c7b-4ec4-47ef-ae90-078288d22739",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2ODYwNTQ4MjcsImV4cCI6MTY4NjY1OTYyNywibmJmIjoxNjg2MDU0ODI3LCJqdGkiOiJ1em9qZnFiWXYwNUxtcFpWIiwic3ViIjo0MiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.GHUCPuXkeTzixx54_b5GSDHMRb13NS690Fph4lVIPcU",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers/ut-counterparties/contacts",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers",
+                "ut-counterparties",
+                "contacts"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Dealers Ka Contacts",
+          "id": "c51cd347-93b4-4800-8e33-103d4b77cbb3",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbi1hcy1kZWFsZXJcLzcyNCIsImlhdCI6MTY5MjA4MjIyMywiZXhwIjoxNjkyMDg1ODIzLCJuYmYiOjE2OTIwODIyMjMsImp0aSI6IjV6SU9DRnhCTTVwNEwwVk4iLCJzdWIiOjE1MjcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.bC3T3pjFg1RAQxsWQwKcdHXZfgxNsvfAfR8cJ4--9HY",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers/ka-counterparties/contacts",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers",
+                "ka-counterparties",
+                "contacts"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "e5c6a19a-ff26-497b-bfd4-43a37a59cab8"
+    },
+    {
+      "name": "Dashboard",
+      "item": [
+        {
+          "name": "Dealers Notifications Dashboard",
+          "id": "f31675ff-bcba-49f9-a7ef-36ea3889106c",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NDc4NjIyOTgsImV4cCI6MTY0ODQ2NzA5OCwibmJmIjoxNjQ3ODYyMjk4LCJqdGkiOiJvYW5zWEtGN0RjUVBkdVdzIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.rRzfbCPMzylV-pMJ4QoFp1KSJH6ftvhghavcSMYdvpk",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers/dashboard/notifications",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers",
+                "dashboard",
+                "notifications"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Dealers Orders Dashboard",
+          "id": "1e4348d1-3983-4f7a-967f-5a5bc624069e",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MzQ3MDM5MjIsImV4cCI6MTczNTMwODcyMiwibmJmIjoxNzM0NzAzOTIyLCJqdGkiOiJkYWw5d3BzMDhneW1rMXZuIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.ey-_N2etugAm4BHdCO-i66Cr_auNESd6JrSBgKJgEf0",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers/dashboard/orders",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers",
+                "dashboard",
+                "orders"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Dealers Lk Orders Dashboard",
+          "id": "f2c8266d-3bef-4e5d-b2b8-8b695b9bb237",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbi1hcy1kZWFsZXJcLzYiLCJpYXQiOjE3MzQ5NDQ3NzUsImV4cCI6MTczNDk0ODM3NSwibmJmIjoxNzM0OTQ0Nzc1LCJqdGkiOiIyQ3ZnR05tR29uakNvdmM2Iiwic3ViIjo0MiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.Ix4MxD3i3wohgYJVZdkbdMGXy5NG3kwNBt4Y5mfgZe0",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers-lk/dashboard/orders",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers-lk",
+                "dashboard",
+                "orders"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Dealers Claims Dashboard",
+          "id": "7ef32313-cd01-4a88-ab64-d7b0702e6fa0",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NjQ4NjIyNDgsImV4cCI6MTY2NTQ2NzA0OCwibmJmIjoxNjY0ODYyMjQ4LCJqdGkiOiJYaHlqUnAwdXAwa1ZnN2JIIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.xCujw1qFb7SYV5cps6BAT3VfWfHZEF3Sm9rYrRMeIuU",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers/dashboard/claims",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers",
+                "dashboard",
+                "claims"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Dealers Lk Claims Dashboard",
+          "id": "23b0c40d-a1f9-4ea2-9750-ac1d3487f18c",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MzUxMDI4NjgsImV4cCI6MTczNTcwNzY2OSwibmJmIjoxNzM1MTAyODY5LCJqdGkiOiJkY1lEV09xRDdPN2VXUEJpIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.qpGcFPZG29bRxtoJT0yESFixiIg44HH1eI2QJ-ha0oQ",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers-lk/dashboard/claims",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers-lk",
+                "dashboard",
+                "claims"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "3dd0f213-5a70-419d-8189-f06aa19028b1"
+    },
+    {
+      "name": "Orders",
+      "item": [
+        {
+          "name": "Dealers Order",
+          "id": "ed613736-5300-4910-b12c-61199e69cd78",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2ODg3MTUyOTgsImV4cCI6MTY4OTMyMDA5OCwibmJmIjoxNjg4NzE1Mjk4LCJqdGkiOiJ3dW5ha1NxQzQ1ek5PUHExIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.58NqmeLLv3I7HibDAwGYgYT-9YWMDragjAdhZLUQdMA",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers/order/lk-d8dfd3a332-001688642665",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers",
+                "order",
+                "lk-d8dfd3a332-001688642665"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Dealers Order Balance",
+          "id": "d4c2fc49-6f6a-4df1-8ffd-e30238087015",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2OTYzMjQwMjEsImV4cCI6MTY5NjkyODgyMSwibmJmIjoxNjk2MzI0MDIxLCJqdGkiOiJsazAyYjl6S1FTanV6UXpwIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.7VzA_OgDzuU1Iuf42ed03gCvagZbsKKW87S-OCahG34",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers/order/balance/lk-a2ad98f66a-001657797954",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers",
+                "order",
+                "balance",
+                "lk-a2ad98f66a-001657797954"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Dealers Order Balance Totoal",
+          "id": "eb6ffc39-8014-4f9c-b404-f3d457b573c4",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbi1hcy1kZWFsZXJcLzYiLCJpYXQiOjE3MjgzMDMxOTcsImV4cCI6MTcyODMwNjc5NywibmJmIjoxNzI4MzAzMTk3LCJqdGkiOiJyUTlzbEF0UkhvQVVOMXE0Iiwic3ViIjo0MiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.xOwCQbiFuUKtGyn45dARFCVou6dQXw8e5lfzG6Lwaj0",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers/order/balance/total/9a9463ae-742c-11ef-ace4-0050568e4798",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers",
+                "order",
+                "balance",
+                "total",
+                "9a9463ae-742c-11ef-ace4-0050568e4798"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Dealers Order Update website_comment_by_client",
+          "id": "63a1619a-a434-4617-81aa-aa543d9b3874",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTY5OTMzNDI2MiwiZXhwIjoxNjk5OTM5MDYyLCJuYmYiOjE2OTkzMzQyNjIsImp0aSI6ImFjUlBIZ3FyVHVmcWpnUVYiLCJzdWIiOjE0ODQsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.-f7DHLuFv3IX0P7gdAe8vP0j-gSRJe68wcRGl0dSbRU",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"website_comment\": \"new comment 2\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers/order/website-comment/update/e2d148df-5543-4527-8301-4d0fe0dedaf8",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers",
+                "order",
+                "website-comment",
+                "update",
+                "e2d148df-5543-4527-8301-4d0fe0dedaf8"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Dealers Order Cancel",
+          "id": "c1324f64-94d3-4c9a-b495-e83555cd4c89",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2ODg3MTUyOTgsImV4cCI6MTY4OTMyMDA5OCwibmJmIjoxNjg4NzE1Mjk4LCJqdGkiOiJ3dW5ha1NxQzQ1ek5PUHExIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.58NqmeLLv3I7HibDAwGYgYT-9YWMDragjAdhZLUQdMA",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers/order/cancel/8c55b2a3-b74b-451d-8cb5-94fc1ddbfc4a",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers",
+                "order",
+                "cancel",
+                "8c55b2a3-b74b-451d-8cb5-94fc1ddbfc4a"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Dealers Order Commercial Proposal",
+          "id": "ae49568c-8cc2-4462-bf86-2f3a40c7a355",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NTc4NjkyMTksImV4cCI6MTY1ODQ3NDAxOSwibmJmIjoxNjU3ODY5MjE5LCJqdGkiOiJxVVZTMWpXWDlmQTM5WGNLIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.u7DNcdIQxLX3AC5hTvW1IEWb6wg98xxkp9qtlPAA0t8",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers/order/commercial-proposal/lk-b2f148255b-001657874448",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers",
+                "order",
+                "commercial-proposal",
+                "lk-b2f148255b-001657874448"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Dealers Order Weight And Size Report",
+          "id": "4b124b56-8e91-4e64-9744-de5762cb5788",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2ODMxMDMzOTIsImV4cCI6MTY4MzcwODE5MiwibmJmIjoxNjgzMTAzMzkyLCJqdGkiOiJxcmN1b0Z0bW1kU2Q3clQ2Iiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.87N0h4KOtFyNoODxUa-rOVUMQ6J8losQ_ZMc0BzCMYg",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers/order/weight-size-report/d3874487-080d-11ed-a2c8-e61f13537e43?format=pdf",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers",
+                "order",
+                "weight-size-report",
+                "d3874487-080d-11ed-a2c8-e61f13537e43"
+              ],
+              "query": [
+                {
+                  "key": "format",
+                  "value": "pdf"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Dealers Orders",
+          "id": "bf497a80-dfd7-4e3e-adf2-ee5167e2dce4",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbi1hcy1kZWFsZXJcLzYiLCJpYXQiOjE3NDAwNDQzNTgsImV4cCI6MTc0MDA0Nzk1OCwibmJmIjoxNzQwMDQ0MzU4LCJqdGkiOiJ3M0syTHdsVFpVZ1l4cnJTIiwic3ViIjo0MiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.jQI3jGLIHdsNWQR2qnN2i2OCz5nvEDGnl_BYGl13zpw",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers/orders",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers",
+                "orders"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Dealers Orders New",
+          "id": "121cea68-6b72-4f0d-b1f8-78427e9aa4fa",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4tYXMtZGVhbGVyXC85OTQiLCJpYXQiOjE2OTI2MjEzNjQsImV4cCI6MTY5MjYyNDk2NCwibmJmIjoxNjkyNjIxMzY0LCJqdGkiOiJUb1pBTmYzb2dhZFlQNWZGIiwic3ViIjozNTgsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.CgvrrbAssNEepD9sEXGLPsRS0croZHQPU9jKeKadfOQ",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers/orders/new",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers",
+                "orders",
+                "new"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Dealers Orders Purchase Percentage",
+          "id": "f66c5706-ed20-4832-a3f3-892b30f83db7",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2Nzc4MjAyODcsImV4cCI6MTY3ODQyNTA4NywibmJmIjoxNjc3ODIwMjg3LCJqdGkiOiI4RkhkSmx3Tm14c1VNSko0Iiwic3ViIjo0MiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.lUHOP8BDUI-aPJozsfbLCEcFhPmvfLta3wLAYfN9lCk",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"year\": 2022\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers/orders/purchase-percentage",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers",
+                "orders",
+                "purchase-percentage"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Dealers Orders Download Invoice",
+          "id": "32814a63-a663-4390-9c7a-bf728716179b",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTY1NTkwMDY2MiwiZXhwIjoxNjU2NTA1NDYyLCJuYmYiOjE2NTU5MDA2NjIsImp0aSI6InA4ckhJZWFQeVlDeTVxSk4iLCJzdWIiOjQyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.4gsV4wCdq6SnHtqZh6_HZPFGqzUnWEu9yCwRT0-UVKw",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers/orders/download/invoices/fb7edbcc-de05-4f54-9620-43de29e2d8fc",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers",
+                "orders",
+                "download",
+                "invoices",
+                "fb7edbcc-de05-4f54-9620-43de29e2d8fc"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "86a1c35e-de29-410d-973e-42d6c91d88f8"
+    },
+    {
+      "name": "Categories",
+      "item": [
+        {
+          "name": "Dealers Category Deltas",
+          "id": "3f717349-2917-4fc3-91ce-a033e0bcd3e0",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers/categories/deltas",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers",
+                "categories",
+                "deltas"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Dealers Categories Filter",
+          "id": "14c3565f-7c02-477a-9540-7ecfa5b207eb",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers/filters/categories/1",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers",
+                "filters",
+                "categories",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Dealers Categories Filter Copy",
+          "id": "1eeccbf0-d344-4db0-bcc0-e19996fd7a77",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers-lk/filters/categories/1",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers-lk",
+                "filters",
+                "categories",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Dealers Categories Filter Copy",
+          "id": "48ec61b6-a1d7-434f-ba5b-fb73fefd2a74",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers/filters/categories/1",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers",
+                "filters",
+                "categories",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "9a0854eb-2941-4596-a703-327b6e9b21b6"
+    },
+    {
+      "name": "Nomenclature",
+      "item": [
+        {
+          "name": "Nomenclature with Personal Prices Export Exel Download",
+          "id": "a63631a4-84f7-45a3-b6b6-d289db8727c4",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NTc2MDc0NTIsImV4cCI6MTY1ODIxMjI1MiwibmJmIjoxNjU3NjA3NDUyLCJqdGkiOiJ0bEJ0ZEF0NktQU080NTl6Iiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.kQu57mY_c7GxBCgCv5nBJNp94E16YE8OEMTWYQ0xZ-0",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers/nomenclature/download-excel",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers",
+                "nomenclature",
+                "download-excel"
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "2c708a5b-f25a-4553-852a-50a2ffc7cf7a",
+              "name": "Nomenclature with Personal Prices Export Exel Download",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{base_url_local}}/api/dealers/nomenclature/download-excel",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "dealers",
+                    "nomenclature",
+                    "download-excel"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "xml",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Sun, 03 Sep 2023 09:53:01 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Authorization"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "public"
+                },
+                {
+                  "key": "Last-Modified",
+                  "value": "Sun, 03 Sep 2023 09:53:04 GMT"
+                },
+                {
+                  "key": "Content-Disposition",
+                  "value": "attachment; filename=\"Prais-list Torgovogo Dizaina dlya  ot 03.09.2023 09-53.xlsx\"; filename*=utf-8''%D0%9F%D1%80%D0%B0%D0%B9%D1%81-%D0%BB%D0%B8%D1%81%D1%82%20%D0%A2%D0%BE%D1%80%D0%B3%D0%BE%D0%B2%D0%BE%D0%B3%D0%BE%20%D0%94%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%D0%B0%20%D0%B4%D0%BB%D1%8F%20%20%D0%BE%D1%82%2003.09.2023%2009-53.xlsx"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "7825"
+                },
+                {
+                  "key": "Accept-Ranges",
+                  "value": "bytes"
+                },
+                {
+                  "key": "X-RateLimit-Limit",
+                  "value": "600"
+                },
+                {
+                  "key": "X-RateLimit-Remaining",
+                  "value": "599"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=120, max=995"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+                }
+              ],
+              "cookie": [],
+              "body": "PK\u0003\u0004\u0014\u0000\u0000\u0000\b\u0000�N#WG�D�Z\u0001\u0000\u0000�\u0004\u0000\u0000\u0013\u0000\u0000\u0000[Content_Types].xml���N�0\u0010E�|E�-J��@\b5��\u0012*Q>`�'�UǶl���L����@�nbE�gr=��tW�d�>(k\n6�r��\u0011V*�,���)�cI�`$hk�`{\fl:�\u001a/�\u000eCBb\u0013\nV���9\u000f��\u001aBf\u001d\u001a�RZ_C�W��\u000e�\n��o���\u000bk\"���ƃM�/��Jb2\u0007\u001f��&\f�i\u001e�\r��(#?�\n<t]0pN+\u0001�\n�\u001b#QS[�J��b]�$km�\u001b\u0017~\u0012\u0018�^c\u0018�\n�#�P!�Zg��<�\u0012�:&�;r�2���y�C�\u0019)�=�R����C�u��A�~�aK��\u0013���ջ��K�ެY\r��\u001d:��޺�\t5�\u0000l��(SG���:�^��\u001eχ\u001f��Q��xH��&�v\u0019>X?c���k�*�(_�����}�>���\u000bk�\u0001PK\u0003\u0004\u0014\u0000\u0000\u0000\b\u0000�N#W\u0017�78�\u0000\u0000\u0000K\u0002\u0000\u0000\u000b\u0000\u0000\u0000_rels/.rels���j�0\f��{\n�{���1F�^ʠ�2�\u0007�l�$���-}�y��\u0005��Î��O��v�y\u001a�;�؋Ӱ.JP��޵\u001a^��\u0003���Y\u001aű�3G�Ww�g\u001e)���>�\fqQC��D���b!�]�i$L��3���\f�2n��\u001e�o\u0006T\u000b�:Z\r�h����[��4�ი��]��\u0002yN�,ە\u000f�>�>\u000f�j\n-'\rV�)�#��EF\u0003^6��n���8q\"K��H��>_\u0019ׄ����eƏ�<⇄�Ud�v��\rT�PK\u0003\u0004\u0014\u0000\u0000\u0000\b\u0000�N#W�$�V�\u0000\u0000\u0000�\u0002\u0000\u0000\u001a\u0000\u0000\u0000xl/_rels/workbook.xml.rels���j�0\u0010D��\n��ZvZJ)�s)�\\[�\u0003���LlIh7m��U\u001bH\u001c\b�\u0007�Ĭؙ�H���8�OL�\u0007��*J\u0010�M���\u0014|4��g\u0010��[=\u0004�\n&$��w�7\u001c4�\u001dr}$�M<)p��EJ2\u000eGME���M\u001bҨ9��ɨ�^w(We�$��\u0003�\u000bO��\n��V �)��C��\u0006_�9���J�$���/\u001a�:d\u0005G]d\u001f���WK�s��s��<\u000e�[\f\u000f�V�tB��)?���\u0016��0_!��!�\u0019�4�E�ǩ\u0019y���\u001fPK\u0003\u0004\u0014\u0000\u0000\u0000\b\u0000�N#W\u0019�\t��\u0001\u0000\u0000,\u0003\u0000\u0000\u0010\u0000\u0000\u0000docProps/app.xml�R�n�0\f��+\f�\u001b9�0\f��bH6��n\u0001�vgN�c��d�����';��;M��Ǉ�'���Ժ��H6�B,\u0017��ЛPY(�S���Ȉ�W���B��Ľ��v1t\u0018�\"e��S!\u001a�n-%�\u0006[�Ej�ԩCl�S\u0019\u000f2Ե5�\r�آg���O\u0012O���ꮛ\f��q����V�\f��\n    <w�O�/]�\u0001N�ԏ��@����ɠSr�T�h��\u0018-�u��T{\u0003\u000e7�X��\b�|%�\u0003�0�\u001d�HZ����p�\u0019�?ij+��\u0006�!N!z�\u0016<���R��u�Q�\n�\u001aD&%'r�s�\u001cۏz9\n\u0012�\u0015�)H·\u0011K�\u000e�g����H��'\u001e3�Y�\u001f!\r�8�cĬܾ\u000bz���%��v��$�\u001e��\u0001\u0007턾[�BO]\u0019��x\u001d�-��\rD���L_1\u0011�!e�n�o\u001a�\u0007�����a1�/˯��E�θ\u000fWN��=�\u0001PK\u0003\u0004\u0014\u0000\u0000\u0000\b\u0000�N#W\b��`q\u0001\u0000\u0000\f\u0003\u0000\u0000\u0011\u0000\u0000\u0000docProps/core.xml��QO�0\u0014���\u0015�����h�0��ٓ3&��km��\u000eڦ�\u0013��\u0016�ئ��x8��{\u000f7��U�\t�+�gd:a$\u0002-�T�����\"�\"�G�%���\u0019i��yq�\u000b�\t���\u0019\u000b\u000e\u0015�(��τ��5��(�b\r5�����|7��\u0018�+��b�K�\tc��\u0006�#�\u001d0�#��R�H�uU\u000f��B\u00055h�t:��C\u0016����\u0017z�(Y+l-�\u0019ݛc�˫1�4ͤI�h�J_��O����]U\u0002H�K�\t\u0007\u001c�+��F�FG������Xq�����\u0002y������5\u0007\f�(��\r�읗��n� E4f�1KW�:�H3��3�1֍q\u00029P�ݗ���S�.Pa\u0005Ń\tLT\u001c�\u000e��]���t\u0019\t^8e1\\b�['\u000f��۷\u000f\u00108��\b�l�m�����:��H�j�q�`�P'\u0007\\|\u0003PK\u0003\u0004\u0014\u0000\u0000\u0000\b\u0000�N#Ws�{Y�\u0005\u0000\u0000�\u001b\u0000\u0000\u0013\u0000\u0000\u0000xl/theme/theme1.xml�YOo�6\u0014��S\u0010���l)u�:E��햦\r\u0012�C��DK�)Q 餾\r�q��aݰˀ�v\u0018�\u0015h�]�O����\u0001�\n{�c���4i3lC�-������Q�z�A��!\u0011��c9�\u001b\u0016\"��\u0003��\u001d��pp�m!�p\u0012`�\u0013ұfDZ�6?��7TDb��<�\u001b�cEJ�\u001b�-}���2OI\u0002kc.b�`(B;\u0010�\b���n6\u001akv�ib�\u0004����xL}��\u0019Kksμ��+Q2��8�s�:E�\r&N�#g��\u0004:Ĭc���\u001f\r�\u0003e!�������?��y�^\u00101UC��\r�OIW\u0012\u0004�fN'�т�\u0019��W�\u0017��\u0005�U\\�����\u0005�\u001c�}\u001f,uV���t�\n        <5P�ʻ��\u001an\u0015��o��׻ݮ�^���xw\u0005�n��[�\n�]�U��[��Z\u0005�-�k+����5���A\u0011��d\u0005��s\u0011�\u0005d��\r#�\r��|\u0003,Q���\n�D���\u0018��b\u0000�<�X�\u0004�YJ��\u0007\\\u000f�#Aq&\u0000o\u0010��\u0014S�\\��d!�\u000b����Q�!#��W�x��)z�����g�\u000f>~����O\u0006�\u001b8\tu�}��7��?�~���f�����鯿|a\u0006*\u001d��'�?{��������\u0001�%�H�\u000fiL$�E��>��6�\u00002\u0012�\u0018F�V(p\u0004H\u0003���\n��\f3\u0013�K�λ+�\u0000��ק�+�\u001eDb��\u0001�\u0013�\u0015�.�˅ќ�L�n�4\t���T��c|h��;\u0011��4��LM,{\u0011���� �8$\tQ([�\u0013B\fd�(��u���K>V�\u001eE]L�.\u0019ґ2\u0013ݠ1�efR\u0010B]���]����~�\u001cV��\u0010��X\u0012Vq�u\n            <U86j�c�#ob\u0015��<�\t��p� �!a\u001c�\u0003\"��涘U���P��a�e���\u0014�NLț�s\u001d��'�\bǩQg�D:�C9�-��\u001eWF%x5C�1�\u0001'��K�:_Zߡad� ��T�R��j>��\u0018����J\u001d�䴲�(���e{\u000e߂C̔<'�u\u001d�X���4�#�\u0015�+��\n�.V�\\����,Ŷ�k�l���{L\u0019;P3Fnʼ�K0/\u0018�d>ȉ\u0016}~\u001a�c)��\u000b\u0005Ο���c���\b� ��%��d\u001dJ�r\t�\u000b��w~E�`s>���j�\u0007�tK�o.��P�Z\u0019��\nk]y;aN\u0001<�4�3K�N�fkބ�A8{��5\u000bѰQ0#A����<,\u0017\u001e\"\u0019န1r��8�3���z�i��[o'�,A�Ź5�\u000b�Rc%J�j:��:BG����,��c����8\u0005~2+U��I��Ui�k�����m�4j\r��H�T�XF\u0005U�4\u001d�,�ozn懋1�P�ΦE����Z�'CK�c⫚��\\�SE�A\u0014\u001c�\u0011��}\fz���\n����9\u001f\b�P��x��/���k�2;0K#\\֤�\u0016�\u0002�?/t�G�zv��ohJ�\u0002M��]S��\u000b\rn+ȯ^�\u0006\b��=ڱ�P\u0011�*�F�\u001f\bh\u001crY�\u0017���TB,{���J\u000e�u��Q\u0014�0R�4D�B�S� dO�v�������9���,ԕi�;\"��\r��]��P4�&�#r�ɠ٦�\u001a���p���t>��\u0007KA�yz\u0011W+��Q��v*��m�-nzg>jS����\u000b\n7\u0015>[��C�\u000f�G��\u0012�F��.�o19\u0002�ۚq\u0019���Z��]\u0013�l>5g�j�}��7w�g�w����\u0014���L>Z�3����m�\u001fM���{�\u0007p)����\u0000>��t�oPK\u0003\u0004\u0014\u0000\u0000\u0000\b\u0000�N#W���G�\u0002\u0000\u0000}\u0005\u0000\u0000\u0014\u0000\u0000\u0000xl/sharedStrings.xml}T]O�P\u0018��W�4j ��\u001b� n�Bc�\u0017�}\u0003\u0015��v�\u001d�;�\u0005��\u0000*FC&\\y1��ѱ�\u0017��\u0017�%>��\u0012����Y�y���y��2���$V�fX\u000b��Q2mCx�\\0_�\u0017�ƫ��&�\r\u0011F�?�.\u0005�W5�y�1�ܩ�a$P�Uc1�\u001a3�\u0015�-zu74���#�&h��\b��\u00156��;\u001f.z^T_�ʶ�Ъ�5�\u0010-����\u0004-?�\u001aS��TS�\u001c:��\u0006r]�\u000eeԥ\u000b�|�\u0001u�=eڏ̲]��X�S��dT�\u0019Y\u001d\u0019�U.�ӣKA\u0019�Ve[�)��妌�>�\u0007�=]��(������(���\\�\b3aÝ�6`\u0019z�\u0015�p�\u0000\u0010�t)ۓԧ�l��\u0004÷\u0000��@\u0019��3E3\u0006\u0018��6��˭ zL?h��3ԝ�uf�\u0003b,�%\r�\u0014]\b\u0001-Fl�+ׄ|ϣL-��H�Ģ=\f�R�\f����a�Z�>��8�3-z\u0004��t�7A��\u0016?Ą\u000bJ��T��\u0014t\r��=�~\u0004ͬ\u0000�6�\u0019s\f��k�/�v��\u001a�*�X;�\r\u000b�\u001d���n�k�ĻZ��9�\u0014=����I!۹J�L\b:\u0010�\u0013�\r�j-ʱ\u0013b��߀ �.7N�\f'r\u001d�7\u0014aeG�\u000fx7�MA{<\u0002�0&Ǖ #��\u0002ǧl�\u0001w�Q���ٸ���\u001e\u0018�)�)F���`��\n\u0015\u0002q�D���M�Ev�\u000fR6'r���e���WJ4/�~�B�=ա\u001f�[�n�ˤ`w�%�.��!�c��;v\u0003c����-�z|K�\u001b_S��3�Jx�����c\u0016�?�?PK\u0003\u0004\u0014\u0000\u0000\u0000\b\u0000�N#W�$�B�\u0002\u0000\u0000�\u0010\u0000\u0000\r\u0000\u0000\u0000xl/styles.xml�X]o�0\u0014}߯���\u0012�\u000f�\u0015Pu����jZ3i�\u0006.`���6Y�_?�@�dK�tSۼp���9\u001cs}e'�Y4\f�A**x�Ó\tF�sQP^���,}��҄\u0017�\t\u000e1^��7ɻH�%��\u001a@#�p�Z���V�\u00029\u0007l�\\Ÿֺ�\u000e\u0002���\u0010u\"Z�f�\u0014�!ڸ�\n��C\ne�\u001a\u0016L'���!��$�]�6Z�\\t\\�x��$*\u0005\u001f\"��\u0007�(Cs��\u0014:����\u0001F����hq��\u000fC��\t�d��8M'�gÜ4=�G�h&�\r\u0006��8��{��JJ�.�p�\u001d\u001e�}zq\\�����?�_�\u0015�{(�\u000e��u%N�\u000f$QK�\u0006�S�ޞ-[\u0018�\u0003����J�e8=\u001fMp\u000fÛ\tY��:f��`e$\u0011�R#�Cc�k��v�\flj\u0012IZ���p�I�E��\u0004�i_Mk��9�';�\u000b�\r#?\u0007��-��r�\u0006��Z����O����~��i\u0016�7=�w,�\u0018�c�a{�E�+�&�v\u0002Dږ-Sᛗ��&\u0003���7�1\u0000���a\f�-�\u0015o��$\u0011Y��\u0016�>\u001ax[�\u0015p��Pm/�4�!��\u0018iX�B\u0013�Z�A�!I;3�\u0018��)ӬU-)����cvu\u0016�v�������\u000f\u000f�o��\u0019�O߲�ӷ,���}nr@>���\u0013�/��]�1�g��~���\u000f�����^�����~g��#����\u0012��j{�B}�\u001f�G��3�:���(�wV�ـ�%�:�4�[��\u0006�X��wyM2\u0006=K\u0001%阞�C1\u001e��PЮ1��g}�s��,g\u000f��2\u0018\fN$?\u0001PK\u0003\u0004\u0014\u0000\u0000\u0000\b\u0000�N#W�H99�\u0001\u0000\u0000�\u0002\u0000\u0000\u000f\u0000\u0000\u0000xl/workbook.xml��_o\u00131\f���\u0014Q��uh���u\u0012+�I0\u0010+�9��v֒8�s��O��ka�Ľ8�o�|��G��\u000e\u0012#�V��̴�`��p��\u001f���Zq6�3�\u0002��\tX_._-��\u001e�D\u000fJ��\u001c�\u0015_L��v��1p����i�\u000e�\r�P� ���7Y�t߰䘎\u0007��]�f6�h��p�0O�S��\u001e-�Ȏ\u001eB��$p&�J<`d�\\���n�R�\u0018o��y\u001f�V�p��a���g��\u001e�2�1�\u001f�\u0015�|v����Ϳ%%�`*�\u0019�\u001e\u001c%��;�=��/�26�\u000e6f�j!m�Lkt\u0019��d��h��{N�@�1q�-hj�ǀ\u001e��\\�q,\u0001<��\u0013%|�������;&\u0017_͕^��(\u00142�ó�~/�Z}1�^;dܢ�����vP�j^�Uov�*T\n7$\u0017�B~L�6��P��2񩐜�<�uwVK\u001d�;�1@W0��e2[Ȋ(y�ꧫ�Eh��0��+��A=��܏�]��k�Lf�(?����^,���\u001c�_PK\u0003\u0004\u0014\u0000\u0000\u0000\b\u0000�N#W��#BH\u0006\u0000\u0000[\u0019\u0000\u0000\u0018\u0000\u0000\u0000xl/worksheets/sheet1.xml�Y]w�8\u0010}�_����o��=m\u0012'i�:M�į\nȶ6�X!�I����X�g]^\u001atg�jf\u0018i�t��G\u001cY;�2B���^�l\u000b'\u0001\rI�\u001e�ϋ闁me\u001c%!�h���'��'����g\u001b��\u0005\u0004~��\u0000�)�\u0019f;l\u000b0������w�,��\u0018e\u00174�\tHV�ňÒ��\flP(����Z��\u0013#�(\u0006���AW+\u0012�+\u001alc���\bq�)ې4+�>³�B��\u0010�O�ū\\R�\u001a_L\u0002F3��\u0017\u0001��k�(���(Ώ�<\"�\u0011`C�����b�޷�\u0017�K!7o$\"�Sr�V\u001c�w�2�\u0016�{��PP\t\u0012���\u000f\u0013�&#�=�ɈnyD\u0012���l\u001b�C��pD�Pyv\u0001<���\u000b�����.$�nE�Z\f���W�_�REj�\u0010��*�\u0016GoO8�\u0001ǡ�\u0016��F�\u0010�\u0001\u0004e�m����p\u0006�@�r��9�H��4��H�X\b��(E\t�>�R����l��t�W�\u0012G\u0011�Ҷ-\u0014p��\u000fH\u001c�7�9��\\\u001e\u001d\u000eЊ��8��J�D\u001ciM9'Q��p�_\u0015l���)C�>\u0017�O�ˆ܆x��\u0011�Hn�Jg�c[*�3��ѣH{�\u0018��\u0005\u0006\u001b\u00054��VL\u0012��\u0018}�$!ߌ�N׶�m\u0006ο�J �\u0014\u0015�*���S�^i\rќm�V��F�\u001de�id�U��F�=e�;Xwη�+�~#끲\u001e4�\u001e*�a#kQ�y���ٗ��6�/\n����\u0017%綛�\u0017E�v��\u0017e�\u001e��\u0007�Eݹ��k��}Qyn��}Q{}Q}�W���jf_���6�/�f��\u0015�絛�_��w(����;���� �&#F�\u0016�{3t+�\u000b}���\u0004�U�R\b�%\u0003t7i����Q\u001a�BC�\u0003WI�\t�\u001a�{L����\u001dk\\�5ښS�\t��f��Rݫ\u0010v4��\t�p�9��5�ߕ����]m��\t�pړ�=Y1\u0002x́n\t<��B\u0007^t`�;�C�\u001cT_�w*A�����u/���:�Ё\u0017\u001dX�Ox90gj��0�}Ё�\u000e���rp�ه���P�A\u0007\u0016:�\u0003��\t\u001f�7g�\tuc�ߐ�%��{�+�%���\u0017�׎�R\u0019TT\u0006ڙ5�\f�U�\f*�v�\\�t�\u000bd�t�U\u001d�\n�1�h�ȭIG�\u0017�L:���n�ю�\u000f����IGK�IG��O����yn����`������)k[!���LK��A���:�\\#1�k��f�4Erx���������㔧�����!W5了L\u00152,����m\r��!�kȏ\u001a2�!�5�g\r�א�\u0012�d��׌AG;\u000b�J��E\u000f�*2)i�-�Jڑy>å�sv{=�hY�Z^{N�{MMK(W#\u0006�\u001e�+\u0014e�G��\u0001<+�Y�\u0013�\b= ��H\f j\u0018��q���t�H�aVS�Q���g�YD��� �\u0011�Xg��#�|�2��;\u000e���(;\u0004���NI�1+���(_�)����Du>�r��Z�d�ʳU�e��s\u0019M\u0002]��f�@��/�\u0012�q��Q\u0002�Ϳ6J���S�\u0004��c�@��o�\u0012�X��Q\u0002}��n�@w�\u0018%Г��Q\u0002�ȿ7J���?�\u0012�:��(�^��ʯ~M\u0002��6J�\u0019��Fɲ2k�������S9R�և����\u0012y\u0012\u0007N��r��p��\u0011[C�[\u0011^��u\u0001�J,�\u0007��T>�G|>\n,V\u001b9\u0014��8n�\u0017\u000b�\u000b\u001bmS+Ep���o�\u001b΢���˹��V3@qΑ��ׂ�gE��V\u001a�\\�_��\u0014�s&�\r�>Ylp2�a&����JG���V��^�0����pX\u000b����W�\u001ap���\u0015\r���(\"�D`*C\n��h\u0018��Wx\u0005�gx�w���\u0019���zu!�K��b%\\+M�VrQ\u001a\u001d��\t����C\u001e\u0010�\u0015�m����)�_d�\u001fPK\u0003\u0004\u0014\u0000\u0000\u0000\b\u0000�N#W�KR\"x\u0000\u0000\u0000�\u0000\u0000\u0000#\u0000\u0000\u0000xl/worksheets/_rels/sheet1.xml.relsM�1\u000e\u0002!\u0010\u0000{_A��@\u000bc�q��\u0000�\u000f�p+\u0010a!,1�{)-'��y����$\u0016�p�\f(bW�����~ݟAIG�0\u0015&\u000b_\u0012X��|��}4\u0012b\u00155&,\u0016B�����@\u0019e*�x�gi\u0019���uE�BO�h�I��\u0007��\u0007PK\u0001\u0002\u0003\u0006\u0014\u0000\u0000\u0000\b\u0000�N#WG�D�Z\u0001\u0000\u0000�\u0004\u0000\u0000\u0013\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000 \u0000\u0000\u0000\u0000\u0000\u0000\u0000[Content_Types].xmlPK\u0001\u0002\u0003\u0006\u0014\u0000\u0000\u0000\b\u0000�N#W\u0017�78�\u0000\u0000\u0000K\u0002\u0000\u0000\u000b\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000 \u0000\u0000\u0000�\u0001\u0000\u0000_rels/.relsPK\u0001\u0002\u0003\u0006\u0014\u0000\u0000\u0000\b\u0000�N#W�$�V�\u0000\u0000\u0000�\u0002\u0000\u0000\u001a\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000 \u0000\u0000\u0000�\u0002\u0000\u0000xl/_rels/workbook.xml.relsPK\u0001\u0002\u0003\u0006\u0014\u0000\u0000\u0000\b\u0000�N#W\u0019�\t��\u0001\u0000\u0000,\u0003\u0000\u0000\u0010\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000 \u0000\u0000\u0000�\u0003\u0000\u0000docProps/app.xmlPK\u0001\u0002\u0003\u0006\u0014\u0000\u0000\u0000\b\u0000�N#W\b��`q\u0001\u0000\u0000\f\u0003\u0000\u0000\u0011\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000 \u0000\u0000\u0000s\u0005\u0000\u0000docProps/core.xmlPK\u0001\u0002\u0003\u0006\u0014\u0000\u0000\u0000\b\u0000�N#Ws�{Y�\u0005\u0000\u0000�\u001b\u0000\u0000\u0013\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000 \u0000\u0000\u0000\u0013\u0007\u0000\u0000xl/theme/theme1.xmlPK\u0001\u0002\u0003\u0006\u0014\u0000\u0000\u0000\b\u0000�N#W���G�\u0002\u0000\u0000}\u0005\u0000\u0000\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000 \u0000\u0000\u0000�\f\u0000\u0000xl/sharedStrings.xmlPK\u0001\u0002\u0003\u0006\u0014\u0000\u0000\u0000\b\u0000�N#W�$�B�\u0002\u0000\u0000�\u0010\u0000\u0000\r\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000 \u0000\u0000\u0000�\u000f\u0000\u0000xl/styles.xmlPK\u0001\u0002\u0003\u0006\u0014\u0000\u0000\u0000\b\u0000�N#W�H99�\u0001\u0000\u0000�\u0002\u0000\u0000\u000f\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000 \u0000\u0000\u0000�\u0012\u0000\u0000xl/workbook.xmlPK\u0001\u0002\u0003\u0006\u0014\u0000\u0000\u0000\b\u0000�N#W��#BH\u0006\u0000\u0000[\u0019\u0000\u0000\u0018\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000 \u0000\u0000\u0000s\u0014\u0000\u0000xl/worksheets/sheet1.xmlPK\u0001\u0002\u0003\u0006\u0014\u0000\u0000\u0000\b\u0000�N#W�KR\"x\u0000\u0000\u0000�\u0000\u0000\u0000#\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000 \u0000\u0000\u0000�\u001a\u0000\u0000xl/worksheets/_rels/sheet1.xml.relsPK\u0005\u0006\u0000\u0000\u0000\u0000\u000b\u0000\u000b\u0000�\u0002\u0000\u0000�\u001b\u0000\u0000\u0000\u0000"
+            }
+          ]
+        }
+      ],
+      "id": "2bf48ea2-d920-4b6c-8ef6-906d6fe0b62d"
+    },
+    {
+      "name": "Realizations",
+      "item": [
+        {
+          "name": "Dealers Realizations",
+          "id": "90be72be-2d08-4912-b91f-70e805c38bd1",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NDQ0Njk5NTgsImV4cCI6MTY0NTA3NDc1OCwibmJmIjoxNjQ0NDY5OTU4LCJqdGkiOiJ0UEZHNjY3Tzh4OWlSYWhEIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.UvGDzraPYMZSI3htNf12mqY2IFCfeX3CC_12gwAjWDA",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers/realizations",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers",
+                "realizations"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Dealers Realizations Weight Size Report",
+          "id": "53cf0729-65ad-49db-9f40-7ca6ae3d1fce",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2ODUwMTMwMTcsImV4cCI6MTY4NTYxNzgxNywibmJmIjoxNjg1MDEzMDE3LCJqdGkiOiJ2MUN4QVBRaHBqckIxRHkyIiwic3ViIjoxMDIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.Qt_QQe0q3f4H2ibWJz3kjCSPaC5LDz8gUnw5_qDb9y8",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers/realization/weight-size-report/1e6b71a4-8747-11ed-96ae-e61f13537e43?format=pdf",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers",
+                "realization",
+                "weight-size-report",
+                "1e6b71a4-8747-11ed-96ae-e61f13537e43"
+              ],
+              "query": [
+                {
+                  "key": "format",
+                  "value": "pdf"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Dealers Realizations Download",
+          "id": "fb24a6f4-cb30-4de9-ae83-e83fffba80b1",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NjEzMzc0NzAsImV4cCI6MTY2MTk0MjI3MCwibmJmIjoxNjYxMzM3NDcwLCJqdGkiOiIxa2hpOGo3ZUZmd0JQU1BuIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Fxj-SuJonz0eLfbpLQRBolZ79ZDjAJbpJ8fg8hO0p68",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers/realizations/download/b611a577-822f-11eb-a190-e61f13537e43_Реализация товаров и услуг К_В_220819_00076 от 1908202_ТОРГ12.pdf",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers",
+                "realizations",
+                "download",
+                "b611a577-822f-11eb-a190-e61f13537e43_Реализация товаров и услуг К_В_220819_00076 от 1908202_ТОРГ12.pdf"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "c898f6f7-bf08-495d-be4f-c5d7a023ee9a"
+    },
+    {
+      "name": "Brands",
+      "item": [
+        {
+          "name": "Dealers Brands Filter",
+          "id": "dd4009b2-792d-4abd-911e-10498f242da6",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers/filters/brands",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers",
+                "filters",
+                "brands"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "7c768130-f92d-4854-901f-10a3e778daeb"
+    },
+    {
+      "name": "Countries",
+      "item": [
+        {
+          "name": "Dealers Countries Filter",
+          "id": "e4ee4c8c-218c-4582-850a-d88be6444252",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers/filters/countries",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers",
+                "filters",
+                "countries"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "dbb22eb1-1a40-44d8-8311-a64ffd6ef001"
+    },
+    {
+      "name": "Payments",
+      "item": [
+        {
+          "name": "Dealers Payments",
+          "id": "2502f673-9485-4eb8-8f97-999e691d3f76",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2NzU4NDU1MjYsImV4cCI6MTY3NjQ1MDMyNiwibmJmIjoxNjc1ODQ1NTI2LCJqdGkiOiJYVGt6R0lHV3pTbXFGWERNIiwic3ViIjoxMDIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.bk-gl4fGsJMmgYGfnxcvYkUJSyAqyK-IsgoFsyEwMNk",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers/payments?is_from_utd=false",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers",
+                "payments"
+              ],
+              "query": [
+                {
+                  "key": "is_from_utd",
+                  "value": "false"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Dealers Payment",
+          "id": "c3eef69e-2f27-4993-a748-53e4fd08a875",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NzIzOTUxODcsImV4cCI6MTY3Mjk5OTk4NywibmJmIjoxNjcyMzk1MTg3LCJqdGkiOiJnbU5rOW1pTUdISkJyenlwIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.vaM0QDzRqPueIY-0VfG_BFjqjoeaul9KnCRA7U9cwiE",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers/payment/390d49e9-5b59-11ed-a553-e61f13537e43",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers",
+                "payment",
+                "390d49e9-5b59-11ed-a553-e61f13537e43"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "b6e2f5a1-a04e-4de3-9725-af411d417c65"
+    },
+    {
+      "name": "Counterparties Contacts",
+      "item": [
+        {
+          "name": "Dealers Counterparties Contacts Adresses",
+          "id": "9ef06060-f49a-4c24-8dc4-7d616a2d1eb9",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvY3JlYXRlLWRldmVsb3Blci10b2tlbiIsImlhdCI6MTY5OTg1MzUwNCwiZXhwIjoyMDE1MjEzNTA0LCJuYmYiOjE2OTk4NTM1MDQsImp0aSI6Ims2YjNxTktZc2FrcUZCNzEiLCJzdWIiOjQyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwiZGV2ZWxvcGVyIjp0cnVlfQ.xZt7v4Gu4Tt9MwyQYJM7oWh3JWurW81hiaSWTuNieTM",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers/counterparties/addresses",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers",
+                "counterparties",
+                "addresses"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "c286697c-1844-4598-8eee-6f63d4cc64a6"
+    },
+    {
+      "name": "Brand Lines",
+      "item": [
+        {
+          "name": "Dealers Brand Lines Filter",
+          "id": "04f8e8e5-876d-48f5-8448-a1e9fe41f3a8",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers/filters/brand-lines?nomenclature_groups[]=e8bba961-9cad-11ed-9248-e61f13537e43&warehouses[]=Москва&price_from=500&price_to=3000&is_equipment=false&page=1&per_page=15&countries[]=b940453a-956d-11df-b3e0-e61f135382c7",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers",
+                "filters",
+                "brand-lines"
+              ],
+              "query": [
+                {
+                  "key": "nomenclature_groups[]",
+                  "value": "e8bba961-9cad-11ed-9248-e61f13537e43"
+                },
+                {
+                  "key": "warehouses[]",
+                  "value": "Москва"
+                },
+                {
+                  "key": "price_from",
+                  "value": "500"
+                },
+                {
+                  "key": "price_to",
+                  "value": "3000"
+                },
+                {
+                  "key": "is_equipment",
+                  "value": "false"
+                },
+                {
+                  "key": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "per_page",
+                  "value": "15"
+                },
+                {
+                  "key": "countries[]",
+                  "value": "b940453a-956d-11df-b3e0-e61f135382c7"
+                },
+                {
+                  "key": "search_elastic",
+                  "value": "madera",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "afba9306-6db2-4d4e-9864-c39d6d424e8d"
+    },
+    {
+      "name": "Properties TD",
+      "item": [
+        {
+          "name": "Dealers Properties TD Filter",
+          "id": "581fbb9d-69e6-4e51-ace8-690e975c8542",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/dealers/filters/properties-td",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "dealers",
+                "filters",
+                "properties-td"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "084d81b8-ffb9-4209-b855-0217eeeeb7f2"
+    },
+    {
+      "name": "Dealers",
+      "id": "90ee9684-6f48-4493-a224-646d8018b640",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NDA2NzgyMjUsImV4cCI6MTY0MDc2NDYyNSwibmJmIjoxNjQwNjc4MjI1LCJqdGkiOiJ1NE9QRTR5dHpMTUhqQ1N5Iiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.lnnBcK3yvCh4Y3z18ONI-hb0FrOTRd1J-9EuwmKO1QI",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/dealers/counterparties",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "dealers",
+            "counterparties"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Dealers Head Counterparties",
+      "id": "f0a00ed0-b145-415c-92d8-95526d13e0b6",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2Mzk3NDEyOTIsImV4cCI6MTYzOTgyNzY5MiwibmJmIjoxNjM5NzQxMjkyLCJqdGkiOiJTdVJNcjBWYkVGczhUNnZpIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.3Nz8hpU0ANoIfUQWTWcz9XXmMI-As8iz0l--fldtTMs",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/counterparties/head-counterparties",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "counterparties",
+            "head-counterparties"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Dealers Statistics For The MOnth",
+      "id": "8a47be0a-3913-419c-b5ff-4421d9390c2d",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzkzNzYyOTAsImV4cCI6MTYzOTQ2MjY5MCwibmJmIjoxNjM5Mzc2MjkwLCJqdGkiOiJMalk3MmNKbkFYOXNBYUJ4Iiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.L2H-aY8pMsLJHHhrhmXXUysbL5-U0qsmyFBFE6hu8No",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/dealers/orders/statistics/year",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "dealers",
+            "orders",
+            "statistics",
+            "year"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Managers",
+      "id": "82f28da1-2655-4435-8f40-8e242f0d69d1",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbi1hcy1kZWFsZXJcLzYiLCJpYXQiOjE3NTQ5OTM0MzksImV4cCI6MTc1NDk5NzAzOSwibmJmIjoxNzU0OTkzNDM5LCJqdGkiOiJKWXVOd3NJTXdFWjdrRFZ5Iiwic3ViIjo0MiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.xskIwG-WdO4Ih_O58CvdAPY1ZfNtkyo0iFI6d-TuL2I",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/dealers-lk/ka-managers",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "dealers-lk",
+            "ka-managers"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Claims Orders",
+      "id": "35b892e6-4d1e-4333-9bc7-2ab788e5e371",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzY0NDk3NTYsImV4cCI6MTYzNjUzNjE1NiwibmJmIjoxNjM2NDQ5NzU2LCJqdGkiOiJmMUpCQ013Q0tCWTBlaGRBIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.xkpvDiQeyTlnfcnSTsYESs9QDp1SHYB1INIEYDkBBs8",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/claims/orders-by-counterparties?number=К/В/99200",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "claims",
+            "orders-by-counterparties"
+          ],
+          "query": [
+            {
+              "key": "number",
+              "value": "К/В/99200"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Claims Orders By Number",
+      "id": "588654d9-7122-40a2-8a93-76efd72660e3",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzU4MzE1MzcsImV4cCI6MTYzNTkxNzkzNywibmJmIjoxNjM1ODMxNTM3LCJqdGkiOiJXUDZHaU42UkY1N1Q5MVNKIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.z7xzY1-b4nkdiV3aHxDwvTjTooXp8rvqAXxwCAUjCcc",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/claims/orders-by-number?number=К/Э/110818/00129&year=2011",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "claims",
+            "orders-by-number"
+          ],
+          "query": [
+            {
+              "key": "number",
+              "value": "К/Э/110818/00129"
+            },
+            {
+              "key": "year",
+              "value": "2011"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

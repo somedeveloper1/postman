@@ -1,0 +1,182 @@
+{
+  "info": {
+    "_postman_id": "e09bea70-3a0f-4069-ae6b-cd1b2c456925",
+    "name": "Files",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Upload Document",
+      "id": "c44eab6d-78a2-4386-900f-b2d32e967ecf",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "file",
+              "type": "file",
+              "src": "/C:/Users/Юлия/Downloads/Telegram Desktop/response (2).xml"
+            },
+            {
+              "key": "upload_token",
+              "value": "WAPwDzMhNAJkboJelBrcKwIlthMPdgAeVUJb",
+              "type": "text"
+            }
+          ]
+        },
+        "url": "{{base_url_local}}/api/upload/document"
+      },
+      "response": []
+    },
+    {
+      "name": "Upload Document Test",
+      "id": "27c80f0f-2b16-43ff-a5b0-226adc09bda8",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "file",
+              "type": "file",
+              "src": "/C:/Users/Юлия/Downloads/Telegram Desktop/response (2).xml"
+            },
+            {
+              "key": "upload_token",
+              "value": "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789",
+              "type": "text"
+            }
+          ]
+        },
+        "url": "{{base_url_prod}}/api/upload/document/test"
+      },
+      "response": []
+    },
+    {
+      "name": "XML To JSON",
+      "id": "24b013d0-7772-4fae-a4eb-f58f8c055336",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "file",
+              "type": "file",
+              "src": "/C:/Users/user/Downloads/Выгрузка товаров Abat.xml",
+              "disabled": true
+            },
+            {
+              "key": "name",
+              "value": "file",
+              "type": "text",
+              "disabled": true
+            }
+          ]
+        },
+        "url": "{{base_url_local}}/api/xml-to-json?link=abat"
+      },
+      "response": []
+    },
+    {
+      "name": "Download PROD",
+      "id": "dd9065a4-2c81-402c-a28f-0f791099c57e",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "file",
+              "type": "file",
+              "src": "/C:/Users/user/Desktop/Изменения обновления.docx"
+            },
+            {
+              "key": "name",
+              "value": "file",
+              "type": "text",
+              "disabled": true
+            }
+          ]
+        },
+        "url": "{{base_url_prod}}/api/upload/document"
+      },
+      "response": []
+    },
+    {
+      "name": "DocumentList",
+      "id": "b079199c-4610-430c-85a3-940d2bb6a49e",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/documents-list"
+      },
+      "response": []
+    },
+    {
+      "name": "YML Feed full list",
+      "id": "27d7c9f6-6be9-4dbd-abdd-258708af2daf",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/products-td-feed-full"
+      },
+      "response": []
+    }
+  ]
+}

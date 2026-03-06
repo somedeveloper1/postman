@@ -1,0 +1,115 @@
+{
+  "info": {
+    "_postman_id": "87128754-14ff-42a0-9c50-11da96d06b7e",
+    "name": "Subscriptions",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Subscription",
+      "id": "c808454f-a5a1-4451-a4be-92edaae16ad2",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "X-MPBX-API-AUTH-TOKEN",
+            "value": "{{mpbx_auth_token}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"pattern\" : \"205\",\r\n    \"expires\" : 1000000,\r\n    \"subscriptionType\" : \"ADVANCED_CALL\",\r\n    \"url\" : \"https://api.t-d.ru/api/beeline/save-xml\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseURL}}/portal/subscription",
+          "host": [
+            "{{baseURL}}"
+          ],
+          "path": [
+            "portal",
+            "subscription"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Subscription",
+      "id": "5a1cde38-a1c0-4536-a732-9e1f5c8c26eb",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "X-MPBX-API-AUTH-TOKEN",
+            "value": "{{mpbx_auth_token}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"pattern\" : \"205\",\r\n    \"expires\" : 3600,\r\n    \"subscriptionType\" : \"BASIC_CALL\",\r\n    \"url\" : \"https://api.t-d.ru/api/beeline/save-xml\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseURL}}/subscription?subscriptionId=c4744488-8797-4915-ad13-72e10816055f",
+          "host": [
+            "{{baseURL}}"
+          ],
+          "path": [
+            "subscription"
+          ],
+          "query": [
+            {
+              "key": "subscriptionId",
+              "value": "c4744488-8797-4915-ad13-72e10816055f"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Subscription",
+      "id": "5e135caf-145e-487d-9d13-c6b885b2d4b3",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "X-MPBX-API-AUTH-TOKEN",
+            "value": "{{mpbx_auth_token}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{baseURL}}/subscription?subscriptionId=2abcbd9c-ba38-41da-ba8e-56b2f837d17e",
+          "host": [
+            "{{baseURL}}"
+          ],
+          "path": [
+            "subscription"
+          ],
+          "query": [
+            {
+              "key": "subscriptionId",
+              "value": "2abcbd9c-ba38-41da-ba8e-56b2f837d17e"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "info": {
+    "_postman_id": "5c5926a1-cce1-4a0e-b1b0-3ffaca8b81b6",
+    "name": "Residue Units",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Residue Units",
+      "id": "20b8afd7-205d-4f75-80c3-457faaffda9d",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzAzMDQzNDUsImV4cCI6MTYzMDMwNzk0NSwibmJmIjoxNjMwMzA0MzQ1LCJqdGkiOiJrNDRaQkYwd2s4NHdORWp4Iiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.23jho9Nh045pie7s-NSrC7TTXfiTEKo8VM28RyjQoCA",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/residue-units"
+      },
+      "response": []
+    },
+    {
+      "name": "Residue Unit Create",
+      "id": "2ee72f2a-fe0e-43c6-92cb-63782be12696",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzAzMDQzNDUsImV4cCI6MTYzMDMwNzk0NSwibmJmIjoxNjMwMzA0MzQ1LCJqdGkiOiJrNDRaQkYwd2s4NHdORWp4Iiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.23jho9Nh045pie7s-NSrC7TTXfiTEKo8VM28RyjQoCA",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "guid",
+              "value": "1",
+              "type": "text"
+            },
+            {
+              "key": "code",
+              "value": "123",
+              "type": "text"
+            },
+            {
+              "key": "name",
+              "value": "Yulia",
+              "type": "text"
+            },
+            {
+              "key": "full_name",
+              "value": "Yulia Kostenko",
+              "type": "text"
+            }
+          ]
+        },
+        "url": "{{base_url_local}}/api/residue-unit/submit"
+      },
+      "response": []
+    },
+    {
+      "name": "Residue Units Import",
+      "id": "950a8108-c50c-4fa5-a0be-f4cd1629ac56",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzE1MTQ0MTYsIm5iZiI6MTYzMTUxNDQxNiwianRpIjoibGNaeDdGbTVhOHJBZElqWiIsInN1YiI6NywicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.HrcA2o7nmZ1sfGuF5xfJdq02nm-7A32KiZnaJ9tn4GE",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"guid\": \"78683578-956c-11df-bfea-e61f13537e43\",\r\n        \"full_name\": \"Килограмм\",\r\n        \"code\": \"166\",\r\n        \"name\": \"кг\"\r\n    },\r\n    {\r\n        \"guid\": \"db953149-dd79-11dd-b60c-001a6498e70d\",\r\n        \"full_name\": \"Штука\",\r\n        \"code\": \"796\",\r\n        \"name\": \"шт\"\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/table/import/residue-units"
+      },
+      "response": []
+    },
+    {
+      "name": "Residue Units Import PROD",
+      "id": "c047845a-ec6b-47ef-b678-bf7aad226b3f",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"guid\": \"78683578-956c-11df-bfea-e61f13537e43\",\r\n        \"full_name\": \"Килограмм\",\r\n        \"code\": \"166\",\r\n        \"name\": \"кг\"\r\n    },\r\n    {\r\n        \"guid\": \"db953149-dd79-11dd-b60c-001a6498e70d\",\r\n        \"full_name\": \"Штука\",\r\n        \"code\": \"796\",\r\n        \"name\": \"шт\"\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_prod}}/api/table/import/residue-units"
+      },
+      "response": []
+    }
+  ]
+}

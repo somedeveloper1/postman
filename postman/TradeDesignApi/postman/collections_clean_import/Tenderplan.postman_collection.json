@@ -1,0 +1,1379 @@
+{
+  "info": {
+    "_postman_id": "c5ae847f-0a4f-4d47-9420-4c684f13fb77",
+    "name": "Tenderplan",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Marks",
+      "item": [
+        {
+          "name": "Get All Marks",
+          "id": "2cffb09f-f109-41da-b48f-2003534d178e",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/tp-marks",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "tp-marks"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get All Marks Prefixes",
+          "id": "54f27665-6cdf-45fc-a264-7f3ca9776811",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/tp-marks",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "tp-marks"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "e9d08b89-7acb-467c-ba6c-a45d81996de3"
+    },
+    {
+      "name": "Users",
+      "item": [
+        {
+          "name": "Get All Users",
+          "id": "f1dcd5e0-d9e1-423d-ac87-b4cde1cef087",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/tp-users",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "tp-users"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get All Users Departments",
+          "id": "107abb29-872b-4f07-aef4-ce01aa007458",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/tp-users/departments",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "tp-users",
+                "departments"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "48570c6a-3b2d-451b-917e-979da07a53f5"
+    },
+    {
+      "name": "Tenders",
+      "item": [
+        {
+          "name": "Download",
+          "item": [
+            {
+              "name": "Dowload All Tenders",
+              "id": "00b5bf10-d185-4771-9a78-5a7f6526973f",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{base_url_local}}/api/tp-tenders/download?search=поставка",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "tp-tenders",
+                    "download"
+                  ],
+                  "query": [
+                    {
+                      "key": "departments[]",
+                      "value": "ДСТП",
+                      "disabled": true
+                    },
+                    {
+                      "key": "statuses[]",
+                      "value": "1",
+                      "disabled": true
+                    },
+                    {
+                      "key": "marks[]",
+                      "value": "5b60bc74446ec028fc23120f",
+                      "disabled": true
+                    },
+                    {
+                      "key": "regions[]",
+                      "value": "26",
+                      "disabled": true
+                    },
+                    {
+                      "key": "search",
+                      "value": "поставка"
+                    },
+                    {
+                      "key": "publication_date_from",
+                      "value": "2025-03-14 05:52:00",
+                      "disabled": true
+                    },
+                    {
+                      "key": "publication_date_to",
+                      "value": "2025-03-14 05:52:00",
+                      "disabled": true
+                    },
+                    {
+                      "key": "page",
+                      "value": "10",
+                      "disabled": true
+                    },
+                    {
+                      "key": "ids[]",
+                      "value": "67ea867f5d48d39bb425c4b2",
+                      "disabled": true
+                    },
+                    {
+                      "key": "price_sort",
+                      "value": "DESC",
+                      "disabled": true
+                    },
+                    {
+                      "key": "has_report",
+                      "value": "true",
+                      "disabled": true
+                    },
+                    {
+                      "key": "is_on_clarification",
+                      "value": "false",
+                      "disabled": true
+                    },
+                    {
+                      "key": "is_on_submission_close_date_soon",
+                      "value": "true",
+                      "disabled": true
+                    },
+                    {
+                      "key": "is_on_submission_close_date_soon",
+                      "value": "false",
+                      "disabled": true
+                    },
+                    {
+                      "key": "per_page",
+                      "value": "1000",
+                      "disabled": true
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Download Tenders For Monitoring",
+              "id": "6ae94017-9c21-43d8-90d4-32e31f7b61d8",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{base_url_local}}/api/tp-tenders/monitoring/download",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "tp-tenders",
+                    "monitoring",
+                    "download"
+                  ],
+                  "query": [
+                    {
+                      "key": "departments[]",
+                      "value": "ДСТП",
+                      "disabled": true
+                    },
+                    {
+                      "key": "statuses[]",
+                      "value": "1",
+                      "disabled": true
+                    },
+                    {
+                      "key": "marks[]",
+                      "value": "5b60bc74446ec028fc23120f",
+                      "disabled": true
+                    },
+                    {
+                      "key": "regions[]",
+                      "value": "26",
+                      "disabled": true
+                    },
+                    {
+                      "key": "ids[]",
+                      "value": "67e1295b4d8e37a2b6390ba7",
+                      "disabled": true
+                    },
+                    {
+                      "key": "search",
+                      "value": "поставка",
+                      "disabled": true
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Download Tenders By Department For Monitoring By Managers",
+              "id": "06d757ed-238f-4c79-b0b3-03bed6cbc669",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{base_url_local}}/api/tp-tenders/monitoring/ДПП/by-managers",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "tp-tenders",
+                    "monitoring",
+                    "ДПП",
+                    "by-managers"
+                  ],
+                  "query": [
+                    {
+                      "key": "departments[]",
+                      "value": "ДСТП",
+                      "disabled": true
+                    },
+                    {
+                      "key": "statuses[]",
+                      "value": "1",
+                      "disabled": true
+                    },
+                    {
+                      "key": "marks[]",
+                      "value": "5b60bc74446ec028fc23120f",
+                      "disabled": true
+                    },
+                    {
+                      "key": "regions[]",
+                      "value": "26",
+                      "disabled": true
+                    },
+                    {
+                      "key": "ids[]",
+                      "value": "67e1295b4d8e37a2b6390ba7",
+                      "disabled": true
+                    },
+                    {
+                      "key": "search",
+                      "value": "поставка",
+                      "disabled": true
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Download Tenders With Multitendes",
+              "id": "b15c4eb1-18dc-4585-906d-b150fe18adc8",
+              "request": {
+                "method": "GET",
+                "header": []
+              },
+              "response": []
+            }
+          ],
+          "id": "fe631715-19d2-4d41-aa52-a9318ad56807"
+        },
+        {
+          "name": "Get All Tenders",
+          "id": "6961e576-a687-4980-b1ee-c47c676722d5",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/tp-tenders?ids[]=672086d04d8e37a2b67104fd&is_on_submission_close_date_soon=false",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "tp-tenders"
+              ],
+              "query": [
+                {
+                  "key": "departments[]",
+                  "value": "ДСТП",
+                  "disabled": true
+                },
+                {
+                  "key": "statuses[]",
+                  "value": "1",
+                  "disabled": true
+                },
+                {
+                  "key": "marks[]",
+                  "value": "5b60bc74446ec028fc23120f",
+                  "disabled": true
+                },
+                {
+                  "key": "regions[]",
+                  "value": "26",
+                  "disabled": true
+                },
+                {
+                  "key": "search",
+                  "value": "поставка",
+                  "disabled": true
+                },
+                {
+                  "key": "publication_date_from",
+                  "value": "2025-03-14 05:52:00",
+                  "disabled": true
+                },
+                {
+                  "key": "publication_date_to",
+                  "value": "2025-03-14 05:52:00",
+                  "disabled": true
+                },
+                {
+                  "key": "page",
+                  "value": "10",
+                  "disabled": true
+                },
+                {
+                  "key": "ids[]",
+                  "value": "672086d04d8e37a2b67104fd"
+                },
+                {
+                  "key": "price_sort",
+                  "value": "DESC",
+                  "disabled": true
+                },
+                {
+                  "key": "has_report",
+                  "value": "true",
+                  "disabled": true
+                },
+                {
+                  "key": "is_on_clarification",
+                  "value": "false",
+                  "disabled": true
+                },
+                {
+                  "key": "is_on_submission_close_date_soon",
+                  "value": "true",
+                  "disabled": true
+                },
+                {
+                  "key": "is_on_submission_close_date_soon",
+                  "value": "false"
+                },
+                {
+                  "key": "per_page",
+                  "value": "1000",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get All Tenders Statuses",
+          "id": "1fbe1925-d02f-43c7-817b-995e514df51a",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/tp-tenders?is_on_submission_close_date_soon=false",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "tp-tenders"
+              ],
+              "query": [
+                {
+                  "key": "departments[]",
+                  "value": "ДСТП",
+                  "disabled": true
+                },
+                {
+                  "key": "statuses[]",
+                  "value": "1",
+                  "disabled": true
+                },
+                {
+                  "key": "marks[]",
+                  "value": "5b60bc74446ec028fc23120f",
+                  "disabled": true
+                },
+                {
+                  "key": "regions[]",
+                  "value": "26",
+                  "disabled": true
+                },
+                {
+                  "key": "search",
+                  "value": "поставка",
+                  "disabled": true
+                },
+                {
+                  "key": "publication_date_from",
+                  "value": "2025-03-14 05:52:00",
+                  "disabled": true
+                },
+                {
+                  "key": "publication_date_to",
+                  "value": "2025-03-14 05:52:00",
+                  "disabled": true
+                },
+                {
+                  "key": "page",
+                  "value": "10",
+                  "disabled": true
+                },
+                {
+                  "key": "ids[]",
+                  "value": "67ea867f5d48d39bb425c4b2",
+                  "disabled": true
+                },
+                {
+                  "key": "price_sort",
+                  "value": "DESC",
+                  "disabled": true
+                },
+                {
+                  "key": "has_report",
+                  "value": "true",
+                  "disabled": true
+                },
+                {
+                  "key": "is_on_clarification",
+                  "value": "false",
+                  "disabled": true
+                },
+                {
+                  "key": "is_on_submission_close_date_soon",
+                  "value": "true",
+                  "disabled": true
+                },
+                {
+                  "key": "is_on_submission_close_date_soon",
+                  "value": "false"
+                },
+                {
+                  "key": "per_page",
+                  "value": "1000",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Tenders For Monitoring",
+          "id": "cf390eef-663f-4155-b7e5-909f2a350c01",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/tp-tenders/monitoring",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "tp-tenders",
+                "monitoring"
+              ],
+              "query": [
+                {
+                  "key": "departments[]",
+                  "value": "ДСТП",
+                  "disabled": true
+                },
+                {
+                  "key": "statuses[]",
+                  "value": "1",
+                  "disabled": true
+                },
+                {
+                  "key": "marks[]",
+                  "value": "5b60bc74446ec028fc23120f",
+                  "disabled": true
+                },
+                {
+                  "key": "regions[]",
+                  "value": "26",
+                  "disabled": true
+                },
+                {
+                  "key": "ids[]",
+                  "value": "67e1295b4d8e37a2b6390ba7",
+                  "disabled": true
+                },
+                {
+                  "key": "search",
+                  "value": "поставка",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Tenders By Department For Monitoring",
+          "id": "86a2601a-6f6d-431b-ae50-859941007679",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/tp-tenders/monitoring",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "tp-tenders",
+                "monitoring"
+              ],
+              "query": [
+                {
+                  "key": "departments[]",
+                  "value": "ДСТП",
+                  "disabled": true
+                },
+                {
+                  "key": "statuses[]",
+                  "value": "1",
+                  "disabled": true
+                },
+                {
+                  "key": "marks[]",
+                  "value": "5b60bc74446ec028fc23120f",
+                  "disabled": true
+                },
+                {
+                  "key": "regions[]",
+                  "value": "26",
+                  "disabled": true
+                },
+                {
+                  "key": "ids[]",
+                  "value": "67e1295b4d8e37a2b6390ba7",
+                  "disabled": true
+                },
+                {
+                  "key": "search",
+                  "value": "поставка",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Tenders By Department For Monitoring By Managers",
+          "id": "4a98b9ed-cabb-486d-8a53-9b7757d4cc3f",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/tp-tenders/monitoring/ДПП/by-managers",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "tp-tenders",
+                "monitoring",
+                "ДПП",
+                "by-managers"
+              ],
+              "query": [
+                {
+                  "key": "departments[]",
+                  "value": "ДСТП",
+                  "disabled": true
+                },
+                {
+                  "key": "statuses[]",
+                  "value": "1",
+                  "disabled": true
+                },
+                {
+                  "key": "marks[]",
+                  "value": "5b60bc74446ec028fc23120f",
+                  "disabled": true
+                },
+                {
+                  "key": "regions[]",
+                  "value": "26",
+                  "disabled": true
+                },
+                {
+                  "key": "ids[]",
+                  "value": "67e1295b4d8e37a2b6390ba7",
+                  "disabled": true
+                },
+                {
+                  "key": "search",
+                  "value": "поставка",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Tenders By Project",
+          "id": "97bc3be2-d787-4677-88a4-09d905d8d864",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/tp-tenders/by-project/900",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "tp-tenders",
+                "by-project",
+                "900"
+              ],
+              "query": [
+                {
+                  "key": "departments[]",
+                  "value": "ДСТП",
+                  "disabled": true
+                },
+                {
+                  "key": "statuses[]",
+                  "value": "1",
+                  "disabled": true
+                },
+                {
+                  "key": "marks[]",
+                  "value": "5b60bc74446ec028fc23120f",
+                  "disabled": true
+                },
+                {
+                  "key": "regions[]",
+                  "value": "26",
+                  "disabled": true
+                },
+                {
+                  "key": "search",
+                  "value": "поставка",
+                  "disabled": true
+                },
+                {
+                  "key": "publication_date_from",
+                  "value": "2025-03-14 05:52:00",
+                  "disabled": true
+                },
+                {
+                  "key": "publication_date_to",
+                  "value": "2025-03-14 05:52:00",
+                  "disabled": true
+                },
+                {
+                  "key": "page",
+                  "value": "10",
+                  "disabled": true
+                },
+                {
+                  "key": "ids[]",
+                  "value": "67ea867f5d48d39bb425c4b2",
+                  "disabled": true
+                },
+                {
+                  "key": "price_sort",
+                  "value": "DESC",
+                  "disabled": true
+                },
+                {
+                  "key": "has_report",
+                  "value": "true",
+                  "disabled": true
+                },
+                {
+                  "key": "is_on_clarification",
+                  "value": "false",
+                  "disabled": true
+                },
+                {
+                  "key": "is_on_submission_close_date_soon",
+                  "value": "true",
+                  "disabled": true
+                },
+                {
+                  "key": "per_page",
+                  "value": "1000",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Tender",
+          "id": "715dc401-1d3c-4338-8110-446642e820b7",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/tp-tenders/672086d04d8e37a2b67104fd",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "tp-tenders",
+                "672086d04d8e37a2b67104fd"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "0f321f64-3227-45b1-806d-85da97f10172"
+    },
+    {
+      "name": "API",
+      "item": [
+        {
+          "name": "Tenders  V1",
+          "id": "f1be821f-2206-43ff-b261-e6ecff6c25fb",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "55973315d417854a5e0357fcfe834e88fd1bc46e7b43501475b38bae813c8eb1f2fdb217e8d24b7117d9083082b65519de9d07e9d27830c5c3e1d30ef051c22c",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://tenderplan.ru/api/tenders/getlist?fromPublicationDateTime=-1&page=1&mark=5b60bc74446ec028fc231115",
+              "protocol": "https",
+              "host": [
+                "tenderplan",
+                "ru"
+              ],
+              "path": [
+                "api",
+                "tenders",
+                "getlist"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "358",
+                  "disabled": true
+                },
+                {
+                  "key": "fromPublicationDateTime",
+                  "value": "1711268414000",
+                  "disabled": true
+                },
+                {
+                  "key": "id",
+                  "value": "67e1300f4d8e37a2b6725208",
+                  "disabled": true
+                },
+                {
+                  "key": "fromPublicationDateTime",
+                  "value": "-1"
+                },
+                {
+                  "key": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "mark",
+                  "value": "5b60bc74446ec028fc231115"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Tenders  V2",
+          "id": "23a2bb76-c8ab-4229-b70e-11c89a0cded6",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "55973315d417854a5e0357fcfe834e88fd1bc46e7b43501475b38bae813c8eb1f2fdb217e8d24b7117d9083082b65519de9d07e9d27830c5c3e1d30ef051c22c",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://tenderplan.ru/api/tenders/v2/getlist?publicationDateTime=-1&marks=5b60bc74446ec028fc231115&fromPublicationDateTime=1684677185000&page=7",
+              "protocol": "https",
+              "host": [
+                "tenderplan",
+                "ru"
+              ],
+              "path": [
+                "api",
+                "tenders",
+                "v2",
+                "getlist"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "358",
+                  "disabled": true
+                },
+                {
+                  "key": "users",
+                  "value": "637b7c8740a0156752f7e4d5",
+                  "disabled": true
+                },
+                {
+                  "key": "id",
+                  "value": "65171ec652e24fc135b8025f",
+                  "disabled": true
+                },
+                {
+                  "key": "per_page",
+                  "value": "100",
+                  "disabled": true
+                },
+                {
+                  "key": "publicationDateTime",
+                  "value": "-1"
+                },
+                {
+                  "key": "marks",
+                  "value": "5b60bc74446ec028fc231115"
+                },
+                {
+                  "key": "fromPublicationDateTime",
+                  "value": "1684677185000"
+                },
+                {
+                  "key": "page",
+                  "value": "7"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Tender",
+          "id": "9519fa7d-67ef-47a4-a8e1-b806edd02fbb",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "55973315d417854a5e0357fcfe834e88fd1bc46e7b43501475b38bae813c8eb1f2fdb217e8d24b7117d9083082b65519de9d07e9d27830c5c3e1d30ef051c22c",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://tenderplan.ru/api/tenders/v2/getlist?page=0",
+              "protocol": "https",
+              "host": [
+                "tenderplan",
+                "ru"
+              ],
+              "path": [
+                "api",
+                "tenders",
+                "v2",
+                "getlist"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "0"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Tender Copy",
+          "id": "3ed24561-a260-40f6-a405-48b693a3f150",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "55973315d417854a5e0357fcfe834e88fd1bc46e7b43501475b38bae813c8eb1f2fdb217e8d24b7117d9083082b65519de9d07e9d27830c5c3e1d30ef051c22c",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://tenderplan.ru/api/tenders/v2/getlist?page=0",
+              "protocol": "https",
+              "host": [
+                "tenderplan",
+                "ru"
+              ],
+              "path": [
+                "api",
+                "tenders",
+                "v2",
+                "getlist"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "0"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Comment",
+          "id": "17bc67b6-ad4f-4e0e-9a4e-299974d35d76",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "55973315d417854a5e0357fcfe834e88fd1bc46e7b43501475b38bae813c8eb1f2fdb217e8d24b7117d9083082b65519de9d07e9d27830c5c3e1d30ef051c22c",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://tenderplan.ru/api/comments/get?id=507f191e810c19729de860ea",
+              "protocol": "https",
+              "host": [
+                "tenderplan",
+                "ru"
+              ],
+              "path": [
+                "api",
+                "comments",
+                "get"
+              ],
+              "query": [
+                {
+                  "key": "id",
+                  "value": "507f191e810c19729de860ea"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Tenders  Marks",
+          "id": "427e58e8-bc8a-4109-97b1-816bae44281e",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "55973315d417854a5e0357fcfe834e88fd1bc46e7b43501475b38bae813c8eb1f2fdb217e8d24b7117d9083082b65519de9d07e9d27830c5c3e1d30ef051c22c",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://tenderplan.ru/api/marks/getall",
+              "protocol": "https",
+              "host": [
+                "tenderplan",
+                "ru"
+              ],
+              "path": [
+                "api",
+                "marks",
+                "getall"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Tenders  Users",
+          "id": "e6c17875-0b6a-44ca-b172-02055bef8263",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "55973315d417854a5e0357fcfe834e88fd1bc46e7b43501475b38bae813c8eb1f2fdb217e8d24b7117d9083082b65519de9d07e9d27830c5c3e1d30ef051c22c",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://tenderplan.ru/api/users/getall",
+              "protocol": "https",
+              "host": [
+                "tenderplan",
+                "ru"
+              ],
+              "path": [
+                "api",
+                "users",
+                "getall"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Organizations",
+          "id": "c235166c-b57c-4436-a84b-96d9d5c1e477",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "55973315d417854a5e0357fcfe834e88fd1bc46e7b43501475b38bae813c8eb1f2fdb217e8d24b7117d9083082b65519de9d07e9d27830c5c3e1d30ef051c22c",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://tenderplan.ru/api/users/getall",
+              "protocol": "https",
+              "host": [
+                "tenderplan",
+                "ru"
+              ],
+              "path": [
+                "api",
+                "users",
+                "getall"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Organization",
+          "id": "6bef66bd-143c-4916-9ed5-c425f2206083",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "55973315d417854a5e0357fcfe834e88fd1bc46e7b43501475b38bae813c8eb1f2fdb217e8d24b7117d9083082b65519de9d07e9d27830c5c3e1d30ef051c22c",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://tenderplan.ru/api/users/getall",
+              "protocol": "https",
+              "host": [
+                "tenderplan",
+                "ru"
+              ],
+              "path": [
+                "api",
+                "users",
+                "getall"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Tools",
+          "id": "307f4369-c371-4f25-a01e-9f7d211af4b3",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "55973315d417854a5e0357fcfe834e88fd1bc46e7b43501475b38bae813c8eb1f2fdb217e8d24b7117d9083082b65519de9d07e9d27830c5c3e1d30ef051c22c",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://tenderplan.ru/api/tools/all",
+              "protocol": "https",
+              "host": [
+                "tenderplan",
+                "ru"
+              ],
+              "path": [
+                "api",
+                "tools",
+                "all"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Multitender Tender From Contract",
+          "id": "303e334b-f078-4c22-80d1-a2e57d54e323",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://api-v2.multitender.ru/contract/by-purchases?purchaseNumbers=0132600008324000161,0373100133125000063&apikey={{multitender_apikey}}&format=json",
+              "protocol": "https",
+              "host": [
+                "api-v2",
+                "multitender",
+                "ru"
+              ],
+              "path": [
+                "contract",
+                "by-purchases"
+              ],
+              "query": [
+                {
+                  "key": "purchaseNumbers",
+                  "value": "0132600008324000161,0373100133125000063"
+                },
+                {
+                  "key": "apikey",
+                  "value": "{{multitender_apikey}}"
+                },
+                {
+                  "key": "format",
+                  "value": "json"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "5edb5f94-3945-4502-b5f7-b6b04ac9a33c",
+              "name": "Get Multitender Tender From Contract",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://api-v2.multitender.ru/contract/by-purchases?purchaseNumbers=0132600008324000161,0373100133125000063&apikey={{multitender_apikey}}&format=json",
+                  "protocol": "https",
+                  "host": [
+                    "api-v2",
+                    "multitender",
+                    "ru"
+                  ],
+                  "path": [
+                    "contract",
+                    "by-purchases"
+                  ],
+                  "query": [
+                    {
+                      "key": "purchaseNumbers",
+                      "value": "0132600008324000161,0373100133125000063"
+                    },
+                    {
+                      "key": "apikey",
+                      "value": "{{multitender_apikey}}"
+                    },
+                    {
+                      "key": "format",
+                      "value": "json"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": null
+            }
+          ]
+        }
+      ],
+      "id": "68f1e98b-e905-47dd-903b-941c79be06bc"
+    },
+    {
+      "name": "Get Tenders And Projects By Counterparty",
+      "id": "c9f8d4a0-64d1-4dfe-b4ca-856f7fd5d3c7",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/tp-info/by-counterparty/tenders-projects?per_page=1000",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "tp-info",
+            "by-counterparty",
+            "tenders-projects"
+          ],
+          "query": [
+            {
+              "key": "departments[]",
+              "value": "ДСТП",
+              "disabled": true
+            },
+            {
+              "key": "statuses[]",
+              "value": "1",
+              "disabled": true
+            },
+            {
+              "key": "marks[]",
+              "value": "5b60bc74446ec028fc23120f",
+              "disabled": true
+            },
+            {
+              "key": "regions[]",
+              "value": "26",
+              "disabled": true
+            },
+            {
+              "key": "search",
+              "value": "поставка",
+              "disabled": true
+            },
+            {
+              "key": "publication_date_from",
+              "value": "2025-03-14 05:52:00",
+              "disabled": true
+            },
+            {
+              "key": "publication_date_to",
+              "value": "2025-03-14 05:52:00",
+              "disabled": true
+            },
+            {
+              "key": "page",
+              "value": "10",
+              "disabled": true
+            },
+            {
+              "key": "ids[]",
+              "value": "67ea867f5d48d39bb425c4b2",
+              "disabled": true
+            },
+            {
+              "key": "price_sort",
+              "value": "DESC",
+              "disabled": true
+            },
+            {
+              "key": "has_report",
+              "value": "true",
+              "disabled": true
+            },
+            {
+              "key": "is_on_clarification",
+              "value": "false",
+              "disabled": true
+            },
+            {
+              "key": "is_on_submission_close_date_soon",
+              "value": "true",
+              "disabled": true
+            },
+            {
+              "key": "per_page",
+              "value": "1000"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

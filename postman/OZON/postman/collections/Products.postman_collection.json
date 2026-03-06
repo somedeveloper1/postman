@@ -1,0 +1,183 @@
+{
+  "info": {
+    "_postman_id": "19266baa-d076-4b34-a0ff-bdbd3532f5c7",
+    "name": "Products",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Ozon Products Info Attributes",
+      "id": "ca8e0087-4969-4627-adb6-019677969f61",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Client-Id",
+            "value": "{{ozon_client_id_header}}",
+            "type": "text"
+          },
+          {
+            "key": "Api-Key",
+            "value": "{{ozon_client_id}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"filter\": {\r\n        \"product_id\": [\"3596528237\"],\r\n        \"visibility\": \"ALL\"\r\n    },\r\n    \"limit\": 100,\r\n    \"last_id\": \"\",\r\n    \"sort_dir\": \"ASC\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api-seller.ozon.ru/v4/product/info/attributes",
+          "protocol": "https",
+          "host": [
+            "api-seller",
+            "ozon",
+            "ru"
+          ],
+          "path": [
+            "v4",
+            "product",
+            "info",
+            "attributes"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Ozon Product List",
+      "id": "a479f947-2cce-46d5-a900-b20c52205fa8",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Client-Id",
+            "value": "{{ozon_client_id_header}}",
+            "type": "text"
+          },
+          {
+            "key": "Api-Key",
+            "value": "{{ozon_client_id}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"filter\": {\r\n        \"offer_id\": [\"BNQR10X10MZT890027\"],\r\n        \"product_id\": [],\r\n        \"visibility\": \"ALL\"\r\n    },\r\n    \"last_id\": \"\",\r\n    \"limit\": 100\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api-seller.ozon.ru/v3/product/list",
+          "protocol": "https",
+          "host": [
+            "api-seller",
+            "ozon",
+            "ru"
+          ],
+          "path": [
+            "v3",
+            "product",
+            "list"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Ozon Product Info List",
+      "id": "03adc8aa-ebf2-4db6-bc98-40b3f231833f",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Client-Id",
+            "value": "{{ozon_client_id_header}}",
+            "type": "text"
+          },
+          {
+            "key": "Api-Key",
+            "value": "{{ozon_client_id}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"filter\": {\r\n        \"offer_id\": [\"BNQR10X10MZT890027\"],\r\n        \"product_id\": [],\r\n        \"visibility\": \"ALL\"\r\n    },\r\n    \"last_id\": \"\",\r\n    \"limit\": 100\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api-seller.ozon.ru/v3/product/info/list",
+          "protocol": "https",
+          "host": [
+            "api-seller",
+            "ozon",
+            "ru"
+          ],
+          "path": [
+            "v3",
+            "product",
+            "info",
+            "list"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Ozon Product Info",
+      "id": "933dfeff-1e52-4167-9274-82cd3899a2a5",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Client-Id",
+            "value": "{{ozon_client_id_header}}",
+            "type": "text"
+          },
+          {
+            "key": "Api-Key",
+            "value": "{{ozon_client_id}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"offer_id\": \"BNQR10X10MZT890027\",\r\n    \"product_id\": null,\r\n    \"sku\": 0\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api-seller.ozon.ru/v2/product/info",
+          "protocol": "https",
+          "host": [
+            "api-seller",
+            "ozon",
+            "ru"
+          ],
+          "path": [
+            "v2",
+            "product",
+            "info"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

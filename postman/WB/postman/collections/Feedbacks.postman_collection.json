@@ -1,0 +1,113 @@
+{
+  "info": {
+    "_postman_id": "32207efb-33f8-4d0d-824c-368c54ba670b",
+    "name": "Feedbacks",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Feedbacks",
+      "id": "518f2382-b2ca-4ad5-aa9a-8ff45524dc17",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "{{wb_token}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://feedbacks-api.wildberries.ru/api/v1/feedbacks?isAnswered=true&take=100&skip=0",
+          "protocol": "https",
+          "host": [
+            "feedbacks-api",
+            "wildberries",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "feedbacks"
+          ],
+          "query": [
+            {
+              "key": "isAnswered",
+              "value": "true"
+            },
+            {
+              "key": "take",
+              "value": "100"
+            },
+            {
+              "key": "skip",
+              "value": "0"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Search Texts",
+      "id": "5b78cc85-7fbb-4527-a953-8af7763ab5ec",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "{{wb_token}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"currentPeriod\": {\r\n        \"start\": \"2025-02-10\",\r\n        \"end\": \"2025-11-19\"\r\n    },\r\n    \"pastPeriod\": {\r\n        \"start\": \"2024-02-08\",\r\n        \"end\": \"2024-02-08\"\r\n    },\r\n    \"nmIds\": [\r\n        564868891\r\n    ],\r\n    \"topOrderBy\": \"openToCart\",\r\n    \"includeSubstitutedSKUs\": true,\r\n    \"includeSearchTexts\": false,\r\n    \"orderBy\": {\r\n    \"field\": \"avgPosition\",\r\n    \"mode\": \"asc\"\r\n    },\r\n    \"limit\": 20\r\n}",
+          "options": {
+            "raw": {
+              "language": "javascript"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://seller-analytics-api.wildberries.ru/api/v2/search-report/product/search-texts",
+          "protocol": "https",
+          "host": [
+            "seller-analytics-api",
+            "wildberries",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "v2",
+            "search-report",
+            "product",
+            "search-texts"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

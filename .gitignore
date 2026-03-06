@@ -1,0 +1,5 @@
+# Postman local config and state
+.postman/
+
+# Список глобальных переменных (значения заполняются локально, не коммитить)
+postman-globals-values.txt

@@ -1,0 +1,169 @@
+{
+  "info": {
+    "_postman_id": "bb6fc56d-444f-4bfa-91e7-65cd97af3c4a",
+    "name": "Statistics",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Statictics",
+      "id": "3d19f95c-4391-421f-a42c-3f90bcc7ed27",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "X-MPBX-API-AUTH-TOKEN",
+            "value": "{{mpbx_auth_token}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{baseURL}}/v2/statistics?page=1&pageSize=10",
+          "host": [
+            "{{baseURL}}"
+          ],
+          "path": [
+            "v2",
+            "statistics"
+          ],
+          "query": [
+            {
+              "key": "page",
+              "value": "1"
+            },
+            {
+              "key": "pageSize",
+              "value": "10"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Statictics Call Path",
+      "id": "c242a8a5-1d95-43c7-8ed0-6b0c1eabd178",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "X-MPBX-API-AUTH-TOKEN",
+            "value": "{{mpbx_auth_token}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://cloudpbx.beeline.ru/napis/v3/statistics/callPath?keyId=981ca7a0-5d0d-4cd2-839a-bb3cb5598b1a&startTime=2025-08-15T16%3A01%3A14.000%2B03%3A00",
+          "protocol": "https",
+          "host": [
+            "cloudpbx",
+            "beeline",
+            "ru"
+          ],
+          "path": [
+            "napis",
+            "v3",
+            "statistics",
+            "callPath"
+          ],
+          "query": [
+            {
+              "key": "keyId",
+              "value": "981ca7a0-5d0d-4cd2-839a-bb3cb5598b1a"
+            },
+            {
+              "key": "startTime",
+              "value": "2025-08-15T16%3A01%3A14.000%2B03%3A00"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Statictics Call Record Chart",
+      "id": "b017eb7f-f1f7-4dc5-8d87-92ffbda1e3fe",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "X-MPBX-API-AUTH-TOKEN",
+            "value": "{{mpbx_auth_token}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://cloudpbx.beeline.ru/napis/v3/statistics/recordsChart?from=2025-08-18T09%3A36%3A38.000%2B03%3A00&limit=20&searchNumber=9207406790&userIds=SIP25151U00005",
+          "protocol": "https",
+          "host": [
+            "cloudpbx",
+            "beeline",
+            "ru"
+          ],
+          "path": [
+            "napis",
+            "v3",
+            "statistics",
+            "recordsChart"
+          ],
+          "query": [
+            {
+              "key": "from",
+              "value": "2025-08-18T09%3A36%3A38.000%2B03%3A00"
+            },
+            {
+              "key": "to",
+              "value": "2025-08-18T09%3A40%3A38.000%2B03%3A00",
+              "disabled": true
+            },
+            {
+              "key": "limit",
+              "value": "20"
+            },
+            {
+              "key": "searchNumber",
+              "value": "9207406790"
+            },
+            {
+              "key": "userIds",
+              "value": "SIP25151U00005"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "id": "abe8c4d4-8eb9-4389-b8ce-4ff17adabd32",
+      "key": "baseURL",
+      "value": "https://cloudpbx.beeline.ru",
+      "type": "default"
+    }
+  ]
+}

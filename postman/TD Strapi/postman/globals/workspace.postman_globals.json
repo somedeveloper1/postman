@@ -1,0 +1,14 @@
+{
+  "id": "aca259d3-c65f-4da4-9a22-91416266edc3",
+  "name": "Globals",
+  "values": [
+    {
+      "key": "strapi_document_id",
+      "value": "",
+      "type": "default",
+      "enabled": true
+    }
+  ],
+  "_postman_variable_scope": "globals",
+  "_postman_exported_at": "2026-03-03T12:41:25.620Z"
+}

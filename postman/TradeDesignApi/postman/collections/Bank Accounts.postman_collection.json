@@ -1,0 +1,163 @@
+﻿{
+  "info": {
+    "_postman_id": "dd4ff020-6047-4e2a-a734-3c66c1b26c71",
+    "name": "Bank Accounts",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Bank Accounts",
+      "id": "1a4c8e06-88ec-4bf9-99e8-2c603f833946",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzAzMzA0MjUsImV4cCI6MTYzMDMzNDAyNSwibmJmIjoxNjMwMzMwNDI1LCJqdGkiOiJpVTNidzIzQU5zZVRrbEMzIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.a7xsXohvMtAPJiqLdbOLciYs9zaPZC78VU0HmPl_gOc",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/bank-accounts",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "bank-accounts"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Bank Account Create",
+      "id": "6414933b-dbbf-4994-8239-ef112883f01d",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzAzMzA0MjUsImV4cCI6MTYzMDMzNDAyNSwibmJmIjoxNjMwMzMwNDI1LCJqdGkiOiJpVTNidzIzQU5zZVRrbEMzIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.a7xsXohvMtAPJiqLdbOLciYs9zaPZC78VU0HmPl_gOc",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"guid\": \"1\",\r\n    \"owner_guid\": \"1\",\r\n    \"account\": \"account\",\r\n    \"bank\": \"1\",\r\n    \"bank_for_payments\": \"1\",\r\n    \"currency\": \"1\",\r\n    \"account_treasury\": false,\r\n    \"account_personal\": \"personal\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/bank-account/submit",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "bank-account",
+            "submit"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Bank Accounts Import",
+      "id": "999e2fc1-fab0-4563-a4ab-51c7e18053fc",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzE1MTQ0MTYsIm5iZiI6MTYzMTUxNDQxNiwianRpIjoibGNaeDdGbTVhOHJBZElqWiIsInN1YiI6NywicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.HrcA2o7nmZ1sfGuF5xfJdq02nm-7A32KiZnaJ9tn4GE",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"guid\": \"0ce29a18-e65e-11e8-869d-e61f13537e43\",\r\n        \"owner_guid\": \"7a884209-5192-11de-ac04-0019dbd95dce\",\r\n        \"account\": \"40702810538000022599\",\r\n        \"bank\": \"f6fe4bc0-7e16-11e5-9dd2-e61f13537e43\",\r\n        \"bank_for_payments\": \"8eb46422-956c-11df-bfea-e61f13537e43\",\r\n        \"currency\": \"78683575-956c-11df-bfea-e61f13537e43\",\r\n        \"account_treasury\": false,\r\n        \"account_personal\": \"\",\r\n        \"owner_type\": \"Контрагент\"\r\n    },\r\n    {\r\n        \"guid\": \"eefc1692-e88b-11de-b60d-001a6479fa3e\",\r\n        \"owner_guid\": \"7a34e6dc-299b-11de-b60c-001a6498e70d\",\r\n        \"account\": \"40702810000000000760\",\r\n        \"bank\": \"8eb46422-956c-11df-bfea-e61f13537e43\",\r\n        \"bank_for_payments\": \"f6fe4bc0-7e16-11e5-9dd2-e61f13537e43\",\r\n        \"currency\": \"78683575-956c-11df-bfea-e61f13537e43\",\r\n        \"account_treasury\": false,\r\n        \"account_personal\": \"\",\r\n        \"owner_type\": \"Контрагент\"\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/table/import/bank-accounts",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "table",
+            "import",
+            "bank-accounts"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Bank Accounts Import PROD",
+      "id": "bd44d6e9-4992-4d15-9f1d-52cbf6550c8e",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"guid\": \"0ce29a18-e65e-11e8-869d-e61f13537e43\",\r\n        \"owner_guid\": \"7a884209-5192-11de-ac04-0019dbd95dce\",\r\n        \"account\": \"40702810538000022599\",\r\n        \"bank\": \"f6fe4bc0-7e16-11e5-9dd2-e61f13537e43\",\r\n        \"bank_for_payments\": \"8eb46422-956c-11df-bfea-e61f13537e43\",\r\n        \"currency\": \"78683575-956c-11df-bfea-e61f13537e43\",\r\n        \"account_treasury\": false,\r\n        \"account_personal\": \"\",\r\n        \"owner_type\": \"Контрагент\"\r\n    },\r\n    {\r\n        \"guid\": \"eefc1692-e88b-11de-b60d-001a6479fa3e\",\r\n        \"owner_guid\": \"7a34e6dc-299b-11de-b60c-001a6498e70d\",\r\n        \"account\": \"40702810000000000760\",\r\n        \"bank\": \"8eb46422-956c-11df-bfea-e61f13537e43\",\r\n        \"bank_for_payments\": \"f6fe4bc0-7e16-11e5-9dd2-e61f13537e43\",\r\n        \"currency\": \"78683575-956c-11df-bfea-e61f13537e43\",\r\n        \"account_treasury\": false,\r\n        \"account_personal\": \"\",\r\n        \"owner_type\": \"Контрагент\"\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_prod}}/api/table/import/bank-accounts",
+          "protocol": "https",
+          "host": [
+            "api",
+            "t-d",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "table",
+            "import",
+            "bank-accounts"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

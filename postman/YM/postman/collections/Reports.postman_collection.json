@@ -1,0 +1,88 @@
+{
+  "info": {
+    "_postman_id": "753974e2-14cb-4635-9bd2-64c59f4fc7fe",
+    "name": "Reports",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Goods Feedback Request",
+      "id": "57109987-e2ed-45a0-ac86-5653d82d7427",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Api-Key",
+            "value": "{{ym_oauth_token}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"businessId\":208976822\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api.partner.market.yandex.ru/v2/reports/goods-feedback/generate",
+          "protocol": "https",
+          "host": [
+            "api",
+            "partner",
+            "market",
+            "yandex",
+            "ru"
+          ],
+          "path": [
+            "v2",
+            "reports",
+            "goods-feedback",
+            "generate"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Goods Feedback Response",
+      "id": "82169b2a-0e46-47a8-b4dd-2c1faeff3ce5",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Api-Key",
+            "value": "{{ym_oauth_token}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://api.partner.market.yandex.ru/v2/reports/info/8d193f57-aba4-4d4a-9b54-fd2bc3631e51",
+          "protocol": "https",
+          "host": [
+            "api",
+            "partner",
+            "market",
+            "yandex",
+            "ru"
+          ],
+          "path": [
+            "v2",
+            "reports",
+            "info",
+            "8d193f57-aba4-4d4a-9b54-fd2bc3631e51"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "info": {
+    "_postman_id": "76e0fbcf-6765-4b4e-98d5-c9df71a26cdf",
+    "name": "Departments",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Departments",
+      "id": "09f48390-d02b-47b9-8a66-8c2ae6eaed5c",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/departments"
+      },
+      "response": []
+    },
+    {
+      "name": "Departments Claims",
+      "id": "d05c5f8c-7e41-42b6-903c-c6bb86364518",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/claims/departments"
+      },
+      "response": []
+    },
+    {
+      "name": "Department Create",
+      "id": "bdf0ffd0-02bc-469b-a8e1-dc73a959aad9",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzA0MDg2ODksImV4cCI6MTYzMDQxMjI4OSwibmJmIjoxNjMwNDA4Njg5LCJqdGkiOiJaeUtnTDdiUU1xM0lCYUplIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.MD0M8crdAx5k1vJwM8fquWGw58F-m3uKyxYtgbqdkU8",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"guid\": \"1\",\r\n    \"name\": \"Main Department\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/department/submit"
+      },
+      "response": []
+    },
+    {
+      "name": "Departments Import",
+      "id": "5bde824e-d4fe-4a99-9266-9bdb0a051997",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzE1MTQ0MTYsIm5iZiI6MTYzMTUxNDQxNiwianRpIjoibGNaeDdGbTVhOHJBZElqWiIsInN1YiI6NywicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.HrcA2o7nmZ1sfGuF5xfJdq02nm-7A32KiZnaJ9tn4GE",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n     {\r\n        \"guid\": \"00000000-0000-0000-0000-000000000000\",\r\n        \"name\": \"\",\r\n        \"parent_guid\": \"\"\r\n    },\r\n    {\r\n        \"guid\": \"0dca3fc6-997a-11df-8da0-e61f13537e43\",\r\n        \"name\": \"Департамент московских продаж\",\r\n        \"parent_guid\": \"00000000-0000-0000-0000-000000000000\"\r\n    },\r\n    {\r\n        \"guid\": \"7a1d4859-63eb-11e3-9b80-e61f13537e43\",\r\n        \"name\": \"Департамент дилерских продаж\",\r\n        \"parent_guid\": \"00000000-0000-0000-0000-000000000000\"\r\n    },\r\n    {\r\n        \"guid\": \"810df31b-ed86-11e0-9f14-e61f13537e43\",\r\n        \"name\": \"Отдел продаж оборудования предприятий торговли\",\r\n        \"parent_guid\": \"0dca3fc6-997a-11df-8da0-e61f13537e43\"\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/table/import/departments"
+      },
+      "response": []
+    },
+    {
+      "name": "Departments Import PROD",
+      "id": "7ddbf214-f461-493d-9328-d9de3bf6b883",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"guid\": \"0dca3fc6-997a-11df-8da0-e61f13537e43\",\r\n        \"name\": \"Департамент московских продаж\",\r\n        \"parent_guid\": \"00000000-0000-0000-0000-000000000000\"\r\n    },\r\n    {\r\n        \"guid\": \"7a1d4859-63eb-11e3-9b80-e61f13537e43\",\r\n        \"name\": \"Департамент дилерских продаж\",\r\n        \"parent_guid\": \"00000000-0000-0000-0000-000000000000\"\r\n    },\r\n    {\r\n        \"guid\": \"810df31b-ed86-11e0-9f14-e61f13537e43\",\r\n        \"name\": \"Отдел продаж оборудования предприятий торговли\",\r\n        \"parent_guid\": \"0dca3fc6-997a-11df-8da0-e61f13537e43\"\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_prod}}/api/table/import/departments"
+      },
+      "response": []
+    }
+  ]
+}

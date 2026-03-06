@@ -1,0 +1,163 @@
+{
+  "info": {
+    "_postman_id": "79ec2a67-5f74-4608-8420-713e2692679a",
+    "name": "Contact Info Kinds",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Contact Info Kinds",
+      "id": "83fd78a6-1b9c-4078-afd7-fc64c064de1b",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzA0MDUwMjgsImV4cCI6MTYzMDQwODYyOCwibmJmIjoxNjMwNDA1MDI4LCJqdGkiOiIxRWtTOXlWWFZ6MGhWMjdFIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.q4QbtY9VdNHhHGRevH-_iUon_eOYp17mg_zKwWSzJzs",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/contact-info-kinds",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "contact-info-kinds"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Contact Info Kind Create",
+      "id": "cea63d8c-b9b2-4286-aa28-e8d4a3a9e830",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzA0MDUwMjgsImV4cCI6MTYzMDQwODYyOCwibmJmIjoxNjMwNDA1MDI4LCJqdGkiOiIxRWtTOXlWWFZ6MGhWMjdFIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.q4QbtY9VdNHhHGRevH-_iUon_eOYp17mg_zKwWSzJzs",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"guid\": \"1\",\r\n    \"name\": \"my contact info kind 1\",\r\n    \"type\": \"Телефон\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/contact-info-kind/submit",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "contact-info-kind",
+            "submit"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Contact Info Kinds Import",
+      "id": "4d26387a-cf90-4ffc-b46a-165230a4fb06",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzE1MTQ0MTYsIm5iZiI6MTYzMTUxNDQxNiwianRpIjoibGNaeDdGbTVhOHJBZElqWiIsInN1YiI6NywicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.HrcA2o7nmZ1sfGuF5xfJdq02nm-7A32KiZnaJ9tn4GE",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"guid\": \"b910ecef-9cc8-44e8-b0df-bc705acb83ed\",\r\n        \"name\": \"Юридический адрес\",\r\n        \"type\": \"Адрес\"\r\n    },\r\n    {\r\n        \"guid\": \"209f03fa-d873-4e87-b99a-ae6c8feb2af9\",\r\n        \"name\": \"Адрес электронной почты контрагента для обмена электронными документами\",\r\n        \"type\": \"АдресЭлектроннойПочты\"\r\n    },\r\n    {\r\n        \"guid\": \"b6a5d2ff-32b8-4425-bd40-789bc63c7b4f\",\r\n        \"name\": \"Телефон\",\r\n        \"type\": \"Телефон\"\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/table/import/contact-info-kinds",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "table",
+            "import",
+            "contact-info-kinds"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Contact Info Kinds Import PROD",
+      "id": "9f9f7ddc-a2ea-4470-8ba1-ea24739025d0",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"guid\": \"b910ecef-9cc8-44e8-b0df-bc705acb83ed\",\r\n        \"name\": \"Юридический адрес\",\r\n        \"type\": \"Адрес\"\r\n    },\r\n    {\r\n        \"guid\": \"209f03fa-d873-4e87-b99a-ae6c8feb2af9\",\r\n        \"name\": \"Адрес электронной почты контрагента для обмена электронными документами\",\r\n        \"type\": \"АдресЭлектроннойПочты\"\r\n    },\r\n    {\r\n        \"guid\": \"b6a5d2ff-32b8-4425-bd40-789bc63c7b4f\",\r\n        \"name\": \"Телефон\",\r\n        \"type\": \"Телефон\"\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_prod}}/api/table/import/contact-info-kinds",
+          "protocol": "https",
+          "host": [
+            "api",
+            "t-d",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "table",
+            "import",
+            "contact-info-kinds"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

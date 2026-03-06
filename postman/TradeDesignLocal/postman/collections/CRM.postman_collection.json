@@ -1,0 +1,712 @@
+{
+  "info": {
+    "_postman_id": "499b8400-b7ea-4489-b197-f802ae07b899",
+    "name": "CRM",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Applications",
+      "item": [
+        {
+          "name": "CRM Applications Create",
+          "id": "fc195003-a376-48ee-99cf-3d1a06cd2213",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTc1MjU4MTYyMywibmJmIjoxNzUyNTgxNjIzLCJqdGkiOiJOV3pISnRoNU4wcnFza05zIiwic3ViIjo1MjM3LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.HnMx1Mf9oOMVZbM8i88BcjStgQ39SyLn89W4Cck3OiM",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"id\": 35,\r\n    \"date\": \"2025-07-04 17:00:00\",\r\n    \"website_guid\": \"22eb2937-4af9-11ee-a9b7-0050568e3182\",\r\n    \"name\": \"Testov Test Testovich\",\r\n    \"phone\": \"+79000000000\",\r\n    \"email\": null,\r\n    \"page\": null,\r\n    \"title\": null,\r\n    \"text\": null,\r\n    \"product_name\": null,\r\n    \"product_guid\": null,\r\n    \"product_code\": null,\r\n    \"brand_name\": null\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/crm/applications/create"
+          },
+          "response": []
+        },
+        {
+          "name": "CRM Applications Get",
+          "id": "8701d34e-00da-4979-a6fd-c2833bf018b0",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTc1MjU4MTYyMywibmJmIjoxNzUyNTgxNjIzLCJqdGkiOiJOV3pISnRoNU4wcnFza05zIiwic3ViIjo1MjM3LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.HnMx1Mf9oOMVZbM8i88BcjStgQ39SyLn89W4Cck3OiM",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/crm/applications"
+          },
+          "response": []
+        }
+      ],
+      "id": "ba6c66e0-bd60-4541-9ac0-308c7d3ddcf1"
+    },
+    {
+      "name": "Calls",
+      "item": [
+        {
+          "name": "Beeline Save Xml",
+          "id": "989fc760-6a4b-45b9-ab5c-be242325fd09",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Transfer-Id",
+                "value": "202211081327",
+                "type": "text"
+              },
+              {
+                "key": "Package-Number",
+                "value": "1",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "<xsi:Event xmlns:xsi1=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsi=\"http://schema.broadsoft.com/xsi\" xsi1:type=\"xsi:SubscriptionEvent\">\r\n<xsi:eventID>41267ced-8839-41f4-a1bf-02e4dcec7ea7</xsi:eventID>\r\n<xsi:sequenceNumber>1</xsi:sequenceNumber>\r\n<xsi:isFirst>false</xsi:isFirst>\r\n<xsi:isLast>false</xsi:isLast>\r\n<xsi:userId>MPBX_E_73070_387935199_EventSubscription@ip.beeline.ru</xsi:userId>\r\n<xsi:externalApplicationId>387935199_30300a331296acca757b4069c47cbc7e</xsi:externalApplicationId>\r\n<xsi:subscriptionId>6c7ce140-3527-469e-8256-c06fb89461ca</xsi:subscriptionId>\r\n<xsi:httpContact>\r\n<xsi:uri>{{base_url_prod}}/api/beeline/save-xml</xsi:uri>\r\n</xsi:httpContact>\r\n<xsi:targetId>SIP25151U00002@ip.beeline.ru</xsi:targetId>\r\n<xsi:eventData xsi1:type=\"xsi:CallAnsweredEvent\">\r\n<xsi:call>\r\n<xsi:callId>1ce09f3a-6db2-43ea-84b5-f643f4d34cb1:161</xsi:callId>\r\n<xsi:extTrackingId>ce303725-e2bc-4c49-98fe-65483ae74767</xsi:extTrackingId>\r\n<xsi:networkCallId>1ce09f3a-6db2-43ea-84b5-f643f4d34cb1</xsi:networkCallId>\r\n<xsi:personality>Terminator</xsi:personality>\r\n<xsi:state>Active</xsi:state>\r\n<xsi:remoteParty>\r\n<xsi:address countryCode=\"7\">tel:+78124958710</xsi:address>\r\n<xsi:callType>Network</xsi:callType>\r\n</xsi:remoteParty>\r\n<xsi:endpoint xsi1:type=\"xsi:AccessEndpoint\">\r\n<xsi:addressOfRecord>SIP25151U00002@ip.beeline.ru</xsi:addressOfRecord>\r\n</xsi:endpoint>\r\n<xsi:appearance>1</xsi:appearance>\r\n<xsi:startTime>1752144596660</xsi:startTime>\r\n<xsi:answerTime>1752144598980</xsi:answerTime>\r\n</xsi:call>\r\n</xsi:eventData>\r\n</xsi:Event>",
+              "options": {
+                "raw": {
+                  "language": "xml"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/crm/beeline/save-xml"
+          },
+          "response": []
+        },
+        {
+          "name": "CRM Calls Get",
+          "id": "eae2db56-9284-4384-bf39-b08b74f71068",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Transfer-Id",
+                "value": "202211081327",
+                "type": "text"
+              },
+              {
+                "key": "Package-Number",
+                "value": "1",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "xml"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/crm/calls?per_page=100"
+          },
+          "response": []
+        },
+        {
+          "name": "Beeline Call Create",
+          "id": "5f419596-0f04-4f6d-aeab-512879e311d0",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTc1MjU4MTYyMywibmJmIjoxNzUyNTgxNjIzLCJqdGkiOiJOV3pISnRoNU4wcnFza05zIiwic3ViIjo1MjM3LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.HnMx1Mf9oOMVZbM8i88BcjStgQ39SyLn89W4Cck3OiM",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Transfer-Id",
+                "value": "202211081327",
+                "type": "text"
+              },
+              {
+                "key": "Package-Number",
+                "value": "1",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "<xsi:Event xmlns:xsi1=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsi=\"http://schema.broadsoft.com/xsi\" xsi1:type=\"xsi:SubscriptionEvent\">\r\n<xsi:eventID>fec7d645-3f7d-446c-ade1-3d998ea4375d</xsi:eventID>\r\n<xsi:sequenceNumber>12</xsi:sequenceNumber>\r\n<xsi:isFirst>false</xsi:isFirst>\r\n<xsi:isLast>true</xsi:isLast>\r\n<xsi:userId>MPBX_E_73070_387935199_EventSubscription@ip.beeline.ru</xsi:userId>\r\n<xsi:externalApplicationId>387935199_c36e011d8687191a34db062c32814a65</xsi:externalApplicationId>\r\n<xsi:subscriptionId>e8999480-1dce-49be-8616-140bad4c1fae</xsi:subscriptionId>\r\n<xsi:httpContact>\r\n<xsi:uri>{{base_url_prod}}/api/crm/beeline/call/create?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTc1MjU4MTYyMywibmJmIjoxNzUyNTgxNjIzLCJqdGkiOiJOV3pISnRoNU4wcnFza05zIiwic3ViIjo1MjM3LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.HnMx1Mf9oOMVZbM8i88BcjStgQ39SyLn89W4Cck3OiM</xsi:uri>\r\n</xsi:httpContact>\r\n<xsi:targetId>SIP25151U00002@ip.beeline.ru</xsi:targetId>\r\n<xsi:eventData xsi1:type=\"xsi:CallReleasedEvent\">\r\n<xsi:call>\r\n<xsi:callId>bfa77873-f400-43d4-981f-2d0840822c05:171</xsi:callId>\r\n<xsi:extTrackingId>6e063fca-3612-43c3-b8d2-b1c78416427c</xsi:extTrackingId>\r\n<xsi:networkCallId>bfa77873-f400-43d4-981f-2d0840822c05</xsi:networkCallId>\r\n<xsi:personality>Terminator</xsi:personality>\r\n<xsi:state>Released</xsi:state>\r\n<xsi:releasingParty>remoteRelease</xsi:releasingParty>\r\n<xsi:remoteParty>\r\n<xsi:address countryCode=\"7\">tel:+74956518100</xsi:address>\r\n<xsi:callType>Network</xsi:callType>\r\n</xsi:remoteParty>\r\n<xsi:startTime>1752845023705</xsi:startTime>\r\n<xsi:answerTime>1752845028305</xsi:answerTime>\r\n<xsi:releaseTime>1752845069945</xsi:releaseTime>\r\n<xsi:allowedRecordingControls>none</xsi:allowedRecordingControls>\r\n<xsi:recorded/>\r\n</xsi:call>\r\n</xsi:eventData>\r\n</xsi:Event>",
+              "options": {
+                "raw": {
+                  "language": "xml"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/crm/beeline/call/save"
+          },
+          "response": []
+        }
+      ],
+      "id": "dd9b0795-a66c-48ba-aba6-724a9bb3664c"
+    },
+    {
+      "name": "Chats",
+      "item": [
+        {
+          "name": "Jivo Chat Create",
+          "id": "114c6fb8-20c5-4b6b-b596-ff074886a58e",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Transfer-Id",
+                "value": "202211081327",
+                "type": "text"
+              },
+              {
+                "key": "Package-Number",
+                "value": "1",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"event_name\": \"chat_accepted\",\r\n    \"event_timestamp\": 1752733158,\r\n    \"widget_id\": \"sycom7kg3m\",\r\n    \"user_token\": null,\r\n    \"visitor\": {\r\n        \"name\": \"Moscow 61614\",\r\n        \"email\": null,\r\n        \"phone\": null,\r\n        \"description\": null,\r\n        \"number\": 61614,\r\n        \"chats_count\": 1\r\n    },\r\n    \"organization\": null,\r\n    \"status\": null,\r\n    \"assigned_agent\": null,\r\n    \"tags\": [],\r\n    \"chat_id\": 31496,\r\n    \"topic\": null,\r\n    \"session\": {\r\n        \"geoip\": {\r\n            \"region_code\": \"MOW\",\r\n            \"country_code\": \"RU\",\r\n            \"country\": \"Russia\",\r\n            \"region\": \"Moscow, Moscow\",\r\n            \"city\": \"Moscow\",\r\n            \"isp\": \"\",\r\n            \"latitude\": \"55.755800\",\r\n            \"longitude\": \"37.617300\",\r\n            \"organization\": \"PJSC MegaFon\"\r\n        },\r\n        \"utm\": \"campaign=(organic)|source=Yandex|medium=search\",\r\n        \"utm_json\": {\r\n            \"campaign\": \"(organic)\",\r\n            \"source\": \"Yandex\",\r\n            \"medium\": \"search\"\r\n        },\r\n        \"ip_addr\": \"37.29.119.35\",\r\n        \"user_agent\": \"Mozilla\\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\\/537.36 (KHTML, like Gecko) Chrome\\/136.0.0.0 YaBrowser\\/25.6.0.0 Safari\\/537.36\"\r\n    },\r\n    \"page\": {\r\n        \"url\": \"https:\\/\\/pro-biznes.ru\\/catalog\\/item\\/63016\\/\",\r\n        \"title\": \"Гранитор EKSI SMB-2x15L Купить по выгодной цене в Москве с доставкой по России\"\r\n    },\r\n    \"analytics\": null,\r\n    \"agents\": [\r\n        {\r\n            \"id\": 1712782,\r\n            \"email\": \"200@horeca.ru\",\r\n            \"name\": \"Наталья\"\r\n        }\r\n    ],\r\n    \"chat\": {\r\n        \"messages\": [\r\n            {\r\n                \"message\": \"<Message text is not displayed here>\",\r\n                \"timestamp\": 1752688887,\r\n                \"type\": \"visitor\"\r\n            },\r\n            {\r\n                \"message\": \"<Message text is not displayed here>\",\r\n                \"timestamp\": 1752688897,\r\n                \"type\": \"visitor\"\r\n            },\r\n            {\r\n                \"message\": \"<Message text is not displayed here>\",\r\n                \"timestamp\": 1752688991,\r\n                \"type\": \"agent\",\r\n                \"agent_id\": 1712782\r\n            },\r\n            {\r\n                \"message\": \"<Message text is not displayed here>\",\r\n                \"timestamp\": 1752689024,\r\n                \"type\": \"visitor\"\r\n            },\r\n            {\r\n                \"message\": \"<Message text is not displayed here>\",\r\n                \"timestamp\": 1752689110,\r\n                \"type\": \"agent\",\r\n                \"agent_id\": 1712782\r\n            },\r\n            {\r\n                \"message\": \"<Message text is not displayed here>\",\r\n                \"timestamp\": 1752731416,\r\n                \"type\": \"agent\",\r\n                \"agent_id\": 1712782\r\n            }\r\n        ],\r\n        \"blacklisted\": false,\r\n        \"invite_timestamp\": 1752688908\r\n    },\r\n    \"plain_messages\": \"[Visitor Moscow 61614] - 2025-07-16 21:01:27 - Добрый вечер,есть ли в наличии данная модель. EKSI SMB-2x15L\\n[Visitor Moscow 61614] - 2025-07-16 21:01:37 - Добрый вечер,есть ли в наличии данная модель. EKSI SMB-2x15L\\n[Agent Наталья] - 2025-07-16 21:03:11 - Добрый вечер, завтра смогу отписаться по наличию\\n[Visitor Moscow 61614] - 2025-07-16 21:03:44 - Принял.Жду.Спасибо\\n[Agent Наталья] - 2025-07-16 21:05:10 - На вотсап завтра утром сможете напомнить 8-963-976-55-25 Наталия Баева\\n[Agent Наталья] - 2025-07-17 08:50:16 - Доброе утро, нет в наличии\",\r\n    \"html_messages\": \"<p><strong>Visitor Moscow 61614<\\/strong><br>2025-07-16 21:01:27<br>Добрый вечер,есть ли в наличии данная модель. EKSI SMB-2x15L<\\/p><br><p><strong>Visitor Moscow 61614<\\/strong><br>2025-07-16 21:01:37<br>Добрый вечер,есть ли в наличии данная модель. EKSI SMB-2x15L<\\/p><br><p><strong>Agent Наталья<\\/strong><br>2025-07-16 21:03:11<br>Добрый вечер, завтра смогу отписаться по наличию<\\/p><br><p><strong>Visitor Moscow 61614<\\/strong><br>2025-07-16 21:03:44<br>Принял.Жду.Спасибо<\\/p><br><p><strong>Agent Наталья<\\/strong><br>2025-07-16 21:05:10<br>На вотсап завтра утром сможете напомнить 8-963-976-55-25 Наталия Баева<\\/p><br><p><strong>Agent Наталья<\\/strong><br>2025-07-17 08:50:16<br>Доброе утро, нет в наличии<\\/p>\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/crm/jivo/chat/save"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Chats",
+          "id": "b0a953dc-8b26-48ff-bc34-e755797468b3",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3NTMxMDE4MTgsImV4cCI6MTc1MzcwNjYxOCwibmJmIjoxNzUzMTAxODE4LCJqdGkiOiJGZHF1REl1eHF5ZG9ucWE2Iiwic3ViIjoyNjQ2LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.XFbyQRcoEkAbycUjIwi-QMl3tzQeFeFH_CDoAtkljgg",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Transfer-Id",
+                "value": "202211081327",
+                "type": "text"
+              },
+              {
+                "key": "Package-Number",
+                "value": "1",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"event_name\": \"chat_declined\",\r\n    \"event_timestamp\": 1752735412,\r\n    \"widget_id\": \"sycom7kg3m\",\r\n    \"user_token\": null,\r\n    \"visitor\": {\r\n        \"name\": \"Ануар\",\r\n        \"email\": \"anuar.82-25@mail.ru\",\r\n        \"phone\": \"77071552412\",\r\n        \"description\": null,\r\n        \"number\": 61404,\r\n        \"chats_count\": 1\r\n    },\r\n    \"organization\": null,\r\n    \"status\": null,\r\n    \"assigned_agent\": null,\r\n    \"tags\": [],\r\n    \"chat_id\": 31270,\r\n    \"topic\": null,\r\n    \"session\": {\r\n        \"geoip\": {\r\n            \"region_code\": \"75\",\r\n            \"country_code\": \"KZ\",\r\n            \"country\": \"Kazakhstan\",\r\n            \"region\": \"Almaty\",\r\n            \"city\": \"Almaty (Medeū)\",\r\n            \"isp\": \"\",\r\n            \"latitude\": \"43.252200\",\r\n            \"longitude\": \"76.956900\",\r\n            \"organization\": \"TNSPLUS-FTTB\"\r\n        },\r\n        \"utm\": \"campaign=(organic)|source=Google|medium=search\",\r\n        \"utm_json\": {\r\n            \"campaign\": \"(organic)\",\r\n            \"source\": \"Google\",\r\n            \"medium\": \"search\"\r\n        },\r\n        \"ip_addr\": \"5.34.2.146\",\r\n        \"user_agent\": \"Mozilla\\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\\/537.36 (KHTML, like Gecko) Chrome\\/138.0.0.0 Safari\\/537.36\"\r\n    },\r\n    \"page\": {\r\n        \"url\": \"https:\\/\\/eksi.ru\\/order\\/\",\r\n        \"title\": \"Оформление заказа\"\r\n    },\r\n    \"analytics\": null,\r\n    \"agent\": {\r\n        \"id\": 1712782,\r\n        \"email\": \"200@horeca.ru\",\r\n        \"name\": \"Наталья\"\r\n    }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/crm/chats?per_page=100"
+          },
+          "response": []
+        }
+      ],
+      "id": "81548aa1-561b-45ed-8cab-7e462a8495b6"
+    },
+    {
+      "name": "Leads",
+      "item": [
+        {
+          "name": "Get Leads",
+          "id": "4ddd6612-7086-4c55-97cd-5dd5212eb27b",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3NTM3OTM0NjcsImV4cCI6MTc1NDM5ODI2NywibmJmIjoxNzUzNzkzNDY3LCJqdGkiOiJ6R2JWSjlHWFl4eURYbzZ6Iiwic3ViIjoyNjQ2LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.EVmT-2Br45rIIZSyZvMvac5VC1EO9LXOFt0kbir0jKY",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Transfer-Id",
+                "value": "202211081327",
+                "type": "text"
+              },
+              {
+                "key": "Package-Number",
+                "value": "1",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"event_name\": \"chat_declined\",\r\n    \"event_timestamp\": 1752735412,\r\n    \"widget_id\": \"sycom7kg3m\",\r\n    \"user_token\": null,\r\n    \"visitor\": {\r\n        \"name\": \"Ануар\",\r\n        \"email\": \"anuar.82-25@mail.ru\",\r\n        \"phone\": \"77071552412\",\r\n        \"description\": null,\r\n        \"number\": 61404,\r\n        \"chats_count\": 1\r\n    },\r\n    \"organization\": null,\r\n    \"status\": null,\r\n    \"assigned_agent\": null,\r\n    \"tags\": [],\r\n    \"chat_id\": 31270,\r\n    \"topic\": null,\r\n    \"session\": {\r\n        \"geoip\": {\r\n            \"region_code\": \"75\",\r\n            \"country_code\": \"KZ\",\r\n            \"country\": \"Kazakhstan\",\r\n            \"region\": \"Almaty\",\r\n            \"city\": \"Almaty (Medeū)\",\r\n            \"isp\": \"\",\r\n            \"latitude\": \"43.252200\",\r\n            \"longitude\": \"76.956900\",\r\n            \"organization\": \"TNSPLUS-FTTB\"\r\n        },\r\n        \"utm\": \"campaign=(organic)|source=Google|medium=search\",\r\n        \"utm_json\": {\r\n            \"campaign\": \"(organic)\",\r\n            \"source\": \"Google\",\r\n            \"medium\": \"search\"\r\n        },\r\n        \"ip_addr\": \"5.34.2.146\",\r\n        \"user_agent\": \"Mozilla\\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\\/537.36 (KHTML, like Gecko) Chrome\\/138.0.0.0 Safari\\/537.36\"\r\n    },\r\n    \"page\": {\r\n        \"url\": \"https:\\/\\/eksi.ru\\/order\\/\",\r\n        \"title\": \"Оформление заказа\"\r\n    },\r\n    \"analytics\": null,\r\n    \"agent\": {\r\n        \"id\": 1712782,\r\n        \"email\": \"200@horeca.ru\",\r\n        \"name\": \"Наталья\"\r\n    }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/crm/leads"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Lead",
+          "id": "8d0fd779-bb82-4c66-be9a-1bae49ef86de",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3NTM3OTM0NjcsImV4cCI6MTc1NDM5ODI2NywibmJmIjoxNzUzNzkzNDY3LCJqdGkiOiJ6R2JWSjlHWFl4eURYbzZ6Iiwic3ViIjoyNjQ2LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.EVmT-2Br45rIIZSyZvMvac5VC1EO9LXOFt0kbir0jKY",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"parents_only\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/crm/lead/22"
+          },
+          "response": [
+            {
+              "id": "765bec4e-c657-4687-bc5b-263f3eb37dda",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "lyoulka@mail.ru"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Update Comment",
+          "id": "40b73dc4-037b-4a88-959d-99b4adfbeffc",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3NTM3OTM0NjcsImV4cCI6MTc1NDM5ODI2NywibmJmIjoxNzUzNzkzNDY3LCJqdGkiOiJ6R2JWSjlHWFl4eURYbzZ6Iiwic3ViIjoyNjQ2LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.EVmT-2Br45rIIZSyZvMvac5VC1EO9LXOFt0kbir0jKY",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"comment\": \"text\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/crm/lead/update-comment/22"
+          },
+          "response": [
+            {
+              "id": "4002c609-c195-4bee-8c78-46173f09a551",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "lyoulka@mail.ru"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Update Lead",
+          "id": "13f5062f-efbc-435c-94cf-f0e0a9259da3",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3NTM3OTM0NjcsImV4cCI6MTc1NDM5ODI2NywibmJmIjoxNzUzNzkzNDY3LCJqdGkiOiJ6R2JWSjlHWFl4eURYbzZ6Iiwic3ViIjoyNjQ2LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.EVmT-2Br45rIIZSyZvMvac5VC1EO9LXOFt0kbir0jKY",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Transfer-Id",
+                "value": "202211081327",
+                "type": "text"
+              },
+              {
+                "key": "Package-Number",
+                "value": "1",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"title\": \"title\",\r\n    \"name\": \"name\",\r\n    \"phone\": \"79001231212\",\r\n    \"email\": \"email@email.com\",\r\n    \"date\": \"2025-11-13\",\r\n    \"website_guid\": \"e9f62be0-4c7d-11e9-a4f1-e61f13537e43\",\r\n    \"manager_guid\": \"17d7eca6-2a0b-11ee-866f-000c297bb3bc\",\r\n    \"comment\": null,\r\n    \"lead_objects\": [\r\n        {\r\n            \"identifier\": \"34060\",\r\n            \"type\": \"chat\"\r\n        }\r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/crm/lead/update/1"
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Lead Objects",
+          "id": "64b26dd4-8397-4f6b-a904-db50f1bfc6f2",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvdHJhZGUtZGVzaWduXC9hcGlcL2F1dGgtZnJvbnRcL2xvZ2luIiwiaWF0IjoxNzY0MTY0NDMxLCJuYmYiOjE3NjQxNjQ0MzEsImp0aSI6IkNsZE5iTlpNUEFjTVlVQ3UiLCJzdWIiOjMsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.whHIZ9ClWAMLDUlQHnIuV3MpQZWF7dH_N7OilVPO8Vw",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Transfer-Id",
+                "value": "202211081327",
+                "type": "text"
+              },
+              {
+                "key": "Package-Number",
+                "value": "1",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n        \"lead_objects\": [\r\n        {\r\n            \"identifier\": \"228\",\r\n            \"type\": \"call\"\r\n        }\r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/crm/lead/delete-objects/1"
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Duplicate",
+          "id": "e9e7892a-cf37-4b40-a79a-c3a87beeae13",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTc2ODQ4NDcyMywiZXhwIjoxNzY5MDg5NTIzLCJuYmYiOjE3Njg0ODQ3MjMsImp0aSI6ImhqVUd5ZDY5ZGQ2RFFhSUQiLCJzdWIiOjI2NDYsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.dh6qHSTTk56xzuv5AYK4W3YQGZ3rSzN07JIKcM78w98",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"current_lead_id\": 25679,\r\n    \"original_lead_id\": 25678\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/crm/leads/delete-duplicate"
+          },
+          "response": []
+        },
+        {
+          "name": "Add Duplicate",
+          "id": "cb37e992-4f34-48d1-a3c7-6af58bf5ad50",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTc2ODQ4NDcyMywiZXhwIjoxNzY5MDg5NTIzLCJuYmYiOjE3Njg0ODQ3MjMsImp0aSI6ImhqVUd5ZDY5ZGQ2RFFhSUQiLCJzdWIiOjI2NDYsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.dh6qHSTTk56xzuv5AYK4W3YQGZ3rSzN07JIKcM78w98",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"current_lead_id\": 25679,\r\n    \"original_lead_id\": 25678\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/crm/leads/add-duplicate"
+          },
+          "response": []
+        }
+      ],
+      "id": "d6375b21-0dd6-49f9-9b76-81ac5d7a3238"
+    },
+    {
+      "name": "Mails",
+      "item": [
+        {
+          "name": "CRM Mails Get",
+          "id": "e85968d1-3689-42c8-9c60-f8b13390202d",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Transfer-Id",
+                "value": "202211081327",
+                "type": "text"
+              },
+              {
+                "key": "Package-Number",
+                "value": "1",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "xml"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/crm/mails?per_page=100"
+          },
+          "response": []
+        }
+      ],
+      "id": "4022fc23-a983-40b7-a22f-8cc0f322de22"
+    },
+    {
+      "name": "Ka Orders",
+      "item": [
+        {
+          "name": "Get Ka Orders",
+          "id": "9b3aec96-62db-4081-b197-dd04399a729a",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3NTM3OTM0NjcsImV4cCI6MTc1NDM5ODI2NywibmJmIjoxNzUzNzkzNDY3LCJqdGkiOiJ6R2JWSjlHWFl4eURYbzZ6Iiwic3ViIjoyNjQ2LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.EVmT-2Br45rIIZSyZvMvac5VC1EO9LXOFt0kbir0jKY",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Transfer-Id",
+                "value": "202211081327",
+                "type": "text"
+              },
+              {
+                "key": "Package-Number",
+                "value": "1",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"event_name\": \"chat_declined\",\r\n    \"event_timestamp\": 1752735412,\r\n    \"widget_id\": \"sycom7kg3m\",\r\n    \"user_token\": null,\r\n    \"visitor\": {\r\n        \"name\": \"Ануар\",\r\n        \"email\": \"anuar.82-25@mail.ru\",\r\n        \"phone\": \"77071552412\",\r\n        \"description\": null,\r\n        \"number\": 61404,\r\n        \"chats_count\": 1\r\n    },\r\n    \"organization\": null,\r\n    \"status\": null,\r\n    \"assigned_agent\": null,\r\n    \"tags\": [],\r\n    \"chat_id\": 31270,\r\n    \"topic\": null,\r\n    \"session\": {\r\n        \"geoip\": {\r\n            \"region_code\": \"75\",\r\n            \"country_code\": \"KZ\",\r\n            \"country\": \"Kazakhstan\",\r\n            \"region\": \"Almaty\",\r\n            \"city\": \"Almaty (Medeū)\",\r\n            \"isp\": \"\",\r\n            \"latitude\": \"43.252200\",\r\n            \"longitude\": \"76.956900\",\r\n            \"organization\": \"TNSPLUS-FTTB\"\r\n        },\r\n        \"utm\": \"campaign=(organic)|source=Google|medium=search\",\r\n        \"utm_json\": {\r\n            \"campaign\": \"(organic)\",\r\n            \"source\": \"Google\",\r\n            \"medium\": \"search\"\r\n        },\r\n        \"ip_addr\": \"5.34.2.146\",\r\n        \"user_agent\": \"Mozilla\\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\\/537.36 (KHTML, like Gecko) Chrome\\/138.0.0.0 Safari\\/537.36\"\r\n    },\r\n    \"page\": {\r\n        \"url\": \"https:\\/\\/eksi.ru\\/order\\/\",\r\n        \"title\": \"Оформление заказа\"\r\n    },\r\n    \"analytics\": null,\r\n    \"agent\": {\r\n        \"id\": 1712782,\r\n        \"email\": \"200@horeca.ru\",\r\n        \"name\": \"Наталья\"\r\n    }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/crm/leads"
+          },
+          "response": []
+        }
+      ],
+      "id": "9ead02ac-fe1b-44cd-98c0-34367bc6cda8"
+    }
+  ]
+}

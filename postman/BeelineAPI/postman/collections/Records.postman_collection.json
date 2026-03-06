@@ -1,0 +1,64 @@
+{
+  "info": {
+    "_postman_id": "0e6178d1-9ab4-46d7-88f0-d962ae69ca0d",
+    "name": "Records",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Record",
+      "id": "10921405-9ebb-4046-910b-5357e49b21d2",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "X-MPBX-API-AUTH-TOKEN",
+            "value": "{{mpbx_auth_token}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{baseURL}}/v2/records/511f5a18-7ed3-4696-81a2-a2b6e7a6a6cc/SIP25151U00004@ip.beeline.ru",
+          "host": [
+            "{{baseURL}}"
+          ],
+          "path": [
+            "v2",
+            "records",
+            "511f5a18-7ed3-4696-81a2-a2b6e7a6a6cc",
+            "SIP25151U00004@ip.beeline.ru"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Record Download",
+      "id": "77d0457f-2244-4e8b-a12c-94ac8b196db0",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "X-MPBX-API-AUTH-TOKEN",
+            "value": "{{mpbx_auth_token}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{baseURL}}/v2/records/53302d4d-bf6c-470a-b059-6645142ccf53/SIP25151U00005@ip.beeline.ru/download",
+          "host": [
+            "{{baseURL}}"
+          ],
+          "path": [
+            "v2",
+            "records",
+            "53302d4d-bf6c-470a-b059-6645142ccf53",
+            "SIP25151U00005@ip.beeline.ru",
+            "download"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

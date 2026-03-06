@@ -1,0 +1,244 @@
+﻿{
+  "info": {
+    "_postman_id": "ce6dc80f-830e-4bf9-b039-8a0f948e9f89",
+    "name": "Brands Orders",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Brands Orders",
+      "id": "67d507db-31a7-4b62-bec3-921846f96ef6",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTcyODQ1MDc2OSwiZXhwIjoxNzI5MDU1NTY5LCJuYmYiOjE3Mjg0NTA3NjksImp0aSI6Ik9JSDBWYTRzSkJKZndCRWsiLCJzdWIiOjI2NDYsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.wc4F1Hb9_w17IzbdWDwUfl1Vro1ohZc_KPdlA7IzJEA",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/brands-orders",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "brands-orders"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Nomenclature Brands Orders",
+      "id": "1c6a9f09-33d9-4fe0-a5b3-0896a1562ca6",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MzEwNjE1NzAsImV4cCI6MTczMTY2NjM3MCwibmJmIjoxNzMxMDYxNTcwLCJqdGkiOiJ2YTZzM0pEZ1JqZUJoMDJzIiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.TrgQdjq-t6MyVI8PaPbaFB3sXbQgVo-tuPTSOxZz35o",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/nomenclature/brands-orders",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "nomenclature",
+            "brands-orders"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Nomenclature Brands Orders Download",
+      "id": "993b5093-c773-4b54-be87-47fffe82f6e5",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MzEwNjE1NzAsImV4cCI6MTczMTY2NjM3MCwibmJmIjoxNzMxMDYxNTcwLCJqdGkiOiJ2YTZzM0pEZ1JqZUJoMDJzIiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.TrgQdjq-t6MyVI8PaPbaFB3sXbQgVo-tuPTSOxZz35o",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/nomenclature/brands-orders/download?is_on_balance=false",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "nomenclature",
+            "brands-orders",
+            "download"
+          ],
+          "query": [
+            {
+              "key": "is_on_balance",
+              "value": "false"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Storage Places Main",
+      "id": "4c21456b-d932-48d2-a87a-774192f7164c",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MzEwNjE1NzAsImV4cCI6MTczMTY2NjM3MCwibmJmIjoxNzMxMDYxNTcwLCJqdGkiOiJ2YTZzM0pEZ1JqZUJoMDJzIiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.TrgQdjq-t6MyVI8PaPbaFB3sXbQgVo-tuPTSOxZz35o",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/warehouses/storage-places/main",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "warehouses",
+            "storage-places",
+            "main"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Brands Orders Save",
+      "id": "1156f1b0-9ab1-4c2e-b19c-b2ef44b3b9f8",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MzEwNjE1NzAsImV4cCI6MTczMTY2NjM3MCwibmJmIjoxNzMxMDYxNTcwLCJqdGkiOiJ2YTZzM0pEZ1JqZUJoMDJzIiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.TrgQdjq-t6MyVI8PaPbaFB3sXbQgVo-tuPTSOxZz35o",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"brand_guid\": \"cafe2fb8-35bb-11e5-8e3a-e61f13537e43\",\r\n    \"order\": 2,\r\n    \"is_zip\": false\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/brands-orders/save",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "brands-orders",
+            "save"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Brands Orders Delete",
+      "id": "0df30658-2aa6-4ef2-8378-c7923e0d078c",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTczMDM2NDY5NSwiZXhwIjoxNzMwOTY5NDk1LCJuYmYiOjE3MzAzNjQ2OTUsImp0aSI6ImVQZmdHM2p4SjRBUFBmREUiLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.T1I9LE8MlwrecLOMgFyhX0SH_DOQKW8W6t8OXgPLUIA",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/brands-orders/delete/10f2fbbb-21e5-11e4-b05d-e61f13537e43",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "brands-orders",
+            "delete",
+            "10f2fbbb-21e5-11e4-b05d-e61f13537e43"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Brands Orders Statistics",
+      "id": "29edac03-7685-44db-9d02-0f8bcea6febf",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTczMjEwNDAxNSwiZXhwIjoxNzMyNzA4ODE1LCJuYmYiOjE3MzIxMDQwMTUsImp0aSI6ImVHZWU2MEZIWk1LbUp0S00iLCJzdWIiOjI2NDYsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.61XWhJk1ZPDMLePpteqvAppb4sOWjDavsyDZfwvfz_Y",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/brands-orders/statistics/6f77e326-221a-11e0-8679-e61f13537e43",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "brands-orders",
+            "statistics",
+            "6f77e326-221a-11e0-8679-e61f13537e43"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

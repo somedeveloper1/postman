@@ -1,0 +1,177 @@
+{
+  "info": {
+    "_postman_id": "dd0a2aec-3ec4-438c-be52-b2e0a6e09473",
+    "name": "Nomenclature Prices",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Nomenclature Prices",
+      "id": "6345edeb-cf73-4b02-9601-f1aa717a943b",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzAzOTE4NTgsImV4cCI6MTYzMDM5NTQ1OCwibmJmIjoxNjMwMzkxODU4LCJqdGkiOiJuSXJwNkw2aFhVb3o3eDZ2Iiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.MYD4gcGUjwHRhdvw71-38IYvjOHzKTjZVt9qcqL4QjI",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/nomenclature-prices"
+      },
+      "response": []
+    },
+    {
+      "name": "Nomenclature Price Create",
+      "id": "40fd4a8c-9404-49bc-90dc-44e8baf0d208",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzA1OTEzNDAsImV4cCI6MTYzMDU5NDk0MCwibmJmIjoxNjMwNTkxMzQwLCJqdGkiOiJqYWRiVnVpOXoyQ3BJRjNmIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.HaANsi7AEQTUKwzq0W7MWc1KBaS4Jis5WQEeULEUYGA",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"date\": \"2021-08-31\",\r\n    \"price_type_guid\": \"1\",\r\n    \"nomenclature_guid\": \"2\",\r\n    \"currency_guid\": \"1\",\r\n    \"price\": \"150.00\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/nomenclature-price/submit"
+      },
+      "response": []
+    },
+    {
+      "name": "Nomenclature Prices Import",
+      "id": "9e16ca2b-76d0-4f76-9dcc-f3e2615d1f61",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Transfer-Id",
+            "value": "85236974123698745644",
+            "type": "text"
+          },
+          {
+            "key": "Package-Number",
+            "value": "      r6u6",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"date\": \"2016-02-02T00:00:00\",\r\n        \"price_type_guid\": \"a0c6e0e4-9719-11df-8a28-e61f135382c7\",\r\n        \"nomenclature_guid\": \"076688a3-a685-11e6-826a-e61f13537e43\",\r\n        \"currency_guid\": \"78683575-956c-11df-bfea-e61f13537e43\",\r\n        \"price\": 1000,\r\n        \"margin\": 12.3\r\n    },\r\n    {\r\n        \"date\": \"2016-02-02T00:00:00\",\r\n        \"price_type_guid\": \"a0c6e0e4-9719-11df-8a28-e61f135382c7\",\r\n        \"nomenclature_guid\": \"b7e1ab7d-95a2-11df-bfea-e61f13537e43\",\r\n        \"currency_guid\": \"78683575-956c-11df-bfea-e61f13537e43\",\r\n        \"price\": 2000,\r\n        \"margin\": 0.52\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/table/import/nomenclature-prices"
+      },
+      "response": []
+    },
+    {
+      "name": "Nomenclature Prices Import PROD",
+      "id": "aa562650-a6e3-432e-803a-d43398a13d69",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"date\": \"2016-01-02T00:00:00\",\r\n        \"price_type_guid\": \"a0c6e0e4-9719-11df-8a28-e61f135382c7\",\r\n        \"nomenclature_guid\": \"076688a3-a685-11e6-826a-e61f13537e43\",\r\n        \"currency_guid\": \"78683575-956c-11df-bfea-e61f13537e43\",\r\n        \"price\": 2199\r\n    },\r\n    {\r\n        \"date\": \"2016-01-02T00:00:00\",\r\n        \"price_type_guid\": \"a0c6e0e4-9719-11df-8a28-e61f135382c7\",\r\n        \"nomenclature_guid\": \"b7e1ab7d-95a2-11df-bfea-e61f13537e43\",\r\n        \"currency_guid\": \"78683575-956c-11df-bfea-e61f13537e43\",\r\n        \"price\": 1185\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_prod}}/api/table/import/nomenclature-prices"
+      },
+      "response": []
+    },
+    {
+      "name": "Nomenclature Prices get JSON",
+      "id": "79452f5a-30c3-4297-b77f-2f7e104cf3c7",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzA1ODk0MzQsImV4cCI6MTYzMDU5MzAzNCwibmJmIjoxNjMwNTg5NDM0LCJqdGkiOiJSVFVvMmxtdWkzMHRKT0VDIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.yO6R72iQcqZh_oCwDBcDNSQYGiJ8IqzNL076CWBjpMA",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/nomenclature-prices/get-json"
+      },
+      "response": []
+    },
+    {
+      "name": "Nomenclature Prices create JSON",
+      "id": "b4e3ba99-afd6-49d7-b6a9-ff241f262055",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/nomenclature-prices/create-json"
+      },
+      "response": []
+    },
+    {
+      "name": "Nomenclature Prices Deltas",
+      "id": "e7a2d3db-5220-494a-a54b-82fae06f63fa",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/nomenclature-price/delta"
+      },
+      "response": []
+    },
+    {
+      "name": "Nomenclature Prices Delete",
+      "id": "9c15407b-edb6-4bdb-a7c7-bc9a3880aab2",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": "{{base_url_local}}/api/nomenclature-price/delete-deltas"
+      },
+      "response": []
+    }
+  ]
+}

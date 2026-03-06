@@ -1,0 +1,140 @@
+{
+  "info": {
+    "_postman_id": "7e3d8f77-640b-4fd0-95d8-02acde29046a",
+    "name": "Reports",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Ozon Products Report Create",
+      "id": "2b03a16c-9df6-4538-abcd-524c5e403cac",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Client-Id",
+            "value": "{{ozon_client_id_header}}",
+            "type": "text"
+          },
+          {
+            "key": "Api-Key",
+            "value": "{{ozon_client_id}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"filter\": {\r\n        \"product_id\": [],\r\n        \"visibility\": \"ALL\"\r\n    },\r\n    \"limit\": 100,\r\n    \"last_id\": \"\",\r\n    \"sort_dir\": \"ASC\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api-seller.ozon.ru/v1/report/products/create",
+          "protocol": "https",
+          "host": [
+            "api-seller",
+            "ozon",
+            "ru"
+          ],
+          "path": [
+            "v1",
+            "report",
+            "products",
+            "create"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Ozon Posting Report Create",
+      "id": "e41e6f6c-b355-4452-bb4a-0a84a8a1f546",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Client-Id",
+            "value": "{{ozon_client_id_header}}",
+            "type": "text"
+          },
+          {
+            "key": "Api-Key",
+            "value": "{{ozon_client_id}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"filter\": {\r\n        \"processed_at_from\": \"2025-12-01T00:00:00.000Z\",\r\n        \"processed_at_to\": \"2025-12-15T00:00:00.000Z\"\r\n    },\r\n    \"limit\": 100,\r\n    \"last_id\": \"\",\r\n    \"sort_dir\": \"ASC\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api-seller.ozon.ru/v1/report/postings/create",
+          "protocol": "https",
+          "host": [
+            "api-seller",
+            "ozon",
+            "ru"
+          ],
+          "path": [
+            "v1",
+            "report",
+            "postings",
+            "create"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Ozon Report Info",
+      "id": "af8c8e86-befa-4a7e-b876-efd7c90807df",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Client-Id",
+            "value": "{{ozon_client_id_header}}",
+            "type": "text"
+          },
+          {
+            "key": "Api-Key",
+            "value": "{{ozon_client_id}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"code\": \"\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api-seller.ozon.ru/v1/report/info",
+          "protocol": "https",
+          "host": [
+            "api-seller",
+            "ozon",
+            "ru"
+          ],
+          "path": [
+            "v1",
+            "report",
+            "info"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

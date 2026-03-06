@@ -1,0 +1,179 @@
+﻿{
+  "info": {
+    "_postman_id": "e19b68e5-7547-45b7-ac11-a6933193b028",
+    "name": "Residue Units",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Residue Units",
+      "id": "d41bf43f-2da7-419c-9c23-e9dbe33df1aa",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzAzMDQzNDUsImV4cCI6MTYzMDMwNzk0NSwibmJmIjoxNjMwMzA0MzQ1LCJqdGkiOiJrNDRaQkYwd2s4NHdORWp4Iiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.23jho9Nh045pie7s-NSrC7TTXfiTEKo8VM28RyjQoCA",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/residue-units",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "residue-units"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Residue Unit Create",
+      "id": "e454564d-c49d-4681-ab7e-8c9b895cbe10",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzAzMDQzNDUsImV4cCI6MTYzMDMwNzk0NSwibmJmIjoxNjMwMzA0MzQ1LCJqdGkiOiJrNDRaQkYwd2s4NHdORWp4Iiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.23jho9Nh045pie7s-NSrC7TTXfiTEKo8VM28RyjQoCA",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "guid",
+              "value": "1",
+              "type": "text"
+            },
+            {
+              "key": "code",
+              "value": "123",
+              "type": "text"
+            },
+            {
+              "key": "name",
+              "value": "Yulia",
+              "type": "text"
+            },
+            {
+              "key": "full_name",
+              "value": "Yulia Kostenko",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/residue-unit/submit",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "residue-unit",
+            "submit"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Residue Units Import",
+      "id": "ce0be084-3951-4d62-84eb-a578e654b2de",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzE1MTQ0MTYsIm5iZiI6MTYzMTUxNDQxNiwianRpIjoibGNaeDdGbTVhOHJBZElqWiIsInN1YiI6NywicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.HrcA2o7nmZ1sfGuF5xfJdq02nm-7A32KiZnaJ9tn4GE",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"guid\": \"78683578-956c-11df-bfea-e61f13537e43\",\r\n        \"full_name\": \"Килограмм\",\r\n        \"code\": \"166\",\r\n        \"name\": \"кг\"\r\n    },\r\n    {\r\n        \"guid\": \"db953149-dd79-11dd-b60c-001a6498e70d\",\r\n        \"full_name\": \"Штука\",\r\n        \"code\": \"796\",\r\n        \"name\": \"шт\"\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/table/import/residue-units",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "table",
+            "import",
+            "residue-units"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Residue Units Import PROD",
+      "id": "c77dcfd8-996e-4490-98d4-9dbf903b458d",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"guid\": \"78683578-956c-11df-bfea-e61f13537e43\",\r\n        \"full_name\": \"Килограмм\",\r\n        \"code\": \"166\",\r\n        \"name\": \"кг\"\r\n    },\r\n    {\r\n        \"guid\": \"db953149-dd79-11dd-b60c-001a6498e70d\",\r\n        \"full_name\": \"Штука\",\r\n        \"code\": \"796\",\r\n        \"name\": \"шт\"\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_prod}}/api/table/import/residue-units",
+          "protocol": "https",
+          "host": [
+            "api",
+            "t-d",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "table",
+            "import",
+            "residue-units"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "info": {
+    "_postman_id": "ad4b620a-1536-4361-9dbf-172bd34c62e3",
+    "name": "Nomenclature To Storage Places",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Nomenclature To Storage Places",
+      "id": "0e851e9a-9d74-4c02-b3a4-985507e8a95a",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Transfer-Id",
+            "value": "202410111408",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"nomenclature_guid\": \"d84773d0-9582-11df-bfea-e61f13537e43\",\r\n        \"warehouse_guid\": \"d84773d0-9582-11df-bfea-e61f13537e43\",\r\n        \"storage_place_guid\": \"d84773d0-9582-11df-bfea-e61f13537e43\",\r\n        \"priority\": 8\r\n    },\r\n    {\r\n        \"nomenclature_guid\": \"d84773d0-9582-11df-bfea-e61f13537e43\",\r\n        \"warehouse_guid\": \"d84773d0-9582-11df-bfea-e61f13537e43\",\r\n        \"storage_place_guid\": \"d84773d0-9582-11df-bfea-e61f13537e43\",\r\n        \"priority\": 2\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/table/import/nomenclature-to-storage-places",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "table",
+            "import",
+            "nomenclature-to-storage-places"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

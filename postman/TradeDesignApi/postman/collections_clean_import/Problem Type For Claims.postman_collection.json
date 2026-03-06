@@ -1,0 +1,119 @@
+{
+  "info": {
+    "_postman_id": "3d39de77-847a-4131-856b-291bea4ad6a3",
+    "name": "Problem Type For Claims",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Problem Type For Claims",
+      "id": "b2912a6b-8ba7-4179-9625-2327b2156613",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/problem-types-for-claims",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "problem-types-for-claims"
+          ],
+          "query": [
+            {
+              "key": "search",
+              "value": "di",
+              "disabled": true
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Problem Type For Claims Create",
+      "id": "e4d47b6f-16b4-4427-b9d2-c656176d9571",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"extra\",\r\n    \"title\": \"extra\",\r\n    \"nomenclature_groups\": [2, 3]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/problem-types-for-claims/create",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "problem-types-for-claims",
+            "create"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Problem Type For Claims Update",
+      "id": "d6396c3a-2ac7-488b-b443-84375bb0cdd1",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"extra2\",\r\n    \"title\": \"Недостача/излишек\",\r\n    \"nomenclature_groups\": [2]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/problem-types-for-claims/update/9",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "problem-types-for-claims",
+            "update",
+            "9"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Problem Type For Claims Delete",
+      "id": "16057d9a-7cdf-4ee1-bf3c-801ede7d199e",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/problem-types-for-claims/1/detele",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "problem-types-for-claims",
+            "1",
+            "detele"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "info": {
+    "_postman_id": "ca0dd6d7-bfc6-4063-97af-af19fea8c5a2",
+    "name": "Returns",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Returns",
+      "id": "39d775c7-dd85-4141-848f-cddb18579b29",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "{{wb_token}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://common-api.wildberries.ru/api/v1/tariffs/return?date=2025-07-29",
+          "protocol": "https",
+          "host": [
+            "common-api",
+            "wildberries",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "tariffs",
+            "return"
+          ],
+          "query": [
+            {
+              "key": "date",
+              "value": "2025-07-29"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

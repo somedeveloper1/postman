@@ -1,0 +1,181 @@
+﻿{
+  "info": {
+    "_postman_id": "0a1de673-d8c7-44b8-b34c-e5852f2bb04f",
+    "name": "Notifications",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Notifications",
+      "id": "64c2ac7d-bbb4-4b8d-9bf6-4bfdf1ce86e0",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NDA2NzgyMjUsImV4cCI6MTY0MDc2NDYyNSwibmJmIjoxNjQwNjc4MjI1LCJqdGkiOiJ1NE9QRTR5dHpMTUhqQ1N5Iiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.lnnBcK3yvCh4Y3z18ONI-hb0FrOTRd1J-9EuwmKO1QI",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/notifications",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "notifications"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Notification",
+      "id": "a1c5f357-bb50-4dd3-a871-3aee49769e96",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2Mzg4NjY2NzYsImV4cCI6MTYzODk1MzA3NiwibmJmIjoxNjM4ODY2Njc2LCJqdGkiOiI2NVlPWHBGbW1Nd0dIN1dPIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.vfOxpXrNfh1yAXZQd4V4o3ONnGs3RID51BwS2ZgHCbE",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/notification/8",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "notification",
+            "8"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Notifications Read",
+      "id": "425c8d31-7d74-4162-b329-31e1dd2882ff",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2Mzg4NjY2NzYsImV4cCI6MTYzODk1MzA3NiwibmJmIjoxNjM4ODY2Njc2LCJqdGkiOiI2NVlPWHBGbW1Nd0dIN1dPIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.vfOxpXrNfh1yAXZQd4V4o3ONnGs3RID51BwS2ZgHCbE",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"ids\": [8, 9, 12]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/notifications/read",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "notifications",
+            "read"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Notifications Read All",
+      "id": "b5b88b5d-1463-4cf6-8495-33bc59deb62f",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2Mzg4NjY2NzYsImV4cCI6MTYzODk1MzA3NiwibmJmIjoxNjM4ODY2Njc2LCJqdGkiOiI2NVlPWHBGbW1Nd0dIN1dPIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.vfOxpXrNfh1yAXZQd4V4o3ONnGs3RID51BwS2ZgHCbE",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"ids\": [8, 9, 12]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/notifications/read",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "notifications",
+            "read"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Notifications Count",
+      "id": "387a04cb-e7c7-43c6-bbe8-61034ee7b522",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2Mzg4NjY2NzYsImV4cCI6MTYzODk1MzA3NiwibmJmIjoxNjM4ODY2Njc2LCJqdGkiOiI2NVlPWHBGbW1Nd0dIN1dPIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.vfOxpXrNfh1yAXZQd4V4o3ONnGs3RID51BwS2ZgHCbE",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/notifications/count",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "notifications",
+            "count"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

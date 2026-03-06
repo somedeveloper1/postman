@@ -1,0 +1,78 @@
+﻿{
+  "info": {
+    "_postman_id": "6b138154-99b5-4b9f-9960-2139630d7ffc",
+    "name": "Loyalty System",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Loyalty System",
+      "id": "22105a26-dc56-4b12-ace4-9c06b66725e9",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTY3OTQ2Mjg3NywiZXhwIjoxNjgwMDY3Njc3LCJuYmYiOjE2Nzk0NjI4NzcsImp0aSI6IlVEOWM4eG04dzU4V3lhN1QiLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.4yBBuIW7jqn3DAU-bCbjRJXE2-lwbPpnAB2khtXIinw",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/dealers-lk/loyalty-system?search=рыбалка",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "dealers-lk",
+            "loyalty-system"
+          ],
+          "query": [
+            {
+              "key": "search",
+              "value": "рыбалка"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Loyalty System For Dealer",
+      "id": "c4e96847-021b-4138-9da3-7bb623e6e827",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2ODExMDk5NzksImV4cCI6MTY4MTcxNDc3OSwibmJmIjoxNjgxMTA5OTc5LCJqdGkiOiJHUU5pcTE3N3padkdtQ1hTIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.HwViod2qRuwDgkziF3LPpaK1fZFYH2fxLm6tW_OesNE",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/dealers-lk/loyalty-system/dealer",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "dealers-lk",
+            "loyalty-system",
+            "dealer"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+﻿{
+  "info": {
+    "_postman_id": "602fe6a0-1fca-4f8a-a092-ef94db6e1963",
+    "name": "Websites",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Websites",
+      "id": "08d1078d-0815-48d5-b3e8-4ec0ffa74062",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzA0ODg2NzAsImV4cCI6MTYzMDQ5MjI3MCwibmJmIjoxNjMwNDg4NjcwLCJqdGkiOiJVMTlHaHFhU2RYS044R1BwIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.i0ns775Hk0Nc3XvcsccVHfn0zllOOsNb9R2qPzPN8xc",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/websites",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "websites"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Website Create",
+      "id": "d110dcf6-9199-4267-915a-776172b06380",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzE1MTQ0MTYsIm5iZiI6MTYzMTUxNDQxNiwianRpIjoibGNaeDdGbTVhOHJBZElqWiIsInN1YiI6NywicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.HrcA2o7nmZ1sfGuF5xfJdq02nm-7A32KiZnaJ9tn4GE",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": " {\r\n        \"guid\": \"cbbafb01-2cee-11e7-a9eb-e61f13537e43\",\r\n        \"name\": \"t-d.ru\",\r\n        \"code\": \"000000001\",\r\n        \"price_type\": \"a0c6e0e5-9719-11df-8a28-e61f135382c7\",\r\n        \"warehouses\": [\r\n            {\r\n            \"warehouse_guid\": \"f8131a98-9ca4-11df-8da0-e61f13537e42\"\r\n            },\r\n            {\r\n            \"warehouse_guid\": \"b9404562-956d-11df-b3e0-e61f135382b1\"\r\n            }\r\n        ]\r\n    }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/website/submit",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "website",
+            "submit"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Websites Import",
+      "id": "a3817203-c31c-4efb-aafe-962bddf5551d",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"guid\": \"e4d2143a-de6f-11e7-a3f6-e61f13537e43\",\r\n        \"name\": \"Пробизнес\",\r\n        \"code\": \"000000003\",\r\n        \"price_type\": \"a0c6e0e4-9719-11df-8a28-e61f135382c7\",\r\n        \"warehouses\": [\r\n            {\r\n            \"warehouse_guid\": \"f8131a98-9ca4-11df-8da0-e61f13537e42\"\r\n            },\r\n            {\r\n            \"warehouse_guid\": \"b9404562-956d-11df-b3e0-e61f135382b1\"\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"guid\": \"cbbafb01-2cee-11e7-a9eb-e61f13537e43\",\r\n        \"name\": \"t-d.ru\",\r\n        \"code\": \"000000001\",\r\n        \"price_type\": \"a0c6e0e5-9719-11df-8a28-e61f135382c7\"\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/table/import/websites",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "table",
+            "import",
+            "websites"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Websites Import PROD",
+      "id": "015f4116-1191-4d5f-9c20-1fac05682bfb",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"guid\": \"e4d2143a-de6f-11e7-a3f6-e61f13537e43\",\r\n        \"name\": \"Пробизнес\",\r\n        \"code\": \"000000003\",\r\n        \"price_type\": \"a0c6e0e4-9719-11df-8a28-e61f135382c7\",\r\n        \"warehouses\": [\r\n            {\r\n            \"warehouse_guid\": \"f8131a98-9ca4-11df-8da0-e61f13537e43\"\r\n            },\r\n            {\r\n            \"warehouse_guid\": \"b9404562-956d-11df-b3e0-e61f135382c7\"\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"guid\": \"cbbafb01-2cee-11e7-a9eb-e61f13537e43\",\r\n        \"name\": \"t-d.ru\",\r\n        \"code\": \"000000001\",\r\n        \"price_type\": \"a0c6e0e5-9719-11df-8a28-e61f135382c7\"\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_prod}}/api/table/import/websites",
+          "protocol": "https",
+          "host": [
+            "api",
+            "t-d",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "table",
+            "import",
+            "websites"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

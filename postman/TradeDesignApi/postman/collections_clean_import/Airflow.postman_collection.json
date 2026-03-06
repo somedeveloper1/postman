@@ -1,0 +1,52 @@
+{
+  "info": {
+    "_postman_id": "2c2680b6-d5a5-4a83-94cd-89f39025b462",
+    "name": "Airflow",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Report",
+      "id": "b514c90d-c6e0-4d97-8f31-ce01b159d3a7",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTcwODAwODYwNiwiZXhwIjoxNzA4NjEzNDA2LCJuYmYiOjE3MDgwMDg2MDYsImp0aSI6InBSdExSZzhLTmhYa2R6NWkiLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.4hLMNRNfy0Wanwxy4DQFx-g33xYJNI91-boYmASW7RA",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"text\": \"test\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_prod}}/api/airflow/report/submit",
+          "protocol": "https",
+          "host": [
+            "api",
+            "t-d",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "airflow",
+            "report",
+            "submit"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

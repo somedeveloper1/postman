@@ -1,0 +1,3644 @@
+﻿{
+  "info": {
+    "_postman_id": "013dc949-fd6a-4117-98fa-527ce1352ff3",
+    "name": "Eksi",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Products",
+      "item": [
+        {
+          "name": "Products",
+          "id": "1f856895-666b-4bb8-834c-6d0304e30790",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"parents_only\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-eksi/products",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-eksi",
+                "products"
+              ],
+              "query": [
+                {
+                  "key": "order_by[0][param]",
+                  "value": "price_final_rub",
+                  "disabled": true
+                },
+                {
+                  "key": " order_by[0][order]",
+                  "value": "asc",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "760bd126-e139-4d3e-8da4-a2b0910955aa",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password=123456789",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "lyoulka@mail.ru"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Products For Sitemap",
+          "id": "8b92ceba-add2-473d-a7b1-eb7366a4f5f1",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"parents_only\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-eksi/products-for-sitemap?per_page=0",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-eksi",
+                "products-for-sitemap"
+              ],
+              "query": [
+                {
+                  "key": "per_page",
+                  "value": "0"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "ef4aacf7-a218-4779-8a11-fb2159911e11",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password=123456789",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "lyoulka@mail.ru"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Product",
+          "id": "0b85fef4-da67-48d7-9176-772f03533fa9",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"parents_only\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-eksi/product/23db02b7-695a-11e8-a2a5-e61f13537e43",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-eksi",
+                "product",
+                "23db02b7-695a-11e8-a2a5-e61f13537e43"
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "501121d5-1e0e-4e34-9bbe-fd21985caad4",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password=123456789",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "lyoulka@mail.ru"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Product Balance",
+          "id": "c0addc5d-e7a1-4952-8c7f-f91de8062cf4",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"parents_only\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-eksi/product/a76e1643-a913-11ed-a1d2-e61f13537e43/balance",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-eksi",
+                "product",
+                "a76e1643-a913-11ed-a1d2-e61f13537e43",
+                "balance"
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "0fcb6c1b-ee02-4931-a049-b0b9eb2b4377",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password=123456789",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "lyoulka@mail.ru"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Product Prices",
+          "id": "03fd14dc-ab62-47f2-af49-3e7d258855cf",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"parents_only\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_prod}}/api-eksi/product/350812/prices",
+              "protocol": "https",
+              "host": [
+                "api",
+                "t-d",
+                "ru"
+              ],
+              "path": [
+                "api-eksi",
+                "product",
+                "350812",
+                "prices"
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "8f36e7a3-9b21-4618-bbb4-db3968b5c0b9",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password=123456789",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "lyoulka@mail.ru"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Pim fields",
+          "id": "27b5fc89-defb-40fd-999f-afc4dec09bd2",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"parents_only\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-eksi/product/23db02b7-695a-11e8-a2a5-e61f13537e43/pim-fields",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-eksi",
+                "product",
+                "23db02b7-695a-11e8-a2a5-e61f13537e43",
+                "pim-fields"
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "801eebec-f23a-47e8-a44e-90db44e89573",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password=123456789",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "lyoulka@mail.ru"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Products For Basket",
+          "id": "df94c7fd-8a80-4096-bb54-bb5d4cdd97c0",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"guids\": [\r\n        \"5ecfae9c-c9ff-11e3-9897-e61f13537e43\",\r\n        \"860935e3-ed06-11e1-aa5e-e61f13537e43\"\r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-eksi/products-for-basket",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-eksi",
+                "products-for-basket"
+              ],
+              "query": [
+                {
+                  "key": "",
+                  "value": null,
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "2a166feb-b2de-489f-86f2-b021765bced6",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password=123456789",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "lyoulka@mail.ru"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Ka Products Analogues",
+          "id": "ecc48e15-0456-4cf9-abee-3bced76b33b9",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api-eksi/ka-products/8fa10d4e-b6b4-11e1-97da-e61f13537e43/analogues",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-eksi",
+                "ka-products",
+                "8fa10d4e-b6b4-11e1-97da-e61f13537e43",
+                "analogues"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "2a83f0ea-cc40-4b38-af7d-b3a755713fd6"
+    },
+    {
+      "name": "Categories",
+      "item": [
+        {
+          "name": "Categories",
+          "id": "2cf608cf-f05b-43bf-9169-473186c60eec",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"parents_only\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-eksi/categories?is_parents_only=true",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-eksi",
+                "categories"
+              ],
+              "query": [
+                {
+                  "key": "is_parents_only",
+                  "value": "true"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "bb62cc22-6592-484c-9659-99d9cfaffc83",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password=123456789",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "lyoulka@mail.ru"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Category",
+          "id": "f0bae1e3-3cd7-42b0-9473-d3c235328beb",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"parents_only\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-eksi/category/posuda-i-gastroemkosti",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-eksi",
+                "category",
+                "posuda-i-gastroemkosti"
+              ],
+              "query": [
+                {
+                  "key": "parents_only",
+                  "value": "false",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "cbac73fa-4295-4e2a-9d5c-055948ae3309",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password=123456789",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "lyoulka@mail.ru"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Categories For Sitemap",
+          "id": "f9425c42-046e-42e2-9c6d-7cecdca1bdda",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"parents_only\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-eksi/categories-for-sitemap",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-eksi",
+                "categories-for-sitemap"
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "21238fec-d729-457b-8337-dc6f31c15441",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password=123456789",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "lyoulka@mail.ru"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Category By Guid",
+          "id": "5b77f540-d69e-4fb9-8aa2-80616c5d855f",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"parents_only\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-eksi/category-by-guid/83172be8-f277-11ee-bc81-0050568e3182",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-eksi",
+                "category-by-guid",
+                "83172be8-f277-11ee-bc81-0050568e3182"
+              ],
+              "query": [
+                {
+                  "key": "parents_only",
+                  "value": "false",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "c0e778be-d890-49f6-ab06-d0dddb5171f1",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password=123456789",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "lyoulka@mail.ru"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        }
+      ],
+      "id": "2a27450b-e12b-4917-9161-c560c92fec88"
+    },
+    {
+      "name": "Filters",
+      "item": [
+        {
+          "name": "Eksi Prices Filter",
+          "id": "fc06d4ed-19f6-4693-a930-dde2f60cd46e",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api-eksi/filters/prices",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-eksi",
+                "filters",
+                "prices"
+              ],
+              "query": [
+                {
+                  "key": "price_from",
+                  "value": "300",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Eksi Countries Filter",
+          "id": "00f1ae73-1790-438f-80b9-9625d510e297",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api-eksi/filters/countries",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-eksi",
+                "filters",
+                "countries"
+              ],
+              "query": [
+                {
+                  "key": "price_from",
+                  "value": "300",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Eksi Properties TD Filter",
+          "id": "f282b53a-29f7-4240-9181-173e5ae0b96b",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api-eksi/filters/properties-td",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-eksi",
+                "filters",
+                "properties-td"
+              ],
+              "query": [
+                {
+                  "key": "price_from",
+                  "value": "300",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Eksi Brand Lines Filter",
+          "id": "6b94e817-b631-4fd9-9a31-922b6a238721",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api-eksi/filters/brand-lines",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-eksi",
+                "filters",
+                "brand-lines"
+              ],
+              "query": [
+                {
+                  "key": "price_from",
+                  "value": "300",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Eksi Nomenclature Groups Filter",
+          "id": "68c9763f-f7d5-48f3-af52-82fbc5ef7899",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api-eksi/filters/nomenclature-groups?nomenclature_groups[]=b3140624-9ca9-11ed-9248-e61f13537e43",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-eksi",
+                "filters",
+                "nomenclature-groups"
+              ],
+              "query": [
+                {
+                  "key": "price_from",
+                  "value": "300",
+                  "disabled": true
+                },
+                {
+                  "key": "nomenclature_groups[]",
+                  "value": "b3140624-9ca9-11ed-9248-e61f13537e43"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "59fd217d-086f-41db-a0a6-2487bb71b707"
+    },
+    {
+      "name": "Elastic",
+      "item": [
+        {
+          "name": "Search Bar",
+          "id": "f48bc22f-0807-4bd0-b202-4386b3cf276e",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-eksi/elastic/search-bar/categories",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-eksi",
+                "elastic",
+                "search-bar",
+                "categories"
+              ],
+              "query": [
+                {
+                  "key": "elastic_search",
+                  "value": "блендер",
+                  "disabled": true
+                },
+                {
+                  "key": "price_from",
+                  "value": "300",
+                  "disabled": true
+                },
+                {
+                  "key": "nomenclature[]",
+                  "value": "23db02b7-695a-11e8-a2a5-e61f13537e43",
+                  "disabled": true
+                },
+                {
+                  "key": "search",
+                  "value": "кипятильники",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "9fde0da0-b63b-4211-b683-3f77d89b8f56"
+    },
+    {
+      "name": "Consultation Request",
+      "item": [
+        {
+          "name": "Consultation Request Submit",
+          "id": "9acba6d4-77c2-4e67-bb5b-e11195db7561",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Юрий\",\r\n    \"phone\": \"89085444123\",\r\n    \"email\": \"tochnoneyura@gmail.com\",\r\n    \"element_guid\": \"23db02b7-695a-11e8-a2a5-e61f13537e43\",\r\n    \"type\": \"consultation\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-eksi/consultation-request/submit",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-eksi",
+                "consultation-request",
+                "submit"
+              ],
+              "query": [
+                {
+                  "key": "search_elastic",
+                  "value": "кипятильник",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "76cf8d4a-4456-48fa-af89-4a6542634948",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password=123456789",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "lyoulka@mail.ru"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        }
+      ],
+      "id": "04202da9-c60f-416e-afab-6cc771e8c13b"
+    },
+    {
+      "name": "Auth",
+      "item": [
+        {
+          "name": "Eksi Register",
+          "id": "cc80efcf-4500-48f0-8ff1-7ed293fee334",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n \"xml_id\": 1,\r\n \"timestamp_x\": \"2021-09-09 06:45:54\",\r\n \"login\": \"checkcheck\",\r\n \"password\": \"123456789\",\r\n \"password_bitrix\": \"11111\",\r\n \"stored_hash\": \"0000000\",\r\n \"checkword\": \"слово\",\r\n \"active\": \"Y\",\r\n \"name\": \"\",\r\n \"last_name\": \"YU\",\r\n \"second_name\": \"Иванович\",\r\n \"email\": \"lyoulka-new@test2.ru\",\r\n \"last_login\": \"2021-09-09 06:45:54\",\r\n \"last_activity_date\": \"2021-09-09 06:45:54\",\r\n \"date_register\": \"2021-09-08 11:55:00\",\r\n \"lid\": \"12\",\r\n \"admin_notes\": \"Заметки администратора\",\r\n \"external_auth_id\": \"3ea8c4cf-c62d-47fc-907d-5951d3d493f1\",\r\n \"personal_profession\": \"Бухгалтер\",\r\n \"personal_www\": \"http://ivanov-ivan.ru\",\r\n \"personal_icq\": \"111111111\",\r\n \"personal_gender\": \"М\",\r\n \"personal_birthday\": \"1986-01-01\",\r\n \"personal_photo\": 12,\r\n \"personal_phone\": \"+79000000000\",\r\n \"personal_fax\": \"11-12-13\",\r\n \"personal_mobile\": \"+79000000000\",\r\n \"personal_pager\": \"+79000000000\",\r\n \"personal_street\": \"ул. Московская, д. 11\",\r\n \"personal_mailbox\": \"ул. Московская, д. 11, кв. 10\",\r\n \"personal_city\": \"Москва\",\r\n \"personal_state\": \"Московская область\",\r\n \"personal_zip\": \"101000\",\r\n \"personal_country\": \"РФ\",\r\n \"personal_notes\": \"Заметки пользователя\",\r\n \"work_company\": \"ООО Компания\",\r\n \"work_department\": \"Бухгалтерия\",\r\n \"work_position\": \"Бухгалтер\",\r\n \"work_www\": \"http://company.ru\",\r\n \"work_phone\": \"+79000000001\",\r\n \"work_fax\": \"11-12-14\",\r\n \"work_pager\": \"+79000000001\",\r\n \"work_street\": \"ул. Московская, д. 12\",\r\n \"work_mailbox\": \"ул. Московская, д. 11, кв. 1\",\r\n \"work_city\": \"Москва\",\r\n \"work_state\": \"Московская область\",\r\n \"work_zip\": \"101000\",\r\n \"work_country\": \"РФ\",\r\n \"work_profile\": \"ИТ\",\r\n \"work_logo\": 13,\r\n \"work_notes\": \"Дополнительные заметки.\",\r\n \"uf_dealer_legal_entity_type\": \"Юр. лицо\",\r\n \"uf_dealer_inn\": \"123456789123\",\r\n \"uf_dealer_address_actual\": \"101000, г. Москва, ул. Московская, д. 12 кв. 3\",\r\n \"uf_dealer_address_legal\": \"101000, г. Москва, ул. Московская, д. 12 кв. 3\",\r\n \"uf_inn\": \"\",\r\n \"uf_kpp\": \"\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-eksi/register",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-eksi",
+                "register"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Eksi Login",
+          "id": "8360bccb-84ba-48af-97ef-c66ae5472f37",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"password\": \"123456789\",\r\n    \"email\": \"tochnoneyura@test.ru\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-eksi/login",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-eksi",
+                "login"
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "82be841a-910a-4a57-b4a0-cfc1bc43978c",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password=123456789",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "lyoulka@mail.ru"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Eksi Refresh Token",
+          "id": "5f069a89-652c-4471-9d95-7fac17b2c363",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaS1la3NpXC9sb2dpbiIsImlhdCI6MTcyMDQzNDkwMSwiZXhwIjoxNzIxMDM5NzAxLCJuYmYiOjE3MjA0MzQ5MDEsImp0aSI6Ik1rZnRHY0h2clYwV1FkdGoiLCJzdWIiOjM4MTQsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.pLh2mKnktAYHjjIK34CE0JdncOucI7nrAC7aBbRGG9g",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-eksi/refresh",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-eksi",
+                "refresh"
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "1376f50f-7025-4bb4-baaf-8bf0ace8b845",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password=123456789",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "lyoulka@mail.ru"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Eksi Logout",
+          "id": "6473a47d-4c60-4581-a5b5-1a4174c60bef",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaS1la3NpXC9sb2dpbiIsImlhdCI6MTcxOTkwODgwNywiZXhwIjoxNzIwNTEzNjA3LCJuYmYiOjE3MTk5MDg4MDcsImp0aSI6InVkdnlTSnhRZG5hcnZEUjIiLCJzdWIiOjMyNjcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.r6hZVeUTCKSIFAxt_WNAmTIndrNnnJd0TK8BKvup3l0",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"password\": \"123456789\",\r\n    \"email\": \"tochnoneyura@test.ru\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-eksi/logout",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-eksi",
+                "logout"
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "ed4f181b-8f1b-4f57-a319-cbc8dd20363a",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password=123456789",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "lyoulka@mail.ru"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Eksi Password Reset",
+          "id": "6a625e70-1934-4f7a-a3eb-49c67dce5ce2",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n \"password\": \"TD123456789\",\r\n \"email\": \"tochnoneyura@gmail.com\",\r\n \"password_confirmation\": \"TD123456789\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-eksi/reset-password/e08c8c2b6aeb247606210b7a1fec5e189e64f6c698d20f36fa26a6284aa4f619",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-eksi",
+                "reset-password",
+                "e08c8c2b6aeb247606210b7a1fec5e189e64f6c698d20f36fa26a6284aa4f619"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Eksi Password Forgot",
+          "id": "f655d51d-6a9f-43d9-94ab-a3b651e01db1",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n \"email\": \"tochnoneyura@gmail.com\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-eksi/forgot-password",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-eksi",
+                "forgot-password"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Eksi User Update",
+          "id": "81413bc2-33d3-4b76-bf41-c91969e1a33b",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaS1la3NpXC9sb2dpbiIsImlhdCI6MTcyMDE4MDQ4OSwiZXhwIjoxNzIwNzg1Mjg5LCJuYmYiOjE3MjAxODA0ODksImp0aSI6IlVaa1FDT1VSNEkxd1JCTUoiLCJzdWIiOjMyNjksInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.Yn8TYPIBWuPajdFqnGlco3GBxviGLKpZ73q5B6rA8Cw",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n \"xml_id\": 1,\r\n \"timestamp_x\": \"2021-09-09 06:45:54\",\r\n \"login\": \"checkcheck\",\r\n \"active\": \"Y\",\r\n \"name\": \"\",\r\n \"last_name\": \"YU\",\r\n \"second_name\": \"Иванович\",\r\n \"lid\": \"12\",\r\n \"personal_profession\": \"Бухгалтер\",\r\n \"personal_www\": \"http://ivanov-ivan.ru\",\r\n \"personal_icq\": \"111111111\",\r\n \"personal_gender\": \"М\",\r\n \"personal_birthday\": \"1986-01-01\",\r\n \"personal_photo\": 12,\r\n \"personal_phone\": \"+79000000000\",\r\n \"personal_fax\": \"11-12-13\",\r\n \"personal_mobile\": \"+79000000000\",\r\n \"personal_pager\": \"+79000000000\",\r\n \"personal_street\": \"ул. Московская, д. 11\",\r\n \"personal_mailbox\": \"ул. Московская, д. 11, кв. 10\",\r\n \"personal_city\": \"Москва\",\r\n \"personal_state\": \"Московская область\",\r\n \"personal_zip\": \"101000\",\r\n \"personal_country\": \"РФ\",\r\n \"personal_notes\": \"Заметки пользователя\",\r\n \"work_company\": \"ООО Компания\",\r\n \"work_department\": \"Бухгалтерия\",\r\n \"work_position\": \"Бухгалтер\",\r\n \"work_www\": \"http://company.ru\",\r\n \"work_phone\": \"+79000000001\",\r\n \"work_fax\": \"11-12-14\",\r\n \"work_pager\": \"+79000000001\",\r\n \"work_street\": \"ул. Московская, д. 12\",\r\n \"work_mailbox\": \"ул. Московская, д. 11, кв. 1\",\r\n \"work_city\": \"Москва\",\r\n \"work_state\": \"Московская область\",\r\n \"work_zip\": \"101000\",\r\n \"work_country\": \"РФ\",\r\n \"work_profile\": \"ИТ\",\r\n \"work_logo\": 13,\r\n \"work_notes\": \"Дополнительные заметки.\",\r\n \"uf_dealer_legal_entity_type\": \"Юр. лицо\",\r\n \"uf_dealer_inn\": \"123456789123\",\r\n \"uf_dealer_address_actual\": \"101000, г. Москва, ул. Московская, д. 12 кв. 3\",\r\n \"uf_dealer_address_legal\": \"101000, г. Москва, ул. Московская, д. 12 кв. 3\",\r\n \"uf_inn\": \"\",\r\n \"uf_kpp\": \"\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-eksi/user/update",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-eksi",
+                "user",
+                "update"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Eksi User Password Update",
+          "id": "695abbca-73be-452e-8ab3-218d7fc15c3d",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaS1la3NpXC9sb2dpbiIsImlhdCI6MTcyMDE4MDQ4OSwiZXhwIjoxNzIwNzg1Mjg5LCJuYmYiOjE3MjAxODA0ODksImp0aSI6IlVaa1FDT1VSNEkxd1JCTUoiLCJzdWIiOjMyNjksInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.Yn8TYPIBWuPajdFqnGlco3GBxviGLKpZ73q5B6rA8Cw",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n \"password\": \"123456789\",\r\n \"user_id\": 3269\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-eksi/user/password/update",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-eksi",
+                "user",
+                "password",
+                "update"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Eksi User Profile",
+          "id": "0089e33b-2771-460e-a372-778cea6d87bb",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaS1la3NpXC9sb2dpbiIsImlhdCI6MTcyMDQzNjc0NCwiZXhwIjoxNzIxMDQxNTQ0LCJuYmYiOjE3MjA0MzY3NDQsImp0aSI6ImRUdm1wU2V1aURHc0ZGY2UiLCJzdWIiOjMyNjksInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.dAtxAvWvI0tSpnZ8L4F68hmFZMyYLlB-ZhyoNpeaz8E",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-eksi/user/profile",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-eksi",
+                "user",
+                "profile"
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "95b22237-ec09-4df9-8a1e-d2aa77967a10",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password=123456789",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "lyoulka@mail.ru"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Eksi Check Email",
+          "id": "44047082-4d48-4970-8776-ea16555fbcf0",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaS1la3NpXC9sb2dpbiIsImlhdCI6MTcyMDQzNjc0NCwiZXhwIjoxNzIxMDQxNTQ0LCJuYmYiOjE3MjA0MzY3NDQsImp0aSI6ImRUdm1wU2V1aURHc0ZGY2UiLCJzdWIiOjMyNjksInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.dAtxAvWvI0tSpnZ8L4F68hmFZMyYLlB-ZhyoNpeaz8E",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\": \"test@gmail.com\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-eksi/check-email",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-eksi",
+                "check-email"
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "dfc7267b-5b4e-464c-b9cc-283e2611827f",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password=123456789",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "lyoulka@mail.ru"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "New Request",
+          "id": "868152b3-a0b8-443b-bf0b-4547f32d4f2b",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        }
+      ],
+      "id": "107dfdcb-5b78-46a2-9cbe-b7fef735c98e"
+    },
+    {
+      "name": "Orders",
+      "item": [
+        {
+          "name": "Eksi Order",
+          "id": "2f021207-2171-4d4f-8149-2f1100620fdf",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MjA1MjIzNDgsImV4cCI6MTcyMTEyNzE0OCwibmJmIjoxNzIwNTIyMzQ4LCJqdGkiOiJsY2oxd1RsbWdhVUhwa0NtIiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.gutU4m9fyFPIvqg8jhuDnFNXQ4PaUrJTlWqCtCS4sv0",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"parents_only\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-eksi/order/73e99916-abd1-4a0b-9803-527de612d7d4",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-eksi",
+                "order",
+                "73e99916-abd1-4a0b-9803-527de612d7d4"
+              ],
+              "query": [
+                {
+                  "key": "parents_only",
+                  "value": "false",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "1b46abf8-abdb-4108-9256-01c90e2952c3",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password=123456789",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "lyoulka@mail.ru"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Eksi Orders",
+          "id": "0429d84a-70fd-4725-8cee-b76f63d38172",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MjA1MjIzNDgsImV4cCI6MTcyMTEyNzE0OCwibmJmIjoxNzIwNTIyMzQ4LCJqdGkiOiJsY2oxd1RsbWdhVUhwa0NtIiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.gutU4m9fyFPIvqg8jhuDnFNXQ4PaUrJTlWqCtCS4sv0",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"parents_only\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-eksi/orders",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-eksi",
+                "orders"
+              ],
+              "query": [
+                {
+                  "key": "parents_only",
+                  "value": "false",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "51b03039-5075-4943-a624-2f2ed3e9cd94",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password=123456789",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "lyoulka@mail.ru"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Eksi Order Last Counterparty",
+          "id": "8378bd7a-6451-48f7-9819-8c65c10960ed",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MjA1MjIzNDgsImV4cCI6MTcyMTEyNzE0OCwibmJmIjoxNzIwNTIyMzQ4LCJqdGkiOiJsY2oxd1RsbWdhVUhwa0NtIiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.gutU4m9fyFPIvqg8jhuDnFNXQ4PaUrJTlWqCtCS4sv0",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"parents_only\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-eksi/orders/last-counterparty",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-eksi",
+                "orders",
+                "last-counterparty"
+              ],
+              "query": [
+                {
+                  "key": "parents_only",
+                  "value": "false",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Eksi Orders Create",
+          "id": "658c495b-46eb-42d9-90fc-3715b17c493b",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"first_name\": \"first_name\",\r\n    \"last_name\": \"last_name\",\r\n\t\"second_name\": \"second_name\",\r\n    \"email\": \"email12560@email.com\",\r\n\t\"contact_phone\": \"+79000000000\",\r\n\t\"website_comment\": \"Тест создания заказа по АПИ\",\r\n\t\"website_comment_by_client\": \"Тест создания заказа по АПИ\",\r\n    \"payment_type\": \"Безналичная\",\r\n\t\"delivery_method\": \"ДоКлиента\",\r\n\t\"delivery_address\": \"101000, г. Новосибирск, ул. Новосибирская, д. 1, кв. 1\",\r\n\t\"products\": [\r\n        {\r\n            \"nomenclature_guid\": \"23db02b7-695a-11e8-a2a5-e61f13537e43\",\r\n            \"branch_id\": 1,\r\n            \"amount\": 1\r\n        }\r\n\t],\r\n    \"counterparty\": {\r\n        \"counterparty_guid\": null,\r\n        \"counterparty_name\": \"Мое ЮрЛицо\",\r\n        \"INN\": \"123456789012\",\r\n        \"KPP\": \"123456789\",\r\n        \"organization_name\": null,\r\n        \"legal_address\": \"ЮрЛицо\",\r\n        \"bank_code\": null,\r\n        \"bank_corr_account\": null,\r\n        \"bank_name\": null,\r\n        \"bank_account\": null\r\n    }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-eksi/orders/create",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-eksi",
+                "orders",
+                "create"
+              ],
+              "query": [
+                {
+                  "key": "parents_only",
+                  "value": "false",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "4d1eeb26-ae07-4798-b7bf-e7b88739a1a6",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password=123456789",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "lyoulka@mail.ru"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Eksi Orders Min Total",
+          "id": "3d378f4f-b68f-46ed-9512-4179ef30905a",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTc1NTg0OTc0MCwiZXhwIjoxNzU2NDU0NTQwLCJuYmYiOjE3NTU4NDk3NDAsImp0aSI6IldQeXVYbGdFWmozeFN2WWciLCJzdWIiOjQxMTgsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.IWTqnJKwzOKmX_PNgPCPGr9GN97sNouW8v7eCPW74fU",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api-eksi/orders/min-total",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-eksi",
+                "orders",
+                "min-total"
+              ],
+              "query": [
+                {
+                  "key": "parents_only",
+                  "value": "false",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "a73108ee-11e5-4d9c-8fbc-58601dcba807",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password=123456789",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "lyoulka@mail.ru"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        }
+      ],
+      "id": "e8a83eed-cd95-455e-b816-e2168b6f29b9"
+    },
+    {
+      "name": "Basket",
+      "item": [
+        {
+          "name": "Basket Add",
+          "id": "862350f4-4623-418f-b1db-ca6b244f2b0f",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MjQ5OTk3NTIsImV4cCI6MTcyNTYwNDU1MiwibmJmIjoxNzI0OTk5NzUyLCJqdGkiOiJPTjdKOVNCM2J5c2p5VnlsIiwic3ViIjoxNDg0LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.sPZSb3AGo5XbqlKFvR29SeCJmrQEOniGNooR7gP4Cqo",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"basket\": [\r\n        {\r\n            \"nomenclature_guid\": \"0005566a-389b-11eb-97a0-e61f13537e43\",\r\n            \"amount\": 1,\r\n            \"branch_id\": 1\r\n        },\r\n        {\r\n            \"nomenclature_guid\": \"0089fe8d-55e6-11e9-a4f1-e61f13537e43\",\r\n            \"amount\": 2,\r\n            \"branch_id\": 2\r\n        },\r\n        {\r\n            \"nomenclature_guid\": \"00a73a36-a721-11e2-9910-e61f13537e43\",\r\n            \"amount\": 3,\r\n            \"branch_id\": 3\r\n        }\r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-eksi/basket/add",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-eksi",
+                "basket",
+                "add"
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "21b711af-a79b-4a29-a64f-45a772b26bcf",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password=123456789",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "lyoulka@mail.ru"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Basket Get",
+          "id": "e63c8556-6201-4330-afb3-34f6b45c58f3",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MjM2MzQ1ODMsImV4cCI6MTcyNDIzOTM4MywibmJmIjoxNzIzNjM0NTgzLCJqdGkiOiIyb0VGYUpaT2JPMHVoM1B0Iiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.ibLeXS81zFPBTYTYGLALIX0LvqCRUzteN2dJN9iaZD0",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://trade-design/api-eksi/basket",
+              "protocol": "https",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-eksi",
+                "basket"
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "2632a8a9-acef-4801-baec-be3d4a644e2f",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password=123456789",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "lyoulka@mail.ru"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Basket Delete",
+          "id": "20af1fae-c931-4dda-8367-3b2a663c5a28",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MjI5MjQwNTEsImV4cCI6MTcyMzUyODg1MSwibmJmIjoxNzIyOTI0MDUxLCJqdGkiOiJVV1dFdmNaU0JVazlFUzg4Iiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9._XyQRURAecFCAW0WzTeWvIBNyVN3v-tEQir4pB_mkvQ",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"guids\": [\r\n        \"5ecfae9c-c9ff-11e3-9897-e61f13537e43\"\r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-eksi/basket/delete",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-eksi",
+                "basket",
+                "delete"
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "40dbbb01-6967-4424-9bfc-bfaa2770da66",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password=123456789",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "lyoulka@mail.ru"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Basket Clear",
+          "id": "d830f769-b8cd-4d31-9805-a832eb560d95",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MjI5MjQwNTEsImV4cCI6MTcyMzUyODg1MSwibmJmIjoxNzIyOTI0MDUxLCJqdGkiOiJVV1dFdmNaU0JVazlFUzg4Iiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9._XyQRURAecFCAW0WzTeWvIBNyVN3v-tEQir4pB_mkvQ",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"basket\": [\r\n        {\r\n            \"nomenclature_guid\": \"5ecfae9c-c9ff-11e3-9897-e61f13537e43\",\r\n            \"amount\": 2\r\n        },\r\n        {\r\n            \"nomenclature_guid\": \"860935e3-ed06-11e1-aa5e-e61f13537e43\",\r\n            \"amount\": 1\r\n        }\r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-eksi/basket/clear",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-eksi",
+                "basket",
+                "clear"
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "8f8f86db-ab4d-4d8f-ba5f-31f7f44c05b4",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password=123456789",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "lyoulka@mail.ru"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        }
+      ],
+      "id": "46dc8ce2-32a9-4865-afa3-f17a52fc943d"
+    },
+    {
+      "name": "Branches",
+      "item": [
+        {
+          "name": "Branches Get",
+          "id": "a88ccc5a-a733-4558-825f-3f8332c31081",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaS1la3NpXC9sb2dpbiIsImlhdCI6MTcyNjU3MTMwMSwiZXhwIjoxNzI3MTc2MTAxLCJuYmYiOjE3MjY1NzEzMDEsImp0aSI6IlcxVThoZUJseTdPdk51aWgiLCJzdWIiOjMyNjcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.lXoNfI2sCulFSgrQwj6eX3JtA88rBK4o6FvNo7tW-pg",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"basket\": [\r\n        {\r\n            \"nomenclature_guid\": \"5ecfae9c-c9ff-11e3-9897-e61f13537e43\",\r\n            \"amount\": 2\r\n        },\r\n        {\r\n            \"nomenclature_guid\": \"860935e3-ed06-11e1-aa5e-e61f13537e43\",\r\n            \"amount\": 1\r\n        }\r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-eksi/branches-for-websites?order_by=Барн",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-eksi",
+                "branches-for-websites"
+              ],
+              "query": [
+                {
+                  "key": "order_by",
+                  "value": "Барн"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "8e943376-8054-48dc-9e2f-49fdcef424c7",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password=123456789",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "lyoulka@mail.ru"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        }
+      ],
+      "id": "e3f07bc5-d794-4172-a975-4da34863a70a"
+    },
+    {
+      "name": "ZIP",
+      "item": [
+        {
+          "name": "Zip Upload",
+          "id": "f8d90fcc-b8a5-4adf-a79d-517bce93624c",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MjI5MjQwNTEsImV4cCI6MTcyMzUyODg1MSwibmJmIjoxNzIyOTI0MDUxLCJqdGkiOiJVV1dFdmNaU0JVazlFUzg4Iiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9._XyQRURAecFCAW0WzTeWvIBNyVN3v-tEQir4pB_mkvQ",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "name",
+                  "value": "Юрий",
+                  "type": "text"
+                },
+                {
+                  "key": "phone",
+                  "value": "89085444123",
+                  "type": "text"
+                },
+                {
+                  "key": "email",
+                  "value": "tochnoneyura@gmail.com",
+                  "type": "text"
+                },
+                {
+                  "key": "parts",
+                  "value": "1111111",
+                  "type": "text"
+                },
+                {
+                  "key": "files[]",
+                  "type": "file",
+                  "src": "/C:/Users/Tochn/OneDrive/Рабочий стол/test.txt"
+                },
+                {
+                  "key": "files[]",
+                  "type": "file",
+                  "src": "/C:/Users/Tochn/OneDrive/Рабочий стол/test_new.txt"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-eksi/zip/upload",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-eksi",
+                "zip",
+                "upload"
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "52050979-25ef-4db7-b86c-cab8efbb598f",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password=123456789",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "lyoulka@mail.ru"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Zip submit",
+          "id": "3c61a3e1-b721-4393-bc57-5057afc56e18",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Юрий\",\r\n    \"phone\": \"89085444123\",\r\n    \"email\": \"tochnoneyura@gmail.com\",\r\n    \"parts\": \"часть 1, часть 2\",\r\n    \"uploaded_files\": [\r\n        {\r\n        \"original_name\": \"test.txt\",\r\n        \"url\": \"{{base_url_local}}/eksi/zip_documents/94805dc1a20450bf2141db93b933b643.txt\"\r\n        },\r\n        {\r\n        \"original_name\": \"test_new.txt\",\r\n        \"url\": \"{{base_url_local}}/eksi/zip_documents/c3765c49648753fbfef9a5c60ac12d32.txt\"\r\n        }\r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-eksi/zip/submit",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-eksi",
+                "zip",
+                "submit"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "ef4f8d06-df25-4f98-96d3-f6f0aac2a85f"
+    },
+    {
+      "name": "YML",
+      "item": [
+        {
+          "name": "Download YML",
+          "id": "b417fb02-c593-40a4-a040-fabeb89ff87f",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaS1la3NpXC9sb2dpbiIsImlhdCI6MTcyNjA1MzczMCwiZXhwIjoxNzI2NjU4NTMwLCJuYmYiOjE3MjYwNTM3MzAsImp0aSI6IjZyc0lpZWg2UFR0UzBkUjciLCJzdWIiOjMyNjcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.Qw9hC9GdIJzbkUPV3SbZaGjyUTPiBt01lajOZ1dxwr0",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"first_name\": \"first_name\",\r\n    \"last_name\": \"last_name\",\r\n\t\"second_name\": \"second_name\",\r\n    \"email\": \"email@email.com\",\r\n\t\"contact_phone\": \"+79000000000\",\r\n\t\"website_comment\": \"Тест создания заказа по АПИ\",\r\n\t\"website_comment_by_client\": \"Тест создания заказа по АПИ\",\r\n\t\"delivery_method\": \"ДоКлиента\",\r\n\t\"delivery_address\": \"101000, г. Новосибирск, ул. Новосибирская, д. 1, кв. 1\",\r\n\t\"products\": [\r\n        {\r\n            \"nomenclature_guid\": \"23db02b7-695a-11e8-a2a5-e61f13537e43\",\r\n            \"branch_id\": 1,\r\n            \"amount\": 1\r\n        },\r\n        {\r\n            \"nomenclature_guid\": \"606e9d21-2055-11e7-a3ba-e61f13537e43\",\r\n            \"branch_id\": 2,\r\n            \"amount\": 2\r\n        },\r\n        {\r\n            \"nomenclature_guid\": \"606e9d21-2055-11e7-a3ba-e61f13537e43\",\r\n            \"branch_id\": 3,\r\n            \"amount\": 3\r\n        }\r\n\t],\r\n    \"counterparty\": {\r\n        \"counterparty_guid\": \"fdc898ea-e8ed-11e2-a43e-e61f13537e43\",\r\n        \"counterparty_name\": null,\r\n        \"INN\": null,\r\n        \"KPP\": null,\r\n        \"organization_name\": null,\r\n        \"legal_address\": null,\r\n        \"bank_code\": null,\r\n        \"bank_corr_account\": null,\r\n        \"bank_name\": null,\r\n        \"bank_account\": null\r\n    }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-eksi/products-eksi-feed",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-eksi",
+                "products-eksi-feed"
+              ],
+              "query": [
+                {
+                  "key": "parents_only",
+                  "value": "false",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "8d6518d1-eb8d-4950-ace3-aa31e83d8dea",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password=123456789",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "lyoulka@mail.ru"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Download Equipment YML",
+          "id": "b08da4db-029d-4231-9c3b-caf2cba46990",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaS1la3NpXC9sb2dpbiIsImlhdCI6MTcyNjA1MzczMCwiZXhwIjoxNzI2NjU4NTMwLCJuYmYiOjE3MjYwNTM3MzAsImp0aSI6IjZyc0lpZWg2UFR0UzBkUjciLCJzdWIiOjMyNjcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.Qw9hC9GdIJzbkUPV3SbZaGjyUTPiBt01lajOZ1dxwr0",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"first_name\": \"first_name\",\r\n    \"last_name\": \"last_name\",\r\n\t\"second_name\": \"second_name\",\r\n    \"email\": \"email@email.com\",\r\n\t\"contact_phone\": \"+79000000000\",\r\n\t\"website_comment\": \"Тест создания заказа по АПИ\",\r\n\t\"website_comment_by_client\": \"Тест создания заказа по АПИ\",\r\n\t\"delivery_method\": \"ДоКлиента\",\r\n\t\"delivery_address\": \"101000, г. Новосибирск, ул. Новосибирская, д. 1, кв. 1\",\r\n\t\"products\": [\r\n        {\r\n            \"nomenclature_guid\": \"23db02b7-695a-11e8-a2a5-e61f13537e43\",\r\n            \"branch_id\": 1,\r\n            \"amount\": 1\r\n        },\r\n        {\r\n            \"nomenclature_guid\": \"606e9d21-2055-11e7-a3ba-e61f13537e43\",\r\n            \"branch_id\": 2,\r\n            \"amount\": 2\r\n        },\r\n        {\r\n            \"nomenclature_guid\": \"606e9d21-2055-11e7-a3ba-e61f13537e43\",\r\n            \"branch_id\": 3,\r\n            \"amount\": 3\r\n        }\r\n\t],\r\n    \"counterparty\": {\r\n        \"counterparty_guid\": \"fdc898ea-e8ed-11e2-a43e-e61f13537e43\",\r\n        \"counterparty_name\": null,\r\n        \"INN\": null,\r\n        \"KPP\": null,\r\n        \"organization_name\": null,\r\n        \"legal_address\": null,\r\n        \"bank_code\": null,\r\n        \"bank_corr_account\": null,\r\n        \"bank_name\": null,\r\n        \"bank_account\": null\r\n    }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-eksi/products-eksi-equipment-feed",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-eksi",
+                "products-eksi-equipment-feed"
+              ],
+              "query": [
+                {
+                  "key": "parents_only",
+                  "value": "false",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "3fa70b40-1c64-4cb1-b3a5-defa810728cc",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password=123456789",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "lyoulka@mail.ru"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Download YML Full",
+          "id": "ddab2ee0-9b66-4ab8-81ab-293d052e809d",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaS1la3NpXC9sb2dpbiIsImlhdCI6MTcyNjA1MzczMCwiZXhwIjoxNzI2NjU4NTMwLCJuYmYiOjE3MjYwNTM3MzAsImp0aSI6IjZyc0lpZWg2UFR0UzBkUjciLCJzdWIiOjMyNjcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.Qw9hC9GdIJzbkUPV3SbZaGjyUTPiBt01lajOZ1dxwr0",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"first_name\": \"first_name\",\r\n    \"last_name\": \"last_name\",\r\n\t\"second_name\": \"second_name\",\r\n    \"email\": \"email@email.com\",\r\n\t\"contact_phone\": \"+79000000000\",\r\n\t\"website_comment\": \"Тест создания заказа по АПИ\",\r\n\t\"website_comment_by_client\": \"Тест создания заказа по АПИ\",\r\n\t\"delivery_method\": \"ДоКлиента\",\r\n\t\"delivery_address\": \"101000, г. Новосибирск, ул. Новосибирская, д. 1, кв. 1\",\r\n\t\"products\": [\r\n        {\r\n            \"nomenclature_guid\": \"23db02b7-695a-11e8-a2a5-e61f13537e43\",\r\n            \"branch_id\": 1,\r\n            \"amount\": 1\r\n        },\r\n        {\r\n            \"nomenclature_guid\": \"606e9d21-2055-11e7-a3ba-e61f13537e43\",\r\n            \"branch_id\": 2,\r\n            \"amount\": 2\r\n        },\r\n        {\r\n            \"nomenclature_guid\": \"606e9d21-2055-11e7-a3ba-e61f13537e43\",\r\n            \"branch_id\": 3,\r\n            \"amount\": 3\r\n        }\r\n\t],\r\n    \"counterparty\": {\r\n        \"counterparty_guid\": \"fdc898ea-e8ed-11e2-a43e-e61f13537e43\",\r\n        \"counterparty_name\": null,\r\n        \"INN\": null,\r\n        \"KPP\": null,\r\n        \"organization_name\": null,\r\n        \"legal_address\": null,\r\n        \"bank_code\": null,\r\n        \"bank_corr_account\": null,\r\n        \"bank_name\": null,\r\n        \"bank_account\": null\r\n    }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-eksi/products-eksi-feed-full",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-eksi",
+                "products-eksi-feed-full"
+              ],
+              "query": [
+                {
+                  "key": "parents_only",
+                  "value": "false",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "c58fcc3b-69b0-4184-ab58-3260d1a68aa9",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password=123456789",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "lyoulka@mail.ru"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Download YML Equipment Full",
+          "id": "f982f7d5-8eda-4746-a2d4-c2598ad0673e",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaS1la3NpXC9sb2dpbiIsImlhdCI6MTcyNjA1MzczMCwiZXhwIjoxNzI2NjU4NTMwLCJuYmYiOjE3MjYwNTM3MzAsImp0aSI6IjZyc0lpZWg2UFR0UzBkUjciLCJzdWIiOjMyNjcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.Qw9hC9GdIJzbkUPV3SbZaGjyUTPiBt01lajOZ1dxwr0",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"first_name\": \"first_name\",\r\n    \"last_name\": \"last_name\",\r\n\t\"second_name\": \"second_name\",\r\n    \"email\": \"email@email.com\",\r\n\t\"contact_phone\": \"+79000000000\",\r\n\t\"website_comment\": \"Тест создания заказа по АПИ\",\r\n\t\"website_comment_by_client\": \"Тест создания заказа по АПИ\",\r\n\t\"delivery_method\": \"ДоКлиента\",\r\n\t\"delivery_address\": \"101000, г. Новосибирск, ул. Новосибирская, д. 1, кв. 1\",\r\n\t\"products\": [\r\n        {\r\n            \"nomenclature_guid\": \"23db02b7-695a-11e8-a2a5-e61f13537e43\",\r\n            \"branch_id\": 1,\r\n            \"amount\": 1\r\n        },\r\n        {\r\n            \"nomenclature_guid\": \"606e9d21-2055-11e7-a3ba-e61f13537e43\",\r\n            \"branch_id\": 2,\r\n            \"amount\": 2\r\n        },\r\n        {\r\n            \"nomenclature_guid\": \"606e9d21-2055-11e7-a3ba-e61f13537e43\",\r\n            \"branch_id\": 3,\r\n            \"amount\": 3\r\n        }\r\n\t],\r\n    \"counterparty\": {\r\n        \"counterparty_guid\": \"fdc898ea-e8ed-11e2-a43e-e61f13537e43\",\r\n        \"counterparty_name\": null,\r\n        \"INN\": null,\r\n        \"KPP\": null,\r\n        \"organization_name\": null,\r\n        \"legal_address\": null,\r\n        \"bank_code\": null,\r\n        \"bank_corr_account\": null,\r\n        \"bank_name\": null,\r\n        \"bank_account\": null\r\n    }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-eksi/products-eksi-equipment-feed-full",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-eksi",
+                "products-eksi-equipment-feed-full"
+              ],
+              "query": [
+                {
+                  "key": "parents_only",
+                  "value": "false",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "6ff92d92-a2ed-4687-8394-bdfc267b1f3b",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password=123456789",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "lyoulka@mail.ru"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        }
+      ],
+      "id": "79f8b421-506c-4970-94a7-b69d6705a9c7"
+    },
+    {
+      "name": "Report Issue",
+      "item": [
+        {
+          "name": "Report Issue Create",
+          "id": "38505bce-5992-4c7e-973f-b9902c6286d8",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"url\": \"url_eksi\",\r\n    \"bug_login\": \"url_bug_login\",\r\n    \"bug_text\": \"url_bug_text\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-eksi/report-issue",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-eksi",
+                "report-issue"
+              ],
+              "query": [
+                {
+                  "key": "order_by[0][param]",
+                  "value": "price_final_rub",
+                  "disabled": true
+                },
+                {
+                  "key": " order_by[0][order]",
+                  "value": "asc",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "36453b80-63bb-4afc-b089-8f0e68c0945b",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password=123456789",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "lyoulka@mail.ru"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": null,
+              "header": null,
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        }
+      ],
+      "id": "c6e0334b-8507-48d5-87b0-548cf649a5af"
+    },
+    {
+      "name": "Legal Entities",
+      "item": [
+        {
+          "name": "Get Legal Entities",
+          "id": "b0ab808e-c1e5-4287-a6c2-a2542c9a1756",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "X-Branch-Id",
+                "value": "2",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"parents_only\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api-td/legal-entities",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api-td",
+                "legal-entities"
+              ],
+              "query": [
+                {
+                  "key": "brand_lines[]",
+                  "value": "mirage",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "b7bdedd1-10d2-4938-ab4e-721b27d8ff78"
+    }
+  ]
+}

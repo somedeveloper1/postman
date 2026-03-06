@@ -1,0 +1,444 @@
+﻿{
+  "info": {
+    "_postman_id": "fcb63c78-da56-46dc-bedf-083056635524",
+    "name": "Brands",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Brands",
+      "id": "458868a9-f2c9-4b9b-86d7-84ddd8b37230",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTcwNTUzNzg3MCwiZXhwIjoxNzA2MTQyNjcwLCJuYmYiOjE3MDU1Mzc4NzAsImp0aSI6IktCU1dPRUhET2NzVmtqdk8iLCJzdWIiOjE5MywicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.G7mMya3xWhNiEKoAmX25OjOSWWOpreTZaJpztHUVgoU",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/brands",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "brands"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Claims Brands",
+      "id": "92e6f3d3-d7e4-4f7c-8216-a7ed4d78aef6",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTcwNTk4Njk4NSwiZXhwIjoxNzA2NTkxNzg1LCJuYmYiOjE3MDU5ODY5ODUsImp0aSI6IjRvMjBxZ2tNQW85bmxtdkoiLCJzdWIiOjEzNjksInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.LsBZvb6xjrlLgF-klaGu-ulQXHjKN7J14x_VQC3zceA",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/claims/brands",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "claims",
+            "brands"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Brands Models",
+      "id": "e02a50c8-4c04-435e-944a-b3ce9e2e2318",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTcwMTc2OTAyOSwiZXhwIjoxNzAyMzczODI5LCJuYmYiOjE3MDE3NjkwMjksImp0aSI6IjNPY0d3SjJ3RVBHNFZlYkoiLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.0N0iODBLOTodFt2YdaGPsE0lj8JtjJcoeIYmHC34M0E",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_prod}}/api/brands/models",
+          "protocol": "https",
+          "host": [
+            "api",
+            "t-d",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "brands",
+            "models"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Brand Models",
+      "id": "29ea31a0-25e0-4488-a3a0-96f3c68963eb",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTcwMTc2OTAyOSwiZXhwIjoxNzAyMzczODI5LCJuYmYiOjE3MDE3NjkwMjksImp0aSI6IjNPY0d3SjJ3RVBHNFZlYkoiLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.0N0iODBLOTodFt2YdaGPsE0lj8JtjJcoeIYmHC34M0E",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/brands/models/042daaca-222f-11e0-8679-e61f13537e43",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "brands",
+            "models",
+            "042daaca-222f-11e0-8679-e61f13537e43"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Brand Models Download Zip",
+      "id": "9cad284d-37e7-4a77-9878-363172538b0f",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTcwMTc2OTAyOSwiZXhwIjoxNzAyMzczODI5LCJuYmYiOjE3MDE3NjkwMjksImp0aSI6IjNPY0d3SjJ3RVBHNFZlYkoiLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.0N0iODBLOTodFt2YdaGPsE0lj8JtjJcoeIYmHC34M0E",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/brands/models/10f2fbbb-21e5-11e4-b05d-e61f13537e43/download/zip",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "brands",
+            "models",
+            "10f2fbbb-21e5-11e4-b05d-e61f13537e43",
+            "download",
+            "zip"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Brand Models Download File",
+      "id": "3af9c5bc-5842-482e-8988-828ec016de58",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTcwMTc2OTAyOSwiZXhwIjoxNzAyMzczODI5LCJuYmYiOjE3MDE3NjkwMjksImp0aSI6IjNPY0d3SjJ3RVBHNFZlYkoiLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.0N0iODBLOTodFt2YdaGPsE0lj8JtjJcoeIYmHC34M0E",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/brands/models/10f2fbbb-21e5-11e4-b05d-e61f13537e43/download/file/11294",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "brands",
+            "models",
+            "10f2fbbb-21e5-11e4-b05d-e61f13537e43",
+            "download",
+            "file",
+            "11294"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Brand Create",
+      "id": "482d342b-3477-43c1-b33b-a00d9c7948e6",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzAwNTAyMTAsImV4cCI6MTYzMDA1MzgxMCwibmJmIjoxNjMwMDUwMjEwLCJqdGkiOiJwU2x4eU5rNUp5NzRqaUtVIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.kexR5ix3UozmCx638au1X896se6WzpS_n8TE_m81PH0",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "name",
+              "value": "brand name",
+              "type": "text"
+            },
+            {
+              "key": "guid",
+              "value": "125",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/brand/submit",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "brand",
+            "submit"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Brands Import",
+      "id": "7a79501d-0ef4-4fef-a272-11eca0de8973",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Transfer-Id",
+            "value": "852369741236987456333",
+            "type": "text"
+          },
+          {
+            "key": "Package-Number",
+            "value": "1",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"guid\": \"b124d732-946b-11e3-8906-e61f13537e43\",\r\n        \"name\": \"Braun\",\r\n        \"main_brand_guid\": \"TECT 1\",\r\n        \"country_guid\": \"1234567\",\r\n        \"is_ctm\": true,\r\n        \"is_focus\": false\r\n    },\r\n    {\r\n        \"guid\": \"c057169c-5103-11e3-9e03-e61f13537e43\",\r\n        \"name\": \"Aqua\",\r\n        \"main_brand_guid\": \"TECT 1\",\r\n        \"country_guid\": \"123456789\",\r\n        \"is_ctm\": false,\r\n        \"is_focus\": true\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/table/import/brands",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "table",
+            "import",
+            "brands"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Brands Import PROD",
+      "id": "3058bb3f-cdbd-43cb-b116-504a1bbe187a",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"guid\": \"b124d732-946b-11e3-8906-e61f13537e43\",\r\n        \"name\": \"Braun\",\r\n        \"main_brand_guid\": \"00000000-0000-0000-0000-000000000000\"\r\n    },\r\n    {\r\n        \"guid\": \"c057169c-5103-11e3-9e03-e61f13537e43\",\r\n        \"name\": \"Aqua\",\r\n        \"main_brand_guid\": \"00000000-0000-0000-0000-000000000000\"\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_prod}}/api/table/import/brands",
+          "protocol": "https",
+          "host": [
+            "api",
+            "t-d",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "table",
+            "import",
+            "brands"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Brands Import ZIP PROD",
+      "id": "961ea3b8-daec-469b-9638-6c4c780cb702",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "zipfile",
+              "type": "file",
+              "src": []
+            }
+          ]
+        },
+        "url": {
+          "raw": "{{base_url_prod}}/api/table/import/zip/brands",
+          "protocol": "https",
+          "host": [
+            "api",
+            "t-d",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "table",
+            "import",
+            "zip",
+            "brands"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Brands Import ZIP",
+      "id": "61fc0f75-6aef-42ec-80f3-3d3ee1674b6f",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Transfer-Id",
+            "value": "123456",
+            "type": "text"
+          },
+          {
+            "key": "Package-Number",
+            "value": "1",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "zipfile",
+              "type": "file",
+              "src": "/C:/Users/user/Downloads/Json_ВыгрузкаНаСайты_Бренды_1_0.zip"
+            }
+          ]
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/table/import/zip/brands",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "table",
+            "import",
+            "zip",
+            "brands"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

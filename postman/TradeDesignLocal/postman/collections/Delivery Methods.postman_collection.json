@@ -1,0 +1,54 @@
+{
+  "info": {
+    "_postman_id": "131222de-5c73-4617-9dd4-f99558ae8403",
+    "name": "Delivery Methods",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Delivery Methods",
+      "id": "564fb7ab-44a4-4bae-b40c-3df37cce94ac",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/delivery-methods"
+      },
+      "response": [
+        {
+          "id": "264faa3c-bd0b-4431-b11c-eb195a1fb6c3",
+          "name": "Default",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url}}/api/claims/info/{{id}}",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "api",
+                "claims",
+                "info",
+                "{{id}}"
+              ]
+            }
+          },
+          "_postman_previewlanguage": "Text",
+          "header": [],
+          "cookie": [],
+          "body": "{\r\n    \"buyer\": \"\",\r\n    \"buyer_id\": \"\",\r\n    \"seller\": \"\",\r\n    \"seller_id\": \"\",\r\n    \"deal\": \"\",\r\n    \"deal_id\": \"\",\r\n    \"item\": \"\",\r\n    \"item_id\": \"\",\r\n    \"launch_date\": \"\",\r\n    \"issue_date\": \"\",\r\n    \"zip_required\": \"\",\r\n    \"claim_description\": \"\",\r\n    \"full_name\": \"\",\r\n    \"role\": \"\",\r\n    \"phone\": \"\",\r\n    \"document_launch\": [],\r\n    \"document_diagnostics\": [],\r\n    \"document_claim\": [],\r\n    \"photo_label\": [],\r\n    \"photo_zip\": [],\r\n    \"photo_item\": [],\r\n    \"photo_failures\": [],\r\n    \"claim_id\": \"29319029\",\r\n    \"comment\": \"\",\r\n    \"status\": \"В работе\",\r\n    \"created_at\": \"22.03.2022\",\r\n    \"updated_at\": \"22.03.2021\"\r\n}"
+        }
+      ]
+    }
+  ]
+}

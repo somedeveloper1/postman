@@ -1,0 +1,187 @@
+{
+  "info": {
+    "_postman_id": "d6978c3b-4482-4a34-88ad-5f16924bbba2",
+    "name": "Counterparties Contacts",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Counterparties Contacts",
+      "id": "f0bd7d41-41a1-4700-b916-b327c93b84ba",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/counterparties-contacts",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "counterparties-contacts"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Counterparty Contact Create",
+      "id": "df664549-2ef2-46dd-afa1-c41d58e92c9c",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzA0MDUwMjgsImV4cCI6MTYzMDQwODYyOCwibmJmIjoxNjMwNDA1MDI4LCJqdGkiOiIxRWtTOXlWWFZ6MGhWMjdFIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.q4QbtY9VdNHhHGRevH-_iUon_eOYp17mg_zKwWSzJzs",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"guid\": \"1\",\r\n    \"counterparty_guid\": \"1\",\r\n    \"name\": \"John\",\r\n    \"occupation\": \"occupation 1\",\r\n    \"commentary\": \"commentary 1\",\r\n    \"contact_guid\": \"1\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/counterparty-contact/submit",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "counterparty-contact",
+            "submit"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Counterparties Contacts Import",
+      "id": "eaea0edb-fada-44ee-b379-aa2684c9cb4f",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "_method",
+            "value": "PATCH",
+            "type": "text",
+            "disabled": true
+          },
+          {
+            "key": "Authorization",
+            "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzE1MTQ0MTYsIm5iZiI6MTYzMTUxNDQxNiwianRpIjoibGNaeDdGbTVhOHJBZElqWiIsInN1YiI6NywicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.HrcA2o7nmZ1sfGuF5xfJdq02nm-7A32KiZnaJ9tn4GE",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"guid\": \"b3659a96-cc9b-11e4-8e7a-e61f13537e43\",\r\n        \"name\": \"Александр\",\r\n        \"counterparty_guid\": \"7a34e6dc-299b-11de-b60c-001a6498e70d\",\r\n        \"occupation\": \"\",\r\n        \"commentary\": \"\",\r\n        \"contact_guid\": \"3bee25de-6394-11e2-96ea-e61f13537e43\",\r\n        \"to_delete\": true\r\n    },\r\n    {\r\n        \"guid\": \"8cf49616-23a6-11e9-a4f1-e61f13537e43\",\r\n        \"name\": \"Юрин Алексей\",\r\n        \"counterparty_guid\": \"7a884209-5192-11de-ac04-0019dbd95dce\",\r\n        \"occupation\": \"\",\r\n        \"commentary\": \"\",\r\n        \"contact_guid\": \"8cf49616-23a6-11e9-a4f1-e61f13537e43\",\r\n        \"to_delete\": true\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/table/import/counterparties-contacts",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "table",
+            "import",
+            "counterparties-contacts"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Counterparties Contacts Import PROD",
+      "id": "bba90e42-a35b-42f2-a5bf-87d6f299e49d",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "_method",
+            "value": "PATCH",
+            "type": "text",
+            "disabled": true
+          },
+          {
+            "key": "Authorization",
+            "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzE1MTQ0MTYsIm5iZiI6MTYzMTUxNDQxNiwianRpIjoibGNaeDdGbTVhOHJBZElqWiIsInN1YiI6NywicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.HrcA2o7nmZ1sfGuF5xfJdq02nm-7A32KiZnaJ9tn4GE",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"guid\": \"b3659a96-cc9b-11e4-8e7a-e61f13537e43\",\r\n        \"name\": \"Александр\",\r\n        \"counterparty_guid\": \"7a34e6dc-299b-11de-b60c-001a6498e70d\",\r\n        \"occupation\": \"\",\r\n        \"commentary\": \"\",\r\n        \"contact_guid\": \"3bee25de-6394-11e2-96ea-e61f13537e43\"\r\n    },\r\n    {\r\n        \"guid\": \"8cf49616-23a6-11e9-a4f1-e61f13537e43\",\r\n        \"name\": \"Юрин Алексей\",\r\n        \"counterparty_guid\": \"7a884209-5192-11de-ac04-0019dbd95dce\",\r\n        \"occupation\": \"\",\r\n        \"commentary\": \"\",\r\n        \"contact_guid\": \"8cf49616-23a6-11e9-a4f1-e61f13537e43\"\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_prod}}/api/table/import/counterparties-contacts",
+          "protocol": "https",
+          "host": [
+            "api",
+            "t-d",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "table",
+            "import",
+            "counterparties-contacts"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

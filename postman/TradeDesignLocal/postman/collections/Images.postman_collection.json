@@ -1,0 +1,39 @@
+{
+  "info": {
+    "_postman_id": "dcf675a0-e011-43fb-9125-6bcdacd740b9",
+    "name": "Images",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get Image by Nomenclature code",
+      "id": "f308ca4f-ebde-49e5-9d85-c5b698194d74",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/images/00000000441"
+      },
+      "response": []
+    },
+    {
+      "name": "Get Images by Nomenclature code",
+      "id": "f3ea7693-ca8e-4196-81ba-03724629e434",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/images/nomenclature/00000231711"
+      },
+      "response": []
+    },
+    {
+      "name": "Get Image by Nomenclature from 1c_images",
+      "id": "6a9dd733-577b-4d66-878e-c1a131662cce",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/images/1c-images/00000000441"
+      },
+      "response": []
+    }
+  ]
+}

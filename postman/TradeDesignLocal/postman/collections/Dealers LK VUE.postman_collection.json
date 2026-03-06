@@ -1,0 +1,3307 @@
+{
+  "info": {
+    "_postman_id": "281d75b2-5810-4d18-ae9f-187242d7a9b9",
+    "name": "Dealers LK VUE",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Categories",
+      "item": [
+        {
+          "name": "Categories All",
+          "id": "fe743337-a8de-42c6-a717-9c0089aff027",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/categories"
+          },
+          "response": []
+        },
+        {
+          "name": "Categories Lower",
+          "id": "20f988c7-37c7-48b2-b81e-4084033515f3",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2ODEyMjIwOTMsImV4cCI6MTY4MTgyNjg5MywibmJmIjoxNjgxMjIyMDkzLCJqdGkiOiJzd2Q4UEIzMlozbGc0V3VoIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.aQue84KFiO0p-vCORjFXH2sGCHGLcpS5kcs6JTjOld8",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/categories/lower?brands[]=6f77e326-221a-11e0-8679-e61f13537e43"
+          },
+          "response": []
+        },
+        {
+          "name": "Categories Viewed",
+          "id": "651a7471-8183-4fb2-b23a-8c32b52a276b",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2Nzc4MjAyODcsImV4cCI6MTY3ODQyNTA4NywibmJmIjoxNjc3ODIwMjg3LCJqdGkiOiI4RkhkSmx3Tm14c1VNSko0Iiwic3ViIjo0MiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.lUHOP8BDUI-aPJozsfbLCEcFhPmvfLta3wLAYfN9lCk",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/categories/viewed"
+          },
+          "response": []
+        },
+        {
+          "name": "Category",
+          "id": "dd49c517-9c87-4426-a92a-b4fc3ca3386d",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/category/addd030b-3015-11ec-a276-e61f13537e43?max_level=3"
+          },
+          "response": []
+        }
+      ],
+      "id": "0f2ea255-3ac4-43e0-9489-ee6519a390d6"
+    },
+    {
+      "name": "Products",
+      "item": [
+        {
+          "name": "Products",
+          "id": "7b33d2b8-70e8-4709-9afa-94776c19a83e",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTY2OTk4MjA0MSwiZXhwIjoxNjcwNTg2ODQxLCJuYmYiOjE2Njk5ODIwNDEsImp0aSI6Ik81MnMzZFdzOEhBNEFHMFIiLCJzdWIiOjQyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.4S3RRCawmn-sk2B9buswOlT0yw2WjOjcJ8LLh3_fCo4",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/products?per_page=10&nomenclature[]=0012cf85-15a1-11ee-ada7-0050568e3182"
+          },
+          "response": []
+        },
+        {
+          "name": "Products Models",
+          "id": "64024429-392c-430b-84fe-2e812332a09d",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTY2OTk4MjA0MSwiZXhwIjoxNjcwNTg2ODQxLCJuYmYiOjE2Njk5ODIwNDEsImp0aSI6Ik81MnMzZFdzOEhBNEFHMFIiLCJzdWIiOjQyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.4S3RRCawmn-sk2B9buswOlT0yw2WjOjcJ8LLh3_fCo4",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/products/models/9184170e-e343-11e4-8e7a-e61f13537e43"
+          },
+          "response": []
+        },
+        {
+          "name": "Products For Quick Order",
+          "id": "f963ff6e-101d-44d8-95f6-60a1c23b4c1a",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTY2OTk4MjA0MSwiZXhwIjoxNjcwNTg2ODQxLCJuYmYiOjE2Njk5ODIwNDEsImp0aSI6Ik81MnMzZFdzOEhBNEFHMFIiLCJzdWIiOjQyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.4S3RRCawmn-sk2B9buswOlT0yw2WjOjcJ8LLh3_fCo4",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/products-for-quick-order?identifier=Muster 350"
+          },
+          "response": []
+        },
+        {
+          "name": "Products For Quick Order Upload",
+          "id": "635b3e0b-c031-460c-a658-4b1774996bbd",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTY5NDQ5NzU2NCwiZXhwIjoxNjk1MTAyMzY0LCJuYmYiOjE2OTQ0OTc1NjQsImp0aSI6IjlpVnFua2dRcHJqRU5PYngiLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Yl1BJUf3b6fInTw54quWimSV56fSoGYS_f-GuUu3rxw",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "file",
+                  "type": "file",
+                  "src": "/C:/Users/Юлия/Downloads/Шаблон быстрого заказа(3).csv"
+                }
+              ]
+            },
+            "url": "{{base_url_local}}/api/dealers-lk/products-for-quick-order/upload"
+          },
+          "response": []
+        },
+        {
+          "name": "Products Download Excel",
+          "id": "fdfa6966-8460-4325-949e-b2edb78e9d9c",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MDgwNjM5OTAsImV4cCI6MTcwODY2ODc5MCwibmJmIjoxNzA4MDYzOTkwLCJqdGkiOiIwMWU0bm93UkJRWUNSOUtHIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pdMuDHnj9cThhxz4h_p40o35jVMgX3SSaviifgEkE5c",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/products/download-excel?price_to=500"
+          },
+          "response": []
+        },
+        {
+          "name": "Products Viewed",
+          "id": "b6423f8a-9a86-43ce-9a07-fcd593c34054",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2Njk5NzU4MjAsImV4cCI6MTY3MDU4MDYyMCwibmJmIjoxNjY5OTc1ODIwLCJqdGkiOiJtQVA5aGNldWlGakdpc0NMIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.GDkvjCOK1whroXBsa-ocl9R_W1SgI_kqcUsQBU7FbpM",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/products/viewed?limit=2"
+          },
+          "response": []
+        },
+        {
+          "name": "Products Linked",
+          "id": "a178e4c2-f528-4d81-a94d-2f15864bedb8",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2NzM5MzMwMDIsImV4cCI6MTY3NDUzNzgwMiwibmJmIjoxNjczOTMzMDAyLCJqdGkiOiJVeXRpeFhybEt2MHBWeThQIiwic3ViIjoyMDc2LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.3bfvvf-Ng4CNtJRG4Fm7IBKWa-yfgumHl0WsjSa7QSs",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/products/linked/00555ee8-9585-11df-bfea-e61f13537e43?link_types[]=Аналог"
+          },
+          "response": []
+        },
+        {
+          "name": "Products Similar",
+          "id": "c5bb86b5-7616-4154-ba2d-4ba837d9095b",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2NzM5MzMwMDIsImV4cCI6MTY3NDUzNzgwMiwibmJmIjoxNjczOTMzMDAyLCJqdGkiOiJVeXRpeFhybEt2MHBWeThQIiwic3ViIjoyMDc2LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.3bfvvf-Ng4CNtJRG4Fm7IBKWa-yfgumHl0WsjSa7QSs",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/products/similar/ba0f7c91-1d46-11e8-b121-e61f13537e43"
+          },
+          "response": []
+        },
+        {
+          "name": "Products Reserved",
+          "id": "5ac486c0-bb66-4396-892b-e030ac0a7df1",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2Nzg2OTQwMDMsImV4cCI6MTY3OTI5ODgwMywibmJmIjoxNjc4Njk0MDAzLCJqdGkiOiJwWEdSM2xuRVJBYWJwQVFyIiwic3ViIjo0MiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.mvBJQ-_qLoE8r9CvEUFI-2q5a9o31JCwSL0iFgIyMOc",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/products/reserved?counterparties[]=badf1c31-dbd4-11e3-96bf-e61f13537e43"
+          },
+          "response": []
+        },
+        {
+          "name": "Products Preprocessed",
+          "id": "1d9b04f0-c853-4a14-8b0c-aad0342161c0",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4tYXMtZGVhbGVyXC84ODUiLCJpYXQiOjE2Nzg4NzI0MjcsImV4cCI6MTY3ODg3NjAyNywibmJmIjoxNjc4ODcyNDI3LCJqdGkiOiJlRTMwUldCUWQxSkVRMW1aIiwic3ViIjoyNTIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.qgshjF5_9Xaz0hRUdWvUtgDZYUmZ0w18NzhBLIdgnxY",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/products/preprocessed"
+          },
+          "response": []
+        },
+        {
+          "name": "Product",
+          "id": "38519703-85dc-4850-8ee7-17a68686a495",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2ODg0Njc2ODcsImV4cCI6MTY4OTA3MjQ4NywibmJmIjoxNjg4NDY3Njg3LCJqdGkiOiJacVBEcU5Mc1NlVURqMG9sIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.EVJiO6jPLy6mA_vaTdZDfjMlKPwzSWVI7OI-iaCkymg",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"search_elastic\":\"льдогенератор\",\"is_elastic_total\":\"true\",\"per_page_elastic\":\"300\",\"warehouses\":null,\"is_dishes\":\"false\",\"is_zip\":\"false\",\"page\":\"1\",\"per_page\":\"15\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/dealers-lk/product/4f7eacaf-a74b-11e2-9910-e61f13537e43"
+          },
+          "response": []
+        },
+        {
+          "name": "Product Balance",
+          "id": "0dd50e0e-e975-4b95-9ad3-378bdb199adf",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2ODg0Njc2ODcsImV4cCI6MTY4OTA3MjQ4NywibmJmIjoxNjg4NDY3Njg3LCJqdGkiOiJacVBEcU5Mc1NlVURqMG9sIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.EVJiO6jPLy6mA_vaTdZDfjMlKPwzSWVI7OI-iaCkymg",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"search_elastic\":\"льдогенератор\",\"is_elastic_total\":\"true\",\"per_page_elastic\":\"300\",\"warehouses\":null,\"is_dishes\":\"false\",\"is_zip\":\"false\",\"page\":\"1\",\"per_page\":\"15\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/dealers-lk/product/4f7eacaf-a74b-11e2-9910-e61f13537e43/balance"
+          },
+          "response": []
+        }
+      ],
+      "id": "620f6c7d-0ddc-4f4a-b3a6-c845825df773"
+    },
+    {
+      "name": "KA Products",
+      "item": [
+        {
+          "name": "Ka Products",
+          "id": "d0c6e03b-66cc-4ff4-b19a-4fdc060d5108",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTY2OTk4MjA0MSwiZXhwIjoxNjcwNTg2ODQxLCJuYmYiOjE2Njk5ODIwNDEsImp0aSI6Ik81MnMzZFdzOEhBNEFHMFIiLCJzdWIiOjQyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.4S3RRCawmn-sk2B9buswOlT0yw2WjOjcJ8LLh3_fCo4",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/ka-products?nomenclature[]=094007b8-51cb-11ec-a276-e61f13537e43"
+          },
+          "response": []
+        },
+        {
+          "name": "Ka Products Models",
+          "id": "a278e424-cef0-4f99-8831-40b55f0568aa",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTY2OTk4MjA0MSwiZXhwIjoxNjcwNTg2ODQxLCJuYmYiOjE2Njk5ODIwNDEsImp0aSI6Ik81MnMzZFdzOEhBNEFHMFIiLCJzdWIiOjQyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.4S3RRCawmn-sk2B9buswOlT0yw2WjOjcJ8LLh3_fCo4",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/ka-products/models/9184170e-e343-11e4-8e7a-e61f13537e43"
+          },
+          "response": []
+        },
+        {
+          "name": "Ka Products For Quick Order",
+          "id": "5552accb-aabf-41fd-9d63-27f97ba429b6",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTY2OTk4MjA0MSwiZXhwIjoxNjcwNTg2ODQxLCJuYmYiOjE2Njk5ODIwNDEsImp0aSI6Ik81MnMzZFdzOEhBNEFHMFIiLCJzdWIiOjQyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.4S3RRCawmn-sk2B9buswOlT0yw2WjOjcJ8LLh3_fCo4",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/ka-products-for-quick-order?identifier=Muster 350"
+          },
+          "response": []
+        },
+        {
+          "name": "Products For Quick Order Upload",
+          "id": "f7f0bf56-431a-4c7f-8c37-23f7c3d0e2f0",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTY5NDQ5NzU2NCwiZXhwIjoxNjk1MTAyMzY0LCJuYmYiOjE2OTQ0OTc1NjQsImp0aSI6IjlpVnFua2dRcHJqRU5PYngiLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Yl1BJUf3b6fInTw54quWimSV56fSoGYS_f-GuUu3rxw",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "file",
+                  "type": "file",
+                  "src": "/C:/Users/Юлия/Downloads/Шаблон быстрого заказа(3).csv"
+                }
+              ]
+            },
+            "url": "{{base_url_local}}/api/dealers-lk/products-for-quick-order/upload"
+          },
+          "response": []
+        },
+        {
+          "name": "Ka Products Download Excel",
+          "id": "0caee8a4-8647-4b49-be8a-c3dbf8adaf4f",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MzQyNTU2NDUsImV4cCI6MTczNDg2MDQ0NiwibmJmIjoxNzM0MjU1NjQ2LCJqdGkiOiI4cFJ6aVFtbWFKNHZiMXRyIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.uDTjAslHQ-XB5X-xK3PhS8_1LFIcIVaGrdM-nt7n_TI",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/ka-products/download-excel?price_to=500"
+          },
+          "response": []
+        },
+        {
+          "name": "Ka Products Viewed",
+          "id": "d506e748-d628-4e12-aebb-7a4c140601f4",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbi1hcy1kZWFsZXJcLzYiLCJpYXQiOjE3MzQzNDQ3NjgsImV4cCI6MTczNDM0ODM2OCwibmJmIjoxNzM0MzQ0NzY4LCJqdGkiOiJncDFiUmVtZm9NbTJXdklsIiwic3ViIjo0MiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.dJcNLa5W45fnqdnICKlJw-FJrsSVr3T4Ek0G0wK-qJU",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/ka-products/viewed?limit=2"
+          },
+          "response": []
+        },
+        {
+          "name": "Ka Products Linked",
+          "id": "db261348-1a16-4e3b-8bd6-5ada87b7191e",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2NzM5MzMwMDIsImV4cCI6MTY3NDUzNzgwMiwibmJmIjoxNjczOTMzMDAyLCJqdGkiOiJVeXRpeFhybEt2MHBWeThQIiwic3ViIjoyMDc2LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.3bfvvf-Ng4CNtJRG4Fm7IBKWa-yfgumHl0WsjSa7QSs",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/ka-products/linked/002914b9-deb0-11e4-8e7a-e61f13537e43?link_types[]=Запчасть"
+          },
+          "response": []
+        },
+        {
+          "name": "Ka Products Similar",
+          "id": "2fbc0b1c-b806-4b13-8841-edd3df4e9d4f",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2NzM5MzMwMDIsImV4cCI6MTY3NDUzNzgwMiwibmJmIjoxNjczOTMzMDAyLCJqdGkiOiJVeXRpeFhybEt2MHBWeThQIiwic3ViIjoyMDc2LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.3bfvvf-Ng4CNtJRG4Fm7IBKWa-yfgumHl0WsjSa7QSs",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/ka-products/similar/ba0f7c91-1d46-11e8-b121-e61f13537e43"
+          },
+          "response": []
+        },
+        {
+          "name": "Products Reserved",
+          "id": "82b1c71e-cde7-495e-8b7c-a6016dd3f263",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2Nzg2OTQwMDMsImV4cCI6MTY3OTI5ODgwMywibmJmIjoxNjc4Njk0MDAzLCJqdGkiOiJwWEdSM2xuRVJBYWJwQVFyIiwic3ViIjo0MiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.mvBJQ-_qLoE8r9CvEUFI-2q5a9o31JCwSL0iFgIyMOc",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/products/reserved?counterparties[]=badf1c31-dbd4-11e3-96bf-e61f13537e43"
+          },
+          "response": []
+        },
+        {
+          "name": "Products Preprocessed",
+          "id": "b44d390d-e97f-422b-b191-8dc364c0b0b8",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4tYXMtZGVhbGVyXC84ODUiLCJpYXQiOjE2Nzg4NzI0MjcsImV4cCI6MTY3ODg3NjAyNywibmJmIjoxNjc4ODcyNDI3LCJqdGkiOiJlRTMwUldCUWQxSkVRMW1aIiwic3ViIjoyNTIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.qgshjF5_9Xaz0hRUdWvUtgDZYUmZ0w18NzhBLIdgnxY",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/products/preprocessed"
+          },
+          "response": []
+        },
+        {
+          "name": "KA Product",
+          "id": "e6063b47-cdc3-4207-8059-0d3c84b24700",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTczNzM4MDk0NiwiZXhwIjoxNzM3OTg1NzQ2LCJuYmYiOjE3MzczODA5NDYsImp0aSI6IkRENHg0RmFzSktWRlRJRUYiLCJzdWIiOjQxMTgsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.PoOR9AVKaRV7kuRfXB1HlbqfIaQdyjS2XxGpJKZjNMU",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"search_elastic\":\"льдогенератор\",\"is_elastic_total\":\"true\",\"per_page_elastic\":\"300\",\"warehouses\":null,\"is_dishes\":\"false\",\"is_zip\":\"false\",\"page\":\"1\",\"per_page\":\"15\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/dealers-lk/ka-product/27c7b82a-95b9-11df-bfea-e61f13537e43"
+          },
+          "response": []
+        },
+        {
+          "name": "KA Products Illiquid",
+          "id": "0836af90-a3dd-467f-b117-ef82e1cccafa",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTczNzM4MDk0NiwiZXhwIjoxNzM3OTg1NzQ2LCJuYmYiOjE3MzczODA5NDYsImp0aSI6IkRENHg0RmFzSktWRlRJRUYiLCJzdWIiOjQxMTgsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.PoOR9AVKaRV7kuRfXB1HlbqfIaQdyjS2XxGpJKZjNMU",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"search_elastic\":\"льдогенератор\",\"is_elastic_total\":\"true\",\"per_page_elastic\":\"300\",\"warehouses\":null,\"is_dishes\":\"false\",\"is_zip\":\"false\",\"page\":\"1\",\"per_page\":\"15\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/dealers-lk/ka-products/27c7b82a-95b9-11df-bfea-e61f13537e43/illiquid"
+          },
+          "response": []
+        },
+        {
+          "name": "Ka Product Balance",
+          "id": "3ca7b218-5680-4e50-b334-2850a0f72d59",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2ODg0Njc2ODcsImV4cCI6MTY4OTA3MjQ4NywibmJmIjoxNjg4NDY3Njg3LCJqdGkiOiJacVBEcU5Mc1NlVURqMG9sIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.EVJiO6jPLy6mA_vaTdZDfjMlKPwzSWVI7OI-iaCkymg",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"search_elastic\":\"льдогенератор\",\"is_elastic_total\":\"true\",\"per_page_elastic\":\"300\",\"warehouses\":null,\"is_dishes\":\"false\",\"is_zip\":\"false\",\"page\":\"1\",\"per_page\":\"15\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/dealers-lk/ka-product/00a73a36-a721-11e2-9910-e61f13537e43/balance"
+          },
+          "response": []
+        }
+      ],
+      "id": "e5f741a5-5524-4a90-81da-907109f5bd3d"
+    },
+    {
+      "name": "Brands",
+      "item": [
+        {
+          "name": "Brands All",
+          "id": "5d76089f-730c-4a80-90ba-87064d344f3a",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2Njk5NzU4MjAsImV4cCI6MTY3MDU4MDYyMCwibmJmIjoxNjY5OTc1ODIwLCJqdGkiOiJtQVA5aGNldWlGakdpc0NMIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.GDkvjCOK1whroXBsa-ocl9R_W1SgI_kqcUsQBU7FbpM",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/brands?brands[]=226cf2a5-ae0c-11e0-9fd5-e61f13537e43&search=ab"
+          },
+          "response": []
+        },
+        {
+          "name": "Brand",
+          "id": "1f932624-4375-4f26-b2c9-3888a8a72e8c",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2Njk5NzU4MjAsImV4cCI6MTY3MDU4MDYyMCwibmJmIjoxNjY5OTc1ODIwLCJqdGkiOiJtQVA5aGNldWlGakdpc0NMIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.GDkvjCOK1whroXBsa-ocl9R_W1SgI_kqcUsQBU7FbpM",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/brand/10f2fbbb-21e5-11e4-b05d-e61f13537e43"
+          },
+          "response": []
+        },
+        {
+          "name": "Brand Viewed",
+          "id": "01f0d2b6-a3fe-4be7-83d3-6c316c8a9d7c",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2Nzc4MjkxMTgsImV4cCI6MTY3ODQzMzkxOCwibmJmIjoxNjc3ODI5MTE4LCJqdGkiOiJHTGVITGpVZDg1djZrT0hiIiwic3ViIjo0MiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.cjKmlbO4wmpT2i8C1RMPPpIlFD8f_4qh0ffhZOZS5-Y",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/brands/viewed?limit=2"
+          },
+          "response": []
+        }
+      ],
+      "id": "cc687c47-a007-4564-a41a-8caf1b4a9eb7"
+    },
+    {
+      "name": "Brand Lines",
+      "item": [
+        {
+          "name": "Brand Lines All",
+          "id": "eaf6c023-a591-4748-9dff-b3e17d34c0bd",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2Njk5NzU4MjAsImV4cCI6MTY3MDU4MDYyMCwibmJmIjoxNjY5OTc1ODIwLCJqdGkiOiJtQVA5aGNldWlGakdpc0NMIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.GDkvjCOK1whroXBsa-ocl9R_W1SgI_kqcUsQBU7FbpM",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/brand-lines"
+          },
+          "response": []
+        },
+        {
+          "name": "Brand Line",
+          "id": "26078be4-fc6f-4192-9b44-75f66180e1f7",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2Njk5NzU4MjAsImV4cCI6MTY3MDU4MDYyMCwibmJmIjoxNjY5OTc1ODIwLCJqdGkiOiJtQVA5aGNldWlGakdpc0NMIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.GDkvjCOK1whroXBsa-ocl9R_W1SgI_kqcUsQBU7FbpM",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/brand-line/a76f8c90-724a-11ed-a51f-e61f13537e43"
+          },
+          "response": []
+        },
+        {
+          "name": "Filters KA Brand Lines",
+          "id": "c2bbb3cf-7c0f-4b89-863a-ef17e8bdce97",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTczNDM1Njc0OSwiZXhwIjoxNzM0OTYxNTQ5LCJuYmYiOjE3MzQzNTY3NDksImp0aSI6ImdIRE5tQjVaS3dnMzY1NU0iLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.0Jd5-HoXS3cTlccHuskKfTroman3hfrYAlOvuPjSG8o",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers/filters/ka-brand-lines"
+          },
+          "response": []
+        }
+      ],
+      "id": "fe973dc2-8ae1-420b-be7e-1270e443c198"
+    },
+    {
+      "name": "Offers",
+      "item": [
+        {
+          "name": "Offer",
+          "id": "0d6e12f6-3330-4da0-8ea1-3da7ff9b96c4",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/offer/e7d7ded4-5b6e-11ed-a553-e61f13537e43"
+          },
+          "response": []
+        }
+      ],
+      "id": "7e0a1f78-136b-41e5-8822-674be4be44c6"
+    },
+    {
+      "name": "Elastic",
+      "item": [
+        {
+          "name": "Search Bar",
+          "id": "f97c00ad-8d3c-49d2-a410-4eaaf42c59bf",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/elastic/search-bar/products?search=гастроемкость 1/1"
+          },
+          "response": []
+        },
+        {
+          "name": "Ka Search Bar",
+          "id": "ee27f58f-f731-43f7-9d02-9baf1cf80ca1",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/ka-elastic/search-bar/products?search=шкаф"
+          },
+          "response": []
+        }
+      ],
+      "id": "7a7c7b44-642f-4284-aa6c-c62f407a3d17"
+    },
+    {
+      "name": "Basket",
+      "item": [
+        {
+          "name": "Basket",
+          "id": "99478f9c-f96d-4f42-bd82-6dcc02824a3f",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MDI5MDU3MjEsImV4cCI6MTcwMzUxMDUyMSwibmJmIjoxNzAyOTA1NzIxLCJqdGkiOiI0YUlCeFFvZTlBdWl5cDB2Iiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.WDEEmWpHvfAwpmpXsdIpGzGs9q-2aVf1nieDnHIK3Mk",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/basket"
+          },
+          "response": []
+        },
+        {
+          "name": "Ka Basket",
+          "id": "84605a92-5edd-4c5f-8d8d-1807c30fbe4e",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MzQ2MTE3NDUsImV4cCI6MTczNTIxNjU0NSwibmJmIjoxNzM0NjExNzQ1LCJqdGkiOiI4RGNxSTdta0V4ZmJkWlB4Iiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.z3J3Lpn1_sYFfz5iATv8TLd_EgPnO2HW4k6n3BPLptY",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/ka-basket"
+          },
+          "response": []
+        },
+        {
+          "name": "Basket New",
+          "id": "66b215b3-746a-4803-bbbe-d8770e6102f8",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MDI5MDU3MjEsImV4cCI6MTcwMzUxMDUyMSwibmJmIjoxNzAyOTA1NzIxLCJqdGkiOiI0YUlCeFFvZTlBdWl5cDB2Iiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.WDEEmWpHvfAwpmpXsdIpGzGs9q-2aVf1nieDnHIK3Mk",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/basket/new?promo_code_id=5"
+          },
+          "response": []
+        },
+        {
+          "name": "Ka Basket New",
+          "id": "7383bc6c-6750-4ec9-95ce-05004402a014",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MzQ2MTE3NDUsImV4cCI6MTczNTIxNjU0NSwibmJmIjoxNzM0NjExNzQ1LCJqdGkiOiI4RGNxSTdta0V4ZmJkWlB4Iiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.z3J3Lpn1_sYFfz5iATv8TLd_EgPnO2HW4k6n3BPLptY",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/ka-basket/new?promo_code_id=5"
+          },
+          "response": []
+        },
+        {
+          "name": "Basket Short",
+          "id": "ca297aaf-6649-42ee-a6da-d7f4e0dff0ba",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MDI5MDU3MjEsImV4cCI6MTcwMzUxMDUyMSwibmJmIjoxNzAyOTA1NzIxLCJqdGkiOiI0YUlCeFFvZTlBdWl5cDB2Iiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.WDEEmWpHvfAwpmpXsdIpGzGs9q-2aVf1nieDnHIK3Mk",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/basket/short"
+          },
+          "response": []
+        },
+        {
+          "name": "Ka Basket Short",
+          "id": "ccf5b13b-16f6-4300-9cd2-a53ad0687f82",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MzQ2MTE3NDUsImV4cCI6MTczNTIxNjU0NSwibmJmIjoxNzM0NjExNzQ1LCJqdGkiOiI4RGNxSTdta0V4ZmJkWlB4Iiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.z3J3Lpn1_sYFfz5iATv8TLd_EgPnO2HW4k6n3BPLptY",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/ka-basket/short"
+          },
+          "response": []
+        },
+        {
+          "name": "Basket Short New",
+          "id": "bf77e220-4ab2-4247-a4a8-2d5177230c08",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MzQ2MTE3NDUsImV4cCI6MTczNTIxNjU0NSwibmJmIjoxNzM0NjExNzQ1LCJqdGkiOiI4RGNxSTdta0V4ZmJkWlB4Iiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.z3J3Lpn1_sYFfz5iATv8TLd_EgPnO2HW4k6n3BPLptY",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/basket/short/new"
+          },
+          "response": []
+        },
+        {
+          "name": "Basket Commercial Proposal",
+          "id": "f7c74793-d922-4e8d-afba-2c9c0ceaa90e",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTc1Mzg4MTk4MiwiZXhwIjoxNzU0NDg2NzgyLCJuYmYiOjE3NTM4ODE5ODIsImp0aSI6ImhndnZHekdyR0xQMHNIaWkiLCJzdWIiOjQxMTgsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.1gwAIiyd83LXC7DUXkXuld4uRr1D53QvxZ_y6vgYcdI",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/basket/commercial-proposal?format=pdf&is_personal=true"
+          },
+          "response": []
+        },
+        {
+          "name": "Basket Weight And Size Report",
+          "id": "205922f3-f987-4e55-8d38-68e99992f2ac",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2ODMyODkxOTUsImV4cCI6MTY4Mzg5Mzk5NSwibmJmIjoxNjgzMjg5MTk1LCJqdGkiOiJqS3ZhUnFWUDY2a01ocUJkIiwic3ViIjoxMDIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.w4PxCwS-IJUJKmrJ0hn9J9N5n_exhDsSNTPcLEqSnv4",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/basket/weight-size-report"
+          },
+          "response": []
+        },
+        {
+          "name": "Basket Add",
+          "id": "19f4d11c-f64f-45fd-bf0d-22a0a5430f0f",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTcwODM0NzM4MywiZXhwIjoxNzA4OTUyMTgzLCJuYmYiOjE3MDgzNDczODMsImp0aSI6Imc4WFJRUHJlQ3RTelJKTTEiLCJzdWIiOjE0ODQsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.FG7Qn9F5NBu6G9zyh_p_-Q8g3UMrGDx6ypGcL3IgZa4",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"basket\": [\r\n        {\r\n            \"nomenclature_guid\": \"00555edb-9585-11df-bfea-e61f13537e43\",\r\n            \"warehouse_id\": 3,\r\n            \"amount\": 3\r\n        },\r\n        {\r\n            \"nomenclature_guid\": \"0005566a-389b-11eb-97a0-e61f13537e43\",\r\n            \r\n            \"amount\": 5\r\n        },\r\n        {\r\n            \"nomenclature_guid\": \"24cb2061-3dd2-11e6-8dcf-e61f13537e43\",\r\n            \r\n            \"amount\": 1\r\n        },\r\n        {\r\n            \"nomenclature_guid\": \"2551e2fa-2693-11e8-b121-e61f13537e43\",\r\n            \r\n            \"amount\": 1\r\n        },\r\n        {\r\n            \"nomenclature_guid\": \"4f7eacaf-a74b-11e2-9910-e61f13537e43\",\r\n            \r\n            \"amount\": 10\r\n        }\r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/dealers-lk/basket/add"
+          },
+          "response": []
+        },
+        {
+          "name": "Basket Delete",
+          "id": "e9693e84-aac4-4195-a72c-30a06316bb95",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NzAyMzUwOTUsImV4cCI6MTY3MDgzOTg5NSwibmJmIjoxNjcwMjM1MDk1LCJqdGkiOiJpdmdHbWxSU2h6NW5mZGI1Iiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Ym4mQNU8Wm5EAljrcUFayCLIcIUp8KKWuzw1z4s9Ln0",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"guids\": [ \"006bee00-7e71-11e7-a3f6-e61f13537e43\", \"1fd6027a-283f-11e8-b121-e61f13537e43\" ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/dealers-lk/basket/delete"
+          },
+          "response": []
+        },
+        {
+          "name": "Basket Clear",
+          "id": "261eb0ab-f4e7-4698-b479-f0f3208aa370",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NzAyMzUwOTUsImV4cCI6MTY3MDgzOTg5NSwibmJmIjoxNjcwMjM1MDk1LCJqdGkiOiJpdmdHbWxSU2h6NW5mZGI1Iiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Ym4mQNU8Wm5EAljrcUFayCLIcIUp8KKWuzw1z4s9Ln0",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/basket/clear"
+          },
+          "response": []
+        }
+      ],
+      "id": "4ec1ba3d-dad3-490b-8aef-249a56e73a3e"
+    },
+    {
+      "name": "Applications",
+      "item": [
+        {
+          "name": "Application From Basket",
+          "id": "da984e82-9d37-47aa-bb7b-c9ad93b11f7b",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTcxODg5MTYyMiwiZXhwIjoxNzE5NDk2NDIyLCJuYmYiOjE3MTg4OTE2MjIsImp0aSI6Ik5ydWkycFVHSzBJSklUeEUiLCJzdWIiOjQxMTgsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.7xfsc5_j4OK1ctEzoZLnuOKCaL7eS0bBloDueFqBRbY",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"order_counterparty_guid\":\"814f816c-cc70-11e3-8d43-e61f13537e43\",\r\n    \"counterparty_contact_guid\":null,\r\n    \"contact_name\":\"contact_name\",\r\n    \"contact_phone\":\"contact_phone\",\r\n    \"website_comment\":\"TEST is_promo_code field\",\r\n    \"website_comment_by_client\":\"TEST is_promo_code field\",\r\n    \"delivery_company\":\"delivery_company\",\r\n    \"delivery_method\":\"ДоПеревозчикаДоставкаКлиенту\",\r\n    \"delivery_address\":\"delivery_address\",\r\n    \"delivery_date\":\"2025-11-15\",\r\n    \"promo_code_id\": 6,\r\n    \"products\": [\r\n        {\r\n            \"guid\": \"8ca564e3-6b3d-11e1-97da-e61f13537e43\",\r\n            \"city\": \"Москва\",\r\n            \"amount\": 1\r\n        },\r\n        {\r\n            \"guid\": \"1a5cb8e2-c69e-11e6-a3ba-e61f13537e43\",\r\n            \"city\": \"Москва\",\r\n            \"amount\": 2\r\n        },\r\n        {\r\n            \"guid\": \"18f173da-95c3-11df-bfea-e61f13537e43\",\r\n            \"city\": \"Москва\",\r\n            \"amount\": 3\r\n        },\r\n        {\r\n            \"guid\": \"f05389f1-a2aa-11eb-a276-e61f13537e43\",\r\n            \"city\": \"Москва\",\r\n            \"amount\": 4\r\n        },\r\n        {\r\n            \"guid\": \"62220365-2e71-11ed-a2c8-e61f13537e43\",\r\n            \"city\": \"Москва\",\r\n            \"amount\": 5\r\n        },\r\n        {\r\n            \"guid\": \"2d26a012-c530-11ee-8485-0050568e3182\",\r\n            \"city\": \"Москва\",\r\n            \"amount\": 6\r\n        },\r\n        {\r\n            \"guid\": \"70114ad7-aea3-11e3-9533-e61f13537e43\",\r\n            \"city\": \"Москва\",\r\n            \"amount\": 7\r\n        },\r\n        {\r\n            \"guid\": \"654d6dfe-e9a5-11e4-8bc6-e61f13537e43\",\r\n            \"city\": \"Москва\",\r\n            \"amount\": 8\r\n        },\r\n        {\r\n            \"guid\": \"2d26a012-c530-11ee-8485-0050568e3182\",\r\n            \"city\": \"Москва\",\r\n            \"amount\": 9\r\n        }\r\n    ],\r\n    \"is_delivery_today\": true,\r\n    \"to_order\":true,\r\n    \"name\":null\r\n}\r\n\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/dealers-lk/application/create"
+          },
+          "response": []
+        },
+        {
+          "name": "Ka Application From Basket",
+          "id": "a669004b-bf7f-41ea-a3d2-91f6e97f9727",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTc1NDYzOTM1MSwiZXhwIjoxNzU1MjQ0MTUxLCJuYmYiOjE3NTQ2MzkzNTEsImp0aSI6IlJXSHViZGFXQmVONENrTEsiLCJzdWIiOjQxMTgsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.vTKSsS-x_h3GQMq8ex5yt5Z7gdjnY36NNkzm-vJLDQE",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"order_counterparty_guid\": \"fd5d62e9-c25c-11e9-9b8b-e61f13537e43\",\r\n    \"counterparty_contact_guid\":null,\r\n    \"contact_name\":\"contact_name\",\r\n    \"contact_phone\":\"contact_phone\",\r\n    \"website_comment\":\"TEST is_promo_code field\",\r\n    \"website_comment_by_client\":\"TEST is_promo_code field\",\r\n    \"delivery_company\":\"delivery_company\",\r\n    \"delivery_method\":\"ДоПеревозчикаДоставкаКлиенту\",\r\n    \"delivery_address\":\"delivery_address\",\r\n    \"delivery_date\":\"2025-11-15\",\r\n    \"promo_code_id\": null,\r\n    \"products\": [\r\n        {\r\n            \"guid\": \"408687bc-b9da-11ee-b9e4-0050568e3182\",\r\n            \"city\": \"Москва\",\r\n            \"amount\": 1\r\n        },\r\n        {\r\n            \"guid\": \"689c2a97-b734-11ed-a104-e61f13537e43\",\r\n            \"city\": \"Воронеж\",\r\n            \"amount\": 1\r\n        },\r\n        {\r\n            \"guid\": \"104cc36a-b9d9-11ee-b9e4-0050568e3182\",\r\n            \"city\": \"Нижний-Новгород\",\r\n            \"amount\": 1\r\n        }\r\n    ],\r\n    \"is_delivery_today\": true,\r\n    \"to_order\":true,\r\n    \"name\":null\r\n}\r\n\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/dealers-lk/ka-application/create"
+          },
+          "response": []
+        }
+      ],
+      "id": "01ea5722-2c69-4f8d-9506-f78d98dc7c9b"
+    },
+    {
+      "name": "Users",
+      "item": [
+        {
+          "name": "Users",
+          "id": "70a18e8f-7f0b-4a3e-a390-84ea1e40a7c1",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTY3MzM0NDYzOSwiZXhwIjoxNjczOTQ5NDM5LCJuYmYiOjE2NzMzNDQ2MzksImp0aSI6IjlZa1JrS2VSWVZ0NmJ6OVkiLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.dTb-5VzZxfYSEJ5D3tqurcRQ6jFKoR-LAUd9c_gUinU",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/users"
+          },
+          "response": []
+        },
+        {
+          "name": "User Info",
+          "id": "e12594f7-94c2-4e2f-882c-e3bd68324206",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTcxNzc1MDY3NCwiZXhwIjoxNzE4MzU1NDc0LCJuYmYiOjE3MTc3NTA2NzQsImp0aSI6InRNOGMwdmVyMHQ1YzdlVzUiLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Rg9KhXPiS4KYmdDSnRNdN9z6-Yc1CDxhVJrFeC5ANzw",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/user/2899"
+          },
+          "response": []
+        },
+        {
+          "name": "User Delete",
+          "id": "f8b5618f-9c30-4fa9-b4eb-5c1071146134",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2NzAzMTE4MzksImV4cCI6MTY3MDkxNjYzOSwibmJmIjoxNjcwMzExODM5LCJqdGkiOiIxaGk2a0VHeTFyOW1CRDlrIiwic3ViIjo0MCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.DbmB8BTTYqG1gDPQpXwoLML_QHUolBGxewcclZGgCYw",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/dealers-lk/user/delete/2049"
+          },
+          "response": []
+        },
+        {
+          "name": "User Update",
+          "id": "4397e0de-6014-4178-a5be-f2ba2ab15f83",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2NzAzMTE4MzksImV4cCI6MTY3MDkxNjYzOSwibmJmIjoxNjcwMzExODM5LCJqdGkiOiIxaGk2a0VHeTFyOW1CRDlrIiwic3ViIjo0MCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.DbmB8BTTYqG1gDPQpXwoLML_QHUolBGxewcclZGgCYw",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "_METHOD",
+                "value": "PATCH",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n \"xml_id\": 1,\r\n \"timestamp_x\": \"2021-09-09 06:45:54\",\r\n \"login\": \"yuyuyu125698\",\r\n \"password\": \"123456789\",\r\n \"password_bitrix\": \"11111\",\r\n \"stored_hash\": \"0000000\",\r\n \"checkword\": \"слово\",\r\n \"active\": \"Y\",\r\n \"name\": \"\",\r\n \"last_name\": \"YU\",\r\n \"second_name\": \"Иванович\",\r\n \"email\": \"test22@test.com\",\r\n \"last_login\": \"2021-09-09 06:45:54\",\r\n \"last_activity_date\": \"2021-09-09 06:45:54\",\r\n \"date_register\": \"2021-09-08 11:55:00\",\r\n \"lid\": \"12\",\r\n \"admin_notes\": \"Заметки администратора\",\r\n \"external_auth_id\": \"3ea8c4cf-c62d-47fc-907d-5951d3d493f1\",\r\n \"personal_profession\": \"Бухгалтер\",\r\n \"personal_www\": \"http://ivanov-ivan.ru\",\r\n \"personal_icq\": \"111111111\",\r\n \"personal_gender\": \"М\",\r\n \"personal_birthday\": \"1986-01-01\",\r\n \"personal_photo\": 12,\r\n \"personal_phone\": \"+79000000000\",\r\n \"personal_fax\": \"11-12-13\",\r\n \"personal_mobile\": \"+79000000000\",\r\n \"personal_pager\": \"+79000000000\",\r\n \"personal_street\": \"ул. Московская, д. 11\",\r\n \"personal_mailbox\": \"ул. Московская, д. 11, кв. 10\",\r\n \"personal_city\": \"Москва\",\r\n \"personal_state\": \"Московская область\",\r\n \"personal_zip\": \"101000\",\r\n \"personal_country\": \"РФ\",\r\n \"personal_notes\": \"Заметки пользователя\",\r\n \"work_company\": \"ООО Компания\",\r\n \"work_department\": \"Бухгалтерия\",\r\n \"work_position\": \"Бухгалтер\",\r\n \"work_www\": \"http://company.ru\",\r\n \"work_phone\": \"+79000000001\",\r\n \"work_fax\": \"11-12-14\",\r\n \"work_pager\": \"+79000000001\",\r\n \"work_street\": \"ул. Московская, д. 12\",\r\n \"work_mailbox\": \"ул. Московская, д. 11, кв. 1\",\r\n \"work_city\": \"Москва\",\r\n \"work_state\": \"Московская область\",\r\n \"work_zip\": \"101000\",\r\n \"work_country\": \"РФ\",\r\n \"work_profile\": \"ИТ\",\r\n \"work_logo\": 13,\r\n \"work_notes\": \"Дополнительные заметки.\",\r\n \"uf_dealer_legal_entity_type\": \"Юр. лицо\",\r\n \"uf_dealer_inn\": \"123456789123\",\r\n \"uf_dealer_address_actual\": \"101000, г. Москва, ул. Московская, д. 12 кв. 3\",\r\n \"uf_dealer_address_legal\": \"101000, г. Москва, ул. Московская, д. 12 кв. 3\",\r\n \"uf_inn\": \"\",\r\n \"uf_kpp\": \"\",\r\n \"counterparty_guid\": \"987654321\",\r\n \"role_front\": \"employee\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/dealers-lk/user/update/2049"
+          },
+          "response": []
+        },
+        {
+          "name": "User Add",
+          "id": "3b0ec6fb-9852-4bc8-8094-352ce4b8905b",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2NzAzMTE4MzksImV4cCI6MTY3MDkxNjYzOSwibmJmIjoxNjcwMzExODM5LCJqdGkiOiIxaGk2a0VHeTFyOW1CRDlrIiwic3ViIjo0MCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.DbmB8BTTYqG1gDPQpXwoLML_QHUolBGxewcclZGgCYw",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "_METHOD",
+                "value": "PATCH",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n \"xml_id\": 2,\r\n \"timestamp_x\": \"2022-11-29 06:45:54\",\r\n \"login\": \"developer\",\r\n \"password\": \"123456789\",\r\n \"active\": \"Y\",\r\n \"name\": \"Client Developer\",\r\n \"last_name\": \"CD\",\r\n \"second_name\": \"\",\r\n \"email\": \"client1@developer.ru\",\r\n \"lid\": \"13\",\r\n \"admin_notes\": \"TEST Client Developer\",\r\n \"personal_profession\": \"Бухгалтер\",\r\n \"personal_www\": \"http://ivanov-ivan.ru\",\r\n \"personal_icq\": \"111111111\",\r\n \"personal_gender\": \"М\",\r\n \"personal_birthday\": \"1993-07-25\",\r\n \"personal_photo\": 12,\r\n \"personal_phone\": \"+79000000000\",\r\n \"personal_fax\": \"11-12-13\",\r\n \"personal_mobile\": \"+79000000000\",\r\n \"personal_pager\": \"+79000000000\",\r\n \"personal_street\": \"ул. Московская, д. 11\",\r\n \"personal_mailbox\": \"ул. Московская, д. 11, кв. 10\",\r\n \"personal_city\": \"Москва\",\r\n \"personal_state\": \"Московская область\",\r\n \"personal_zip\": \"101000\",\r\n \"personal_country\": \"РФ\",\r\n \"personal_notes\": \"Заметки пользователя\",\r\n \"work_company\": \"ООО Компания\",\r\n \"work_department\": \"Бухгалтерия\",\r\n \"work_position\": \"Бухгалтер\",\r\n \"work_www\": \"http://company.ru\",\r\n \"work_phone\": \"+79000000001\",\r\n \"work_fax\": \"11-12-14\",\r\n \"work_pager\": \"+79000000001\",\r\n \"work_street\": \"ул. Московская, д. 12\",\r\n \"work_mailbox\": \"ул. Московская, д. 11, кв. 1\",\r\n \"work_city\": \"Москва\",\r\n \"work_state\": \"Московская область\",\r\n \"work_zip\": \"101000\",\r\n \"work_country\": \"РФ\",\r\n \"work_profile\": \"ИТ\",\r\n \"work_logo\": 13,\r\n \"work_notes\": \"Дополнительные заметки.\",\r\n \"uf_dealer_legal_entity_type\": \"Юр. лицо\",\r\n \"uf_dealer_inn\": \"123456789123\",\r\n \"uf_dealer_address_actual\": \"101000, г. Москва, ул. Московская, д. 12 кв. 3\",\r\n \"uf_dealer_address_legal\": \"101000, г. Москва, ул. Московская, д. 12 кв. 3\",\r\n \"uf_inn\": \"\",\r\n \"uf_kpp\": \"\",\r\n \"counterparty_guid\": \"123456789\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/dealers-lk/user/add"
+          },
+          "response": []
+        }
+      ],
+      "id": "b4355a8f-ad0b-4cc5-b70a-b8d571869a35"
+    },
+    {
+      "name": "Counterparties",
+      "item": [
+        {
+          "name": "Head Counterparties",
+          "id": "06f2ec2d-127d-40ad-9b95-98e1265754a4",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/counterparties/head-counterparties?search=Саратов"
+          },
+          "response": []
+        },
+        {
+          "name": "Counterparties Created",
+          "id": "823b778b-5033-469c-b5b4-8d08e16f516b",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2ODUxMDgwNDAsImV4cCI6MTY4NTcxMjg0MCwibmJmIjoxNjg1MTA4MDQwLCJqdGkiOiJreXM1dGFOaXJKZldVSFI4Iiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0._fieVTBFtzXyYP2XsDuUwGG05K9y_v2Xowxd2GnIyoo",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/counterparties/created"
+          },
+          "response": []
+        },
+        {
+          "name": "Counterparty Create",
+          "id": "1075bcdc-0f00-43e7-9df7-618f74646b84",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2ODUxMDgwNDAsImV4cCI6MTY4NTcxMjg0MCwibmJmIjoxNjg1MTA4MDQwLCJqdGkiOiJreXM1dGFOaXJKZldVSFI4Iiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0._fieVTBFtzXyYP2XsDuUwGG05K9y_v2Xowxd2GnIyoo",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"ООО Торговый Дизайн\",\r\n  \"full_name\": \"ООО Торговый Дизайн\",\r\n  \"INN\": \"123456789000\",\r\n  \"KPP\": \"123456789\",\r\n  \"okopf_code\": \"1234567891\",\r\n  \"legal_status\": \"ЮрЛицо\",\r\n  \"organization_name\": \"ООО Продавец\",\r\n  \"bank_code\": \"00123456789\",\r\n  \"bank_corr_account\": \"0000000000000000000\",\r\n  \"bank_name\": \"Сбербанк\",\r\n  \"bank_account\": \"0000000000000000000\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/dealers-lk/counterparty/create"
+          },
+          "response": []
+        }
+      ],
+      "id": "8bbcb314-dcbf-4b04-908c-471559a471ed"
+    },
+    {
+      "name": "Report Issues",
+      "item": [
+        {
+          "name": "Report Issue Create",
+          "id": "904ef073-5e7f-4acb-9a54-beb89e7802a7",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NTc2MDc0NTIsImV4cCI6MTY1ODIxMjI1MiwibmJmIjoxNjU3NjA3NDUyLCJqdGkiOiJ0bEJ0ZEF0NktQU080NTl6Iiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.kQu57mY_c7GxBCgCv5nBJNp94E16YE8OEMTWYQ0xZ-0",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"url\": \"https://t-d.ru/dealers/profile/\",\r\n    \"bug_login\": \"Yulia\",\r\n    \"bug_text\": \"Test Local 1. Quaerat inventore possimus nam veritatis dolorem.\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/dealers-lk/report-issue"
+          },
+          "response": []
+        }
+      ],
+      "id": "2b11d517-1baa-4ae2-a0d3-d653343412b5"
+    },
+    {
+      "name": "Nomenclature Groups",
+      "item": [
+        {
+          "name": "Categories Lower",
+          "id": "9122e7b6-50cd-43da-a648-0387a7c44ebb",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/nomenclature-groups/categories/lower?brands[]=9e39c108-1e40-11e0-8679-e61f13537e43"
+          },
+          "response": []
+        },
+        {
+          "name": "Categories All",
+          "id": "271d229e-fcb5-441a-b828-c3c23f440062",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/nomenclature-groups/categories?max_level=3"
+          },
+          "response": []
+        },
+        {
+          "name": "Categories All List",
+          "id": "95456c28-0635-4dfb-b48b-f194ceb5b6f5",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/nomenclature-groups/categories?max_level=3"
+          },
+          "response": []
+        },
+        {
+          "name": "Nomenclature Groups Filter",
+          "id": "e3cf6256-aeb4-4f11-be9c-5ff2da098e68",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers/nomenclature-groups/search?search=посуда"
+          },
+          "response": []
+        },
+        {
+          "name": "Ka Nomenclature Groups Search",
+          "id": "606ff374-115b-4914-866c-c1eede09dcf5",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/ka-nomenclature-groups/search?search=посуда"
+          },
+          "response": []
+        },
+        {
+          "name": "Category",
+          "id": "648dde6d-70cc-4c81-9334-d1872618f39e",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2Nzk2MzgyNjYsImV4cCI6MTY4MDI0MzA2NiwibmJmIjoxNjc5NjM4MjY2LCJqdGkiOiJQUkJWbTBZZ2dRMEplZ3NiIiwic3ViIjo0MiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.j1pEB0RI0GW1cfKLq2zKWSwf5ixYINdUAu3E_BspUsQ",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/nomenclature-groups/category/59afc962-9caa-11ed-9248-e61f13537e43?max_level=6"
+          },
+          "response": []
+        },
+        {
+          "name": "Categories Viewed",
+          "id": "bee90505-a28d-4bbb-be4c-7dfbafe5c85d",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2Nzk0ODQ1NjIsImV4cCI6MTY4MDA4OTM2MiwibmJmIjoxNjc5NDg0NTYyLCJqdGkiOiI5ZDZZZ1FFR0lmeE9SREpzIiwic3ViIjo0MiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.dfeQddyKNSK3PhsD42a1doU3lxZodmd2Ahhdf2PXhK4",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/nomenclature-groups/categories/viewed"
+          },
+          "response": []
+        }
+      ],
+      "id": "4c7979fc-d051-43f0-87ed-e56dab6c3dc1"
+    },
+    {
+      "name": "Products Comparison",
+      "item": [
+        {
+          "name": "Products Comparison",
+          "id": "febaf877-1804-4903-9791-763abea97101",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2ODYxMTgxOTYsImV4cCI6MTY4NjcyMjk5NiwibmJmIjoxNjg2MTE4MTk2LCJqdGkiOiJwR1FRTzd5Mkt4T1NvcXhtIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0._HDGd2AKw1uOORjZpSbT-Sed-7oWwrOrQOg_skJPZ8k",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/product-comparison"
+          },
+          "response": []
+        },
+        {
+          "name": "Products Comparison Download",
+          "id": "04ef762a-46a6-4b75-8676-d5fb49ca56ae",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2ODQyMjAyNDksImV4cCI6MTY4NDgyNTA0OSwibmJmIjoxNjg0MjIwMjQ5LCJqdGkiOiI4eXRsWFFRY1YzNlRqZXcxIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.cqjRA1adEXlZwIie_lxVtAQi8kfdXyDL82WU2SVAm_k",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/product-comparison/download"
+          },
+          "response": []
+        },
+        {
+          "name": "Products Comparison Add",
+          "id": "01c762d2-78a1-47e0-a4a9-c853bdefad95",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NzU3NDk1MDksImV4cCI6MTY3NjM1NDMwOSwibmJmIjoxNjc1NzQ5NTA5LCJqdGkiOiJFZXN4YlJDTHk3bDVzdmlwIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.O-qNZextXt2178ub16TBkMOXACDrfQQt5yMeXyMMca8",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"guids\": [\r\n        \"006bee00-7e71-11e7-a3f6-e61f13537e43\",\r\n        \"1fd6027a-283f-11e8-b121-e61f13537e43\",\r\n        \"12a899c6-3135-11e5-8e3a-e61f13537e43\",\r\n        \"10471709-1b4f-11ea-8f96-e61f13537e43\"\r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/dealers-lk/product-comparison/add"
+          },
+          "response": []
+        },
+        {
+          "name": "Products Comparison Delete",
+          "id": "e856475f-8f83-4ee5-8065-f914ef99e2a2",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NzU3NDk1MDksImV4cCI6MTY3NjM1NDMwOSwibmJmIjoxNjc1NzQ5NTA5LCJqdGkiOiJFZXN4YlJDTHk3bDVzdmlwIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.O-qNZextXt2178ub16TBkMOXACDrfQQt5yMeXyMMca8",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"nomenclature_guids\": [\r\n        \"12a899c6-3135-11e5-8e3a-e61f13537e43\",\r\n        \"10471709-1b4f-11ea-8f96-e61f13537e43\"\r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/dealers-lk/product-comparison/delete"
+          },
+          "response": []
+        },
+        {
+          "name": "Products Comparison Clear",
+          "id": "48f5e4ed-433b-4ec0-8e06-fa6f73323553",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NzU3NDk1MDksImV4cCI6MTY3NjM1NDMwOSwibmJmIjoxNjc1NzQ5NTA5LCJqdGkiOiJFZXN4YlJDTHk3bDVzdmlwIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.O-qNZextXt2178ub16TBkMOXACDrfQQt5yMeXyMMca8",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/product-comparison/clear"
+          },
+          "response": []
+        },
+        {
+          "name": "Products Comparison Count",
+          "id": "c85ad024-f821-4cde-bc67-b1d0afd3fa25",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NzU3NDk1MDksImV4cCI6MTY3NjM1NDMwOSwibmJmIjoxNjc1NzQ5NTA5LCJqdGkiOiJFZXN4YlJDTHk3bDVzdmlwIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.O-qNZextXt2178ub16TBkMOXACDrfQQt5yMeXyMMca8",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/product-comparison/count"
+          },
+          "response": []
+        }
+      ],
+      "id": "0001fd27-4824-41b8-b087-b056d333319e"
+    },
+    {
+      "name": "Favorites",
+      "item": [
+        {
+          "name": "Favorites",
+          "id": "99e33a18-3475-4273-8027-13fc2c2115f9",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NzU0MDY5NTQsImV4cCI6MTY3NjAxMTc1NCwibmJmIjoxNjc1NDA2OTU0LCJqdGkiOiJ5SUhBQjIxRkk3WTVCT1hXIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.n1ofb6v4ucHsMbJ0a1x9_1PSOB0KW78SEGRjLYL3M8E",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/favorites/categories"
+          },
+          "response": []
+        },
+        {
+          "name": "Ka Favorites",
+          "id": "4715aab5-233f-4013-b766-898a6182ef8b",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTc2Mjc4MDE3NCwiZXhwIjoxNzYzMzg0OTc0LCJuYmYiOjE3NjI3ODAxNzQsImp0aSI6IlV4UlBoeFdGNHlBdWI5V0IiLCJzdWIiOjQxMTgsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.8y-jxIbiyeubjZcEF2iDEfc09k6PE77pRF8_3mnMkUo",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/ka-favorites/products"
+          },
+          "response": []
+        },
+        {
+          "name": "Favorites Add",
+          "id": "0b133011-3882-48f3-8512-a967a0b79d28",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NzU0MDY5NTQsImV4cCI6MTY3NjAxMTc1NCwibmJmIjoxNjc1NDA2OTU0LCJqdGkiOiJ5SUhBQjIxRkk3WTVCT1hXIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.n1ofb6v4ucHsMbJ0a1x9_1PSOB0KW78SEGRjLYL3M8E",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"guids\": [\r\n        \"ba173864-3015-11ec-a276-e61f13537e43\",\r\n        \"c011cef7-3015-11ec-a276-e61f13537e43\",\r\n        \"c62b5782-3015-11ec-a276-e61f13537e43\"\r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/dealers-lk/favorites/nomenclature-groups/add"
+          },
+          "response": []
+        },
+        {
+          "name": "Favorites Delete",
+          "id": "da952d63-be2c-4c3b-ad1d-1d92e28edbb7",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2Nzk0ODQ1NjIsImV4cCI6MTY4MDA4OTM2MiwibmJmIjoxNjc5NDg0NTYyLCJqdGkiOiI5ZDZZZ1FFR0lmeE9SREpzIiwic3ViIjo0MiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.dfeQddyKNSK3PhsD42a1doU3lxZodmd2Ahhdf2PXhK4",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"guids\": [\r\n        \"3a9d9967-9352-11ed-956c-e61f13537e43\"\r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/dealers-lk/favorites/categories/delete"
+          },
+          "response": []
+        },
+        {
+          "name": "Favorites Clear",
+          "id": "642379aa-64f1-4694-bc94-1b9ecdce5ca8",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NzU0MDY5NTQsImV4cCI6MTY3NjAxMTc1NCwibmJmIjoxNjc1NDA2OTU0LCJqdGkiOiJ5SUhBQjIxRkk3WTVCT1hXIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.n1ofb6v4ucHsMbJ0a1x9_1PSOB0KW78SEGRjLYL3M8E",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/favorites/categories/clear"
+          },
+          "response": []
+        }
+      ],
+      "id": "716b78aa-85a4-4976-be8d-35af15cc0334"
+    },
+    {
+      "name": "Contracts",
+      "item": [
+        {
+          "name": "Contracts Debt Allowance Total",
+          "id": "efdaa6d7-4aa5-4c99-b3ae-51b2a192acdb",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2Nzc4MjAyODcsImV4cCI6MTY3ODQyNTA4NywibmJmIjoxNjc3ODIwMjg3LCJqdGkiOiI4RkhkSmx3Tm14c1VNSko0Iiwic3ViIjo0MiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.lUHOP8BDUI-aPJozsfbLCEcFhPmvfLta3wLAYfN9lCk",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/contacts/debt-allowance-total"
+          },
+          "response": []
+        }
+      ],
+      "id": "e176f4f6-c02a-4974-9ab0-04c5b4af6932"
+    },
+    {
+      "name": "Delivery Applications",
+      "item": [
+        {
+          "name": "Delivery Applications To Order By Realizations",
+          "id": "3c3b9f35-cd8b-4b6e-8891-3ae097ed18d1",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4tYXMtZGVhbGVyXC8yMDUwIiwiaWF0IjoxNjgxNzk5NDc4LCJleHAiOjE2ODE4MDMwNzgsIm5iZiI6MTY4MTc5OTQ3OCwianRpIjoiSE5NbGF5SjVzQkl4bWw0OCIsInN1YiI6MjI2MCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.670zaVzdvCvBo1WiIrC3510fK7iZjJ8nFnOdgAT24Co",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/delivery-applications/realizations/order/3a67ee0e-6520-404e-a584-13c32773ec17"
+          },
+          "response": []
+        }
+      ],
+      "id": "438eeeff-0e10-4dae-8d53-4c923910b0ec"
+    },
+    {
+      "name": "Products Comparisons Custom",
+      "item": [
+        {
+          "name": "Product Comparison Custom Create",
+          "id": "f9e8e814-d810-4921-9806-c43323bfcea4",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2ODQyMjAyNDksImV4cCI6MTY4NDgyNTA0OSwibmJmIjoxNjg0MjIwMjQ5LCJqdGkiOiI4eXRsWFFRY1YzNlRqZXcxIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.cqjRA1adEXlZwIie_lxVtAQi8kfdXyDL82WU2SVAm_k",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"терка\",\r\n    \"code\": \"123456789\",\r\n    \"set_number\": \"123456789\",\r\n    \"price_rub\": \"123654\",\r\n    \"file_id\": \"1\",\r\n    \"parameters\": [\r\n        {\r\n            \"property_guid\": \"53c05f15-d2af-11e8-869d-e61f13537e43\",\r\n            \"value\": \"10\"\r\n        },\r\n        {\r\n            \"property_guid\": \"1baa6f8e-533d-43b3-89cf-02aae5dd4c5a\",\r\n            \"value\": \"50\"\r\n        },\r\n        {\r\n            \"property_guid\": \"72c49fc8-977d-11e2-9910-e61f13537e43\",\r\n            \"value\": \"Желтый\"\r\n        }\r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/dealers-lk/product-comparison/custom/create"
+          },
+          "response": []
+        },
+        {
+          "name": "Product Comparison Custom Update",
+          "id": "eccd14be-ee8f-4235-884b-575a6f0fe8eb",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2ODQyMjAyNDksImV4cCI6MTY4NDgyNTA0OSwibmJmIjoxNjg0MjIwMjQ5LCJqdGkiOiI4eXRsWFFRY1YzNlRqZXcxIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.cqjRA1adEXlZwIie_lxVtAQi8kfdXyDL82WU2SVAm_k",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"терка UpdatedSecond\",\r\n    \"code\": \"123456789UpdatedSecond\",\r\n    \"set_number\": \"123456789UpdatedSecond\",\r\n    \"price_rub\": \"123\",\r\n    \"file_id\": \"17\",\r\n    \"parameters\": [\r\n        {\r\n            \"property_guid\": \"53c05f15-d2af-11e8-869d-e61f13537e43\",\r\n            \"value\": \"10UpdatedSecond\"\r\n        },\r\n        {\r\n            \"property_guid\": \"1baa6f8e-533d-43b3-89cf-02aae5dd4c5a\",\r\n            \"value\": \"50UpdatedSecond\"\r\n        },\r\n        {\r\n            \"property_guid\": \"72c49fc8-977d-11e2-9910-e61f13537e43\",\r\n            \"value\": \"ЖелтыйUpdatedSecond\"\r\n        }\r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/dealers-lk/product-comparison/custom/update/1"
+          },
+          "response": []
+        },
+        {
+          "name": "Product Comparison Custom Delete",
+          "id": "9f9382bf-72cd-4bc1-bb80-9de395274f13",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2ODQyMjAyNDksImV4cCI6MTY4NDgyNTA0OSwibmJmIjoxNjg0MjIwMjQ5LCJqdGkiOiI4eXRsWFFRY1YzNlRqZXcxIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.cqjRA1adEXlZwIie_lxVtAQi8kfdXyDL82WU2SVAm_k",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n   \"ids\": [1]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/dealers-lk/product-comparison/custom/delete"
+          },
+          "response": []
+        },
+        {
+          "name": "Product Comparison Custom",
+          "id": "6bf98cf5-4560-46ad-ae27-5de82eefbab6",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2ODQyMjAyNDksImV4cCI6MTY4NDgyNTA0OSwibmJmIjoxNjg0MjIwMjQ5LCJqdGkiOiI4eXRsWFFRY1YzNlRqZXcxIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.cqjRA1adEXlZwIie_lxVtAQi8kfdXyDL82WU2SVAm_k",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/product-comparison/custom"
+          },
+          "response": []
+        }
+      ],
+      "id": "6ab0810b-2e70-4ce9-90c2-fd4f65ec6ea4"
+    },
+    {
+      "name": "Commercial Proposal Templates",
+      "item": [
+        {
+          "name": "Commercial Proposals",
+          "id": "03abecaa-7351-446b-bf30-e6a77855167b",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2ODk2ODU2MTEsImV4cCI6MTY5MDI5MDQxMSwibmJmIjoxNjg5Njg1NjExLCJqdGkiOiJZU1ZMVUtZcmFlS2pkOGtVIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.jLLn6hQrZ0nLSuLEwXa7amd_BkK26FVH86_fbWMQJIU",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/commercial-proposals"
+          },
+          "response": []
+        },
+        {
+          "name": "Commercial Proposal",
+          "id": "37048284-5488-49ee-af28-cd50a4f0e49c",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2ODk2ODk1NjMsImV4cCI6MTY5MDI5NDM2MywibmJmIjoxNjg5Njg5NTYzLCJqdGkiOiJGUFZqMHBRMXlUOENheHlFIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.9v4Ddi9LOniZkjdqCDBLcxKRT4GVyMevQYLqcynwcoE",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/commercial-proposal/3"
+          },
+          "response": []
+        },
+        {
+          "name": "Commercial Proposal Entity",
+          "id": "72463acf-9c69-4583-8d1f-47d63d920269",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2ODQ4MzEyNTIsImV4cCI6MTY4NTQzNjA1MiwibmJmIjoxNjg0ODMxMjUyLCJqdGkiOiIxR3ZaZWtLaWRqRkxza2tkIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.7Nkrz44x9MeA93f03YP5iYSnRlB0ibzO0xKsmypj01A",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/commercial-proposal/2/entity"
+          },
+          "response": []
+        },
+        {
+          "name": "Commercial Proposals Users Filters",
+          "id": "7c864fa8-547b-4da5-b758-c9429bd39fa4",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTY4OTE2NjkxMSwiZXhwIjoxNjg5NzcxNzExLCJuYmYiOjE2ODkxNjY5MTEsImp0aSI6Ikd4N2I4aGFVZG5SdE5OVlMiLCJzdWIiOjE0ODQsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.nij5TJayu_jHpdI_7LUexG1giu8muKz2PBN-YWXUnWs",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/commercial-proposals/filters/entities"
+          },
+          "response": []
+        },
+        {
+          "name": "Commercial Proposals Create",
+          "id": "377522e3-e7a8-4a94-95d6-6afb02c78eb8",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2ODk4NDEwMzIsImV4cCI6MTY5MDQ0NTgzMiwibmJmIjoxNjg5ODQxMDMyLCJqdGkiOiJPa0ljSHJPQU5vTUo3aVhjIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Khza_34Tlcmt9LJv5keLvWoOQQXJN-MIJFjb_UVU-jg",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"КП\",\r\n    \"percentage\": null,\r\n    \"price_work\": \"000.00\",\r\n    \"price_delivery\": \"00.00\",\r\n    \"price_unloading\": 250,\r\n    \"entity_name\": null,\r\n    \"logo\": 1,\r\n    \"requisites\": \"Фактический адрес, Юридический адрес, ИНН, КПП, БИК, Банк, Р/счет, К/счет, ОГРН\",\r\n    \"items\": [\r\n        {\r\n            \"nomenclature_guid\": \"0a567534-2152-11e4-b05d-e61f13537e43\",\r\n            \"amount\": 2\r\n        },\r\n        {\r\n            \"nomenclature_guid\": \"0f21eddb-6b9a-11e3-9b80-e61f13537e43\",\r\n            \"amount\": 3\r\n        },\r\n        {\r\n            \"nomenclature_guid\": \"1c3b8c5f-13e2-11e4-8eed-e61f13537e43\",\r\n            \"amount\": 1\r\n        }\r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/dealers-lk/commercial-proposal/create"
+          },
+          "response": []
+        },
+        {
+          "name": "Commercial Proposals Update",
+          "id": "d33d87ba-cdbe-4849-8930-a1fac692b899",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2ODk4NDEwMzIsImV4cCI6MTY5MDQ0NTgzMiwibmJmIjoxNjg5ODQxMDMyLCJqdGkiOiJPa0ljSHJPQU5vTUo3aVhjIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Khza_34Tlcmt9LJv5keLvWoOQQXJN-MIJFjb_UVU-jg",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"КП updated\",\r\n    \"percentage\": 10,\r\n    \"price_work\": 1200,\r\n    \"price_delivery\": 102,\r\n    \"price_unloading\": 300,\r\n    \"entity_name\": \"Торговый Дизайн updated\",\r\n    \"logo\": 30,\r\n    \"requisites\": \"Фактический адрес, Юридический адрес, ИНН, КПП, БИК, Банк, Р/счет, К/счет, ОГРН updated\",\r\n    \"items\": [\r\n        {\r\n            \"nomenclature_guid\": \"0a567534-2152-11e4-b05d-e61f13537e43\",\r\n            \"amount\": 2\r\n        },\r\n        {\r\n            \"nomenclature_guid\": \"0f21eddb-6b9a-11e3-9b80-e61f13537e43\",\r\n            \"amount\": 3\r\n        },\r\n        {\r\n            \"nomenclature_guid\": \"1c3b8c5f-13e2-11e4-8eed-e61f13537e43\",\r\n            \"amount\": 1\r\n        }\r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/dealers-lk/commercial-proposal/update/2"
+          },
+          "response": []
+        },
+        {
+          "name": "Commercial Proposals Delete",
+          "id": "40c51015-0fb6-4641-bc09-56668e69e5a0",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2ODk2ODU2MTEsImV4cCI6MTY5MDI5MDQxMSwibmJmIjoxNjg5Njg1NjExLCJqdGkiOiJZU1ZMVUtZcmFlS2pkOGtVIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.jLLn6hQrZ0nLSuLEwXa7amd_BkK26FVH86_fbWMQJIU",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"КП updated\",\r\n    \"percentage\": 10,\r\n    \"price_work\": 1200,\r\n    \"price_delivery\": 102,\r\n    \"price_unloading\": 300,\r\n    \"entity_name\": \"Торговый Дизайн updated\",\r\n    \"logo\": 30,\r\n    \"requisites\": \"Фактический адрес, Юридический адрес, ИНН, КПП, БИК, Банк, Р/счет, К/счет, ОГРН updated\",\r\n    \"items\": [\r\n        {\r\n            \"nomenclature_guid\": \"0a567534-2152-11e4-b05d-e61f13537e43\",\r\n            \"amount\": 2\r\n        },\r\n        {\r\n            \"nomenclature_guid\": \"0f21eddb-6b9a-11e3-9b80-e61f13537e43\",\r\n            \"amount\": 3\r\n        },\r\n        {\r\n            \"nomenclature_guid\": \"1c3b8c5f-13e2-11e4-8eed-e61f13537e43\",\r\n            \"amount\": 1\r\n        }\r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/dealers-lk/commercial-proposal/delete/1"
+          },
+          "response": []
+        },
+        {
+          "name": "Commercial Proposals Download",
+          "id": "a1654e74-6462-41e6-9491-feec73f1967a",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2OTA4OTMyMDYsImV4cCI6MTY5MTQ5ODAwNiwibmJmIjoxNjkwODkzMjA2LCJqdGkiOiJJdkp1ek0zNzcxWlRFRUZZIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.lKDsvmti4J1aQfYhzEkYPK_fNPuQ_jQI_6MeLMTuGps",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Новая спецификация\",\r\n    \"percentage\": null,\r\n    \"price_work\": \"0\",\r\n    \"price_delivery\": null,\r\n    \"price_unloading\": \"1\",\r\n    \"entity_name\": null,\r\n    \"logo\": 30,\r\n    \"requisites\": null,\r\n    \"items\": [{\r\n            \"nomenclature_guid\": \"17d838a7-420c-11e3-9e03-e61f13537e43\",\r\n            \"brand_guid\": \"81d92ea8-2260-11e2-aa5e-e61f13537e43\",\r\n            \"images\": [\"https:\\/\\/api.t-d.ru\\/images\\/upload1C\\/00000209855.jpg\"],\r\n            \"code\": \"J0018\",\r\n            \"name\": \"OSZ Стакан низкий Islande J0018 (300 мл.)\",\r\n            \"amount\": 1,\r\n            \"properties\": \"Бренд OSZ, Вес брутто (кг) 0.1, Высота (мм) 93, Диаметр (мм) 79, Кратность 12, Материал изготовления Стекло, Назначение Для напитков, Объем номинальный (мл) 300, Серия. Islande, Страна РОССИЯ, Цвет Прозрачный\",\r\n            \"brand\": \"OSZ\",\r\n            \"length\": \"-\",\r\n            \"width\": \"-\",\r\n            \"height\": \"93\",\r\n            \"voltage\": 0,\r\n            \"capacity\": 0,\r\n            \"price\": \"34.31\",\r\n            \"total\": \"34.31\",\r\n            \"disabled\": true\r\n        }, {\r\n            \"nomenclature_guid\": \"15fad7d9-ba19-11e3-944a-e61f13537e43\",\r\n            \"brand_guid\": \"81d92ea8-2260-11e2-aa5e-e61f13537e43\",\r\n            \"images\": [\"https:\\/\\/api.t-d.ru\\/images\\/upload1C\\/00000224379.jpg\"],\r\n            \"code\": \"H7669\",\r\n            \"name\": \"Стакан низкий \\\"Стерлинг\\\" H7669 (300 мл)\",\r\n            \"amount\": 1,\r\n            \"properties\": \"Бренд OSZ, Вес брутто (кг) 0.1, Материал изготовления Стекло, Назначение Для напитков, Серия. Стерлинг, Страна РОССИЯ, Цвет Прозрачный\",\r\n            \"brand\": \"OSZ\",\r\n            \"length\": \"-\",\r\n            \"width\": \"-\",\r\n            \"height\": \"-\",\r\n            \"voltage\": 0,\r\n            \"capacity\": 0,\r\n            \"price\": \"36.52\",\r\n            \"total\": \"36.52\",\r\n            \"disabled\": true\r\n        }, {\r\n            \"nomenclature_guid\": \"0f91ccfb-8e24-11e7-a3f6-e61f13537e43\",\r\n            \"brand_guid\": \"81d92ea8-2260-11e2-aa5e-e61f13537e43\",\r\n            \"images\": [\"https:\\/\\/api.t-d.ru\\/images\\/upload1C\\/00000319037.jpg\"],\r\n            \"code\": \"N3209 шт\",\r\n            \"name\": \"OSZ Celeste Бокал для вина N3209 (450 мл)\",\r\n            \"amount\": 1,\r\n            \"properties\": \"Бренд OSZ, Высота (мм) 239, Диаметр (мм) 83.5, Кратность 12, Материал изготовления Стекло, Объем номинальный (мл) 450, Серия. Celeste, Страна РОССИЯ\",\r\n            \"brand\": \"OSZ\",\r\n            \"length\": \"-\",\r\n            \"width\": \"-\",\r\n            \"height\": \"239\",\r\n            \"voltage\": 0,\r\n            \"capacity\": 0,\r\n            \"price\": \"93.81\",\r\n            \"total\": \"93.81\",\r\n            \"disabled\": true\r\n        }, {\r\n            \"nomenclature_guid\": \"0a567534-2152-11e4-b05d-e61f13537e43\",\r\n            \"brand_guid\": \"81d92ea8-2260-11e2-aa5e-e61f13537e43\",\r\n            \"images\": [\"https:\\/\\/api.t-d.ru\\/images\\/upload1C\\/00000236809.jpg\"],\r\n            \"code\": \"05с1256\",\r\n            \"name\": \"Стакан \\\"Ода\\\" 05с1256 (230 мл)\",\r\n            \"amount\": 1,\r\n            \"properties\": \"Бренд OSZ, Высота (мм) 126, Диаметр (мм) -, Материал изготовления -, Объем номинальный (мл) -, Серия. -, Страна РОССИЯ\",\r\n            \"brand\": \"OSZ\",\r\n            \"length\": \"-\",\r\n            \"width\": \"-\",\r\n            \"height\": \"126\",\r\n            \"voltage\": 0,\r\n            \"capacity\": 0,\r\n            \"price\": \"16.38\",\r\n            \"total\": \"16.38\",\r\n            \"disabled\": true\r\n        }\r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/dealers-lk/commercial-proposal/download?format=pdf&is_without_images=true"
+          },
+          "response": []
+        },
+        {
+          "name": "Ka Commercial Proposals Download",
+          "id": "c5880663-a8aa-41fd-bb06-f5946dc0c76d",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2OTA4OTMyMDYsImV4cCI6MTY5MTQ5ODAwNiwibmJmIjoxNjkwODkzMjA2LCJqdGkiOiJJdkp1ek0zNzcxWlRFRUZZIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.lKDsvmti4J1aQfYhzEkYPK_fNPuQ_jQI_6MeLMTuGps",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Новая спецификация\",\r\n    \"percentage\": null,\r\n    \"price_work\": \"0\",\r\n    \"price_delivery\": null,\r\n    \"price_unloading\": \"1\",\r\n    \"entity_name\": null,\r\n    \"logo\": 30,\r\n    \"requisites\": null,\r\n    \"items\": [{\r\n            \"nomenclature_guid\": \"17d838a7-420c-11e3-9e03-e61f13537e43\",\r\n            \"brand_guid\": \"81d92ea8-2260-11e2-aa5e-e61f13537e43\",\r\n            \"images\": [\"https:\\/\\/api.t-d.ru\\/images\\/upload1C\\/00000209855.jpg\"],\r\n            \"code\": \"J0018\",\r\n            \"name\": \"OSZ Стакан низкий Islande J0018 (300 мл.)\",\r\n            \"amount\": 1,\r\n            \"properties\": \"Бренд OSZ, Вес брутто (кг) 0.1, Высота (мм) 93, Диаметр (мм) 79, Кратность 12, Материал изготовления Стекло, Назначение Для напитков, Объем номинальный (мл) 300, Серия. Islande, Страна РОССИЯ, Цвет Прозрачный\",\r\n            \"brand\": \"OSZ\",\r\n            \"length\": \"-\",\r\n            \"width\": \"-\",\r\n            \"height\": \"93\",\r\n            \"voltage\": 0,\r\n            \"capacity\": 0,\r\n            \"price\": \"34.31\",\r\n            \"total\": \"34.31\",\r\n            \"disabled\": true\r\n        }, {\r\n            \"nomenclature_guid\": \"15fad7d9-ba19-11e3-944a-e61f13537e43\",\r\n            \"brand_guid\": \"81d92ea8-2260-11e2-aa5e-e61f13537e43\",\r\n            \"images\": [\"https:\\/\\/api.t-d.ru\\/images\\/upload1C\\/00000224379.jpg\"],\r\n            \"code\": \"H7669\",\r\n            \"name\": \"Стакан низкий \\\"Стерлинг\\\" H7669 (300 мл)\",\r\n            \"amount\": 1,\r\n            \"properties\": \"Бренд OSZ, Вес брутто (кг) 0.1, Материал изготовления Стекло, Назначение Для напитков, Серия. Стерлинг, Страна РОССИЯ, Цвет Прозрачный\",\r\n            \"brand\": \"OSZ\",\r\n            \"length\": \"-\",\r\n            \"width\": \"-\",\r\n            \"height\": \"-\",\r\n            \"voltage\": 0,\r\n            \"capacity\": 0,\r\n            \"price\": \"36.52\",\r\n            \"total\": \"36.52\",\r\n            \"disabled\": true\r\n        }, {\r\n            \"nomenclature_guid\": \"0f91ccfb-8e24-11e7-a3f6-e61f13537e43\",\r\n            \"brand_guid\": \"81d92ea8-2260-11e2-aa5e-e61f13537e43\",\r\n            \"images\": [\"https:\\/\\/api.t-d.ru\\/images\\/upload1C\\/00000319037.jpg\"],\r\n            \"code\": \"N3209 шт\",\r\n            \"name\": \"OSZ Celeste Бокал для вина N3209 (450 мл)\",\r\n            \"amount\": 1,\r\n            \"properties\": \"Бренд OSZ, Высота (мм) 239, Диаметр (мм) 83.5, Кратность 12, Материал изготовления Стекло, Объем номинальный (мл) 450, Серия. Celeste, Страна РОССИЯ\",\r\n            \"brand\": \"OSZ\",\r\n            \"length\": \"-\",\r\n            \"width\": \"-\",\r\n            \"height\": \"239\",\r\n            \"voltage\": 0,\r\n            \"capacity\": 0,\r\n            \"price\": \"93.81\",\r\n            \"total\": \"93.81\",\r\n            \"disabled\": true\r\n        }, {\r\n            \"nomenclature_guid\": \"0a567534-2152-11e4-b05d-e61f13537e43\",\r\n            \"brand_guid\": \"81d92ea8-2260-11e2-aa5e-e61f13537e43\",\r\n            \"images\": [\"https:\\/\\/api.t-d.ru\\/images\\/upload1C\\/00000236809.jpg\"],\r\n            \"code\": \"05с1256\",\r\n            \"name\": \"Стакан \\\"Ода\\\" 05с1256 (230 мл)\",\r\n            \"amount\": 1,\r\n            \"properties\": \"Бренд OSZ, Высота (мм) 126, Диаметр (мм) -, Материал изготовления -, Объем номинальный (мл) -, Серия. -, Страна РОССИЯ\",\r\n            \"brand\": \"OSZ\",\r\n            \"length\": \"-\",\r\n            \"width\": \"-\",\r\n            \"height\": \"126\",\r\n            \"voltage\": 0,\r\n            \"capacity\": 0,\r\n            \"price\": \"16.38\",\r\n            \"total\": \"16.38\",\r\n            \"disabled\": true\r\n        }\r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/dealers-lk/ka-commercial-proposal/download?format=pdf&is_without_images=true"
+          },
+          "response": []
+        },
+        {
+          "name": "Commercial Proposals Weight Size Report",
+          "id": "68888864-d593-455a-9f50-04bd98dea799",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2ODQ4MzEyNTIsImV4cCI6MTY4NTQzNjA1MiwibmJmIjoxNjg0ODMxMjUyLCJqdGkiOiIxR3ZaZWtLaWRqRkxza2tkIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.7Nkrz44x9MeA93f03YP5iYSnRlB0ibzO0xKsmypj01A",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Новая спецификация\",\r\n    \"items\": [\r\n        {\r\n            \"nomenclature_guid\": \"0a567534-2152-11e4-b05d-e61f13537e43\",\r\n            \"amount\": 2\r\n        },\r\n        {\r\n            \"nomenclature_guid\": \"0f21eddb-6b9a-11e3-9b80-e61f13537e43\",\r\n            \"amount\": 3\r\n        },\r\n        {\r\n            \"nomenclature_guid\": \"1c3b8c5f-13e2-11e4-8eed-e61f13537e43\",\r\n            \"amount\": 1\r\n        }\r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/dealers-lk/commercial-proposal/weight-size-report?format=pdf"
+          },
+          "response": []
+        },
+        {
+          "name": "Ka Commercial Proposals Weight Size Report",
+          "id": "a72949ca-e1a6-41ad-a69c-098b8c980189",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2ODQ4MzEyNTIsImV4cCI6MTY4NTQzNjA1MiwibmJmIjoxNjg0ODMxMjUyLCJqdGkiOiIxR3ZaZWtLaWRqRkxza2tkIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.7Nkrz44x9MeA93f03YP5iYSnRlB0ibzO0xKsmypj01A",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Новая спецификация\",\r\n    \"items\": [\r\n        {\r\n            \"nomenclature_guid\": \"0a567534-2152-11e4-b05d-e61f13537e43\",\r\n            \"amount\": 2\r\n        },\r\n        {\r\n            \"nomenclature_guid\": \"0f21eddb-6b9a-11e3-9b80-e61f13537e43\",\r\n            \"amount\": 3\r\n        },\r\n        {\r\n            \"nomenclature_guid\": \"1c3b8c5f-13e2-11e4-8eed-e61f13537e43\",\r\n            \"amount\": 1\r\n        }\r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/dealers-lk/ka-commercial-proposal/weight-size-report?format=pdf"
+          },
+          "response": []
+        }
+      ],
+      "id": "ee56a927-c270-4049-bd2c-79a5acc7ad52"
+    },
+    {
+      "name": "Counterparties Contacts",
+      "item": [
+        {
+          "name": "Counterparty Contact Create Copy",
+          "id": "6d5de63c-3d17-4c43-af1a-beacb3510de0",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2ODUxMDgwNDAsImV4cCI6MTY4NTcxMjg0MCwibmJmIjoxNjg1MTA4MDQwLCJqdGkiOiJreXM1dGFOaXJKZldVSFI4Iiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0._fieVTBFtzXyYP2XsDuUwGG05K9y_v2Xowxd2GnIyoo",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"counterparty_guid\":  \"814f816c-cc70-11e3-8d43-e61f13537e43\",\r\n  \"first_name\": \"Иван\",\r\n  \"last_name\": \"Иванов\",\r\n  \"patronymic\": \"Иванович\",\r\n  \"legal_address\": \"г. Москва\",\r\n  \"actual_address\": \"г. Москва\",\r\n  \"email\": \"test@example.com\",\r\n  \"phone\": \"+7 (508) 968-31-57\",\r\n  \"counterparty_number_lk\": null\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/dealers-lk/counterparty-contact/create"
+          },
+          "response": []
+        },
+        {
+          "name": "Counterparties Contacts Created",
+          "id": "4d6a34a8-2be2-42c3-8029-5414c352ddbf",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2ODUxMDgwNDAsImV4cCI6MTY4NTcxMjg0MCwibmJmIjoxNjg1MTA4MDQwLCJqdGkiOiJreXM1dGFOaXJKZldVSFI4Iiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0._fieVTBFtzXyYP2XsDuUwGG05K9y_v2Xowxd2GnIyoo",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/counterparties-contacts/created"
+          },
+          "response": []
+        }
+      ],
+      "id": "ff500522-8c93-4257-8390-140bf30860cd"
+    },
+    {
+      "name": "Brand Discounts",
+      "item": [
+        {
+          "name": "Brand Discount Create",
+          "id": "3a4ffa96-ec54-405f-be11-d41955da805e",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTY5MTQxOTQxNiwiZXhwIjoxNjkyMDI0MjE2LCJuYmYiOjE2OTE0MTk0MTYsImp0aSI6InFiVE9IS09vNENxNWlxWEciLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.xr_7bSVckyVQ90-KslFT7tmsU8nRaYQdPDR2rlT5z7k",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"brand_guid\": \"6f77e326-221a-11e0-8679-e61f13537e43\",\r\n    \"nomenclature_group_guid\": \"08eef077-9cae-11ed-9248-e61f13537e43\",\r\n    \"discount\": 4\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/brand-discounts/create"
+          },
+          "response": []
+        },
+        {
+          "name": "Brand Discounts",
+          "id": "2aa4b77f-d341-4466-b8ef-b6055c064407",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"brand_guid\": \"6f77e326-221a-11e0-8679-e61f13537e43\",\r\n    \"nomenclature_group_guid\": \"59cd4736-95a3-11ed-9fcc-e61f13537e43\",\r\n    \"discount\": 2\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/dealers-lk/brand-discounts"
+          },
+          "response": []
+        },
+        {
+          "name": "Brand Discount Update",
+          "id": "7f3de9b7-88b0-4187-b84e-ebd7220f7371",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTY5MTQ3ODA4NywiZXhwIjoxNjkyMDgyODg3LCJuYmYiOjE2OTE0NzgwODcsImp0aSI6IjY3b1JxOW5XMGdzdnJsQk4iLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Ez9xPRX5FcBsVZVfEjA4-NbxtclLdHHIt0p5AJgG6Jg",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"discount\": 3\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/brand-discounts/update/7"
+          },
+          "response": []
+        },
+        {
+          "name": "Brand Discount Delete",
+          "id": "2ed08536-6ede-4996-a75b-4d4a65827bf9",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTY5MTQwNzI3MCwiZXhwIjoxNjkyMDEyMDcwLCJuYmYiOjE2OTE0MDcyNzAsImp0aSI6InhtUjBzT0w5SDNDQ0lDdloiLCJzdWIiOjEzNjksInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.__6WGbrjWO6ZqysIWlTA_V84X_YBk-MM72VvHYYiQIA",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"discount\": 5\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/brand-discounts/delete/2"
+          },
+          "response": []
+        }
+      ],
+      "id": "d14923f1-11ff-4a36-aaa5-7685582d5df0"
+    },
+    {
+      "name": "Realizations",
+      "item": [
+        {
+          "name": "Ut Realizations Counterparty",
+          "id": "e717ff0e-df12-40ed-a915-4be1d2159468",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbi1hcy1kZWFsZXJcLzYiLCJpYXQiOjE2ODY4MTk2ODMsImV4cCI6MTY4NjgyMzI4MywibmJmIjoxNjg2ODE5NjgzLCJqdGkiOiJaU3d6WWE2M3M3WnJ1VHQ3Iiwic3ViIjo0MiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.O9eQQcHEqUcTO1-UdDJutftOI5smiK_RRtXUc0qcgfw",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/ut-counterparty/realizations/3c8ae632-db3d-11e3-925d-0050568b45f5"
+          },
+          "response": []
+        },
+        {
+          "name": "Ka Realizations Counterparty Copy",
+          "id": "5ee252d2-d7d4-4756-ae72-0bab8311c623",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbi1hcy1kZWFsZXJcLzcyNCIsImlhdCI6MTY5MjA4MjIyMywiZXhwIjoxNjkyMDg1ODIzLCJuYmYiOjE2OTIwODIyMjMsImp0aSI6IjV6SU9DRnhCTTVwNEwwVk4iLCJzdWIiOjE1MjcsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.bC3T3pjFg1RAQxsWQwKcdHXZfgxNsvfAfR8cJ4--9HY",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/ka-counterparty/realizations/26f8fa2f-7b17-11e2-89e1-0050568b45f5"
+          },
+          "response": []
+        }
+      ],
+      "id": "c2b656f7-d236-4101-90bc-21595413a91f"
+    },
+    {
+      "name": "Delivery Companies",
+      "item": [
+        {
+          "name": "Delivery Companies",
+          "id": "96a30634-b832-40ed-a286-ddf0ff8d11f5",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTY2OTk4MjA0MSwiZXhwIjoxNjcwNTg2ODQxLCJuYmYiOjE2Njk5ODIwNDEsImp0aSI6Ik81MnMzZFdzOEhBNEFHMFIiLCJzdWIiOjQyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.4S3RRCawmn-sk2B9buswOlT0yw2WjOjcJ8LLh3_fCo4",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/delivery-companies"
+          },
+          "response": []
+        }
+      ],
+      "id": "d1613780-be6e-4b5b-803a-0241ec87f293"
+    },
+    {
+      "name": "Dealers Warehouses",
+      "item": [
+        {
+          "name": "Dealers Warehouses",
+          "id": "d6a868e9-6ab6-4813-b22f-d31749a9db23",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MDE4NDEwMjgsImV4cCI6MTcwMjQ0NTgyOCwibmJmIjoxNzAxODQxMDI4LCJqdGkiOiJ6QlNMVDR2MjdvcE9JcXVxIiwic3ViIjoxNDg0LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.nkNARRUJYHlyHh0wtLH7tyQUpZObTQkZODKKvG_pJXU",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/dealers-warehouses"
+          },
+          "response": []
+        }
+      ],
+      "id": "43d4d64e-f258-4d65-a3b6-12cc526b319c"
+    },
+    {
+      "name": "Promo Codes",
+      "item": [
+        {
+          "name": "Promo Codes",
+          "id": "92db9603-3767-4824-9c59-4bb5e31d9924",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MDI1NTA3MjYsImV4cCI6MTcwMzE1NTUyNiwibmJmIjoxNzAyNTUwNzI2LCJqdGkiOiJpNmRMWkZwRncyUGZQODczIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.FLOCcm-AjaCKrOV9uFozuS17TDdSE-fC3WjE5wn1_W4",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/promo-codes"
+          },
+          "response": []
+        },
+        {
+          "name": "Promo Codes Search",
+          "id": "d3d75660-dbe2-45d9-b20e-d44c29eb98e4",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MDI1NTA3MjYsImV4cCI6MTcwMzE1NTUyNiwibmJmIjoxNzAyNTUwNzI2LCJqdGkiOiJpNmRMWkZwRncyUGZQODczIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.FLOCcm-AjaCKrOV9uFozuS17TDdSE-fC3WjE5wn1_W4",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/promo-code/search?promo_code=promo-code-2023_5"
+          },
+          "response": []
+        }
+      ],
+      "id": "7be3e99f-ea09-4c3f-84fb-ceb3b88d4ead"
+    },
+    {
+      "name": "KA Brand Lines",
+      "item": [
+        {
+          "name": "KA Brand Lines All",
+          "id": "704aa80d-24f7-41f4-86a4-1aca2bc862e7",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2Njk5NzU4MjAsImV4cCI6MTY3MDU4MDYyMCwibmJmIjoxNjY5OTc1ODIwLCJqdGkiOiJtQVA5aGNldWlGakdpc0NMIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.GDkvjCOK1whroXBsa-ocl9R_W1SgI_kqcUsQBU7FbpM",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/ka-brand-lines?brands[]=112659ec-93be-11eb-a190-e61f13537e43"
+          },
+          "response": []
+        },
+        {
+          "name": "KA Brand Line",
+          "id": "cf253087-5f2a-4df6-bb27-08f9d080ec6e",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2Njk5NzU4MjAsImV4cCI6MTY3MDU4MDYyMCwibmJmIjoxNjY5OTc1ODIwLCJqdGkiOiJtQVA5aGNldWlGakdpc0NMIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.GDkvjCOK1whroXBsa-ocl9R_W1SgI_kqcUsQBU7FbpM",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/ka-brand-line/a76f8cb1-724a-11ed-a51f-e61f13537e43"
+          },
+          "response": []
+        }
+      ],
+      "id": "fb017199-f502-4934-aab0-e3389d0995ac"
+    },
+    {
+      "name": "KA Brands",
+      "item": [
+        {
+          "name": "KA Brands All",
+          "id": "ea57f348-91c3-44f0-aa7e-06f45e48b60c",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTczNDM1Njc0OSwiZXhwIjoxNzM0OTYxNTQ5LCJuYmYiOjE3MzQzNTY3NDksImp0aSI6ImdIRE5tQjVaS3dnMzY1NU0iLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.0Jd5-HoXS3cTlccHuskKfTroman3hfrYAlOvuPjSG8o",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/ka-brands"
+          },
+          "response": []
+        },
+        {
+          "name": "KA Brand",
+          "id": "f6854d0a-af78-4007-8784-13c5d64b5970",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTczNDM1Njc0OSwiZXhwIjoxNzM0OTYxNTQ5LCJuYmYiOjE3MzQzNTY3NDksImp0aSI6ImdIRE5tQjVaS3dnMzY1NU0iLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.0Jd5-HoXS3cTlccHuskKfTroman3hfrYAlOvuPjSG8o",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/ka-brand/226cf2a5-ae0c-11e0-9fd5-e61f13537e43"
+          },
+          "response": []
+        },
+        {
+          "name": "KA Brands Viewed",
+          "id": "4df7591c-597d-4735-b9bd-fbfea4b93188",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTczNDM1Njc0OSwiZXhwIjoxNzM0OTYxNTQ5LCJuYmYiOjE3MzQzNTY3NDksImp0aSI6ImdIRE5tQjVaS3dnMzY1NU0iLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.0Jd5-HoXS3cTlccHuskKfTroman3hfrYAlOvuPjSG8o",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/ka-brands/viewed"
+          },
+          "response": []
+        },
+        {
+          "name": "KA Brand Discounts",
+          "id": "e9f74bb0-a5d4-43a7-8d52-690e56422aff",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTczNDM1Njc0OSwiZXhwIjoxNzM0OTYxNTQ5LCJuYmYiOjE3MzQzNTY3NDksImp0aSI6ImdIRE5tQjVaS3dnMzY1NU0iLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.0Jd5-HoXS3cTlccHuskKfTroman3hfrYAlOvuPjSG8o",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/ka-brand-discounts"
+          },
+          "response": []
+        },
+        {
+          "name": "Filters KA Brands",
+          "id": "ff0a8f7e-fd06-46b7-b29d-b8bae2174491",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTczNDM1Njc0OSwiZXhwIjoxNzM0OTYxNTQ5LCJuYmYiOjE3MzQzNTY3NDksImp0aSI6ImdIRE5tQjVaS3dnMzY1NU0iLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.0Jd5-HoXS3cTlccHuskKfTroman3hfrYAlOvuPjSG8o",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers/filters/ka-brands"
+          },
+          "response": []
+        }
+      ],
+      "id": "6cb420bd-1268-4309-adb7-f3e272fcfefe"
+    },
+    {
+      "name": "KA Nomenclature Groups",
+      "item": [
+        {
+          "name": "KA Categories All",
+          "id": "5095815e-86db-46cf-a13e-84efcc5a769b",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/ka-nomenclature-groups/categories"
+          },
+          "response": []
+        },
+        {
+          "name": "KA Categories Lower",
+          "id": "3c3363b6-7a90-4816-a333-7edf39210765",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/ka-nomenclature-groups/categories/lower"
+          },
+          "response": []
+        },
+        {
+          "name": "KA Category",
+          "id": "e75a38f9-4481-4c66-8a7e-f6ed265687cd",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2Nzk2MzgyNjYsImV4cCI6MTY4MDI0MzA2NiwibmJmIjoxNjc5NjM4MjY2LCJqdGkiOiJQUkJWbTBZZ2dRMEplZ3NiIiwic3ViIjo0MiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.j1pEB0RI0GW1cfKLq2zKWSwf5ixYINdUAu3E_BspUsQ",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/ka-nomenclature-groups/category/59afc962-9caa-11ed-9248-e61f13537e43?max_level=6"
+          },
+          "response": []
+        },
+        {
+          "name": "KA Categories Viewed",
+          "id": "617bc15c-d841-46e1-ad88-2cbb5043cde3",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTczNDQzNDY1MSwiZXhwIjoxNzM1MDM5NDUxLCJuYmYiOjE3MzQ0MzQ2NTEsImp0aSI6Im04cUFHeUcxbGhETWFWQjMiLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.2yaFaTmtElNNjUqAMGDmYznsRdXuuIuTsFFIOuVZjPw",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/ka-nomenclature-groups/categories/viewed"
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "id": "090f1228-505f-4b2e-aaa5-ef632a846b78",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": ""
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "b9daac00-1682-496f-a22e-a43ca84beae0"
+    },
+    {
+      "name": "Ka Countries",
+      "item": [
+        {
+          "name": "KA Countires Filters",
+          "id": "85f46fb7-e268-4108-9de0-d0b4feffd4cb",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTczNDM1Njc0OSwiZXhwIjoxNzM0OTYxNTQ5LCJuYmYiOjE3MzQzNTY3NDksImp0aSI6ImdIRE5tQjVaS3dnMzY1NU0iLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.0Jd5-HoXS3cTlccHuskKfTroman3hfrYAlOvuPjSG8o",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/filters/ka-countries?brands[]=226cf2a5-ae0c-11e0-9fd5-e61f13537e43"
+          },
+          "response": []
+        }
+      ],
+      "id": "d3771990-394a-4857-a42d-cb2a894ecb8f"
+    },
+    {
+      "name": "Orders",
+      "item": [
+        {
+          "name": "Dealers Lk Orders Purchase Percentage Copy",
+          "id": "d9be5c7e-6d4f-4786-8e26-4ff00a999014",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MzQ3MDM5MjIsImV4cCI6MTczNTMwODcyMiwibmJmIjoxNzM0NzAzOTIyLCJqdGkiOiJkYWw5d3BzMDhneW1rMXZuIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.ey-_N2etugAm4BHdCO-i66Cr_auNESd6JrSBgKJgEf0",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"year\": 2022\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/dealers-lk/orders/purchase-percentage?year=2022"
+          },
+          "response": []
+        },
+        {
+          "name": "Dealers Lk Orders Statistics",
+          "id": "67079f8d-035b-403b-bd30-a0a6957013b4",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MzQ3MDM5MjIsImV4cCI6MTczNTMwODcyMiwibmJmIjoxNzM0NzAzOTIyLCJqdGkiOiJkYWw5d3BzMDhneW1rMXZuIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.ey-_N2etugAm4BHdCO-i66Cr_auNESd6JrSBgKJgEf0",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"year\": 2022\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/dealers-lk/orders/statistics/year"
+          },
+          "response": []
+        }
+      ],
+      "id": "be34a848-df2d-4d68-82cf-a7b82ca1b606"
+    },
+    {
+      "name": "KA Counterparties",
+      "item": [
+        {
+          "name": "KA Head Counterparties",
+          "id": "947b3b72-b937-4f61-950d-7bb2ecfa4bbf",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MzQ5NTg5NDgsImV4cCI6MTczNTU2Mzc0OCwibmJmIjoxNzM0OTU4OTQ4LCJqdGkiOiJORnpwcHp2aXI3WmJKZjNUIiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.0TgU9Lp6lePrQ3W3NivVMeIUYQVb6Uy2EHlttmw1r0g",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/ka-counterparties/head-counterparties"
+          },
+          "response": []
+        }
+      ],
+      "id": "e93568bf-5391-4ccf-b416-061463e94452"
+    },
+    {
+      "name": "Ka Realizations",
+      "item": [
+        {
+          "name": "Dealers KA Realizations",
+          "id": "9532f5a9-36ad-41ca-bb24-1ef2ef0e08f8",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3NTc1OTM5NzQsImV4cCI6MTc1ODE5ODc3NCwibmJmIjoxNzU3NTkzOTc0LCJqdGkiOiJSU3VLMWFpRWtBNWhxeE9uIiwic3ViIjo0MTE4LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.e3e2WUQrUcQb7WDX7LqD2irh_CwO71MSr2UYSN_QP84",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/ka-realizations"
+          },
+          "response": []
+        }
+      ],
+      "id": "86d2ed26-336d-46e9-8218-698fdd7b820d"
+    },
+    {
+      "name": "KA Orders",
+      "item": [
+        {
+          "name": "Dealers LK KA Order Weight And Size Report",
+          "id": "ecfe4143-bcb4-4c26-8103-60d6116552e6",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MzQ5NTg5NDgsImV4cCI6MTczNTU2Mzc0OCwibmJmIjoxNzM0OTU4OTQ4LCJqdGkiOiJORnpwcHp2aXI3WmJKZjNUIiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.0TgU9Lp6lePrQ3W3NivVMeIUYQVb6Uy2EHlttmw1r0g",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/ka-order/weight-size-report/6fcbcfc9-53ae-11ef-86bd-000c297bb3bc?format=pdf"
+          },
+          "response": []
+        },
+        {
+          "name": "Dealers LK KA Order Commercial Proposal",
+          "id": "9fccee10-5a73-4595-8a91-3c70fc217c93",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MzQ5NTg5NDgsImV4cCI6MTczNTU2Mzc0OCwibmJmIjoxNzM0OTU4OTQ4LCJqdGkiOiJORnpwcHp2aXI3WmJKZjNUIiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.0TgU9Lp6lePrQ3W3NivVMeIUYQVb6Uy2EHlttmw1r0g",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/ka-order/commercial-proposal/lk-219592faac-001695889802"
+          },
+          "response": []
+        }
+      ],
+      "id": "88f53f59-e2a8-49c0-bb3e-5b93c3d22ccd"
+    },
+    {
+      "name": "KA Claims",
+      "item": [
+        {
+          "name": "Dealers LK KA Claim",
+          "id": "2922586b-efb6-4be3-8a26-7a2c59e032ff",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTc0Mzc3MDQ2NywiZXhwIjoxNzQ0Mzc1MjY3LCJuYmYiOjE3NDM3NzA0NjcsImp0aSI6Ik1FNmM3cXU0SWZFeXFrTFkiLCJzdWIiOjQxMTgsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.SGI53fVc9QVxd33-Y2S3SJk4twCcZrg6CkSH4qxgYlA",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/claims/claim-info/lk-0d6d30fd3f-001743761365"
+          },
+          "response": []
+        },
+        {
+          "name": "Dealers LK KA Claims",
+          "id": "81e8afd3-0b12-4309-bfb2-923bd5ae02e0",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTc0Mzc3MDQ2NywiZXhwIjoxNzQ0Mzc1MjY3LCJuYmYiOjE3NDM3NzA0NjcsImp0aSI6Ik1FNmM3cXU0SWZFeXFrTFkiLCJzdWIiOjQxMTgsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.SGI53fVc9QVxd33-Y2S3SJk4twCcZrg6CkSH4qxgYlA",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/claims"
+          },
+          "response": []
+        },
+        {
+          "name": "Dealers LK KA Claims Signed",
+          "id": "d7476342-5666-4860-93b4-55bcb83b953d",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"counterparty_guid\": \"8fa701ec-e429-11e9-9102-e61f13537e43\",\r\n    \"identifier\": \"00048d7a-a09e-11ed-9106-e61f13537e43\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/dealers-lk/claim/signed"
+          },
+          "response": [
+            {
+              "id": "2f8b9b02-4f6a-4369-bef5-cff745f213dc",
+              "name": "Default",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{url}}/api/claims/info/{{id}}",
+                  "host": [
+                    "{{url}}"
+                  ],
+                  "path": [
+                    "api",
+                    "claims",
+                    "info",
+                    "{{id}}"
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": "{\r\n    \"buyer\": \"\",\r\n    \"buyer_id\": \"\",\r\n    \"seller\": \"\",\r\n    \"seller_id\": \"\",\r\n    \"deal\": \"\",\r\n    \"deal_id\": \"\",\r\n    \"item\": \"\",\r\n    \"item_id\": \"\",\r\n    \"launch_date\": \"\",\r\n    \"issue_date\": \"\",\r\n    \"zip_required\": \"\",\r\n    \"claim_description\": \"\",\r\n    \"full_name\": \"\",\r\n    \"role\": \"\",\r\n    \"phone\": \"\",\r\n    \"document_launch\": [],\r\n    \"document_diagnostics\": [],\r\n    \"document_claim\": [],\r\n    \"photo_label\": [],\r\n    \"photo_zip\": [],\r\n    \"photo_item\": [],\r\n    \"photo_failures\": [],\r\n    \"claim_id\": \"29319029\",\r\n    \"comment\": \"\",\r\n    \"status\": \"В работе\",\r\n    \"created_at\": \"22.03.2022\",\r\n    \"updated_at\": \"22.03.2021\"\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Dealers Lk Claim Create",
+          "id": "30960d90-1dfb-4e97-8b60-962af27913b7",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTc0Mzc3MDQ2NywiZXhwIjoxNzQ0Mzc1MjY3LCJuYmYiOjE3NDM3NzA0NjcsImp0aSI6Ik1FNmM3cXU0SWZFeXFrTFkiLCJzdWIiOjQxMTgsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.SGI53fVc9QVxd33-Y2S3SJk4twCcZrg6CkSH4qxgYlA",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"department_guid\": null,\r\n    \"realization_guid\": \"85f4af13-e203-11ef-86e1-000c297bb3bc\",\r\n    \"nomenclature_guid\": \"078242c3-95cc-11df-bfea-e61f13537e43\",\r\n    \"initiator_guid\": \"6553dd64-326c-11ed-a2c8-e61f13537e43\",\r\n    \"sale_document_type\": \"ПередачаНаКомиссию\",\r\n    \"counterparty_guid\": \"3c8ae632-db3d-11e3-925d-0050568b45f5\",\r\n    \"organization_guid\": \"d10c720c-7b5c-11e7-9529-0050568e4379\",\r\n    \"launch_date\": \"2022-12-20\",\r\n    \"claim_date\": \"2023-06-13\",\r\n    \"zip_required\": \"Компрессор EMY2130U\",\r\n    \"description\": \"выход из строя компрессора EMY2130U\",\r\n    \"full_name\": \"Помазкин Роман Валерьевич\",\r\n    \"role\": \"генеральный директор\",\r\n    \"email\": null,\r\n    \"phone\": \"83466670605\",\r\n    \"comment\": null,\r\n    \"additional\": null,\r\n    \"serial_number\": \"123456789\",\r\n    \"release_date\": null,\r\n    \"website_comment_by_client\": null,\r\n    \"document_launch\": [],\r\n    \"document_diagnostics\": [],\r\n    \"equipment_location\": \"Saratovskaya obl\",\r\n    \"nomenclature_type\": \"nomenclature_type\",\r\n    \"problem_type\": \"problem_type\",\r\n    \"is_mail_to_initiator\": null,\r\n    \"is_mail_to_responsible\": null,\r\n    \"is_mail_to_contact\": null,\r\n    \"document_claim\": [{\r\n            \"name\": \"Акт-рекламация № 3.doc\",\r\n            \"url\": \"https:\\/\\/api.t-d.ru\\/documents\\/qzaQ8vxCKcDcmeJMSHnUoPnIYUffBuZKhCl9zIcV.doc\"\r\n        }\r\n    ],\r\n    \"photo_label\": [{\r\n            \"name\": \"20230620_125916.jpg\",\r\n            \"url\": \"https:\\/\\/api.t-d.ru\\/documents\\/GphM1HNIsbBaPbYETZzy4n4JOS1TIUuzsKIiPEU3.jpg\"\r\n        }\r\n    ],\r\n    \"photo_zip\": [{\r\n            \"name\": \"20230620_125932.jpg\",\r\n            \"url\": \"https:\\/\\/api.t-d.ru\\/documents\\/PYGcMcyDfK0mdexT4vfUAzdiUioX8TKuqbI6f9QF.jpg\"\r\n        }\r\n    ],\r\n    \"photo_item\": [{\r\n            \"name\": \"20230620_130717.jpg\",\r\n            \"url\": \"https:\\/\\/api.t-d.ru\\/documents\\/AXWldvudKKj0Fu2x0fUDL3U2SXTPcnvalc2PnCxs.jpg\"\r\n        }\r\n    ],\r\n    \"photo_failures\": []\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/dealers-lk/claim/submit"
+          },
+          "response": [
+            {
+              "id": "6ef7ac00-43ce-421c-b852-bcfc14b6c57f",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                  "raw": "{{url}}/api/claim/submit",
+                  "host": [
+                    "{{url}}"
+                  ],
+                  "path": [
+                    "api",
+                    "claim",
+                    "submit"
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": "{\r\n    \"user_id\": \"1233\",\r\n    \"buyer\": \"\",\r\n    \"buyer_id\": \"\",\r\n    \"seller\": \"\",\r\n    \"seller_id\": \"\",\r\n    \"deal\": \"\",\r\n    \"deal_id\": \"\",\r\n    \"item\": \"\",\r\n    \"item_id\": \"\",\r\n    \"launch_date\": \"\",\r\n    \"issue_date\": \"\",\r\n    \"zip_required\": \"\",\r\n    \"claim_description\": \"\",\r\n    \"full_name\": \"\",\r\n    \"role\": \"\",\r\n    \"phone\": \"\",\r\n    \"document_launch\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }],\r\n    \"document_diagnostics\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }],\r\n    \"document_claim\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }],\r\n    \"photo_label\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }],\r\n    \"photo_zip\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }],\r\n    \"photo_item\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }],\r\n    \"photo_failures\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }]\r\n}"
+            }
+          ]
+        }
+      ],
+      "id": "3846c480-23be-4a43-85a3-3ddf34d8bea6"
+    },
+    {
+      "name": "Ka Offers",
+      "item": [
+        {
+          "name": "Dealers LK Ka Offers",
+          "id": "4aa01dfa-93ba-492e-accb-8fb278527ec1",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2Njk2MTg2NTYsImV4cCI6MTY3MDIyMzQ1NiwibmJmIjoxNjY5NjE4NjU2LCJqdGkiOiJGdVk1bGNrSHdVbjlTMnpBIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.lUaKZIddVdxs5Cw82RJs2owBLbJsVdp-ygZsYFEgF3U",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/dealers-lk/offers"
+          },
+          "response": [
+            {
+              "id": "664daa57-fd01-4466-8e1e-2eee8f7251dc",
+              "name": "Default",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{base_url_local}}/api/offers",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "offers"
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "json",
+              "header": [],
+              "cookie": [],
+              "body": "[\n    {\n        \"number\": \"00000000088\",\n        \"name_of_the_promotion\": \"Super РасPROдажа!\",\n        \"description_of_promotion\": \"Скидки на ограниченный ассортимент.\\nДействуют только на товары в наличии на складе. Спешите, количество ограниченно!\",\n        \"start_data\": \"05.07.2020\",\n        \"end_data\": \"31.07.2021\",\n        \"product_of_the_day\": \"false\",\n        \"black_friday\": \"false\",\n        \"basket_discount\": \"false\",\n        \"set_1\": [\n            {\n                \"product\": \"07504f75-3c1c-11e5-8e3a-e61f13537e43\",\n                \"discount\": 10\n            },\n            {\n                \"product\": \"322cb7f3-3d02-11ea-8f96-e61f13537e43\",\n                \"discount\": 15\n            },\n            {\n                \"product\": \"5e049830-3ca2-11e4-9590-e61f13537e43\",\n                \"discount\": 10\n            }\n        ]\n    },\n    {\n        \"number\": \"00000000034\",\n        \"name_of_the_promotion\": \"Скидка на оборудование Robot Coupe при заказе через корзину сайта.\",\n        \"description_of_promotion\": [],\n        \"start_data\": \"02.03.2020\",\n        \"end_data\": \"31.07.2021\",\n        \"product_of_the_day\": \"false\",\n        \"black_friday\": \"false\",\n        \"basket_discount\": \"true\",\n        \"set_1\": [\n            {\n                \"product\": \"5dc9a9fb-f52a-11e3-a6e9-e61f13537e43\",\n                \"discount\": 10\n            },\n            {\n                \"product\": \"f1df57c9-95a1-11df-bfea-e61f13537e43\",\n                \"discount\": 10\n            },\n            {\n                \"product\": \"9c47bf26-d55b-11e1-a782-e61f13537e43\",\n                \"discount\": 10\n            }\n        ]\n    }\n]"
+            }
+          ]
+        }
+      ],
+      "id": "1b426330-9ce0-42d9-8230-e1727eb4d68a"
+    },
+    {
+      "name": "Applications For Returns",
+      "item": [
+        {
+          "name": "Applications For Returns",
+          "id": "73a6abdd-0610-4494-b748-80f418931a71",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3NTUxNjgwMzksImV4cCI6MTc1NTc3MjgzOSwibmJmIjoxNzU1MTY4MDM5LCJqdGkiOiJLMERuM09UUW96R3kzWXZ5Iiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.V47Gl4plMet1b7JWgDYy7ssaIIxH2c06fB49-EXSpB4",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/dealers-lk/applications-for-returns"
+          },
+          "response": []
+        },
+        {
+          "name": "Application For Returns",
+          "id": "b0b9e512-b352-48f0-9783-242ebb22960d",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3NTUxNjgwMzksImV4cCI6MTc1NTc3MjgzOSwibmJmIjoxNzU1MTY4MDM5LCJqdGkiOiJLMERuM09UUW96R3kzWXZ5Iiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.V47Gl4plMet1b7JWgDYy7ssaIIxH2c06fB49-EXSpB4",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/dealers-lk/applications-for-returns/1"
+          },
+          "response": []
+        },
+        {
+          "name": "Application For Returns Create",
+          "id": "a7d79651-0d4e-41b4-b465-631c7588c873",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3NTUxNjgwMzksImV4cCI6MTc1NTc3MjgzOSwibmJmIjoxNzU1MTY4MDM5LCJqdGkiOiJLMERuM09UUW96R3kzWXZ5Iiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.V47Gl4plMet1b7JWgDYy7ssaIIxH2c06fB49-EXSpB4",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/dealers-lk/applications-for-returns/create"
+          },
+          "response": []
+        }
+      ],
+      "id": "02d8acc1-ba47-42cf-985d-bdffb83c65d2"
+    }
+  ]
+}

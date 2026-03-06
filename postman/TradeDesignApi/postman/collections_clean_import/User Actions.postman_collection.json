@@ -1,0 +1,87 @@
+{
+  "info": {
+    "_postman_id": "058d7af6-edd3-4a26-a252-d95c89dd4fef",
+    "name": "User Actions",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "User Action Create",
+      "id": "0385f9c4-e29d-4986-845d-fad00e5d5a62",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NjYzMzc3ODksImV4cCI6MTY2Njk0MjU4OSwibmJmIjoxNjY2MzM3Nzg5LCJqdGkiOiJLQzlSbnphRXh6U3poN0p3Iiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.57xJDNgq2REVp9w552HJdnyp2xB-P67n0XQfhhREC0g",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "_METHOD",
+            "value": "PATCH",
+            "type": "text",
+            "disabled": true
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"user_id\": null,\r\n    \"action\": \"search\",\r\n    \"value_type\": \"search_nomenclature\",\r\n    \"value\": \"Печь\",\r\n    \"tag\": \"/dealers/products\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/user-action/create",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "user-action",
+            "create"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "User Actions Search History",
+      "id": "6220401a-5fb3-48b8-82d9-e65684568af3",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2NzgwODYwMDMsImV4cCI6MTY3ODY5MDgwMywibmJmIjoxNjc4MDg2MDAzLCJqdGkiOiI2aWxtMzR3UkpMendxaGJUIiwic3ViIjoxMDIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.ej6dLPIQwaIprDLlEWNVdG_51oxsE1MA5W5kcXFoq_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/user-actions/search-history",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "user-actions",
+            "search-history"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+﻿{
+  "info": {
+    "_postman_id": "eeefe9a7-766d-40fa-9458-3b99d1116c05",
+    "name": "Payments",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Payments Import",
+      "id": "b2e6ed5e-1eab-4ad1-a9a1-fe9139e5b107",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Transfer-Id",
+            "value": "202211081334",
+            "type": "text"
+          },
+          {
+            "key": "Parameters",
+            "value": "{\"date\": \"2018-12-30T00:00:00\"}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"guid\": \"6f40aa86-093e-435d-99bc-7cb698b6b922\",\r\n        \"type\": \"registrar\",\r\n        \"line\": 1,\r\n        \"date\": \"2020-10-26T15:42:52\",\r\n        \"order_guid\": \"6f40aa86-093e-435d-99bc-7cb698b6b922\",\r\n        \"currency_guid\": \"6f40aa86-093e-435d-99bc-7cb698b6b9d1\",\r\n        \"total\": 1,\r\n        \"total_rub\": 67,\r\n        \"settlement_object_type\": \"type\",\r\n        \"sign\": -1\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/table/import/payments",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "table",
+            "import",
+            "payments"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

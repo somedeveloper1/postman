@@ -1,0 +1,3912 @@
+{
+  "info": {
+    "_postman_id": "f31df9e5-b8d0-4140-9e8b-6512a33e23d0",
+    "name": "Admin",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Banners",
+      "item": [
+        {
+          "name": "Banner Save",
+          "id": "78be9eb1-6c30-4b16-bcaa-1538ab86a925",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTcxMDE1MDIwNywiZXhwIjoxNzEwNzU1MDA3LCJuYmYiOjE3MTAxNTAyMDcsImp0aSI6InVJaFMwbDFVRFY5MDVIN0ciLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.nxTUxLHb2ZFku1KynkxwoUyB4G0YbsRJ-pmjb49qPHg",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"id\": 1,\r\n    \"order\": 1,\r\n    \"page_url\": null,\r\n    \"banners_files\": [\r\n        {\r\n            \"file_name\": \"name desktop\",\r\n            \"file_url\": \"url desktop\",\r\n            \"type\": \"desktop\"\r\n        },\r\n        {\r\n            \"file_name\": \"name mobile\",\r\n            \"file_url\": \"url mobile\",\r\n            \"type\": \"mobile\"\r\n        }\r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/admin/banner/save"
+          },
+          "response": []
+        },
+        {
+          "name": "Banners Set Order",
+          "id": "ff5e6227-41df-4b4b-a495-4a9b79a429c3",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2OTY1MjA1NDMsImV4cCI6MTY5NzEyNTM0MywibmJmIjoxNjk2NTIwNTQzLCJqdGkiOiJ6ZTBoZnRVYk1jY0JJOXprIiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.51PVfDaiAdi4ANKL-jEEuzthFamkOJ9WWMMnAJB93ao",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "[\r\n    {\r\n        \"id\": 1,\r\n        \"order\": 2\r\n    },\r\n    {\r\n        \"id\": 2,\r\n        \"order\": 3\r\n    }\r\n]",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/admin/banners/set-order"
+          },
+          "response": []
+        },
+        {
+          "name": "Banners",
+          "id": "62e18905-eaf8-446d-8447-1e644727a3dc",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MTA0MjE4NzcsImV4cCI6MTcxMTAyNjY3NywibmJmIjoxNzEwNDIxODc3LCJqdGkiOiJRU2FONkJlUlF3OFp0ZVhiIiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.4dAUU6LKSFl7h2dN3PCduoobmCgo8kl8NjhAgvi9WFY",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/admin/banners"
+          },
+          "response": []
+        },
+        {
+          "name": "Banner Delete",
+          "id": "e88a77c1-c550-4407-978f-a572c4e81d57",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2OTU4NDc4MjUsImV4cCI6MTY5NjQ1MjYyNSwibmJmIjoxNjk1ODQ3ODI1LCJqdGkiOiJQR2U1T2RuRXJIVmFHZVg3Iiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.ceeaRQbX6orPYTr-nwwEm6J4rYOuf5LSGDMGhjUeYHA",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "url": "{{base_url_local}}/api/admin/banner/delete/1"
+          },
+          "response": []
+        },
+        {
+          "name": "Banner Download",
+          "id": "71740e8a-b46c-41b8-a5e1-0666265c9277",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2OTU4NDc4MjUsImV4cCI6MTY5NjQ1MjYyNSwibmJmIjoxNjk1ODQ3ODI1LCJqdGkiOiJQR2U1T2RuRXJIVmFHZVg3Iiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.ceeaRQbX6orPYTr-nwwEm6J4rYOuf5LSGDMGhjUeYHA",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "file",
+                  "type": "file",
+                  "src": [],
+                  "disabled": true
+                }
+              ]
+            },
+            "url": "{{base_url_local}}/api/admin/banner/download"
+          },
+          "response": []
+        }
+      ],
+      "id": "e4346712-68a5-4026-927d-605047006c16"
+    },
+    {
+      "name": "Dashboard",
+      "item": [
+        {
+          "name": "Dashboard Export",
+          "id": "79079029-163f-403f-9a7c-4f12366a3a28",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTY4NjEzMDQ1NywiZXhwIjoxNjg2NzM1MjU3LCJuYmYiOjE2ODYxMzA0NTcsImp0aSI6IlllQk5UZXZQaVh2a3hlY3EiLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.oydps_xfBJo2JYst_fmRbeBY93wrwIFA4PoBdxzdiQA",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/admin/dashboard/export/orders"
+          },
+          "response": []
+        },
+        {
+          "name": "Dashboard Import 1C",
+          "id": "58ddff6a-18d4-4f3a-b60d-1cd63956235c",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTY4NjEzMDQ1NywiZXhwIjoxNjg2NzM1MjU3LCJuYmYiOjE2ODYxMzA0NTcsImp0aSI6IlllQk5UZXZQaVh2a3hlY3EiLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.oydps_xfBJo2JYst_fmRbeBY93wrwIFA4PoBdxzdiQA",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/admin/dashboard/import/1c?per_page=2000&statuses[]=failed"
+          },
+          "response": []
+        },
+        {
+          "name": "Dashboard Import Websites",
+          "id": "27ba1a17-d06e-41bd-8d9d-112d6d26f0e7",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTY4NjEzMDQ1NywiZXhwIjoxNjg2NzM1MjU3LCJuYmYiOjE2ODYxMzA0NTcsImp0aSI6IlllQk5UZXZQaVh2a3hlY3EiLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.oydps_xfBJo2JYst_fmRbeBY93wrwIFA4PoBdxzdiQA",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_prod}}/api/admin/dashboard/import/websites"
+          },
+          "response": []
+        },
+        {
+          "name": "Dashboard Importad Websites",
+          "id": "96f89a5e-6911-40f5-b165-97b7cd38ee3b",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTY4NjEzMDQ1NywiZXhwIjoxNjg2NzM1MjU3LCJuYmYiOjE2ODYxMzA0NTcsImp0aSI6IlllQk5UZXZQaVh2a3hlY3EiLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.oydps_xfBJo2JYst_fmRbeBY93wrwIFA4PoBdxzdiQA",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_prod}}/api/admin/dashboard/imported-websites"
+          },
+          "response": []
+        },
+        {
+          "name": "Dashboard Import 1C Table",
+          "id": "f6334b4e-7e61-4a63-8c35-e9b7c7d914bd",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTY4NzQzMjYxMiwiZXhwIjoxNjg4MDM3NDEyLCJuYmYiOjE2ODc0MzI2MTIsImp0aSI6IlRVZlVmTTE5WnhOd096SVgiLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.XjpyjvO9hNFp2X9Oz3KZVVFd6pCBb4nS6cV8Dc8vskM",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/admin/dashboard/import/1c/202206300923/claims-1c"
+          },
+          "response": []
+        }
+      ],
+      "id": "b98af466-aeb6-4098-ba52-4be477ef870a"
+    },
+    {
+      "name": "Delivery Companies",
+      "item": [
+        {
+          "name": "Delivery Companies",
+          "id": "474e4daf-3ebf-4b34-b999-351b61c31ff9",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2OTk5Nzc2NzgsImV4cCI6MTcwMDU4MjQ3OCwibmJmIjoxNjk5OTc3Njc4LCJqdGkiOiIwMkhDaHMwWEdzV0pjT1JtIiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.56wc-xFLSmDSxTHn3Rlxb4mboxIezO2zJbeEukirlE8",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/admin/delivery-companies"
+          },
+          "response": []
+        },
+        {
+          "name": "Delivery Company Save",
+          "id": "283d60b5-f8d2-474a-b7b3-2657f1fab0b5",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTcwODQ5MjkwMSwiZXhwIjoxNzA5MDk3NzAxLCJuYmYiOjE3MDg0OTI5MDEsImp0aSI6InNUZVhleEFnVGhXenlyMTAiLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.2YTqXTcsskLWDhgXnRXgFtCKlO93kEZPKLy3mjvj7DU",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"ПЭК\",\r\n    \"forbidden_days\": [\r\n        0, 2, 4, 6\r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/admin/delivery-company/save"
+          },
+          "response": []
+        },
+        {
+          "name": "Delivery Company Delete",
+          "id": "ea19f9b2-89cb-4464-973d-c2c97badd51c",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2OTk5Nzc2NzgsImV4cCI6MTcwMDU4MjQ3OCwibmJmIjoxNjk5OTc3Njc4LCJqdGkiOiIwMkhDaHMwWEdzV0pjT1JtIiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.56wc-xFLSmDSxTHn3Rlxb4mboxIezO2zJbeEukirlE8",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"id\": 16,\r\n    \"name\": \"test\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/admin/delivery-company/delete/16"
+          },
+          "response": []
+        }
+      ],
+      "id": "894b0966-01f4-4ee9-a3e9-fee995ca4e30"
+    },
+    {
+      "name": "Dealers Warehouses",
+      "item": [
+        {
+          "name": "Dealers Warehouses",
+          "id": "27d0827d-17d5-4e4c-b709-a48df36e4235",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTcwMTg0MDcwMiwiZXhwIjoxNzAyNDQ1NTAyLCJuYmYiOjE3MDE4NDA3MDIsImp0aSI6Im5EbHQ2bHBKUGhZbWk3VzIiLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.SHDn3ZxLxFxQ05bhkG8RQLz0sPL-xEAGanYnnr_vYs8",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/admin/dealers-warehouses?is_for_api=false"
+          },
+          "response": []
+        },
+        {
+          "name": "Dealers Warehouse Save",
+          "id": "34b27cc5-79ee-4406-973f-c6d3ec7b8365",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MDE3ODgzMTcsImV4cCI6MTcwMjM5MzExNywibmJmIjoxNzAxNzg4MzE3LCJqdGkiOiJONXdsckJyekJZSXlvdjZQIiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.k7CxSzvvz3ZHesGYemoGOLjcYxMNoTfg2lKVJ6eDvhY",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"Москва\",\r\n    \"is_for_api\": false,\r\n    \"is_for_lk\": true\r\n\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/admin/dealers-warehouse/save"
+          },
+          "response": []
+        },
+        {
+          "name": "Dealers Warehouse Delete",
+          "id": "bb6e3be7-d1e5-4531-b6b4-ae6f5c590103",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2OTk5Nzc2NzgsImV4cCI6MTcwMDU4MjQ3OCwibmJmIjoxNjk5OTc3Njc4LCJqdGkiOiIwMkhDaHMwWEdzV0pjT1JtIiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.56wc-xFLSmDSxTHn3Rlxb4mboxIezO2zJbeEukirlE8",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"id\": 6,\r\n    \"name\": \"саратов\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/admin/dealers-warehouse/delete/6"
+          },
+          "response": []
+        }
+      ],
+      "id": "4f5b3fed-9d99-4fd9-875a-860ebc324d5f"
+    },
+    {
+      "name": "Promo Codes",
+      "item": [
+        {
+          "name": "Promo Codes",
+          "id": "1625b6dc-6a82-42cd-ad96-c36a21f42b56",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTcwNDUzMDM4NywiZXhwIjoxNzA1MTM1MTg3LCJuYmYiOjE3MDQ1MzAzODcsImp0aSI6Iktubk5GN3ZZYUpTZFAzYjgiLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.IHBMH6iflmsWYwbADTnEVcapg3A-5ktJI6tsatKhNOg",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/admin/promo-codes?is_active=false"
+          },
+          "response": [
+            {
+              "id": "01233e11-d318-47ae-ae4d-488825916bc0",
+              "name": "Promo Codes",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{base_url_local}}/api/admin/promo-code/used/10",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "admin",
+                    "promo-code",
+                    "used",
+                    "10"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Thu, 28 Dec 2023 14:58:26 GMT"
+                },
+                {
+                  "key": "Server",
+                  "value": "Apache"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Authorization"
+                },
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache, private"
+                },
+                {
+                  "key": "X-RateLimit-Limit",
+                  "value": "600"
+                },
+                {
+                  "key": "X-RateLimit-Remaining",
+                  "value": "598"
+                },
+                {
+                  "key": "Access-Control-Allow-Origin",
+                  "value": "*"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "4249"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=120, max=998"
+                },
+                {
+                  "key": "Connection",
+                  "value": "Keep-Alive"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"id\": 10,\n    \"promo_code\": \"223344\",\n    \"counterparty_guid\": \"814f816c-cc70-11e3-8d43-e61f13537e43\",\n    \"quantity_used\": 1,\n    \"nomenclature\": {\n        \"guid\": \"0e868ac7-3908-11ea-8f96-e61f13537e43\",\n        \"name\": \"UNOX S.p.A. Пароконвектомат электр. серии XEVC, модель XEVC-0511-EPRM\",\n        \"full_name\": \"UNOX S.p.A. Пароконвектомат электр. серии XEVC, модель XEVC-0511-EPRM\",\n        \"code\": \"00000367389\"\n    },\n    \"debug\": {\n        \"database\": {\n            \"total\": 7,\n            \"items\": [\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select * from \\\"users\\\" where \\\"id\\\" = '32' and \\\"users\\\".\\\"deleted_at\\\" is null limit 1;\",\n                    \"time\": 52.55\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"insert into \\\"log_all\\\" (\\\"priority\\\", \\\"priority_name\\\", \\\"request\\\", \\\"message\\\", \\\"extra\\\", \\\"request_id\\\", \\\"type\\\", \\\"updated_at\\\", \\\"created_at\\\") values ('0', 'Incoming request', 'GET {{base_url_local}}/api/admin/promo-code/used/10', '[]', '{\\\"Authorization\\\":\\\"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MDM1MzM5MzksImV4cCI6MTcwNDEzODczOSwibmJmIjoxNzAzNTMzOTM5LCJqdGkiOiJsR0tXYXZHVU5UeW5YMXV6Iiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.QthWkj8cYe_I4izVriwMZapVznw6C5YbZoU93LsbsCM\\\",\\\"User-Agent\\\":\\\"PostmanRuntime\\\\/7.36.0\\\",\\\"Accept\\\":\\\"*\\\\/*\\\",\\\"Cache-Control\\\":\\\"no-cache\\\",\\\"Postman-Token\\\":\\\"57e17251-818d-48d1-9e8f-d1a64681f0de\\\",\\\"Host\\\":\\\"trade-design\\\",\\\"Accept-Encoding\\\":\\\"gzip, deflate, br\\\",\\\"Connection\\\":\\\"keep-alive\\\"}', 'fbec885ec8e76d543842068b14b3e542', '1', '2023-12-28 14:58:26', '2023-12-28 14:58:26') returning \\\"id\\\";\",\n                    \"time\": 3.07\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select \\\"users_to_roles\\\".\\\"user_id\\\", \\\"users_to_roles\\\".\\\"role_id\\\", \\\"user_service_roles\\\".\\\"role\\\" from \\\"users_to_roles\\\" inner join \\\"user_service_roles\\\" on \\\"user_service_roles\\\".\\\"id\\\" = \\\"users_to_roles\\\".\\\"role_id\\\" where \\\"users_to_roles\\\".\\\"user_id\\\" = '3' and \\\"users_to_roles\\\".\\\"user_id\\\" is not null;\",\n                    \"time\": 11.01\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select * from \\\"promo_codes\\\" where \\\"promo_codes\\\".\\\"id\\\" = '10';\",\n                    \"time\": 3.24\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select * from \\\"promo_codes_to_objects\\\" where \\\"object_type_id\\\" = '1' and \\\"promo_codes_to_objects\\\".\\\"promo_code_id\\\" in (10);\",\n                    \"time\": 7.26\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select \\\"guid\\\", \\\"name\\\", \\\"full_name\\\", \\\"code\\\" from \\\"nomenclature\\\" where \\\"nomenclature\\\".\\\"guid\\\" in ('0e868ac7-3908-11ea-8f96-e61f13537e43');\",\n                    \"time\": 3.55\n                },\n                {\n                    \"connection\": \"pgsql\",\n                    \"query\": \"select * from \\\"promo_codes_to_counterparties\\\" inner join \\\"view_orders_union\\\" on \\\"view_orders_union\\\".\\\"number_lk\\\" = \\\"promo_codes_to_counterparties\\\".\\\"order_number_lk\\\" and \\\"status\\\" != '0c37d621-c0f4-4f0d-aa27-0415a73cdf58' and \\\"number_lk\\\" is not null where \\\"promo_codes_to_counterparties\\\".\\\"promo_code_id\\\" in ('10');\",\n                    \"time\": 79.4\n                }\n            ]\n        },\n        \"cache\": {\n            \"hit\": {\n                \"keys\": [\n                    \"cb4e5208b4cd87268b208e49452ed6e89a68e0b8\",\n                    \"cb4e5208b4cd87268b208e49452ed6e89a68e0b8\"\n                ],\n                \"total\": 2\n            },\n            \"miss\": {\n                \"keys\": [\n                    {\n                        \"tags\": [\n                            \"tymon.jwt\"\n                        ],\n                        \"key\": \"lGKWavGUNTynX1uz\"\n                    },\n                    {\n                        \"tags\": [\n                            \"tymon.jwt\"\n                        ],\n                        \"key\": \"lGKWavGUNTynX1uz\"\n                    }\n                ],\n                \"total\": 2\n            },\n            \"write\": {\n                \"keys\": [],\n                \"total\": 0\n            },\n            \"forget\": {\n                \"keys\": [],\n                \"total\": 0\n            }\n        },\n        \"profiling\": [\n            {\n                \"event\": \"request-time\",\n                \"time\": 0.6559698581695557\n            }\n        ],\n        \"memory\": {\n            \"usage\": 30624080,\n            \"peak\": 31553528\n        }\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Promo Code",
+          "id": "45049a38-0e15-4e74-bf49-ad5aa2012fea",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTcwMzU3MTAzOCwiZXhwIjoxNzA0MTc1ODM4LCJuYmYiOjE3MDM1NzEwMzgsImp0aSI6InQ2NGhNNUF3bGExTW1nVlQiLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.ahZ-BdXSA4qxwRldRcyDU3eIPBPRamgtvvcRkMdT67A",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/admin/promo-code/1"
+          },
+          "response": []
+        },
+        {
+          "name": "Promo Code Used",
+          "id": "86e96634-05d2-40b2-ab28-10b3c84becdc",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTcwMzU3MTAzOCwiZXhwIjoxNzA0MTc1ODM4LCJuYmYiOjE3MDM1NzEwMzgsImp0aSI6InQ2NGhNNUF3bGExTW1nVlQiLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.ahZ-BdXSA4qxwRldRcyDU3eIPBPRamgtvvcRkMdT67A",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/admin/promo-code/used/6"
+          },
+          "response": []
+        },
+        {
+          "name": "Promo Codes Delete",
+          "id": "e411c140-51fc-4f5b-ad3c-04a7c3227fab",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTcwMTg1Njc4OCwiZXhwIjoxNzAyNDYxNTg4LCJuYmYiOjE3MDE4NTY3ODgsImp0aSI6InoyNm5LeE9HSVlnTEpFblMiLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.mcQafEMTx1aTw2anob2XWdnLJHWUmu4xiXCx3LQjS98",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "url": "{{base_url_local}}/api/admin/promo-code/delete/1"
+          },
+          "response": []
+        },
+        {
+          "name": "Promo Codes Save",
+          "id": "945dee3c-01a9-4308-9f80-c54aea2ad1b4",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTcwMzU3MTAzOCwiZXhwIjoxNzA0MTc1ODM4LCJuYmYiOjE3MDM1NzEwMzgsImp0aSI6InQ2NGhNNUF3bGExTW1nVlQiLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.ahZ-BdXSA4qxwRldRcyDU3eIPBPRamgtvvcRkMdT67A",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n\r\n    \"promo_code\": \"test-promo-code-2023_12_26\",\r\n    \"discount\": \"11\",\r\n    \"is_active\": true,\r\n    \"date_start\": \"2023-12-26 00:00:00\",\r\n    \"date_end\": \"2023-12-30 00:00:00\",\r\n    \"name\": \"test\",\r\n    \"description\": \"description\",\r\n    \"objects\": [\r\n        {\r\n            \"object_guid\": \"00a73a3c-a721-11e2-9910-e61f13537e43\",\r\n            \"object_type_id\": 1,\r\n            \"quantity_total\": 1,\r\n            \"quantity_per_holding\": 1\r\n        }\r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/admin/promo-code/save"
+          },
+          "response": []
+        }
+      ],
+      "id": "cfc372a2-963d-4d7b-b56a-89dcc9f51a4a"
+    },
+    {
+      "name": "Claims",
+      "item": [
+        {
+          "name": "Claim Create Signed Link",
+          "id": "ef040fca-2973-41f5-bec5-ff3c04eaa83d",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTcxMDE0OTk3OCwiZXhwIjoxNzEwNzU0Nzc4LCJuYmYiOjE3MTAxNDk5NzgsImp0aSI6IlZkODZud0tFaEgzdk1lUU0iLCJzdWIiOjEzNjksInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.qTLbXZTvj0pUADWJxWvdqtvAVSrmapF47esQJCdqIPY",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"counterparty_guid\": \"814f816c-cc70-11e3-8d43-e61f13537e43\",\r\n    \"identifier\": \"lk-25715526c1-001709013919\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/claim/signed/create-link/add-documents"
+          },
+          "response": []
+        }
+      ],
+      "id": "56e7bc43-cb77-4668-a6b1-ce91ef480c03"
+    },
+    {
+      "name": "Stories",
+      "item": [
+        {
+          "name": "Story Save",
+          "id": "1bf4c897-c747-40f2-8764-4a6aa29358ad",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTcxMDE1MDIwNywiZXhwIjoxNzEwNzU1MDA3LCJuYmYiOjE3MTAxNTAyMDcsImp0aSI6InVJaFMwbDFVRFY5MDVIN0ciLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.nxTUxLHb2ZFku1KynkxwoUyB4G0YbsRJ-pmjb49qPHg",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"id\": 4,\r\n    \"order\": 2,\r\n    \"page_url\": \"abs 2\",\r\n    \"button_text\": \"button_text 2\",\r\n    \"banners_files\": [ \r\n        {\r\n            \"file_name\": \"name desktop 2\",\r\n            \"file_url\": \"url desktop 2\",\r\n            \"type\": \"desktop\"\r\n        },\r\n        {\r\n            \"file_name\": \"name mobile 2\",\r\n            \"file_url\": \"url mobile 2\",\r\n            \"type\": \"mobile\"\r\n        }\r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/admin/story/save"
+          },
+          "response": []
+        },
+        {
+          "name": "Stories Set Order",
+          "id": "9dc14ef4-1936-4e5c-b3cb-c82d618f336c",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MTA0MjE4NzcsImV4cCI6MTcxMTAyNjY3NywibmJmIjoxNzEwNDIxODc3LCJqdGkiOiJRU2FONkJlUlF3OFp0ZVhiIiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.4dAUU6LKSFl7h2dN3PCduoobmCgo8kl8NjhAgvi9WFY",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "[\r\n    {\r\n        \"id\": 19,\r\n        \"order\": 2\r\n    },\r\n    {\r\n        \"id\": 26,\r\n        \"order\": 3\r\n    }\r\n]",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/admin/stories/set-order"
+          },
+          "response": []
+        },
+        {
+          "name": "Stories",
+          "id": "1bc5fd9c-bf26-493c-a9eb-b9eb4199ee71",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MTA0MjE4NzcsImV4cCI6MTcxMTAyNjY3NywibmJmIjoxNzEwNDIxODc3LCJqdGkiOiJRU2FONkJlUlF3OFp0ZVhiIiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.4dAUU6LKSFl7h2dN3PCduoobmCgo8kl8NjhAgvi9WFY",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/admin/stories"
+          },
+          "response": []
+        }
+      ],
+      "id": "7e6e1692-8176-4180-acfd-e75470d37591"
+    },
+    {
+      "name": "Order Currencies Percentages",
+      "item": [
+        {
+          "name": " Order Currencies Percentage Childs",
+          "id": "eea399d6-f704-4224-ae36-5a1dead93986",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MTk4NDI3MzIsImV4cCI6MTcyMDQ0NzUzMiwibmJmIjoxNzE5ODQyNzMyLCJqdGkiOiJBekFNMjNHMkxnSmI5cE5hIiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.We3D-659GS2Y8NIQW-raqK2FGLVx9P8e9s3ROu_yyRI",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"currencies\": [  \r\n    {\r\n        \"currency_guid\": \"78683577-956c-11df-bfea-e61f13537e43\",\r\n        \"currency_percentage\": 8.00\r\n    },\r\n    {\r\n        \"currency_guid\": \"78683576-956c-11df-bfea-e61f13537e43\",\r\n        \"currency_percentage\": 1.00\r\n    }\r\n]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/admin/orders-currencies-percentage/childs/78683577-956c-11df-bfea-e61f13537e43"
+          },
+          "response": []
+        },
+        {
+          "name": " Order Currencies Percentages",
+          "id": "8e74c13c-c16f-419c-9308-361ea5574a5b",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MTk4NDI3MzIsImV4cCI6MTcyMDQ0NzUzMiwibmJmIjoxNzE5ODQyNzMyLCJqdGkiOiJBekFNMjNHMkxnSmI5cE5hIiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.We3D-659GS2Y8NIQW-raqK2FGLVx9P8e9s3ROu_yyRI",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"currencies\": [  \r\n    {\r\n        \"currency_guid\": \"78683577-956c-11df-bfea-e61f13537e43\",\r\n        \"currency_percentage\": 8.00\r\n    },\r\n    {\r\n        \"currency_guid\": \"78683576-956c-11df-bfea-e61f13537e43\",\r\n        \"currency_percentage\": 1.00\r\n    }\r\n]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/admin/orders-currencies-percentages"
+          },
+          "response": []
+        },
+        {
+          "name": " Order Currencies Percentages Change",
+          "id": "109bf2bb-9ab0-49a1-93b6-6464b955680a",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MTk4NDI3MzIsImV4cCI6MTcyMDQ0NzUzMiwibmJmIjoxNzE5ODQyNzMyLCJqdGkiOiJBekFNMjNHMkxnSmI5cE5hIiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.We3D-659GS2Y8NIQW-raqK2FGLVx9P8e9s3ROu_yyRI",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"currencies\": [  \r\n    {\r\n        \"currency_guid\": \"78683577-956c-11df-bfea-e61f13537e43\",\r\n        \"currency_percentage\": 8.00\r\n    },\r\n    {\r\n        \"currency_guid\": \"78683576-956c-11df-bfea-e61f13537e43\",\r\n        \"currency_percentage\": 1.00\r\n    }\r\n]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/admin/orders-currencies-percentages/change"
+          },
+          "response": []
+        }
+      ],
+      "id": "04d9b259-a30c-4273-a972-bd9b39c15a8b"
+    },
+    {
+      "name": "Branches",
+      "item": [
+        {
+          "name": "Branches Warehouses",
+          "item": [
+            {
+              "name": "Branches Warehouses Create",
+              "id": "6d8f6f58-830b-4dd9-a72c-01fdbc80ec1d",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MjY1NzYzMjYsImV4cCI6MTcyNzE4MTEyNiwibmJmIjoxNzI2NTc2MzI2LCJqdGkiOiJiUEhsaUN6akhCdURNZUdBIiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.4uJpGnONH4_mH9V_-7wUxeBTHPU_NXAs_14GbefIi2k",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"branch_id\": 1,\r\n    \"phone\": \"8 (800) 000 00 00\",\r\n    \"address\": \"тест\",\r\n    \"email\": \"check\",\r\n    \"email_for_orders\": \"check\",\r\n    \"work_schedule\": \"с 2 до 3\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "{{base_url_local}}/api/admin/branches-warehouses-for-websites/create"
+              },
+              "response": [
+                {
+                  "id": "e46ea698-fafd-454b-8d9e-ded1d7aff458",
+                  "name": "Default",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                      "mode": "formdata",
+                      "formdata": [
+                        {
+                          "key": "email",
+                          "value": "lyuolka@mail.ru",
+                          "type": "text"
+                        },
+                        {
+                          "key": "password",
+                          "value": "{{auth_password}}",
+                          "type": "text"
+                        }
+                      ]
+                    },
+                    "url": {
+                      "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password={{auth_password}}",
+                      "protocol": "http",
+                      "host": [
+                        "trade-design"
+                      ],
+                      "path": [
+                        "api",
+                        "auth-jwt",
+                        "login"
+                      ],
+                      "query": [
+                        {
+                          "key": "email",
+                          "value": "lyoulka@mail.ru"
+                        },
+                        {
+                          "key": "password",
+                          "value": "{{auth_password}}"
+                        }
+                      ]
+                    }
+                  },
+                  "_postman_previewlanguage": "Text",
+                  "header": [],
+                  "cookie": [],
+                  "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+                }
+              ]
+            },
+            {
+              "name": "Branches Warehouses Update",
+              "id": "375daaba-15a4-4ebd-b1f5-32af9f1bb071",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MjY1NzYzMjYsImV4cCI6MTcyNzE4MTEyNiwibmJmIjoxNzI2NTc2MzI2LCJqdGkiOiJiUEhsaUN6akhCdURNZUdBIiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.4uJpGnONH4_mH9V_-7wUxeBTHPU_NXAs_14GbefIi2k",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"branch_id\": 1,\r\n    \"phone\": \"8 (800) 000 00 00\",\r\n    \"address\": \"тест2\",\r\n    \"email\": \"check\",\r\n    \"email_for_orders\": \"check\",\r\n    \"work_schedule\": \"с 2 до 3\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "{{base_url_local}}/api/admin/branches-warehouses-for-websites/update/20"
+              },
+              "response": [
+                {
+                  "id": "2aa971f6-66c4-40ed-bb55-aa7d549cbea2",
+                  "name": "Default",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                      "mode": "formdata",
+                      "formdata": [
+                        {
+                          "key": "email",
+                          "value": "lyuolka@mail.ru",
+                          "type": "text"
+                        },
+                        {
+                          "key": "password",
+                          "value": "{{auth_password}}",
+                          "type": "text"
+                        }
+                      ]
+                    },
+                    "url": {
+                      "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password={{auth_password}}",
+                      "protocol": "http",
+                      "host": [
+                        "trade-design"
+                      ],
+                      "path": [
+                        "api",
+                        "auth-jwt",
+                        "login"
+                      ],
+                      "query": [
+                        {
+                          "key": "email",
+                          "value": "lyoulka@mail.ru"
+                        },
+                        {
+                          "key": "password",
+                          "value": "{{auth_password}}"
+                        }
+                      ]
+                    }
+                  },
+                  "_postman_previewlanguage": "Text",
+                  "header": [],
+                  "cookie": [],
+                  "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+                }
+              ]
+            },
+            {
+              "name": "Branches Warehouses Delete",
+              "id": "adea32d8-2b77-4b2c-b680-895c91e01c86",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MjY1NzYzMjYsImV4cCI6MTcyNzE4MTEyNiwibmJmIjoxNzI2NTc2MzI2LCJqdGkiOiJiUEhsaUN6akhCdURNZUdBIiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.4uJpGnONH4_mH9V_-7wUxeBTHPU_NXAs_14GbefIi2k",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"branch_id\": 1,\r\n    \"phone\": \"8 (800) 000 00 00\",\r\n    \"address\": \"тест2\",\r\n    \"email\": \"check\",\r\n    \"email_for_orders\": \"check\",\r\n    \"work_schedule\": \"с 2 до 3\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "{{base_url_local}}/api/admin/branches-warehouses-for-websites/delete/20"
+              },
+              "response": [
+                {
+                  "id": "731c28ac-e58a-44a1-a207-30ee06ff0312",
+                  "name": "Default",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                      "mode": "formdata",
+                      "formdata": [
+                        {
+                          "key": "email",
+                          "value": "lyuolka@mail.ru",
+                          "type": "text"
+                        },
+                        {
+                          "key": "password",
+                          "value": "{{auth_password}}",
+                          "type": "text"
+                        }
+                      ]
+                    },
+                    "url": {
+                      "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password={{auth_password}}",
+                      "protocol": "http",
+                      "host": [
+                        "trade-design"
+                      ],
+                      "path": [
+                        "api",
+                        "auth-jwt",
+                        "login"
+                      ],
+                      "query": [
+                        {
+                          "key": "email",
+                          "value": "lyoulka@mail.ru"
+                        },
+                        {
+                          "key": "password",
+                          "value": "{{auth_password}}"
+                        }
+                      ]
+                    }
+                  },
+                  "_postman_previewlanguage": "Text",
+                  "header": [],
+                  "cookie": [],
+                  "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+                }
+              ]
+            }
+          ],
+          "id": "234305cf-0aa4-4f1f-8915-616b89cf93d3"
+        },
+        {
+          "name": "Branches Service Centers",
+          "item": [
+            {
+              "name": "Branches Service Centers Create",
+              "id": "b337f672-a5e3-4a1a-84c7-cc49302e4b80",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3Mjk1MDI1NTUsImV4cCI6MTczMDEwNzM1NSwibmJmIjoxNzI5NTAyNTU1LCJqdGkiOiJQVW92a29lVmRlSjlqalh5Iiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.q5xjqLACxHP5s9W8rsFwZ8R5PR5_0iHR-zJn4jnAMgY",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"branch_id\": 1,\r\n    \"phone\": \"8 (800) 000 00 00\",\r\n    \"address\": \"тест\",\r\n    \"email\": \"check\",\r\n    \"email_for_orders\": \"check\",\r\n    \"work_schedule\": \"с 2 до 3\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "{{base_url_local}}/api/admin/branches-service-centers-for-websites/create"
+              },
+              "response": [
+                {
+                  "id": "ea931d0b-dab1-43ba-abd2-4557a26623a5",
+                  "name": "Default",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                      "mode": "formdata",
+                      "formdata": [
+                        {
+                          "key": "email",
+                          "value": "lyuolka@mail.ru",
+                          "type": "text"
+                        },
+                        {
+                          "key": "password",
+                          "value": "{{auth_password}}",
+                          "type": "text"
+                        }
+                      ]
+                    },
+                    "url": {
+                      "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password={{auth_password}}",
+                      "protocol": "http",
+                      "host": [
+                        "trade-design"
+                      ],
+                      "path": [
+                        "api",
+                        "auth-jwt",
+                        "login"
+                      ],
+                      "query": [
+                        {
+                          "key": "email",
+                          "value": "lyoulka@mail.ru"
+                        },
+                        {
+                          "key": "password",
+                          "value": "{{auth_password}}"
+                        }
+                      ]
+                    }
+                  },
+                  "_postman_previewlanguage": "Text",
+                  "header": [],
+                  "cookie": [],
+                  "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+                }
+              ]
+            },
+            {
+              "name": "Branches Service Centers Update",
+              "id": "c5ee23c5-ebca-47aa-ae06-db91a6de6477",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3Mjk1MDI1NTUsImV4cCI6MTczMDEwNzM1NSwibmJmIjoxNzI5NTAyNTU1LCJqdGkiOiJQVW92a29lVmRlSjlqalh5Iiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.q5xjqLACxHP5s9W8rsFwZ8R5PR5_0iHR-zJn4jnAMgY",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"branch_id\": 1,\r\n    \"phone\": \"8 (800) 000 00 00\",\r\n    \"address\": \"тест2\",\r\n    \"email\": \"check\",\r\n    \"email_for_orders\": \"check\",\r\n    \"work_schedule\": \"с 2 до 3\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "{{base_url_local}}/api/admin/branches-service-centers-for-websites/update/14"
+              },
+              "response": [
+                {
+                  "id": "9ca52b81-b973-4747-b10a-ba9aa390f970",
+                  "name": "Default",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                      "mode": "formdata",
+                      "formdata": [
+                        {
+                          "key": "email",
+                          "value": "lyuolka@mail.ru",
+                          "type": "text"
+                        },
+                        {
+                          "key": "password",
+                          "value": "{{auth_password}}",
+                          "type": "text"
+                        }
+                      ]
+                    },
+                    "url": {
+                      "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password={{auth_password}}",
+                      "protocol": "http",
+                      "host": [
+                        "trade-design"
+                      ],
+                      "path": [
+                        "api",
+                        "auth-jwt",
+                        "login"
+                      ],
+                      "query": [
+                        {
+                          "key": "email",
+                          "value": "lyoulka@mail.ru"
+                        },
+                        {
+                          "key": "password",
+                          "value": "{{auth_password}}"
+                        }
+                      ]
+                    }
+                  },
+                  "_postman_previewlanguage": "Text",
+                  "header": [],
+                  "cookie": [],
+                  "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+                }
+              ]
+            },
+            {
+              "name": "Branches Service Centers Delete",
+              "id": "303035d1-01f3-45d8-8dfd-752aa6acdc92",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3Mjk1MDI1NTUsImV4cCI6MTczMDEwNzM1NSwibmJmIjoxNzI5NTAyNTU1LCJqdGkiOiJQVW92a29lVmRlSjlqalh5Iiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.q5xjqLACxHP5s9W8rsFwZ8R5PR5_0iHR-zJn4jnAMgY",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"branch_id\": 1,\r\n    \"phone\": \"8 (800) 000 00 00\",\r\n    \"address\": \"тест2\",\r\n    \"email\": \"check\",\r\n    \"email_for_orders\": \"check\",\r\n    \"work_schedule\": \"с 2 до 3\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "{{base_url_local}}/api/admin/branches-service-centers-for-websites/delete/14"
+              },
+              "response": [
+                {
+                  "id": "c176d49b-bcd6-4166-a3f4-dddba91276a6",
+                  "name": "Default",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                      "mode": "formdata",
+                      "formdata": [
+                        {
+                          "key": "email",
+                          "value": "lyuolka@mail.ru",
+                          "type": "text"
+                        },
+                        {
+                          "key": "password",
+                          "value": "{{auth_password}}",
+                          "type": "text"
+                        }
+                      ]
+                    },
+                    "url": {
+                      "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password={{auth_password}}",
+                      "protocol": "http",
+                      "host": [
+                        "trade-design"
+                      ],
+                      "path": [
+                        "api",
+                        "auth-jwt",
+                        "login"
+                      ],
+                      "query": [
+                        {
+                          "key": "email",
+                          "value": "lyoulka@mail.ru"
+                        },
+                        {
+                          "key": "password",
+                          "value": "{{auth_password}}"
+                        }
+                      ]
+                    }
+                  },
+                  "_postman_previewlanguage": "Text",
+                  "header": [],
+                  "cookie": [],
+                  "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+                }
+              ]
+            }
+          ],
+          "id": "fe36cf3b-4dfb-4a54-9985-f4c2e73bd1ac"
+        },
+        {
+          "name": "Branches Delivery",
+          "item": [
+            {
+              "name": "Branches Delivery Create",
+              "id": "52c60e5f-c382-4094-aab8-e7f6041c65db",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTczMjUzMTY3NCwiZXhwIjoxNzMzMTM2NDc0LCJuYmYiOjE3MzI1MzE2NzQsImp0aSI6IkNHcE9VaFhXYkdZTFY5MWoiLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.fV0GRtK9VEeL1nwLIUKKaswwg1GwUuP7kl_2B9pbe7o",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"branch_id\": 1,\r\n    \"name\": \"check\",\r\n    \"description\": \"check\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "{{base_url_local}}/api/admin/branches-delivery/create"
+              },
+              "response": [
+                {
+                  "id": "40c92e6f-2b0c-4d32-8a03-807e0fe07f83",
+                  "name": "Default",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                      "mode": "formdata",
+                      "formdata": [
+                        {
+                          "key": "email",
+                          "value": "lyuolka@mail.ru",
+                          "type": "text"
+                        },
+                        {
+                          "key": "password",
+                          "value": "{{auth_password}}",
+                          "type": "text"
+                        }
+                      ]
+                    },
+                    "url": {
+                      "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password={{auth_password}}",
+                      "protocol": "http",
+                      "host": [
+                        "trade-design"
+                      ],
+                      "path": [
+                        "api",
+                        "auth-jwt",
+                        "login"
+                      ],
+                      "query": [
+                        {
+                          "key": "email",
+                          "value": "lyoulka@mail.ru"
+                        },
+                        {
+                          "key": "password",
+                          "value": "{{auth_password}}"
+                        }
+                      ]
+                    }
+                  },
+                  "_postman_previewlanguage": "Text",
+                  "header": [],
+                  "cookie": [],
+                  "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+                }
+              ]
+            },
+            {
+              "name": "Branches Delivery Update",
+              "id": "db79d61c-8bb0-4066-8ee3-91e47b5680a2",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTczMjUzMTY3NCwiZXhwIjoxNzMzMTM2NDc0LCJuYmYiOjE3MzI1MzE2NzQsImp0aSI6IkNHcE9VaFhXYkdZTFY5MWoiLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.fV0GRtK9VEeL1nwLIUKKaswwg1GwUuP7kl_2B9pbe7o",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"branch_id\": 1,\r\n    \"name\": \"check1\",\r\n    \"description\": \"check\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "{{base_url_local}}/api/admin/branches-delivery/update/58"
+              },
+              "response": [
+                {
+                  "id": "d57a2594-c31d-42d3-b095-1739396f111b",
+                  "name": "Default",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                      "mode": "formdata",
+                      "formdata": [
+                        {
+                          "key": "email",
+                          "value": "lyuolka@mail.ru",
+                          "type": "text"
+                        },
+                        {
+                          "key": "password",
+                          "value": "{{auth_password}}",
+                          "type": "text"
+                        }
+                      ]
+                    },
+                    "url": {
+                      "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password={{auth_password}}",
+                      "protocol": "http",
+                      "host": [
+                        "trade-design"
+                      ],
+                      "path": [
+                        "api",
+                        "auth-jwt",
+                        "login"
+                      ],
+                      "query": [
+                        {
+                          "key": "email",
+                          "value": "lyoulka@mail.ru"
+                        },
+                        {
+                          "key": "password",
+                          "value": "{{auth_password}}"
+                        }
+                      ]
+                    }
+                  },
+                  "_postman_previewlanguage": "Text",
+                  "header": [],
+                  "cookie": [],
+                  "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+                }
+              ]
+            },
+            {
+              "name": "Branches Delivery Delete",
+              "id": "11d02e6d-38ef-4405-88cd-d0ddb5d9c223",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTczMjUzMTY3NCwiZXhwIjoxNzMzMTM2NDc0LCJuYmYiOjE3MzI1MzE2NzQsImp0aSI6IkNHcE9VaFhXYkdZTFY5MWoiLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.fV0GRtK9VEeL1nwLIUKKaswwg1GwUuP7kl_2B9pbe7o",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"branch_id\": 1,\r\n    \"name\": \"check1\",\r\n    \"description\": \"check\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "{{base_url_local}}/api/admin/branches-delivery/delete/58"
+              },
+              "response": [
+                {
+                  "id": "8c942347-3244-42a4-98e9-dbdc7de8a41a",
+                  "name": "Default",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                      "mode": "formdata",
+                      "formdata": [
+                        {
+                          "key": "email",
+                          "value": "lyuolka@mail.ru",
+                          "type": "text"
+                        },
+                        {
+                          "key": "password",
+                          "value": "{{auth_password}}",
+                          "type": "text"
+                        }
+                      ]
+                    },
+                    "url": {
+                      "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password={{auth_password}}",
+                      "protocol": "http",
+                      "host": [
+                        "trade-design"
+                      ],
+                      "path": [
+                        "api",
+                        "auth-jwt",
+                        "login"
+                      ],
+                      "query": [
+                        {
+                          "key": "email",
+                          "value": "lyoulka@mail.ru"
+                        },
+                        {
+                          "key": "password",
+                          "value": "{{auth_password}}"
+                        }
+                      ]
+                    }
+                  },
+                  "_postman_previewlanguage": "Text",
+                  "header": [],
+                  "cookie": [],
+                  "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+                }
+              ]
+            }
+          ],
+          "id": "175bfc67-a86b-4198-b42d-0d89a34b838b"
+        },
+        {
+          "name": "Branches Create",
+          "id": "44fe5121-4944-4923-b301-e43bc75dc5e8",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3NDE5NDUxNDUsImV4cCI6MTc0MjU0OTk0NSwibmJmIjoxNzQxOTQ1MTQ1LCJqdGkiOiJIWUVUMTBkdWF4QnFmYUdOIiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.B_hrZO-RsiemM-MCZMGLYPc11QyxXvqp3DY30GK3hGk",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n   \"city\": \"Тест\",\r\n   \"phone\": \"8 (800) 000 00 00\",\r\n   \"address\": \"тест\",\r\n   \"email_for_clients\": \"check\",\r\n   \"email_for_orders\": \"check\",\r\n   \"branch_guid\": \"d77aabcd-0605-11ee-8654-000c297bb3bc\",\r\n   \"region\": 1,\r\n   \"area\": \"Сибирский\",\r\n   \"area_sort\": 200\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/admin/branches-for-websites/create"
+          },
+          "response": [
+            {
+              "id": "0b6cf43c-6799-4301-9456-430282067d4f",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "lyoulka@mail.ru"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Branches Update",
+          "id": "c45a7ee4-f643-43cd-962a-44f896c14098",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MjI5MjQwNTEsImV4cCI6MTcyMzUyODg1MSwibmJmIjoxNzIyOTI0MDUxLCJqdGkiOiJVV1dFdmNaU0JVazlFUzg4Iiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9._XyQRURAecFCAW0WzTeWvIBNyVN3v-tEQir4pB_mkvQ",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"city\": \"АААTect2\",\r\n   \"phone\": \"9 (800) 000 00 00\",\r\n   \"address\": \"тест1\",\r\n   \"email_for_clients\": \"check1\",\r\n   \"email_for_orders\": \"check1\",\r\n   \"region\": \"Центральный\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/admin/branches-for-websites/update/21"
+          },
+          "response": [
+            {
+              "id": "30dcd3e7-b2ea-41c1-8dfa-14fd9b9f1836",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "lyoulka@mail.ru"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Branches Delete",
+          "id": "46f0b71d-0413-406e-8a05-24906a48e38b",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MjI5MjQwNTEsImV4cCI6MTcyMzUyODg1MSwibmJmIjoxNzIyOTI0MDUxLCJqdGkiOiJVV1dFdmNaU0JVazlFUzg4Iiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9._XyQRURAecFCAW0WzTeWvIBNyVN3v-tEQir4pB_mkvQ",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"city\": \"АААTect2\",\r\n   \"phone\": \"9 (800) 000 00 00\",\r\n   \"address\": \"тест1\",\r\n   \"email_for_clients\": \"check1\",\r\n   \"email_for_orders\": \"check1\",\r\n   \"region\": \"Центральный\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/admin/branches/delete/21"
+          },
+          "response": [
+            {
+              "id": "225fcc17-c12e-4862-9954-ce670c8b16b5",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "lyoulka@mail.ru"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        }
+      ],
+      "id": "711a0013-30b9-4847-a104-638a688f0022"
+    },
+    {
+      "name": "Nomeclature Reserve Reports",
+      "item": [
+        {
+          "name": "Nomenclature Reserve Reports Get",
+          "id": "fd229014-9643-4cc5-bf98-2c266b299da3",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MjYyMDk0NjgsImV4cCI6MTcyNjgxNDI2OCwibmJmIjoxNzI2MjA5NDY4LCJqdGkiOiJXdEtocTBxUlE2ZEdPNGc0Iiwic3ViIjoxNDg0LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.3LOEEeQZiG_KSLJVIRo_Fn6M0McI7L5w2gU4p6PeA14",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "file",
+                  "type": "file",
+                  "src": "/C:/Users/Tochn/OneDrive/Рабочий стол/test.txt"
+                },
+                {
+                  "key": "message",
+                  "value": "\"тестовое\"",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": "{{base_url_local}}/api/admin/nomenclature-reserve-reports"
+          },
+          "response": [
+            {
+              "id": "6c9d4703-9166-4f02-83a4-a17a1df2ee66",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "lyoulka@mail.ru"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Nomenclature Reserve Reports Upload",
+          "id": "53e15c76-0350-4ed7-8ec4-323bf4a6ed5f",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MjM3MDc4NDcsImV4cCI6MTcyNDMxMjY0NywibmJmIjoxNzIzNzA3ODQ3LCJqdGkiOiJZdU4yd2phQUZ3dXF0MUZxIiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.moa-hGGF2-X3XBlmAYv9qq4gLIA0XJJZPo7puRp0HMI",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "file",
+                  "type": "file",
+                  "src": "/C:/Users/Юлия/Downloads/Telegram Desktop/Копия Продажи_Резерв_05_24.xlsx"
+                },
+                {
+                  "key": "message",
+                  "value": "\"тестовое\"",
+                  "type": "text",
+                  "disabled": true
+                }
+              ]
+            },
+            "url": "{{base_url_local}}/api/admin/nomenclature-reserve-reports/upload"
+          },
+          "response": [
+            {
+              "id": "70eaa042-e6e5-4d06-9178-7181369c3b47",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "lyoulka@mail.ru"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        }
+      ],
+      "id": "25fa2446-78b3-4651-ac2d-26339efde1e0"
+    },
+    {
+      "name": "Brands Popular For Websites",
+      "item": [
+        {
+          "name": "Brands Popular For Websites Create",
+          "id": "591ba482-0f9d-4801-901d-03f981f50c38",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTczMjc5Mzg1NCwiZXhwIjoxNzMzMzk4NjU0LCJuYmYiOjE3MzI3OTM4NTQsImp0aSI6IlNXTmR2cUlIUU9qN0FnNVYiLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.3wzOgttUq0ugkys9DHbm0DCRoHk4R3LcegmAp2StgnA",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"brand_guid\": \"62e163f6-a7e2-11e6-826a-e61f13537e43\",\r\n    \"order\": 5\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/admin/brands-popular-for-websites/create"
+          },
+          "response": [
+            {
+              "id": "417dcb68-3c63-4f76-a197-8d808880110e",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "lyoulka@mail.ru"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Brands Popular For Websites Delete",
+          "id": "20209b97-3b8c-40e0-ad32-1e6721327fe7",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTczMjc5Mzg1NCwiZXhwIjoxNzMzMzk4NjU0LCJuYmYiOjE3MzI3OTM4NTQsImp0aSI6IlNXTmR2cUlIUU9qN0FnNVYiLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.3wzOgttUq0ugkys9DHbm0DCRoHk4R3LcegmAp2StgnA",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/admin/brands-popular-for-websites/delete/62e163f6-a7e2-11e6-826a-e61f13537e43"
+          },
+          "response": [
+            {
+              "id": "eceb7f72-5cea-40e2-9cd5-d06e70f883f9",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "lyoulka@mail.ru"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Brands Popular For Websites Update",
+          "id": "a1cb7ed4-b2b8-4a00-a873-161b5ba71649",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTczMjc5Mzg1NCwiZXhwIjoxNzMzMzk4NjU0LCJuYmYiOjE3MzI3OTM4NTQsImp0aSI6IlNXTmR2cUlIUU9qN0FnNVYiLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.3wzOgttUq0ugkys9DHbm0DCRoHk4R3LcegmAp2StgnA",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"brands\": [\r\n        {\r\n            \"brand_guid\": \"386f2f86-1e43-11e0-8679-e61f13537e43\",\r\n            \"order\": 1\r\n        },\r\n        {\r\n            \"brand_guid\": \"6f77e321-221a-11e0-8679-e61f13537e43\",\r\n            \"order\": 2\r\n        }\r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/admin/brands-popular-for-websites/update"
+          },
+          "response": [
+            {
+              "id": "72d052f7-aa22-41f5-a3d1-39e34e2e2832",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "lyoulka@mail.ru"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        }
+      ],
+      "id": "b0d393e9-b30e-4abb-b018-2124cd11f2a1"
+    },
+    {
+      "name": "Branches Notification Emails",
+      "item": [
+        {
+          "name": "Branches Notification Emails Get",
+          "id": "19d7d1db-9581-4e10-b297-5f763df20961",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTczMzQ2Nzk5MiwiZXhwIjoxNzM0MDcyNzkyLCJuYmYiOjE3MzM0Njc5OTIsImp0aSI6ImNqRGk4ZnkwUVJoaWpsRjMiLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.6Euiypbha6OPk7wd16X4Aoy6Ft3pCj3lPBYRiEi9_-I",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n   \"city\": \"Тест\",\r\n   \"phone\": \"8 (800) 000 00 00\",\r\n   \"address\": \"тест\",\r\n   \"email_for_clients\": \"check\",\r\n   \"email_for_orders\": \"check\",\r\n   \"branch_guid\": \"d77aabcd-0605-11ee-8654-000c297bb3bc\",\r\n   \"region\": \"Сибирский\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/admin/branches-notification-emails/1"
+          },
+          "response": [
+            {
+              "id": "8307a83a-1a2e-4395-b1a8-cae51674deba",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "lyoulka@mail.ru"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Branches Notification Emails Create",
+          "id": "35f076b9-c0f4-41cc-97f4-788405c03fc8",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTczMzQ2Nzk5MiwiZXhwIjoxNzM0MDcyNzkyLCJuYmYiOjE3MzM0Njc5OTIsImp0aSI6ImNqRGk4ZnkwUVJoaWpsRjMiLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.6Euiypbha6OPk7wd16X4Aoy6Ft3pCj3lPBYRiEi9_-I",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"email\": \"tochnoneyura@gmail.com\",\r\n  \"branch_id\": 1\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/admin/branches-notification-emails/create"
+          },
+          "response": [
+            {
+              "id": "764c9349-71d5-46eb-9895-acbccb2bae59",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "lyoulka@mail.ru"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Branches Notification Emails Update",
+          "id": "0fb4720a-4eae-473b-8d07-0ccd4ea1d60d",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTczMzQ2Nzk5MiwiZXhwIjoxNzM0MDcyNzkyLCJuYmYiOjE3MzM0Njc5OTIsImp0aSI6ImNqRGk4ZnkwUVJoaWpsRjMiLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.6Euiypbha6OPk7wd16X4Aoy6Ft3pCj3lPBYRiEi9_-I",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"email\": \"tochnoneyura1@gmail.com\",\r\n  \"branch_id\": 1\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/admin/branches-notification-emails/update/93"
+          },
+          "response": [
+            {
+              "id": "58906126-23db-4142-819a-4e9760d212df",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "lyoulka@mail.ru"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Branches Notification Emails Delete",
+          "id": "c0c491b8-6a49-4c67-a74a-57cd8294dd21",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTczMzQ2Nzk5MiwiZXhwIjoxNzM0MDcyNzkyLCJuYmYiOjE3MzM0Njc5OTIsImp0aSI6ImNqRGk4ZnkwUVJoaWpsRjMiLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.6Euiypbha6OPk7wd16X4Aoy6Ft3pCj3lPBYRiEi9_-I",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"email\": \"tochnoneyura1@gmail.com\",\r\n  \"branch_id\": 1\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/admin/branches-notification-emails/delete/93"
+          },
+          "response": [
+            {
+              "id": "6cadc066-df1b-4d3d-a4ed-c826093173fa",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "lyoulka@mail.ru"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        }
+      ],
+      "id": "e8b5d5dc-5796-41f7-9a12-c76e02510dee"
+    },
+    {
+      "name": "Regions For Websites",
+      "item": [
+        {
+          "name": "Regions Create",
+          "id": "44b44ad1-ebdf-44a8-a631-511c3983f961",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3Mzk1NDQwMjIsImV4cCI6MTc0MDE0ODgyMiwibmJmIjoxNzM5NTQ0MDIyLCJqdGkiOiJrTHlpdDZwdHdXTXRpN1dGIiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.pk-WTTB3vy8OzZkEmL4K3sZ8H9fcilPw2KKKZGdb-5Q",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"test\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/admin/regions-for-websites/create"
+          },
+          "response": [
+            {
+              "id": "594a9231-61ca-41c4-9c2b-aec4dfa0e317",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "lyoulka@mail.ru"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Regions Update",
+          "id": "e2bbd037-547e-49af-ac83-c890b2bc83fd",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3Mzk1NDQwMjIsImV4cCI6MTc0MDE0ODgyMiwibmJmIjoxNzM5NTQ0MDIyLCJqdGkiOiJrTHlpdDZwdHdXTXRpN1dGIiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.pk-WTTB3vy8OzZkEmL4K3sZ8H9fcilPw2KKKZGdb-5Q",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"test1\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/admin/regions-for-websites/update/10"
+          },
+          "response": [
+            {
+              "id": "46227d45-31d0-41be-8b0b-0d0543ac6e0d",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "lyoulka@mail.ru"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Regions Delete",
+          "id": "83cc2ce5-77ed-4975-a3d9-bc6b90f87fb6",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3Mzk1NDQwMjIsImV4cCI6MTc0MDE0ODgyMiwibmJmIjoxNzM5NTQ0MDIyLCJqdGkiOiJrTHlpdDZwdHdXTXRpN1dGIiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.pk-WTTB3vy8OzZkEmL4K3sZ8H9fcilPw2KKKZGdb-5Q",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"test1\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/admin/regions-for-websites/delete/10"
+          },
+          "response": [
+            {
+              "id": "41f3f05b-875b-4d2e-9cc0-d4170db452ed",
+              "name": "Default",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "email",
+                      "value": "lyuolka@mail.ru",
+                      "type": "text"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}",
+                      "type": "text"
+                    }
+                  ]
+                },
+                "url": {
+                  "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password={{auth_password}}",
+                  "protocol": "http",
+                  "host": [
+                    "trade-design"
+                  ],
+                  "path": [
+                    "api",
+                    "auth-jwt",
+                    "login"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "lyoulka@mail.ru"
+                    },
+                    {
+                      "key": "password",
+                      "value": "{{auth_password}}"
+                    }
+                  ]
+                }
+              },
+              "_postman_previewlanguage": "Text",
+              "header": [],
+              "cookie": [],
+              "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+            }
+          ]
+        }
+      ],
+      "id": "0105bea9-1134-475f-bda9-6b100d5c55dc"
+    },
+    {
+      "name": "DWH Cube",
+      "item": [
+        {
+          "name": "Balance Download",
+          "id": "78fdc17c-c9ba-4f37-88f5-7dff3773e84a",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTc0MDM3NTcyMSwiZXhwIjoxNzQwOTgwNTIxLCJuYmYiOjE3NDAzNzU3MjEsImp0aSI6ImM4VzFTb2g4UXhhY3gwZjEiLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.16BDVSkTQVCCftFiVRl_tUWUe0C4A8-8QSBOod0q5t8",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/pim/dwh-cube/parser-balance/download"
+          },
+          "response": []
+        }
+      ],
+      "id": "0259bae2-fd2b-4d32-98a3-f675d448d1db"
+    },
+    {
+      "name": "CRM",
+      "item": [
+        {
+          "name": "Phones To Websites Get",
+          "id": "dd63a017-a9de-4fb1-bb1e-b547bc001002",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3NTQyOTYxNzEsImV4cCI6MTc1NDkwMDk3MSwibmJmIjoxNzU0Mjk2MTcxLCJqdGkiOiJtMzdGcG9kUDVDVXo4ZFlOIiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.uYLaM4bXcaFKI9_Ek2XVKVK_CK9_GTS6LpSjj-qEsJc",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/admin/crm/phones-to-websites"
+          },
+          "response": []
+        },
+        {
+          "name": "Phones To Websites Create",
+          "id": "f37b4b18-e716-4ce3-8d79-a434ea24650b",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3NTQyOTYxNzEsImV4cCI6MTc1NDkwMDk3MSwibmJmIjoxNzU0Mjk2MTcxLCJqdGkiOiJtMzdGcG9kUDVDVXo4ZFlOIiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.uYLaM4bXcaFKI9_Ek2XVKVK_CK9_GTS6LpSjj-qEsJc",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"phones\": [\r\n        {\r\n            \"website_guid\": \"7f905630-f274-11ee-bc81-0050568e3182\",\r\n            \"phone\": \"9686906120\"\r\n        },\r\n        {\r\n            \"website_guid\": \"7f905630-f274-11ee-bc81-0050568e3182\",\r\n            \"phone\": \"9686906122\"\r\n        }\r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/admin/crm/calls-to-websites/create"
+          },
+          "response": []
+        },
+        {
+          "name": "Phones To Websites Delete",
+          "id": "a765ca2c-2e56-45f8-be41-c6df82cffd6d",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3NTQyOTYxNzEsImV4cCI6MTc1NDkwMDk3MSwibmJmIjoxNzU0Mjk2MTcxLCJqdGkiOiJtMzdGcG9kUDVDVXo4ZFlOIiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.uYLaM4bXcaFKI9_Ek2XVKVK_CK9_GTS6LpSjj-qEsJc",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"phones\": [\r\n        {\r\n            \"website_guid\": \"7f905630-f274-11ee-bc81-0050568e3182\",\r\n            \"phone\": \"9686906120\"\r\n        },\r\n        {\r\n            \"website_guid\": \"70d5d263-3708-11f0-a2fa-0050568e4798\",\r\n            \"phone\": \"9686906120\"\r\n        },\r\n        {\r\n            \"website_guid\": \"e8372835-a672-11ef-b69c-0050568e4798\",\r\n            \"phone\": \"9686906120\"\r\n        }\r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/admin/crm/phones-to-websites/delete/2"
+          },
+          "response": []
+        }
+      ],
+      "id": "44c05067-0bf1-4b6c-b8ee-4fbf06af6d49"
+    },
+    {
+      "name": "Track Numbers",
+      "item": [
+        {
+          "name": "Track Numbers Mails Get",
+          "id": "be0869a3-0b97-42bd-8698-fc8bf3859ff4",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3NTQ1NTMzMjEsImV4cCI6MTc1NTE1ODEyMSwibmJmIjoxNzU0NTUzMzIxLCJqdGkiOiJWcDV0WW9RMFc4ZDJqc3pHIiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.EtB-QV-h4B-JpyZ9zxULTCg6fcKmPKiqFEICgkBNa2s",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"id\": 33,\r\n    \"date\": \"2025-07-04 17:00:00\",\r\n    \"website_guid\": \"22eb2937-4af9-11ee-a9b7-0050568e3182\",\r\n    \"name\": \"Testov Test Testovich\",\r\n    \"phone\": \"+79000000000\",\r\n    \"email\": \"ds183rgd@mail.ru\",\r\n    \"page\": \"http://page\",\r\n    \"title\": \"Вопрос по тарелке\",\r\n    \"text\": \"Как купить тарелку?\",\r\n    \"product_name\": \"Тарелка Kutahya BNWLNG19DU00, D=19см, H=2,1см\",\r\n    \"product_guid\": \"01328f9a-fe28-11ee-a366-0050568e3182\",\r\n    \"product_code\": \"00000507784\",\r\n    \"brand_name\": \"Kutahya\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/admin/track-numbers-mails"
+          },
+          "response": []
+        }
+      ],
+      "id": "6356b4ee-eb15-487e-b4d1-2abd72b6a368"
+    },
+    {
+      "name": "Ka Partners To Delivery Companies",
+      "item": [
+        {
+          "name": "Ka Partners To Delivery Companies Get",
+          "id": "cb2b5b19-2e06-459e-8ae1-def6770290f3",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3NTQ1NTMzMjEsImV4cCI6MTc1NTE1ODEyMSwibmJmIjoxNzU0NTUzMzIxLCJqdGkiOiJWcDV0WW9RMFc4ZDJqc3pHIiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.EtB-QV-h4B-JpyZ9zxULTCg6fcKmPKiqFEICgkBNa2s",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"id\": 33,\r\n    \"date\": \"2025-07-04 17:00:00\",\r\n    \"website_guid\": \"22eb2937-4af9-11ee-a9b7-0050568e3182\",\r\n    \"name\": \"Testov Test Testovich\",\r\n    \"phone\": \"+79000000000\",\r\n    \"email\": \"ds183rgd@mail.ru\",\r\n    \"page\": \"http://page\",\r\n    \"title\": \"Вопрос по тарелке\",\r\n    \"text\": \"Как купить тарелку?\",\r\n    \"product_name\": \"Тарелка Kutahya BNWLNG19DU00, D=19см, H=2,1см\",\r\n    \"product_guid\": \"01328f9a-fe28-11ee-a366-0050568e3182\",\r\n    \"product_code\": \"00000507784\",\r\n    \"brand_name\": \"Kutahya\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/admin/ka-partners-to-delivery-companies"
+          },
+          "response": []
+        },
+        {
+          "name": "Ka Partners To Delivery Companies Create",
+          "id": "145132bc-5689-49b2-b1bb-2bbc87d05e6a",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3NTQ1NTMzMjEsImV4cCI6MTc1NTE1ODEyMSwibmJmIjoxNzU0NTUzMzIxLCJqdGkiOiJWcDV0WW9RMFc4ZDJqc3pHIiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.EtB-QV-h4B-JpyZ9zxULTCg6fcKmPKiqFEICgkBNa2s",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n   \"guid\": \"710e4104-1027-11ea-8f96-e61f13537e43\",\r\n   \"name\": \"ТЕСТ 2\",\r\n   \"url\": \"urlurl\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/admin/ka-partners-to-delivery-companies/create"
+          },
+          "response": []
+        },
+        {
+          "name": "Ka Partners To Delivery Companies Delete",
+          "id": "9753c422-9e23-4c7c-b9d1-6a6797cbb86c",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3NTQ1NTMzMjEsImV4cCI6MTc1NTE1ODEyMSwibmJmIjoxNzU0NTUzMzIxLCJqdGkiOiJWcDV0WW9RMFc4ZDJqc3pHIiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.EtB-QV-h4B-JpyZ9zxULTCg6fcKmPKiqFEICgkBNa2s",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n   \"guid\": \"710e4104-1027-11ea-8f96-e61f13537e43\",\r\n   \"name\": \"ТЕСТ 2\",\r\n   \"url\": \"urlurl\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/admin/ka-partners-to-delivery-companies/delete/1"
+          },
+          "response": []
+        }
+      ],
+      "id": "2eb153aa-b5b3-41bc-92ee-613200fb662c"
+    },
+    {
+      "name": "Applications For Returns",
+      "item": [
+        {
+          "name": "Statuses",
+          "item": [
+            {
+              "name": "Applications For Returns Statuses Create",
+              "id": "934c0d98-45d7-4905-bb8f-acb118441d12",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3NTUxNjgwMzksImV4cCI6MTc1NTc3MjgzOSwibmJmIjoxNzU1MTY4MDM5LCJqdGkiOiJLMERuM09UUW96R3kzWXZ5Iiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.V47Gl4plMet1b7JWgDYy7ssaIIxH2c06fB49-EXSpB4",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"name\": \"test 2\",\r\n    \"title\": \"test 2\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "{{base_url_local}}/api/admin/applications-for-returns-statuses/create"
+              },
+              "response": []
+            },
+            {
+              "name": "Applications For Returns Statuses",
+              "id": "c635d4af-a80c-4231-a8e9-d659514b03c0",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3NTUxNjgwMzksImV4cCI6MTc1NTc3MjgzOSwibmJmIjoxNzU1MTY4MDM5LCJqdGkiOiJLMERuM09UUW96R3kzWXZ5Iiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.V47Gl4plMet1b7JWgDYy7ssaIIxH2c06fB49-EXSpB4",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"name\": \"test 2\",\r\n    \"title\": \"test 2\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "{{base_url_local}}/api/admin/applications-for-returns-statuses"
+              },
+              "response": []
+            },
+            {
+              "name": "Applications For Returns Statuses Update",
+              "id": "787c2efb-fade-4785-a2f8-ef72ba7aa1b3",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3NTUxNjgwMzksImV4cCI6MTc1NTc3MjgzOSwibmJmIjoxNzU1MTY4MDM5LCJqdGkiOiJLMERuM09UUW96R3kzWXZ5Iiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.V47Gl4plMet1b7JWgDYy7ssaIIxH2c06fB49-EXSpB4",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"name\": \"test 2 new\",\r\n    \"title\": \"test 2 new\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "{{base_url_local}}/api/admin/applications-for-returns-statuses/update/2"
+              },
+              "response": []
+            },
+            {
+              "name": "Applications For Returns Statuses Delete",
+              "id": "8fe55d2d-4dd6-4cad-9f45-e77554eabdda",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3NTUxNjgwMzksImV4cCI6MTc1NTc3MjgzOSwibmJmIjoxNzU1MTY4MDM5LCJqdGkiOiJLMERuM09UUW96R3kzWXZ5Iiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.V47Gl4plMet1b7JWgDYy7ssaIIxH2c06fB49-EXSpB4",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"name\": \"test 2 new\",\r\n    \"title\": \"test 2 new\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "{{base_url_local}}/api/admin/applications-for-returns-statuses/delete/2"
+              },
+              "response": []
+            }
+          ],
+          "id": "20b0f6d3-7ff6-4831-a8bd-32f149f65481"
+        },
+        {
+          "name": "Reasons",
+          "item": [
+            {
+              "name": "Applications For Returns Reasons",
+              "id": "6d64f680-e1fb-40ae-8526-c3f1a8217703",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3NTUxNjgwMzksImV4cCI6MTc1NTc3MjgzOSwibmJmIjoxNzU1MTY4MDM5LCJqdGkiOiJLMERuM09UUW96R3kzWXZ5Iiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.V47Gl4plMet1b7JWgDYy7ssaIIxH2c06fB49-EXSpB4",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"name\": \"test 2\",\r\n    \"title\": \"test 2\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "{{base_url_local}}/api/admin/applications-for-returns-reasons"
+              },
+              "response": []
+            },
+            {
+              "name": "Applications For Returns Reasons Delete",
+              "id": "24f9445e-f7dd-4656-8028-0fd99310c6d6",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3NTUxNjgwMzksImV4cCI6MTc1NTc3MjgzOSwibmJmIjoxNzU1MTY4MDM5LCJqdGkiOiJLMERuM09UUW96R3kzWXZ5Iiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.V47Gl4plMet1b7JWgDYy7ssaIIxH2c06fB49-EXSpB4",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"name\": \"test 2 new\",\r\n    \"title\": \"test 2 new\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "{{base_url_local}}/api/admin/applications-for-returns-reasons/delete/2"
+              },
+              "response": []
+            },
+            {
+              "name": "Applications For Returns Reasons Create",
+              "id": "370afd6f-6b61-420e-b9cb-a32df61d53c4",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3NTUxNjgwMzksImV4cCI6MTc1NTc3MjgzOSwibmJmIjoxNzU1MTY4MDM5LCJqdGkiOiJLMERuM09UUW96R3kzWXZ5Iiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.V47Gl4plMet1b7JWgDYy7ssaIIxH2c06fB49-EXSpB4",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"name\": \"test 2\",\r\n    \"title\": \"test 2\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "{{base_url_local}}/api/admin/applications-for-returns-reasons/create"
+              },
+              "response": []
+            },
+            {
+              "name": "Applications For Returns Reasons Update",
+              "id": "121da417-12b7-459c-8aa2-5462f5cb232c",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3NTUxNjgwMzksImV4cCI6MTc1NTc3MjgzOSwibmJmIjoxNzU1MTY4MDM5LCJqdGkiOiJLMERuM09UUW96R3kzWXZ5Iiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.V47Gl4plMet1b7JWgDYy7ssaIIxH2c06fB49-EXSpB4",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"name\": \"test 2 new\",\r\n    \"title\": \"test 2 new\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "{{base_url_local}}/api/admin/applications-for-returns-reasons/update/1"
+              },
+              "response": []
+            }
+          ],
+          "id": "1b7680a5-bfe6-4fc3-9e37-fb49c6f52962"
+        },
+        {
+          "name": "Applications For Returns",
+          "id": "081aaf55-8698-4d42-b814-7a794bdf5e68",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3NTUxNjgwMzksImV4cCI6MTc1NTc3MjgzOSwibmJmIjoxNzU1MTY4MDM5LCJqdGkiOiJLMERuM09UUW96R3kzWXZ5Iiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.V47Gl4plMet1b7JWgDYy7ssaIIxH2c06fB49-EXSpB4",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"test 2\",\r\n    \"title\": \"test 2\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/admin/applications-for-returns"
+          },
+          "response": []
+        },
+        {
+          "name": "Application For Returns",
+          "id": "0b3e4635-73e7-473d-b578-6590ac23899c",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3NTUxNjgwMzksImV4cCI6MTc1NTc3MjgzOSwibmJmIjoxNzU1MTY4MDM5LCJqdGkiOiJLMERuM09UUW96R3kzWXZ5Iiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.V47Gl4plMet1b7JWgDYy7ssaIIxH2c06fB49-EXSpB4",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"test 2\",\r\n    \"title\": \"test 2\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/admin/applications-for-returns/1"
+          },
+          "response": []
+        },
+        {
+          "name": "Application For Returns Create",
+          "id": "765ea787-f578-41d7-831c-7679b6470657",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3NTUxNjgwMzksImV4cCI6MTc1NTc3MjgzOSwibmJmIjoxNzU1MTY4MDM5LCJqdGkiOiJLMERuM09UUW96R3kzWXZ5Iiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.V47Gl4plMet1b7JWgDYy7ssaIIxH2c06fB49-EXSpB4",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"date\": null,\r\n    \"status_id\": 1,\r\n    \"reason_id\": 1,\r\n    \"organization_guid\": null,\r\n    \"realization_guid\": null,\r\n    \"department_guid\": null,\r\n    \"description\": \"test\",\r\n    \"comment\": \"test\",\r\n    \"initiator_guid\": null,\r\n    \"responsible_guid\": null,\r\n    \"employee_guid\": null,\r\n    \"counterparty_guid\": null,\r\n    \"full_name\": \"test test test\",\r\n    \"role\": \"admin\",\r\n    \"phone\": \"89001231231\",\r\n    \"email\": \"test@test.test\",\r\n    \"application_items\": [\r\n        {\r\n            \"nomenclature_guid\": \"c7cdf60b-397e-11ed-a2c8-e61f13537e43\",\r\n            \"amount\": 1\r\n        },\r\n        {\r\n            \"nomenclature_guid\": \"496a9ea9-2556-11ee-a44c-0050568e3182\",\r\n            \"amount\": 2\r\n        }\r\n    ],\r\n    \"application_documents\": [\r\n        {\r\n            \"url\": \"urlurl\",\r\n            \"name\": \"test_1\",\r\n            \"document_type_id\": 1\r\n        },\r\n        {\r\n            \"url\": \"hello_world\",\r\n            \"name\": \"test_2\",\r\n            \"document_type_id\": 2\r\n        }\r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/admin/applications-for-returns/create"
+          },
+          "response": []
+        },
+        {
+          "name": "Application For Returns Update",
+          "id": "b85ac15c-6057-4931-9cfb-abc3bca141e3",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3NTUxNjgwMzksImV4cCI6MTc1NTc3MjgzOSwibmJmIjoxNzU1MTY4MDM5LCJqdGkiOiJLMERuM09UUW96R3kzWXZ5Iiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.V47Gl4plMet1b7JWgDYy7ssaIIxH2c06fB49-EXSpB4",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"date\": null,\r\n    \"status_id\": 1,\r\n    \"reason_id\": 1,\r\n    \"organization_guid\": null,\r\n    \"realization_guid\": null,\r\n    \"department_guid\": null,\r\n    \"description\": \"test\",\r\n    \"comment\": \"test\",\r\n    \"initiator_guid\": null,\r\n    \"responsible_guid\": null,\r\n    \"employee_guid\": null,\r\n    \"counterparty_guid\": null,\r\n    \"full_name\": \"test test test\",\r\n    \"role\": \"admin\",\r\n    \"phone\": \"89001231231\",\r\n    \"email\": \"test@test.test\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/admin/applications-for-returns/update/1"
+          },
+          "response": []
+        },
+        {
+          "name": "Application For Returns Delete",
+          "id": "24880f03-2173-40ca-9b83-02269fbdf627",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3NTUxNjgwMzksImV4cCI6MTc1NTc3MjgzOSwibmJmIjoxNzU1MTY4MDM5LCJqdGkiOiJLMERuM09UUW96R3kzWXZ5Iiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.V47Gl4plMet1b7JWgDYy7ssaIIxH2c06fB49-EXSpB4",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/admin/applications-for-returns/delete/1"
+          },
+          "response": []
+        }
+      ],
+      "id": "774243cb-d705-4549-84c4-2cf481d86259"
+    },
+    {
+      "name": "Logistic Companies",
+      "item": [
+        {
+          "name": "Lc Resources",
+          "item": [
+            {
+              "name": "Lc Resources Get",
+              "id": "fbb8f652-885c-47f0-ae26-e2bd305d2a7e",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MTA0MjE4NzcsImV4cCI6MTcxMTAyNjY3NywibmJmIjoxNzEwNDIxODc3LCJqdGkiOiJRU2FONkJlUlF3OFp0ZVhiIiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.4dAUU6LKSFl7h2dN3PCduoobmCgo8kl8NjhAgvi9WFY",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [],
+                "url": "{{base_url_local}}/api/admin/logistic-companies/lc-resources"
+              },
+              "response": []
+            },
+            {
+              "name": "Lc Resources Create",
+              "id": "e7ca0a85-4f1b-4222-948c-22ebda2288e6",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MTA0MjE4NzcsImV4cCI6MTcxMTAyNjY3NywibmJmIjoxNzEwNDIxODc3LCJqdGkiOiJRU2FONkJlUlF3OFp0ZVhiIiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.4dAUU6LKSFl7h2dN3PCduoobmCgo8kl8NjhAgvi9WFY",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"name\": \"test\",\r\n    \"title\": \"test title\",\r\n    \"class_name\": \"class_name test\",\r\n    \"api_url\": \"url\",\r\n    \"password\": null,\r\n    \"login\": null,\r\n    \"token\": null\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "{{base_url_local}}/api/admin/logistic-companies/lc-resources/create"
+              },
+              "response": []
+            },
+            {
+              "name": "Lc Resources Update",
+              "id": "d0bd2556-0cdb-4141-b1d6-9ec587771260",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTc1ODc4MzM2MCwiZXhwIjoxNzU5Mzg4MTYwLCJuYmYiOjE3NTg3ODMzNjAsImp0aSI6Im5QUUNuM3FGYkduWlpYcW4iLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.zs78Hx2YHAX8SwUU56Ry0RmCgTA-3goD3gblb7HNpVg",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"name\": \"cdek\",\r\n    \"title\": \"СДЭК\",\r\n    \"class_name\": \"CdekService\",\r\n    \"api_url\": \"https://api.edu.cdek.ru\",\r\n    \"login\":\"wqGwiQx0gg8mLtiEKsUinjVSICCjtTEP\",\r\n    \"password\":\"RmAmgvSgSl1yirlz9QupbzOJVqhCxcP5\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "{{base_url_local}}/api/admin/logistic-companies/lc-resources/4/update"
+              },
+              "response": []
+            }
+          ],
+          "id": "6162b1e2-a0b7-4755-a20b-4332d5399a04"
+        },
+        {
+          "name": "Lc Delivery Requests",
+          "item": [
+            {
+              "name": "Lc Delivery Requests Get",
+              "id": "68202fbc-8fde-4356-846a-6d2c530eb5fe",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MTA0MjE4NzcsImV4cCI6MTcxMTAyNjY3NywibmJmIjoxNzEwNDIxODc3LCJqdGkiOiJRU2FONkJlUlF3OFp0ZVhiIiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.4dAUU6LKSFl7h2dN3PCduoobmCgo8kl8NjhAgvi9WFY",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [],
+                "url": "{{base_url_local}}/api/admin/logistic-companies/lc-delivery-requests"
+              },
+              "response": []
+            }
+          ],
+          "id": "e56f3026-d4f0-4910-995a-6bc9f9a7836e"
+        }
+      ],
+      "id": "d354fc47-a8a8-4e75-9b71-418ecca585af"
+    },
+    {
+      "name": "Wo Offers",
+      "item": [
+        {
+          "name": "Wo Offers Get",
+          "id": "1a8889d5-789e-4150-859c-123bb04ab74f",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/admin/wo-offers"
+          },
+          "response": []
+        },
+        {
+          "name": "Wo Offers Create",
+          "id": "6fe48210-9e16-4647-b4f0-e258dc0af14c",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"title\": \"test_offer 4\",\r\n    \"description\": \"just test\",\r\n    \"legal_status\": \"ФизЛицо\",\r\n    \"date_start\": \"2025-10-11 00:00:00\",\r\n    \"date_end\": \"2027-06-11 00:00:00\",\r\n    \"websites\": [\r\n        \"55cd4202-2f29-11e7-a9eb-e61f13537e43\",\r\n        \"cbbafb01-2cee-11e7-a9eb-e61f13537e43\",\r\n        \"7f905630-f274-11ee-bc81-0050568e3182\",\r\n        \"70d5d263-3708-11f0-a2fa-0050568e4798\"\r\n    ],\r\n    \"banners\": [\r\n        {\r\n            \"type\": \"horizontal\",\r\n            \"url\": \"url_1\"\r\n        },\r\n        {\r\n            \"type\": \"vertical\",\r\n            \"url\": \"url_2\"\r\n        },\r\n        {\r\n            \"type\": \"square\",\r\n            \"url\": \"url_3\"\r\n        }\r\n    ]\r\n    \r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/admin/wo-offers/create"
+          },
+          "response": []
+        },
+        {
+          "name": "Wo Offers Update",
+          "id": "d5eab8e7-8e6c-48c0-ba35-079c09ae8a2e",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"title\": \"test_offerdsas\",\r\n    \"description\": \"just test\",\r\n    \"square_banner\": \"banner_1\",\r\n    \"horizontal_banner\": \"banner_2\",\r\n    \"vertical_banner\": \"banner_3\",\r\n    \"legal_status\": \"ФизЛицо\",\r\n    \"date_start\": \"2025-10-05 00:00:00\",\r\n    \"date_end\": \"2027-06-11 00:00:00\",\r\n    \"websites\": [\r\n        \"e4d2143a-de6f-11e7-a3f6-e61f13537e43\",\r\n        \"55cd4202-2f29-11e7-a9eb-e61f13537e43\",\r\n        \"cbbafb01-2cee-11e7-a9eb-e61f13537e43\",\r\n        \"7f905630-f274-11ee-bc81-0050568e3182\",\r\n        \"70d5d263-3708-11f0-a2fa-0050568e4798\"\r\n    ],\r\n    \"banners\": [\r\n        {\r\n            \"type\": \"horizontal\",\r\n            \"url\": \"url_1\"\r\n        },\r\n        {\r\n            \"type\": \"vertical\",\r\n            \"url\": \"url_2\"\r\n        },\r\n        {\r\n            \"type\": \"square\",\r\n            \"url\": \"url_3\"\r\n        }\r\n    ]\r\n    \r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/admin/wo-offers/update/4"
+          },
+          "response": []
+        },
+        {
+          "name": "Wo Offers Delete",
+          "id": "259b1a98-4fa6-4b84-b0aa-63dc33016940",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"title\": \"test_offer\",\r\n    \"desription\": \"just test\",\r\n    \"square_banner\": \"banner_1\",\r\n    \"horizontal_banner\": \"banner_2\",\r\n    \"vertical_banner\": \"banner_3\",\r\n    \"legal_status\": null,\r\n    \"date_start\": \"2025-10-11 00:00:00\",\r\n    \"date_end\": \"2027-06-11 00:00:00\",\r\n    \"websites\": [\r\n        \"55cd4202-2f29-11e7-a9eb-e61f13537e43\",\r\n        \"cbbafb01-2cee-11e7-a9eb-e61f13537e43\",\r\n        \"7f905630-f274-11ee-bc81-0050568e3182\",\r\n        \"70d5d263-3708-11f0-a2fa-0050568e4798\"\r\n    ]\r\n    \r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/admin/wo-offers/delete/1"
+          },
+          "response": []
+        },
+        {
+          "name": "Wo Offers Items",
+          "id": "bb6adcb8-a49f-4fa2-9851-b9883728da1f",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"title\": \"test_offer\",\r\n    \"desription\": \"just test\",\r\n    \"square_banner\": \"banner_1\",\r\n    \"horizontal_banner\": \"banner_2\",\r\n    \"vertical_banner\": \"banner_3\",\r\n    \"legal_status\": null,\r\n    \"date_start\": \"2025-10-11 00:00:00\",\r\n    \"date_end\": \"2027-06-11 00:00:00\",\r\n    \"websites\": [\r\n        \"55cd4202-2f29-11e7-a9eb-e61f13537e43\",\r\n        \"cbbafb01-2cee-11e7-a9eb-e61f13537e43\",\r\n        \"7f905630-f274-11ee-bc81-0050568e3182\",\r\n        \"70d5d263-3708-11f0-a2fa-0050568e4798\"\r\n    ]\r\n    \r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/admin/wo-offers/1/items"
+          },
+          "response": []
+        },
+        {
+          "name": "Wo Offers Add Items",
+          "id": "3704a12c-3220-4e06-8e00-5fe4c7b03e2f",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"items\": [\r\n        {\r\n            \"nomenclature_guid\": \"00010f32-9897-11ed-9fcc-e61f13537e43\",\r\n            \"discount\": 50,\r\n            \"is_without_changing_cost\": true,\r\n            \"is_balance_discount\": false,\r\n            \"balance_for_discount\": null\r\n        },\r\n        {\r\n            \"nomenclature_guid\": \"0005566a-389b-11eb-97a0-e61f13537e43\",\r\n            \"discount\": 50,\r\n            \"is_without_changing_cost\": true,\r\n            \"is_balance_discount\": true,\r\n            \"balance_for_discount\": 10\r\n        },\r\n        {\r\n            \"nomenclature_guid\": \"000a76a7-89bd-11ec-a276-e61f13537e43\",\r\n            \"discount\": 50,\r\n            \"is_without_changing_cost\": false,\r\n            \"is_balance_discount\": false,\r\n            \"balance_for_discount\": null\r\n        }\r\n    ]\r\n    \r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/admin/wo-offers/add-items/2"
+          },
+          "response": []
+        },
+        {
+          "name": "Wo Offers Items Update",
+          "id": "c14af93b-b7cb-4ff3-81be-8edef34a80e2",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"discount\": 50,\r\n    \"is_without_changing_cost\": true,\r\n    \"is_balance_discount\": false,\r\n    \"balance_for_discount\": null\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/admin/wo-offers-items/update/1"
+          },
+          "response": []
+        },
+        {
+          "name": "Wo Offers Items Delete",
+          "id": "b942a886-70b3-4e15-b153-53f0f388fe4c",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"discount\": 50,\r\n    \"is_without_changing_cost\": true,\r\n    \"is_balance_discount\": false,\r\n    \"balance_for_discount\": null\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/admin/wo-offers-items/delete/1"
+          },
+          "response": []
+        },
+        {
+          "name": "Wo Offers Import Items",
+          "id": "99e991c9-3297-4453-9252-3228acada0f7",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "file",
+                  "type": "file",
+                  "src": "/C:/Users/user/Downloads/wo_offers_items-1.xlsx"
+                }
+              ]
+            },
+            "url": "{{base_url_local}}/api/admin/wo-offers/import-items/4"
+          },
+          "response": []
+        }
+      ],
+      "id": "c07fefa0-da61-4508-b7e7-d88fafdc0167"
+    },
+    {
+      "name": "Wo Promo Codes",
+      "item": [
+        {
+          "name": "Wo Promo Codes Save",
+          "id": "1f4f639e-38a6-46d1-848a-3d6ec4bf3311",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n\r\n    \"promo_code\": \"test-promo-code-2025_10_31\",\r\n    \"discount\": \"11\",\r\n    \"is_active\": true,\r\n    \"date_start\": \"2025-10-31 00:00:00\",\r\n    \"date_end\": \"2025-11-01 00:00:00\",\r\n    \"name\": \"test\",\r\n    \"description\": \"description\",\r\n    \"discount_type\": \"sum\",\r\n    \"objects\": [\r\n        {\r\n            \"object_guid\": \"24e5117f-c670-11e1-a782-e61f13537e43\",\r\n            \"object_type_id\": 1,\r\n            \"quantity_total\": 1,\r\n            \"quantity_per_user\": 1\r\n        }\r\n    ],\r\n    \"websites\": [\r\n        \"70d5d263-3708-11f0-a2fa-0050568e4798\"\r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/admin/wo-promo-code/save"
+          },
+          "response": []
+        },
+        {
+          "name": "Wo Promo Codes",
+          "id": "80dd6f4a-22d8-4a1d-b901-7b17b0d77ff6",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n\r\n    \"promo_code\": \"test-promo-code-2025_10_31\",\r\n    \"discount\": \"11\",\r\n    \"is_active\": true,\r\n    \"date_start\": \"2025-10-31 00:00:00\",\r\n    \"date_end\": \"2025-11-01 00:00:00\",\r\n    \"name\": \"test\",\r\n    \"description\": \"description\",\r\n    \"discount_type\": \"sum\",\r\n    \"objects\": [\r\n        {\r\n            \"object_guid\": \"24e5117f-c670-11e1-a782-e61f13537e43\",\r\n            \"object_type_id\": 1,\r\n            \"quantity_total\": 1,\r\n            \"quantity_per_user\": 1\r\n        }\r\n    ],\r\n    \"websites\": [\r\n        \"70d5d263-3708-11f0-a2fa-0050568e4798\"\r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/admin/wo-promo-codes"
+          },
+          "response": []
+        },
+        {
+          "name": "Wo Promo Code",
+          "id": "22bc4d06-beba-46fa-91da-e5ea02cc5a7c",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n\r\n    \"promo_code\": \"test-promo-code-2025_10_31\",\r\n    \"discount\": \"11\",\r\n    \"is_active\": true,\r\n    \"date_start\": \"2025-10-31 00:00:00\",\r\n    \"date_end\": \"2025-11-01 00:00:00\",\r\n    \"name\": \"test\",\r\n    \"description\": \"description\",\r\n    \"discount_type\": \"sum\",\r\n    \"objects\": [\r\n        {\r\n            \"object_guid\": \"24e5117f-c670-11e1-a782-e61f13537e43\",\r\n            \"object_type_id\": 1,\r\n            \"quantity_total\": 1,\r\n            \"quantity_per_user\": 1\r\n        }\r\n    ],\r\n    \"websites\": [\r\n        \"70d5d263-3708-11f0-a2fa-0050568e4798\"\r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/admin/wo-promo-code/2"
+          },
+          "response": []
+        },
+        {
+          "name": "Wo Promo Code Used",
+          "id": "bf1c7ecc-b93d-49bc-be6c-fd0f22a1baa0",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n\r\n    \"promo_code\": \"test-promo-code-2025_10_31\",\r\n    \"discount\": \"11\",\r\n    \"is_active\": true,\r\n    \"date_start\": \"2025-10-31 00:00:00\",\r\n    \"date_end\": \"2025-11-01 00:00:00\",\r\n    \"name\": \"test\",\r\n    \"description\": \"description\",\r\n    \"discount_type\": \"sum\",\r\n    \"objects\": [\r\n        {\r\n            \"object_guid\": \"24e5117f-c670-11e1-a782-e61f13537e43\",\r\n            \"object_type_id\": 1,\r\n            \"quantity_total\": 1,\r\n            \"quantity_per_user\": 1\r\n        }\r\n    ],\r\n    \"websites\": [\r\n        \"70d5d263-3708-11f0-a2fa-0050568e4798\"\r\n    ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/admin/wo-promo-code/2"
+          },
+          "response": []
+        }
+      ],
+      "id": "741f1148-0d19-4bcf-8111-57952c58b387"
+    },
+    {
+      "name": "Wo Discounts Requests",
+      "item": [
+        {
+          "name": "Admin Wo Discounts Requests Get",
+          "id": "48558b32-01b6-482f-a544-e4b3592c9b9b",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3NjYxNTE1NDksImV4cCI6MTc2Njc1NjM0OSwibmJmIjoxNzY2MTUxNTQ5LCJqdGkiOiJtVG4xT1VHbERUODY1MmdXIiwic3ViIjoyNjQ2LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Ki8SHkIxTe-_5cSYEiRRhUEpGYoq9Z6tlTqyjioieEw",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api/admin/wo-discounts-requests"
+          },
+          "response": []
+        },
+        {
+          "name": "Admin Wo Discounts Requests Approve",
+          "id": "7cab9900-7cee-4fe2-a4f4-3b67c015b8ba",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3NjYxNTE1NDksImV4cCI6MTc2Njc1NjM0OSwibmJmIjoxNzY2MTUxNTQ5LCJqdGkiOiJtVG4xT1VHbERUODY1MmdXIiwic3ViIjoyNjQ2LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Ki8SHkIxTe-_5cSYEiRRhUEpGYoq9Z6tlTqyjioieEw",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"is_approved\": true,\r\n    \"price\": 200,\r\n    \"amount\": 3,\r\n    \"answer\": \"hello\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api/admin/wo-discounts-requests/approve/2"
+          },
+          "response": []
+        }
+      ],
+      "id": "1b104893-7e6e-4a98-bfaf-6073836a38da"
+    }
+  ]
+}

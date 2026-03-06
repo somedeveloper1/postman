@@ -1,0 +1,278 @@
+{
+  "info": {
+    "_postman_id": "81d5775b-3147-4397-8af1-35a5b325fdb4",
+    "name": "CDEK",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Locations",
+      "item": [
+        {
+          "name": "Locations Cities",
+          "id": "b63bf504-c1a8-4e7e-9d05-b53c04eeb218",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{cdek_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://api.edu.cdek.ru/v2/location/cities",
+              "protocol": "https",
+              "host": [
+                "api",
+                "edu",
+                "cdek",
+                "ru"
+              ],
+              "path": [
+                "v2",
+                "location",
+                "cities"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Location Search",
+          "id": "17efd5cc-b473-4655-8cdf-2e818ffdad10",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{cdek_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://api.edu.cdek.ru/v2/location/suggest/cities?name=Саратов&country_code=RU",
+              "protocol": "https",
+              "host": [
+                "api",
+                "edu",
+                "cdek",
+                "ru"
+              ],
+              "path": [
+                "v2",
+                "location",
+                "suggest",
+                "cities"
+              ],
+              "query": [
+                {
+                  "key": "name",
+                  "value": "Саратов"
+                },
+                {
+                  "key": "country_code",
+                  "value": "RU"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delivery Points",
+          "id": "4b6d46db-38ae-4ce1-bb21-80b35c869d53",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{cdek_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://api.edu.cdek.ru/v2/deliverypoints",
+              "protocol": "https",
+              "host": [
+                "api",
+                "edu",
+                "cdek",
+                "ru"
+              ],
+              "path": [
+                "v2",
+                "deliverypoints"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "a4ec45e7-a07c-4523-bc64-bad5cc29a431"
+    },
+    {
+      "name": "Tariffs",
+      "item": [
+        {
+          "name": "Tariff And Service",
+          "id": "dbcb0097-d519-44eb-a397-cf4753548e3e",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{cdek_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n\t\"date\": \"2025-11-28T13:00:00+0300\",\r\n\t\"type\": 1,\r\n\t\"from_location\": {\r\n\t\t\"postal_code\": \"142703\",\r\n\t\t\"country_code\": \"RU\",\r\n\t\t\"city\": \"Видное\",\r\n\t\t\"address\": \"Белокаменное шоссе, 6Ю\",\r\n\t\t\"contragent_type\": \"LEGAL_ENTITY\"\r\n\t},\r\n\t\"to_location\": {\r\n\t\t\"postal_code\": \"410012\",\r\n\t\t\"country_code\": \"RU\",\r\n\t\t\"city\": \"Саратов\",\r\n\t\t\"address\": \"улица Большая Казачья, 113/38\",\r\n\t\t\"contragent_type\": \"LEGAL_ENTITY\"\r\n\t},\r\n\t\"services\": [\r\n\t\t{\r\n\t\t\t\"code\": \"INSURANCE\",\r\n\t\t\t\"parameter\": 84890\r\n\t\t}\r\n\t],\r\n\t\"packages\": [\r\n\t\t{\r\n\t\t\t\"weight\": 79000,\r\n\t\t\t\"length\": 84,\r\n\t\t\t\"width\": 40,\r\n\t\t\t\"height\": 84\r\n\t\t}\r\n\t]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://api.edu.cdek.ru/v2/calculator/tariffAndService",
+              "protocol": "https",
+              "host": [
+                "api",
+                "edu",
+                "cdek",
+                "ru"
+              ],
+              "path": [
+                "v2",
+                "calculator",
+                "tariffAndService"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Tariff List",
+          "id": "c88030d8-553e-413a-ba39-c2a3483c9367",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{cdek_token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://api.edu.cdek.ru/v2/calculator/alltariffs",
+              "protocol": "https",
+              "host": [
+                "api",
+                "edu",
+                "cdek",
+                "ru"
+              ],
+              "path": [
+                "v2",
+                "calculator",
+                "alltariffs"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "50dec68b-7db2-4836-b8c4-e2d1b8c5e856"
+    },
+    {
+      "name": "Auth",
+      "item": [
+        {
+          "name": "Auth",
+          "id": "867019fe-69bb-4889-b4a7-8e46e048042a",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "https://api.edu.cdek.ru/v2/oauth/token?grant_type=client_credentials&client_id=wqGwiQx0gg8mLtiEKsUinjVSICCjtTEP&client_secret=RmAmgvSgSl1yirlz9QupbzOJVqhCxcP5",
+              "protocol": "https",
+              "host": [
+                "api",
+                "edu",
+                "cdek",
+                "ru"
+              ],
+              "path": [
+                "v2",
+                "oauth",
+                "token"
+              ],
+              "query": [
+                {
+                  "key": "grant_type",
+                  "value": "client_credentials"
+                },
+                {
+                  "key": "client_id",
+                  "value": "{{cdek_client_id}}"
+                },
+                {
+                  "key": "client_secret",
+                  "value": "{{cdek_client_secret}}"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "3e4a2cf4-2d7a-4413-b589-eb9d4324b964"
+    }
+  ]
+}

@@ -1,0 +1,325 @@
+{
+  "info": {
+    "_postman_id": "aaf5df07-4cc7-47c3-8b92-cd7dee20d6f3",
+    "name": "Offers",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Offers",
+      "id": "e513b23d-49b1-494a-b815-92ffdc5764de",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NjI2MjIzNjEsImV4cCI6MTY2MzIyNzE2MSwibmJmIjoxNjYyNjIyMzYxLCJqdGkiOiJEVTl4RzJBZmpxeGtubGU3Iiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.KfT6muxXUHc6bRxDcLufzAv9vwMEEHGSwb-flheTQFY",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/offers"
+      },
+      "response": [
+        {
+          "id": "51e4d0e0-7a04-4f54-b65f-94ed73372141",
+          "name": "Default",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/offers",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "offers"
+              ]
+            }
+          },
+          "_postman_previewlanguage": "json",
+          "header": [],
+          "cookie": [],
+          "body": "[\n    {\n        \"number\": \"00000000088\",\n        \"name_of_the_promotion\": \"Super РасPROдажа!\",\n        \"description_of_promotion\": \"Скидки на ограниченный ассортимент.\\nДействуют только на товары в наличии на складе. Спешите, количество ограниченно!\",\n        \"start_data\": \"05.07.2020\",\n        \"end_data\": \"31.07.2021\",\n        \"product_of_the_day\": \"false\",\n        \"black_friday\": \"false\",\n        \"basket_discount\": \"false\",\n        \"set_1\": [\n            {\n                \"product\": \"07504f75-3c1c-11e5-8e3a-e61f13537e43\",\n                \"discount\": 10\n            },\n            {\n                \"product\": \"322cb7f3-3d02-11ea-8f96-e61f13537e43\",\n                \"discount\": 15\n            },\n            {\n                \"product\": \"5e049830-3ca2-11e4-9590-e61f13537e43\",\n                \"discount\": 10\n            }\n        ]\n    },\n    {\n        \"number\": \"00000000034\",\n        \"name_of_the_promotion\": \"Скидка на оборудование Robot Coupe при заказе через корзину сайта.\",\n        \"description_of_promotion\": [],\n        \"start_data\": \"02.03.2020\",\n        \"end_data\": \"31.07.2021\",\n        \"product_of_the_day\": \"false\",\n        \"black_friday\": \"false\",\n        \"basket_discount\": \"true\",\n        \"set_1\": [\n            {\n                \"product\": \"5dc9a9fb-f52a-11e3-a6e9-e61f13537e43\",\n                \"discount\": 10\n            },\n            {\n                \"product\": \"f1df57c9-95a1-11df-bfea-e61f13537e43\",\n                \"discount\": 10\n            },\n            {\n                \"product\": \"9c47bf26-d55b-11e1-a782-e61f13537e43\",\n                \"discount\": 10\n            }\n        ]\n    }\n]"
+        }
+      ]
+    },
+    {
+      "name": "Offers with Discounts",
+      "id": "76706401-4e10-4ec1-9168-97bc91d4dbde",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/offers-and-discounts"
+      },
+      "response": [
+        {
+          "id": "bace0495-e9ed-466e-a60b-8df0d65b90d2",
+          "name": "Default",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/offers",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "offers"
+              ]
+            }
+          },
+          "_postman_previewlanguage": "json",
+          "header": [],
+          "cookie": [],
+          "body": "[\n    {\n        \"number\": \"00000000088\",\n        \"name_of_the_promotion\": \"Super РасPROдажа!\",\n        \"description_of_promotion\": \"Скидки на ограниченный ассортимент.\\nДействуют только на товары в наличии на складе. Спешите, количество ограниченно!\",\n        \"start_data\": \"05.07.2020\",\n        \"end_data\": \"31.07.2021\",\n        \"product_of_the_day\": \"false\",\n        \"black_friday\": \"false\",\n        \"basket_discount\": \"false\",\n        \"set_1\": [\n            {\n                \"product\": \"07504f75-3c1c-11e5-8e3a-e61f13537e43\",\n                \"discount\": 10\n            },\n            {\n                \"product\": \"322cb7f3-3d02-11ea-8f96-e61f13537e43\",\n                \"discount\": 15\n            },\n            {\n                \"product\": \"5e049830-3ca2-11e4-9590-e61f13537e43\",\n                \"discount\": 10\n            }\n        ]\n    },\n    {\n        \"number\": \"00000000034\",\n        \"name_of_the_promotion\": \"Скидка на оборудование Robot Coupe при заказе через корзину сайта.\",\n        \"description_of_promotion\": [],\n        \"start_data\": \"02.03.2020\",\n        \"end_data\": \"31.07.2021\",\n        \"product_of_the_day\": \"false\",\n        \"black_friday\": \"false\",\n        \"basket_discount\": \"true\",\n        \"set_1\": [\n            {\n                \"product\": \"5dc9a9fb-f52a-11e3-a6e9-e61f13537e43\",\n                \"discount\": 10\n            },\n            {\n                \"product\": \"f1df57c9-95a1-11df-bfea-e61f13537e43\",\n                \"discount\": 10\n            },\n            {\n                \"product\": \"9c47bf26-d55b-11e1-a782-e61f13537e43\",\n                \"discount\": 10\n            }\n        ]\n    }\n]"
+        }
+      ]
+    },
+    {
+      "name": "Offer",
+      "id": "b263264b-7310-4c9c-ae91-f64b19d6c991",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/offers/5bba402c-6891-11ec-a276-e61f13537e43"
+      },
+      "response": [
+        {
+          "id": "9d89b92f-2037-4c71-852a-f63ed548d988",
+          "name": "Default",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url_local}}/api/offer/{{id}}",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "offer",
+                "{{id}}"
+              ]
+            }
+          },
+          "_postman_previewlanguage": "json",
+          "header": [],
+          "cookie": [],
+          "body": "{\r\n    \"number\": \"00000000088\",\r\n    \"name_of_the_promotion\": \"Super РасPROдажа!\",\r\n    \"description_of_promotion\": \"Скидки на ограниченный ассортимент.\\nДействуют только на товары в наличии на складе. Спешите, количество ограниченно!\",\r\n    \"start_data\": \"05.07.2020\",\r\n    \"end_data\": \"31.07.2021\",\r\n    \"product_of_the_day\": \"false\",\r\n    \"black_friday\": \"false\",\r\n    \"basket_discount\": \"false\",\r\n    \"set_1\": [\r\n        {\r\n        \"product\": \"07504f75-3c1c-11e5-8e3a-e61f13537e43\",\r\n        \"discount\": 10\r\n        },\r\n        {\r\n        \"product\": \"322cb7f3-3d02-11ea-8f96-e61f13537e43\",\r\n        \"discount\": 15\r\n        },\r\n        {\r\n        \"product\": \"5e049830-3ca2-11e4-9590-e61f13537e43\",\r\n        \"discount\": 10\r\n        },\r\n    ]\r\n}"
+        }
+      ]
+    },
+    {
+      "name": "Offers get JSON",
+      "id": "697ae753-d878-42e5-85ce-10a5fb25cf36",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzYzNzE4MjMsImV4cCI6MTYzNjQ1ODIyMywibmJmIjoxNjM2MzcxODIzLCJqdGkiOiJHcTBIOGpJNWhrNWZCV3kwIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.KaMmHLqyhdS4wvElLqc-_9OHgLDiJbuaMFFix6TJnK8",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/offers"
+      },
+      "response": []
+    },
+    {
+      "name": "Offers create JSON",
+      "id": "41c90037-7e65-49fe-9cb3-841e7b9bd50f",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/offers/create-json"
+      },
+      "response": []
+    },
+    {
+      "name": "Offers Deltas",
+      "id": "c59deb46-3f51-440c-bee4-2cdebc46ba61",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/offers/deltas"
+      },
+      "response": []
+    },
+    {
+      "name": "Offers With Discounts Deltas",
+      "id": "150124cd-9ab6-4041-a8c5-6913e1b58536",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/offers-and-discounts/deltas"
+      },
+      "response": []
+    },
+    {
+      "name": "Offers Deltas Delete",
+      "id": "460be5d5-f0b1-4dfa-ac63-6475ca1d52c0",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": "{{base_url_local}}/api/offers/delete-deltas"
+      },
+      "response": []
+    },
+    {
+      "name": "Offer Create",
+      "id": "ae264ed5-19b9-495a-ac6c-615bda6d4cf8",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n        \"guid\": \"9fefd01e-2562-11e9-a4f1-e61f13537e52\",\r\n        \"number\": \"00000000010\",\r\n        \"date\": \"2019-01-31T17:15:13\",\r\n        \"commentary\": \"скидка на Levin до 28.02.\",\r\n        \"date_start\": \"2019-01-31T00:00:00\",\r\n        \"date_end\": \"2019-02-28T00:00:00\",\r\n        \"discount\": 0,\r\n        \"website_guid\": \"76b04f66-6f0c-11e8-a2a5-e61f13537e43\",\r\n        \"is_show_discount_percent\": false,\r\n        \"name\": \"\",\r\n        \"description\": \"\",\r\n        \"is_no_price_change\": false,\r\n        \"set_1\": [\r\n            {\r\n                \"nomenclature_guid\": \"8e7c1a3b-6ed8-11e3-9b80-e61f13537e43\",\r\n                \"discount\": 6,\r\n                \"is_no_price_change\": false\r\n            },\r\n            {\r\n                \"nomenclature_guid\": \"18cc5c0c-6edc-11e3-9b80-e61f13537e43\",\r\n                \"discount\": 6,\r\n                \"is_no_price_change\": false\r\n            }\r\n        ]\r\n    }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/offer/submit"
+      },
+      "response": []
+    },
+    {
+      "name": "Offers Import",
+      "id": "aff2892e-ed3e-475c-aef8-a8650446e28d",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Transfer-Id",
+            "value": "202206271212",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n{\r\n\t\t\"guid\": \"069780fc-7f01-11ee-a4af-0050568e3182\",\r\n\t\t\"is_processed\": true,\r\n\t\t\"number\": \"00000000025\",\r\n\t\t\"date\": \"2023-11-09T16:07:16\",\r\n\t\t\"commentary\": \"Скидки кофемашины EKSI\",\r\n\t\t\"date_start\": \"2023-11-08T00:00:00\",\r\n\t\t\"date_end\": \"2023-12-29T00:00:00\",\r\n\t\t\"discount\": 10,\r\n\t\t\"website_guid\": \"e4d2143a-de6f-11e7-a3f6-e61f13537e43\",\r\n\t\t\"is_show_discount_percent\": true,\r\n\t\t\"name\": \"Специальное предложение на кофемашины EKSI\",\r\n\t\t\"description\": \"Специальное предложение на кофемашины EKSI.\\nСроки акции с 07.11.2023 до 29.12.2023\",\r\n        \"use_websites_list\": false,\r\n\t\t\"set_1\": [\r\n\t\t\t{\r\n\t\t\t\t\"nomenclature_guid\": \"07210f6d-ab8f-11ed-975b-e61f13537e43\",\r\n\t\t\t\t\"discount\": 10,\r\n\t\t\t\t\"is_no_price_change\": true\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"nomenclature_guid\": \"9ceea456-ab9d-11ed-975b-e61f13537e43\",\r\n\t\t\t\t\"discount\": 10,\r\n\t\t\t\t\"is_no_price_change\": true\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"nomenclature_guid\": \"6bf52560-ab9d-11ed-975b-e61f13537e43\",\r\n\t\t\t\t\"discount\": 10,\r\n\t\t\t\t\"is_no_price_change\": true\r\n\t\t\t}\r\n\t\t],\r\n\t\t\"offers_to_websites\": [\r\n\t\t\t{\r\n\t\t\t\t\"offer_guid\": \"069780fc-7f01-11ee-a4af-0050568e3182\",\r\n\t\t\t\t\"website_guid\": \"f0f05268-3014-11ec-a276-e61f13537e43\"\r\n\t\t\t}\r\n\t\t]\r\n\t}\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/table/import/offers"
+      },
+      "response": []
+    },
+    {
+      "name": "Offers Import PROD",
+      "id": "8b49566f-a022-4bd5-aa98-012eb96a126c",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"guid\": \"9fefd01e-2562-11e9-a4f1-e61f13537e43\",\r\n        \"number\": \"00000000010\",\r\n        \"date\": \"2019-01-31T17:15:13\",\r\n        \"commentary\": \"скидка на Levin до 28.02.\",\r\n        \"date_start\": \"2019-01-31T00:00:00\",\r\n        \"date_end\": \"2019-02-28T00:00:00\",\r\n        \"discount\": 0,\r\n        \"website_guid\": \"e4d2143a-de6f-11e7-a3f6-e61f13537e43\",\r\n        \"is_show_discount_percent\": false,\r\n        \"name\": \"\",\r\n        \"description\": \"\",\r\n        \"is_no_price_change\": false,\r\n        \"set_1\": [\r\n            {\r\n                \"nomenclature_guid\": \"8e7c1a3b-6ed8-11e3-9b80-e61f13537e43\",\r\n                \"discount\": 6,\r\n                \"is_no_price_change\": false\r\n            },\r\n            {\r\n                \"nomenclature_guid\": \"18cc5c0c-6edc-11e3-9b80-e61f13537e43\",\r\n                \"discount\": 6,\r\n                \"is_no_price_change\": false\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"guid\": \"30b230fe-25fc-11e9-a4f1-e61f13537e43\",\r\n        \"number\": \"00000000011\",\r\n        \"date\": \"2019-02-01T11:34:37\",\r\n        \"commentary\": \"Цены на неликвиды для Modern Bakery,согл. А.А., \",\r\n        \"date_start\": \"2019-01-29T00:00:00\",\r\n        \"date_end\": \"2020-12-31T00:00:00\",\r\n        \"discount\": 0,\r\n        \"website_guid\": \"e4d2143a-de6f-11e7-a3f6-e61f13537e43\",\r\n        \"is_show_discount_percent\": false,\r\n        \"name\": \"\",\r\n        \"description\": \"\",\r\n        \"is_no_price_change\": false,\r\n        \"set_1\": [\r\n            {\r\n                \"nomenclature_guid\": \"09caacfe-947b-11e7-a3f6-e61f13537e43\",\r\n                \"discount\": 18,\r\n                \"is_no_price_change\": false\r\n            }\r\n        ],\r\n        \"set_2\": [\r\n            {\r\n                \"nomenclature_guid\": \"2365f7f5-ebbc-11df-9be8-0002a54e8e57\",\r\n                \"discount\": 20,\r\n                \"is_no_price_change\": false\r\n            }\r\n        ]\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_prod}}/api/table/import/offers"
+      },
+      "response": []
+    }
+  ]
+}

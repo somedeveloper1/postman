@@ -1,0 +1,39 @@
+{
+  "info": {
+    "_postman_id": "ee768de6-96ef-4898-9a3a-005865390634",
+    "name": "For BITRIX",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "JSON create Data",
+      "id": "3babe9cd-1aea-4c3a-9e7c-2c79d56c8664",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/json-data/create"
+      },
+      "response": []
+    },
+    {
+      "name": "JSON get Data",
+      "id": "58a0033a-803f-4dcd-893a-775438b4c80d",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/json-data/get/claims"
+      },
+      "response": []
+    },
+    {
+      "name": "Tables from DB",
+      "id": "8f579260-2c03-4b3c-a41f-dd4305bd7cb3",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/json-data/tables"
+      },
+      "response": []
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "info": {
+    "_postman_id": "a9ed0ce5-cea0-4689-99a4-13da82e4f1c0",
+    "name": "Question",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Ozon Question",
+      "id": "213a8056-7ea9-4d60-8a3a-f51303ed51aa",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Client-Id",
+            "value": "{{ozon_client_id_header}}",
+            "type": "text"
+          },
+          {
+            "key": "Api-Key",
+            "value": "{{ozon_client_id}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"last_id\": \"\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api-seller.ozon.ru/v1/question/list",
+          "protocol": "https",
+          "host": [
+            "api-seller",
+            "ozon",
+            "ru"
+          ],
+          "path": [
+            "v1",
+            "question",
+            "list"
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "359b5fc2-14dd-429b-a040-2b4d35d5a37e",
+          "name": "Ozon Question",
+          "originalRequest": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Client-Id",
+                "value": "{{ozon_client_id_header}}",
+                "type": "text"
+              },
+              {
+                "key": "Api-Key",
+                "value": "{{ozon_client_id}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://api-seller.ozon.ru/v1/question/list",
+              "protocol": "https",
+              "host": [
+                "api-seller",
+                "ozon",
+                "ru"
+              ],
+              "path": [
+                "v1",
+                "question",
+                "list"
+              ]
+            }
+          },
+          "_postman_previewlanguage": null,
+          "header": null,
+          "cookie": [],
+          "body": null
+        }
+      ]
+    },
+    {
+      "name": "Ozon Question Info",
+      "id": "88eae038-681a-4997-a1b7-512992bd8b40",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Client-Id",
+            "value": "{{ozon_client_id_header}}",
+            "type": "text"
+          },
+          {
+            "key": "Api-Key",
+            "value": "{{ozon_client_id}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"last_id\": \"\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api-seller.ozon.ru/v1/question/list",
+          "protocol": "https",
+          "host": [
+            "api-seller",
+            "ozon",
+            "ru"
+          ],
+          "path": [
+            "v1",
+            "question",
+            "list"
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "3911c558-8cc2-48bc-80db-83a28b1e09f6",
+          "name": "Ozon Question",
+          "originalRequest": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Client-Id",
+                "value": "{{ozon_client_id_header}}",
+                "type": "text"
+              },
+              {
+                "key": "Api-Key",
+                "value": "{{ozon_client_id}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://api-seller.ozon.ru/v1/question/list",
+              "protocol": "https",
+              "host": [
+                "api-seller",
+                "ozon",
+                "ru"
+              ],
+              "path": [
+                "v1",
+                "question",
+                "list"
+              ]
+            }
+          },
+          "_postman_previewlanguage": null,
+          "header": null,
+          "cookie": [],
+          "body": null
+        }
+      ]
+    }
+  ]
+}

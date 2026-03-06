@@ -1,0 +1,93 @@
+﻿{
+  "info": {
+    "_postman_id": "4dc0b4f6-cb57-4f7d-9e18-95780051d85a",
+    "name": "Frontend Applications Versions",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Frontend Applications Versions Create",
+      "id": "b45a23e4-8c2e-42f8-9967-8e3c565f6254",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"version_number\": \"223456789\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/frontend-application-version/lk-t-d-ru/create",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "frontend-application-version",
+            "lk-t-d-ru",
+            "create"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Frontend Applications Versions Create Copy",
+      "id": "c1ae3267-f57e-4f4d-a76c-ecf1adc86683",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[{\r\n        \"guid\": \"4b76ef4c-a4b7-11e6-826a-e61f13537e43\",\r\n        \"code\": \"00000282026\",\r\n        \"name\": \"Насос-измельчитель электр. т.м. Санинасос SFA, мод. SANIDOUCHE\",\r\n        \"full_name\": \"Насос-измельчитель электр. т.м. Санинасос SFA, мод. SANIDOUCHE\",\r\n        \"set_number\": \"SANIDOUCHE\",\r\n        \"set_number_by_supplier\": \"SANIDOUCHE by supplier\",\r\n        \"brand_guid\": \"72711029-92b2-11e2-9910-e61f13537e43\",\r\n        \"weight_gross\": 0,\r\n        \"weight_net\": 0,\r\n        \"nomenclature_type_guid\": \"7868357b-956c-11df-bfea-e61f13537e43\",\r\n        \"size\": null,\r\n        \"guarantee\": 0,\r\n        \"residue_units_guid\": \"db953149-dd79-11dd-b60c-001a6498e70d\",\r\n        \"residue_units\": \"z\",\r\n        \"capacity\": 0,\r\n        \"voltage\": 0,\r\n        \"nomenclature_group_guid\": \"425aeca5-23ef-11e2-aa5e-e61f13537e43\",\r\n        \"supplier_counterparty_guid\": \"7745408e-b10d-11df-949f-e61f13537e43\",\r\n        \"responsible_department_manager_guid\": \"00000000-0000-0000-0000-000000000000\",\r\n        \"responsible_sales_manager_guid\": \"2783190e-955e-11df-bfea-e61f13537e43\",\r\n        \"nomenclature_feature_guid\": \"d2265c06-9570-11df-b3e0-e61f135382c7\",\r\n        \"country_guid\": \"b9404536-956d-11df-b3e0-e61f135382c7\",\r\n        \"is_service\": false,\r\n        \"nomenclature_guid\": \"00000000-0000-0000-0000-000000000000\",\r\n        \"special_type_guid\": \"00000000-0000-0000-0000-000000000000\",\r\n        \"is_traceable\": false,\r\n        \"to_delete\": false,\r\n        \"is_excluded\": false,\r\n        \"vat_rate\": \"НДС20\",\r\n        \"is_group\": false,\r\n        \"is_repurchase\": false,\r\n        \"is_price_actual_on_balance\": false,\r\n        \"description_additional\": \"Насос-измельчитель электр. т.м. Санинасос SFA, мод. SANIDOUCHE\",\r\n        \"description_for_website\": null,\r\n        \"set_number_for_website\": null,\r\n        \"name_for_website\": null,\r\n        \"brand_line_guid\": \"00000000-0000-0000-0000-000000000000\",\r\n        \"length_by_warehouse\": 0,\r\n        \"width_by_warehouse\": 0,\r\n        \"height_by_warehouse\": 0,\r\n        \"length_gross\": 0,\r\n        \"width_gross\": 0,\r\n        \"height_gross\": 0,\r\n        \"length_net\": null,\r\n        \"width_net\": null,\r\n        \"height_net\": null,\r\n        \"code_by_catalog\": \"code_by_catalog\",\r\n        \"certificate_number\": \"123456789\"\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/frontend-application-version/clear-site-data",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "frontend-application-version",
+            "clear-site-data"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

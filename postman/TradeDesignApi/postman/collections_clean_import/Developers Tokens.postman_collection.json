@@ -1,0 +1,39 @@
+{
+  "info": {
+    "_postman_id": "a73f92b2-1c0a-4c25-85e7-e10aa0bcbdab",
+    "name": "Developers Tokens",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Developer Token",
+      "id": "90e89ba4-0bca-4d43-b003-24aaf615bdf4",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbi1hcy1kZWFsZXJcLzYiLCJpYXQiOjE3MDA4Mzk3OTksImV4cCI6MTcwMDg0MzM5OSwibmJmIjoxNzAwODM5Nzk5LCJqdGkiOiJ0a055VjJKNE4za2xXdHRMIiwic3ViIjo0MiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.eS5hZihvZsr3StWe5K76aMOFM5z2864r3s2Ze7PjoY0",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/developer-token",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "developer-token"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

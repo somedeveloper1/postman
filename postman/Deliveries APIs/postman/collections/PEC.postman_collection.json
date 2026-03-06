@@ -1,0 +1,383 @@
+{
+  "info": {
+    "_postman_id": "1c0f2390-e6d4-4c1c-94fb-756a27751757",
+    "name": "PEC",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Calculator",
+      "id": "08f86562-b843-4430-b952-9d7e5163d100",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "basic",
+          "basic": [
+            {
+              "key": "password",
+              "value": "{{pec_api_key}}",
+              "type": "string"
+            },
+            {
+              "key": "username",
+              "value": "bestseller",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n   \"currencyCode\": \"643\", // Код валюты [String]. Необязательно. По умолчанию 643 - российский рубль.\r\n                          // Допустимые валюты см.в ответе метода /currency/all/\r\n\r\n   \"types\": [ 1 ], // Массив идентификаторов продуктов/тарифов ПЭК для расчета [Array][Number]. Обязательно.\r\n                   // Полный список доступных в API продуктов/тарифов можно получить методом /typesOfDelivery/all/\r\n                   // ВНИМАНИЕ! В настоящее время метод не позволяет рассчитывать стоимость по продукту/тарифу 5 - ПЭК:Express Авто \r\n   \"senderWarehouseId\": \"a678333f-2a2a-11e9-80ce-00155d713b38\", // Идентификатор склада отправителя [String]\r\n   \"receiverWarehouseId\": \"36cf9b64-a415-11dc-a911-000a5e19ccb4\", // Идентификатор склада получателя [String]\r\n   \"isOpenCarSender\": false, // Растентовка отправителя [Boolean]\r\n   \"isOpenCarReceiver\": false, // Растентовка получателя [Boolean]\r\n   \"isHyperMarket\": false, // признак гипермаркета [Boolean]\r\n   \"plannedDateTime\": \"2025-10-28T14:00:00\", // Дата и время планируемой передачи груза в ПЭК (по часовому поясу филиала отправления) [DateTime]:\r\n                                             // при заказанном заборе - дата и время начала интервала забора груза \r\n                                             // (не позднее 4-х часов до окончания работы филиала),\r\n                                             // при самопривозе - дата и время плановой сдачи груза на склад ПЭК\r\n   \"isInsurance\": true, // Страхование [Boolean]\r\n   \"isInsurancePrice\": 234.15, // Стоимость груза (сумма, на которую будет застрахован груз), руб [Number]\r\n   \"isPickUp\": false, // Нужен забор [Boolean]\r\n   \"isDelivery\": false, // Нужна доставка [Boolean]\r\n   \"needReturnDocuments\": false, // Возврат документов [Boolean] (см. комментарии)\r\n   \"needArrangeTransportationDocuments\": false, // Организация перевозки сопроводительных документов [Boolean] (см. комментарии)\r\n   \r\n   \"senderDistanceType\": 0, // В актуальной версии протокола не используется [Number]\r\n   \"receiverDistanceType\": 0, // В актуальной версии протокола не используется [Number]\r\n   \"pickupServices\": { // Погрузочно-разгрузочные работы при заборе\r\n       \"isLoading\": true, // Расчитывать ПРР [Boolean]\r\n       \"floor\": 0, // Поднять/спустить на этаж [Number]\r\n       \"carryingDistance\": 0, // Перенести груз (в метрах) [Number]\r\n       \"isElevator\": false // Подъем на лифте [Boolean]\r\n    },\r\n   \"deliveryServices\": { // Погрузочно-разгрузочные работы при доставке\r\n       \"isLoading\": true, // Расчитывать ПРР [Boolean]\r\n       \"floor\": 3, // Поднять/спустить на этаж [Number]\r\n       \"carryingDistance\": 50, // Перенести груз (в метрах) [Number]\r\n       \"isElevator\": true // Подъем на лифте [Boolean]\r\n   },\r\n   \"pickup\": {\r\n        \"address\" : \"Россия, Москва, улица Большая Лубянка, 2\",\t// Обязательный параметр для расчёта забора груза. Для успешного определения \r\n                                                                // координат адреса забора, передавайте все составляющие адреса в такой \r\n                                                                // последовательности: страна, регион, район, населенный пункт, улица, дом, \r\n                                                                // квартира и разделяйте их запятыми. Запрещено в данной строке указывать \r\n                                                                // данные, не являющиеся частью адреса (см. комментарии)\r\n        \"coordinates\" : { // Необязательный параметр координат адреса (используется для точности вычислений)\r\n            \"latitude\" : \"55.761011\",\r\n            \"longitude\" : \"37.627553\"\r\n        }\r\n   },\r\n   \"delivery\" : {\r\n        \"address\" : \"Саратов, Большая Казачья, 113/38\",\t// Обязательный параметр для расчёта доставки груза. Для успешного определения \r\n                                                                // координат адреса доставки, передавайте все составляющие адреса в такой \r\n                                                                // последовательности: страна, регион, район, населенный пункт, улица, дом, \r\n                                                                // квартира и разделяйте их запятыми. Запрещено в данной строке указывать \r\n                                                                // данные, не являющиеся частью адреса (см. комментарии)\r\n        \"coordinates\" : { // Необязательный параметр координат адреса (используется для точности вычислений)\r\n            \"latitude\" : \"55.761011\",\r\n            \"longitude\" : \"37.627553\"\r\n        }\r\n   },\r\n   \"counterpart\": { // Данные контрагента для расчета с учетом спецусловий\r\n        \"inn\": \"1234567890\", // ИНН контрагента [String]\r\n        \"kpp\": \"123456789\", // КПП контрагента [String], поле необязательно\r\n        \"counterpartClientCard\": \"1234567890\", // Номер карты клиента [String]\r\n        \"whoMakesCalculation\": [1] // Роль заказчика перевозки  [Array][Number]. (Кто производит расчет: \r\n                                         // 1 - отправитель, 2 - получатель, 3 - плательщик, 4 - не участник перевозки)\r\n   },\r\n   \"cargos\": [{ // Данные о грузе/грузоместах груза (см. комментарии) [Array]\r\n                // Для корректного расчёта передавайте не более двух знаков после запятой, \r\n                // На нашей стороне округление выполняется до сотых в большую сторону.\r\n                // Например, 0.00041 будет 0.01;  1.871001 будет 1.88\r\n      \"length\": 1, // Длина груза, м [Number]. Необязательно, если передан maxSize\r\n      \"width\": 1, // Ширина груза, м [Number]. Необязательно, если передан maxSize\r\n      \"height\": 0.8, // Высота груза, м [Number]. Необязательно, если передан maxSize\r\n      \"isHP\": false, // Защитная транспортировочная упаковка [Boolean]. Необязательно\r\n      \"sealingPositionsCount\": 0, // Количество мест для пломбировки - пломб (применяются для небольших мест или сложных грузов)[Number]. Необязательно.\r\n      \"weight\": 80 // Вес, кг [Number]. Обязательно.\r\n                                      // Рекомендуем передавать только в массиве с одним элементом\r\n                                      // для общих параметров всего груза.\r\n   }]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://kabinet.pecom.ru/api/v1/calculator/calculateprice",
+          "protocol": "https",
+          "host": [
+            "kabinet",
+            "pecom",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "calculator",
+            "calculateprice"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Find zone by address",
+      "id": "0e7a951e-f4dc-4cc4-9d21-03c17dd20683",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "basic",
+          "basic": [
+            {
+              "key": "password",
+              "value": "{{pec_api_key}}",
+              "type": "string"
+            },
+            {
+              "key": "username",
+              "value": "bestseller",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"address\": \"Видное, Белокаменное шоссе, 6Ю\" // Адрес [string]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://kabinet.pecom.ru/api/v1/branches/findzonebyaddress/",
+          "protocol": "https",
+          "host": [
+            "kabinet",
+            "pecom",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "branches",
+            "findzonebyaddress",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Types Of Delivery",
+      "id": "b198d9b5-9dbb-4d33-b8f0-633711f9581e",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "basic",
+          "basic": [
+            {
+              "key": "password",
+              "value": "{{pec_api_key}}",
+              "type": "string"
+            },
+            {
+              "key": "username",
+              "value": "bestseller",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"address\": \"Московская область, Ленинский городской округ, Видное, Белокаменное шоссе, 6Ю, 142703\" // Адрес [string]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://kabinet.pecom.ru/api/v1/typesOfDelivery/all/",
+          "protocol": "https",
+          "host": [
+            "kabinet",
+            "pecom",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "typesOfDelivery",
+            "all",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Branches Find Zone",
+      "id": "6e68927b-b97b-452b-994c-5d59e9348372",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "basic",
+          "basic": [
+            {
+              "key": "password",
+              "value": "{{pec_api_key}}",
+              "type": "string"
+            },
+            {
+              "key": "username",
+              "value": "bestseller",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"address\": \"Московская область, Ленинский городской округ, Видное, Белокаменное шоссе, 6Ю, 142703\" // Адрес [string]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://kabinet.pecom.ru/api/v1/branches/findzonebyaddress/",
+          "protocol": "https",
+          "host": [
+            "kabinet",
+            "pecom",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "branches",
+            "findzonebyaddress",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Branches All",
+      "id": "696784b2-9e98-4c67-945c-e8ffc869f639",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "basic",
+          "basic": [
+            {
+              "key": "password",
+              "value": "{{pec_api_key}}",
+              "type": "string"
+            },
+            {
+              "key": "username",
+              "value": "bestseller",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"address\": \"Московская область, Ленинский городской округ, Видное, Белокаменное шоссе, 6Ю, 142703\" // Адрес [string]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://kabinet.pecom.ru/api/v1/branches/all/",
+          "protocol": "https",
+          "host": [
+            "kabinet",
+            "pecom",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "branches",
+            "all",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Counterparts",
+      "id": "f0608ff5-3920-4de2-a89c-af6b42cb7633",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "basic",
+          "basic": [
+            {
+              "key": "password",
+              "value": "{{pec_api_key}}",
+              "type": "string"
+            },
+            {
+              "key": "username",
+              "value": "bestseller",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json;charset=utf-8",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://kabinet.pecom.ru/api/v1/counterparts/confirmedaccesstocounterparties",
+          "protocol": "https",
+          "host": [
+            "kabinet",
+            "pecom",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "counterparts",
+            "confirmedaccesstocounterparties"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Auth",
+      "id": "222995b0-5349-4053-ba5c-fd4ed135c4fb",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "basic",
+          "basic": [
+            {
+              "key": "password",
+              "value": "{{pec_api_key}}",
+              "type": "string"
+            },
+            {
+              "key": "username",
+              "value": "bestseller",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json;charset=utf-8",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://kabinet.pecom.ru/api/v1/auth/profiledata/",
+          "protocol": "https",
+          "host": [
+            "kabinet",
+            "pecom",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "auth",
+            "profiledata",
+            ""
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

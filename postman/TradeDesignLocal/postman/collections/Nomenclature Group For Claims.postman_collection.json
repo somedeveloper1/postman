@@ -1,0 +1,86 @@
+{
+  "info": {
+    "_postman_id": "3cd541e0-4205-4353-93fb-c123a1d55d9d",
+    "name": "Nomenclature Group For Claims",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Nomenclature Group For Claims",
+      "id": "32dd4234-575d-48fe-9527-bc3a11175d87",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTczOTQ1MTM0OCwiZXhwIjoxNzQwMDU2MTQ4LCJuYmYiOjE3Mzk0NTEzNDgsImp0aSI6IndwVHhJNGJ0N0RtT29uc2oiLCJzdWIiOjQxMTgsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.jO2LLxfEA0xn2S8Mo1oF38KhuiJvCbm4D5PBUo6kQ_8",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/nomenclature-groups-for-claims"
+      },
+      "response": []
+    },
+    {
+      "name": "Nomenclature Group For Claims Create",
+      "id": "70602c1e-ebaa-4afc-89ec-b03bece04813",
+      "request": {
+        "auth": {
+          "type": "bearer"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"extra\",\r\n    \"title\": \"extra\",\r\n    \"nomenclature_groups\": [\"d857ffcb-95af-11ed-9fcc-e61f13537e43\", \"59cd4736-95a3-11ed-9fcc-e61f13537e43\"]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/nomenclature-groups-for-claims/create"
+      },
+      "response": []
+    },
+    {
+      "name": "Nomenclature Group For Claims Update",
+      "id": "cfde5c69-667b-4a99-b531-12b6d385e1c5",
+      "request": {
+        "auth": {
+          "type": "bearer"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"extranew\",\r\n    \"title\": \"extranew\",\r\n    \"nomenclature_groups\": [\"d857ffcb-95af-11ed-9fcc-e61f13537e43\"]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/nomenclature-groups-for-claims/update/7"
+      },
+      "response": []
+    },
+    {
+      "name": "Nomenclature Group For Claims Delete",
+      "id": "d2f808d6-4550-42e8-8f8d-d568b8b7a793",
+      "request": {
+        "auth": {
+          "type": "bearer"
+        },
+        "method": "POST",
+        "header": [],
+        "url": "{{base_url_local}}/api/nomenclature-groups-for-claims/delete/8"
+      },
+      "response": []
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "e67aeae8-3231-40e1-8203-56b876450b78",
+  "name": "Globals",
+  "values": [
+    {
+      "key": "ym_oauth_token",
+      "value": "",
+      "type": "default",
+      "enabled": true
+    }
+  ],
+  "_postman_variable_scope": "globals",
+  "_postman_exported_at": "2026-03-03T12:40:35.237Z"
+}

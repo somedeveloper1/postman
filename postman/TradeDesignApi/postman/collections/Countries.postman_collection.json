@@ -1,0 +1,179 @@
+﻿{
+  "info": {
+    "_postman_id": "7aed9a8b-2d40-40f4-b4fc-a4255aaf9ecc",
+    "name": "Countries",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Countries",
+      "id": "5193c047-da3a-4235-bdbb-4b6fe46bf977",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzAzMTM2NTcsImV4cCI6MTYzMDMxNzI1NywibmJmIjoxNjMwMzEzNjU3LCJqdGkiOiJNdlpMbUR1d21sVkZ0RGp4Iiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.CS9jsKVc3yxW4AJipH6eatVWMYE4ob6R24ycYtVz5T0",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/countries",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "countries"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Country Create",
+      "id": "45fe40d3-6ae5-4cd7-86c4-6b2d566f31cd",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzAzMTM2NTcsImV4cCI6MTYzMDMxNzI1NywibmJmIjoxNjMwMzEzNjU3LCJqdGkiOiJNdlpMbUR1d21sVkZ0RGp4Iiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.CS9jsKVc3yxW4AJipH6eatVWMYE4ob6R24ycYtVz5T0",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "guid",
+              "value": "1",
+              "type": "text"
+            },
+            {
+              "key": "name",
+              "value": "Russia",
+              "type": "text"
+            },
+            {
+              "key": "code",
+              "value": "RUS",
+              "type": "text"
+            },
+            {
+              "key": "full_name",
+              "value": "Russian Federation",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/country/submit",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "country",
+            "submit"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Countries Import",
+      "id": "c8aca501-e55c-40d9-8cf2-9746a0a03331",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"guid\": \"00000000-0000-0000-0000-000000000000\",\r\n        \"name\": \"\",\r\n        \"code\": \"\",\r\n        \"full_name\": \"\"\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/table/import/countries",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "table",
+            "import",
+            "countries"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Countries Import PROD",
+      "id": "5cc212f2-aea6-4867-983d-df58cc999c2f",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"guid\": \"982d33e2-bee6-453a-992e-11d13fa66fa7\",\r\n        \"name\": \"РОССИЯ\",\r\n        \"code\": \"643\",\r\n        \"full_name\": \"Россия\"\r\n    },\r\n    {\r\n        \"guid\": \"b9404540-956d-11df-b3e0-e61f135382c7\",\r\n        \"name\": \"БЕЛАРУСЬ\",\r\n        \"code\": \"112\",\r\n        \"full_name\": \"Республика Беларусь\"\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_prod}}/api/table/import/countries",
+          "protocol": "https",
+          "host": [
+            "api",
+            "t-d",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "table",
+            "import",
+            "countries"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

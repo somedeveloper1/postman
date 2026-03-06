@@ -1,0 +1,163 @@
+{
+  "info": {
+    "_postman_id": "db6b6880-0c82-4524-9250-8bd407c043c0",
+    "name": "Price Types",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Price types",
+      "id": "d3823fa0-f5be-4c0f-990e-6b5f42dc8f25",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzAzMzA0MjUsImV4cCI6MTYzMDMzNDAyNSwibmJmIjoxNjMwMzMwNDI1LCJqdGkiOiJpVTNidzIzQU5zZVRrbEMzIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.a7xsXohvMtAPJiqLdbOLciYs9zaPZC78VU0HmPl_gOc",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/price-types",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "price-types"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Price Type Create",
+      "id": "b4ab8314-cc80-4f78-bc1c-420d2e4800a4",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzAzMzA0MjUsImV4cCI6MTYzMDMzNDAyNSwibmJmIjoxNjMwMzMwNDI1LCJqdGkiOiJpVTNidzIzQU5zZVRrbEMzIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.a7xsXohvMtAPJiqLdbOLciYs9zaPZC78VU0HmPl_gOc",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"guid\": \"1\",\r\n    \"name\": \"type 1\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/price-type/submit",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "price-type",
+            "submit"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Price Types Import",
+      "id": "2fff0337-4821-4b91-bad7-7491b979dc07",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"guid\": \"a0c6e0e4-9719-11df-8a28-e61f135382c7\",\r\n        \"name\": \"Цена-4\",\r\n        \"margin\": 0.52,\r\n        \"base_price_type_guid\": \"a0c6e0e5-9719-11df-8a28-e61f135382c7\"\r\n    },\r\n    {\r\n        \"guid\": \"a0c6e0e5-9719-11df-8a28-e61f135382c7\",\r\n        \"name\": \"Цена-5\",\r\n        \"margin\": 3.68,\r\n        \"base_price_type_guid\": \"a0c6e0e4-9719-11df-8a28-e61f135382c7\"\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/table/import/price-types",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "table",
+            "import",
+            "price-types"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Price Types Import PROD",
+      "id": "cbc62fbd-b379-4905-b9df-b9759ec4ad48",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"guid\": \"a0c6e0e4-9719-11df-8a28-e61f135382c7\",\r\n        \"name\": \"Цена-4\"\r\n    },\r\n    {\r\n        \"guid\": \"a0c6e0e5-9719-11df-8a28-e61f135382c7\",\r\n        \"name\": \"Цена-5\"\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_prod}}/api/table/import/price-types",
+          "protocol": "https",
+          "host": [
+            "api",
+            "t-d",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "table",
+            "import",
+            "price-types"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+﻿{
+  "info": {
+    "_postman_id": "f99af569-1953-40eb-8d56-3fb419b9ddb5",
+    "name": "Marketing Currency Rates For 1 c",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Marketing Currency Rates List For 1c",
+      "id": "93d086aa-7047-4cab-b9b6-6139cbad9ade",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3NTc2Njg5NDAsIm5iZiI6MTc1NzY2ODk0MCwianRpIjoidmZnaXBLN3dONnZ6WVk2WCIsInN1YiI6NTMyNywicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.sbSBZ27IRJlDt1PAOS6ZJoTJPSizYhwdSWYpDpMwaSA",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/for-1c/marketing-currency-rates",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "for-1c",
+            "marketing-currency-rates"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Ka Currencies For 1c",
+      "id": "6075f4a9-7616-49c9-8419-20cca38ae3f7",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3NTc2Njg5NDAsIm5iZiI6MTc1NzY2ODk0MCwianRpIjoidmZnaXBLN3dONnZ6WVk2WCIsInN1YiI6NTMyNywicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.sbSBZ27IRJlDt1PAOS6ZJoTJPSizYhwdSWYpDpMwaSA",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/for-1c/ka-currencies",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "for-1c",
+            "ka-currencies"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Marketing Currency Rates List For 1c Copy",
+      "id": "a11aed45-01fd-48a4-9d82-87eec0e24b11",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3NTc2Njg5NDAsIm5iZiI6MTc1NzY2ODk0MCwianRpIjoidmZnaXBLN3dONnZ6WVk2WCIsInN1YiI6NTMyNywicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.sbSBZ27IRJlDt1PAOS6ZJoTJPSizYhwdSWYpDpMwaSA",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"currency_rates\": [\r\n        {\r\n            \"currency_guid\": \"c0f629ac-29f7-11ed-a2c8-e61f13537e43\",\r\n            \"rate\": \"110\",\r\n            \"multiplicity\": 1,\r\n            \"period\": \"2025-09-10\"\r\n        },\r\n        {\r\n            \"currency_guid\": \"aca9b677-29f7-11ed-a2c8-e61f13537e43\",\r\n            \"rate\": \"94\",\r\n            \"multiplicity\": 1,\r\n            \"period\": \"2025-09-10\"\r\n        },\r\n        {\r\n            \"currency_guid\": \"82412fa2-cb35-11ef-86d9-000c297bb3bc\",\r\n            \"rate\": \"116.6848\",\r\n            \"multiplicity\": 1,\r\n            \"period\": \"2025-09-10\"\r\n        },\r\n        {\r\n            \"currency_guid\": \"8e78fc79-cb39-11ef-86d9-000c297bb3bc\",\r\n            \"rate\": \"13.0015\",\r\n            \"multiplicity\": 1,\r\n            \"period\": \"2025-09-10\"\r\n        }\r\n    ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/for-1c/marketing-currency-rates/create",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "for-1c",
+            "marketing-currency-rates",
+            "create"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

@@ -1,0 +1,256 @@
+{
+  "info": {
+    "_postman_id": "3521fbf4-3633-4e18-a169-67194008dd49",
+    "name": "Files",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Upload Document",
+      "id": "0b8998dd-fd17-421a-9fc5-d3cb7fa741d2",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "file",
+              "type": "file",
+              "src": "/C:/Users/Юлия/Downloads/Telegram Desktop/response (2).xml"
+            },
+            {
+              "key": "upload_token",
+              "value": "WAPwDzMhNAJkboJelBrcKwIlthMPdgAeVUJb",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/upload/document",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "upload",
+            "document"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Upload Document Test",
+      "id": "0d76dbe9-46ea-4649-9fa4-1534486918f1",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "file",
+              "type": "file",
+              "src": "/C:/Users/Юлия/Downloads/Telegram Desktop/response (2).xml"
+            },
+            {
+              "key": "upload_token",
+              "value": "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "{{base_url_prod}}/api/upload/document/test",
+          "protocol": "https",
+          "host": [
+            "api",
+            "t-d",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "upload",
+            "document",
+            "test"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "XML To JSON",
+      "id": "15b99ced-ece9-4e6d-81c1-da6ab2b4322a",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "file",
+              "type": "file",
+              "src": "/C:/Users/user/Downloads/Выгрузка товаров Abat.xml",
+              "disabled": true
+            },
+            {
+              "key": "name",
+              "value": "file",
+              "type": "text",
+              "disabled": true
+            }
+          ]
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/xml-to-json?link=abat",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "xml-to-json"
+          ],
+          "query": [
+            {
+              "key": "link",
+              "value": "abat"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Download PROD",
+      "id": "96568f95-a2c9-4cef-939e-461a7e7f577a",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "file",
+              "type": "file",
+              "src": "/C:/Users/user/Desktop/Изменения обновления.docx"
+            },
+            {
+              "key": "name",
+              "value": "file",
+              "type": "text",
+              "disabled": true
+            }
+          ]
+        },
+        "url": {
+          "raw": "{{base_url_prod}}/api/upload/document",
+          "protocol": "https",
+          "host": [
+            "api",
+            "t-d",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "upload",
+            "document"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DocumentList",
+      "id": "0011a56a-8a9c-4426-835a-ead9a23ad79a",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/documents-list",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "documents-list"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "YML Feed full list",
+      "id": "a0a5eb6b-cd19-4b81-baac-10727716ea1d",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/products-td-feed-full",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "products-td-feed-full"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "info": {
+    "_postman_id": "d3fed180-e0ae-4d50-9f28-ee416abbf784",
+    "name": "Company Employees",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Company Employees",
+      "id": "7e375a02-3273-4eea-98c5-9e26052fe2b2",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzY3MjM2OTUsImV4cCI6MTYzNjgxMDA5NSwibmJmIjoxNjM2NzIzNjk1LCJqdGkiOiJSTUwxSzM1VmdQQWtPQTZZIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Fp6zqkhKZiw3QvvQyntLvf_lcjgzvl6T-hiQM1SF_9Y",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/company-employees",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "company-employees"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

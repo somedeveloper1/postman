@@ -1,0 +1,58 @@
+{
+  "info": {
+    "_postman_id": "aff5fe89-0f02-4bca-a3e5-ea275d4a898c",
+    "name": "Email Settings",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Email Settings List",
+      "id": "d1cde540-8944-47dd-8d54-589cef839d55",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NTcwMDY2ODAsImV4cCI6MTY1NzYxMTQ4MCwibmJmIjoxNjU3MDA2NjgwLCJqdGkiOiJFcEdCTkFldnpXRlhEMlVDIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.xHCjlRnB5FpSAtfhaJe9KXEJSMMv470NoX09liJcETI",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/email-settings"
+      },
+      "response": []
+    },
+    {
+      "name": "Email Settings Update",
+      "id": "9c050bbd-0038-4b08-9f4b-a8aad0141b2e",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE2ODcxNjA1NjcsImV4cCI6MTY4Nzc2NTM2NywibmJmIjoxNjg3MTYwNTY3LCJqdGkiOiJDd2hhM1liTUh1R295emxsIiwic3ViIjo0MiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.YAK-OqXKTkDC-3eRowFmwnzCdaUyXFVmewsFfdr4GDc",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"settings\": [\r\n        {\r\n            \"template_id\": 1,\r\n            \"is_allowed\": true\r\n        },\r\n        {\r\n            \"template_id\": 2,\r\n            \"is_allowed\": true\r\n        },\r\n        {\r\n            \"template_id\": 3,\r\n            \"is_allowed\": true\r\n        },\r\n        {\r\n            \"template_id\": 4,\r\n            \"is_allowed\": true\r\n        },\r\n        {\r\n            \"template_id\": 5,\r\n            \"is_allowed\": true\r\n        },\r\n        {\r\n            \"template_id\": 6,\r\n            \"is_allowed\": true\r\n        },\r\n        {\r\n            \"template_id\": 7,\r\n            \"is_allowed\": true\r\n        },\r\n        {\r\n            \"template_id\": 8,\r\n            \"is_allowed\": true\r\n        },\r\n        {\r\n            \"template_id\": 9,\r\n            \"is_allowed\": true\r\n        },\r\n        {\r\n            \"template_id\": 14,\r\n            \"is_allowed\": true\r\n        },\r\n        {\r\n            \"template_id\": 15,\r\n            \"is_allowed\": true\r\n        }\r\n    ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/email-settings/update"
+      },
+      "response": []
+    }
+  ]
+}

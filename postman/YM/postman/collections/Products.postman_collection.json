@@ -1,0 +1,168 @@
+{
+  "info": {
+    "_postman_id": "00efedb8-c422-4503-a804-6acd67755821",
+    "name": "Products",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "offer-mappings",
+      "id": "7da61a22-1e10-4daf-9f85-c72b4156846d",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Api-Key",
+            "value": "{{ym_oauth_token}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"offerIds\":  [\"ST91007B\"]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api.partner.market.yandex.ru/businesses/208944563/offer-mappings",
+          "protocol": "https",
+          "host": [
+            "api",
+            "partner",
+            "market",
+            "yandex",
+            "ru"
+          ],
+          "path": [
+            "businesses",
+            "208944563",
+            "offer-mappings"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "offer-cards",
+      "id": "54da54ab-c548-4500-9f97-c7071fcb7ec3",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Api-Key",
+            "value": "{{ym_oauth_token}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"offerIds\":  [\"A1010000\"]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api.partner.market.yandex.ru/businesses/208944563/offer-cards",
+          "protocol": "https",
+          "host": [
+            "api",
+            "partner",
+            "market",
+            "yandex",
+            "ru"
+          ],
+          "path": [
+            "businesses",
+            "208944563",
+            "offer-cards"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "offer-prices",
+      "id": "fbbbf5d2-635d-4050-b7ba-5e12ee903856",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Api-Key",
+            "value": "{{ym_oauth_token}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"offerIds\":  [\"SC49016B\"]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api.partner.market.yandex.ru/campaigns/148611396/offer-prices",
+          "protocol": "https",
+          "host": [
+            "api",
+            "partner",
+            "market",
+            "yandex",
+            "ru"
+          ],
+          "path": [
+            "campaigns",
+            "148611396",
+            "offer-prices"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "tariffs/calculate",
+      "id": "a1ce57bc-1ed4-47c8-9e85-b429a45d5d57",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Api-Key",
+            "value": "{{ym_oauth_token}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"parameters\": {\r\n        \"sellingProgram\": \"FBS\",\r\n        \"frequency\": \"MONTHLY\"\r\n    },\r\n    \"offers\": [\r\n        {\r\n            \"categoryId\": 60903417,\r\n            \"price\": 4587,\r\n            \"length\": 2.7,\r\n            \"width\": 40,\r\n            \"height\": 8.2,\r\n            \"weight\": 0.21,\r\n            \"quantity\": 1\r\n        }\r\n    ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api.partner.market.yandex.ru/tariffs/calculate",
+          "protocol": "https",
+          "host": [
+            "api",
+            "partner",
+            "market",
+            "yandex",
+            "ru"
+          ],
+          "path": [
+            "tariffs",
+            "calculate"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

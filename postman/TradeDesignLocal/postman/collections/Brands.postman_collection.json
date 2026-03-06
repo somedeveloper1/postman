@@ -1,0 +1,304 @@
+{
+  "info": {
+    "_postman_id": "dcd8a5ae-e2de-4e0e-9ad8-83178b081b50",
+    "name": "Brands",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Brands",
+      "id": "7e8c9835-a3b9-45ca-bcf7-cabc9027f57f",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTcwNTUzNzg3MCwiZXhwIjoxNzA2MTQyNjcwLCJuYmYiOjE3MDU1Mzc4NzAsImp0aSI6IktCU1dPRUhET2NzVmtqdk8iLCJzdWIiOjE5MywicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.G7mMya3xWhNiEKoAmX25OjOSWWOpreTZaJpztHUVgoU",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/brands"
+      },
+      "response": []
+    },
+    {
+      "name": "Claims Brands",
+      "id": "78b9452d-9e69-4665-81b9-bf5071f59d85",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTcwNTk4Njk4NSwiZXhwIjoxNzA2NTkxNzg1LCJuYmYiOjE3MDU5ODY5ODUsImp0aSI6IjRvMjBxZ2tNQW85bmxtdkoiLCJzdWIiOjEzNjksInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.LsBZvb6xjrlLgF-klaGu-ulQXHjKN7J14x_VQC3zceA",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/claims/brands"
+      },
+      "response": []
+    },
+    {
+      "name": "Brands Models",
+      "id": "94461834-ebdc-4218-9dbd-0956a3a3b6af",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTcwMTc2OTAyOSwiZXhwIjoxNzAyMzczODI5LCJuYmYiOjE3MDE3NjkwMjksImp0aSI6IjNPY0d3SjJ3RVBHNFZlYkoiLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.0N0iODBLOTodFt2YdaGPsE0lj8JtjJcoeIYmHC34M0E",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_prod}}/api/brands/models"
+      },
+      "response": []
+    },
+    {
+      "name": "Brand Models",
+      "id": "00966268-9795-420f-bee8-5aeb1a4bf6ea",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTcwMTc2OTAyOSwiZXhwIjoxNzAyMzczODI5LCJuYmYiOjE3MDE3NjkwMjksImp0aSI6IjNPY0d3SjJ3RVBHNFZlYkoiLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.0N0iODBLOTodFt2YdaGPsE0lj8JtjJcoeIYmHC34M0E",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/brands/models/042daaca-222f-11e0-8679-e61f13537e43"
+      },
+      "response": []
+    },
+    {
+      "name": "Brand Models Download Zip",
+      "id": "1fecc8bc-adb8-48bb-ad8a-bfa82db8c24c",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTcwMTc2OTAyOSwiZXhwIjoxNzAyMzczODI5LCJuYmYiOjE3MDE3NjkwMjksImp0aSI6IjNPY0d3SjJ3RVBHNFZlYkoiLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.0N0iODBLOTodFt2YdaGPsE0lj8JtjJcoeIYmHC34M0E",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/brands/models/10f2fbbb-21e5-11e4-b05d-e61f13537e43/download/zip"
+      },
+      "response": []
+    },
+    {
+      "name": "Brand Models Download File",
+      "id": "fc035a92-c7fe-46d3-aca6-467e85775bf8",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTcwMTc2OTAyOSwiZXhwIjoxNzAyMzczODI5LCJuYmYiOjE3MDE3NjkwMjksImp0aSI6IjNPY0d3SjJ3RVBHNFZlYkoiLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.0N0iODBLOTodFt2YdaGPsE0lj8JtjJcoeIYmHC34M0E",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/brands/models/10f2fbbb-21e5-11e4-b05d-e61f13537e43/download/file/11294"
+      },
+      "response": []
+    },
+    {
+      "name": "Brand Create",
+      "id": "cc3b5abf-7293-4b29-96f0-57b81b55d767",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzAwNTAyMTAsImV4cCI6MTYzMDA1MzgxMCwibmJmIjoxNjMwMDUwMjEwLCJqdGkiOiJwU2x4eU5rNUp5NzRqaUtVIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.kexR5ix3UozmCx638au1X896se6WzpS_n8TE_m81PH0",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "name",
+              "value": "brand name",
+              "type": "text"
+            },
+            {
+              "key": "guid",
+              "value": "125",
+              "type": "text"
+            }
+          ]
+        },
+        "url": "{{base_url_local}}/api/brand/submit"
+      },
+      "response": []
+    },
+    {
+      "name": "Brands Import",
+      "id": "3c678dde-941f-485a-b7e6-5ed080a9d38b",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Transfer-Id",
+            "value": "852369741236987456333",
+            "type": "text"
+          },
+          {
+            "key": "Package-Number",
+            "value": "1",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"guid\": \"b124d732-946b-11e3-8906-e61f13537e43\",\r\n        \"name\": \"Braun\",\r\n        \"main_brand_guid\": \"TECT 1\",\r\n        \"country_guid\": \"1234567\",\r\n        \"is_ctm\": true,\r\n        \"is_focus\": false\r\n    },\r\n    {\r\n        \"guid\": \"c057169c-5103-11e3-9e03-e61f13537e43\",\r\n        \"name\": \"Aqua\",\r\n        \"main_brand_guid\": \"TECT 1\",\r\n        \"country_guid\": \"123456789\",\r\n        \"is_ctm\": false,\r\n        \"is_focus\": true\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/table/import/brands"
+      },
+      "response": []
+    },
+    {
+      "name": "Brands Import PROD",
+      "id": "3e07347b-1f10-4902-bc03-2178c2e28eea",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"guid\": \"b124d732-946b-11e3-8906-e61f13537e43\",\r\n        \"name\": \"Braun\",\r\n        \"main_brand_guid\": \"00000000-0000-0000-0000-000000000000\"\r\n    },\r\n    {\r\n        \"guid\": \"c057169c-5103-11e3-9e03-e61f13537e43\",\r\n        \"name\": \"Aqua\",\r\n        \"main_brand_guid\": \"00000000-0000-0000-0000-000000000000\"\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_prod}}/api/table/import/brands"
+      },
+      "response": []
+    },
+    {
+      "name": "Brands Import ZIP PROD",
+      "id": "1455db2b-6e77-44dd-b83f-5e42009bed41",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "zipfile",
+              "type": "file",
+              "src": []
+            }
+          ]
+        },
+        "url": "{{base_url_prod}}/api/table/import/zip/brands"
+      },
+      "response": []
+    },
+    {
+      "name": "Brands Import ZIP",
+      "id": "c261a0c5-efbb-459d-af8e-ca22da269413",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Transfer-Id",
+            "value": "123456",
+            "type": "text"
+          },
+          {
+            "key": "Package-Number",
+            "value": "1",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "zipfile",
+              "type": "file",
+              "src": "/C:/Users/user/Downloads/Json_ВыгрузкаНаСайты_Бренды_1_0.zip"
+            }
+          ]
+        },
+        "url": "{{base_url_local}}/api/table/import/zip/brands"
+      },
+      "response": []
+    }
+  ]
+}

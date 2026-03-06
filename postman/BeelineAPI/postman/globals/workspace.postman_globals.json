@@ -1,0 +1,14 @@
+{
+  "id": "f8b933f5-a6c8-468b-9071-be72d2bb99f4",
+  "name": "Globals",
+  "values": [
+    {
+      "key": "mpbx_auth_token",
+      "value": "",
+      "type": "default",
+      "enabled": true
+    }
+  ],
+  "_postman_variable_scope": "globals",
+  "_postman_exported_at": "2026-03-03T12:33:15.392Z"
+}

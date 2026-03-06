@@ -1,0 +1,50 @@
+{
+  "id": "99b44e98-6543-40a7-b564-da7a7fd8a306",
+  "name": "Globals",
+  "values": [
+    {
+      "key": "base_url_local",
+      "value": "http://trade-design",
+      "type": "default",
+      "enabled": true
+    },
+    {
+      "key": "base_url_prod",
+      "value": "https://api.t-d.ru",
+      "type": "default",
+      "enabled": true
+    },
+    {
+      "key": "multitender_apikey",
+      "value": "",
+      "type": "default",
+      "enabled": true
+    },
+    {
+      "key": "auth_email",
+      "value": "",
+      "type": "default",
+      "enabled": true
+    },
+    {
+      "key": "auth_password",
+      "value": "",
+      "type": "default",
+      "enabled": true
+    },
+    {
+      "key": "auth_old_password",
+      "value": "",
+      "type": "default",
+      "enabled": true
+    },
+    {
+      "key": "access_token",
+      "value": "",
+      "type": "default",
+      "enabled": true
+    }
+  ],
+  "_postman_variable_scope": "globals",
+  "_postman_exported_at": "2026-03-03T12:25:07.505Z"
+}

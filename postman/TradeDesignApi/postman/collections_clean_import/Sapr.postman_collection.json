@@ -1,0 +1,558 @@
+{
+  "info": {
+    "_postman_id": "e24d241e-bfa1-468f-8fc5-b883cf2d364c",
+    "name": "Sapr",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Sapr Categories",
+      "id": "6309673b-082d-4bfb-a278-51bb03291e94",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3Mjk4Mzg4MTEsImV4cCI6MTczMDQ0MzYxMSwibmJmIjoxNzI5ODM4ODExLCJqdGkiOiJKRXZjWkdYT0djQlRLZzNaIiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.tatTyH_CvB9gUXRuytzcxrWKgG4ztvYN_0t0rcKnPJI",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"email\": \"test@gmail.com\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/sapr/categories",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "sapr",
+            "categories"
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "8a49872f-ea14-4f3e-9284-99c7c0ef0ec8",
+          "name": "Default",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "email",
+                  "value": "lyuolka@mail.ru",
+                  "type": "text"
+                },
+                {
+                  "key": "password",
+                  "value": "{{auth_password}}",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api/auth-jwt/login?email={{auth_email}}&password={{auth_password}}",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "auth-jwt",
+                "login"
+              ],
+              "query": [
+                {
+                  "key": "email",
+                  "value": "{{auth_email}}"
+                },
+                {
+                  "key": "password",
+                  "value": "{{auth_password}}"
+                }
+              ]
+            }
+          },
+          "_postman_previewlanguage": null,
+          "header": null,
+          "cookie": [],
+          "body": "{\r\n    \"access_token\": \"{{access_token}}\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"{{auth_email}}\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+        }
+      ]
+    },
+    {
+      "name": "Sapr Products",
+      "id": "828dff3c-ef71-4914-9fad-aa3c99d8a125",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3Mjk4Mzg4MTEsImV4cCI6MTczMDQ0MzYxMSwibmJmIjoxNzI5ODM4ODExLCJqdGkiOiJKRXZjWkdYT0djQlRLZzNaIiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.tatTyH_CvB9gUXRuytzcxrWKgG4ztvYN_0t0rcKnPJI",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"email\": \"test@gmail.com\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/sapr/products",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "sapr",
+            "products"
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "75c1071c-6bca-4255-a5f7-570c2648da2e",
+          "name": "Default",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "email",
+                  "value": "lyuolka@mail.ru",
+                  "type": "text"
+                },
+                {
+                  "key": "password",
+                  "value": "{{auth_password}}",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api/auth-jwt/login?email={{auth_email}}&password={{auth_password}}",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "auth-jwt",
+                "login"
+              ],
+              "query": [
+                {
+                  "key": "email",
+                  "value": "{{auth_email}}"
+                },
+                {
+                  "key": "password",
+                  "value": "{{auth_password}}"
+                }
+              ]
+            }
+          },
+          "_postman_previewlanguage": null,
+          "header": null,
+          "cookie": [],
+          "body": "{\r\n    \"access_token\": \"{{access_token}}\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"{{auth_email}}\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+        }
+      ]
+    },
+    {
+      "name": "Sapr Products Mapping",
+      "id": "ce826e24-bb9b-4428-bd14-a391a746986d",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3Mjk4Mzg4MTEsImV4cCI6MTczMDQ0MzYxMSwibmJmIjoxNzI5ODM4ODExLCJqdGkiOiJKRXZjWkdYT0djQlRLZzNaIiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.tatTyH_CvB9gUXRuytzcxrWKgG4ztvYN_0t0rcKnPJI",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"name\": \"EIK-60\"\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/sapr/mapping",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "sapr",
+            "mapping"
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "0bd95490-be2a-45a0-9573-a9486eeea533",
+          "name": "Default",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "email",
+                  "value": "lyuolka@mail.ru",
+                  "type": "text"
+                },
+                {
+                  "key": "password",
+                  "value": "{{auth_password}}",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api/auth-jwt/login?email={{auth_email}}&password={{auth_password}}",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "auth-jwt",
+                "login"
+              ],
+              "query": [
+                {
+                  "key": "email",
+                  "value": "{{auth_email}}"
+                },
+                {
+                  "key": "password",
+                  "value": "{{auth_password}}"
+                }
+              ]
+            }
+          },
+          "_postman_previewlanguage": null,
+          "header": null,
+          "cookie": [],
+          "body": "{\r\n    \"access_token\": \"{{access_token}}\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"{{auth_email}}\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+        }
+      ]
+    },
+    {
+      "name": "Sapr Placements",
+      "id": "b1508951-c33c-4f31-89d5-833c06a67674",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MzA5Njg4MDMsImV4cCI6MTczMTU3MzYwMywibmJmIjoxNzMwOTY4ODAzLCJqdGkiOiJRb0RLMUJ0cHBveFc5SW96Iiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.zyu4YcAMmrNDaPv-ntsB817vhKvX4mnrmoyaPMnclKk",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/sapr/placements",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "sapr",
+            "placements"
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "c1629d19-e0bb-41a6-8210-6f8244b9e836",
+          "name": "Default",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "email",
+                  "value": "lyuolka@mail.ru",
+                  "type": "text"
+                },
+                {
+                  "key": "password",
+                  "value": "{{auth_password}}",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api/auth-jwt/login?email={{auth_email}}&password={{auth_password}}",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "auth-jwt",
+                "login"
+              ],
+              "query": [
+                {
+                  "key": "email",
+                  "value": "{{auth_email}}"
+                },
+                {
+                  "key": "password",
+                  "value": "{{auth_password}}"
+                }
+              ]
+            }
+          },
+          "_postman_previewlanguage": null,
+          "header": null,
+          "cookie": [],
+          "body": "{\r\n    \"access_token\": \"{{access_token}}\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"{{auth_email}}\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+        }
+      ]
+    },
+    {
+      "name": "Sapr Placements POST",
+      "id": "bac59c85-5b5a-414b-b8a9-7154af5d7299",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MzA5Njg4MDMsImV4cCI6MTczMTU3MzYwMywibmJmIjoxNzMwOTY4ODAzLCJqdGkiOiJRb0RLMUJ0cHBveFc5SW96Iiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.zyu4YcAMmrNDaPv-ntsB817vhKvX4mnrmoyaPMnclKk",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"Мой цех 1\",\r\n    \"full_name\": \"Мой цех 1\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/sapr/placements",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "sapr",
+            "placements"
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "56d8d984-478f-43f0-a094-1a0b030abde8",
+          "name": "Default",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "email",
+                  "value": "lyuolka@mail.ru",
+                  "type": "text"
+                },
+                {
+                  "key": "password",
+                  "value": "{{auth_password}}",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api/auth-jwt/login?email={{auth_email}}&password={{auth_password}}",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "auth-jwt",
+                "login"
+              ],
+              "query": [
+                {
+                  "key": "email",
+                  "value": "{{auth_email}}"
+                },
+                {
+                  "key": "password",
+                  "value": "{{auth_password}}"
+                }
+              ]
+            }
+          },
+          "_postman_previewlanguage": null,
+          "header": null,
+          "cookie": [],
+          "body": "{\r\n    \"access_token\": \"{{access_token}}\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"{{auth_email}}\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+        }
+      ]
+    },
+    {
+      "name": "Sapr Specification",
+      "id": "b8084215-9259-4e59-8f78-64deaf7d3a81",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MzA5Njg4MDMsImV4cCI6MTczMTU3MzYwMywibmJmIjoxNzMwOTY4ODAzLCJqdGkiOiJRb0RLMUJ0cHBveFc5SW96Iiwic3ViIjozMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.zyu4YcAMmrNDaPv-ntsB817vhKvX4mnrmoyaPMnclKk",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"Мой цех 1\",\r\n    \"full_name\": \"Мой цех 1\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/sapr/specification",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "sapr",
+            "specification"
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "969b7349-df31-40bb-8971-2c7450ce168a",
+          "name": "Default",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "email",
+                  "value": "lyuolka@mail.ru",
+                  "type": "text"
+                },
+                {
+                  "key": "password",
+                  "value": "{{auth_password}}",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api/auth-jwt/login?email={{auth_email}}&password={{auth_password}}",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "auth-jwt",
+                "login"
+              ],
+              "query": [
+                {
+                  "key": "email",
+                  "value": "{{auth_email}}"
+                },
+                {
+                  "key": "password",
+                  "value": "{{auth_password}}"
+                }
+              ]
+            }
+          },
+          "_postman_previewlanguage": null,
+          "header": null,
+          "cookie": [],
+          "body": "{\r\n    \"access_token\": \"{{access_token}}\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"{{auth_email}}\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+        }
+      ]
+    }
+  ]
+}

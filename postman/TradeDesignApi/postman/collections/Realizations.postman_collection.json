@@ -1,0 +1,681 @@
+﻿{
+  "info": {
+    "_postman_id": "637a079a-57b7-4a61-b000-88521783cc92",
+    "name": "Realizations",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Realizations",
+      "id": "197bbe1a-74bf-48c5-98b2-9ec8b78bed20",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2ODQ3NDQ0NzcsImV4cCI6MTY4NTM0OTI3NywibmJmIjoxNjg0NzQ0NDc3LCJqdGkiOiJCR0tMNTZHYk82emUyNGxxIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Nxgni6hJclaw2CuV0g6QRr8dLoJitzrnu-Frxkl8F1g",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/realizations?search=К/В/221209/00020",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "realizations"
+          ],
+          "query": [
+            {
+              "key": "search",
+              "value": "К/В/221209/00020"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Realizations Without Documents",
+      "id": "c5c6ca7d-89bb-4a94-9b30-88a1cbccd20e",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/realizations/without-documents?date_from=2020-03-05",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "realizations",
+            "without-documents"
+          ],
+          "query": [
+            {
+              "key": "date_from",
+              "value": "2020-03-05"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "KA Realizations Without Documents Copy",
+      "id": "929e65f9-8f45-4406-99f0-ed3d0674714b",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/ka-realizations/without-documents?date_from=2025-01-01",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "ka-realizations",
+            "without-documents"
+          ],
+          "query": [
+            {
+              "key": "date_from",
+              "value": "2025-01-01"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Realizations Copy",
+      "id": "cd55b7e6-55fe-472f-9f26-f21f87ac080f",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NDY5Nzc3MTMsImV4cCI6MTY0NzU4MjUxMywibmJmIjoxNjQ2OTc3NzEzLCJqdGkiOiJORm9nT0ZEWm0xN214WnAwIiwic3ViIjo0MCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.0QuBguIqkuSYwelRDNkSypFQ4vFu7wfiAc5oMLnFVPo",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/realizations?search_order=К/В/0044",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "realizations"
+          ],
+          "query": [
+            {
+              "key": "search_order",
+              "value": "К/В/0044"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Realizations Counterparty",
+      "id": "1ab3d8ca-6967-4459-b074-bb74e7e66306",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTcxMjU2MDM5OCwiZXhwIjoxNzEzMTY1MTk4LCJuYmYiOjE3MTI1NjAzOTgsImp0aSI6IlZuYkhPNnRnV1cxQlJ3QnAiLCJzdWIiOjEzNjksInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.2l8AaWie3KHpfiBO_eNC-CAEwZldDIZgOG53Nx_yvjM",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/counterparty/realizations/a087ce28-e687-11e5-b0a1-0050568b45f5",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "counterparty",
+            "realizations",
+            "a087ce28-e687-11e5-b0a1-0050568b45f5"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Realizations Search",
+      "id": "8a121579-c7dc-4db1-8e46-080c2f7ba031",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTcxMjY1MTMyNywiZXhwIjoxNzEzMjU2MTI3LCJuYmYiOjE3MTI2NTEzMjcsImp0aSI6IlZ2NlF3OHc4MlFLUzdQbFEiLCJzdWIiOjEzNjksInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.Se5_SWFrdqOL2-r-em7Ba8fojgRTFUkvtG_X6DWcyPI",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/realizations/search?search=К/В/231207/00194",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "realizations",
+            "search"
+          ],
+          "query": [
+            {
+              "key": "search",
+              "value": "К/В/231207/00194"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Realization",
+      "id": "7adfcf51-efe6-47af-9d7e-13f81e39b8dc",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTcxMjY1MTMyNywiZXhwIjoxNzEzMjU2MTI3LCJuYmYiOjE3MTI2NTEzMjcsImp0aSI6IlZ2NlF3OHc4MlFLUzdQbFEiLCJzdWIiOjEzNjksInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.Se5_SWFrdqOL2-r-em7Ba8fojgRTFUkvtG_X6DWcyPI",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/realization/a5c1dfdd-38be-11ed-a2c8-e61f13537e43",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "realization",
+            "a5c1dfdd-38be-11ed-a2c8-e61f13537e43"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Realization Create",
+      "id": "5091e789-6575-4e81-a2cf-69a3d38a6caa",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzE1MTQ0MTYsIm5iZiI6MTYzMTUxNDQxNiwianRpIjoibGNaeDdGbTVhOHJBZElqWiIsInN1YiI6NywicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.HrcA2o7nmZ1sfGuF5xfJdq02nm-7A32KiZnaJ9tn4GE",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"guid\": \"1\",\r\n    \"number\": \"5\",\r\n    \"date\": \"2021-09-01\",\r\n    \r\n    \"bank_account_guid\": \"1\",\r\n    \"counterparty_guid\": \"1\",\r\n    \"supplier_counterparty_guid\": \"1\",\r\n    \"recipient_counterparty_guid\": \"1\",\r\n    \"contract_guid\": \"1\",\r\n    \"mutual_settlements_multiplicity\": \"1\",\r\n    \"mutual_settlements_rate\": \"12\",\r\n    \"organization_guid\": \"1\",\r\n    \"manager_guid\": \"1\",\r\n    \"department_guid\": \"1\",\r\n    \"total\": \"1\",\r\n    \"total_with_vat\": true,\r\n    \"include_vat\": false,\r\n    \"realizations_items\": [\r\n        {\r\n            \"line\": \"12345\",\r\n            \"realization_guid\": \"1\",\r\n            \"amount\": \"100.000\",\r\n            \"units\": \"10\",\r\n            \"nomenclature\": \"1\",\r\n            \"vat_rate\": \"НДС18_118\",\r\n            \"total\": \"10.00\",\r\n            \"vat_total\": \"125.00\",\r\n            \"price\": \"1000.00\",\r\n            \"discount_auto\": \"5\",\r\n            \"discount\": \"5\"\r\n        }\r\n    ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/realization/submit",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "realization",
+            "submit"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Realizations Import",
+      "id": "d43b28ab-9953-446a-84e1-b0926cf2c0ff",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n\t{\r\n\t\t\"guid\": \"c151452a-2b4f-11ec-a276-e61f13537e43\",\r\n\t\t\"number\": \"К/В/211012/00155\",\r\n\t\t\"date\": \"2021-10-12T16:47:03\",\r\n\t\t\"bank_account_guid\": \"1358dba3-9df4-11df-bf43-e61f13537e43\",\r\n\t\t\"currency_guid\": \"78683575-956c-11df-bfea-e61f13537e43\",\r\n\t\t\"supplier_counterparty_guid\": \"00000000-0000-0000-0000-000000000000\",\r\n\t\t\"recipient_counterparty_guid\": \"00000000-0000-0000-0000-000000000000\",\r\n\t\t\"contract_guid\": \"fccaf6e3-2b41-11ec-a276-e61f13537e43\",\r\n\t\t\"counterparty_guid\": \"3bee4e6f-3fc2-11e7-958c-e61f13537e43\",\r\n\t\t\"mutual_settlements_multiplicity\": 1,\r\n\t\t\"mutual_settlements_rate\": 1,\r\n\t\t\"organization_guid\": \"db95313f-dd79-11dd-b60c-001a6498e70d\",\r\n\t\t\"manager_guid\": \"1d0e0d53-988c-11df-8a28-e61f135382c7\",\r\n\t\t\"department_guid\": \"7a1d4859-63eb-11e3-9b80-e61f13537e43\",\r\n\t\t\"total\": 350000,\r\n\t\t\"total_with_vat\": true,\r\n\t\t\"include_vat\": true,\r\n\t\t\"delivery_method\": \"ДоПеревозчикаДоставкаКлиенту\",\r\n\t\t\"delivery_address\": \"delivery_address\",\r\n\t\t\"destination_address\": \"destination_address\",\r\n\t\t\"is_preprocessed\": true,\r\n\t\t\"realizations_items\": [\r\n\t\t\t{\r\n\t\t\t\t\"realization_guid\": \"c151452a-2b4f-11ec-a276-e61f13537e43\",\r\n\t\t\t\t\"line\": 1,\r\n\t\t\t\t\"units\": \"db953149-dd79-11dd-b60c-001a6498e70d\",\r\n\t\t\t\t\"amount\": 2,\r\n\t\t\t\t\"coefficient\": 1,\r\n\t\t\t\t\"nomenclature_guid\": \"ae14417c-a70f-11ea-a0d2-e61f13537e43\",\r\n\t\t\t\t\"discount_auto\": 0,\r\n\t\t\t\t\"discount\": 0,\r\n\t\t\t\t\"vat_rate\": \"НДС20\",\r\n\t\t\t\t\"total\": 350000,\r\n\t\t\t\t\"vat_total\": 58333.33,\r\n\t\t\t\t\"price\": 175000,\r\n\t\t\t\t\"order_guid\": \"1111111111111111111\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"realization_guid\": \"c151452a-2b4f-11ec-a276-e61f13537e43\",\r\n\t\t\t\t\"line\": 2,\r\n\t\t\t\t\"units\": \"db953149-dd79-11dd-b60c-001a6498e70d\",\r\n\t\t\t\t\"amount\": 2,\r\n\t\t\t\t\"coefficient\": 1,\r\n\t\t\t\t\"nomenclature_guid\": \"ae14417c-a70f-11ea-a0d2-e61f13537e43\",\r\n\t\t\t\t\"discount_auto\": 0,\r\n\t\t\t\t\"discount\": 0,\r\n\t\t\t\t\"vat_rate\": \"НДС20\",\r\n\t\t\t\t\"total\": 350000,\r\n\t\t\t\t\"vat_total\": 58333.33,\r\n\t\t\t\t\"price\": 175000,\r\n\t\t\t\t\"order_guid\": \"1111111111111111111\"\r\n\t\t\t}\r\n\t\t],\r\n        \"realizations_services\": [\r\n\t\t\t{\r\n\t\t\t\t\"realization_guid\": \"c151452a-2b4f-11ec-a276-e61f13537e43\",\r\n\t\t\t\t\"line\": 1,\r\n\t\t\t\t\"amount\": 2,\r\n\t\t\t\t\"coefficient\": 1,\r\n\t\t\t\t\"nomenclature_guid\": \"ae14417c-a70f-11ea-a0d2-e61f13537e43\",\r\n\t\t\t\t\"discount_auto\": 0,\r\n\t\t\t\t\"discount\": 0,\r\n\t\t\t\t\"vat_rate\": \"НДС20\",\r\n\t\t\t\t\"total\": 350000,\r\n\t\t\t\t\"vat_total\": 58333.33,\r\n\t\t\t\t\"price\": 175000,\r\n\t\t\t\t\"order_guid\": \"1111111111111111111\"\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"realization_guid\": \"c151452a-2b4f-11ec-a276-e61f13537e43\",\r\n\t\t\t\t\"line\": 2,\r\n\t\t\t\t\"amount\": 2,\r\n\t\t\t\t\"coefficient\": 1,\r\n\t\t\t\t\"nomenclature_guid\": \"ae14417c-a70f-11ea-a0d2-e61f13537e43\",\r\n\t\t\t\t\"discount_auto\": 0,\r\n\t\t\t\t\"discount\": 0,\r\n\t\t\t\t\"vat_rate\": \"НДС20\",\r\n\t\t\t\t\"total\": 350000,\r\n\t\t\t\t\"vat_total\": 58333.33,\r\n\t\t\t\t\"price\": 175000,\r\n\t\t\t\t\"order_guid\": \"1111111111111111111\"\r\n\t\t\t}\r\n\t\t]\r\n\t}\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/table/import/realizations",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "table",
+            "import",
+            "realizations"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Realizations Import Zip",
+      "id": "82d14e16-cbdb-449e-aca7-70304fe2ca58",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "zipfile",
+              "type": "file",
+              "src": []
+            }
+          ]
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/table/import/zip/realizations",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "table",
+            "import",
+            "zip",
+            "realizations"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Realizations Import Zip PROD",
+      "id": "67b3968f-3deb-4007-9472-232f35252936",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "zipfile",
+              "type": "file",
+              "src": "/C:/Users/user/Downloads/Json_ВыгрузкаНаСайты_РеализацииТоваровУслуг_2 019_1_300.zip"
+            }
+          ]
+        },
+        "url": {
+          "raw": "{{base_url_prod}}/api/table/import/zip/realizations",
+          "protocol": "https",
+          "host": [
+            "api",
+            "t-d",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "table",
+            "import",
+            "zip",
+            "realizations"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Realizations Import PROD",
+      "id": "2e6d615f-19e6-48da-b121-70ac5ce15636",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"guid\": \"dba3a2b1-2f63-11e9-a4f1-e61f13537e43\",\r\n        \"number\": \"Б/В/190214/00002\",\r\n        \"date\": \"2019-02-14T09:31:14\",\r\n        \"bank_account_guid\": \"8ec526a1-66f3-11e7-991f-e61f13537e43\",\r\n        \"currency_guid\": \"78683575-956c-11df-bfea-e61f13537e43\",\r\n        \"supplier_counterparty_guid\": \"00000000-0000-0000-0000-000000000000\",\r\n        \"recipient_counterparty_guid\": \"00000000-0000-0000-0000-000000000000\",\r\n        \"contract_guid\": \"352a60c9-f6dc-11e8-869d-e61f13537e43\",\r\n        \"counterparty_guid\": \"27f4efd7-43a3-11e8-b121-e61f13537e43\",\r\n        \"mutual_settlements_multiplicity\": 1,\r\n        \"mutual_settlements_rate\": 1,\r\n        \"organization_guid\": \"b8743483-66df-11e7-991f-e61f13537e43\",\r\n        \"manager_guid\": \"ae32e293-9c50-11e7-a3f6-e61f13537e43\",\r\n        \"department_guid\": \"810df2f8-ed86-11e0-9f14-e61f13537e43\",\r\n        \"total\": 160774,\r\n        \"total_with_vat\": false,\r\n        \"include_vat\": false,\r\n        \"realizations_items\": [\r\n            {\r\n                \"realization_guid\": \"dba3a2b1-2f63-11e9-a4f1-e61f13537e43\",\r\n                \"line\": 1,\r\n                \"units\": \"db953149-dd79-11dd-b60c-001a6498e70d\",\r\n                \"amount\": 1,\r\n                \"coefficient\": 1,\r\n                \"nomenclature\": \"66264e4a-35c7-11e0-8679-e61f13537e43\",\r\n                \"discount_auto\": 0,\r\n                \"discount\": 0,\r\n                \"vat_rate\": \"БезНДС\",\r\n                \"total\": 49376,\r\n                \"vat_total\": 0,\r\n                \"price\": 49376\r\n            },\r\n            {\r\n                \"realization_guid\": \"dba3a2b1-2f63-11e9-a4f1-e61f13537e43\",\r\n                \"line\": 2,\r\n                \"units\": \"db953149-dd79-11dd-b60c-001a6498e70d\",\r\n                \"amount\": 1,\r\n                \"coefficient\": 1,\r\n                \"nomenclature\": \"b3585ca3-f8ad-11e1-aa5e-e61f13537e43\",\r\n                \"discount_auto\": 0,\r\n                \"discount\": 0,\r\n                \"vat_rate\": \"БезНДС\",\r\n                \"total\": 22000,\r\n                \"vat_total\": 0,\r\n                \"price\": 22000\r\n            },\r\n            {\r\n                \"realization_guid\": \"dba3a2b1-2f63-11e9-a4f1-e61f13537e43\",\r\n                \"line\": 3,\r\n                \"units\": \"db953149-dd79-11dd-b60c-001a6498e70d\",\r\n                \"amount\": 1,\r\n                \"coefficient\": 1,\r\n                \"nomenclature\": \"9a04fcf2-3d08-11e6-8dcf-e61f13537e43\",\r\n                \"discount_auto\": 0,\r\n                \"discount\": 0,\r\n                \"vat_rate\": \"БезНДС\",\r\n                \"total\": 74713,\r\n                \"vat_total\": 0,\r\n                \"price\": 74713\r\n            },\r\n            {\r\n                \"realization_guid\": \"dba3a2b1-2f63-11e9-a4f1-e61f13537e43\",\r\n                \"line\": 4,\r\n                \"units\": \"db953149-dd79-11dd-b60c-001a6498e70d\",\r\n                \"amount\": 1,\r\n                \"coefficient\": 1,\r\n                \"nomenclature\": \"eb267f9e-bb4a-11e8-869d-e61f13537e43\",\r\n                \"discount_auto\": 0,\r\n                \"discount\": 0,\r\n                \"vat_rate\": \"БезНДС\",\r\n                \"total\": 14685,\r\n                \"vat_total\": 0,\r\n                \"price\": 14685\r\n            }\r\n        ]\r\n    },\r\n    {\r\n        \"guid\": \"97384f54-3058-11e9-a4f1-e61f13537e43\",\r\n        \"number\": \"К/В/190214/00128\",\r\n        \"date\": \"2019-02-14T16:01:07\",\r\n        \"bank_account_guid\": \"5caeb4db-7e59-11e7-a3f6-e61f13537e43\",\r\n        \"currency_guid\": \"78683575-956c-11df-bfea-e61f13537e43\",\r\n        \"supplier_counterparty_guid\": \"00000000-0000-0000-0000-000000000000\",\r\n        \"recipient_counterparty_guid\": \"00000000-0000-0000-0000-000000000000\",\r\n        \"contract_guid\": \"450c24b0-2df7-11e9-a4f1-e61f13537e43\",\r\n        \"counterparty_guid\": \"68522eb0-0787-11e9-869d-e61f13537e43\",\r\n        \"mutual_settlements_multiplicity\": 1,\r\n        \"mutual_settlements_rate\": 1,\r\n        \"organization_guid\": \"db95313f-dd79-11dd-b60c-001a6498e70d\",\r\n        \"manager_guid\": \"1d0e0d5f-988c-11df-8a28-e61f135382c7\",\r\n        \"department_guid\": \"0dca3fd2-997a-11df-8da0-e61f13537e43\",\r\n        \"total\": 12900,\r\n        \"total_with_vat\": true,\r\n        \"include_vat\": true,\r\n        \"realizations_items\": [\r\n            {\r\n                \"realization_guid\": \"97384f54-3058-11e9-a4f1-e61f13537e43\",\r\n                \"line\": 1,\r\n                \"units\": \"db953149-dd79-11dd-b60c-001a6498e70d\",\r\n                \"amount\": 2,\r\n                \"coefficient\": 1,\r\n                \"nomenclature\": \"9693d964-ce34-11e0-a198-e61f13537e43\",\r\n                \"discount_auto\": 0,\r\n                \"discount\": 0,\r\n                \"vat_rate\": \"НДС20\",\r\n                \"total\": 12900,\r\n                \"vat_total\": 2150,\r\n                \"price\": 6450\r\n            }\r\n        ]\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_prod}}/api/table/import/realizations",
+          "protocol": "https",
+          "host": [
+            "api",
+            "t-d",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "table",
+            "import",
+            "realizations"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Claims Realizations",
+      "id": "0e1feee5-e741-4c7c-85ba-a511bc67c240",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NDY0NzM3NjQsImV4cCI6MTY0NzA3ODU2NCwibmJmIjoxNjQ2NDczNzY0LCJqdGkiOiJLd2JxS1BSRUxnc1JHTlJSIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0._U0bhOtoKL2ByoZwMClEmymnMpGQxNu3072-c45834U",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/claims/realizations",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "claims",
+            "realizations"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Claims Realization",
+      "id": "723bdac5-d2a0-4a07-b8f4-8d5b67e8c04b",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NDMxNzg5OTgsImV4cCI6MTY0Mzc4Mzc5OCwibmJmIjoxNjQzMTc4OTk4LCJqdGkiOiJIWEl3WGJoYWRMZWpveEg0Iiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.6hQxyVe-wFPo5x4H7APBZfVOTyG_0XPdZKqjVNBDBcI",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/claims/realization/b611a577-822f-11eb-a190-e61f13537e43",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "claims",
+            "realization",
+            "b611a577-822f-11eb-a190-e61f13537e43"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Order Realization",
+      "id": "14855592-c2b2-4c8a-ae54-155405c3c34b",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MDA2MzAzNzQsImV4cCI6MTcwMTIzNTE3NCwibmJmIjoxNzAwNjMwMzc0LCJqdGkiOiJoOWZUem90S1hxR29jckFOIiwic3ViIjoxNDg0LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.moFTbKkcjfpSCiMbPg5J9YG3GmHk-bS1GGpEEqmjsIc",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/order/b462a7a4-0966-4ac4-94bc-a4b02b0b0a76/realizations",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "order",
+            "b462a7a4-0966-4ac4-94bc-a4b02b0b0a76",
+            "realizations"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Order Realization Documents",
+      "id": "968ac301-346c-448d-9d9c-45cbacd8e3d8",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MDA2MzAzNzQsImV4cCI6MTcwMTIzNTE3NCwibmJmIjoxNzAwNjMwMzc0LCJqdGkiOiJoOWZUem90S1hxR29jckFOIiwic3ViIjoxNDg0LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.moFTbKkcjfpSCiMbPg5J9YG3GmHk-bS1GGpEEqmjsIc",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/order/b462a7a4-0966-4ac4-94bc-a4b02b0b0a76/realizations/documents?types[]=УПД&types[]=,kf,kf,kf",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "order",
+            "b462a7a4-0966-4ac4-94bc-a4b02b0b0a76",
+            "realizations",
+            "documents"
+          ],
+          "query": [
+            {
+              "key": "types[]",
+              "value": "УПД"
+            },
+            {
+              "key": "types[]",
+              "value": ",kf,kf,kf"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Claims Realization Statistics",
+      "id": "d7ac9ee2-40b8-486c-9723-cf1143074dd9",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTY0MzI2MjkzMCwiZXhwIjoxNjQzODY3NzMwLCJuYmYiOjE2NDMyNjI5MzAsImp0aSI6IkxKcmpZWTVEVlNieldMWlIiLCJzdWIiOjQwLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.R7L04ctQ9bXtcQo_DXAvWueeeljiQ1ToiyK440TCVgI",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/claims/realizations/user-statistics?year=2021",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "claims",
+            "realizations",
+            "user-statistics"
+          ],
+          "query": [
+            {
+              "key": "year",
+              "value": "2021"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Dealers LK Realization Statistics",
+      "id": "5efca3da-222d-4d86-986b-126753a987e4",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbi1hcy1kZWFsZXJcLzYiLCJpYXQiOjE3MzQ5NDg2NzUsImV4cCI6MTczNDk1MjI3NSwibmJmIjoxNzM0OTQ4Njc1LCJqdGkiOiJ4RThqR3lCUVN5UWFEdVNKIiwic3ViIjo0MiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.JSwQamBsrHu2tBBV8fH1KKao97izRSDzEg--Ei4reR8",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/dealers-lk/realizations/user-statistics?year=2023",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "dealers-lk",
+            "realizations",
+            "user-statistics"
+          ],
+          "query": [
+            {
+              "key": "year",
+              "value": "2023"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

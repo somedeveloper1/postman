@@ -1,0 +1,39 @@
+﻿{
+  "info": {
+    "_postman_id": "7af82f50-8993-48a4-94f5-65e1c5ddbc6e",
+    "name": "Stories",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Stories",
+      "id": "cfaf9778-11f1-445b-9bef-ba99db64228b",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTcxMDk0MTE0OCwiZXhwIjoxNzExNTQ1OTQ4LCJuYmYiOjE3MTA5NDExNDgsImp0aSI6IlZYMzdJdGt3N1ZSSHltSXoiLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.IVYbxXPZJ2qDtPYR3rqRgBkrqfzyJVDVeGsD1o2txh4",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/stories",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "stories"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

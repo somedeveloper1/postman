@@ -1,0 +1,163 @@
+﻿{
+  "info": {
+    "_postman_id": "b8164d41-a209-4d48-a99e-9c89cfa81549",
+    "name": "Nomenclature Types",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Nomenclature Types",
+      "id": "81e20bbf-6146-4798-8baf-94d75fa684fa",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzAzMDQzNDUsImV4cCI6MTYzMDMwNzk0NSwibmJmIjoxNjMwMzA0MzQ1LCJqdGkiOiJrNDRaQkYwd2s4NHdORWp4Iiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.23jho9Nh045pie7s-NSrC7TTXfiTEKo8VM28RyjQoCA",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/nomenclature-types",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "nomenclature-types"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Nomenclature Type Create",
+      "id": "d8171d7b-2ff3-4fde-847a-2aa0b9e229e8",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzAwNTYzODUsImV4cCI6MTYzMDA1OTk4NSwibmJmIjoxNjMwMDU2Mzg1LCJqdGkiOiI4ZDBGaml0eTlDUmxaNDJ0Iiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.7oPZE9vQPrTPrViJQb7mEzk6TTTS_avZXnYVYkcMo34",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"guid\": \"123\",\r\n    \"name\": \"my nomenclature type\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/nomenclature-type/submit",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "nomenclature-type",
+            "submit"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Nomenclature Types Import",
+      "id": "4e5ea624-1a93-4dc8-9bb9-b828ef5a2a4c",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzE1MTQ0MTYsIm5iZiI6MTYzMTUxNDQxNiwianRpIjoibGNaeDdGbTVhOHJBZElqWiIsInN1YiI6NywicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.HrcA2o7nmZ1sfGuF5xfJdq02nm-7A32KiZnaJ9tn4GE",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"guid\": \"7868357c-956c-11df-bfea-e61f13537e43\",\r\n        \"name\": \"Материал\"\r\n    },\r\n    {\r\n        \"guid\": \"7868357b-956c-11df-bfea-e61f13537e43\",\r\n        \"name\": \"Товар\"\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/table/import/nomenclature-types",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "table",
+            "import",
+            "nomenclature-types"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Nomenclature Types Import PROD",
+      "id": "906c12a5-0e6d-420f-b16e-959d5de67f51",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"guid\": \"7868357c-956c-11df-bfea-e61f13537e43\",\r\n        \"name\": \"Материал\"\r\n    },\r\n    {\r\n        \"guid\": \"7868357b-956c-11df-bfea-e61f13537e43\",\r\n        \"name\": \"Товар\"\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_prod}}/api/table/import/nomenclature-types",
+          "protocol": "https",
+          "host": [
+            "api",
+            "t-d",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "table",
+            "import",
+            "nomenclature-types"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

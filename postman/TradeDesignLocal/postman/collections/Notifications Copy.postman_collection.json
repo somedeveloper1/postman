@@ -1,0 +1,127 @@
+{
+  "info": {
+    "_postman_id": "bd967201-15ec-4999-8dd9-e4e9647463b9",
+    "name": "Notifications Copy",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Notifications",
+      "id": "021e4dfd-b726-4b9a-9f74-cd5026f5fce6",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaS1ob3JlY2FcL2xvZ2luIiwiaWF0IjoxNzY4Mjg2NzQxLCJleHAiOjE3Njg4OTE1NDEsIm5iZiI6MTc2ODI4Njc0MSwianRpIjoieVZlT0hZN1ZXdkVsb3JEViIsInN1YiI6NDgyNywicHJ2IjoiYjQwZmI0M2JmZDIzOTNhZjVmODNjNGVmNjc1ZjA1NmM0ZGI4ZTQ4MiJ9.QjVj9UBh8Y9rZV4lZiJ09nK8V24sNrqjjguS7AWigOc",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api-horeca/notifications"
+      },
+      "response": []
+    },
+    {
+      "name": "Notification",
+      "id": "d65499a0-b3e8-41c2-b89e-562b08274967",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaS1ob3JlY2FcL2xvZ2luIiwiaWF0IjoxNzY4Mjg2NzQxLCJleHAiOjE3Njg4OTE1NDEsIm5iZiI6MTc2ODI4Njc0MSwianRpIjoieVZlT0hZN1ZXdkVsb3JEViIsInN1YiI6NDgyNywicHJ2IjoiYjQwZmI0M2JmZDIzOTNhZjVmODNjNGVmNjc1ZjA1NmM0ZGI4ZTQ4MiJ9.QjVj9UBh8Y9rZV4lZiJ09nK8V24sNrqjjguS7AWigOc",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api-horeca/notification/8"
+      },
+      "response": []
+    },
+    {
+      "name": "Notifications Read",
+      "id": "5271f47f-2dcf-423a-a5e7-6f7378d42530",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaS1ob3JlY2FcL2xvZ2luIiwiaWF0IjoxNzY4Mjg2NzQxLCJleHAiOjE3Njg4OTE1NDEsIm5iZiI6MTc2ODI4Njc0MSwianRpIjoieVZlT0hZN1ZXdkVsb3JEViIsInN1YiI6NDgyNywicHJ2IjoiYjQwZmI0M2JmZDIzOTNhZjVmODNjNGVmNjc1ZjA1NmM0ZGI4ZTQ4MiJ9.QjVj9UBh8Y9rZV4lZiJ09nK8V24sNrqjjguS7AWigOc",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"ids\": [8, 9, 11]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api-horeca/notifications/read"
+      },
+      "response": []
+    },
+    {
+      "name": "Notifications Read All",
+      "id": "01e9ad8c-7902-4bc6-b38f-55afc54d380f",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2Mzg4NjY2NzYsImV4cCI6MTYzODk1MzA3NiwibmJmIjoxNjM4ODY2Njc2LCJqdGkiOiI2NVlPWHBGbW1Nd0dIN1dPIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.vfOxpXrNfh1yAXZQd4V4o3ONnGs3RID51BwS2ZgHCbE",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api-horeca/notifications/read-all"
+      },
+      "response": []
+    },
+    {
+      "name": "Notifications Count",
+      "id": "d4a0d29f-f7c8-411a-8f5c-7df26b605e56",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaS1ob3JlY2FcL2xvZ2luIiwiaWF0IjoxNzY4Mjg2NzQxLCJleHAiOjE3Njg4OTE1NDEsIm5iZiI6MTc2ODI4Njc0MSwianRpIjoieVZlT0hZN1ZXdkVsb3JEViIsInN1YiI6NDgyNywicHJ2IjoiYjQwZmI0M2JmZDIzOTNhZjVmODNjNGVmNjc1ZjA1NmM0ZGI4ZTQ4MiJ9.QjVj9UBh8Y9rZV4lZiJ09nK8V24sNrqjjguS7AWigOc",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api-horeca/notifications/count"
+      },
+      "response": []
+    }
+  ]
+}

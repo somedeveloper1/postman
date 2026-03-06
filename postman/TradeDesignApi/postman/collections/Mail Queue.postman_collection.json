@@ -1,0 +1,79 @@
+﻿{
+  "info": {
+    "_postman_id": "b55eb627-10ee-46c4-9312-b47bcb35bc3b",
+    "name": "Mail Queue",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Mail Queue Create",
+      "id": "54412570-db3a-493c-b1d0-ae4cd78bb4e6",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NDE3OTcyMzcsImV4cCI6MTY0MTg4MzYzNywibmJmIjoxNjQxNzk3MjM3LCJqdGkiOiJ0MVp5enBmNFV5c1Q1S1oxIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.4lYjaZrtCyzEFHpXUXMFyfv_BbL5tNFY6EazfbpvMWc",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"ids\": [1, 2, 3],\r\n    \"params\": { \"message\": \"my params\"},\r\n    \"to\": \"to\",\r\n    \"bcc\": \"bcc\",\r\n    \"cc\": \"cc\",\r\n    \"template_id\": 1\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/mail-queue/submit",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "mail-queue",
+            "submit"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Mail Queue",
+      "id": "f11053f6-0564-4043-a4a7-6ea638d22180",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NDE3OTcyMzcsImV4cCI6MTY0MTg4MzYzNywibmJmIjoxNjQxNzk3MjM3LCJqdGkiOiJ0MVp5enBmNFV5c1Q1S1oxIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.4lYjaZrtCyzEFHpXUXMFyfv_BbL5tNFY6EazfbpvMWc",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/mail-queue",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "mail-queue"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

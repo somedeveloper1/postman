@@ -1,0 +1,44 @@
+{
+  "info": {
+    "_postman_id": "b9471a5e-6df5-4f80-8607-c1dc8ffa898e",
+    "name": "Delivery Periods",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Delivery Periods Import",
+      "id": "364f0053-386a-4f91-9292-fa0753292441",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Transfer-Id",
+            "value": "202211071251",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"brand_guid\": \"78683575-956c-11df-bfea-e61f13537e43\",\r\n        \"country_guid\": \"1234569\",\r\n        \"date\": \"2022-11-07\",\r\n        \"delivery_period\": 10   \r\n    },\r\n    {\r\n        \"brand_guid\": \"78683575-956c-11df-bfea-e61f13537e43\",\r\n        \"country_guid\": \"12345679\",\r\n        \"date\": \"2022-11-07\",\r\n        \"delivery_period\": 10\r\n    },\r\n    {\r\n        \"brand_guid\": \"78683577-956c-11df-bfea-e61f13537e43\",\r\n        \"country_guid\": \"123456789\",\r\n        \"date\": \"2022-11-11\",\r\n        \"delivery_period\": 10\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/table/import/delivery-periods"
+      },
+      "response": []
+    }
+  ]
+}

@@ -1,0 +1,180 @@
+﻿{
+  "info": {
+    "_postman_id": "54f29ac9-bf13-447c-9a54-cf8392eeaa2a",
+    "name": "Banks",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Banks",
+      "id": "78155385-1415-4f7d-9542-59c23bc13e99",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2ODU2MDU4NDcsImV4cCI6MTY4NjIxMDY0NywibmJmIjoxNjg1NjA1ODQ3LCJqdGkiOiJxUEI4bG42RWhyQTVtd0FOIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.jyS9n6STF_iQBSIkDlJXH7xNmq1IyWny9JHQOgIzSE8",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/banks?search=30101810957730000706",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "banks"
+          ],
+          "query": [
+            {
+              "key": "search",
+              "value": "30101810957730000706"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Bank Create",
+      "id": "1450d571-ceec-403e-8def-3ea6984ce1c8",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzAzMjU3MzAsImV4cCI6MTYzMDMyOTMzMCwibmJmIjoxNjMwMzI1NzMwLCJqdGkiOiJLd0s4Q2t4ZVhsck4xa3dQIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.ZM-jPn1olbziHwiWzf3zEzoD6F3yzOJ-4FhgyptmQGY",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"guid\": \"1\",\r\n    \"name\": \"Tinkoff\",\r\n    \"code\": \"1\",\r\n    \"account\": \"11111111\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/bank/submit",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "bank",
+            "submit"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Banks Import",
+      "id": "d8ef5255-c0ca-469d-b0dd-624f6dbeec9c",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Transfer-Id",
+            "value": "8523697412369874563227",
+            "type": "text"
+          },
+          {
+            "key": "Package-Number",
+            "value": "1",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"guid\": \"f6fe4bc0-7e16-11e5-9dd2-e61f13537e43\",\r\n        \"name\": \"КУ ООО КБ \\\"НР БАНК\\\"\",\r\n        \"code\": \"044525480\",\r\n        \"account\": \"30101810545250000480\"\r\n    },\r\n    {\r\n        \"guid\": \"8eb46422-956c-11df-bfea-e61f13537e43\",\r\n        \"name\": \"НОВГОРОДСКОЕ ОТДЕЛЕНИЕ N 8629 ПАО СБЕРБАНК 1\",\r\n        \"code\": \"044959698\",\r\n        \"account\": \"30101810100000000698\"\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/table/import/banks",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "table",
+            "import",
+            "banks"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Banks Import PROD",
+      "id": "2968c0ca-be63-4e9e-8247-9ba724add100",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"guid\": \"f6fe4bc0-7e16-11e5-9dd2-e61f13537e43\",\r\n        \"name\": \"КУ ООО КБ \\\"НР БАНК\\\"\",\r\n        \"code\": \"044525480\",\r\n        \"account\": \"30101810545250000480\"\r\n    },\r\n    {\r\n        \"guid\": \"8eb46422-956c-11df-bfea-e61f13537e43\",\r\n        \"name\": \"НОВГОРОДСКОЕ ОТДЕЛЕНИЕ N 8629 ПАО СБЕРБАНК\",\r\n        \"code\": \"044959698\",\r\n        \"account\": \"30101810100000000698\"\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_prod}}/api/table/import/banks",
+          "protocol": "https",
+          "host": [
+            "api",
+            "t-d",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "table",
+            "import",
+            "banks"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

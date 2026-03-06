@@ -1,0 +1,524 @@
+{
+  "info": {
+    "_postman_id": "d420f6d8-a351-4647-9904-2a126feb252f",
+    "name": "Claims",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Claim",
+      "id": "1a75ffb3-7aa5-4989-b8b2-0cf402d9b2ae",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/claims/info/lk-9cb7c31f73-001643633556"
+      },
+      "response": [
+        {
+          "id": "3685156e-8041-4b24-a92d-84ffbb5efe47",
+          "name": "Default",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url}}/api/claims/info/{{id}}",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "api",
+                "claims",
+                "info",
+                "{{id}}"
+              ]
+            }
+          },
+          "_postman_previewlanguage": "Text",
+          "header": [],
+          "cookie": [],
+          "body": "{\r\n    \"buyer\": \"\",\r\n    \"buyer_id\": \"\",\r\n    \"seller\": \"\",\r\n    \"seller_id\": \"\",\r\n    \"deal\": \"\",\r\n    \"deal_id\": \"\",\r\n    \"item\": \"\",\r\n    \"item_id\": \"\",\r\n    \"launch_date\": \"\",\r\n    \"issue_date\": \"\",\r\n    \"zip_required\": \"\",\r\n    \"claim_description\": \"\",\r\n    \"full_name\": \"\",\r\n    \"role\": \"\",\r\n    \"phone\": \"\",\r\n    \"document_launch\": [],\r\n    \"document_diagnostics\": [],\r\n    \"document_claim\": [],\r\n    \"photo_label\": [],\r\n    \"photo_zip\": [],\r\n    \"photo_item\": [],\r\n    \"photo_failures\": [],\r\n    \"claim_id\": \"29319029\",\r\n    \"comment\": \"\",\r\n    \"status\": \"В работе\",\r\n    \"created_at\": \"22.03.2022\",\r\n    \"updated_at\": \"22.03.2021\"\r\n}"
+        }
+      ]
+    },
+    {
+      "name": "Claims Copy",
+      "id": "352bfe69-57c8-4bda-bed6-bbe3e85b7e33",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTcwNTk4Njk4NSwiZXhwIjoxNzA2NTkxNzg1LCJuYmYiOjE3MDU5ODY5ODUsImp0aSI6IjRvMjBxZ2tNQW85bmxtdkoiLCJzdWIiOjEzNjksInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.LsBZvb6xjrlLgF-klaGu-ulQXHjKN7J14x_VQC3zceA",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/claims?brands[]=042daac0-222f-11e0-8679-e61f13537e43"
+      },
+      "response": [
+        {
+          "id": "d6872461-9dbc-4a8e-b477-3c96b8210a9b",
+          "name": "Default",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url}}/api/claims",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "api",
+                "claims"
+              ]
+            }
+          },
+          "_postman_previewlanguage": "Text",
+          "header": [],
+          "cookie": [],
+          "body": ""
+        }
+      ]
+    },
+    {
+      "name": "Claim Create",
+      "id": "9cd0aeb0-a8e0-4726-a2bb-924d5128b276",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTcxMjU3NjA5MCwiZXhwIjoxNzEzMTgwODkwLCJuYmYiOjE3MTI1NzYwOTAsImp0aSI6IkVKRW5xeDJDUDczUkxGZ3QiLCJzdWIiOjE0ODQsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.QflpohfM82DIdWKdJiLSiUcbgpH-2qAVVqGT4AlOVd8",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"department_guid\": null,\r\n    \"realization_guid\": \"0f1fd242-698b-11ed-a553-e61f13537e43\",\r\n    \"nomenclature_guid\": \"2bdc358a-ec3a-4a9c-a75f-b2be1de45b42\",\r\n    \"initiator_guid\": \"6553dd64-326c-11ed-a2c8-e61f13537e43\",\r\n    \"counterparty_guid\": \"814f816c-cc70-11e3-8d43-e61f13537e43\",\r\n    \"organization_guid\": \"d10c720c-7b5c-11e7-9529-0050568e4379\",\r\n    \"launch_date\": \"2022-12-20\",\r\n    \"claim_date\": \"2023-06-13\",\r\n    \"zip_required\": \"Компрессор EMY2130U\",\r\n    \"description\": \"выход из строя компрессора EMY2130U\",\r\n    \"full_name\": \"Помазкин Роман Валерьевич\",\r\n    \"role\": \"генеральный директор\",\r\n    \"email\": null,\r\n    \"phone\": \"83466670605\",\r\n    \"comment\": null,\r\n    \"additional\": null,\r\n    \"serial_number\": \"123456789\",\r\n    \"release_date\": null,\r\n    \"website_comment_by_client\": null,\r\n    \"document_launch\": [],\r\n    \"document_diagnostics\": [],\r\n    \"equipment_location\": \"Saratovskaya obl\",\r\n    \"nomenclature_type\": \"nomenclature_type\",\r\n    \"problem_type\": \"problem_type\",\r\n    \"is_mail_to_initiator\": null,\r\n    \"is_mail_to_responsible\": null,\r\n    \"is_mail_to_contact\": null,\r\n    \"document_claim\": [{\r\n            \"name\": \"Акт-рекламация № 3.doc\",\r\n            \"url\": \"https:\\/\\/api.t-d.ru\\/documents\\/qzaQ8vxCKcDcmeJMSHnUoPnIYUffBuZKhCl9zIcV.doc\"\r\n        }\r\n    ],\r\n    \"photo_label\": [{\r\n            \"name\": \"20230620_125916.jpg\",\r\n            \"url\": \"https:\\/\\/api.t-d.ru\\/documents\\/GphM1HNIsbBaPbYETZzy4n4JOS1TIUuzsKIiPEU3.jpg\"\r\n        }\r\n    ],\r\n    \"photo_zip\": [{\r\n            \"name\": \"20230620_125932.jpg\",\r\n            \"url\": \"https:\\/\\/api.t-d.ru\\/documents\\/PYGcMcyDfK0mdexT4vfUAzdiUioX8TKuqbI6f9QF.jpg\"\r\n        }\r\n    ],\r\n    \"photo_item\": [{\r\n            \"name\": \"20230620_130717.jpg\",\r\n            \"url\": \"https:\\/\\/api.t-d.ru\\/documents\\/AXWldvudKKj0Fu2x0fUDL3U2SXTPcnvalc2PnCxs.jpg\"\r\n        }\r\n    ],\r\n    \"photo_failures\": []\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/claim/submit"
+      },
+      "response": [
+        {
+          "id": "06260c4b-e2a7-49b1-8ae1-b6109ef5620e",
+          "name": "Default",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{url}}/api/claim/submit",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "api",
+                "claim",
+                "submit"
+              ]
+            }
+          },
+          "_postman_previewlanguage": "Text",
+          "header": [],
+          "cookie": [],
+          "body": "{\r\n    \"user_id\": \"1233\",\r\n    \"buyer\": \"\",\r\n    \"buyer_id\": \"\",\r\n    \"seller\": \"\",\r\n    \"seller_id\": \"\",\r\n    \"deal\": \"\",\r\n    \"deal_id\": \"\",\r\n    \"item\": \"\",\r\n    \"item_id\": \"\",\r\n    \"launch_date\": \"\",\r\n    \"issue_date\": \"\",\r\n    \"zip_required\": \"\",\r\n    \"claim_description\": \"\",\r\n    \"full_name\": \"\",\r\n    \"role\": \"\",\r\n    \"phone\": \"\",\r\n    \"document_launch\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }],\r\n    \"document_diagnostics\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }],\r\n    \"document_claim\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }],\r\n    \"photo_label\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }],\r\n    \"photo_zip\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }],\r\n    \"photo_item\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }],\r\n    \"photo_failures\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }]\r\n}"
+        }
+      ]
+    },
+    {
+      "name": "Dealers lk Claim Create",
+      "id": "2eda4652-187f-48ad-b97c-20be86e05092",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MzUxMDI4NjgsImV4cCI6MTczNTcwNzY2OSwibmJmIjoxNzM1MTAyODY5LCJqdGkiOiJkY1lEV09xRDdPN2VXUEJpIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.qpGcFPZG29bRxtoJT0yESFixiIg44HH1eI2QJ-ha0oQ",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"department_guid\": null,\r\n    \"realization_guid\": \"0f1fd242-698b-11ed-a553-e61f13537e43\",\r\n    \"nomenclature_guid\": \"2bdc358a-ec3a-4a9c-a75f-b2be1de45b42\",\r\n    \"initiator_guid\": \"6553dd64-326c-11ed-a2c8-e61f13537e43\",\r\n    \"counterparty_guid\": \"814f816c-cc70-11e3-8d43-e61f13537e43\",\r\n    \"organization_guid\": \"d10c720c-7b5c-11e7-9529-0050568e4379\",\r\n    \"launch_date\": \"2022-12-20\",\r\n    \"claim_date\": \"2023-06-13\",\r\n    \"zip_required\": \"Компрессор EMY2130U\",\r\n    \"description\": \"выход из строя компрессора EMY2130U\",\r\n    \"full_name\": \"Помазкин Роман Валерьевич\",\r\n    \"role\": \"генеральный директор\",\r\n    \"email\": null,\r\n    \"phone\": \"83466670605\",\r\n    \"comment\": null,\r\n    \"additional\": null,\r\n    \"serial_number\": \"123456789\",\r\n    \"release_date\": null,\r\n    \"website_comment_by_client\": null,\r\n    \"document_launch\": [],\r\n    \"document_diagnostics\": [],\r\n    \"equipment_location\": \"Saratovskaya obl\",\r\n    \"nomenclature_type\": \"nomenclature_type\",\r\n    \"problem_type\": \"problem_type\",\r\n    \"is_mail_to_initiator\": null,\r\n    \"is_mail_to_responsible\": null,\r\n    \"is_mail_to_contact\": null,\r\n    \"document_claim\": [{\r\n            \"name\": \"Акт-рекламация № 3.doc\",\r\n            \"url\": \"https:\\/\\/api.t-d.ru\\/documents\\/qzaQ8vxCKcDcmeJMSHnUoPnIYUffBuZKhCl9zIcV.doc\"\r\n        }\r\n    ],\r\n    \"photo_label\": [{\r\n            \"name\": \"20230620_125916.jpg\",\r\n            \"url\": \"https:\\/\\/api.t-d.ru\\/documents\\/GphM1HNIsbBaPbYETZzy4n4JOS1TIUuzsKIiPEU3.jpg\"\r\n        }\r\n    ],\r\n    \"photo_zip\": [{\r\n            \"name\": \"20230620_125932.jpg\",\r\n            \"url\": \"https:\\/\\/api.t-d.ru\\/documents\\/PYGcMcyDfK0mdexT4vfUAzdiUioX8TKuqbI6f9QF.jpg\"\r\n        }\r\n    ],\r\n    \"photo_item\": [{\r\n            \"name\": \"20230620_130717.jpg\",\r\n            \"url\": \"https:\\/\\/api.t-d.ru\\/documents\\/AXWldvudKKj0Fu2x0fUDL3U2SXTPcnvalc2PnCxs.jpg\"\r\n        }\r\n    ],\r\n    \"photo_failures\": []\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/dealers-lk/claim/submit"
+      },
+      "response": [
+        {
+          "id": "18f05d9e-3c8a-474e-ab2f-c40501af3a6c",
+          "name": "Default",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{url}}/api/claim/submit",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "api",
+                "claim",
+                "submit"
+              ]
+            }
+          },
+          "_postman_previewlanguage": "Text",
+          "header": [],
+          "cookie": [],
+          "body": "{\r\n    \"user_id\": \"1233\",\r\n    \"buyer\": \"\",\r\n    \"buyer_id\": \"\",\r\n    \"seller\": \"\",\r\n    \"seller_id\": \"\",\r\n    \"deal\": \"\",\r\n    \"deal_id\": \"\",\r\n    \"item\": \"\",\r\n    \"item_id\": \"\",\r\n    \"launch_date\": \"\",\r\n    \"issue_date\": \"\",\r\n    \"zip_required\": \"\",\r\n    \"claim_description\": \"\",\r\n    \"full_name\": \"\",\r\n    \"role\": \"\",\r\n    \"phone\": \"\",\r\n    \"document_launch\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }],\r\n    \"document_diagnostics\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }],\r\n    \"document_claim\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }],\r\n    \"photo_label\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }],\r\n    \"photo_zip\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }],\r\n    \"photo_item\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }],\r\n    \"photo_failures\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }]\r\n}"
+        }
+      ]
+    },
+    {
+      "name": "Claim Update Mail Marks",
+      "id": "5138b1b7-5a24-41a6-bad1-8c013f0b1db8",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoLWZyb250XC9sb2dpbiIsImlhdCI6MTcxMjczNDYxOSwiZXhwIjoxNzEzMzM5NDE5LCJuYmYiOjE3MTI3MzQ2MTksImp0aSI6IlprUGE2c0c2cExsall6YTUiLCJzdWIiOjEzNjksInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.2SdplAWLdg16EB2BWSXQ0wFZRLSlfWmw9BUZH64E0n8",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"is_mail_to_initiator\": true,\r\n    \"is_mail_to_responsible\": true,\r\n    \"is_mail_to_contact\": true\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/claim/update-mail-marks/3231a19a-d90c-11ed-9552-e61f13537e43"
+      },
+      "response": [
+        {
+          "id": "2c9e3523-fb0b-437f-bbb3-b957857ef25c",
+          "name": "Default",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{url}}/api/claim/submit",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "api",
+                "claim",
+                "submit"
+              ]
+            }
+          },
+          "_postman_previewlanguage": "Text",
+          "header": [],
+          "cookie": [],
+          "body": "{\r\n    \"user_id\": \"1233\",\r\n    \"buyer\": \"\",\r\n    \"buyer_id\": \"\",\r\n    \"seller\": \"\",\r\n    \"seller_id\": \"\",\r\n    \"deal\": \"\",\r\n    \"deal_id\": \"\",\r\n    \"item\": \"\",\r\n    \"item_id\": \"\",\r\n    \"launch_date\": \"\",\r\n    \"issue_date\": \"\",\r\n    \"zip_required\": \"\",\r\n    \"claim_description\": \"\",\r\n    \"full_name\": \"\",\r\n    \"role\": \"\",\r\n    \"phone\": \"\",\r\n    \"document_launch\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }],\r\n    \"document_diagnostics\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }],\r\n    \"document_claim\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }],\r\n    \"photo_label\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }],\r\n    \"photo_zip\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }],\r\n    \"photo_item\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }],\r\n    \"photo_failures\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }]\r\n}"
+        }
+      ]
+    },
+    {
+      "name": "Claim Add Documents",
+      "id": "4e69dc6b-1916-45d7-8b16-e03973a98bde",
+      "protocolProfileBehavior": {
+        "disabledSystemHeaders": {}
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2ODA1MzE1OTgsImV4cCI6MTY4MTEzNjM5OCwibmJmIjoxNjgwNTMxNTk4LCJqdGkiOiJtQ3RZN2t2U2RuTUZ4aFJ5Iiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.1Y0I_AineQyGdpNUEkb_y_k4RKrq_D-cbEQxjA1VhvM",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text",
+            "disabled": true
+          },
+          {
+            "key": "X-Requested-With",
+            "value": "XMLHttpRequest",
+            "type": "text",
+            "disabled": true
+          },
+          {
+            "key": "Content-Type",
+            "value": "multipart/form-data",
+            "type": "text",
+            "disabled": true
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"counterparty_guid\": \"814f816c-cc70-11e3-8d43-e61f13537e43\",\r\n    \"photo_label\": [\r\n        {\r\n            \"name\": \"00000085453.jpg\",\r\n            \"url\": \"{{base_url_prod}}/images/upload1C/000000854123.jpg\"\r\n        },\r\n        {\r\n            \"name\": \"00000085458.jpg\",\r\n            \"url\": \"{{base_url_prod}}/images/upload1C/0000008549.jpg\"\r\n        }\r\n    ],\r\n    \"document_claim\": [\r\n        {\r\n            \"name\": \"00000085451.jpg\",\r\n            \"url\": \"{{base_url_prod}}/images/upload1C/0000008548.jpg\"\r\n        }\r\n    ],\r\n    \"photo_zip\": [\r\n        {\r\n            \"name\": \"00000255797.jpg\",\r\n            \"url\": \"{{base_url_prod}}/images/upload1C/00000255757.jpg\"\r\n        }\r\n    ],\r\n    \"photo_item\": [\r\n        {\r\n            \"name\": \"00000255799.jpg\",\r\n            \"url\": \"{{base_url_prod}}/images/upload1C/00000255798.jpg\"\r\n        }\r\n    ],\r\n    \"document_diagnostics\": [\r\n        {\r\n            \"name\": \"pr_gcloud_up.docx\",\r\n            \"url\": \"{{base_url_prod}}/storage/documents/l7lMnZWitPwRDZ34V8Jwu507sgrowA15Y8c94rO6.docx\"\r\n        }\r\n    ],\r\n    \"document_launch\": [\r\n        {\r\n            \"name\": \"pr_gcloud_up.docx\",\r\n            \"url\": \"{{base_url_prod}}/storage/documents/l7lMnZWitPwRDZ34V8Jwu507sgrowA15Y8c94rO5.docx\"\r\n        }\r\n    ],\r\n    \"user_id\": \"2\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/claim/add-documents/lk-1516c0eb03-001680765735"
+      },
+      "response": [
+        {
+          "id": "cd4b1ec0-47f0-479f-a0d8-71da0a719b8c",
+          "name": "Default",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{url}}/api/claim/submit",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "api",
+                "claim",
+                "submit"
+              ]
+            }
+          },
+          "_postman_previewlanguage": "Text",
+          "header": [],
+          "cookie": [],
+          "body": "{\r\n    \"user_id\": \"1233\",\r\n    \"buyer\": \"\",\r\n    \"buyer_id\": \"\",\r\n    \"seller\": \"\",\r\n    \"seller_id\": \"\",\r\n    \"deal\": \"\",\r\n    \"deal_id\": \"\",\r\n    \"item\": \"\",\r\n    \"item_id\": \"\",\r\n    \"launch_date\": \"\",\r\n    \"issue_date\": \"\",\r\n    \"zip_required\": \"\",\r\n    \"claim_description\": \"\",\r\n    \"full_name\": \"\",\r\n    \"role\": \"\",\r\n    \"phone\": \"\",\r\n    \"document_launch\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }],\r\n    \"document_diagnostics\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }],\r\n    \"document_claim\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }],\r\n    \"photo_label\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }],\r\n    \"photo_zip\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }],\r\n    \"photo_item\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }],\r\n    \"photo_failures\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }]\r\n}"
+        }
+      ]
+    },
+    {
+      "name": "Dealers LK Claim Add Documents",
+      "id": "ebc46899-7137-4600-aec4-6e15d627d0ae",
+      "protocolProfileBehavior": {
+        "disabledSystemHeaders": {}
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MzUxMDI4NjgsImV4cCI6MTczNTcwNzY2OSwibmJmIjoxNzM1MTAyODY5LCJqdGkiOiJkY1lEV09xRDdPN2VXUEJpIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.qpGcFPZG29bRxtoJT0yESFixiIg44HH1eI2QJ-ha0oQ",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text",
+            "disabled": true
+          },
+          {
+            "key": "X-Requested-With",
+            "value": "XMLHttpRequest",
+            "type": "text",
+            "disabled": true
+          },
+          {
+            "key": "Content-Type",
+            "value": "multipart/form-data",
+            "type": "text",
+            "disabled": true
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"counterparty_guid\": \"814f816c-cc70-11e3-8d43-e61f13537e43\",\r\n    \"photo_label\": [\r\n        {\r\n            \"name\": \"00000085453.jpg\",\r\n            \"url\": \"{{base_url_prod}}/images/upload1C/000000854123.jpg\"\r\n        },\r\n        {\r\n            \"name\": \"00000085458.jpg\",\r\n            \"url\": \"{{base_url_prod}}/images/upload1C/0000008549.jpg\"\r\n        }\r\n    ],\r\n    \"document_claim\": [\r\n        {\r\n            \"name\": \"00000085451.jpg\",\r\n            \"url\": \"{{base_url_prod}}/images/upload1C/0000008548.jpg\"\r\n        }\r\n    ],\r\n    \"photo_zip\": [\r\n        {\r\n            \"name\": \"00000255797.jpg\",\r\n            \"url\": \"{{base_url_prod}}/images/upload1C/00000255757.jpg\"\r\n        }\r\n    ],\r\n    \"photo_item\": [\r\n        {\r\n            \"name\": \"00000255799.jpg\",\r\n            \"url\": \"{{base_url_prod}}/images/upload1C/00000255798.jpg\"\r\n        }\r\n    ],\r\n    \"document_diagnostics\": [\r\n        {\r\n            \"name\": \"pr_gcloud_up.docx\",\r\n            \"url\": \"{{base_url_prod}}/storage/documents/l7lMnZWitPwRDZ34V8Jwu507sgrowA15Y8c94rO6.docx\"\r\n        }\r\n    ],\r\n    \"document_launch\": [\r\n        {\r\n            \"name\": \"pr_gcloud_up.docx\",\r\n            \"url\": \"{{base_url_prod}}/storage/documents/l7lMnZWitPwRDZ34V8Jwu507sgrowA15Y8c94rO5.docx\"\r\n        }\r\n    ],\r\n    \"user_id\": \"2\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/dealers-lk/claim/add-documents/lk-6ab866d888-001735113520"
+      },
+      "response": [
+        {
+          "id": "838dee49-414d-44d1-a895-64802c912759",
+          "name": "Default",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{url}}/api/claim/submit",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "api",
+                "claim",
+                "submit"
+              ]
+            }
+          },
+          "_postman_previewlanguage": "Text",
+          "header": [],
+          "cookie": [],
+          "body": "{\r\n    \"user_id\": \"1233\",\r\n    \"buyer\": \"\",\r\n    \"buyer_id\": \"\",\r\n    \"seller\": \"\",\r\n    \"seller_id\": \"\",\r\n    \"deal\": \"\",\r\n    \"deal_id\": \"\",\r\n    \"item\": \"\",\r\n    \"item_id\": \"\",\r\n    \"launch_date\": \"\",\r\n    \"issue_date\": \"\",\r\n    \"zip_required\": \"\",\r\n    \"claim_description\": \"\",\r\n    \"full_name\": \"\",\r\n    \"role\": \"\",\r\n    \"phone\": \"\",\r\n    \"document_launch\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }],\r\n    \"document_diagnostics\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }],\r\n    \"document_claim\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }],\r\n    \"photo_label\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }],\r\n    \"photo_zip\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }],\r\n    \"photo_item\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }],\r\n    \"photo_failures\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }]\r\n}"
+        }
+      ]
+    },
+    {
+      "name": "Claim Create PROD",
+      "id": "e6e5dedf-a6b5-4b5a-bb02-bba16c99d93f",
+      "protocolProfileBehavior": {
+        "disabledSystemHeaders": {}
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text",
+            "disabled": true
+          },
+          {
+            "key": "X-Requested-With",
+            "value": "XMLHttpRequest",
+            "type": "text",
+            "disabled": true
+          },
+          {
+            "key": "Content-Type",
+            "value": "multipart/form-data",
+            "type": "text",
+            "disabled": true
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"seller_id\": \"0000000\",\r\n    \"buyer_id\": \"0000000\",\r\n    \"deal_id\": \"0000000\",\r\n    \"deal_text\": \"\",\r\n    \"item_id\": \"0000000\",\r\n    \"item_text\": \"\",\r\n    \"launch_date\": \"2021-09-16\",\r\n    \"issue_date\":  \"\",\r\n    \"zip_required\": \"\",\r\n    \"claim_description\": \"ололоылофыофоыоылфоылцоыл\",\r\n    \"full_name\": \"лыоо\",\r\n    \"role\": \"волыоыво\",\r\n    \"phone\": \"овлоыловлыово\",\r\n    \"seller\": \"ООО Покупатель 1\",\r\n    \"buyer\": \"ООО Недизайн\",\r\n    \"deal\": \"ООО Торговый Дизайн\",\r\n    \"item\": \"ООО Торговый Дизайн\",\r\n    \"photo_label\": [{ \r\n        \"name\": \"undefined\",\r\n        \"url\": \"undefined\"\r\n    }],\r\n    \"act_claim\": [{ \r\n        \"name\": \"pr_gcloud_up.docx\",\r\n        \"url\": \"{{base_url_prod}}/storage/documents/MkvA9PTNqkx3n7dkubqm5nRgVtq79jqcTp526Y8x.docx\"\r\n    }],\r\n    \"photo_zip\": [{ \r\n        \"name\": \"pr_gcloud_up.docx\",\r\n        \"url\": \"{{base_url_prod}}/storage/documents/Yczy1sNsus0mbQuE0iMUIfyMm0UNsDYyAXiwG2db.docx\"\r\n    }],\r\n    \"photo_item\": [{ \r\n        \"name\": \"pr_gcloud_up-(1).docx\",\r\n        \"url\": \"{{base_url_prod}}/storage/documents/LSpq2V0YjKRKVgwkGBDZqlhPKnoUNCUxlcgLaAql.docx\"\r\n    }],\r\n    \"document_diagnostics\":[ { \r\n        \"name\": \"pr_gcloud_up.docx\",\r\n        \"url\": \"{{base_url_prod}}/storage/documents/l7lMnZWitPwRDZ34V8Jwu507sgrowA15Y8c94rOr.docx\"\r\n    }],\r\n    \"user_id\": \"4\"\r\n }\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_prod}}/api/claim/submit"
+      },
+      "response": [
+        {
+          "id": "1505d317-8c3b-4555-876a-6e0e7b12eb7b",
+          "name": "Default",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{url}}/api/claim/submit",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "api",
+                "claim",
+                "submit"
+              ]
+            }
+          },
+          "_postman_previewlanguage": "Text",
+          "header": [],
+          "cookie": [],
+          "body": "{\r\n    \"user_id\": \"1233\",\r\n    \"buyer\": \"\",\r\n    \"buyer_id\": \"\",\r\n    \"seller\": \"\",\r\n    \"seller_id\": \"\",\r\n    \"deal\": \"\",\r\n    \"deal_id\": \"\",\r\n    \"item\": \"\",\r\n    \"item_id\": \"\",\r\n    \"launch_date\": \"\",\r\n    \"issue_date\": \"\",\r\n    \"zip_required\": \"\",\r\n    \"claim_description\": \"\",\r\n    \"full_name\": \"\",\r\n    \"role\": \"\",\r\n    \"phone\": \"\",\r\n    \"document_launch\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }],\r\n    \"document_diagnostics\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }],\r\n    \"document_claim\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }],\r\n    \"photo_label\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }],\r\n    \"photo_zip\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }],\r\n    \"photo_item\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }],\r\n    \"photo_failures\": [{\r\n        \"url\": \"\",\r\n        \"name\": \"\"\r\n    }]\r\n}"
+        }
+      ]
+    },
+    {
+      "name": "Statistics",
+      "id": "f607a24b-2c00-43ff-9f71-c17ebfe11816",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4iLCJpYXQiOjE3MDcxNDI5MTIsImV4cCI6MTcwNzc0NzcxMiwibmJmIjoxNzA3MTQyOTEyLCJqdGkiOiJMY1VLTGFqTEFPVEQ1Q0ZwIiwic3ViIjoxMzY5LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.RizXH4m7l7m8BG75-uRMyxnldieH_UFXjp6dfpLNhSg",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/claims/statistics"
+      },
+      "response": [
+        {
+          "id": "efc29872-8c3a-487c-a875-16cfe59180a3",
+          "name": "Default",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{url}}/api/claims",
+              "host": [
+                "{{url}}"
+              ],
+              "path": [
+                "api",
+                "claims"
+              ]
+            }
+          },
+          "_postman_previewlanguage": "Text",
+          "header": [],
+          "cookie": [],
+          "body": ""
+        }
+      ]
+    }
+  ]
+}

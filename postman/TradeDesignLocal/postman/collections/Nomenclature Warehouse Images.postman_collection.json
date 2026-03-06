@@ -1,0 +1,80 @@
+{
+  "info": {
+    "_postman_id": "8e1d45c8-be49-4929-a8f0-a1f4707a115c",
+    "name": "Nomenclature Warehouse Images",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Nomenclature Warehouse Image Upload",
+      "id": "78fa48cc-34ee-4f7b-a6b0-1784b9b45385",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTcyOTE0NzA1NiwiZXhwIjoxNzI5NzUxODU2LCJuYmYiOjE3MjkxNDcwNTYsImp0aSI6IjlmMnU3OFRLOTJjQ2pLbUQiLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.qmsWO0qqv0yge_fUIdpg5FncM7vapWcAUJRD7wTktcA",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "files[]",
+              "type": "file",
+              "src": "/C:/Users/Юлия/OneDrive/Изображения/zvezdy_kosmos_siyanie_planeta_99744_1400x1050.jpg",
+              "disabled": true
+            },
+            {
+              "key": "files[]",
+              "type": "file",
+              "src": "/C:/Users/Юлия/Downloads/IMG_9170.jpeg"
+            }
+          ]
+        },
+        "url": "{{base_url_local}}/api/nomenclature-warehouses-images/4a077588-95b4-11df-bfea-e61f13537e43/nameplate/upload"
+      },
+      "response": []
+    },
+    {
+      "name": "Nomenclature Warehouse Image Delete",
+      "id": "80a205c9-3a93-4d11-a4db-97cf27e54ce5",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTcyOTE0NzA1NiwiZXhwIjoxNzI5NzUxODU2LCJuYmYiOjE3MjkxNDcwNTYsImp0aSI6IjlmMnU3OFRLOTJjQ2pLbUQiLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.qmsWO0qqv0yge_fUIdpg5FncM7vapWcAUJRD7wTktcA",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "files[]",
+              "type": "file",
+              "src": "/C:/Users/Юлия/OneDrive/Изображения/zvezdy_kosmos_siyanie_planeta_99744_1400x1050.jpg"
+            },
+            {
+              "key": "files[]",
+              "type": "file",
+              "src": "/C:/Users/Юлия/OneDrive/Изображения/Изображение WhatsApp 2024-06-20.jpg"
+            }
+          ]
+        },
+        "url": "{{base_url_local}}/api/nomenclature-warehouses-images/delete/11"
+      },
+      "response": []
+    }
+  ]
+}

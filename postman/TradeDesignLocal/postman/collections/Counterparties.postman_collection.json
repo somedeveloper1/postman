@@ -1,0 +1,290 @@
+{
+  "info": {
+    "_postman_id": "62d2b7e1-2d60-43a2-a3f4-352f16a92e09",
+    "name": "Counterparties",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Counterparties",
+      "id": "31f7322e-3b81-4b83-a461-6bcaab9320d4",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/counterparties/list"
+      },
+      "response": []
+    },
+    {
+      "name": "Counterparty",
+      "id": "1e0ff537-f07c-4cdb-a9df-c05e84d160af",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/counterparties/list"
+      },
+      "response": []
+    },
+    {
+      "name": "Counterparties Claims",
+      "id": "6c1218fe-549e-4d4b-a580-bb8437940698",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/claims/counterparties"
+      },
+      "response": []
+    },
+    {
+      "name": "Counterparties TOP 20",
+      "id": "e57425a8-313d-4e7a-b5c0-747f78215f0d",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/counterparties/search?search_kpp=230701001&search_inn=2310031475"
+      },
+      "response": []
+    },
+    {
+      "name": "Counterparty Create",
+      "id": "85d140c8-444f-4c55-948b-f82ef4f761e1",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzA1OTEzNDAsImV4cCI6MTYzMDU5NDk0MCwibmJmIjoxNjMwNTkxMzQwLCJqdGkiOiJqYWRiVnVpOXoyQ3BJRjNmIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.HaANsi7AEQTUKwzq0W7MWc1KBaS4Jis5WQEeULEUYGA",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"guid\": \"11\",\r\n    \"name\": \"counterparty 1\",\r\n    \"full_name\": \"counterparty full name\",\r\n    \"is_dealer\": false,\r\n    \"INN\": \"123456789123\",\r\n    \"KPP\": \"123456789\",\r\n    \"legal_status\": \"ЮрЛицо\",\r\n    \"country_guid\": \"1\",\r\n    \"shipment_prohibited\": false\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/counterparty/submit"
+      },
+      "response": []
+    },
+    {
+      "name": "Counterparty Set Default Email",
+      "id": "ef831fa3-966e-48da-b9d3-edd40d8511fd",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NTcwMDY2ODAsImV4cCI6MTY1NzYxMTQ4MCwibmJmIjoxNjU3MDA2NjgwLCJqdGkiOiJFcEdCTkFldnpXRlhEMlVDIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.xHCjlRnB5FpSAtfhaJe9KXEJSMMv470NoX09liJcETI",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"email\": null\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/counterparty/set-default-email"
+      },
+      "response": []
+    },
+    {
+      "name": "Counterparty Get Default Email",
+      "id": "abcc3629-f668-47b0-ada3-adbfbaa9a612",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NTcwMDY2ODAsImV4cCI6MTY1NzYxMTQ4MCwibmJmIjoxNjU3MDA2NjgwLCJqdGkiOiJFcEdCTkFldnpXRlhEMlVDIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.xHCjlRnB5FpSAtfhaJe9KXEJSMMv470NoX09liJcETI",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/counterparty/default-email"
+      },
+      "response": []
+    },
+    {
+      "name": "Counterparties Import",
+      "id": "f30450a8-7416-4202-9e76-1de729d8e702",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Transfer-Id",
+            "value": "202301311623"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"guid\": \"46794e15-194b-11ed-a2c8-e61f13537111\",\r\n        \"name\": \"Акрамова Ольга Викторовна\",\r\n        \"full_name\": \"Акрамова Ольга Викторовна\",\r\n        \"manager\": \"2179c3fc-958f-11e8-a2a5-e61f13537e43\",\r\n        \"is_dealer\": false,\r\n        \"head_counterparty\": \"46794e15-194b-11ed-a2c8-e61f13537e43\",\r\n        \"INN\": null,\r\n        \"KPP\": null,\r\n        \"legal_status\": \"ФизЛицо\",\r\n        \"country_guid\": \"00000000-0000-0000-0000-000000000000\",\r\n        \"shipment_prohibited\": false,\r\n        \"okopf_code\": null,\r\n        \"okopf_guid\": \"bb910b6b-9c73-11df-8da0-e61f13537e43\",\r\n        \"region\": null,\r\n        \"tax_number\": null,\r\n        \"clients_type_guid\": \"041f5cde-52fc-11e1-afd9-e61f13537e43\",\r\n        \"number_lk\": \"lk-b89a193661-001660043602\",\r\n        \"main_contract_guid\": \"041f5cde-52fc-11e1-afd9-e61f13537e43\",\r\n        \"is_internal\": true,\r\n        \"is_our_supplier\": true,\r\n        \"matrix_client_type_guid\": \"matrix_client_type_guid\",\r\n        \"is_currency_accounts\": true,\r\n        \"currency_accounts_brands\": [\r\n            {\r\n                \"brand_guid\": \"ddc044cf-cb7f-11ee-8614-0050568e3182\",\r\n                \"line\": 1\r\n            }\r\n        ]\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/table/import/counterparties"
+      },
+      "response": []
+    },
+    {
+      "name": "Counterparties Import PROD",
+      "id": "294e4233-9fe7-44e1-9f6d-94498dc88728",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"guid\": \"7a884209-5192-11de-ac04-0019dbd95dce\",\r\n        \"name\": \"Вилла ООО\",\r\n        \"full_name\": \"ООО \\\"Вилла\\\"\",\r\n        \"manager\": \"00000000-0000-0000-0000-000000000000\",\r\n        \"is_dealer\": false,\r\n        \"head_counterparty\": \"7a884209-5192-11de-ac04-0019dbd95dce\",\r\n        \"INN\": \"7705856026\",\r\n        \"KPP\": \"770501001\",\r\n        \"legal_status\": \"ЮрЛицо\",\r\n        \"country_guid\": \"00000000-0000-0000-0000-000000000000\",\r\n        \"shipment_prohibited\": false\r\n    },\r\n    {\r\n        \"guid\": \"7a34e6dc-299b-11de-b60c-001a6498e70d\",\r\n        \"name\": \"Алтер ООО\",\r\n        \"full_name\": \"ООО \\\"АЛТЕР\\\"\",\r\n        \"manager\": \"00000000-0000-0000-0000-000000000000\",\r\n        \"is_dealer\": false,\r\n        \"head_counterparty\": \"7a34e6dc-299b-11de-b60c-001a6498e70d\",\r\n        \"INN\": \"7718504952\",\r\n        \"KPP\": \"771301001\",\r\n        \"legal_status\": \"ЮрЛицо\",\r\n        \"country_guid\": \"00000000-0000-0000-0000-000000000000\",\r\n        \"shipment_prohibited\": false\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_prod}}/api/table/import/counterparties"
+      },
+      "response": []
+    },
+    {
+      "name": "Counterparties get JSON",
+      "id": "bdbe889d-1d1f-49c7-b5be-9836e02143ea",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzA1ODk0MzQsImV4cCI6MTYzMDU5MzAzNCwibmJmIjoxNjMwNTg5NDM0LCJqdGkiOiJSVFVvMmxtdWkzMHRKT0VDIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.yO6R72iQcqZh_oCwDBcDNSQYGiJ8IqzNL076CWBjpMA",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/counterparties/get-json"
+      },
+      "response": []
+    },
+    {
+      "name": "Counterparties create JSON",
+      "id": "d14a33ad-fc7c-44a8-9fd5-6b2cb6e4dffb",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/counterparties/create-json"
+      },
+      "response": []
+    },
+    {
+      "name": "Counterparties Deltas",
+      "id": "65201066-cd6f-4cd7-9b8d-2442d23d0063",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/counterparty/delta"
+      },
+      "response": []
+    },
+    {
+      "name": "Counterparties Delta Delete",
+      "id": "dbd1f4fd-af18-4c12-b576-60075dd55553",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": "{{base_url_local}}/api/counterparty/delete-deltas"
+      },
+      "response": []
+    }
+  ]
+}

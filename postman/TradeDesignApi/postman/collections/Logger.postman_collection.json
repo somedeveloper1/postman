@@ -1,0 +1,29 @@
+﻿{
+  "info": {
+    "_postman_id": "25bec66a-1db9-4e67-bd8e-87feb57c4d9b",
+    "name": "Logger",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Logger",
+      "id": "ac42ba7d-75e2-425b-855b-c9e8e456a174",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/hello",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "hello"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

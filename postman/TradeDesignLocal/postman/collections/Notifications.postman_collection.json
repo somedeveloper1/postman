@@ -1,0 +1,127 @@
+{
+  "info": {
+    "_postman_id": "a144f3c7-9f8c-447e-914e-7f1cde8a2d95",
+    "name": "Notifications",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Notifications",
+      "id": "ff6ab3bd-1c26-4ecd-bff3-682faca560f1",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NDA2NzgyMjUsImV4cCI6MTY0MDc2NDYyNSwibmJmIjoxNjQwNjc4MjI1LCJqdGkiOiJ1NE9QRTR5dHpMTUhqQ1N5Iiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.lnnBcK3yvCh4Y3z18ONI-hb0FrOTRd1J-9EuwmKO1QI",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/notifications"
+      },
+      "response": []
+    },
+    {
+      "name": "Notification",
+      "id": "64158a16-6159-4cf7-b3ee-c59242174c94",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2Mzg4NjY2NzYsImV4cCI6MTYzODk1MzA3NiwibmJmIjoxNjM4ODY2Njc2LCJqdGkiOiI2NVlPWHBGbW1Nd0dIN1dPIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.vfOxpXrNfh1yAXZQd4V4o3ONnGs3RID51BwS2ZgHCbE",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/notification/8"
+      },
+      "response": []
+    },
+    {
+      "name": "Notifications Read",
+      "id": "3c49b04b-770d-4e82-998f-4c8d1986316f",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2Mzg4NjY2NzYsImV4cCI6MTYzODk1MzA3NiwibmJmIjoxNjM4ODY2Njc2LCJqdGkiOiI2NVlPWHBGbW1Nd0dIN1dPIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.vfOxpXrNfh1yAXZQd4V4o3ONnGs3RID51BwS2ZgHCbE",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"ids\": [8, 9, 12]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/notifications/read"
+      },
+      "response": []
+    },
+    {
+      "name": "Notifications Read All",
+      "id": "cf6fc110-cd13-41b0-bc60-3ec33355386a",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2Mzg4NjY2NzYsImV4cCI6MTYzODk1MzA3NiwibmJmIjoxNjM4ODY2Njc2LCJqdGkiOiI2NVlPWHBGbW1Nd0dIN1dPIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.vfOxpXrNfh1yAXZQd4V4o3ONnGs3RID51BwS2ZgHCbE",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"ids\": [8, 9, 12]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/notifications/read"
+      },
+      "response": []
+    },
+    {
+      "name": "Notifications Count",
+      "id": "92a0dfc0-3958-464d-be3b-970a7465b2f5",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2Mzg4NjY2NzYsImV4cCI6MTYzODk1MzA3NiwibmJmIjoxNjM4ODY2Njc2LCJqdGkiOiI2NVlPWHBGbW1Nd0dIN1dPIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.vfOxpXrNfh1yAXZQd4V4o3ONnGs3RID51BwS2ZgHCbE",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/notifications/count"
+      },
+      "response": []
+    }
+  ]
+}

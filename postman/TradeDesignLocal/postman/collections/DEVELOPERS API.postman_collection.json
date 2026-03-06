@@ -1,0 +1,561 @@
+{
+  "info": {
+    "_postman_id": "132dac50-836a-463f-bf49-028f3cb7884f",
+    "name": "DEVELOPERS API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Dealers Products",
+      "item": [
+        {
+          "name": "Products Dealers",
+          "id": "88851ce1-90ef-497c-8538-26292f165445",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvY3JlYXRlLWRldmVsb3Blci10b2tlbiIsImlhdCI6MTY1MDQ1MTMwMiwiZXhwIjoxNjgxOTg3MzAyLCJuYmYiOjE2NTA0NTEzMDIsImp0aSI6Ik56NDZFOWVmZVpKejlkeEEiLCJzdWIiOjIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJkZXZlbG9wZXIiOnRydWV9.AvrNjp0RZjzn8DeInaPZe35C7n__hvF04FQUxPIS8RE",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api-developers/dealers/products"
+          },
+          "response": []
+        },
+        {
+          "name": "Products Dealers Paginated",
+          "id": "938e7ca9-e5f4-49fd-9415-818180296e8c",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvY3JlYXRlLWRldmVsb3Blci10b2tlbiIsImlhdCI6MTY1MDQ1MTMwMiwiZXhwIjoxNjgxOTg3MzAyLCJuYmYiOjE2NTA0NTEzMDIsImp0aSI6Ik56NDZFOWVmZVpKejlkeEEiLCJzdWIiOjIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJkZXZlbG9wZXIiOnRydWV9.AvrNjp0RZjzn8DeInaPZe35C7n__hvF04FQUxPIS8RE",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api-developers/dealers/products/paginated"
+          },
+          "response": []
+        },
+        {
+          "name": "Products Dealers List",
+          "id": "5854bddb-28e6-41e2-9c3f-996805b89f43",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvY3JlYXRlLWRldmVsb3Blci10b2tlbiIsImlhdCI6MTY1MDQ1MTMwMiwiZXhwIjoxNjgxOTg3MzAyLCJuYmYiOjE2NTA0NTEzMDIsImp0aSI6Ik56NDZFOWVmZVpKejlkeEEiLCJzdWIiOjIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJkZXZlbG9wZXIiOnRydWV9.AvrNjp0RZjzn8DeInaPZe35C7n__hvF04FQUxPIS8RE",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": "{{base_url_local}}/api-developers/dealers/products/list"
+          },
+          "response": []
+        }
+      ],
+      "id": "e7c0ef96-59f0-4046-9483-70b4a2b6838d"
+    },
+    {
+      "name": "Dealers Categories",
+      "item": [
+        {
+          "name": "Dealers Categories",
+          "id": "7a3ce6ab-76a8-430e-af50-409c8986f61b",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9jcmVhdGUtZGV2ZWxvcGVyLXRva2VuIiwiaWF0IjoxNjczMzQ1MDM3LCJleHAiOjE3MDQ4ODEwMzcsIm5iZiI6MTY3MzM0NTAzNywianRpIjoiSTltbzBWTWtPSGV6Q0Q3bSIsInN1YiI6MTQ4NCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyIsImRldmVsb3BlciI6dHJ1ZX0.mnepo8_3pppCZN8rDLjgjZv3aMprXv7vMK8-gBPjL78",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api-developers/dealers/categories"
+          },
+          "response": []
+        }
+      ],
+      "id": "654db8a0-b807-4f5b-9305-c407f62c52a3"
+    },
+    {
+      "name": "Brands",
+      "item": [
+        {
+          "name": "Brands",
+          "id": "eda6bf21-0ab9-47fd-869a-9e8d602f25ab",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9jcmVhdGUtZGV2ZWxvcGVyLXRva2VuIiwiaWF0IjoxNjUwNDUxNzI5LCJleHAiOjE2ODE5ODc3MjksIm5iZiI6MTY1MDQ1MTcyOSwianRpIjoiRm1KUVJpTVlGWUQ1aFVFSSIsInN1YiI6NDAsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJkZXZlbG9wZXIiOnRydWV9.92hgYOuwEcR7VEYfY_ve7dhZyjSrFx1ZV-5xIK2CDTk",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url_local}}/api-developers/brands-list"
+          },
+          "response": []
+        }
+      ],
+      "id": "4c4387bb-04ea-40e9-b4f8-2aa80c81c477"
+    },
+    {
+      "name": "V2",
+      "item": [
+        {
+          "name": "Brands",
+          "item": [
+            {
+              "name": "Brands",
+              "id": "d964aeba-43c1-4b51-bec1-92e87a9cb96f",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9jcmVhdGUtZGV2ZWxvcGVyLXRva2VuIiwiaWF0IjoxNjczMzQ1MDM3LCJleHAiOjE3MDQ4ODEwMzcsIm5iZiI6MTY3MzM0NTAzNywianRpIjoiSTltbzBWTWtPSGV6Q0Q3bSIsInN1YiI6MTQ4NCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyIsImRldmVsb3BlciI6dHJ1ZX0.mnepo8_3pppCZN8rDLjgjZv3aMprXv7vMK8-gBPjL78",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [],
+                "url": "{{base_url_local}}/api-developers/v2/brands"
+              },
+              "response": []
+            }
+          ],
+          "id": "24301f0b-b23b-40fb-921b-4dfd5bceec35"
+        },
+        {
+          "name": "Categories",
+          "item": [
+            {
+              "name": "Nomenclature Groups",
+              "id": "f0917a7a-29e2-4ae1-b829-fe8d3e3ac95c",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9jcmVhdGUtZGV2ZWxvcGVyLXRva2VuIiwiaWF0IjoxNjczMzQ1MDM3LCJleHAiOjE3MDQ4ODEwMzcsIm5iZiI6MTY3MzM0NTAzNywianRpIjoiSTltbzBWTWtPSGV6Q0Q3bSIsInN1YiI6MTQ4NCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyIsImRldmVsb3BlciI6dHJ1ZX0.mnepo8_3pppCZN8rDLjgjZv3aMprXv7vMK8-gBPjL78",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [],
+                "url": "{{base_url_local}}/api-developers/v2/categories"
+              },
+              "response": []
+            }
+          ],
+          "id": "63971f25-cf56-4659-905c-11674679587e"
+        },
+        {
+          "name": "Brand Lines",
+          "item": [
+            {
+              "name": "Brand Lines",
+              "id": "69e0e53d-12f9-4d7f-89ae-21da60981724",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9jcmVhdGUtZGV2ZWxvcGVyLXRva2VuIiwiaWF0IjoxNjczMzQ1MDM3LCJleHAiOjE3MDQ4ODEwMzcsIm5iZiI6MTY3MzM0NTAzNywianRpIjoiSTltbzBWTWtPSGV6Q0Q3bSIsInN1YiI6MTQ4NCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyIsImRldmVsb3BlciI6dHJ1ZX0.mnepo8_3pppCZN8rDLjgjZv3aMprXv7vMK8-gBPjL78",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [],
+                "url": "{{base_url_local}}/api-developers/v2/brand-lines"
+              },
+              "response": []
+            }
+          ],
+          "id": "2f4a3942-a957-415a-a926-19d511b99ecb"
+        },
+        {
+          "name": "Products",
+          "item": [
+            {
+              "name": "Products",
+              "id": "11cae5ec-3f31-4645-8901-ebc654099104",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9jcmVhdGUtZGV2ZWxvcGVyLXRva2VuIiwiaWF0IjoxNjkyMzQ5MDc2LCJleHAiOjIwMDc3MDkwNzYsIm5iZiI6MTY5MjM0OTA3NiwianRpIjoiQ1hFQ3dpc3ZsdUdBWUFoYiIsInN1YiI6MTQ4NCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyIsImRldmVsb3BlciI6dHJ1ZX0.qgDCRUW3etPPGGvCHOZ574bGKccLC0eBxj1boo7Ke_I",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [],
+                "url": "{{base_url_local}}/api-developers/v2/products?codes[]=00000426979"
+              },
+              "response": []
+            },
+            {
+              "name": "Products Full",
+              "id": "5a494097-8eb6-4cad-88c0-3340332e7fce",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9jcmVhdGUtZGV2ZWxvcGVyLXRva2VuIiwiaWF0IjoxNjczMzQ1MDM3LCJleHAiOjE3MDQ4ODEwMzcsIm5iZiI6MTY3MzM0NTAzNywianRpIjoiSTltbzBWTWtPSGV6Q0Q3bSIsInN1YiI6MTQ4NCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyIsImRldmVsb3BlciI6dHJ1ZX0.mnepo8_3pppCZN8rDLjgjZv3aMprXv7vMK8-gBPjL78",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [],
+                "url": "{{base_url_local}}/api-developers/v2/products/full"
+              },
+              "response": []
+            }
+          ],
+          "id": "c9370017-14ef-4b24-86c4-b88c1331e5bc"
+        },
+        {
+          "name": "Orders",
+          "item": [
+            {
+              "name": "Orders",
+              "id": "1e8aad1a-7014-4b06-972a-1b62f0bbe5b8",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9jcmVhdGUtZGV2ZWxvcGVyLXRva2VuIiwiaWF0IjoxNjkyMzQ5MDc2LCJleHAiOjIwMDc3MDkwNzYsIm5iZiI6MTY5MjM0OTA3NiwianRpIjoiQ1hFQ3dpc3ZsdUdBWUFoYiIsInN1YiI6MTQ4NCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyIsImRldmVsb3BlciI6dHJ1ZX0.qgDCRUW3etPPGGvCHOZ574bGKccLC0eBxj1boo7Ke_I",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [],
+                "url": "{{base_url_local}}/api-developers/v2/orders?numbers_lk[]=lk-b4c654498d-001693317833"
+              },
+              "response": []
+            },
+            {
+              "name": "Order Create",
+              "id": "d78c8bbc-7c11-46a5-854c-bcd2f665a8a3",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9jcmVhdGUtZGV2ZWxvcGVyLXRva2VuIiwiaWF0IjoxNzI5NTc5ODM0LCJleHAiOjIwNDQ5Mzk4MzQsIm5iZiI6MTcyOTU3OTgzNCwianRpIjoiWDJKQWpibnczeDd1cThFSyIsInN1YiI6MTUwMiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyIsImRldmVsb3BlciI6dHJ1ZX0.bFw4kXzSORixtJzimIp00_a6xFBCnssKkfjunh08Zu0",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n\t\"legal_entity_id\": \"0d2e8255-54c7-11e6-8dcf-e61f13537e43\",\r\n\t\"legal_entity_contact_id\": \"c0e969ef-e286-11ed-9002-e41f13617e40\",\r\n\t\"contact_name\": \"Тестовый аккаунт\",\r\n\t\"contact_phone\": \"+79000000000\",\r\n\t\"website_comment\": \"Тест создания заказа по АПИ\",\r\n\t\"website_comment_by_client\": \"Тест создания заказа по АПИ\",\r\n\t\"delivery_method\": \"ДоКлиента\",\r\n\t\"delivery_company\": \"СДЭК\",\r\n\t\"delivery_address\": \"101000, г. Новосибирск, ул. Новосибирская, д. 1, кв. 1\",\r\n\t\"delivery_date\": \"2025-12-31\",\r\n\t\"is_delivery_today\": true,\r\n\t\"products\":  [\r\n        {\r\n            \"product_id\": \"8ca564e3-6b3d-11e1-97da-e61f13537e43\",\r\n            \"warehouse\": \"Москва\",\r\n            \"amount\": 1\r\n        },\r\n        {\r\n            \"product_id\": \"1a5cb8e2-c69e-11e6-a3ba-e61f13537e43\",\r\n            \"warehouse\": \"Москва\",\r\n            \"amount\": 2\r\n        },\r\n        {\r\n            \"product_id\": \"18f173da-95c3-11df-bfea-e61f13537e43\",\r\n            \"warehouse\": \"Москва\",\r\n            \"amount\": 3\r\n        },\r\n        {\r\n            \"product_id\": \"f05389f1-a2aa-11eb-a276-e61f13537e43\",\r\n            \"warehouse\": \"Москва\",\r\n            \"amount\": 4\r\n        },\r\n        {\r\n            \"product_id\": \"62220365-2e71-11ed-a2c8-e61f13537e43\",\r\n            \"warehouse\": \"Москва\",\r\n            \"amount\": 5\r\n        },\r\n        {\r\n            \"product_id\": \"2d26a012-c530-11ee-8485-0050568e3182\",\r\n            \"warehouse\": \"Москва\",\r\n            \"amount\": 6\r\n        },\r\n        {\r\n            \"product_id\": \"70114ad7-aea3-11e3-9533-e61f13537e43\",\r\n            \"warehouse\": \"Москва\",\r\n            \"amount\": 7\r\n        },\r\n        {\r\n            \"product_id\": \"654d6dfe-e9a5-11e4-8bc6-e61f13537e43\",\r\n            \"warehouse\": \"Краснодар\",\r\n            \"amount\": 8\r\n        },\r\n        {\r\n            \"product_id\": \"2d26a012-c530-11ee-8485-0050568e3182\",\r\n            \"warehouse\": \"Краснодар\",\r\n            \"amount\": 9\r\n        }\r\n    ]\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "{{base_url_local}}/api-developers/v2/order/create"
+              },
+              "response": []
+            },
+            {
+              "name": "Orders Statuses",
+              "id": "f2ff10a7-8854-425d-916d-39ed651f1652",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9jcmVhdGUtZGV2ZWxvcGVyLXRva2VuIiwiaWF0IjoxNjY4MjUwMjg5LCJleHAiOjE2OTk3ODYyODksIm5iZiI6MTY2ODI1MDI4OSwianRpIjoiUGRQUGZGQjhhcFZaVmcwdCIsInN1YiI6NDIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJkZXZlbG9wZXIiOnRydWV9.l4I129sOwS6Eamsy8V8X3vMFHNEZch9KAzyY9N2kXBQ",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [],
+                "url": "{{base_url_local}}/api-developers/v2/orders/statuses"
+              },
+              "response": []
+            },
+            {
+              "name": "Orders Payment Statuses",
+              "id": "d1dd0ec5-7e7e-4662-be5f-8798d0eac3be",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9jcmVhdGUtZGV2ZWxvcGVyLXRva2VuIiwiaWF0IjoxNjY4MjUwMjg5LCJleHAiOjE2OTk3ODYyODksIm5iZiI6MTY2ODI1MDI4OSwianRpIjoiUGRQUGZGQjhhcFZaVmcwdCIsInN1YiI6NDIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJkZXZlbG9wZXIiOnRydWV9.l4I129sOwS6Eamsy8V8X3vMFHNEZch9KAzyY9N2kXBQ",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [],
+                "url": "{{base_url_local}}/api-developers/v2/orders/payment-statuses"
+              },
+              "response": []
+            }
+          ],
+          "id": "9ac746d5-7058-409b-bf82-cd912f5a440c"
+        },
+        {
+          "name": "Legal Entities",
+          "item": [
+            {
+              "name": "Legal Entities",
+              "id": "489ccd7f-ec60-4e47-a8aa-758db1439ddd",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvY3JlYXRlLWRldmVsb3Blci10b2tlbiIsImlhdCI6MTcwMDAzNTA5NywiZXhwIjoyMDE1Mzk1MDk3LCJuYmYiOjE3MDAwMzUwOTcsImp0aSI6InVNVnZ3QlM4d2dNNTBZMWEiLCJzdWIiOjQyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwiZGV2ZWxvcGVyIjp0cnVlfQ.fID2sd9j5tcDgcWKnd5kT-XcXpsTIe3hwS6XpxT6uto",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [],
+                "url": "{{base_url_local}}/api-developers/v2/legal-entities"
+              },
+              "response": []
+            },
+            {
+              "name": "Legal Entities Contacts",
+              "id": "2b099c38-8385-487b-b35f-c1064bc73651",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvY3JlYXRlLWRldmVsb3Blci10b2tlbiIsImlhdCI6MTcwMDAzNTA5NywiZXhwIjoyMDE1Mzk1MDk3LCJuYmYiOjE3MDAwMzUwOTcsImp0aSI6InVNVnZ3QlM4d2dNNTBZMWEiLCJzdWIiOjQyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwiZGV2ZWxvcGVyIjp0cnVlfQ.fID2sd9j5tcDgcWKnd5kT-XcXpsTIe3hwS6XpxT6uto",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [],
+                "url": "{{base_url_local}}/api-developers/v2/legal-entities/contacts?is_hidden=false"
+              },
+              "response": []
+            },
+            {
+              "name": "Legal Entities Addresses",
+              "id": "d6dd052b-8f80-4bf2-937a-6300b2b05472",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvY3JlYXRlLWRldmVsb3Blci10b2tlbiIsImlhdCI6MTcwMDAzNTA5NywiZXhwIjoyMDE1Mzk1MDk3LCJuYmYiOjE3MDAwMzUwOTcsImp0aSI6InVNVnZ3QlM4d2dNNTBZMWEiLCJzdWIiOjQyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwiZGV2ZWxvcGVyIjp0cnVlfQ.fID2sd9j5tcDgcWKnd5kT-XcXpsTIe3hwS6XpxT6uto",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [],
+                "url": "{{base_url_local}}/api-developers/v2/legal-entities/addresses?is_hidden=false"
+              },
+              "response": []
+            }
+          ],
+          "id": "0152c4e4-b301-454a-9da5-a05685e20537"
+        },
+        {
+          "name": "Dealers Warehouses",
+          "item": [
+            {
+              "name": "Dealers Warehouses",
+              "id": "c7948f77-9bb2-426c-ac06-e9ed5d8630fb",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvY3JlYXRlLWRldmVsb3Blci10b2tlbiIsImlhdCI6MTcwMDAzNTA5NywiZXhwIjoyMDE1Mzk1MDk3LCJuYmYiOjE3MDAwMzUwOTcsImp0aSI6InVNVnZ3QlM4d2dNNTBZMWEiLCJzdWIiOjQyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwiZGV2ZWxvcGVyIjp0cnVlfQ.fID2sd9j5tcDgcWKnd5kT-XcXpsTIe3hwS6XpxT6uto",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [],
+                "url": "{{base_url_local}}/api-developers/v2/warehouses"
+              },
+              "response": []
+            }
+          ],
+          "id": "2b0c5a9d-5db5-4586-89d1-e61478a36e62"
+        },
+        {
+          "name": "Delivery",
+          "item": [
+            {
+              "name": "Delivery Companies",
+              "id": "5da9ab8f-6ecc-42d5-b33b-37734e737a8a",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvY3JlYXRlLWRldmVsb3Blci10b2tlbiIsImlhdCI6MTY5OTg1MzUwNCwiZXhwIjoyMDE1MjEzNTA0LCJuYmYiOjE2OTk4NTM1MDQsImp0aSI6Ims2YjNxTktZc2FrcUZCNzEiLCJzdWIiOjQyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwiZGV2ZWxvcGVyIjp0cnVlfQ.xZt7v4Gu4Tt9MwyQYJM7oWh3JWurW81hiaSWTuNieTM",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [],
+                "url": "{{base_url_local}}/api-developers/v2/delivery-companies"
+              },
+              "response": []
+            },
+            {
+              "name": "Delivery Methods",
+              "id": "040164f1-fd95-4e1e-b14b-4991819dc8cb",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvY3JlYXRlLWRldmVsb3Blci10b2tlbiIsImlhdCI6MTcwMDAzNTA5NywiZXhwIjoyMDE1Mzk1MDk3LCJuYmYiOjE3MDAwMzUwOTcsImp0aSI6InVNVnZ3QlM4d2dNNTBZMWEiLCJzdWIiOjQyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwiZGV2ZWxvcGVyIjp0cnVlfQ.fID2sd9j5tcDgcWKnd5kT-XcXpsTIe3hwS6XpxT6uto",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [],
+                "url": "{{base_url_local}}/api-developers/v2/delivery-methods"
+              },
+              "response": []
+            }
+          ],
+          "id": "b0e87cc8-4a2f-4030-a09d-625de3234c19"
+        },
+        {
+          "name": "Realizations",
+          "item": [
+            {
+              "name": "Realizations",
+              "id": "b02a10bb-04db-432e-a2ff-ab0f7a05dc1e",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9jcmVhdGUtZGV2ZWxvcGVyLXRva2VuIiwiaWF0IjoxNjkyMzQ5MDc2LCJleHAiOjIwMDc3MDkwNzYsIm5iZiI6MTY5MjM0OTA3NiwianRpIjoiQ1hFQ3dpc3ZsdUdBWUFoYiIsInN1YiI6MTQ4NCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyIsImRldmVsb3BlciI6dHJ1ZX0.qgDCRUW3etPPGGvCHOZ574bGKccLC0eBxj1boo7Ke_I",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [],
+                "url": "{{base_url_local}}/api-developers/v2/realizations"
+              },
+              "response": []
+            }
+          ],
+          "id": "fe736b44-bc32-492a-a2ce-0bc36ea34b1f"
+        },
+        {
+          "name": "Currency Rates",
+          "item": [
+            {
+              "name": "Currency Rates",
+              "id": "11b6d668-354b-4414-96f1-1a211e6d4f93",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvY3JlYXRlLWRldmVsb3Blci10b2tlbiIsImlhdCI6MTY5OTg1MzUwNCwiZXhwIjoyMDE1MjEzNTA0LCJuYmYiOjE2OTk4NTM1MDQsImp0aSI6Ims2YjNxTktZc2FrcUZCNzEiLCJzdWIiOjQyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3IiwiZGV2ZWxvcGVyIjp0cnVlfQ.xZt7v4Gu4Tt9MwyQYJM7oWh3JWurW81hiaSWTuNieTM",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [],
+                "url": "{{base_url_local}}/api-developers/v2/currency-rates"
+              },
+              "response": []
+            }
+          ],
+          "id": "63285031-f8c6-4553-bba9-5f55b966f406"
+        }
+      ],
+      "id": "77da9f9e-cb1e-4b56-97a0-06eca4b084de"
+    },
+    {
+      "name": "Download Docs File",
+      "id": "bba5908c-9d33-4eb0-9ec2-15ef07e597cd",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/docs/api-docs-developers-v2.json"
+      },
+      "response": []
+    }
+  ]
+}

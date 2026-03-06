@@ -1,0 +1,114 @@
+{
+  "info": {
+    "_postman_id": "7ee44857-2139-4481-855e-46416144bf81",
+    "name": "Users Files",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "User Files Upload",
+      "id": "dd9fb1a1-35e8-4ce7-ad93-b78fdb272275",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2ODQyMjAyNDksImV4cCI6MTY4NDgyNTA0OSwibmJmIjoxNjg0MjIwMjQ5LCJqdGkiOiI4eXRsWFFRY1YzNlRqZXcxIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.cqjRA1adEXlZwIie_lxVtAQi8kfdXyDL82WU2SVAm_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "files[]",
+              "type": "file",
+              "src": "/C:/Users/user/Pictures/Saved Pictures/planeta_oblaka_svet_zvezdy_94996_1920x1080.jpg"
+            },
+            {
+              "key": "files[]",
+              "type": "file",
+              "src": [],
+              "disabled": true
+            }
+          ]
+        },
+        "url": "{{base_url_local}}/api/users/files/upload"
+      },
+      "response": []
+    },
+    {
+      "name": "User Files Delete",
+      "id": "cccb0710-bfd6-49a9-b648-0a5eec52aa32",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2ODQyMjAyNDksImV4cCI6MTY4NDgyNTA0OSwibmJmIjoxNjg0MjIwMjQ5LCJqdGkiOiI4eXRsWFFRY1YzNlRqZXcxIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.cqjRA1adEXlZwIie_lxVtAQi8kfdXyDL82WU2SVAm_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"ids\": [1, 2, 3, 4, 5, 6]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/users/files/delete"
+      },
+      "response": []
+    },
+    {
+      "name": "User Files",
+      "id": "51ef39e1-b8c9-4aa3-a0c9-c3314317e41e",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2ODQyMjAyNDksImV4cCI6MTY4NDgyNTA0OSwibmJmIjoxNjg0MjIwMjQ5LCJqdGkiOiI4eXRsWFFRY1YzNlRqZXcxIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.cqjRA1adEXlZwIie_lxVtAQi8kfdXyDL82WU2SVAm_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/users/files?search=5459"
+      },
+      "response": []
+    },
+    {
+      "name": "User Files Filters",
+      "id": "68b6b973-a5c9-46da-842f-5a50bd28e62f",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2ODQyMjAyNDksImV4cCI6MTY4NDgyNTA0OSwibmJmIjoxNjg0MjIwMjQ5LCJqdGkiOiI4eXRsWFFRY1YzNlRqZXcxIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.cqjRA1adEXlZwIie_lxVtAQi8kfdXyDL82WU2SVAm_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/users/files/filters/type"
+      },
+      "response": []
+    }
+  ]
+}

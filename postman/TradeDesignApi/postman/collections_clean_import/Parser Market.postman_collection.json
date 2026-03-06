@@ -1,0 +1,105 @@
+{
+  "info": {
+    "_postman_id": "4c26f635-ab8a-4db2-9df6-b05d84aa3012",
+    "name": "Parser Market",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Set Order",
+      "id": "a060758f-c57c-45f5-a798-3b350553cc5d",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"apikey\": \"fpM0+llre4Zv/3eOk0nW4fvux8o=\",\r\n    \"market\": \"ozon\",\r\n    \"regionid\": \"Москва\",\r\n    \"userlabel\": \"daily_ozon_loading_1\",\r\n    \"products\": [\r\n        {\r\n            \"category\": \"\",\r\n            \"code\": \"\",\r\n            \"productid\": \"\",\r\n            \"brand\": \"Eksi\",\r\n            \"name\": \"Электрическая ловушка для насекомых т.м. EKSI серии EIK, мод. EIK-100\",\r\n            \"linkset\": [\"https://ozon.ru/product/1537169956\"],\r\n            \"marketid\": \"1537169956\",\r\n            \"price\": 0.0,\r\n            \"donotsearch\": \"\",\r\n            \"textsearch\": \"\"\r\n        }\r\n    ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://parser.market/wp-json/client-api/v1/send-order",
+          "protocol": "https",
+          "host": [
+            "parser",
+            "market"
+          ],
+          "path": [
+            "wp-json",
+            "client-api",
+            "v1",
+            "send-order"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Orders List",
+      "id": "3cd85725-8708-464b-bd22-049b12600308",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"apikey\": \"fpM0+llre4Zv/3eOk0nW4fvux8o=\",\r\n    \"limit\": 10,\r\n    \"userlabels\": [\"ee0fd5f3001772445940\"]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://parser.market/wp-json/client-api/v1/get-last50",
+          "protocol": "https",
+          "host": [
+            "parser",
+            "market"
+          ],
+          "path": [
+            "wp-json",
+            "client-api",
+            "v1",
+            "get-last50"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Balance",
+      "id": "962ce73b-68be-43ed-849c-26c247a2377f",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"apikey\": \"fpM0+llre4Zv/3eOk0nW4fvux8o=\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://parser.market/wp-json/client-api/v1/get-balanse",
+          "protocol": "https",
+          "host": [
+            "parser",
+            "market"
+          ],
+          "path": [
+            "wp-json",
+            "client-api",
+            "v1",
+            "get-balanse"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

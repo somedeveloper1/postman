@@ -1,0 +1,116 @@
+{
+  "info": {
+    "_postman_id": "b4bb43be-484f-4a0f-847f-e3a98cbbdd06",
+    "name": "Contacts",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Contacts",
+      "id": "6af2a4ae-0e92-4c51-92b9-165352cbe3f0",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzAzOTg5NDgsImV4cCI6MTYzMDQwMjU0OCwibmJmIjoxNjMwMzk4OTQ4LCJqdGkiOiJRUDU0SHdNM0hQYTBaQnNHIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Xony7nFCy8CvjJnF295SH7KilZEzKBw8EsragvcjeoU",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/contacts"
+      },
+      "response": []
+    },
+    {
+      "name": "Contact Create",
+      "id": "a046f0f7-ef41-4934-aafd-6712f2c2dcef",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzA0MDg2ODksImV4cCI6MTYzMDQxMjI4OSwibmJmIjoxNjMwNDA4Njg5LCJqdGkiOiJaeUtnTDdiUU1xM0lCYUplIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.MD0M8crdAx5k1vJwM8fquWGw58F-m3uKyxYtgbqdkU8",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"guid\": \"5\",\r\n    \"name\": \"Yulia\",\r\n    \"date_of_birth\": \"\",\r\n    \"first_name\": \"Yulia\",\r\n    \"last_name\": \"Kostenko\",\r\n    \"patronymic\": \"Konstantinovna\",\r\n    \"gender\": \"Женский\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/contact/submit"
+      },
+      "response": []
+    },
+    {
+      "name": "Contacts Import",
+      "id": "ce61e0b3-4ffb-4969-89d9-e47aa91fe68a",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"guid\": \"3bee25de-6394-11e2-96ea-e61f13537e43\",\r\n        \"name\": \"Ярунов Игорь Михайлович\",\r\n        \"date_of_birth\": \"0001-01-01T00:00:00\",\r\n        \"first_name\": \"Игорь\",\r\n        \"last_name\": \"Ярунов\",\r\n        \"patronymic\": \"Михайлович\",\r\n        \"gender\": \"Мужской\"\r\n    },\r\n    {\r\n        \"guid\": \"8cf49616-23a6-11e9-a4f1-e61f13537e43\",\r\n        \"name\": \"Белухин Иван Юрьевич\",\r\n        \"date_of_birth\": \"0001-01-01T00:00:00\",\r\n        \"first_name\": \"Белухин Иван Юрьевич\",\r\n        \"last_name\": \"\",\r\n        \"patronymic\": \"\",\r\n        \"gender\": \"Женский\"\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/table/import/contacts"
+      },
+      "response": []
+    },
+    {
+      "name": "Contacts Import PROD",
+      "id": "5251fd06-7de8-40a0-af6d-3d831713e6d3",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"guid\": \"3bee25de-6394-11e2-96ea-e61f13537e43\",\r\n        \"name\": \"Ярунов Игорь Михайлович\",\r\n        \"date_of_birth\": \"0001-01-01T00:00:00\",\r\n        \"first_name\": \"Игорь\",\r\n        \"last_name\": \"Ярунов\",\r\n        \"patronymic\": \"Михайлович\",\r\n        \"gender\": \"Мужской\"\r\n    },\r\n    {\r\n        \"guid\": \"8cf49616-23a6-11e9-a4f1-e61f13537e43\",\r\n        \"name\": \"Белухин Иван Юрьевич\",\r\n        \"date_of_birth\": \"0001-01-01T00:00:00\",\r\n        \"first_name\": \"Белухин Иван Юрьевич\",\r\n        \"last_name\": \"\",\r\n        \"patronymic\": \"\",\r\n        \"gender\": \"Женский\"\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_prod}}/api/table/import/contacts"
+      },
+      "response": []
+    }
+  ]
+}

@@ -1,0 +1,336 @@
+{
+  "info": {
+    "_postman_id": "f8392bea-9bc4-41b8-9c70-75e2eeaf123f",
+    "name": "User",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Register",
+      "id": "6df7887b-f2ed-4f50-8990-1e0199148649",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n \"user_id\": 5000,\r\n \"xml_id\": 1,\r\n \"timestamp_x\": \"2021-09-09 06:45:54\",\r\n \"login\": \"yuyuyu12\",\r\n \"password_original\": \"123456789\",\r\n \"password_bitrix\": \"11111\",\r\n \"stored_hash\": \"0000000\",\r\n \"checkword\": \"слово\",\r\n \"active\": \"Y\",\r\n \"name\": \"\",\r\n \"last_name\": \"YU\",\r\n \"second_name\": \"Иванович\",\r\n \"email\": \"yu12@gmail.com\",\r\n \"last_login\": \"2021-09-09 06:45:54\",\r\n \"last_activity_date\": \"2021-09-09 06:45:54\",\r\n \"date_register\": \"2021-09-08 11:55:00\",\r\n \"lid\": \"12\",\r\n \"admin_notes\": \"Заметки администратора\",\r\n \"external_auth_id\": \"3ea8c4cf-c62d-47fc-907d-5951d3d493f1\",\r\n \"personal_profession\": \"Бухгалтер\",\r\n \"personal_www\": \"http://ivanov-ivan.ru\",\r\n \"personal_icq\": \"111111111\",\r\n \"personal_gender\": \"М\",\r\n \"personal_birthday\": \"1986-01-01\",\r\n \"personal_photo\": 12,\r\n \"personal_phone\": \"+79000000000\",\r\n \"personal_fax\": \"11-12-13\",\r\n \"personal_mobile\": \"+79000000000\",\r\n \"personal_pager\": \"+79000000000\",\r\n \"personal_street\": \"ул. Московская, д. 11\",\r\n \"personal_mailbox\": \"ул. Московская, д. 11, кв. 10\",\r\n \"personal_city\": \"Москва\",\r\n \"personal_state\": \"Московская область\",\r\n \"personal_zip\": \"101000\",\r\n \"personal_country\": \"РФ\",\r\n \"personal_notes\": \"Заметки пользователя\",\r\n \"work_company\": \"ООО Компания\",\r\n \"work_department\": \"Бухгалтерия\",\r\n \"work_position\": \"Бухгалтер\",\r\n \"work_www\": \"http://company.ru\",\r\n \"work_phone\": \"+79000000001\",\r\n \"work_fax\": \"11-12-14\",\r\n \"work_pager\": \"+79000000001\",\r\n \"work_street\": \"ул. Московская, д. 12\",\r\n \"work_mailbox\": \"ул. Московская, д. 11, кв. 1\",\r\n \"work_city\": \"Москва\",\r\n \"work_state\": \"Московская область\",\r\n \"work_zip\": \"101000\",\r\n \"work_country\": \"РФ\",\r\n \"work_profile\": \"ИТ\",\r\n \"work_logo\": 13,\r\n \"work_notes\": \"Дополнительные заметки.\",\r\n \"uf_dealer_legal_entity_type\": \"Юр. лицо\",\r\n \"uf_dealer_inn\": \"123456789123\",\r\n \"uf_dealer_address_actual\": \"101000, г. Москва, ул. Московская, д. 12 кв. 3\",\r\n \"uf_dealer_address_legal\": \"101000, г. Москва, ул. Московская, д. 12 кв. 3\",\r\n \"uf_inn\": \"\",\r\n \"uf_kpp\": \"\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/auth/register"
+      },
+      "response": []
+    },
+    {
+      "name": "Update",
+      "id": "44c6c872-ff36-4e84-9ca2-78f8d0525870",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NTIzNTEzMzUsImV4cCI6MTY1Mjk1NjEzNSwibmJmIjoxNjUyMzUxMzM1LCJqdGkiOiJiZlAzTUg3ODJZZUpFU2lTIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0._GD4aTyR2409O_OTioVAqW75Gc-xW7a4QNw657i2rVg",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "_METHOD",
+            "value": "PATCH",
+            "type": "text",
+            "disabled": true
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"email\": \"lyoulka@mail.ru\",\r\n    \"user_id\": 2\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/auth/update"
+      },
+      "response": []
+    },
+    {
+      "name": "Login",
+      "id": "663575a2-d29c-4673-a27b-23fe80c87222",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"password\": \"TD123456789\",\r\n    \"login\": \"lyoulka\",\r\n    \"user_id\": 2,\r\n    \"uf_counterparty\": null\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/auth/login"
+      },
+      "response": [
+        {
+          "id": "588d5e80-2620-4c27-9fea-5d1ca8fe2f37",
+          "name": "Default",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "email",
+                  "value": "lyuolka@mail.ru",
+                  "type": "text"
+                },
+                {
+                  "key": "password",
+                  "value": "{{auth_password}}",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url_local}}/api/auth-jwt/login?email=lyoulka@mail.ru&password={{auth_password}}",
+              "protocol": "http",
+              "host": [
+                "trade-design"
+              ],
+              "path": [
+                "api",
+                "auth-jwt",
+                "login"
+              ],
+              "query": [
+                {
+                  "key": "email",
+                  "value": "lyoulka@mail.ru"
+                },
+                {
+                  "key": "password",
+                  "value": "{{auth_password}}"
+                }
+              ]
+            }
+          },
+          "_postman_previewlanguage": "Text",
+          "header": [],
+          "cookie": [],
+          "body": "{\r\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTQxNTksImV4cCI6MTYyOTI5Nzc1OSwibmJmIjoxNjI5Mjk0MTU5LCJqdGkiOiJhS2dwZFhrNnl2RTd4V2RKIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.D2QEMtKC0CNSyrKkq0WzTjj1DE8nGVqw9Hs90oo9JVk\",\r\n    \"token_type\": \"bearer\",\r\n    \"expires_in\": 3600,\r\n    \"user\": {\r\n        \"id\": 1,\r\n        \"name\": \"Yulia Ko\",\r\n        \"email\": \"lyoulka@mail.ru\",\r\n        \"created_at\": \"2021-08-18T13:35:51.000000Z\",\r\n        \"updated_at\": \"2021-08-18T13:35:51.000000Z\"\r\n    }\r\n}"
+        }
+      ]
+    },
+    {
+      "name": "Profile",
+      "id": "d06f787e-1b4b-4cf9-a7ea-a9bc818468e4",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aC1mcm9udFwvbG9naW4tYXMtZGVhbGVyXC8yODk5IiwiaWF0IjoxNzE3NzU5NzIyLCJleHAiOjE3MTc3NjMzMjIsIm5iZiI6MTcxNzc1OTcyMiwianRpIjoiN3BVdUQwRXRZdW5iNWhJViIsInN1YiI6Mjg5OSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.3DHiufzCgS5ROSMPq1tEQ73okf35FaUrGbhqZlpC_nE",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": "{{base_url_local}}/api/user-profile"
+      },
+      "response": []
+    },
+    {
+      "name": "Refresh",
+      "id": "49bed9eb-abea-4ed3-b50a-674b22111020",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MjkyOTYzNDgsImV4cCI6MTYyOTI5OTk0OCwibmJmIjoxNjI5Mjk2MzQ4LCJqdGkiOiJxT09wbHNDcTJUd004b0FmIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.DTm0LvzR29YkHvGwV1nU0cpmvu9z4CSSKaNNK58P68Q",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "url": "{{base_url_local}}/api/auth/refresh"
+      },
+      "response": []
+    },
+    {
+      "name": "Create Developer Token",
+      "id": "7c547c00-5060-4215-a731-4a014cfefcf4",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NDg3MDg2NTIsImV4cCI6MTY0OTMxMzQ1MiwibmJmIjoxNjQ4NzA4NjUyLCJqdGkiOiJLR0dRRFNLTFp4Y2g4RmQxIiwic3ViIjoxNTE2LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.bkWDc7Uu59zSA3f5D-7F5FAKBcn2iFVRHIFN25Ru9qs",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/auth/create-developer-token"
+      },
+      "response": []
+    },
+    {
+      "name": "Logout",
+      "id": "c5acd781-ae42-45c7-9900-c0041333b87d",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2Mjk0NDM0NjgsImV4cCI6MTYyOTQ0NzA2OCwibmJmIjoxNjI5NDQzNDY4LCJqdGkiOiJ3NTkyVjRVSUduTUkyREMzIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.PPDNSrdBpn644pjuu74dEmwqQi5a_eRzWZUvXDlUlBk",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "url": "{{base_url_local}}/api/auth/logout"
+      },
+      "response": []
+    },
+    {
+      "name": "Delete",
+      "id": "ec50f0c6-99d8-4d39-9fe6-3b6501d8ebf2",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzE1MTQ0MTYsIm5iZiI6MTYzMTUxNDQxNiwianRpIjoibGNaeDdGbTVhOHJBZElqWiIsInN1YiI6NywicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.HrcA2o7nmZ1sfGuF5xfJdq02nm-7A32KiZnaJ9tn4GE",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": "{{base_url_local}}/api/auth/delete/1000"
+      },
+      "response": []
+    },
+    {
+      "name": "Update password",
+      "id": "a107975a-850e-4142-99ae-f9b576f84ee7",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzE1MTQ0MTYsIm5iZiI6MTYzMTUxNDQxNiwianRpIjoibGNaeDdGbTVhOHJBZElqWiIsInN1YiI6NywicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.HrcA2o7nmZ1sfGuF5xfJdq02nm-7A32KiZnaJ9tn4GE",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"id\": 1003,\r\n    \"password\": \"TD123456789\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/auth/password-update"
+      },
+      "response": []
+    },
+    {
+      "name": "Update Push Token",
+      "id": "f4a09a76-f9d7-4de7-a605-f6c27cffcc01",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzE1MTQ0MTYsIm5iZiI6MTYzMTUxNDQxNiwianRpIjoibGNaeDdGbTVhOHJBZElqWiIsInN1YiI6NywicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.HrcA2o7nmZ1sfGuF5xfJdq02nm-7A32KiZnaJ9tn4GE",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"token\": \"my token\",\r\n    \"user_id\": \"1003\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_local}}/api/update-push-token"
+      },
+      "response": []
+    },
+    {
+      "name": "Update Push Token PROD",
+      "id": "1472b7e5-90b6-435e-8aab-3adbaa5d5427",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"token\": \"my token\",\r\n    \"user_id\": \"2\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{base_url_prod}}/api/update-push-token"
+      },
+      "response": []
+    }
+  ]
+}

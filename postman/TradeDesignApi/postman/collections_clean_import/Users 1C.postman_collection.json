@@ -1,0 +1,287 @@
+{
+  "info": {
+    "_postman_id": "34f64af8-88f3-4803-8bbd-b000435667ed",
+    "name": "Users 1C",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Users",
+      "id": "862e820c-cb91-4b5f-8999-95acdafa7f10",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTcxNjgxNTc3MywiZXhwIjoxNzE3NDIwNTczLCJuYmYiOjE3MTY4MTU3NzMsImp0aSI6IjR5cktWOGpoMFI0VE5WbTgiLCJzdWIiOjMyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.7daLe0NNpBVfZ09mtjRyrkzlNk7E5Zj8ZArqlW3PugY",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/users-1c",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "users-1c"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Managers",
+      "id": "cde6595b-f19f-48a2-a461-a0a8192ec00c",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/users-1c/managers",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "users-1c",
+            "managers"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Employees to Claims",
+      "id": "8c352cc0-089b-4180-96be-f2d47bab3e39",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzAzMDk2MDQsImV4cCI6MTYzMDMxMzIwNCwibmJmIjoxNjMwMzA5NjA0LCJqdGkiOiIzSzdGSWpaeUxaTVowbkhGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.fxp0_27MALE-n5r4HQn0THcasoJgMBsevKB1kSWFL_s",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/users-1c",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "users-1c"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Responsible to Claims",
+      "id": "162b8f73-e0f5-4237-ae54-4e07c0fd4548",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NDc1ODU2NTQsImV4cCI6MTY0ODE5MDQ1NCwibmJmIjoxNjQ3NTg1NjU0LCJqdGkiOiJRSDdRN3FQYlFqVWt0R2czIiwic3ViIjo0MCwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.oYz1PrYlnFFpwdIlc7yrszeyZzDRX9jzdNC3Y8bxIUY",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/claims/responsible",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "claims",
+            "responsible"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Initiators to Claims",
+      "id": "1634ed18-b27f-4075-9ca7-b75af6a866b1",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTY0ODc5ODc0NCwiZXhwIjoxNjQ5NDAzNTQ0LCJuYmYiOjE2NDg3OTg3NDQsImp0aSI6InFCWm85WVFDVmNLcWd6RmEiLCJzdWIiOjEzNjksInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.uNDOzhIsM_Wg3HuG5mAcq3AKasUJVGot7gG_vpZnyVo",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url_local}}/api/claims/initiators",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "claims",
+            "initiators"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "User 1C Create",
+      "id": "ddb37e36-c4e2-40fc-a978-6e2bc6cd5bc2",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90cmFkZS1kZXNpZ25cL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzAzMDk2MDQsImV4cCI6MTYzMDMxMzIwNCwibmJmIjoxNjMwMzA5NjA0LCJqdGkiOiIzSzdGSWpaeUxaTVowbkhGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.fxp0_27MALE-n5r4HQn0THcasoJgMBsevKB1kSWFL_s",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "guid",
+              "value": "1",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/user-1c/submit",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "user-1c",
+            "submit"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Users 1C Import",
+      "id": "1bc53cdc-f537-4084-b7ba-49240ccc52db",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"guid\": \"00000000-0000-0000-0000-000000000000\",\r\n        \"name\": \"My Name\", \r\n        \"role\": \"Developer\",\r\n        \"photo\": \"my photo\",\r\n        \"to_delete\": false,\r\n        \"department_guid\": \"7a1d4859-63eb-11e3-9b80-e61f13537e43\"\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/table/import/users-1c",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "table",
+            "import",
+            "users-1c"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Users 1C Import PROD",
+      "id": "28a7f4b6-c20c-48dd-b192-bfffaf532bdd",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"guid\": \"a4893e90-8123-11e8-a2a5-e61f13537e43\",\r\n        \"name\": \"Величко Дарья Сергеевна\"\r\n    },\r\n    {\r\n        \"guid\": \"fbd0fcd7-ecec-11e1-aa5e-e61f13537e43\",\r\n        \"name\": \"Гузанов Денис Николаевич\"\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_prod}}/api/table/import/users-1c",
+          "protocol": "https",
+          "host": [
+            "api",
+            "t-d",
+            "ru"
+          ],
+          "path": [
+            "api",
+            "table",
+            "import",
+            "users-1c"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

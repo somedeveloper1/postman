@@ -1,0 +1,53 @@
+{
+  "info": {
+    "_postman_id": "98bf339e-3f76-49e8-a380-6d11296b196b",
+    "name": "Prices",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Ozon Prices Info",
+      "id": "f88be22b-9933-465c-b829-0a57f1ef89ec",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Client-Id",
+            "value": "{{ozon_client_id_header}}",
+            "type": "text"
+          },
+          {
+            "key": "Api-Key",
+            "value": "{{ozon_client_id}}",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"filter\": {\r\n        \"offer_id\": [\r\n            \"LM02MG730P02_6\"\r\n        ],\r\n        \"product_id\": [],\r\n        \"visibility\": \"ALL\"\r\n    },\r\n    \"last_id\": \"\",\r\n    \"limit\": 100\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api-seller.ozon.ru/v5/product/info/prices",
+          "protocol": "https",
+          "host": [
+            "api-seller",
+            "ozon",
+            "ru"
+          ],
+          "path": [
+            "v5",
+            "product",
+            "info",
+            "prices"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

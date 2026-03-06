@@ -1,0 +1,50 @@
+{
+  "info": {
+    "_postman_id": "21d96da2-ef09-4b73-bcda-ed6a28d2f212",
+    "name": "Application For Installation",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Application For Installation Import",
+      "id": "e2f30259-60c3-4eb8-a84c-270bf749f504",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnQtZC5ydVwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTYxOTg2OSwibmJmIjoxNjMxNjE5ODY5LCJqdGkiOiJMWENLaVJqQ1lGdEVZdmdGIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pM6dB3NODqcY0cFKn66virso6FOOSAnGXe5xTGYlw_k",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"guid\": \"905f1c05-bbbf-11ec-a2a6-e61f13537e43\",\r\n        \"is_processed\": true,\r\n        \"number\": \"000000191\",\r\n        \"date\": \"2022-04-14T09:54:51\",\r\n        \"status_guid\": \"33ae0845-227b-4d7c-bdc5-f47c4be5c833\",\r\n        \"start_date\": \"2022-04-14T09:54:51\",\r\n        \"delivery_date\": \"2022-04-14T09:54:51\",\r\n        \"responsible_guid\": \"905f1c05-bbbf-11ec-a2a6-e61f13537e43\",\r\n        \"counterparty_guid\": \"905f1c05-bbbf-11ec-a2a6-e61f13537e43\",\r\n        \"applications_for_installation_realizations\": [{\r\n                \"applications_for_installation_guid\": \"905f1c05-bbbf-11ec-a2a6-e61f13537e43\",\r\n                \"line\": 1,\r\n                \"realization_guid\": \"10176688-7202-4278-8bab-63cb7c753d66\"\r\n            }\r\n        ],\r\n        \"applications_for_installation_items\": [\r\n            {\r\n                \"applications_for_installation_guid\": \"905f1c05-bbbf-11ec-a2a6-e61f13537e43\",\r\n                \"line\": 1,\r\n                \"amount\": 1,\r\n                \"nomenclature_guid\": \"10176688-7202-4278-8bab-63cb7c753d66\"\r\n            }\r\n        ]\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url_local}}/api/table/import/applications-for-installation",
+          "protocol": "http",
+          "host": [
+            "trade-design"
+          ],
+          "path": [
+            "api",
+            "table",
+            "import",
+            "applications-for-installation"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
