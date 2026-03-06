@@ -4565,7 +4565,7 @@
                 "header": [],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n    \"name\": \"cdek\",\r\n    \"title\": \"СДЭК\",\r\n    \"class_name\": \"CdekService\",\r\n    \"api_url\": \"https://api.edu.cdek.ru\",\r\n    \"login\":\"wqGwiQx0gg8mLtiEKsUinjVSICCjtTEP\",\r\n    \"password\":\"RmAmgvSgSl1yirlz9QupbzOJVqhCxcP5\"\r\n}",
+                  "raw": "{\r\n    \"name\": \"cdek\",\r\n    \"title\": \"СДЭК\",\r\n    \"class_name\": \"CdekService\",\r\n    \"api_url\": \"https://api.edu.cdek.ru\",\r\n    \"login\":\"{{cdek_client_id}}\",\r\n    \"password\":\"{{cdek_client_secret}}\"\r\n}",
                   "options": {
                     "raw": {
                       "language": "json"

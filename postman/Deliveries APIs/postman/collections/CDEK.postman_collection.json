@@ -240,7 +240,7 @@
             "method": "POST",
             "header": [],
             "url": {
-              "raw": "https://api.edu.cdek.ru/v2/oauth/token?grant_type=client_credentials&client_id=wqGwiQx0gg8mLtiEKsUinjVSICCjtTEP&client_secret=RmAmgvSgSl1yirlz9QupbzOJVqhCxcP5",
+              "raw": "https://api.edu.cdek.ru/v2/oauth/token?grant_type=client_credentials&client_id={{cdek_client_id}}&client_secret={{cdek_client_secret}}",
               "protocol": "https",
               "host": [
                 "api",
